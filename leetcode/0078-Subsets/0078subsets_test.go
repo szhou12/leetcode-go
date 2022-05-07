@@ -48,5 +48,5 @@ func Test_Problem78(t *testing.T) {
 		_, p := q.ans78, q.para78
 		fmt.Printf("【input】:%v       【output】:%v\n", p, subsets(p.one))
 	}
-	fmt.Printf("\n\n\n")
+	fmt.Printf("\n\n")
 }
