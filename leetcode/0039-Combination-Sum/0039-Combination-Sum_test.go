@@ -39,8 +39,52 @@ func Test_Problem39(t *testing.T) {
 	fmt.Printf("------------------------Leetcode Problem 39------------------------\n")
 
 	for _, q := range qs {
-		_, p := q.ans39, q.para39
-		fmt.Printf("【input】:%v       【output】:%v\n", p, combinationSum(p.candidates, p.target))
+		expect, p := q.ans39, q.para39
+
+		testname := fmt.Sprintf("%v,%v", p.candidates, p.target)
+		t.Run(testname, func(t *testing.T) {
+			ans := combinationSum(p.candidates, p.target)
+			if !test2DSlice(ans, expect.one) {
+				t.Errorf("got %v, want %v", ans, expect.one)
+			}
+			fmt.Printf("【input】:%v       【output】:%v\n", p, ans)
+		})
+
 	}
 	fmt.Printf("\n\n\n")
+}
+
+func test2DSlice(a [][]int, b [][]int) bool {
+	if len(a) != len(b) {
+		return false
+	}
+
+	for _, ai := range a {
+		exist := false
+		for _, bj := range b {
+			if len(ai) == len(bj) && testEq(ai, bj) {
+				exist = true
+			}
+		}
+		if !exist {
+			return false
+		}
+	}
+
+	return true
+
+}
+
+func testEq(a []int, b []int) bool {
+	if len(a) != len(b) {
+		return false
+	}
+
+	for i := range a {
+		if a[i] != b[i] {
+			return false
+		}
+	}
+
+	return true
 }
