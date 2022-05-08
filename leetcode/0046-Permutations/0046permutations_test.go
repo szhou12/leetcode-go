@@ -11,7 +11,7 @@ type question46 struct {
 }
 
 // para 是参数
-// one 代表第一个参数
+// s 代表第一个参数
 type para46 struct {
 	s []int
 }
