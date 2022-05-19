@@ -39,7 +39,7 @@ func Test_Problem516(t *testing.T) {
 		},
 	}
 
-	fmt.Printf("------------------------Leetcode Problem 97------------------------\n")
+	fmt.Printf("------------------------Leetcode Problem 516------------------------\n")
 
 	for _, q := range qs {
 		expect, input := q.ans516, q.para516
