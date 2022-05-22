@@ -3,7 +3,8 @@ package leetcode
 import "sort"
 
 func permuteUnique(nums []int) [][]int {
-	result := dfs1(nums)
+	// result := dfs1(nums)
+	result := dfs2(nums)
 	return result
 }
 
@@ -12,7 +13,7 @@ func dfs1(nums []int) [][]int {
 	cur := []int{}
 	result := [][]int{}
 
-	// KEY: have to sort all elements first in order to use method!
+	// KEY: MUST sort all elements first in order to use this method!
 	sort.Ints(nums)
 	dfs1Helper(nums, cur, &used, &result)
 	return result
@@ -42,5 +43,34 @@ func dfs1Helper(nums []int, cur []int, used *[]bool, result *[][]int) {
 		dfs1Helper(nums, cur, used, result)
 		cur = cur[:len(cur)-1]
 		(*used)[i] = false
+	}
+}
+
+func dfs2(nums []int) [][]int {
+	result := [][]int{}
+
+	dfs2Helper(nums, 0, &result)
+
+	return result
+}
+
+func dfs2Helper(nums []int, index int, result *[][]int) {
+	// base case
+	if index == len(nums) {
+		res := make([]int, len(nums))
+		copy(res, nums)
+		*result = append(*result, res)
+		return
+	}
+
+	// KEY: at each level, if one element already used, then all its following dups won't be used
+	used := make(map[int]bool)
+	for i := index; i < len(nums); i++ {
+		if !used[nums[i]] {
+			used[nums[i]] = true
+			nums[i], nums[index] = nums[index], nums[i]
+			dfs2Helper(nums, index+1, result)
+			nums[i], nums[index] = nums[index], nums[i]
+		}
 	}
 }
