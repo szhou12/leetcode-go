@@ -47,7 +47,7 @@ func Test_Problem139(t *testing.T) {
 	for _, q := range qs {
 		expect, p := q.ans139, q.para139
 
-		testname := fmt.Sprintf("【input】: %v,%v", p.s, p.dict)
+		testname := fmt.Sprintf("【input】: %v, %v", p.s, p.dict)
 		t.Run(testname, func(t *testing.T) {
 			ans := wordBreak(p.s, p.dict)
 			if ans != expect.one {
