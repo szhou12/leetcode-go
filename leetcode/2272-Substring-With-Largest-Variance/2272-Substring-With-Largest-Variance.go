@@ -28,7 +28,7 @@ func largestVariance(s string) int {
 					nums[k] = -1
 				}
 			}
-			// helper() implements max sum subarray (057) from left-to-right and from right-to-left
+			// helper() implements max sum subarray (lc-0053) from left-to-right and from right-to-left
 			ret = max(ret, helper(nums))
 
 		}
