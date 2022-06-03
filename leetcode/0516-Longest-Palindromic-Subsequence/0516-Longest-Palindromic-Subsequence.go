@@ -1,7 +1,5 @@
 package leetcode
 
-import "math"
-
 // dp[i][j] := length of longest padlindrome subseq of s[i...j]
 func longestPalindromeSubseq(s string) int {
 	n := len(s)
@@ -24,10 +22,17 @@ func longestPalindromeSubseq(s string) int {
 				if s[i] == s[j] {
 					dp[i][j] = 2 + dp[i+1][j-1]
 				} else {
-					dp[i][j] = int(math.Max(float64(dp[i+1][j]), float64(dp[i][j-1])))
+					dp[i][j] = max(dp[i+1][j], dp[i][j-1])
 				}
 			}
 		}
 	}
 	return dp[1][n]
+}
+
+func max(a int, b int) int {
+	if a > b {
+		return a
+	}
+	return b
 }
