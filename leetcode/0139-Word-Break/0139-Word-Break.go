@@ -1,5 +1,6 @@
 package leetcode
 
+// dp[i] := whether s[0...i-1] can be broken
 func wordBreak(s string, wordDict []string) bool {
 	n := len(s)
 	dp := make([]bool, len(s)+1)
