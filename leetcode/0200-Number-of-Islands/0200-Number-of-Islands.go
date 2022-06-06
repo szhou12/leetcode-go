@@ -39,7 +39,7 @@ func dfs(grid [][]byte, visited *[][]bool, x int, y int) {
 	if !inBoard(grid, x, y) {
 		return
 	}
-	// case 2: (x, y) is '0'
+	// case 2: (x, y) is '0'/ocean
 	if grid[x][y] == '0' {
 		return
 	}
