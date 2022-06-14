@@ -15,3 +15,7 @@ $\Rightarrow$ loop forward + memoization
 $\Rightarrow $ loop backward + monotonic stack
 
 So that: $A[i] < A[k] < A[j]$ for $i<j<k$
+
+## References
+[456. 132 Pattern, 07/22/2019](https://www.youtube.com/watch?v=Jz60RhiggN0)
+[leetcode 456 132 Pattern 白板讲解](https://www.youtube.com/watch?v=tY8Dh9t15Lw)
