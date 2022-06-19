@@ -3,7 +3,7 @@
 0039, 0047, 0097, 0139, 0322, 0516, 0912
 
 # Unit Tests not written yet:
-0011, 0042, 0053, 0055, 0120, 0127, 0200, 0377, 0390, 0456, 0472, 0611, 0825, 0926, 2272, 2306
+0011, 0042, 0053, 0055, 0120, 0127, 0200, 0377, 0390, 0456, 0472, 0611, 0825, 0926, 2272, 2302, 2306
 
 ## OOD
 0146
@@ -32,8 +32,14 @@
 ## Recursion & Tree
 0235, 0236, 
 
+## Binary Search
+2302
+
 ## Brute force
 0825
 
 ## Math & Misc
 0390, 2306
+
+### Count Subarray by Element
+[2302. Count Subarrays With Score Less Than K](https://leetcode.com/problems/count-subarrays-with-score-less-than-k/submissions/)
