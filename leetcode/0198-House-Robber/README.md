@@ -15,7 +15,7 @@ Case 1: $DP[i] = \max\{DP[j] + nums[i]\}$ where $0 \leq j < i-1$
 
 Case 2: $DP[i] = DP[i-1]$
 
-$DP[i] = \max\{$ Case 1, Case 2$\}$
+$DP[i] = \max\{$ Case 1, Case 2 $\}$
 
 result $= DP[n-1]$
 
