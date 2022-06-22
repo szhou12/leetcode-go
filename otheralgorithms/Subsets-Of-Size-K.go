@@ -14,11 +14,12 @@ func subsetsOfSizeK(nums []int, k int) [][]int {
 	var result [][]int
 	var subset []int
 
-	dfs(nums, 0, subset, &result, k)
+	findSubsetsOfSizeK(nums, 0, subset, &result, k)
 	return result
 }
 
-func dfs(nums []int, index int, subset []int, result *[][]int, k int) {
+// DFS
+func findSubsetsOfSizeK(nums []int, index int, subset []int, result *[][]int, k int) {
 	// base case
 	if k == len(subset) {
 		subsetCopy := make([]int, len(subset))
@@ -36,9 +37,9 @@ func dfs(nums []int, index int, subset []int, result *[][]int, k int) {
 
 	// branch 1: add current element
 	subset = append(subset, index+1)
-	dfs(nums, index+1, subset, result, k)
+	findSubsetsOfSizeK(nums, index+1, subset, result, k)
 	// backtracking
 	subset = subset[:len(subset)-1]
 	// branch 2: not add current element
-	dfs(nums, index+1, subset, result, k)
+	findSubsetsOfSizeK(nums, index+1, subset, result, k)
 }
