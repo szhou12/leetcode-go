@@ -4,7 +4,7 @@ import "strings"
 
 func solveNQueens(n int) [][]string {
 	var result [][]string
-	var cur []int // cur = one possible way = a slice of col index that places Queen
+	var cur []int // cur = one possible way = a slice of col index that places Queen where each entry represents a row
 	dfs(n, cur, &result)
 	return result
 }
