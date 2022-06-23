@@ -12,7 +12,7 @@
 0042, 0053, 0097, 0139, 0120, 0198, 0322, 0377, 0472, 0516, 2272, 0926
 
 ## DFS
-0022, 0039, 0046, 0047, 0078, 0090, 0200,
+0022, 0039, 0046, 0047, 0051, 0078, 0090, 0200,
 
 `All Subsets of Size K`, `All Subsets of Size K II`, `All Valid Permutations Of Parentheses II`, `All Permutations Of Subsets`
 
