@@ -28,7 +28,7 @@ func zigzagLevelOrder(root *TreeNode) [][]int {
 		curRes := make([]int, 0)
 		for i := 0; i < qlen; i++ {
 			if level == 0 {
-				// pop from head, push from end (Left node first, then Right node)
+				// pop from head, push from end (Left node first, then Right node bc next level pop from end)
 				node := queue[0]
 				queue = queue[1:]
 				if node.Left != nil {
@@ -40,7 +40,7 @@ func zigzagLevelOrder(root *TreeNode) [][]int {
 
 				curRes = append(curRes, node.Val)
 			} else {
-				// pop from end, push from head (Right node first, then Left node)
+				// pop from end, push from head (Right node first, then Left node be next level pop from head)
 				node := queue[len(queue)-1]
 				queue = queue[:len(queue)-1]
 				if node.Right != nil {
