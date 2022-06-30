@@ -46,3 +46,6 @@ $DP[i][0] = DP[i-1][1] + DP[i-1][0]$
 
 Time complexity = $O(n)$
 
+## Resources
+[【每日一题】LeetCode 2320. Count Number of Ways to Place Houses](https://www.youtube.com/watch?v=Q5JUafX3iMc&t=1114s)
+
