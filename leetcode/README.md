@@ -30,7 +30,7 @@
 0020, 0456
 
 ### Priority Queue
-0692, 0630 (`sort+PQ`)
+0215, 0692, 0630 (`sort+PQ`)
 
 ### Two pointers
 0011
