@@ -38,11 +38,17 @@
 ## Divide & Conquer
 0912
 
+### Quick Select
+0215
+
 ## Recursion & Tree
 0100, 0101, 0104, 0112, 0235, 0236, 
 
 ## Binary Search
 0162, 2302
+
+### Binary Search by Value
+0215
 
 ## Brute force
 0825
