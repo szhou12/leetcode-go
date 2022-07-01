@@ -32,8 +32,8 @@
 ### Priority Queue
 0215, 0692, 0630 (`sort+PQ`)
 
-### Two pointers
-0011
+### Two or More pointers
+0011, 0075 (`3 pointers`) 
 
 ## Divide & Conquer
 0912

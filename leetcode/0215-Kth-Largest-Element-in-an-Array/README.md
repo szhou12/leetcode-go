@@ -17,6 +17,8 @@ Time complexity = $O(n\log C)$ where $C = 2^{32}$
 
 Detailed explanation refers to **Resource** starting at `17:45`.
 
+Use the **Rainbow Sort** technique (refer to **Leetcode 0075**)
+
 Time complexity = $O(n)$ on average. Worst case $O(n^2)$
 
 ## Resource
