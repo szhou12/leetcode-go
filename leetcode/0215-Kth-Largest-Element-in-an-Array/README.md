@@ -15,7 +15,7 @@ Time complexity = $O(n\log C)$ where $C = 2^{32}$
 
 ### Solution - Quick Select
 
-Detailed explanation refers to Resource starting at `17:45`.
+Detailed explanation refers to **Resource** starting at `17:45`.
 
 Time complexity = $O(n)$ on average. Worst case $O(n^2)$
 
