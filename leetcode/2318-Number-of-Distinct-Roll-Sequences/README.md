@@ -24,7 +24,7 @@ Base cases:
 
 if $n=1$, only $6$ possible ways to roll a dice once.
 
-if $n=2$, all pairs $\{(x,y): x \neq y, gcd(x,y) == 1\}$.
+if $n=2$, all pairs $\{(x,y): x\neq y, gcd(x,y) = 1\}$.
 
 Result:
 
