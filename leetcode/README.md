@@ -56,5 +56,8 @@
 ## Math & Misc
 0390, 2306
 
+## X-Sum
+0001
+
 ### Count Subarray by Element
 [2302. Count Subarrays With Score Less Than K](https://leetcode.com/problems/count-subarrays-with-score-less-than-k/submissions/)
