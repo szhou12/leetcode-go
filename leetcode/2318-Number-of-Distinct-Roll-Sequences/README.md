@@ -18,7 +18,7 @@ Define $DP[i][b][a]$ as total number of possible sequences when rolling $i$ time
 
 Reccurence:
 
-$DP[i][b][a] = \sum $DP[i-1][c][b]$$ where $1\leq a,b,c \leq 6$ and $gcd(a,b)=1$ and $a\neq b$ and $a\neq c$.
+$DP[i][b][a] = \sum DP[i-1][c][b]$ where $1\leq a,b,c \leq 6$ and $gcd(a,b)=1$ and $a\neq b$ and $a\neq c$.
 
 Base cases:
 
