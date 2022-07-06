@@ -2,7 +2,7 @@
 
 ## Solution idea
 
-### DP $O(n^2)$
+### DP - $O(n^2)$
 
 这道题不寻常的点在于，如果按题目所问直接定义 $DP$ 是不够的。
 
@@ -51,3 +51,9 @@ $DP[i]$ 现在定义好了，下一个问题是，如何和题目所求建立联
 如果向前看，就是看 $DP[i]$ 可以贡献给未来哪些天。 即，$j\in [i+delay, i+forget)$. (此处，$DP[i]$ 作为已知量, $DP[j]$ 未知)
 
 Time complexity = $O(n^2)$
+
+
+### 差分数组 - $O(n)$
+
+## Resources
+[【每日一题】LeetCode 2327. Number of People Aware of a Secret](https://www.youtube.com/watch?v=ocooPLNzmYI&ab_channel=HuifengGuan)
