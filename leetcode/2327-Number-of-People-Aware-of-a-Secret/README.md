@@ -18,7 +18,7 @@ Define $DP[i] = $ the number of NEWLY added people who know the secret on $i$-th
 
 这样，似乎比较容易建立 Recurrence:
 
-$DP[i] = \sum_j DP[j]$ such that $j\in (i-forget, i-delay]$
+**$DP[i] = \sum_j DP[j]$ such that $j\in (i-forget, i-delay]$**
 
 翻译：第i天新增的人数由哪些天新增的人数贡献来的呢？显然，第`i-forget`天以及之前都不行，因为他们刚好是最后一批，到第i天会刚好忘记secret的人群。
 
@@ -43,3 +43,9 @@ $DP[i]$ 现在定义好了，下一个问题是，如何和题目所求建立联
 这样，我们的 $DP$ 不就涵盖了两类人群了吗。
 
 所以，题目要求的就是：$\sum_i DP[i]$ such that $i+forget>n$.
+
+另一个值得注意的点是：这道题的 $DP$ 可以回头看，也可以向前看。
+
+如果回头看，就是看 哪些天贡献 $DP[i]$. 即，$j\in (i-forget, i-delay]$.
+
+如果向前看，就是看 $DP[i]$ 可以贡献给未来哪些天。 即，$j\in [i+delay, i+forget)$. (此处，$DP[i]$ 作为已知量)
