@@ -2,7 +2,7 @@
 
 ## Solution idea
 
-### DP - $O(n^2)$
+### DP $O(n^2)$
 
 这道题不寻常的点在于，如果按题目所问直接定义 $DP$ 是不够的。
 
@@ -18,7 +18,7 @@ Define $DP[i] = $ the number of NEWLY added people who know the secret on $i$-th
 
 这样，似乎比较容易建立 Recurrence:
 
-**$DP[i] = \sum_j DP[j]$ such that $j\in (i-forget, i-delay]$**
+$DP[i] = \sum_j DP[j]$ such that $j\in (i-forget, i-delay]$
 
 翻译：第i天新增的人数由哪些天新增的人数贡献来的呢？显然，第`i-forget`天以及之前都不行，因为他们刚好是最后一批，到第i天会刚好忘记secret的人群。
 
