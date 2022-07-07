@@ -14,6 +14,7 @@ func isBipartite(graph [][]int) bool {
 
 // BFS returns true if all connected nodes to the starting node can be safely colored bipartitely
 // BFS returns false if there is any conflicts
+// Two colors: 0, 1
 func bfs(node int, visited map[int]int, graph [][]int) bool {
 	// check if the input node has been visited
 	// if already visited, safe
