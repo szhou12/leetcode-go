@@ -3,4 +3,4 @@
 ## Solution idea
 
 ### BFS
-Time complexity = $O(n)$
+Time complexity = $O(V+E)$
