@@ -15,7 +15,13 @@
 ## DFS
 0022, 0039, 0046, 0047, 0051, 0078, 0090, 0200, 2318
 
-`All Subsets of Size K`, `All Subsets of Size K II`, `All Valid Permutations Of Parentheses II`, `All Permutations Of Subsets`
+`All Subsets of Size K`, 
+
+`All Subsets of Size K II`, 
+
+`All Valid Permutations Of Parentheses II`, 
+
+`All Permutations Of Subsets`
 
 ## Topological sort
 0207, 0210,
@@ -48,7 +54,7 @@
 0100, 0101, 0104, 0112, 0226, 0235, 0236, 0563
 
 ## Binary Search
-0162, 2302
+0162, 2302, 2141
 
 ### Binary Search by Value
 0215
