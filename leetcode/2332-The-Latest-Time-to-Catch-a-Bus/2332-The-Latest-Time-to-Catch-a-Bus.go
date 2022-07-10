@@ -17,6 +17,7 @@ func latestTimeCatchTheBus(buses []int, passengers []int, capacity int) int {
 		cap := capacity
 
 		// case 1: 看哪些乘客可以赶上 i-th bus, 挤掉乘客j, 自己上位
+		// 注意: 会有乘客 本可以赶上 i-th bus 但没上去的 (bc cap == 0), 他们会被遗留到 i+1-th bus
 		for j < n && passengers[j] <= buses[i] && cap > 0 {
 			if j == 0 || (j >= 1 && passengers[j]-1 != passengers[j-1]) {
 				// 挤掉 j-th passenger, 自己上位
