@@ -12,5 +12,18 @@
 
 Time complexity = $O(n\log 3)$ where $n$ is max amount among all types of water.
 
+### Majority Vote/Pigeonhole Principle - Optimal Solution
+There are two cases:
+
+Case 1: if there is one type of water `A` who is 绝对多数，meaning its amount $\geq$ total amount of water:
+
+那么，每一轮都是`A`和一种弱势群体的一种水配对，最后剩下`A`自己，每一轮取`A`自己
+
+Case 2: if there is no type of water that is 绝对多数, meaning we can pair two types in each round:
+
+那么，每一轮都可以由两种水配对。如果总水量是奇数，最后一轮会剩下一个单独的。如果偶数，所用时间就是总水量/2.
+
+Time complexity = $O(1)$
+
 ## Resources
 [【每日一题】LeetCode 2335. Minimum Amount of Time to Fill Cups](https://www.youtube.com/watch?v=cuZBEzojuOw)

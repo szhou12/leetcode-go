@@ -1,7 +1,34 @@
 package leetcode
 
-import "container/heap"
+import (
+	"container/heap"
+	"sort"
+)
 
+// Optimal solution: Pigeonhole Principle
+func fillCups_optimized(amount []int) int {
+	sort.Slice(amount, func(i, j int) bool {
+		return amount[i] > amount[j]
+	})
+
+	total := 0
+	for _, x := range amount {
+		total += x
+	}
+
+	if amount[0] >= total/2+1 {
+		return amount[0]
+	} else {
+		// return (total + 1) / 2
+		if total%2 == 0 { // if total even
+			return total / 2
+		} else { // if total odd, then last second can only fill one cup
+			return total/2 + 1
+		}
+	}
+}
+
+// Priority Queue
 func fillCups(amount []int) int {
 	maxHeap := &PQ{}
 	heap.Init(maxHeap)
