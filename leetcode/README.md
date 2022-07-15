@@ -39,7 +39,7 @@
 0020, 0456
 
 ### Priority Queue
-0215, 0692, 0630 (`sort+PQ`)
+0215, 0692, 0630 (`sort+PQ`), 2335 (`arrangement with stride`)
 
 ### Two or More pointers
 0011, 0075 (`3 pointers`), 0209, 2337
