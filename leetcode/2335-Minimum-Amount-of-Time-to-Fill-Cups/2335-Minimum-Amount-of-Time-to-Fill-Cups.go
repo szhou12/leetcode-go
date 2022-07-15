@@ -29,6 +29,34 @@ func fillCups_optimized(amount []int) int {
 }
 
 // Priority Queue
+/*
+x x x x x
+o o o o
+y y y
+---- (x o)
+x x x x
+o o o
+y y y
+---- (x o) (x o)
+x x x
+o o
+y y y
+---- (x o) (x o) (x y)
+x x
+o o
+y y
+---- (x o) (x o) (x y) (x o)
+x
+o
+y y
+---- (x o) (x o) (x y) (x o) (y o)
+x
+
+y
+---- (x o) (x o) (x y) (x o) (y o)
+
+---- (x o) (x o) (x y) (x o) (y o) (x y)
+*/
 func fillCups(amount []int) int {
 	maxHeap := &PQ{}
 	heap.Init(maxHeap)
