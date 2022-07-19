@@ -39,7 +39,7 @@
 0020, 0456
 
 ### Priority Queue
-0215, 0692, 0630 (`sort+PQ`), 2335 (`arrangement with stride`)
+0215, 0692, 0630 (`sort+PQ`), 2335 (`arrangement with stride`), 2343
 
 ### Two or More pointers
 0011, 0075 (`3 pointers`), 0209, 2337
@@ -63,7 +63,7 @@
 0825
 
 ## Math & Misc
-0390, 1774, 2283, 2306 (`bit`三进制)
+0390, 1774, 2283, 2306 (`bit`三进制), 2343 (基准排序)
 
 ## X-Sum
 0001
