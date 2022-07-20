@@ -32,6 +32,7 @@ func smallestTrimmedNumbers(nums []string, queries [][]int) []int {
 			buckets[bIdx-'0'] = append(buckets[bIdx-'0'], idx)
 		}
 
+		// Update ans[i][j]
 		j := 0
 		for b := 0; b <= 9; b++ {
 			for _, idx := range buckets[b] {
