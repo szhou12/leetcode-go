@@ -42,7 +42,7 @@
 0215, 0692, 0630 (`sort+PQ`), 2335 (`arrangement with stride`), 2343
 
 ### Two or More pointers
-0009, 0011, 0013, 0075 (`3 pointers`), 0209, 2337
+0009, 0011, 0013, 0026, 0075 (`3 pointers`), 0209, 2337
 
 ## Divide & Conquer
 0912
