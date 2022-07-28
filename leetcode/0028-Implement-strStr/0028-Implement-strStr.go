@@ -9,26 +9,21 @@ func strStr(haystack string, needle string) int {
 	if len(haystack) < len(needle) {
 		return -1
 	}
+	// edge case 3: haystack is needle (i.e. same length & same chars)
+	if haystack == needle {
+		return 0
+	}
 
-	r := 0
-
-	for l := 0; l < len(haystack); l++ {
-		if haystack[l] != needle[r] {
-			r = 0
-		} else {
-			r++
-			if r == len(needle) {
-				return l - len(needle) + 1
-			}
+	// sliding window
+	l := 0
+	r := len(needle)
+	for r <= len(haystack) { // Note: r can be len(haystack)
+		if haystack[l:r] == needle {
+			return l
 		}
+		l++
+		r++
 	}
 
 	return -1
 }
-
-//    0 1 2 3 4
-// h: h e l l o
-//          l
-//    0 1
-// n: l l
-//        r

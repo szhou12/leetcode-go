@@ -1,7 +1,7 @@
 # [28. Implement strStr()]()
 
 ## Solution idea
-### Two pointers
-`l` pointer for `haystack`, `r` pointer for `needle`
+### Sliding Window
+Check each `haystack[l:r]` where `[l:r]` is defined by the length of `needle`
 
 Time complexity = $O(n)$ where $n$ is the length of haystack
