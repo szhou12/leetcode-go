@@ -1,12 +1,21 @@
 package leetcode
 
 func isHappy(n int) bool {
-	// base cases
+	// use map to check if a same number repeats
+	// if repeats, then we encounter a cycle. It's not a happy number.
+	record := map[int]int{}
+
+	return testHappyNumber(n, record)
+}
+
+func testHappyNumber(n int, record map[int]int) bool {
 	if n == 1 {
 		return true
 	}
-	if n < 10 && n != 1 {
+	if _, ok := record[n]; ok {
 		return false
+	} else {
+		record[n] = n
 	}
 
 	newNum := 0
@@ -17,7 +26,8 @@ func isHappy(n int) bool {
 		n /= 10
 	}
 
-	return isHappy(newNum)
+	return testHappyNumber(newNum, record)
+
 }
 
 func square(n int) int {
