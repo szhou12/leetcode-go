@@ -54,7 +54,7 @@
 0215
 
 ## Recursion & Tree
-0021, 0094, 0100, 0101, 0104, 0112, 0202, 0226, 0235, 0236, 0530, 0543, 0563, 2331
+0021, 0066, 0094, 0100, 0101, 0104, 0112, 0202, 0226, 0235, 0236, 0530, 0543, 0563, 2331
 
 ## Binary Search
 0035, 0162, 2302, 2141
@@ -70,6 +70,9 @@
 
 ## X-Sum
 0001
+
+## 模拟题
+0066
 
 ### Count Subarray by Element
 [2302. Count Subarrays With Score Less Than K](https://leetcode.com/problems/count-subarrays-with-score-less-than-k/submissions/)

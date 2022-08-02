@@ -10,5 +10,4 @@ last word长度等于两者相减.
 
 Time complexity = $O(n)$
 
-## Resources
-[58. Length of Last Word](https://github.com/halfrost/LeetCode-Go/tree/master/leetcode/0058.Length-of-Last-Word)
+[Resources](https://github.com/halfrost/LeetCode-Go/tree/master/leetcode/0058.Length-of-Last-Word)
