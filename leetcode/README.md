@@ -42,7 +42,7 @@
 0215, 0692, 0630 (`sort+PQ`), 2335 (`arrangement with stride`), 2343
 
 ### Two or More pointers
-0009, 0011, 0013, 0026, 0075 (`3 pointers`), 0209, 2337
+0009, 0011, 0013, 0026, 0058 (从后往前扫), 0075 (`3 pointers`), 0209, 2337
 
 ### Sliding Window
 0028
