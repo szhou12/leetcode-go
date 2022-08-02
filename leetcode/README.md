@@ -72,7 +72,7 @@
 0001
 
 ## 模拟题
-0066
+0066, 0067
 
 ### Count Subarray by Element
 [2302. Count Subarrays With Score Less Than K](https://leetcode.com/problems/count-subarrays-with-score-less-than-k/submissions/)
