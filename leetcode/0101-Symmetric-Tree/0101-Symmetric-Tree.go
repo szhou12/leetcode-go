@@ -33,7 +33,7 @@ func checkSymmetric(p *TreeNode, q *TreeNode) bool {
 	if p != nil && q == nil {
 		return false
 	}
-	if p.Val != q.Val {
+	if p.Val != q.Val { // 必须在最后，因为p, q可能为nil
 		return false
 	}
 
