@@ -10,3 +10,5 @@ Use two HashMaps:
 
 Time complexity = $O(n)$
 
+Exactly same idea as [290. Word Pattern](https://leetcode.com/problems/word-pattern/)
+
