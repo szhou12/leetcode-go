@@ -7,4 +7,4 @@
 
 ### 等差数列求和公式
 
-$S = \frac{n(n+1)}{2} \Rightarrow n = \floor(\sqrt{2n+1/4} - 1/2)$
+$S = \frac{n(n+1)}{2} \Rightarrow n = \lfloor \sqrt{2n+1/4} - 1/2 \rfloor$
