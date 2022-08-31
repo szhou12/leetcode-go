@@ -23,3 +23,13 @@ func diStringMatch(s string) []int {
 	}
 	return res
 }
+
+// Demo:
+// 0 1 2 3
+// I D I D
+// l   r
+//     l   r
+// max = -1
+// count = 2; i = -1+2=1
+// res = [1, 0]
+// max = -1+2=1
