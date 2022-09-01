@@ -47,3 +47,23 @@ func summaryRanges(nums []int) []string {
 
 	return res
 }
+
+// Better Solution: Same idea, better format
+// Ref: https://github.com/halfrost/LeetCode-Go/tree/master/leetcode/0228.Summary-Ranges
+func summaryRanges_optimal(nums []int) []string {
+	var res []string
+	for fast, n := 0, len(nums); fast < n; {
+		slow := fast
+		//skip consecutive subarray
+		for fast++; fast < n && nums[fast-1]+1 == nums[fast]; fast++ {
+		}
+		s := strconv.Itoa(nums[slow])
+		if slow != fast-1 {
+			s += "->" + strconv.Itoa(nums[fast-1])
+		}
+		res = append(res, s)
+
+	}
+
+	return res
+}
