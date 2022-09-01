@@ -62,6 +62,9 @@
 ### Binary Search by Value
 0215
 
+## Linked List
+0083
+
 ## Brute force
 0825
 
