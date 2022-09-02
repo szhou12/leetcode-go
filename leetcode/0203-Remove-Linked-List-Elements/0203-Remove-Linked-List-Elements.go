@@ -22,7 +22,7 @@ func removeElements(head *ListNode, val int) *ListNode {
 	cur := head
 	prev := dummy
 
-	for cur.Next != nil { // STOP at last node. ie. Last node NOT processed in the loop
+	for cur.Next != nil { // STOP at tail node. ie. Tail node NOT processed in the loop
 		if cur.Val != val { // ONLY connect cur node to linked list when cur node is not the target
 			prev.Next = cur
 			prev = prev.Next
