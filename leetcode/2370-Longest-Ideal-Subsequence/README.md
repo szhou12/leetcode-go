@@ -17,3 +17,5 @@ $DP[1] = s[1]$
 Recurrence:
 
 $DP[i] = DP[j] + s[i]$ for $1\leq j \leq i-1$ such that $|s[i] - DP[j][len(DP[j]-1)]| \leq k$ and $\max_{1\leq j \leq i-1} len(DP[j])$
+
+$DP[i]=s[i]$ otherwise.
