@@ -9,7 +9,7 @@ func findDuplicates(nums []int) []int {
 		if nums[index] < 0 {
 			// 之前已经把对应索引的元素变成负数了，
 			// 这说明 num 重复出现了两次
-			res = append(res, abs(num))
+			res = append(res, abs(num)) // 注意这里要取绝对值，因为可能被变成了负数
 		} else {
 			// 把索引 num - 1 置为负数
 			nums[index] *= -1
