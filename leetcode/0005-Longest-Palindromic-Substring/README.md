@@ -12,7 +12,7 @@ $DP[i][j] = T$ if $i==j$
 
 Base Case 2:
 
-$DP[i][j] = F$ if $i>j $
+$DP[i][j] = F$ if $ i > j $
 
 Recurrence:
 
