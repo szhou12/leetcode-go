@@ -1,6 +1,7 @@
 package leetcode
 
-func longestPalindrome(s string) string {
+// DP Solution
+func longestPalindrome_DP(s string) string {
 	// Edge Case
 	if len(s) < 2 {
 		return s
@@ -36,4 +37,40 @@ func longestPalindrome(s string) string {
 		}
 	}
 	return res
+}
+
+// Two-pointer Solution: 从中心向两端扩散的双指针
+func longestPalindrome_TP(s string) string {
+	// Edge Case
+	if len(s) < 2 {
+		return s
+	}
+
+	res := ""
+	for i := 0; i < len(s); i++ {
+		// 以 s[i] 为中心的最长回文子串
+		p1 := palindrome(s, i, i)
+		// 以 s[i] 和 s[i+1] 为中心的最长回文子串
+		p2 := palindrome(s, i, i+1)
+		res = max(res, p1)
+		res = max(res, p2)
+	}
+	return res
+}
+
+func palindrome(s string, l int, r int) string {
+	for l >= 0 && r < len(s) && s[l] == s[r] {
+		l--
+		r++
+	}
+
+	// while loop终止条件 使得我们要在返回substring时 排除掉 l, r 指向的字母
+	return s[l+1 : r]
+}
+
+func max(s1 string, s2 string) string {
+	if len(s1) > len(s2) {
+		return s1
+	}
+	return s2
 }
