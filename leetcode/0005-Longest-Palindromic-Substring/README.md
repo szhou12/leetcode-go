@@ -31,3 +31,8 @@ Time complexity = $O(n^2)$
 即：如果回文串的长度为奇数，则它有一个中心字符；如果回文串的长度为偶数，则可以认为它有两个中心字符。
 
 Time complexity = $O(n^2)$
+
+[Reference](https://labuladong.github.io/algo/2/20/23/)
+
+## Resources
+[halfrost 另外的解法](https://github.com/halfrost/LeetCode-Go/tree/master/leetcode/0005.Longest-Palindromic-Substring)
