@@ -16,7 +16,7 @@
 
 同理，调用 dfs函数，**只要参数传入的是 数组atlantic，地图中每个节点也只会遍历一次。**
 
-这段代码，pacific遍历花费 $O(m*n)$, atlantic遍历花费 $O(m*n)$; 所以，总共花费 $O(2*m*n)$
+这段代码，pacific遍历花费 $O(m\times n)$, atlantic遍历花费 $O(m\times n)$; 所以，总共花费 $O(2\times m\times n)$
 ```
 	for i := 0; i < rows; i++ {
 		dfs(heights, i, 0, &pacific, math.MinInt)       // 左边界回流
@@ -28,7 +28,7 @@
 	}
 ```
 
-Time complexity = $O(2*m*n) + O(m*n)$ = $O(m*n)$
+Time complexity = $O(2\times m \times n) + O(m\times n)$ = $O(m\times n)$
 
 ## Resrouces
 
