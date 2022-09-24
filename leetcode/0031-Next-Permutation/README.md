@@ -20,3 +20,6 @@ step 4: 对 i 之后的所有元素(一定还是降序的)进行升序排列
              |---------|
 [1, 2, 8, 5, 3, 4, 6, 7]
 ```
+
+## Resource
+[贾考博 LeetCode 31. Next Permutation](https://www.youtube.com/watch?v=K-QCteGM-Bk)
