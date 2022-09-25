@@ -6,7 +6,7 @@
 
 每一格子有向下、向右两种，一共有 $m \times n$ 格子,
 
-Time complexity = $O(2^(m+n))$
+Time complexity = $O(2^{m+n})$
 
 ### DP
 
@@ -27,3 +27,7 @@ Recurrence:
 $DP[i][j]= DP[i-1][j] + DP[i][j-1]$ 当前格子由前一个格子向右走来，或者向下走来
 
 Time complexity = $O(m*n)$
+
+## Resource
+
+[贾考博 LeetCode 62. Unique Paths](https://www.youtube.com/watch?v=L6dWXuh8BuE&ab_channel=%E8%B4%BE%E8%80%83%E5%8D%9A)
