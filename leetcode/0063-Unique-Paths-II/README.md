@@ -8,6 +8,6 @@
 
 同时，**注意！！！** Base case 如何设值!
 
-如果某格子是obstacle, 那么这个格子和之后所有格子都无法到达。
+* 如果某格子是obstacle, 那么这个格子和之后所有格子都无法到达。
 
 Time complexity = $O(m*n)$
