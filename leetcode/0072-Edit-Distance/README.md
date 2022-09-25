@@ -26,9 +26,9 @@ $DP[i][j] = \min$ {RC, IC, DC} otherwise
 
 * RC: replace cost = $d(w1_i, w2_j) + DP[i-1][j-1]$ ($d(w1_i, w2_j)$ is the cost to replace ith char of w1 with jth char of w2)
 
-* DC : delete cost = $d(w1_i, _) + DP[i-1][j]$ ($d(w1_i, \_)$ is the cost to delete ith char of w1)
+* DC : delete cost = $d(w1_i, \emptyset) + DP[i-1][j]$ ($d(w1_i, \emptyset)$ is the cost to delete ith char of w1)
 
-* IC: insert cost = $d(_, w2_j) + DP[i][j-1]$ ($d(\_, w2_j)$ is the cost to insert jth char of w2)
+* IC: insert cost = $d(\emptyset, w2_j) + DP[i][j-1]$ ($d(\emptyset, w2_j)$ is the cost to insert jth char of w2)
 
 
 **Key 1**: prepend '#' as placeholder. 意义在于，使得 `dp[i][j]` 中 `i/j` 为0时，分别代表各自的string为 empty string. 如果不这样做，`dp[0][j]` 中对 `word1`的表述是代表了 `word1` 第一个字母，而不是`word1`为空串的情况，这样`dp`的index与实际 `word1`, `word2`中的index 产生了偏移 (相差1)， 实际coding中容易犯迷糊，所以，前置一个占位符.
