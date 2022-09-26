@@ -31,6 +31,7 @@ func zigzagLevelOrder(root *TreeNode) [][]int {
 				// pop from head, push from end (Left node first, then Right node bc next level pop from end)
 				node := queue[0]
 				queue = queue[1:]
+				// 从尾巴进时：先左孩子，再右孩子
 				if node.Left != nil {
 					queue = append(queue, node.Left)
 				}
@@ -43,6 +44,7 @@ func zigzagLevelOrder(root *TreeNode) [][]int {
 				// pop from end, push from head (Right node first, then Left node be next level pop from head)
 				node := queue[len(queue)-1]
 				queue = queue[:len(queue)-1]
+				// 从头部进时，先右孩子，再左孩子
 				if node.Right != nil {
 					queue = append([]*TreeNode{node.Right}, queue...)
 				}
