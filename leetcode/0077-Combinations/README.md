@@ -6,4 +6,4 @@
 
 经典寻找all subsets的变形题.
 
-Time complexity = $O(n \choose k)$
+Time complexity = O(n choose k)
