@@ -6,6 +6,8 @@
 
 * 求解法数量 [52. N-Queens II](https://leetcode.com/problems/n-queens-ii/)
 
+* 究极进化 - 解数独 [37. Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)
+
 **思路**
 
 ```
