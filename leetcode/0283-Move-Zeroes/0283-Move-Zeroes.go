@@ -22,7 +22,7 @@ func moveZeroes(nums []int) {
 
 }
 
-// Optimal Solution: 快慢指针同向而行，当快指针非零时，直接交换快慢指针的元素
+// Optimal Solution: 快慢指针同向而行，当快指针非零时，直接交换快慢指针的元素 并且 移动慢指针
 func moveZeroes_optimal(nums []int) {
 	left := 0
 
