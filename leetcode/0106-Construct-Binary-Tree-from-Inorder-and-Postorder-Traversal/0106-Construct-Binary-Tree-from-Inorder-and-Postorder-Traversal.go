@@ -36,8 +36,8 @@ func buildTree(inorder []int, postorder []int) *TreeNode {
 
 	// Step 5: split postorder (after split, sub-postorder should have same size as sub-inorder)
 	postorder = postorder[:len(postorder)-1] // exclude last element as root
-	leftPost := postorder[:i]                // 也可以写成 leftPost := postorder[:len(leftIn)]
-	rightPost := postorder[i:]               // 也可以写成 rightPost := postorder[len(leftIn):]
+	leftPost := postorder[:len(leftIn)]      // 也可以写成 leftPost := postorder[:i]
+	rightPost := postorder[len(leftIn):]     // 也可以写成 rightPost := postorder[i:]
 
 	// Step 6: Recursion to find left/right subtrees
 	left := buildTree(leftIn, leftPost)
