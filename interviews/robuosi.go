@@ -164,3 +164,32 @@ func candyCrush(bubbles [][]int) [][]int {
 	return bubbles
 
 }
+
+/*********************************************************************/
+// blocks & obstacles
+func buildBlocks(operations [][]int) string {
+	res := ""
+	obstacles := make(map[int]bool)
+
+	for _, op := range operations {
+		if op[0] == 1 {
+			obstacles[op[1]] = true
+		} else {
+			size := op[2]
+			x := op[1]
+			possible := true
+			for i := x - size; i < x; i++ {
+				if obstacles[i] {
+					possible = false
+				}
+			}
+			if possible {
+				res += "1"
+			} else {
+				res += "0"
+			}
+		}
+	}
+	return res
+
+}
