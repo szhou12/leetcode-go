@@ -1,6 +1,6 @@
 package leetcode
 
-// Memorization
+// DP
 // Time = O(n), Space = O(n)
 func trap(height []int) int {
 	n := len(height)
@@ -19,7 +19,7 @@ func trap(height []int) int {
 		rmax[i] = max(rmax[i+1], height[i])
 	}
 
-	// Note: i in [1...n-2] bc we don't take into account of both ends
+	// Note: i in range [1...n-2] bc we don't take into account of both ends
 	for i := 1; i < n-1; i++ {
 		res += min(lmax[i], rmax[i]) - height[i]
 	}
