@@ -7,7 +7,8 @@ var dir = [][]int{
 	{0, 1},
 }
 
-func numIslands(grid [][]byte) int {
+/************* DFS ****************/
+func numIslandsDFS(grid [][]byte) int {
 	m := len(grid)
 	n := len(grid[0])
 	// corner case
@@ -48,9 +49,11 @@ func dfs(grid [][]byte, visited *[][]bool, x int, y int) {
 		return
 	}
 
-	// DFS at four directions
-	// mark (x,y) visited
+	// 当前层: mark (x,y) visited
 	(*visited)[x][y] = true
+
+	// DFS at four directions
+	// Recursion
 	for i := 0; i < 4; i++ {
 		dx := x + dir[i][0]
 		dy := y + dir[i][1]
@@ -60,4 +63,60 @@ func dfs(grid [][]byte, visited *[][]bool, x int, y int) {
 
 func inBoard(grid [][]byte, x int, y int) bool {
 	return x >= 0 && y >= 0 && x < len(grid) && y < len(grid[0])
+}
+
+/************* BFS ****************/
+func numIslandsBFS(grid [][]byte) int {
+	m := len(grid)
+	n := len(grid[0])
+	// corner case
+	if m == 0 || n == 0 {
+		return 0
+	}
+
+	visited := make([][]bool, m)
+	for i := 0; i < m; i++ {
+		visited[i] = make([]bool, n)
+	}
+
+	res := 0
+	for i := 0; i < m; i++ {
+		for j := 0; j < n; j++ {
+			if grid[i][j] == '1' && !visited[i][j] {
+				bfs(grid, &visited, i, j)
+				res++
+			}
+		}
+	}
+
+	return res
+}
+
+func bfs(grid [][]byte, visited *[][]bool, x int, y int) {
+	queue := [][]int{{x, y}}
+	(*visited)[x][y] = true
+
+	for len(queue) > 0 {
+		size := len(queue)
+		for i := 0; i < size; i++ {
+			cur := queue[0]
+			queue = queue[1:]
+			for i := 0; i < 4; i++ {
+				dx := cur[0] + dir[i][0]
+				dy := cur[1] + dir[i][1]
+				// base cases
+				if !inBoard(grid, dx, dy) {
+					continue
+				}
+				if grid[dx][dy] == '0' {
+					continue
+				}
+				if (*visited)[dx][dy] {
+					continue
+				}
+				queue = append(queue, []int{dx, dy})
+				(*visited)[dx][dy] = true
+			}
+		}
+	}
 }
