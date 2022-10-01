@@ -18,11 +18,14 @@
     * 这种类型的通法
 
 * [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
-    * DP: `k=1`
+    * DP: `k=1`; 因为`k=0`已经在 base cases里，`k=1` 就这一种情况， 对状态转移已经没有影响了，不再需要描述状态 `k`了
     * 倒着看，每次用看到的最大值 - 当前值
     
 * [122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/)
-    * DP: `k= +infinity`
+    * DP: `k= +infinity`; 因为 `k` 无限大，所以, `k`和`k-1`等同的，就不再需要描述状态 `k`了
     * Greedy Algorithm: 累加相邻两天的差为正数的case
+
+* [123. Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)
+    * DP: `k= 2`
 
 

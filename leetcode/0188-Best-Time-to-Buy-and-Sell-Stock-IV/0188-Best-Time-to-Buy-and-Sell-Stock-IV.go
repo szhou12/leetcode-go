@@ -22,7 +22,7 @@ func maxProfit(k int, prices []int) int {
 	}
 
 	for i := 0; i < n; i++ {
-		for j := 1; j <= k; j++ {
+		for j := k; j >= 1; j-- { // 正反写j++/j--都可以，j--更符合语义
 			// Base Cases: i==0
 			if i == 0 {
 				dp[i][j][0] = 0
