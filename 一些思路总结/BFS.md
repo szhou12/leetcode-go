@@ -10,7 +10,14 @@
 
 * 基础: [116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)
 
-### 找neighbor
+### 岛屿沉没类 - 找neighbor
+* Roblox - Candy Crush
 
-* 通常，找相邻的同性质元素类题，都会用到BFS. eg. 找相邻同颜色的元素
+* [200. Number of Islands](https://leetcode.com/problems/number-of-islands/submissions/)
+
+* 四面八方, 潮水涌来 [417. Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
+
+* [130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)
+
+* [1020. Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/)
 
