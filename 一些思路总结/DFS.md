@@ -33,6 +33,8 @@
 
 * [130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)
 
+* [1020. Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/)
+
 ## All Subsets
 
 * 基础题 [78. Subsets](https://leetcode.com/problems/subsets/)

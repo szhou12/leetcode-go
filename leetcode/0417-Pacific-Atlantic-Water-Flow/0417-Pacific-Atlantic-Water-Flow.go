@@ -36,7 +36,7 @@ func pacificAtlantic(heights [][]int) [][]int {
 func dfs(heights [][]int, x int, y int, visited *[][]bool, prevHeight int) {
 	// 3 Cases of Early Stopping
 	// Case 1: out of bound
-	if x < 0 || x >= len(heights) || y < 0 || y > len(heights[0]) {
+	if !inBoard(heights, x, y) {
 		return
 	}
 	// Case 2: 上一层height > 当前height，无法回流至当前cell
@@ -55,4 +55,8 @@ func dfs(heights [][]int, x int, y int, visited *[][]bool, prevHeight int) {
 	dfs(heights, x-1, y, visited, heights[x][y])
 	dfs(heights, x, y+1, visited, heights[x][y])
 	dfs(heights, x, y-1, visited, heights[x][y])
+}
+
+func inBoard(heights [][]int, x int, y int) bool {
+	return x >= 0 && x < len(heights) && y >= 0 && y < len(heights[0])
 }
