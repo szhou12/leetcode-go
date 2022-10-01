@@ -38,3 +38,7 @@
 * 长度为k [77. Combinations](https://leetcode.com/problems/combinations/)
 
 * 找IP地址 [93. Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/)
+
+## 树的深搜遍历
+
+* 所有路径和: [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
