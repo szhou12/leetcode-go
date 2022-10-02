@@ -37,3 +37,14 @@
     * DP: `k= +infinity`
     * 将`fee`融入状态转移方程。即，当天如果要买入，则需要额外减掉`fee`
 
+## 回文串
+
+* [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+
+* [131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)
+    * DFS 解法想到
+
+* [132. Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/)
+    * 两步 DP
+
+
