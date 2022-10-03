@@ -41,8 +41,10 @@
 
 * [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 
+* [647. Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
+
 * [131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)
-    * DFS 解法想到
+    * DFS 解法容易想到
 
 * [132. Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/)
     * 两步 DP

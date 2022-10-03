@@ -4,6 +4,8 @@ package leetcode
 // dp[i] = min cuts for s[0...i] (范围包括i)
 func minCut(s string) int {
 	n := len(s)
+
+	// 第一个 DP
 	isPal := make([][]bool, n)
 	for i := 0; i < n; i++ {
 		isPal[i] = make([]bool, n)
@@ -34,6 +36,7 @@ func minCut(s string) int {
 		}
 	}
 
+	// 第二个 DP
 	dp := make([]int, n)
 	for i := 0; i < n; i++ {
 		dp[i] = i // max cuts for length=i are i # of cuts
