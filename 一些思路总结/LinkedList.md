@@ -13,6 +13,11 @@
 
 ## 双指针同向而行, fast指针快走，slow指针慢走
 * [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
+    * 判断是否有环
+
+* [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)
+    * 判断是否有环，并找到环的入口
+    * 需要额外的**数学推导**，不容易想到
 
 ## 综合题
 * [143. Reorder List](https://leetcode.com/problems/reorder-list/)
