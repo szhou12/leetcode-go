@@ -13,3 +13,6 @@
 
 Time complexity = $O(n)$
 
+## Resource
+
+[代码随想录-141. 环形链表](https://github.com/youngyangyang04/leetcode-master/blob/master/problems/0141.%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8.md)
