@@ -15,3 +15,7 @@
 
 
 Time complexity = $O(n)$
+
+## Resource
+
+[代码随想录-135. 分发糖果](https://github.com/youngyangyang04/leetcode-master/blob/master/problems/0135.%E5%88%86%E5%8F%91%E7%B3%96%E6%9E%9C.md)
