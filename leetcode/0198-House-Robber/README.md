@@ -11,7 +11,7 @@ Base case 1: $DP[0] = nums[0]$
 
 Base case 2: $DP[1] = \max (nums[0], nums[1])$
 
-Case 1: $DP[i] = \max(DP[j] + nums[i])$ for $0 \leq j < i-1$
+Case 1: $DP[i] = \max(DP[j] + nums[i])$ for $ 0 \leq j < i-1 $
 
 Case 2: $DP[i] = DP[i-1]$
 
