@@ -44,7 +44,7 @@
 
 * 长度为k [77. Combinations](https://leetcode.com/problems/combinations/)
 
-* [90. Subsets II](https://leetcode.com/problems/subsets-ii/)
+* 有重复元素 [90. Subsets II](https://leetcode.com/problems/subsets-ii/)
     * 通过 **Sort** 来达到找出重复元素的目的
 
 * 找IP地址 [93. Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/)

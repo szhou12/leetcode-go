@@ -20,4 +20,10 @@
 
 * DP to find #: [96. Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)
 
+## Complete Binary Tree 的性质
+
+* Complete Binary Tree一定会有一个 full binary subtree (满二叉树)
+
+* [222. Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)
+
 
