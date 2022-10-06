@@ -36,19 +36,18 @@
 
 * [1020. Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/)
 
-## All Subsets
+## All Subsets类
+
+### Subsets
 
 * 基础题 [78. Subsets](https://leetcode.com/problems/subsets/)
 
 * 长度为k [77. Combinations](https://leetcode.com/problems/combinations/)
 
+* [90. Subsets II](https://leetcode.com/problems/subsets-ii/)
+    * 通过 **Sort** 来达到找出重复元素的目的
+
 * 找IP地址 [93. Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/)
-
-## 树的深搜遍历
-
-* 所有路径和: [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
-
-## All Subsets类
 
 ### Combination Sum
 * 0039, 0040解法属于一类；0077, 0216解法属于一类
@@ -61,9 +60,9 @@
 
 * [216. Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)
 
-### Subsets
+## 树的深搜遍历
 
-* [78. Subsets](https://leetcode.com/problems/subsets/)
+* 所有路径和: [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
 
-* [90. Subsets II](https://leetcode.com/problems/subsets-ii/)
-    * 通过 **Sort** 来达到找出重复元素的目的
+
+
