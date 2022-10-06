@@ -47,3 +47,23 @@
 ## 树的深搜遍历
 
 * 所有路径和: [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
+
+## All Subsets类
+
+### Combination Sum
+* 0039, 0040解法属于一类；0077, 0216解法属于一类
+
+* [39. Combination Sum](https://leetcode.com/problems/combination-sum/)
+
+* [40. Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)
+
+* [77. Combinations](https://leetcode.com/problems/combinations/)
+
+* [216. Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)
+
+### Subsets
+
+* [78. Subsets](https://leetcode.com/problems/subsets/)
+
+* [90. Subsets II](https://leetcode.com/problems/subsets-ii/)
+    * 通过 **Sort** 来达到找出重复元素的目的
