@@ -9,3 +9,9 @@
 * 情况一: target 不在数组范围中，target 过于小，在**左边界**以外. e.g. 数组{3, 4, 5}，target为2
 * 情况二: target 不在数组范围中，target 过于大，在**右边界**以外，e.g. 数组{3, 4, 5}，target为6
 * 情况三: target 在数组范围中，只是数组中不存在. e.g. 数组{3, 6, 7}, target为5
+
+## Find Closest Element Greater/Smaller Than Target
+
+* 此类题都要在最后注意Post-processing 找不到的情况
+
+* 找最小的大于Target的元素 [744. Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)

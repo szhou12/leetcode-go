@@ -1,6 +1,10 @@
 package interviews
 
-import "math"
+import (
+	"math"
+	"strconv"
+	"strings"
+)
 
 // greater/smaller/tie v.s. pivot
 func pivotCompare(nums []int, pivot int) string {
@@ -84,6 +88,7 @@ func compete(wins []int, draws []int, scored []int, conceded []int) int {
 }
 
 /*********************************************************************/
+// BFS / DFS
 // Candy Crush - burst bubbles
 type coord struct {
 	x int
@@ -192,4 +197,57 @@ func buildBlocks(operations [][]int) string {
 	}
 	return res
 
+}
+
+/*********************************************************************/
+// monotonic
+func monotonic(nums []int) []int {
+	var res []int
+	for i := 1; i < len(nums)-1; i++ {
+		if (nums[i-1] < nums[i] && nums[i] < nums[i+1]) || (nums[i-1] > nums[i] && nums[i] > nums[i+1]) {
+			res = append(res, 1)
+		} else {
+			res = append(res, 0)
+		}
+	}
+
+	return res
+}
+
+/*********************************************************************/
+// Binary Search
+// bus schedule
+func lastDepart(schedule []string, time string) int {
+	// convert time from string to int
+	target := convert(time)
+	var timeSeq []int
+	for _, t := range schedule {
+		timeSeq = append(timeSeq, convert(t))
+	}
+
+	// Binary Search: find the closet time (smaller) to target
+
+}
+
+func binarySearch(nums []int, target int) int {
+	left := 0
+	right := len(nums) - 1
+	for left < right {
+		mid := left + (right-left)/2
+		if nums[mid] == target {
+			right = mid
+		} else if nums[mid] < target {
+			left = mid
+		} else {
+			right = mid - 1
+		}
+	}
+}
+
+func convert(time string) int {
+	time2 := strings.Split(time, ":")
+	hr, _ := strconv.Atoi(time2[0])
+	min, _ := strconv.Atoi(time2[1])
+
+	return hr*60 + min
 }
