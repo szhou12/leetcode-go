@@ -26,4 +26,13 @@
 
 * [222. Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)
 
+## 找Tree的所有路径
+
+* [257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths/)
+    * 前序遍历: 因为这样才方便让父节点指向孩子节点，找到对应的路径。
+    * 在这道题目中将第一次涉及到回溯，因为我们要把路径记录下来，需要回溯来回退 以便于 从一个路径在进入另一个路径。
+        * **注意！！！**在Go语言的实现中，回溯反而不能写出来，否则会出错。
+        * 我的理解是：Go里的append操作相当于是一个copy (ie. 切片的地址变了)，所以下一层返回当前层时，当前层的path不会包含下一层的信息 (因为下一层的path是另一个地址的)
+    * 据说是Google面试题
+
 
