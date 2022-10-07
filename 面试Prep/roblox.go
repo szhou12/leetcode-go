@@ -226,6 +226,11 @@ func lastDepart(schedule []string, time string) int {
 	}
 
 	// Binary Search: find the closet time (smaller) to target
+	idx := binarySearch(timeSeq, target)
+	if idx == -1 {
+		return idx
+	}
+	return target - timeSeq[idx]
 
 }
 
@@ -233,15 +238,22 @@ func binarySearch(nums []int, target int) int {
 	left := 0
 	right := len(nums) - 1
 	for left < right {
-		mid := left + (right-left)/2
+		mid := right - (right-left)/2
 		if nums[mid] == target {
-			right = mid
+			right = mid - 1
 		} else if nums[mid] < target {
 			left = mid
 		} else {
 			right = mid - 1
 		}
 	}
+
+	// post-processing: 找不到小于的元素
+	if nums[left] >= target {
+		return -1
+	}
+
+	return left
 }
 
 func convert(time string) int {
