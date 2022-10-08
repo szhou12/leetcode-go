@@ -12,15 +12,15 @@ for left < right {}
     1. `mid = left + (right - left)/2`
         1. `mid` 在两个元素中靠左
             * `[0, 1]` 中, `mid`会选择 `0` 指向的元素
-            * 若有 `left = mid`, 则会造成死循环
-        2. 若有 `right = mid - 1`, 则`right`会出现出界的情况， 
+            * 收敛时，若有 `left = mid`, 则会造成死循环
+        2. 收敛时，若有 `right = mid - 1`, 则`right`会出现出界的情况， 
             * `[0, 1]` 中, `right`会变成`mid-1=-1` 而出界
             * 然而，`left` 一般是 `=mid`/`=mid+1`, 故不会出现出界的情况。所以，返回 `left` 保险
     2. `mid = right - (right - left)/2`
         1. `mid` 在两个元素中靠右
             * `[0, 1]` 中会选择 `1` 指向的元素
-            * 若有 `right = mid`, 则会造成死循环
-        2. 若有 `left = mid + 1`, 则`left`会出现出界的情况， 
+            * 收敛时，若有 `right = mid`, 则会造成死循环
+        2. 收敛时，若有 `left = mid + 1`, 则`left`会出现出界的情况， 
             * `[0, 1]` 中, `left`会变成`mid+1=2` 而出界
             * 然而，`right` 一般是 `=mid`/`=mid-1`, 故不会出现出界的情况。所以，返回 `right` 保险
 
