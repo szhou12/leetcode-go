@@ -57,3 +57,8 @@
 
 * [337. House Robber III](https://leetcode.com/problems/house-robber-iii/)
     * 树形DP: post-order traversal + DP
+
+## 背包类型题
+* [279. Perfect Squares](https://leetcode.com/problems/perfect-squares/)
+
+* [322. Coin Change](https://leetcode.com/problems/coin-change/)
