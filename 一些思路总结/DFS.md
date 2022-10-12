@@ -64,5 +64,11 @@
 
 * 所有路径和: [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
 
+## 行程规划
 
-
+* [332. Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)
+    * 较难的DFS变体, 
+    * 难点一：首先要想到可以用DFS暴力解
+    * 难点二：如何记录映射关系 - 一个机场映射多个机场，机场之间要靠字母序排列
+    * 难点三：Base Case 终止条件
+    * 难点四：DFS function 返回值 bool 的意义
