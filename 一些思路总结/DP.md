@@ -1,5 +1,10 @@
 # Dynamic Programming
 
+## 经典题
+
+* Longest Increasing Subsequence [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
+    * 注意：求的是全局最长，不一定发生在最后
+
 ## String Matching
 
 一般是**二维DP**
