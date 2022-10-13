@@ -6,4 +6,4 @@
 
 * 注意：输出每个值只能有且一个，所以需要去重
 
-Time complexity = $O(\max{m, n})$ where $m$ length of `nums1`, $n$ length of `nums2`
+Time complexity = `O(max{m, n})` where $m$ length of `nums1`, $n$ length of `nums2`
