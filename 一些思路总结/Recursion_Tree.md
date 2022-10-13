@@ -35,4 +35,10 @@
         * 我的理解是：Go里的append操作相当于是一个copy (ie. 切片的地址变了)，所以下一层返回当前层时，当前层的path不会包含下一层的信息 (因为下一层的path是另一个地址的)
     * 据说是Google面试题
 
+## Post-Order Traversal 需要脑筋拐个弯的题
+
+* Left Leaf： [404. Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)
+    * 突破点：明确Left Leaf的定义, 根据定义来写当前层的逻辑
+    * 判断当前节点是不是左叶子是无法判断的，必须要通过节点的父节点来判断其左孩子是不是左叶子
+
 
