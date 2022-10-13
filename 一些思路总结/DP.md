@@ -1,9 +1,11 @@
 # Dynamic Programming
 
-## 经典题
+## 经典题 - Subsequence
 
 * Longest Increasing Subsequence [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
     * 注意：求的是全局最长，不一定发生在最后
+
+* Longest Wiggle Subsequence [376. Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/)
 
 ## String Matching
 
