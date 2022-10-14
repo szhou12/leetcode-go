@@ -69,3 +69,6 @@
 * [279. Perfect Squares](https://leetcode.com/problems/perfect-squares/)
 
 * [322. Coin Change](https://leetcode.com/problems/coin-change/)
+
+* [416. Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)
+    * 0/1背包问题 (一个元素只能放入一次)
