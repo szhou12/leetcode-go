@@ -11,7 +11,7 @@
 
 Time complexity = $O(n\log n)$
 
-正确性证明：参考Algorithm课讲义
+正确性证明：参考MPCS - Algorithm课讲义
 
 ## Resrouce
 

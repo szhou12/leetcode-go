@@ -25,3 +25,11 @@ func eraseOverlapIntervals(intervals [][]int) int {
 	}
 	return cnt
 }
+
+//    -->  i
+// (1,2) (1,3) (2,3) (3,4)
+// start = 1
+// end = 2
+
+// if n[i][0] < end <= n[i][1]: cnt++
+// else: s = n[i][0], e = n[i][1]
