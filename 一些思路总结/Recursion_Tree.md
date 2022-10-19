@@ -37,8 +37,15 @@
 
 ## Post-Order Traversal 需要脑筋拐个弯的题
 
-* Left Leaf： [404. Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)
+* Left Leaf: [404. Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)
     * 突破点：明确Left Leaf的定义, 根据定义来写当前层的逻辑
     * 判断当前节点是不是左叶子是无法判断的，必须要通过节点的父节点来判断其左孩子是不是左叶子
+
+* Delete Node in BST: [450. Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/)
+    * 突破点 & 难点：分类讨论，明确各种情况，对症下药
+    * 情况一: 当前节点的**左孩子**为空, 直接返回右孩子
+    * 情况二: 当前节点的**右孩子**为空, 直接返回左孩子
+    * 情况三: 当前节点的**左、右孩子**都非空, 把左子树挂到右子树最左边的叶子节点下面
+
 
 
