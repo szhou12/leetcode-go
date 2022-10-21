@@ -49,11 +49,15 @@
 
 * 有重复元素 - Type I [90. Subsets II](https://leetcode.com/problems/subsets-ii/)
     * **Sort** 去重
+    * All Subsets 第一种写法
 
 * 有重复元素 - Type II [491. Increasing Subsequences](https://leetcode.com/problems/increasing-subsequences/)
     * 当前层 **Map** 去重. 注意：是每一层一个新 Map, 而不是一个 全局Map 因为层与层之间的相同元素**不能**去重
+    * All Subsets 第二种写法
 
 * 找IP地址 [93. Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/)
+
+* 当前元素正负值 [494. Target Sum](https://leetcode.com/problems/target-sum/)
 
 ### Combination Sum
 * 0039, 0040解法属于一类；0077, 0216解法属于一类

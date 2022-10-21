@@ -72,3 +72,7 @@
 
 * [416. Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)
     * 0/1背包问题 (一个元素只能放入一次)
+
+* [494. Target Sum](https://leetcode.com/problems/target-sum/)
+    * 0/1背包问题
+    * 需要数学推导，不好想
