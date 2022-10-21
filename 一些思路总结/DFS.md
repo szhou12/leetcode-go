@@ -41,11 +41,17 @@
 ### Subsets
 
 * 基础题 [78. Subsets](https://leetcode.com/problems/subsets/)
+    * 有两种写法, **都要掌握！！！**
+    * 写法一 适合[90. Subsets II](https://leetcode.com/problems/subsets-ii/)
+    * 写法二 适合[491. Increasing Subsequences](https://leetcode.com/problems/increasing-subsequences/)
 
 * 长度为k [77. Combinations](https://leetcode.com/problems/combinations/)
 
-* 有重复元素 [90. Subsets II](https://leetcode.com/problems/subsets-ii/)
-    * 通过 **Sort** 来达到找出重复元素的目的
+* 有重复元素 - Type I [90. Subsets II](https://leetcode.com/problems/subsets-ii/)
+    * **Sort** 去重
+
+* 有重复元素 - Type II [491. Increasing Subsequences](https://leetcode.com/problems/increasing-subsequences/)
+    * 当前层 **Map** 去重. 注意：是每一层一个新 Map, 而不是一个 全局Map 因为层与层之间的相同元素**不能**去重
 
 * 找IP地址 [93. Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/)
 
