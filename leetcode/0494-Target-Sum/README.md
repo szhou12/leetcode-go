@@ -38,6 +38,8 @@ $DP[0] = 1$ 装满容量为0的背包，有1种方法，就是装0件物品
 dp[j] += dp[j - nums[i]]
 ```
 
+Time complexity = $O(n^2)$
+
 ## Resource
 [代码随想录-494. 目标和](https://github.com/youngyangyang04/leetcode-master/blob/master/problems/0494.%E7%9B%AE%E6%A0%87%E5%92%8C.md)
 
