@@ -1,8 +1,34 @@
 package leetcode
 
+import "strings"
+
 // DP - Optimal Solution - 0/1 Knapsack
 func findMaxForm(strs []string, m int, n int) int {
+	dp := make([][]int, m+1)
+	for i := 0; i <= m; i++ {
+		dp[i] = make([]int, n+1)
+	}
 
+	for _, curStr := range strs {
+		zeros := strings.Count(curStr, "0")
+		ones := len(curStr) - zeros
+
+		// 遍历背包容量且从后向前遍历！
+		for i := m; i >= zeros; i-- {
+			for j := n; j >= ones; j-- {
+				dp[i][j] = max(dp[i][j], dp[i-zeros][j-ones]+1)
+			}
+		}
+	}
+
+	return dp[m][n]
+}
+
+func max(a int, b int) int {
+	if a > b {
+		return a
+	}
+	return b
 }
 
 // DFS - All Subsets - 超时！
