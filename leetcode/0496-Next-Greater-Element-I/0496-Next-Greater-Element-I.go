@@ -45,7 +45,7 @@ func findNextGreaterElement(nums []int) map[int]int {
 	// 倒着往栈里放, 就可以正着出栈, 因为我们想找第一个greater elment
 	for i := len(nums) - 1; i >= 0; i-- {
 		// 判定个子高矮
-		for len(stack) > 0 && stack[len(stack)-1] <= nums[i] {
+		for len(stack) > 0 && nums[i] >= stack[len(stack)-1] {
 			// 矮个起开，反正也被挡着了...
 			stack = stack[:len(stack)-1]
 		}

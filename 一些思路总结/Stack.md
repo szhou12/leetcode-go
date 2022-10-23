@@ -14,7 +14,11 @@
 
 ## 单调栈模板
 
-Idea: 把数组的元素想象成并列站立的人，元素大小想象成人的身高。这些人面对你站成一列，如何求元素「2」的下一个更大元素呢？很简单，如果能够看到元素「2」，那么他后面可见的第一个人就是「2」的下一个更大元素，因为比「2」小的元素身高不够，都被「2」挡住了，第一个露出来的就是答案。
+**Idea**: 把数组的元素想象成并列站立的人，元素大小想象成人的身高。这些人面对你站成一列，如何求元素「2」的下一个更大元素呢？很简单，如果能够看到元素「2」，那么他后面可见的第一个人就是「2」的下一个更大元素，因为比「2」小的元素身高不够，都被「2」挡住了，第一个露出来的就是答案。
 
 * [496. Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/)
     * 栈顶元素的物理意义: 维护栈顶元素, 使得它总是**大于**当前元素
+
+* [503. Next Greater Element II](https://leetcode.com/problems/next-greater-element-ii/)
+    * 思路与 [496. Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/) 相同: 从后往前看，矮个子起开
+    * 用 取模 (`%`) 的方法 **模拟** **复制一倍**的方法
