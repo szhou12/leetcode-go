@@ -78,7 +78,7 @@
 0001 (`2Sum`), 0015 (`3Sum`), 0018 (`4Sum`), 0454 (`4Sum II`)
 
 ## 模拟题
-0066, 0067
+0066, 0067, 0541
 
 ### Count Subarray by Element
 [2302. Count Subarrays With Score Less Than K](https://leetcode.com/problems/count-subarrays-with-score-less-than-k/submissions/)
