@@ -27,7 +27,7 @@ In-order(root.Rightyeft) // 相当于是在完成 [..., B, A, C] 部分
 ```
 * 当前层的两层嵌套逻辑
     1. 首先，判断 当前元素 是否 与prev node 相同
-    2. 然后，相同与不同这两种case 要分别比较 curCount 与 maxCount - curCount > maxCount 和 curCount == maxCount 两种情况
+    2. 然后，相同与不同这两种case 要分别比较 curCount 与 maxCount ==> curCount > maxCount 和 curCount == maxCount 两种情况
 
 Time complexity = $O(n)$, Space complexity = $O(1)$
 

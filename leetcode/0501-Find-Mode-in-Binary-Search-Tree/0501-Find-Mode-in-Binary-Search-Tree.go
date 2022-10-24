@@ -74,7 +74,7 @@ func findMode_InOrder(root *TreeNode) []int {
 				curCount++
 				if curCount == maxCount {
 					res = append(res, cur.Val)
-				} else if curCount > maxCount {
+				} else if curCount > maxCount { // 找到了一个更大的众数, 抹掉之前所有append的
 					maxCount = curCount
 					res = []int{cur.Val}
 				}
