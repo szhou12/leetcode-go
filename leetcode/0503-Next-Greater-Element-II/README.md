@@ -12,7 +12,7 @@
 Time complexity = $O(n^2)$
 
 ### Better Solution
-* 套用单调栈模版 - 从后往前看，栈内矮个子起开!
+* 套用单调栈模版 - 从后往前看，挤掉栈顶矮个子!
 * 用 取模 (`%`) 的方法 **模拟** **复制一倍**的方法
 
 Time complexity = $O(n)$
