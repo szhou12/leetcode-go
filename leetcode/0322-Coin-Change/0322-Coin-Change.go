@@ -6,9 +6,9 @@ func coinChange(coins []int, amount int) int {
 	for i := 1; i < len(dp); i++ {
 		dp[i] = amount + 1
 	}
-	for i := 1; i <= amount; i++ {
-		for j := 0; j < len(coins); j++ {
-			if coins[j] <= i {
+	for i := 1; i <= amount; i++ { // 遍历背包容量
+		for j := 0; j < len(coins); j++ { // 遍历物品 - 每一种coin
+			if i >= coins[j] {
 				dp[i] = min(dp[i], 1+dp[i-coins[j]])
 			}
 		}

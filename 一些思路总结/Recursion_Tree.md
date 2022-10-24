@@ -51,4 +51,5 @@
 
 * BST上In-Order Traversal模拟一维递增数组: [501. Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/)
 
+* BST上In-Order Traversal 先走右子树，再走左子树 得到降序排列: [538. Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree/)
 

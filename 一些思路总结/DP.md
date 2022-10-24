@@ -73,6 +73,11 @@
 
 * [322. Coin Change](https://leetcode.com/problems/coin-change/)
 
+* [518. Coin Change II](https://leetcode.com/problems/coin-change-ii/)
+    * 题目要求 **组合数**
+    * 只能外层遍历物品 (coins种类), 内层遍历背包容量 (目标金额)
+    * 以防止 `{1, 5}`, `{5, 1}` 的情况, 他们是等价的combination
+
 * [416. Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)
     * 0/1背包问题 (一个元素只能放入一次)
 
