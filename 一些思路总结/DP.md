@@ -47,19 +47,6 @@
     * DP: `k= +infinity`
     * 将`fee`融入状态转移方程。即，当天如果要买入，则需要额外减掉`fee`
 
-## 回文串
-
-* [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
-
-* [647. Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
-
-* [131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)
-    * DFS 解法容易想到
-
-* [132. Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/)
-    * 两步 DP
-
-
 ## 抢劫房子
 * [198. House Robber](https://leetcode.com/problems/house-robber/)
 
@@ -89,3 +76,34 @@
     * 0/1背包问题
     * 二维DP
     * 倒序遍历背包容量!!!
+
+## 回文串
+
+* [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+
+* [647. Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)
+
+* [131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)
+    * DFS 解法容易想到
+
+* [132. Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/)
+    * 两步 DP
+
+## Subarray 子数组类型题
+* 最大子数组: [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
+
+## Subsequnce 子序列类型题
+
+### 类型一: Longest Increasing Subsequence - 最长递增子序列
+* LIS: [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
+* 俄罗斯套娃: 
+
+### 类型二: Longest Common Subsequence - 最长公共子序列
+* LCS: [1143. Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
+* 只允许Delete转换两个string: [583. Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/)
+    * 求出LCS, 然后减去LCS长度即为需要删除的次数
+* 最小ASCII删除和: [712. Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/)
+
+### 类型三: 编辑距离
+* Edit Distance: [72. Edit Distance](https://leetcode.com/problems/edit-distance/)
+* 只允许Delete转换两个string: [583. Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/)
