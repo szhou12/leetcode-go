@@ -47,6 +47,8 @@
     * 情况二: 当前节点的**右孩子**为空, 直接返回左孩子
     * 情况三: 当前节点的**左、右孩子**都非空, 把左子树挂到右子树最左边的叶子节点下面
 
+* Merge & Overlap two trees: [617. Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/)
+
 ## In-Order Traversal
 
 * BST上In-Order Traversal模拟一维递增数组: [501. Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/)
