@@ -90,6 +90,11 @@
     * 两步 DP
 
 ## Subarray 子数组类型题
+
+### 类型一: Longest Ascending Subarray - 最长递增子数组
+* 最长连续1: [485. Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)
+
+### 类型二: 最大子数组
 * 最大子数组: [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 
 ## Subsequnce 子序列类型题
