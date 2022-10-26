@@ -1,11 +1,6 @@
 # Dynamic Programming
 
-## 经典题 - Subsequence
-
-* Longest Increasing Subsequence [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
-    * 注意：求的是全局最长，不一定发生在最后
-
-* Longest Wiggle Subsequence [376. Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/)
+## 经典题
 
 * Fibonacci Number [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)
 
@@ -101,7 +96,11 @@
 
 ### 类型一: Longest Increasing Subsequence - 最长递增子序列
 * LIS: [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
+    * 注意：求的是全局最长，不一定发生在最后
 * 俄罗斯套娃: 
+
+* Longest Wiggle Subsequence: [376. Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/)
+    * 类二维DP: `DP[i][0, 1]`
 
 ### 类型二: Longest Common Subsequence - 最长公共子序列
 * LCS: [1143. Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
