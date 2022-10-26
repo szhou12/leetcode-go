@@ -4,19 +4,6 @@
 
 * Fibonacci Number [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)
 
-
-## String Matching
-
-一般是**二维DP**
-
-* [72. Edit Distance](https://leetcode.com/problems/edit-distance/)
-
-* [115. Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)
-
-## Longest Ascending Subarray 类型
-
-* [485. Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)
-
 ## 买卖股票
 
 * [188. Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)
@@ -108,6 +95,10 @@
     * 求出LCS, 然后减去LCS长度即为需要删除的次数
 * 最小ASCII删除和: [712. Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/)
 
-### 类型三: 编辑距离
+### 类型三: String Matching + 编辑距离
+
+一般是**二维DP**
+
 * Edit Distance: [72. Edit Distance](https://leetcode.com/problems/edit-distance/)
 * 只允许Delete转换两个string: [583. Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/)
+* 不同的子序列数量: [115. Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)
