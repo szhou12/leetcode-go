@@ -84,7 +84,9 @@
 ### 类型一: Longest Increasing Subsequence - 最长递增子序列
 * LIS: [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
     * 注意：求的是全局最长，不一定发生在最后
-* 俄罗斯套娃: 
+* 俄罗斯套娃信封: [354. Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/)
+    * Sort by `w` in increasing order; then if `w` identical, sort by `h` by decreasing order
+    * 最优解：Greedy + Binary Search
 
 * Longest Wiggle Subsequence: [376. Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/)
     * 类二维DP: `DP[i][0, 1]`
