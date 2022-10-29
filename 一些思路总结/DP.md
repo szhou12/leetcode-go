@@ -74,6 +74,10 @@
 ## Subarray 子数组类型题
 
 ### 类型一: Longest Ascending Subarray - 最长递增子数组
+
+* 最长递增子数组/最长连续递增子序列: [674. Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/)
+    * 经典题，需要明确区分与**最长递增子序列**在解法上的的异同
+
 * 最长连续1: [485. Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)
 
 ### 类型二: 最大子数组
