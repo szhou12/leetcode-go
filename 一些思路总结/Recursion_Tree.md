@@ -51,6 +51,10 @@
 
 * Maximum Binary Tree: [654. Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/)
 
+* 修剪 BST: [669. Trim a Binary Search Tree](https://leetcode.com/problems/trim-a-binary-search-tree/)
+    * 看到BST本能地想用In-order
+    * 但本题BST性质的运用是在于如何砍掉合适的node, recursion用Post-order就可以解
+
 ## In-Order Traversal
 
 * BST上In-Order Traversal模拟一维递增数组: [501. Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/)
