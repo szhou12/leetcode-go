@@ -89,6 +89,7 @@
 * LIS: [300. Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/)
     * 1维 LIS
     * 注意：求的是全局最长，不一定发生在最后
+
 * 俄罗斯套娃信封: [354. Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/)
     * 2维 LIS
     * Sort by `w` in increasing order; then if `w` identical, sort by `h` by **decreasing order**
@@ -99,6 +100,12 @@
 
 * Longest Wiggle Subsequence: [376. Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/)
     * 类二维DP: `DP[i][0, 1]`
+
+* LIS个数: [673. Number of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence/)
+    * 1维 LIS
+    * 维护两个记事本:
+        * `dp[i]`: length of LIS ending at `i`
+        * `count[i]`: number of LIS ending at `i`
 
 ### 类型二: Longest Common Subsequence - 最长公共子序列
 * LCS: [1143. Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
