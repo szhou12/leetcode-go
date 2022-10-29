@@ -49,6 +49,8 @@
 
 * Merge & Overlap two trees: [617. Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/)
 
+* Maximum Binary Tree: [654. Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/)
+
 ## In-Order Traversal
 
 * BST上In-Order Traversal模拟一维递增数组: [501. Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/)
