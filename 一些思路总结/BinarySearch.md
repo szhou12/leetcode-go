@@ -2,27 +2,30 @@
 
 * 统一循环条件:
 ```
-for left < right {}
+for left < right {...}
 ```
-* 终止条件：
+* 终止条件/终止时指针位置状态：
     * Case 1: `left == right`
     * Case 2: `left > right` (当只剩两个元素时，此条件会在下一轮循环触发)
 
-* 根据上述的循环条件，就要自己推导**当只剩两个元素时**, 1. 死循环的情况, 要针对着更改计算 `mid` 的方式; 2. 指针出界的情况，要针对着选择不会出界的那个指针.
+* 根据上述的循环条件，就要自己推导**当只剩两个元素时**, 1. 死循环的情况, 要针对着更改计算 `mid` 的方式; 2. 左、右指针出界的情况，要针对着选择不会出界的那个指针.
     1. `mid = left + (right - left)/2`
         1. `mid` 在两个元素中靠左
             * `[0, 1]` 中, `mid`会选择 `0` 指向的元素
-            * 收敛时，若有 `left = mid`, 则会造成死循环
-        2. 收敛时，若有 `right = mid - 1`, 则`right`会出现出界的情况， 
+            * 收敛时，若有 `left = mid`, 则**会造成死循环**
+        2. 收敛时，若有 `right = mid - 1`, 则`right`**会出现出界**的情况， 
             * `[0, 1]` 中, `right`会变成`mid-1=-1` 而出界
             * 然而，`left` 一般是 `=mid`/`=mid+1`, 故不会出现出界的情况。所以，返回 `left` 保险
     2. `mid = right - (right - left)/2`
         1. `mid` 在两个元素中靠右
             * `[0, 1]` 中会选择 `1` 指向的元素
-            * 收敛时，若有 `right = mid`, 则会造成死循环
-        2. 收敛时，若有 `left = mid + 1`, 则`left`会出现出界的情况， 
+            * 收敛时，若有 `right = mid`, 则**会造成死循环**
+        2. 收敛时，若有 `left = mid + 1`, 则`left`**会出现出界**的情况， 
             * `[0, 1]` 中, `left`会变成`mid+1=2` 而出界
             * 然而，`right` 一般是 `=mid`/`=mid-1`, 故不会出现出界的情况。所以，返回 `right` 保险
+
+## 经典题
+* Classic Binary Search: [704. Binary Search](https://leetcode.com/problems/binary-search/)
 
 ## Find First Occurrence / Last Occurrence
 
