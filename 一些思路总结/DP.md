@@ -92,11 +92,15 @@
 
 * 俄罗斯套娃信封: [354. Russian Doll Envelopes](https://leetcode.com/problems/russian-doll-envelopes/)
     * 2维 LIS
-    * Sort by `w` in increasing order; then if `w` identical, sort by `h` by **decreasing order**
+    * Sort rule: 因为题目只允许 每个维度 `<` (严格递增), Sort by `w` in increasing order; then if `w` identical, sort by `h` by **decreasing order**
     * 最优解：Greedy + Binary Search
 
 * 堆积如山: [1691. Maximum Height by Stacking Cuboids](https://leetcode.com/problems/maximum-height-by-stacking-cuboids/)
     * 3维 LIS
+    * 题目允许rotate: 每个cuboid就会有最多6种变体需要考虑
+    * Sort rule: 因为题目允许 每个维度 `<=`, sort by `width` in increasing order; then if `width` identical, sort by `length` by increasing order; ...
+    * 加入index 信息，防止同一个cuboid因为idential变体被放入LIS超过1次
+    * 最优解: 每个cuboid只能需要考虑1种变体 `(min(l, w, h), mid(l, w, h), max(l, w, h))`
 
 * Longest Wiggle Subsequence: [376. Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/)
     * 类二维DP: `DP[i][0, 1]`
