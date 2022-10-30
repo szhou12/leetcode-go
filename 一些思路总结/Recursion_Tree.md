@@ -61,3 +61,14 @@
 
 * BST上In-Order Traversal 先走右子树，再走左子树 得到降序排列: [538. Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree/)
 
+## Binary Search Tree (BST) 题
+* 都是明示要利用BST性质的题
+* Validate BST: [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
+* Search Node in BST: [700. Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)
+* Delete Node in BST: [450. Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/)
+* Insert Node in BST: [701. Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/)
+* Trim BST: [669. Trim a Binary Search Tree](https://leetcode.com/problems/trim-a-binary-search-tree/)
+* BST上In-Order Traversal模拟一维递增数组: [501. Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/)
+* BST上In-Order Traversal 先走右子树，再走左子树 得到降序排列: [538. Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree/)
+* Recursion to print all BST: [95. Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/)
+* DP to find #: [96. Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)
