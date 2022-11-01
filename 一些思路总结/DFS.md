@@ -29,6 +29,8 @@
 
 * 岛屿数量: [200. Number of Islands](https://leetcode.com/problems/number-of-islands/submissions/)
 
+* 飞地的数量: [1020. Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/)
+
 * 封闭岛屿数量: [1254. Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands/)
     * **突破点**: 提前沉没掉**贴着上、下、左、右边界**的岛屿, 剩下的就是符合题意的岛屿
     * 提前沉没岛屿的姐妹题: [1905. Count Sub Islands](https://leetcode.com/problems/count-sub-islands/)
@@ -39,9 +41,11 @@
 
 * 最大岛屿面积: [695. Max Area of Island](https://leetcode.com/problems/max-area-of-island/)
 
-* 飞地的数量: [1020. Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/)
+* 最大人工岛屿面积: [827. Making A Large Island](https://leetcode.com/problems/making-a-large-island/)
+    * 分两步: 1. DFS记录每个岛屿的面积; 2. 遍历所有为0的cell，尝试连接邻居岛屿，并统计连接所得最大面积
 
 * 四面八方, 潮水涌来 [417. Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
+    * 上、下、左、右边界出发，分别向内做DFS
 
 * [130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)
 
