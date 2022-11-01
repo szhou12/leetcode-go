@@ -27,8 +27,15 @@
 
 ## 岛屿沉没类 - 找neighbor
 
-
 * 岛屿数量: [200. Number of Islands](https://leetcode.com/problems/number-of-islands/submissions/)
+
+* 封闭岛屿数量: [1254. Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands/)
+    * **突破点**: 提前沉没掉**贴着上、下、左、右边界**的岛屿, 剩下的就是符合题意的岛屿
+    * 提前沉没岛屿的姐妹题: [1905. Count Sub Islands](https://leetcode.com/problems/count-sub-islands/)
+
+* 子岛屿数量: [1905. Count Sub Islands](https://leetcode.com/problems/count-sub-islands/)
+    * **突破点**: 提前沉没掉**grid2中还是陆地但 grid1中已经是海水**的岛屿, 剩下的就是符合题意的岛屿
+    * 提前沉没岛屿的姐妹题: [1254. Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands/)
 
 * 最大岛屿面积: [695. Max Area of Island](https://leetcode.com/problems/max-area-of-island/)
 
