@@ -80,7 +80,11 @@
 
 * 最长连续1: [485. Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)
 
-### 类型二: 最大子数组
+### 类型二: Longest Common Subarray - 最长公共子数组
+* 与 **Longest Common Subsequence** 不同的处理在于: 当以`i`结尾的元素 与 以`j`结尾的元素不相同时，直接subarray长度为0, 不考虑其他.
+* 最长公共子数组: [718. Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray/)
+
+### 类型三: 最大子数组
 * 最大子数组: [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 
 ## Subsequnce 子序列类型题
