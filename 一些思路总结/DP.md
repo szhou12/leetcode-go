@@ -1,8 +1,12 @@
 # Dynamic Programming
 
-## 经典题
+## 基础题
 
-* Fibonacci Number [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)
+* Fibonacci Number: [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)
+
+* 爬楼梯: [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
+
+* 最小花费爬楼梯: [746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/description/)
 
 ## 买卖股票
 
