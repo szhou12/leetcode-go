@@ -12,6 +12,9 @@
 * [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
     * idea：遇到数字则入栈；遇到算符则取出栈顶两个数字进行计算，并将结果压入栈中
 
+* 删除字符再比较: [844. Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/description/)
+    * idea: 遇到字母则入栈；遇到#则取出栈顶元素
+
 ## 单调栈模板
 
 **Idea**: 把数组的元素想象成并列站立的人，元素大小想象成人的身高。这些人面对你站成一列，如何求元素「2」的下一个更大元素呢？很简单，如果能够看到元素「2」，那么他后面可见的第一个人就是「2」的下一个更大元素，因为比「2」小的元素身高不够，都被「2」挡住了，第一个露出来的就是答案。
