@@ -89,6 +89,10 @@
 
 * 所有路径和: [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
 
+## 图的遍历
+* DAG图中找从`node 0`到`node n-1`的所有合法路径: [797. All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/description/)
+
+
 ## 行程规划
 
 * [332. Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)
