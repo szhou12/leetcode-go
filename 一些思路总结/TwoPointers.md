@@ -10,6 +10,8 @@
 
 * 判断唯一山峰，左右两边单调递增: [941. Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/description/)
 
+* 平方一个有序数组: [977. Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/description/)
+
 ### 两个数组 + 双指针同向而行
 
 * 跳过重复元素，匹配subsequence: [925. Long Pressed Name](https://leetcode.com/problems/long-pressed-name/description/)
