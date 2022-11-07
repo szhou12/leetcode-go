@@ -92,6 +92,8 @@
 ## 图的遍历
 * DAG图中找从`node 0`到`node n-1`的所有合法路径: [797. All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/description/)
 
+* 判断在有向有环图中能否从`node 0`到达所有其他 nodes: [841. Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/description/)
+    * 用 hashmap `visited`记录遍历过的节点
 
 ## 行程规划
 
