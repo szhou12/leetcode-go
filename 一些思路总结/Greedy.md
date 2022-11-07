@@ -15,3 +15,7 @@
 ## 未归类
 
 * [738. Monotone Increasing Digits](https://leetcode.com/problems/monotone-increasing-digits/description/)
+
+## 分清楚情况讨论
+
+* 找零的情况: [860. Lemonade Change](https://leetcode.com/problems/lemonade-change/description/)
