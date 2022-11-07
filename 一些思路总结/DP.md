@@ -120,10 +120,16 @@
         * `count[i]`: number of LIS ending at `i`
 
 ### 类型二: Longest Common Subsequence - 最长公共子序列
+
+**公共子序列**的一个重要特征: 相对顺序不改变. 意即, 数字4在字符串A中数字1的后面，那么数字4也应该在字符串B数字1的后面
+
 * LCS: [1143. Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
 * 只允许Delete转换两个string: [583. Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/)
     * 求出LCS, 然后减去LCS长度即为需要删除的次数
 * 最小ASCII删除和: [712. Minimum ASCII Delete Sum for Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/)
+* 不想交的线的最大数量: [1035. Uncrossed Lines](https://leetcode.com/problems/uncrossed-lines/description/)
+    * "连线间互不相交" == **相对顺序不改变**
+    * 根据这个重要信息，把题目转化为 LCS 题求解
 
 ### 类型三: String Matching + 编辑距离
 
