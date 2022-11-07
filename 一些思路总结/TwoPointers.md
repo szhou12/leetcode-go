@@ -1,5 +1,13 @@
 # Two Pointers
 
+## 一个数组 + 双指针同向而行
+
+## 一个数组 + 双指针相向而行
+
+## 两个数组 + 双指针同向而行
+
+* 跳过重复元素，匹配subsequence: [925. Long Pressed Name](https://leetcode.com/problems/long-pressed-name/description/)
+
 ## Subarray 类型
 
 * 一般像是求满足条件的subarray个数
