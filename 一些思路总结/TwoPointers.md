@@ -1,14 +1,21 @@
 # Two Pointers
 
-## 一个数组 + 双指针同向而行
+## 题目归类
 
-## 一个数组 + 双指针相向而行
+### 一个数组 + 双指针同向而行
 
-## 两个数组 + 双指针同向而行
+* 求满足条件的Subarray个数: [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/)
+
+### 一个数组 + 双指针相向而行
+
+* 判断唯一山峰，左右两边单调递增: [941. Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/description/)
+
+### 两个数组 + 双指针同向而行
 
 * 跳过重复元素，匹配subsequence: [925. Long Pressed Name](https://leetcode.com/problems/long-pressed-name/description/)
 
-## Subarray 类型
+## 解法归类
+### Subarray 类型
 
 * 一般像是求满足条件的subarray个数
 
