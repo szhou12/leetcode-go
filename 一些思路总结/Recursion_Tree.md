@@ -55,6 +55,11 @@
     * 看到BST本能地想用In-order
     * 但本题BST性质的运用是在于如何砍掉合适的node, recursion用Post-order就可以解
 
+* Set Camera: [968. Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras/description/)
+    * 明确划分四大状态，以及伴生的16 cases
+    * 用四个优先级把16 cases分门别类
+
+
 ## In-Order Traversal
 
 * BST上In-Order Traversal模拟一维递增数组: [501. Find Mode in Binary Search Tree](https://leetcode.com/problems/find-mode-in-binary-search-tree/)
