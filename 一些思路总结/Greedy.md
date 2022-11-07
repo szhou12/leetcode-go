@@ -18,6 +18,9 @@
     * 比当前number小 并且每个digit单调递增的 最大number 是 (X-1)9...9
     * e.g. 93 -> 89 = (9-1)(3->9)
 
+* [1005. Maximize Sum Of Array After K Negations](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/description/)
+    * 将数组按照绝对值大小**从大到小**排序，注意要**按照绝对值的大小**
+
 ## 分清楚情况讨论
 
 * 找零的情况: [860. Lemonade Change](https://leetcode.com/problems/lemonade-change/description/)
