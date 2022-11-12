@@ -14,6 +14,12 @@
 
 * [105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 
+### **构造 Binary Search Tree**
+
+* Convert ascending array to BST: [108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
+
+* 平衡 BST: [1382. Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree/description/)
+
 ## 找到所有 Unique Binary Search Tree
 
 * Recursion to print all BST: [95. Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/)
@@ -68,6 +74,9 @@
 
 ## Binary Search Tree (BST) 题
 * 都是明示要利用BST性质的题
+* 构造 BST:
+    * Convert ascending array to BST: [108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
+    * 平衡 BST: [1382. Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree/description/)
 * Validate BST: [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
 * Search Node in BST: [700. Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/)
 * Delete Node in BST: [450. Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/)
