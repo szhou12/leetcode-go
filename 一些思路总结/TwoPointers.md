@@ -4,6 +4,9 @@
 
 ### 一个数组 + 双指针同向而行
 
+* 移动所有0并且保序: [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/)
+    * 在需要**下落物体类**游戏中是非常有用的helper function
+
 * 求满足条件的Subarray个数: [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/)
 
 ### 一个数组 + 双指针相向而行

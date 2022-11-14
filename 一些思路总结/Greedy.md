@@ -2,6 +2,11 @@
 
 ## Scheduling 类型题
 
+* 区间调度问题思路三步走:
+    1. 从区间集合 `intervals` 中选择一个区间 `x`，这个 `x` 是在当前所有区间中**结束最早的**（end 最小）
+    2. 把所有与 `x` 区间相交的区间从区间集合 `intervals` 中删除。
+    3. 重复 Step 1 和 Step 2，直到 `intervals` 为空为止。之前选出的那些 `x` 就是最大不相交子集。
+
 * 排除 Overlapping Invertals: [435. Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/)
     * **重点**: 如果要loop from left to right, 则需要sort by **right end** in increasing order
 
@@ -9,7 +14,7 @@
     * **重点**: 如果要loop from left to right, 则需要sort by **right end** in increasing order
 
 * Overlapping Intervals归为同一个 partition, 计算partitions: [763. Partition Labels](https://leetcode.com/problems/partition-labels/)
-    * **重点**: loop from left to right, BUT sort by **left end** in increasing order.
+    * **重点**: loop from left to right, **BUT** sort by **left end** in increasing order.
     * 这是因为sort by left end 可以迅速确认每个partition最小左边界 (每个partition第一个遇到的interval), 这样, 只需要在loop中不断找partition的最大右边界就行。
 
 ## 找规律
