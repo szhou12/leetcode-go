@@ -19,6 +19,13 @@
 
 * 跳过重复元素，匹配subsequence: [925. Long Pressed Name](https://leetcode.com/problems/long-pressed-name/description/)
 
+### X-Sum
+* [1. Two Sum](https://leetcode.com/problems/two-sum/)
+* [15. 3Sum](https://leetcode.com/problems/3sum/)
+* [18. 4Sum](https://leetcode.com/problems/4sum/)
+* [454. 4Sum II](https://leetcode.com/problems/4sum-ii/)
+
+
 ## 解法归类
 ### Subarray 类型
 

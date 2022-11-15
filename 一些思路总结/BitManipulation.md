@@ -1,4 +1,4 @@
-# Bit Operation
+# Bit Manipulation
 
 # n的二进制表示中1的个数
 * `n &= (n-1)`
