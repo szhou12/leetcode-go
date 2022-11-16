@@ -9,6 +9,10 @@
 
 * 求满足条件的Subarray个数: [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/)
 
+* 有翻转次数找最长连续1: [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/description/)
+    * 总体思路: 固定一个边界，不停延伸另一个边界至最长
+    * i.e. 固定左边界，不停延伸右边界至最长
+
 ### 一个数组 + 双指针相向而行
 
 * 判断唯一山峰，左右两边单调递增: [941. Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/description/)
