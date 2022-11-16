@@ -44,11 +44,24 @@
 * 具体实现的思路:
     * 如何确定左右边界？
     * 用快慢指针
-    * 固定一个边界，另一个边界不停探索至极限
+    * **固定一个边界，另一个边界不停探索至极限**
     * 到达极限后，收缩固定的那个边界，另一个边界再不停探索至极限
     * 循环往复，直至出界
+
+* 实现的注意事项:
+    * 如果选择的实现是：固定左边界，右边界不停探索
+        1. 检查右边界**出界**的情况
+        2. 检查左边界**超过**右边界的情况
 
 * 求满足条件的Subarray个数: [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/)
     * 固定左边界，右边界不停探索至极限
     * 到达极限后，收缩左边界(右移一位)，右边界再探索至极限
     * **注意！！！** 探索前先检查 slow超过fast的情况
+
+### Sliding Window
+* **解题思路**: **吃了吐**
+* i.e. 分别分析清楚: **吃进去**的各种情况，**吐出来**的各种情况
+
+* 最多满意客户: [1052. Grumpy Bookstore Owner](https://leetcode.com/problems/grumpy-bookstore-owner/description/)
+
+* 找子串位置: [28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/)
