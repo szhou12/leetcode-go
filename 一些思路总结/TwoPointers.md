@@ -22,6 +22,9 @@
 ### X-Sum
 * [1. Two Sum](https://leetcode.com/problems/two-sum/)
 * [15. 3Sum](https://leetcode.com/problems/3sum/)
+    * 第一步: 排序
+    * 第二步: 对每个元素，找符合的two-sum
+* [16. 3Sum Closest](https://leetcode.com/problems/3sum-closest/)
 * [18. 4Sum](https://leetcode.com/problems/4sum/)
 * [454. 4Sum II](https://leetcode.com/problems/4sum-ii/)
 

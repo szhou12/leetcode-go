@@ -10,7 +10,7 @@ func threeSum(nums []int) [][]int {
 
 	var res [][]int
 
-	// Step 2: 对每个元素，找符合的two-sum
+	// Step 2: 对每个元素i，找符合的two-sum
 	// 1,   2,   2,   2,   3,   4
 	// i-->
 	//    left-->           <--right
