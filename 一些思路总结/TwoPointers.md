@@ -61,8 +61,12 @@
 ### Sliding Window
 * **解题思路**: **吃了吐**
 * i.e. 分别分析清楚: **吃进去**的各种情况，**吐出来**的各种情况
+* **Sliding Window 题型**可分为两大类:
+    1. **固定的窗口**长度
+    2. **可变的窗口**长度
 
 * **滑动窗口算法框架**
+    * 四大模版题: 0003, 0076, 0438, 0567
 ```
 func slidingWindow(s string) {
     window := make(map[byte]int)
@@ -88,7 +92,17 @@ func slidingWindow(s string) {
 }
 ```
 
+#### 固定的窗口长度
 
 * 最多满意客户: [1052. Grumpy Bookstore Owner](https://leetcode.com/problems/grumpy-bookstore-owner/description/)
 
 * 找子串位置: [28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/)
+
+* 找到字符串中所有字母异位词: [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/description/)
+
+#### 可变的窗口长度
+
+* 无重复字符的最长子串: [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)
+
+* 最小覆盖子串: [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/)
+

@@ -22,7 +22,7 @@ func minWindow(s string, t string) string {
 			}
 		}
 
-		for count == len(need) {
+		for count == len(need) { // 开始收缩左边界的条件: 需要的字符及相应的次数都包括了
 			// update result
 			if right-left < length {
 				length = right - left
