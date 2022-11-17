@@ -62,6 +62,33 @@
 * **解题思路**: **吃了吐**
 * i.e. 分别分析清楚: **吃进去**的各种情况，**吐出来**的各种情况
 
+* **滑动窗口算法框架**
+```
+func slidingWindow(s string) {
+    window := make(map[byte]int)
+    left, right := 0, 0
+    for left < len(s) {
+        // 吃
+        rightElement := s[right] // rightElement 是将移入窗口的字符
+        right++ // 增大窗口
+        [...] // 进行窗口内数据的一系列更新
+
+        /*** debug 输出的位置 ***/
+        // 注意是左闭右开
+        fmt.Println("window: [" + left + ", " right + ")")
+
+        // 吐
+        // 判断左侧窗口是否要收缩
+        for (window needs shrink) {
+            leftElement := s[left] // leftElement 是即将移出窗口的字符
+            left-- // 缩小窗口
+            [...] // 进行窗口内数据的一系列更新
+        }
+    }
+}
+```
+
+
 * 最多满意客户: [1052. Grumpy Bookstore Owner](https://leetcode.com/problems/grumpy-bookstore-owner/description/)
 
 * 找子串位置: [28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/)
