@@ -68,8 +68,7 @@ func slidingWindow(s string) {
     window := make(map[byte]int)
     left, right := 0, 0
     for left < len(s) {
-        // 吃
-        rightElement := s[right] // rightElement 是将移入窗口的字符
+        rightElement := s[right] // 吃: rightElement 是将移入窗口的字符
         right++ // 增大窗口
         [...] // 进行窗口内数据的一系列更新
 
@@ -77,13 +76,14 @@ func slidingWindow(s string) {
         // 注意是左闭右开
         fmt.Println("window: [" + left + ", " right + ")")
 
-        // 吐
         // 判断左侧窗口是否要收缩
         for (window needs shrink) {
-            leftElement := s[left] // leftElement 是即将移出窗口的字符
+            leftElement := s[left] // 吐: leftElement 是即将移出窗口的字符
             left-- // 缩小窗口
             [...] // 进行窗口内数据的一系列更新
         }
+
+        [update result (can be anywhere in the loop)]
     }
 }
 ```
