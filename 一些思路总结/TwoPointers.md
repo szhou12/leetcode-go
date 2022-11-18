@@ -100,6 +100,8 @@ func slidingWindow(s string) {
 
 * 找到字符串中所有字母异位词: [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/description/)
 
+* 字符串的排列子串: [567. Permutation in String](https://leetcode.com/problems/permutation-in-string/description/)
+
 #### 可变的窗口长度
 
 * 无重复字符的最长子串: [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)

@@ -16,14 +16,14 @@ func maxSatisfied(customers []int, grumpy []int, minutes int) int {
 	// 吃是从index=0开始，吐是从可以吐的时候才开始吐
 	// sliding window 不用非得从 [0, 0+minutes]处才开始
 	// 因为一开始没有吃满window size个的情况, 每多吃一个, sum是non-decreasing的, 所以能保证正确性
-	for i := 0; i < len(customers); i++ {
+	for right := 0; right < len(customers); right++ {
 		// 吃
-		if grumpy[i] == 1 {
-			sum += customers[i]
+		if grumpy[right] == 1 {
+			sum += customers[right]
 		}
 		// 吐
-		if i-minutes >= 0 && grumpy[i] == 1 {
-			sum -= customers[i]
+		if right-minutes >= 0 && grumpy[right] == 1 {
+			sum -= customers[right]
 		}
 		res = max(res, sum)
 	}
