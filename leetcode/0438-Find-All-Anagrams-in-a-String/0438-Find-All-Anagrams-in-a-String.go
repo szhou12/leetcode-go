@@ -28,7 +28,9 @@ func findAnagrams(s string, p string) []int {
 			}
 		}
 
-		for right-left >= len(p) { // 开始收缩左边界的条件: [left, right) 定长 len(p) (ie. 上限不能超过len(p))
+		// 开始收缩左边界的条件: [left, right) 定长 len(p) (ie. 上限不能超过len(p))
+		// 这里看似是 for-loop，其实只会有 len(p) (进loop) 和 len(p)-1 (出loop) 这两种情况
+		for right-left >= len(p) {
 			// update result
 			if count == len(need) {
 				res = append(res, left)

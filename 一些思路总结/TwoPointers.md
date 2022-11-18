@@ -58,6 +58,12 @@
     * 到达极限后，收缩左边界(右移一位)，右边界再探索至极限
     * **注意！！！** 探索前先检查 slow超过fast的情况
 
+* 有翻转次数找最长连续1: [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/description/)
+    * 固定左边界，不停延伸右边界至最长
+
+* 有翻转次数找最长连续T/F: [2024. Maximize the Confusion of an Exam](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/description/)
+    * 固定左边界，不停延伸右边界至最长
+
 ### Sliding Window
 * **解题思路**: **吃了吐**
 * i.e. 分别分析清楚: **吃进去**的各种情况，**吐出来**的各种情况
@@ -71,10 +77,10 @@
 func slidingWindow(s string) {
     window := make(map[byte]int)
     left, right := 0, 0
-    for left < len(s) {
+    for right < len(s) {
         rightElement := s[right] // 吃: rightElement 是将移入窗口的字符
         right++ // 增大窗口
-        [...] // 进行窗口内数据的一系列更新
+        [...] // A: 吃进新元素后, 进行窗口内数据的一系列更新
 
         /*** debug 输出的位置 ***/
         // 注意是左闭右开
@@ -84,12 +90,14 @@ func slidingWindow(s string) {
         for (window needs shrink) {
             leftElement := s[left] // 吐: leftElement 是即将移出窗口的字符
             left-- // 缩小窗口
-            [...] // 进行窗口内数据的一系列更新
+            [...] // B: 吐出旧元素后, 进行窗口内数据的一系列更新
         }
 
         [update result (can be anywhere in the loop)]
     }
 }
+
+// 注意！A段 与 B段 写法一般是镜面对称的
 ```
 
 #### 固定的窗口长度
