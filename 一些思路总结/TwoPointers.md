@@ -45,7 +45,10 @@
 #### 两套模版
 
 * **模版Fix**
-    * 四大模版题: 0003, 0076, 0438, 0567
+    * 难点主要是以下几点:
+        1. 吃进新元素/吐出旧元素 时，如何更新窗口内数据？一旦确定，吃和吐是镜面对称的，实现起来就很容易
+        2. 更新result的条件是什么？在哪里更新result？
+        3. 窗口收缩的条件是什么？(如果是定长窗口，比较容易，一般是维护定长)
 ```go
 func slidingWindow(s string) {
     window := make(map[byte]int)
@@ -53,7 +56,7 @@ func slidingWindow(s string) {
     for right < len(s) {
         rightElement := s[right] // 吃: rightElement 是将移入窗口的字符
         right++ // 增大窗口
-        [...] // A: 吃进新元素后, 进行窗口内数据的一系列更新
+        [...] // A: 吃进新元素后, 进行窗口内数据的一系列更新 (与 B段 写法一般是镜面对称的)
 
         /*** debug 输出的位置 ***/
         // 注意是左闭右开
@@ -66,19 +69,17 @@ func slidingWindow(s string) {
 
             leftElement := s[left] // 吐: leftElement 是即将移出窗口的字符
             left-- // 缩小窗口
-            [...] // B: 吐出旧元素后, 进行窗口内数据的一系列更新
+            [...] // B: 吐出旧元素后, 进行窗口内数据的一系列更新 (与 A段 写法一般是镜面对称的)
         }
 
         [update result (can be anywhere in the loop)] (也有可能在这里 update result)
     }
 }
-
-// 注意！A段 与 B段 写法一般是镜面对称的
 ```
 
 * **模版Flex**
     * 核心思路: 固定左边界，右边界不停探索至极限
-```
+```go
 func slidingWindow(s string) int {
     window := make(map[byte]int)
     right := 0
@@ -108,6 +109,7 @@ func slidingWindow(s string) int {
 #### Sliding Window 长度固定
 
 * **模版Fix** 比较适合解决 Sliding Window 为定长的题目 (容易写出正确的code), 所以 定长的题目 优先考虑 **模版Fix**.
+    * **模版Fix** 也可以解决 长度可变 的题目，但是实际操作中实现上不容易保证正确
 
 * 最多满意客户: [1052. Grumpy Bookstore Owner](https://leetcode.com/problems/grumpy-bookstore-owner/description/)
 
@@ -116,6 +118,11 @@ func slidingWindow(s string) int {
 * 找到字符串中所有字母异位词: [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/description/)
 
 * 字符串的排列子串: [567. Permutation in String](https://leetcode.com/problems/permutation-in-string/description/)
+
+* 定长为k的subarray最大和: [2461. Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/description/)
+
+
+
 
 #### Sliding Window 长度可变 == Subarray 类型
 
