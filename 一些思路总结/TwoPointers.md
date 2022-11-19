@@ -98,6 +98,7 @@ func slidingWindow(s string) int {
         // 吐
 		leftElement := s[left]
         [...] // B: 吐出旧元素后, 进行窗口内数据的一系列更新
+        leftElement := s[left]
 
 	}
 	return res
