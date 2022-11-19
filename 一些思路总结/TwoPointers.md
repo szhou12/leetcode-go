@@ -83,6 +83,21 @@ func slidingWindow(s string) int {
 	window := make(map[byte]bool)
 	right := 0
 	res := 0
+    for left := 0; left < len(s); left++ {
+        // 固定左边界，延伸右边界至极限
+        // 至极限条件:  (right未出界) && (right依然可延伸的条件)
+        for right < len(s) && [依然可延伸的条件] {
+            rightElement := s[right]
+            [...] // A: 吃进新元素后, 进行窗口内数据的一系列更新
+            right++
+        }
+
+        [update result] // left收缩前 update result
+
+        // 吐
+        leftElement := s[left]
+        [...] // B: 吐出旧元素后, 进行窗口内数据的一系列更新
+    }
 
 	for left := 0; left < len(s); left++ {
         // 固定左边界，延伸右边界至极限
