@@ -46,7 +46,7 @@
 
 * **模版Fix**
     * 四大模版题: 0003, 0076, 0438, 0567
-```
+```go
 func slidingWindow(s string) {
     window := make(map[byte]int)
     left, right := 0, 0
@@ -107,7 +107,7 @@ func slidingWindow(s string) int {
 
 #### Sliding Window 长度固定
 
-* **模版Fix** 比较适合解决 Sliding Window 为定长的题目, 所以 定长的题目 优先考虑 **模版Fix**.
+* **模版Fix** 比较适合解决 Sliding Window 为定长的题目 (容易写出正确的code), 所以 定长的题目 优先考虑 **模版Fix**.
 
 * 最多满意客户: [1052. Grumpy Bookstore Owner](https://leetcode.com/problems/grumpy-bookstore-owner/description/)
 
@@ -119,7 +119,7 @@ func slidingWindow(s string) int {
 
 #### Sliding Window 长度可变 == Subarray 类型
 
-* **模版Flex** 比较适合解决 Sliding Window 为长度可变的题目, 所以 长度可变的题目 优先考虑 **模版Flex**.
+* **模版Flex** 比较适合解决 Sliding Window 为长度可变的题目 (容易写出正确的code), 所以 长度可变的题目 优先考虑 **模版Flex**.
 
 * Subarray 类型
     * 一般像是求满足条件的subarray个数
@@ -149,7 +149,7 @@ func slidingWindow(s string) int {
     * 固定左边界，不停延伸右边界至最长
 
 * 有翻转次数找最长连续T/F: [2024. Maximize the Confusion of an Exam](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/description/)
-    * 固定左边界，不停延伸右边界至最长
+    * 做两遍 *LC 1004*
 
 * 无重复字符的最长子串: [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)
 

@@ -1,7 +1,7 @@
 package leetcode
 
-// Optimized Solution:
 // 模版Flex
+// Optimized Solution:
 // 优化: 每一轮挡板l, 挡板r不从挡板l处重新开始, 而是从上一轮r停留处继续往前探
 func longestOnes(nums []int, k int) int {
 	res := 0
