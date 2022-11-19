@@ -1,5 +1,6 @@
 package leetcode
 
+// 模版Flex
 func maxConsecutiveAnswers(answerKey string, k int) int {
 	convertTs := maxConversion(answerKey, k, 'T')
 	convertFs := maxConversion(answerKey, k, 'F')

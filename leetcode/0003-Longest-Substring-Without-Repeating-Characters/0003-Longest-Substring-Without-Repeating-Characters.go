@@ -1,6 +1,6 @@
 package leetcode
 
-// 写法一: 固定左边界，右边界延伸至最长
+// 写法一: 模版Flex
 func lengthOfLongestSubstring(s string) int {
 	window := make(map[byte]bool)
 	right := 0
@@ -19,8 +19,8 @@ func lengthOfLongestSubstring(s string) int {
 	return res
 }
 
-// 写法二: 套用 模版二
-func lengthOfLongestSubstring_template(s string) int {
+// 写法二: 模版Fix
+func lengthOfLongestSubstring_fix(s string) int {
 	window := make(map[byte]int)
 	left, right := 0, 0
 

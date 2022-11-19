@@ -87,7 +87,7 @@ func slidingWindow(s string) int {
     for left := 0; left < len(s); left++ {
         // 固定左边界，延伸右边界至极限
         // 至极限条件:  (right未出界) && (right依然可延伸的条件)
-        for right < len(s) && [依然可延伸的条件] {
+        for right < len(s) && [right依然可延伸的条件] {
             rightElement := s[right]
             [...] // A: 吃进新元素后, 进行窗口内数据的一系列更新
             right++
@@ -118,6 +118,8 @@ func slidingWindow(s string) int {
 * 字符串的排列子串: [567. Permutation in String](https://leetcode.com/problems/permutation-in-string/description/)
 
 #### Sliding Window 长度可变 == Subarray 类型
+
+* **模版Flex** 比较适合解决 Sliding Window 为长度可变的题目, 所以 长度可变的题目 优先考虑 **模版Flex**.
 
 * Subarray 类型
     * 一般像是求满足条件的subarray个数
