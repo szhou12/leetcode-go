@@ -93,12 +93,17 @@ func slidingWindow(s string) int {
             right++
 		}
 
+        for right < len(s) && [依然可延伸的条件] {
+            rightElement := s[right]
+            [...] // A: 吃进新元素后, 进行窗口内数据的一系列更新
+            right++
+        }
+
         [update result] // left收缩前 update result
 
         // 吐
-		leftElement := s[left]
-        [...] // B: 吐出旧元素后, 进行窗口内数据的一系列更新
         leftElement := s[left]
+        [...] // B: 吐出旧元素后, 进行窗口内数据的一系列更新
 
 	}
 	return res
