@@ -80,9 +80,9 @@ func slidingWindow(s string) {
     * 核心思路: 固定左边界，右边界不停探索至极限
 ```
 func slidingWindow(s string) int {
-	window := make(map[byte]bool)
-	right := 0
-	res := 0
+    window := make(map[byte]int)
+    right := 0
+    res := 0
 
     for left := 0; left < len(s); left++ {
         // 固定左边界，延伸右边界至极限
@@ -99,8 +99,9 @@ func slidingWindow(s string) int {
         leftElement := s[left]
         [...] // B: 吐出旧元素后, 进行窗口内数据的一系列更新
     }
-    
-	return res
+
+    return res
+
 }
 ```
 
