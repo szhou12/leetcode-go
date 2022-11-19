@@ -13,9 +13,12 @@ func longestOnes(nums []int, k int) int {
 			if nums[r] == 0 {
 				counter--
 			}
-			res = max(res, r-l+1)
+			// res = max(res, r-l+1)
 			r++
 		} // 退出for-loop: 说明在当前左边界l下, 已到达最远右边界; 可以前进左边界l进入下一轮, 尝试新的最长了
+
+		// update result
+		res = max(res, r-l)
 
 		// 进入下一轮前，如果左边界l吐出来0，说明在下一轮我们可以多一次flip
 		if nums[l] == 0 {
