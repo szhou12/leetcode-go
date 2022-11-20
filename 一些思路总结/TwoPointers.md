@@ -162,3 +162,6 @@ func slidingWindow(s string) int {
 
 * 最小覆盖子串: [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/)
 
+* 最小变换使数组变连续: [2009. Minimum Number of Operations to Make Array Continuous](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous/description/)
+    * 预处理: 先去重，再增序排列
+
