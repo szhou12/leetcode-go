@@ -24,12 +24,13 @@ func minOperations(nums []int) int {
 	res := math.MaxInt
 	for left := 0; left < len(arr); left++ {
 		for right < len(arr) && arr[right]-arr[left]+1 <= N {
-			// update result: 在loop里更新result 要+1
+			// update result: 在loop里更新result, 要+1
 			// res = min(res, N-(right-left+1))
 
 			right++
 		}
-		// update result: 在loop外更新result 不用+1, 因为是[left, right)
+		// update result: 在loop外更新result, 不用+1
+		// 因为跳出loop时, [left, right) 是在当前左边界下，能到达的最远右边界的下一个
 		res = min(res, N-(right-left))
 	}
 
