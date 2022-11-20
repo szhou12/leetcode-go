@@ -29,3 +29,5 @@ Time complexity = $O(n)$
 ## Resource
 
 [【每日一题】713. Subarray Product Less Than K, 9/19/2020](https://www.youtube.com/watch?v=WOSWdl4Fl00&ab_channel=HuifengGuan)
+
+[halfrost/LeetCode-Go](https://github.com/halfrost/LeetCode-Go/tree/master/leetcode/0713.Subarray-Product-Less-Than-K)
