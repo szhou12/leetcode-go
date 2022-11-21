@@ -153,6 +153,11 @@ func slidingWindow(s string) int {
     * 到达极限后，收缩左边界(右移一位)，右边界再探索至极限
     * **注意！！！** 探索前先检查 slow超过fast的情况
 
+* 求满足条件的二进制Subarray个数： [930. Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum/description/)
+    * 需要检查右边界**出界**的情况
+    * 固定左边界，右边界不停探索至极限
+    * 预处理: 每个元素后面跟多少个0
+
 * 有翻转次数找最长连续1: [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/description/)
     * 固定左边界，不停延伸右边界至最长
 
