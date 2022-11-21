@@ -148,6 +148,7 @@ func slidingWindow(s string) int {
 
 
 * 求满足条件的Subarray个数: [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/)
+    * 不是很常规的题, 因为右边界延伸过程中的都是所求, 要注意处理右边界延伸的初始状态下就不满足要求的情况 (会导致左边界**超过**右边界)
     * 固定左边界，右边界不停探索至极限
     * 到达极限后，收缩左边界(右移一位)，右边界再探索至极限
     * **注意！！！** 探索前先检查 slow超过fast的情况
