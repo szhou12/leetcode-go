@@ -41,3 +41,5 @@ func max(a int, b int) int {
 	}
 	return b
 }
+
+// Method 2: Sliding Window
