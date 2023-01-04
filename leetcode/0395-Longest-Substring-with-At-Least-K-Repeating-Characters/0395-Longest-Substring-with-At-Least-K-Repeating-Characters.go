@@ -43,6 +43,6 @@ func max(a int, b int) int {
 }
 
 // Method 2: Sliding Window
-func longestSubstring_sliding(s string, k int) int {
+func longestSubstring_sliding_window(s string, k int) int {
 	return -1
 }
