@@ -69,7 +69,7 @@ func slidingWindow(s string) {
 
             leftElement := s[left] // 吐: leftElement 是即将移出窗口的字符
             left-- // 缩小窗口
-            [...] // B: 吐出旧元素后, 进行窗口内数据的一系列更新 (与 A段 写法一般是镜面对称的)
+            [...] // B: 吐出旧元素后, 进行窗口内数据的一系列清理和更新 (与 A段 写法一般是镜面对称的)
         }
 
         [update result (can be anywhere in the loop)] (也有可能在这里 update result)
@@ -98,7 +98,7 @@ func slidingWindow(s string) int {
 
         // 吐
         leftElement := s[left]
-        [...] // B: 吐出旧元素后, 进行窗口内数据的一系列更新
+        [...] // B: 吐出旧元素后, 进行窗口内数据的一系列清理和更新
     }
 
     return res
