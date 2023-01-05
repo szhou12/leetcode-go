@@ -171,3 +171,6 @@ func slidingWindow(s string) int {
 * 最小变换使数组变连续: [2009. Minimum Number of Operations to Make Array Continuous](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous/description/)
     * 预处理: 先去重，再增序排列
 
+* 每个字母至少k个的最长子串: [395. Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/)
+    * 为防止右边界无限延伸，需要额外增加一个条件: sliding window 内 固定只框住 `m` 个不同的字母 ($m = 1 \cdots 26$)
+
