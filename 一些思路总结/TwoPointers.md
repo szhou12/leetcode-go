@@ -13,6 +13,10 @@
     * 总体思路: 固定一个边界，不停延伸另一个边界至最长
     * i.e. 固定左边界，不停延伸右边界至最长
 
+* 找差值为K的所有不同pair: [532. K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array/description/)
+    * 结合了 **sort**
+    * 再进行两个指针同向而行
+
 ### 一个数组 + 双指针相向而行
 
 * 判断唯一山峰，左右两边单调递增: [941. Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/description/)
