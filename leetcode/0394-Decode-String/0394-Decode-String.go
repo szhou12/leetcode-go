@@ -9,7 +9,7 @@ func decodeString(s string) string {
 	dict := make([]byte, 0)
 	nums := make([]int, 0)
 
-	for i := 0; i < len(s); i++ {
+	for i := 0; i < len(s); i++ { // O(n)
 		char := s[i]
 
 		if isNumber(char) {
