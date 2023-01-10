@@ -42,3 +42,7 @@ for left < right {...}
 * 此类题都要在最后注意Post-processing 找不到的情况
 
 * 找最小的大于Target的元素 [744. Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
+
+## 用BS来猜答案
+
+* 从不能整除的元素中找最小可能的最大值: [2513. Minimize the Maximum of Two Arrays](https://leetcode.com/problems/minimize-the-maximum-of-two-arrays/description/)
