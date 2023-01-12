@@ -43,6 +43,19 @@ for left < right {...}
 
 * 找最小的大于Target的元素 [744. Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
 
-## 用BS来猜答案
+## Binary Search 猜答案
+
+**算法题的解题思路可以概括为两大类：**
+1. 正面硬刚：用合适的算法 (DP, DFS, BFS, etc.) 直接解决
+2. 二分搜值：猜出答案, 每一轮看看是猜大了还是猜小了？以达到逼近最终答案的目的
+    * 此法适用于 题目要求 return single value (scalar) 并且 涉及 max/min value
+
+**猜答案的具体步骤**
+1. 确定搜索空间：也就是确定Binary Search的下界/左边界 和 上界/右边界
+    * 因为是在搜索空间里猜答案，所以 左/右边界的物理意义通常就是 return值本身 (i.e. 也就是说，不是index而是value本身)
+2. 确定收敛条件：什么条件让我们确定可以舍弃掉一半的空间？舍弃掉小的那一半还是大的那一半？包不包括边界的值？
+
+* 非递减矩阵中找第K小的元素: [378. Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/)
+    * 用 max heap 也可以解，但是 Binary Search 更效率
 
 * 从不能整除的元素中找最小可能的最大值: [2513. Minimize the Maximum of Two Arrays](https://leetcode.com/problems/minimize-the-maximum-of-two-arrays/description/)
