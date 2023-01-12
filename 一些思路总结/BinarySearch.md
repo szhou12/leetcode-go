@@ -55,6 +55,7 @@ for left < right {...}
     * 因为是在搜索空间里猜答案，所以 左/右边界的物理意义通常就是 return值本身 (i.e. 也就是说，不是index而是value本身)
 2. 确定收敛条件：什么条件让我们确定可以舍弃掉一半的空间？舍弃掉小的那一半还是大的那一半？包不包括边界的值？
 
+**经典例题**
 * 非递减矩阵中找第K小的元素: [378. Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/)
     * 用 max heap 也可以解，但是 Binary Search 更效率
 
