@@ -8,6 +8,9 @@
 
 * 最小花费爬楼梯: [746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/description/)
 
+
+
+
 ## 买卖股票
 
 * [188. Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)
@@ -33,6 +36,9 @@
     * DP: `k= +infinity`
     * 将`fee`融入状态转移方程。即，当天如果要买入，则需要额外减掉`fee`
 
+
+
+
 ## 抢劫房子
 * [198. House Robber](https://leetcode.com/problems/house-robber/)
 
@@ -40,6 +46,9 @@
 
 * [337. House Robber III](https://leetcode.com/problems/house-robber-iii/)
     * 树形DP: post-order traversal + DP
+
+
+
 
 ## 背包类型题
 * [279. Perfect Squares](https://leetcode.com/problems/perfect-squares/)
@@ -63,6 +72,9 @@
     * 二维DP
     * 倒序遍历背包容量!!!
 
+
+
+
 ## 回文串
 
 * [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
@@ -74,6 +86,9 @@
 
 * [132. Palindrome Partitioning II](https://leetcode.com/problems/palindrome-partitioning-ii/)
     * 两步 DP
+
+
+
 
 ## Subarray 子数组类型题
 
@@ -138,3 +153,19 @@
 * Edit Distance: [72. Edit Distance](https://leetcode.com/problems/edit-distance/)
 * 只允许Delete转换两个string: [583. Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/)
 * 不同的子序列数量: [115. Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)
+
+
+
+
+
+## 区间型 DP (interval DP)
+* 猜测数高了还是低了II: [375. Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/)
+    * **二维DP**: 外层循环length, 内层循环starting position
+
+
+
+
+
+## DP Memoization (Recursion + DP)
+* 猜测数高了还是低了II: [375. Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/)
+    * 用 DP memo 来剪枝

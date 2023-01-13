@@ -14,11 +14,17 @@
 
 * [105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 
+
+
+
 ### **构造 Binary Search Tree**
 
 * Convert ascending array to BST: [108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
 
 * 平衡 BST: [1382. Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree/description/)
+
+
+
 
 ## 找到所有 Unique Binary Search Tree
 
@@ -26,11 +32,17 @@
 
 * DP to find #: [96. Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)
 
+
+
+
 ## Complete Binary Tree 的性质
 
 * Complete Binary Tree一定会有一个 full binary subtree (满二叉树)
 
 * [222. Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/)
+
+
+
 
 ## 找Tree的所有路径
 
@@ -40,6 +52,9 @@
         * **注意！！！**在Go语言的实现中，回溯反而不能写出来，否则会出错。
         * 我的理解是：Go里的append操作相当于是一个copy (ie. 切片的地址变了)，所以下一层返回当前层时，当前层的path不会包含下一层的信息 (因为下一层的path是另一个地址的)
     * 据说是Google面试题
+
+
+
 
 ## Post-Order Traversal 需要脑筋拐个弯的题
 
@@ -64,6 +79,9 @@
 * Set Camera: [968. Binary Tree Cameras](https://leetcode.com/problems/binary-tree-cameras/description/)
     * 明确划分四大状态，以及伴生的16 cases
     * 用四个优先级把16 cases分门别类
+
+
+
 
 
 ## In-Order Traversal

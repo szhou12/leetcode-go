@@ -39,7 +39,7 @@ for left < right {...}
 
 ## Find Closest Element Greater/Smaller Than Target
 
-* 此类题都要在最后注意Post-processing 找不到的情况
+* 此类题都要在最后注意 Post-process 找不到的情况
 
 * 找最小的大于Target的元素 [744. Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
 
