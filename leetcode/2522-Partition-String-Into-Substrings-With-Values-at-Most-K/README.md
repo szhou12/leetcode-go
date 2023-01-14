@@ -10,7 +10,7 @@ Base Case: `DP[0] = 0` because `s[0]` represents empty string
 
 Recurrence (naive):
 
-`DP[i] = 1 + min(DP[j-1])` for $1 \leq j < i$ and $s[j:i] \leq k$
+`DP[i] = 1 + min(DP[j-1])` for $1 \leq j < i $ and $s[j:i] \leq k$
 
 (注意：这种写法需要$O(n^2)$，题目给出的量级会超时。需要通过观察`DP[i]`的性质，优化Recurrence)
 
