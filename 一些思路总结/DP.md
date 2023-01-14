@@ -11,6 +11,17 @@
 
 
 
+## 基础题 II
+
+* 有限制条件的切字符串: [2522. Partition String Into Substrings With Values at Most K](https://leetcode.com/problems/partition-string-into-substrings-with-values-at-most-k/description/)
+    * 切东西类型的DP题
+    * 需要通过总结 `DP[i]` 的规律性质来优化算法的 time complexity
+
+
+
+
+
+
 ## 买卖股票
 
 * [188. Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)

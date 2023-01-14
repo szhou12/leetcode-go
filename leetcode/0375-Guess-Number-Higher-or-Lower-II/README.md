@@ -38,7 +38,7 @@ Space complexity = $O(n^2)$
 
 Top-down: [【递归 + 动态规划】leecode 375 Guess Number Higher or Lower II](https://www.youtube.com/watch?v=YTGHiGH_oTg&ab_channel=guoguowg)
 
-Bottom-up: [【每日一题】375. Guess Number Higher or Lower II, 04/27/2019](https://www.youtube.com/watch?v=VfJPDNG0nYM&ab_channel=HuifengGuan), [wisdompeak/LeetCode](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/375.Guess-Number-Higher-or-Lower-II)
+Bottom-up: [【每日一题】375. Guess Number Higher or Lower II, 04/27/2019](https://www.youtube.com/watch?v=VfJPDNG0nYM&ab_channel=HuifengGuan); [wisdompeak/LeetCode](https://github.com/wisdompeak/LeetCode/tree/master/Dynamic_Programming/375.Guess-Number-Higher-or-Lower-II)
 
 Time complexity analysis: [DP and memo solution explanation](https://leetcode.com/problems/guess-number-higher-or-lower-ii/solutions/197981/dp-and-memo-solution-explanation/?orderBy=most_votes&page=3)
 
