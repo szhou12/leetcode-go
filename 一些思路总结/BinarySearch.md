@@ -27,6 +27,9 @@ for left < right {...}
 ## 经典题
 * Classic Binary Search: [704. Binary Search](https://leetcode.com/problems/binary-search/)
 
+
+
+
 ## Find First Occurrence / Last Occurrence
 
 [34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
@@ -37,11 +40,17 @@ for left < right {...}
 * 情况二: target 不在数组范围中，target 过于大，在**右边界**以外，e.g. 数组{3, 4, 5}，target为6
 * 情况三: target 在数组范围中，只是数组中不存在. e.g. 数组{3, 6, 7}, target为5
 
+
+
+
 ## Find Closest Element Greater/Smaller Than Target
 
 * 此类题都要在最后注意 Post-process 找不到的情况
 
 * 找最小的大于Target的元素 [744. Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
+
+
+
 
 ## Binary Search 猜答案
 
@@ -56,7 +65,14 @@ for left < right {...}
 2. 确定收敛条件：什么条件让我们确定可以舍弃掉一半的空间？舍弃掉小的那一半还是大的那一半？包不包括边界的值？
 
 **经典例题**
+
+### 猜测 K-th Element
 * 非递减矩阵中找第K小的元素: [378. Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/)
     * 用 max heap 也可以解，但是 Binary Search 更效率
 
+* 找k个最小和: [373. Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/description/)
+    * 用 max heap 会超时！！！只能 Binary Search 提高效率
+
+
+### 其他
 * 从不能整除的元素中找最小可能的最大值: [2513. Minimize the Maximum of Two Arrays](https://leetcode.com/problems/minimize-the-maximum-of-two-arrays/description/)
