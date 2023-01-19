@@ -2,6 +2,8 @@
 
 ## Difference Array (差分数组)
 
+### 1-D Difference Array
+
 * 差分数组: `diff[i] = nums[i] - nums[i-1]`, `diff[0] = nums[0] - 0`
 
 * **规律1** 对差分数组求第i个元素的前缀和:
@@ -37,10 +39,10 @@ diff: 1,   2,  2, -1,  4
 
 ### 例题
 
-#### 一维差分
+#### 一维差分 (1-D Difference Array)
 
 * 航班预订统计: [1109. Corporate Flight Bookings](https://leetcode.com/problems/corporate-flight-bookings/description/)
 
-#### 二维差分
+#### 二维差分 (2-D Difference Array)
 
 * 子矩阵加1: [2536. Increment Submatrices by One](https://leetcode.com/problems/increment-submatrices-by-one/)
