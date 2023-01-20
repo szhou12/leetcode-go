@@ -75,6 +75,9 @@ for left < right {...}
 * 非递减矩阵中找第K小的元素: [378. Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/)
     * 用 max heap 也可以解，但是 Binary Search 更效率
 
+* 乘法表中找第K小的元素: [668. Kth Smallest Number in Multiplication Table](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/description/)
+
+
 * 找k个最小和: [373. Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/description/)
     * 用 max heap 会超时！！！只能 Binary Search 提高效率
 
