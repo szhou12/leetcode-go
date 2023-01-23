@@ -20,6 +20,8 @@ func kthSmallestProduct(nums1 []int, nums2 []int, k int64) int64 {
 	return int64(left)
 }
 
+func countLessOrEqual(nums1 []int, nums2 []int, mid int) int {}
+
 // find smallest index j s.t. nums[j] >= target
 func lowerBound(nums []int, target int) int {
 	left := 0
