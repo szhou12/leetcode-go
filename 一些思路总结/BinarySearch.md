@@ -46,7 +46,46 @@ for left < right {...}
 
 ## Find Closest Element Greater/Smaller Than Target
 
-* 此类题都要在最后注意 Post-process 找不到的情况
+* 此类题都要在最后注意 Post-process 找不到的情况:
+    1. target > 数组中所有值
+    2. target < 数组中所有值
+    3. target 在数组范围中，只是数组中不存在该值
+
+* **模版**
+
+**Assume input array non-decreasing order:**
+
+1. `lowerBound()`: Find the first index whose element in the array has the value >= target (It follows the same concept as `lower_bound()` method in C++)
+    1. 情况一: target 不在数组范围中，target 小于数组中所有元素，在**左边界**以外 $\Rightarrow $ 返回数组的第一个元素的index
+    2. 情况二: target 不在数组范围中，target 大于数组中所有元素，在**右边界**以外 $\Rightarrow $ 返回数组的最后一个元素的index+1
+    3. 情况三: target 在数组范围中，只是数组中不存在 $\Rightarrow $ 返回数组中第一个 > target的元素的index
+    4. 情况四: target 在数组范围中，并且数组中存在  $\Rightarrow $ 返回数组中第一个 = target的元素的index
+```go
+func lowerBound(nums []int, target int) int {
+    left := 0
+    right := len(nums) - 1
+
+    for left < right {
+        mid := left + (right - left) / 2
+        if nums[mid] < target {
+            left = mid + 1
+        } else {
+            right = mid
+        }
+    }
+
+    // 返回left: 因为left一定不会出界 (一定指向array中的某一个元素)
+    // post-processing
+    if nums[left] == target { // 情况四
+        return left
+    } else if nums[left] > target { // 情况一 + 情况三
+        return left
+    } else { // 情况二
+        return left + 1
+    }
+ }
+
+```
 
 * 找最小的大于Target的元素: [744. Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
 
