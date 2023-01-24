@@ -11,17 +11,17 @@ for left < right {...}
 * 根据上述的循环条件，就要自己推导**当只剩两个元素时**, 1. 死循环的情况, 要针对着更改计算 `mid` 的方式; 2. 左、右指针出界的情况，要针对着选择不会出界的那个指针.
     1. `mid = left + (right - left)/2`
         1. `mid` 在两个元素中靠左
-            * `[0, 1]` 中, `mid`会选择 `0` 指向的元素
-            * 收敛时，若有 `left = mid`, 则**会造成死循环**
+            * `[0 (left), 1 (right)]` 中, `mid`会选择 `0 (left)` 指向的元素
+            * 收敛时，若有 `left = mid`, 则**会造成死循环** (因为上一轮`left`和本轮的`left`都在同一个位置没有移动)
         2. 收敛时，若有 `right = mid - 1`, 则`right`**会出现出界**的情况， 
-            * `[0, 1]` 中, `right`会变成`mid-1=-1` 而出界
+            * `[0, 1]` 中, `right`会变成`mid-1=-1` 而出界 (因为此时 `mid` 指向`0`位置)
             * 然而，`left` 一般是 `=mid`/`=mid+1`, 故不会出现出界的情况。所以，返回 `left` 保险
     2. `mid = right - (right - left)/2`
         1. `mid` 在两个元素中靠右
-            * `[0, 1]` 中会选择 `1` 指向的元素
-            * 收敛时，若有 `right = mid`, 则**会造成死循环**
+            * `[0 (left), 1 (right)]` 中会选择 `1 (right)` 指向的元素
+            * 收敛时，若有 `right = mid`, 则**会造成死循环** (因为上一轮`right`和本轮的`right`都在同一个位置没有移动)
         2. 收敛时，若有 `left = mid + 1`, 则`left`**会出现出界**的情况， 
-            * `[0, 1]` 中, `left`会变成`mid+1=2` 而出界
+            * `[0, 1]` 中, `left`会变成`mid+1=2` 而出界 (因为此时 `mid` 指向`1`位置)
             * 然而，`right` 一般是 `=mid`/`=mid-1`, 故不会出现出界的情况。所以，返回 `right` 保险
 
 ## 经典题
@@ -39,6 +39,7 @@ for left < right {...}
 * 情况一: target 不在数组范围中，target 过于小，在**左边界**以外. e.g. 数组{3, 4, 5}，target为2
 * 情况二: target 不在数组范围中，target 过于大，在**右边界**以外，e.g. 数组{3, 4, 5}，target为6
 * 情况三: target 在数组范围中，只是数组中不存在. e.g. 数组{3, 6, 7}, target为5
+* 情况四: target 在数组范围中，并且数组中存在. Binary Search 一定能找到.
 
 
 
@@ -47,7 +48,7 @@ for left < right {...}
 
 * 此类题都要在最后注意 Post-process 找不到的情况
 
-* 找最小的大于Target的元素 [744. Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
+* 找最小的大于Target的元素: [744. Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
 
 
 

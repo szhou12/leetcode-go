@@ -16,11 +16,9 @@ func findFirst(nums []int, target int) int {
 	right := len(nums) - 1
 	for left < right {
 		mid := left + (right-left)/2 // mid 在两个元素中靠左 否则，下数两行的 right = mid 会在[0, 1]情况下死循环
-		if nums[mid] == target {     // A[mid] 有可能是答案
+		if nums[mid] >= target {     // A[mid] 有可能是答案
 			right = mid
-		} else if nums[mid] > target {
-			right = mid - 1
-		} else {
+		} else { // A[0...mid] 都小于 target, 一定没有答案, 移动左边界
 			left = mid + 1
 		}
 	}
@@ -48,12 +46,10 @@ func findLast(nums []int, target int) int {
 	right := len(nums) - 1
 	for left < right {
 		mid := right - (right-left)/2 // mid 在两个元素中靠右 否则, 下数两行的 left = mid 会在[0, 1]情况下死循环
-		if nums[mid] == target {      // A[mid] 有可能是答案
+		if nums[mid] <= target {      // A[mid] 有可能是答案
 			left = mid
-		} else if nums[mid] > target {
+		} else { // A[mid...n-1] 都大于 target, 一定没有答案, 移动右边界
 			right = mid - 1
-		} else {
-			left = mid + 1
 		}
 	}
 
