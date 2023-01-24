@@ -6,11 +6,9 @@ func nextGreatestLetter(letters []byte, target byte) byte {
 
 	for left < right {
 		mid := left + (right-left)/2
-		if letters[mid] == target {
-			left = mid + 1
-		} else if letters[mid] > target {
-			right = mid
-		} else {
+		if letters[mid] > target {
+			right = mid // mid指向的元素有可能是答案
+		} else { // letters[mid] <= target mid指向的元素一定不是答案
 			left = mid + 1
 		}
 	}
