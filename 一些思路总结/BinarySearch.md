@@ -55,7 +55,7 @@ for left < right {...}
 
 **Assume input array non-decreasing order:**
 
-1. `lowerBound()`: Find the first index whose element in the array has the value >= target (It follows the same concept as `lower_bound()` method in C++)
+1. `lowerBound()`: Find the **first index** whose element in the array has the value >= target (It follows the same concept as `lower_bound()` method in C++)
     1. 情况一: target 不在数组范围中，target 小于数组中所有元素，在**左边界**以外 $\Rightarrow $ 返回数组的第一个元素的index
     2. 情况二: target 不在数组范围中，target 大于数组中所有元素，在**右边界**以外 $\Rightarrow $ 返回数组的最后一个元素的index+1
     3. 情况三: target 在数组范围中，只是数组中不存在 $\Rightarrow $ 返回数组中第一个 > target的元素的index
@@ -67,7 +67,46 @@ func lowerBound(nums []int, target int) int {
 
     for left < right {
         mid := left + (right - left) / 2
-        if nums[mid] < target {
+        if nums[mid] < target { // < target, mid一定不是答案
+            left = mid + 1
+        } else { // nums[mid] >= target, mid有可能是答案
+            right = mid
+        }
+    }
+
+    // 返回left: 因为left一定不会出界 (一定指向array中的某一个元素)
+
+    // post-processing
+    // if nums[left] == target { // 情况四
+    //     return left
+    // } else if nums[left] > target { // 情况一 + 情况三
+    //     return left
+    // } else { // 情况二
+    //     return left + 1
+    // }
+
+    // post-processing 简化版
+    if nums[left] >= target { // left符合题意, 直接返回left
+        return left
+    } else { // nums[left] < target, 返回left+1 (情况二)
+        return left + 1
+    }
+ }
+```
+
+1. `upperBound()`: Find the **first index** whose element in the array has the value > target (It follows the same concept as `upper_bound()` method in C++)
+    1. 情况一: target 不在数组范围中，target 小于数组中所有元素，在**左边界**以外 $\Rightarrow $ 返回数组的第一个元素的index
+    2. 情况二: target 不在数组范围中，target 大于数组中所有元素，在**右边界**以外 $\Rightarrow $ 返回数组的最后一个元素的index+1
+    3. 情况三: target 在数组范围中，只是数组中不存在 $\Rightarrow $ 返回数组中第一个 > target的元素的index
+    4. 情况四: target 在数组范围中，并且数组中存在  $\Rightarrow $ 返回数组中第一个 > target的元素的index
+```go
+func upperBound(nums []int, target int) int {
+    left := 0
+    right := len(nums) - 1
+
+    for left < right {
+        mid := left + (right - left) / 2
+        if nums[mid] <= target {
             left = mid + 1
         } else {
             right = mid
@@ -75,16 +114,23 @@ func lowerBound(nums []int, target int) int {
     }
 
     // 返回left: 因为left一定不会出界 (一定指向array中的某一个元素)
+
     // post-processing
-    if nums[left] == target { // 情况四
+    // if nums[left] == target { // 情况四
+    //     return left + 1
+    // } else if nums[left] < target { // 情况二
+    //     return left + 1
+    // } else { // 情况三 + 情况一
+    //     return left
+    // }
+
+    // post-processing 简化版
+    if nums[left] > target { // left符合题意, 直接返回left
         return left
-    } else if nums[left] > target { // 情况一 + 情况三
-        return left
-    } else { // 情况二
+    } else { // nums[left] <= target, 返回left+1 (情况二+情况四)
         return left + 1
     }
- }
-
+}
 ```
 
 * 找最小的大于Target的元素: [744. Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)

@@ -53,7 +53,7 @@ func countLessOrEqual(nums1 []int, nums2 []int, mid int) int {
 	return res
 }
 
-// find smallest index j s.t. nums[j] >= target
+// find first index j s.t. nums[j] >= target
 func lowerBound(nums []int, target int) int {
 	left := 0
 	right := len(nums) - 1
@@ -67,37 +67,31 @@ func lowerBound(nums []int, target int) int {
 		}
 	}
 
-	return left
+	if nums[left] >= target {
+		return left
+	} else {
+		return left + 1
+	}
 
 }
 
-// find largest index j s.t. nums[j] <= target
-// func upperBound(nums []int, target int) int {
-// 	left := 0
-// 	right := len(nums) - 1
-
-// 	for left < right {
-// 		mid := left + (right-left)/2
-// 		if nums[mid] <= target {
-// 			left = mid
-// 		} else {
-// 			right = mid - 1
-// 		}
-// 	}
-// 	return left
-// }
-
+// find first index j s.t. nums[j] > target
 func upperBound(nums []int, target int) int {
 	left := 0
 	right := len(nums) - 1
 
 	for left < right {
 		mid := left + (right-left)/2
-		if nums[mid] > target {
-			right = mid
-		} else {
+		if nums[mid] <= target {
 			left = mid + 1
+		} else {
+			right = mid
 		}
 	}
-	return left
+
+	if nums[left] > target {
+		return left
+	} else {
+		return left + 1
+	}
 }
