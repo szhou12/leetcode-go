@@ -166,6 +166,8 @@ func upperBound(nums []int, target int) int {
 * 找k个最小和: [373. Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/description/)
     * 用 max heap 会超时！！！只能 Binary Search 提高效率
 
+* 非递减数组中找第k小的乘积: [2040. Kth Smallest Product of Two Sorted Arrays](https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/description/)
+
 
 ### 其他
 * 从不能整除的元素中找最小可能的最大值: [2513. Minimize the Maximum of Two Arrays](https://leetcode.com/problems/minimize-the-maximum-of-two-arrays/description/)
