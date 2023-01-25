@@ -12,9 +12,11 @@ Given `nums1[i]`, find `j` s.t. `nums1[i] * nums2[j] <= mid` in order to find # 
     * Note 1: How to find `j`? Binary search on `nums2` with target value `mid / nums1[i]`
         * Use `upperBound()` method to find the first index `k` s.t. `nums2[k] > target`. Thus, `j=k-1`
     * Note 2: It may NOT the case that `nums1[i] | mid`. Thus, take `Floor(mid / nums1[i])`
+
 **Case 2**: if `nums1[i] = 0`, then `0 * nums2[j] <= mid`
     * **Case 2.**1: if `mid < 0`, then no `j` can work. # of products less than or equal to `mid` = 0
     * **Case 2.2**: if `mid >= 0`, then all `j` will work.  # of products less than or equal to `mid` = `len(nums2)`
+
 **Case 3**: if `nums1[i] < 0`, then `nums2[j] >= mid / nums1[i]`. Since `nums2` sorted in decreasing-order, `j` should point to the first element `>= mid / nums1[i]`. Thus, `j...n-1` all satisfy the requirement. # of products less than or equal to `mid` = `n-1-j+1`.
     * Note 1: How to find `j`? Binary search on `nums2` with target value `mid / nums1[i]`
         * Use `lowerBound()` method to find the first index `k` s.t. `nums2[k] >= target`. Thus, `j=k`
