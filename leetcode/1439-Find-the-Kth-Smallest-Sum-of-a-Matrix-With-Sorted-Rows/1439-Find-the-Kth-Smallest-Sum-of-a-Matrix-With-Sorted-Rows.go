@@ -85,7 +85,7 @@ func dfs(row int, mat [][]int, target int, k int, sum int, count *int) {
 	// recursion
 	for c := 0; c < n; c++ {
 		if sum+mat[row][c]-mat[row][0] <= target {
-			if c > 0 {
+			if c > 0 { // 注意: 当前行在0号位的combo已经被上一层recursion算入, 故一定要避免重复
 				(*count)++
 			}
 			dfs(row+1, mat, target, k, sum+mat[row][c]-mat[row][0], count)

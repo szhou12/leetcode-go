@@ -8,6 +8,20 @@
 
 Time complexity = $O(m * (kn + kn* \log kn)) = O(m*k*n* \log kn)$
 
+### Binary Search 猜答案
+
+* 收敛条件: `mat` 每一行选一个element 组成的 array (sum <= mid) 的个数至少有 k 个, 满足这个条件, mid有可能是答案
+
+* 如何获得所有可能的array组合？
+    * Ans: DFS - All Combination
+    * 有几层 = `mat` 的行数
+    * 每层的物理意义 = `mat` 的一行
+    * 每层几个分支 = `mat` 下一行的所有element (0...n-1)
+    * Base case: 满足条件 (sum <= mid) 的array 个数 (i.e. count) >= k, 返回; 或者已经到底 (`mat`最后一行), 返回.
+
+Time complexity = $O(k * \log D)$ where $D = $ difference between the largest sum and the smallest sum of `mat`, $k = $ DFS 最多看前k小个 array sum
+
+
 
 ## Resource
 
