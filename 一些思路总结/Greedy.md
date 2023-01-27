@@ -19,12 +19,15 @@
 
 ## 找规律
 
-* [738. Monotone Increasing Digits](https://leetcode.com/problems/monotone-increasing-digits/description/)
+* 单调递增位数: [738. Monotone Increasing Digits](https://leetcode.com/problems/monotone-increasing-digits/description/)
     * 比当前number小 并且每个digit单调递增的 最大number 是 (X-1)9...9
     * e.g. 93 -> 89 = (9-1)(3->9)
 
-* [1005. Maximize Sum Of Array After K Negations](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/description/)
+* 最大化k次取反后的array sum: [1005. Maximize Sum Of Array After K Negations](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/description/)
     * 将数组按照绝对值大小**从大到小**排序，注意要**按照绝对值的大小**
+
+* 找第k小array sum: [1439. Find the Kth Smallest Sum of a Matrix With Sorted Rows](https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/description/)
+    * 逐行merge, 每merge完一行取前k小的array sum
 
 ## 分清楚情况讨论
 
