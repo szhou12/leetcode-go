@@ -29,7 +29,7 @@ sum[0] = diff[0]
 nums: 1,   3,  5,  4,  8  => nums[0...1] += 10
      11,  13,  5,  4,  8
 diff: 1,   2,  2, -1,  4
-     11,   2, -8, -1,  4  => find that only diff[0], diff[1+1] changes, diff[0] += 10, diff[1+1] -= 10 
+     11,   2, -8, -1,  4  => find that only diff[0], diff[1+1] change, diff[0] += 10, diff[1+1] -= 10 
 ```
 
 * 实现细节

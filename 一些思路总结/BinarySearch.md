@@ -24,6 +24,9 @@ for left < right {...}
             * `[0, 1]` 中, `left`会变成`mid+1=2` 而出界 (因为此时 `mid` 指向`1`位置)
             * 然而，`right` 一般是 `=mid`/`=mid-1`, 故不会出现出界的情况。所以，返回 `right` 保险
 
+* 什么时候需要 Post-Processing ?
+    * 使用 Binary Search 时, 只有当题目的**input不一定包含答案的时候**需要 post-processing, 否则 Binary Search 一定可以找到答案, 也就是不用post-processing
+
 ## 经典题
 * Classic Binary Search: [704. Binary Search](https://leetcode.com/problems/binary-search/)
 
@@ -167,9 +170,11 @@ func upperBound(nums []int, target int) int {
     * 用 max heap 会超时！！！只能 Binary Search 提高效率
 
 * 非递减数组中找第k小的乘积: [2040. Kth Smallest Product of Two Sorted Arrays](https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/description/)
+    * 找前k小的个数的思路与前面题型不同. main idea: 分类讨论
 
 * 找第k小array sum: [1439. Find the Kth Smallest Sum of a Matrix With Sorted Rows](https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/description/)
-    * 用 `DFS - All Combo Sum` 来找满足当前猜的数的array 的个数是否 >= k 个
+    * 找前k小的个数的思路与前面题型不同. main idea: **DFS**
+    * 用 **DFS - All Combo Sum** 来找满足当前猜的数的array 的个数是否 >= k 个
 
 
 ### 其他
