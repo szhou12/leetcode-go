@@ -16,9 +16,9 @@ func kthSmallestSubarraySum(nums []int, k int) int {
 		prefixSum[i+1] = prefixSum[i] + nums[i]
 	}
 
-	for left < right {
+	for left < right { // O(logD)
 		mid := left + (right-left)/2
-		count := countLessOrEqual(mid, prefixSum)
+		count := countLessOrEqual(mid, prefixSum) // O(n)
 		if count < k {
 			left = mid + 1
 		} else {
@@ -30,6 +30,9 @@ func kthSmallestSubarraySum(nums []int, k int) int {
 }
 
 // two pointers
+// 物理意义:
+// count # of prefix-sum pair diffs (subarray sums) that are <= mid
+// if returned # >= k, mid may be the answer; if returned # < k, mid def not answer
 func countLessOrEqual(mid int, prefixSum []int) int {
 	count := 0
 
@@ -40,6 +43,7 @@ func countLessOrEqual(mid int, prefixSum []int) int {
 			right++
 		}
 
+		// [left+1, right-1] 左闭右闭 这部分的长度 = # of subarray sums
 		count += right - (left + 1)
 	}
 

@@ -174,11 +174,11 @@ func upperBound(nums []int, target int) int {
 
 * 从矩阵中找第k小 array sum: [1439. Find the Kth Smallest Sum of a Matrix With Sorted Rows](https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/description/)
     * 找前k小的个数的思路与前面题型不同. main idea: 结合**DFS**
-    * 用 **DFS - All Combo Sum** 来找满足当前猜的数的array 的个数是否 >= k 个
+    * 用 **DFS - All Combo Sum** 来找满足当前猜的数 (`mid`) 的array 的个数是否 >= k 个
 
 * 找第k小 subarray sum: [1918. Kth Smallest Subarray Sum](https://leetcode.ca/2021-08-01-1918-Kth-Smallest-Subarray-Sum/)
-    * 找前k小的个数的思路与前面题型不同. main idea: 结合**Two Pointers**
-
+    * 找前k小的个数的思路与前面题型不同. main idea: 转化 subarray sum 为 prefixSum diff, 再结合**Two Pointers**
+    * 因为 prefixSum array 是单增的, 所以可以通过 **Two Pointers** 来找满足当前猜的数 (`mid`) 的 subarray 个数是否 >= k 个
 
 ### 其他
 * 从不能整除的元素中找最小可能的最大值: [2513. Minimize the Maximum of Two Arrays](https://leetcode.com/problems/minimize-the-maximum-of-two-arrays/description/)
