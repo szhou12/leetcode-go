@@ -6,6 +6,9 @@
 
 ### Binary Search - Guess k-th element + Two Pointers
 
+* 为什么 prefix-sum array 要比 `nums` length + 1?
+    * 方便计算 `i=0` 为start的 subarray sum
+
 ## Resource
 [【LeetCode】1918. Kth Smallest Subarray Sum](https://www.bilibili.com/video/BV1Vb4y1h7fW/?spm_id_from=333.337.search-card.all.click&vd_source=0c02ef6f6e7a2b0959d7dd28e9e49da4)
 
