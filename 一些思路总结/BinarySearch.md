@@ -25,7 +25,7 @@ for left < right {...}
             * 然而，`right` 一般是 `=mid`/`=mid-1`, 故不会出现出界的情况。所以，返回 `right` 保险
 
 * 什么时候需要 Post-Processing ?
-    * 使用 Binary Search 时, 只有当题目的**input不一定包含答案的时候**需要 post-processing, 否则 Binary Search 一定可以找到答案, 也就是不用post-processing
+    * 使用 Binary Search 时, 只有当题目的**input不一定包含答案target的时候**需要 post-processing, 否则 Binary Search 一定可以找到答案, 也就是不用post-processing
 
 ## 经典题
 * Classic Binary Search: [704. Binary Search](https://leetcode.com/problems/binary-search/)
@@ -181,6 +181,8 @@ func upperBound(nums []int, target int) int {
 * 找第k小 subarray sum: [1918. Kth Smallest Subarray Sum](https://leetcode.ca/2021-08-01-1918-Kth-Smallest-Subarray-Sum/)
     * 找前k小的个数的思路与前面题型不同. main idea: 转化 subarray sum 为 prefixSum diff, 再结合**Two Pointers**
     * 因为 prefixSum array 是单增的, 所以可以通过 **Two Pointers** 来找满足当前猜的数 (`mid`) 的 subarray 个数是否 >= k 个
+
+* 找第k个缺失的自然数: [1539. Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/description/)
 
 ### 其他
 * 从不能整除的元素中找最小可能的最大值: [2513. Minimize the Maximum of Two Arrays](https://leetcode.com/problems/minimize-the-maximum-of-two-arrays/description/)
