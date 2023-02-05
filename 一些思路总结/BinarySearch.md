@@ -157,11 +157,11 @@ func upperBound(nums []int, target int) int {
 
 ### Guess K-th Element
 
-* 无序数组中第k大的元素: [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
-
 * Search in Sorted Matrix: [240. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/)
     * 解法本身不是Binary Search, 但是**解法思路可以应用于所有 sorted matrix**, 并且和 Binary Search 结合组成更高效的算法
     * 从 bottom-left / top-right 出发做 matrix traversal
+
+* 无序数组中第k大的元素: [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 
 * 非递减矩阵中找第K小的元素: [378. Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/)
     * 用 max heap 也可以解，但是 Binary Search 更效率
