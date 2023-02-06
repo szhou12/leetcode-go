@@ -7,7 +7,14 @@ type TreeNode = structures.TreeNode
 
 func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 	// base cases
-	if root == nil || p == nil || q == nil {
+
+	/* 如果p, q不一定存在于树中，这么写 */
+	// if root == nil || p == nil || q == nil {
+	// 	return nil
+	// }
+
+	/* 因为题目说明p, q一定存在于树中，所以这么写 */
+	if root == nil {
 		return nil
 	}
 

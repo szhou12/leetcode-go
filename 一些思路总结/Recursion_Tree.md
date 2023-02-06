@@ -2,6 +2,24 @@
 
 * 遇到 Tree 的题，首先思考能否用 Recursion 解决，因为, Tree 天生适合 Recursion
 
+* Tree Recursion 三段式结构
+```go
+func treeRecursion(TreeNode x, ...) ... {
+    /*** Base Case(s) ***/
+    [...]
+
+    /*** Recursion Call ***/
+    left := treeRecursion(x.Left, ...)
+    right := treeRecursion(x.Right, ...)
+
+
+    /*** 当前层 Return ***/
+    [...]
+    return ....
+    
+}
+```
+
 ## 由Traversal Order 构造 Binary Tree
 
 思路都差不多:
