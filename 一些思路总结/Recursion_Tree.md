@@ -104,3 +104,10 @@
 * BST上In-Order Traversal 先走右子树，再走左子树 得到降序排列: [538. Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree/)
 * Recursion to print all BST: [95. Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/)
 * DP to find #: [96. Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/)
+
+
+## LCA
+* LCA in BST: [235. Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
+
+* 二叉树中连环，计算环的长度: [2509. Cycle Length Queries in a Tree](https://leetcode.com/problems/cycle-length-queries-in-a-tree/description/)
+    * 与一般的 LCA 的题型要简单，不一定非要用recursion，因为任意node的parent可以计算得到 `parent(X) = X/2`
