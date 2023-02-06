@@ -109,5 +109,7 @@
 ## LCA
 * LCA in BST: [235. Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/)
 
+* LCA I: [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)
+
 * 二叉树中连环，计算环的长度: [2509. Cycle Length Queries in a Tree](https://leetcode.com/problems/cycle-length-queries-in-a-tree/description/)
     * 与一般的 LCA 的题型要简单，不一定非要用recursion，因为任意node的parent可以计算得到 `parent(X) = X/2`

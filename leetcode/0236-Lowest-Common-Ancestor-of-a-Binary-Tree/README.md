@@ -4,7 +4,7 @@
 
 ### LCA
 
-* LCA 经典题型
+* LCA 经典题型: 两个input nodes `p, q` 一定存在于树中
 
 * Base Cases:
     1. current node 已经为空，说明input node一个没找到，老老实实返回 `nil`
