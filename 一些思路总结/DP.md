@@ -51,13 +51,15 @@
 
 
 ## 抢劫房子
-* [198. House Robber](https://leetcode.com/problems/house-robber/)
+* 抢房子1: [198. House Robber](https://leetcode.com/problems/house-robber/)
 
-* [213. House Robber II](https://leetcode.com/problems/house-robber-ii/)
+* 抢房子2: [213. House Robber II](https://leetcode.com/problems/house-robber-ii/)
 
-* [337. House Robber III](https://leetcode.com/problems/house-robber-iii/)
+* 抢房子3: [337. House Robber III](https://leetcode.com/problems/house-robber-iii/)
     * 树形DP: post-order traversal + DP
 
+* 抢房子4: [2560. House Robber IV](https://leetcode.com/problems/house-robber-iv/description/)
+    * Binary Search 猜答案 + DP
 
 
 

@@ -3,7 +3,7 @@ package leetcode
 import "math"
 
 func minCapability(nums []int, k int) int {
-	left, right := 0, math.MaxInt
+	left, right := 0, maxVal(nums)
 
 	for left < right {
 		mid := left + (right-left)/2
@@ -53,6 +53,15 @@ func atLeastK(nums []int, k int, cap int) bool {
 	} else {
 		return true
 	}
+}
+
+// find biggest element in nums
+func maxVal(nums []int) int {
+	res := nums[0]
+	for i := 1; i < len(nums); i++ {
+		res = max(res, nums[i])
+	}
+	return res
 }
 
 func max(a, b int) int {
