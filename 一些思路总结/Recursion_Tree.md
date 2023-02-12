@@ -133,8 +133,12 @@ func treeRecursion(TreeNode x, ...) ... {
 * LCA II: [1644. Lowest Common Ancestor of a Binary Tree II](https://leetcode.ca/all/1644.html)
     * input nodes `p`, `q` **不一定**存在于tree中
 
-* LCA III: [LeetCode 1650. Lowest Common Ancestor of a Binary Tree III](https://iamageek.medium.com/leetcode-1650-lowest-common-ancestor-of-a-binary-tree-iii-6d008b93376c)
+* LCA III: [1650. Lowest Common Ancestor of a Binary Tree III](https://iamageek.medium.com/leetcode-1650-lowest-common-ancestor-of-a-binary-tree-iii-6d008b93376c)
     * Tree node 有 parent指针，直接逆流而上，记录"沿途风景"
+
+* LCA IV: [1676. Lowest Common Ancestor of a Binary Tree IV](https://zhenchaogan.gitbook.io/leetcode-solution/leetcode-1676-lowest-common-ancestor-of-a-binary-tree-iv)
+    * input nodes array **一定**存在于tree中
+    * 额外使用一个 **HashMap** 充当 input nodes的set
 
 * 最深叶子节点的LCA: [1123. Lowest Common Ancestor of Deepest Leaves](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/description/)
 
