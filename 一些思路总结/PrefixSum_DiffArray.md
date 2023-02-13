@@ -1,19 +1,31 @@
 # Prefix Sum & Difference Array
 
+## Definition of Prefix Sum
+
+```
+prefixSum[0] = nums[0],
+prefixSum[i] = nums[0] + nums[1] + ... + nums[i]
+```
+
 ## Difference Array (差分数组)
 
 ### 1-D Difference Array
 
-* 差分数组: `diff[i] = nums[i] - nums[i-1]`, `diff[0] = nums[0] - 0`
+* 差分数组的定义:
+
+```
+diff[0] = nums[0] - 0,
+diff[i] = nums[i] - nums[i-1]
+```
 
 * **规律1** 对差分数组求第i个元素的前缀和:
 ```
-sum[i] = diff[0] + diff[1] + ... + diff[i]
-       = (nums[0]) + (nums[1] - nums[0]) + ... + (nums[i] - nums[i-1])
-       = nums[i]
-       = sum[i-1] + diff[i]
+presum[i] = diff[0] + diff[1] + ... + diff[i]
+          = (nums[0]) + (nums[1] - nums[0]) + ... + (nums[i] - nums[i-1])
+          = nums[i]
+          = presum[i-1] + diff[i]
 
-sum[0] = diff[0]
+presum[0] = diff[0]
 ```
 
 * **规律1总结**: 差分数组第i个元素的前缀和 = 原数组第i个元素的值
@@ -21,15 +33,16 @@ sum[0] = diff[0]
 * **规律2** 对原数组`nums[l...r]` (双闭区间) 每个元素都加上 `val` 时，映射到差分数组上就是: `diff[l]+val` 和 `diff[r+1]-val`
 
 * **规律2总结**:
-    * 思路: 对原数组`nums`的某个subarray`nums[l...r]`的每个元素都加上一个值 `val`, 实际上是对差分数组的 `diff[l]+val` 和 `diff[r+1]-val`
+    * 思路: 对原数组`nums`的某个 区间/subarray`nums[l...r]`的每个元素都加上一个值 `val`, 实际上是对差分数组的 `diff[l]+val` 和 `diff[r+1]-val`
     * 结果: 对变化后的差分数组`diff`求每个元素的前缀和 $\Rightarrow $ 变化后的原数组
 
 * 举个例子:
 ```
-nums: 1,   3,  5,  4,  8  => nums[0...1] += 10
-     11,  13,  5,  4,  8
-diff: 1,   2,  2, -1,  4
-     11,   2, -8, -1,  4  => find that only diff[0], diff[1+1] change, diff[0] += 10, diff[1+1] -= 10 
+idx:   0,   1,  2,  3,  4
+nums:  1,   3,  5,  4,  8  => 对 nums[0...1] + 10
+      11,  13,  5,  4,  8
+diff:  1,   2,  2, -1,  4
+      11,   2, -8, -1,  4  => find that only diff[0], diff[1+1] change, diff[0] += 10, diff[1+1] -= 10 
 ```
 
 * 实现细节
