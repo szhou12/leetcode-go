@@ -6,15 +6,15 @@ package leetcode
 		 i-1  i      i+k
 
 物理意义:
-	leftMax := the largest k-length subarray sum from [0:i]
-	rightMax := the largest k-length subarray sum from [i:n-1]
+	leftMax[i] := the largest k-length subarray sum from [0:i]
+	rightMax[i] := the largest k-length subarray sum from [i:n-1]
 
 题目要找的是:
 	find index i s.t. leftMax[i-1] + midSum[i:i+k-1] + rightMax[i+k] is MAX
 
 注意:
 	leftMax[i]中 i 代表L段的右端点
-	rightMax[i]中 i 代表R中的左端点
+	rightMax[i]中 i 代表R段的左端点
 
 注意:
 	L段 从左往右滑动从而更新 leftMax
