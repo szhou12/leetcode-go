@@ -10,7 +10,7 @@
 把nums分成 L, M, R三段:
 ```
 {X X X X X }   X X X   {X  X X X X }
-i-1   i       i+k
+         i-1   i       i+k
 ```
 使用两个`DP`思想的arrays: `leftMax`, `rightMax`:
 
