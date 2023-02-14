@@ -23,14 +23,16 @@
 
 **Objective**:
 
-find index `i` s.t. `max(leftMax[i-1] + midSum[i:i+k-1] + rightMax[i+k])`
+    Find index `i` s.t. `max(leftMax[i-1] + midSum[i:i+k-1] + rightMax[i+k])`
 
 **注意**:
 	
     leftMax[i]中 i 代表L段的右端点
-	
     rightMax[i]中 i 代表R段的左端点
 
+**注意**:
+	L段 从左往右滑动滑窗从而更新 leftMax
+	R段 从右往左滑动滑窗从而更新 rightMax
 
 * Trick: Use Prefix-sum to compute subarray sum
 
