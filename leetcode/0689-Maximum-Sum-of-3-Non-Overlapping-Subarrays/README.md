@@ -17,13 +17,10 @@
 
 **物理意义**:
 
-`leftMax[i]`: the largest k-length subarray sum from `[0:i]`
+    leftMax[i]: the largest k-length subarray sum from [0:i]
+    rightMax[i]: the largest k-length subarray sum from [i:n-1]
 
-`rightMax[i]`: the largest k-length subarray sum from `[i:n-1]`
-
-**Objective**:
-
-    Find index `i` s.t. `max(leftMax[i-1] + midSum[i:i+k-1] + rightMax[i+k])`
+**Objective**: Find index `i` s.t. `max(leftMax[i-1] + midSum[i:i+k-1] + rightMax[i+k])`
 
 **注意**:
 	
@@ -31,6 +28,7 @@
     rightMax[i]中 i 代表R段的左端点
 
 **注意**:
+
 	L段 从左往右滑动滑窗从而更新 leftMax
 	R段 从右往左滑动滑窗从而更新 rightMax
 
