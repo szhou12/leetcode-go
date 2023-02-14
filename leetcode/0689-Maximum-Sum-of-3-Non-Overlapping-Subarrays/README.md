@@ -7,6 +7,7 @@
 * **Key Idea**: 利用题目给的条件 **3 Non-Overlapping Subarrays**. 想一想如果是 **2 Non-Overlapping Subarrays**的情况下怎么处理？ 解决方法是找一个断点使得左半段与右半段给出最优解. 此题同理, 区别在于此题的"断点"实际上是一段subarray.
 
 * **具体实现: Sliding Window**
+
 把nums分成 L, M, R三段:
 ```
 {X X X X X }   X X X   {X  X X X X }
@@ -20,6 +21,20 @@
 
 `rightMax[i]`: the largest k-length subarray sum from `[i:n-1]`
 
+**Objective**:
+
+find index `i` s.t. `max(leftMax[i-1] + midSum[i:i+k-1] + rightMax[i+k])`
+
+**注意**:
+	
+    leftMax[i]中 i 代表L段的右端点
+	
+    rightMax[i]中 i 代表R段的左端点
+
+
+* Trick: Use Prefix-sum to compute subarray sum
+
+`subarray-sum[l:r] = prefix-sum[r] - prefix-sum[l-1]`
 
 
 Time complexity = $O(3n)$ = $O(n)$
