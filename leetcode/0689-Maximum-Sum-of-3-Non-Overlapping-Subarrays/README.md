@@ -15,7 +15,7 @@
 {X X X X X }   X X X   {X  X X X X }
          i-1   i       i+k
 ```
-使用两个`DP`思想的arrays: `leftMax`, `rightMax`:
+使用两个`DP`思想的arrays来分别记录L段和R段的信息: `leftMax`, `rightMax`:
 
 **物理意义**:
 
