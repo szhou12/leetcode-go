@@ -31,6 +31,7 @@ right[j] := leftmost index l for the shortest suffix of s (ie. s[l:m-1]) contain
     right[] 存储s的后缀中l的index信息
 
 * What is **prefix of s** & **suffix of s**?
+
     prefix of s: s的前缀 指的是 `s[0:r]`, 从开始index到r框住的区域, r不断往后延伸直到结尾index
     suffix of s: s的后缀 指的是 `s[l:m-1]`, 从l到结尾index框住的区域, l不断向前延伸直到开始index
 
