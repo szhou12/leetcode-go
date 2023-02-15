@@ -148,14 +148,20 @@ func upperBound(nums []int, target int) int {
 2. 二分搜值：猜出答案, 每一轮看看是猜大了还是猜小了？以达到逼近最终答案的目的
     * 此法适用于 题目要求 return single value (scalar) 并且 涉及 max/min value
 
+**要点**: 什么时候可以用？
+    * 当我们从题目中找到一种 **单调性** 的规律时，一般可以尝试用二分猜答案
+
 **猜答案的具体步骤**
 1. 确定搜索空间：也就是确定Binary Search的下界/左边界 和 上界/右边界
     * 因为是在搜索空间里猜答案，所以 左/右边界的物理意义通常就是 return值本身 (i.e. 也就是说，不是index而是value本身)
 2. 确定收敛条件：什么条件让我们确定可以舍弃掉一半的空间？舍弃掉小的那一半还是大的那一半？包不包括边界的值？
 
+
+
 **经典例题**
 
 ### Guess K-th Element
+
 
 * Search in Sorted Matrix: [240. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/)
     * 解法本身不是Binary Search, 但是**解法思路可以应用于所有 sorted matrix**, 并且和 Binary Search 结合组成更高效的算法
