@@ -8,6 +8,7 @@
 
 #### 要点总结
 1. 此题需要对题干进行翻译。翻译题目: 删除t的一个subarray (甭管内部怎么删的，删了几个char), 使得剩下的chars能组成s的subseq
+    * 题目中的score定义就是subarray length. Minimum score = minimun length of subarray
 2. 根据翻译, 可以归纳一个规律: 删除的这个subarray越长, 剩下的chars越容易组成s的subseq (eg. 最极端的例子是t删除到什么都不剩了，一个空串肯定是s的subseq) --> 单调性 --> 暗示可以**用 binary search 猜答案**
 3. 圈定一个区间作为删除的subarray, 不需要在它内部额外操作, 直接整个删掉
 4. 作图:
@@ -22,8 +23,8 @@ t:   x x x  {y y y}  z z z
 #### 物理意义
 *Note: `m=len(s)`, `n=len(t)`*
 ```
-left[i] := rightmost index r for the shortest prefix of s (i.e. s[0:r]) containing t[0:i]
-right[j] := leftmost index l for the shortest suffix of s (ie. s[l:m-1]) containing t[j:n-1]
+left[i] := Rightmost index r for the shortest prefix of s (i.e. s[0:r]) containing t[0:i]
+right[j] := Leftmost index l for the shortest suffix of s (ie. s[l:m-1]) containing t[j:n-1]
 ```
 
 * 翻译一下
