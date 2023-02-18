@@ -75,6 +75,7 @@ func isScoreOK(s string, t string, left []int, right []int, score int) bool {
 	}
 
 	// sliding window顶在t最右边, 不看right[], 只看left[]
+	// n-score是刨除掉sliding window, (n-score)-1是sliding window左端点的前一个index
 	if left[n-score-1] != math.MaxInt {
 		return true
 	}

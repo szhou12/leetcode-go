@@ -5,3 +5,7 @@
 * 接雨水: [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
 
 * 找三个不重叠k-长subarray的最大和的index: [689. Maximum Sum of 3 Non-Overlapping Subarrays](https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/description/)
+
+* 找最小可裁定/删除的subarray长度: [2565. Subsequence With the Minimum Score](https://leetcode.com/problems/subsequence-with-the-minimum-score/)
+    * 结合 **Binary Search 猜答案** 思想
+    * 重点在于要清楚明白各物理量的物理意义

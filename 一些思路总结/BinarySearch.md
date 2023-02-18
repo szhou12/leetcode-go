@@ -162,17 +162,16 @@ func upperBound(nums []int, target int) int {
 
 ### Guess K-th Element
 
-
 * Search in Sorted Matrix: [240. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/)
     * 解法本身不是Binary Search, 但是**解法思路可以应用于所有 sorted matrix**, 并且和 Binary Search 结合组成更高效的算法
     * 从 bottom-left / top-right 出发做 matrix traversal
 
 * 无序数组中第k大的元素: [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
 
-* 非递减矩阵中找第K小的元素: [378. Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/)
+* 非递减矩阵中找第k小的元素: [378. Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/)
     * 用 max heap 也可以解，但是 Binary Search 更效率
 
-* 乘法表中找第K小的元素: [668. Kth Smallest Number in Multiplication Table](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/description/)
+* 乘法表中找第k小的元素: [668. Kth Smallest Number in Multiplication Table](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/description/)
 
 * 找k个最小和: [373. Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/description/)
     * 用 max heap 会超时！！！只能 Binary Search 提高效率
@@ -190,8 +189,13 @@ func upperBound(nums []int, target int) int {
 
 * 找第k个缺失的自然数: [1539. Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/description/)
 
+### Guess Min/Max
+
 * 抢房子4: [2560. House Robber IV](https://leetcode.com/problems/house-robber-iv/description/)
     * Binary Search 猜答案 + DP
 
-### 其他
 * 从不能整除的元素中找最小可能的最大值: [2513. Minimize the Maximum of Two Arrays](https://leetcode.com/problems/minimize-the-maximum-of-two-arrays/description/)
+
+* 找最小可裁定/删除的subarray长度: [2565. Subsequence With the Minimum Score](https://leetcode.com/problems/subsequence-with-the-minimum-score/)
+    * 结合 **3-Pass** 思想
+    * 重点在于要清楚明白各物理量的物理意义
