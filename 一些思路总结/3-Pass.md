@@ -1,6 +1,6 @@
 # 3-Pass
 
-* 此种解法有点像 Dynamic Programming, 又有点像 Greedy Algorithm, 实现又常涉及 Sliding Window
+* *此种解法有点像 Dynamic Programming, 又有点像 Greedy Algorithm, 实现又常涉及 Sliding Window*
 
 * 接雨水: [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
 
