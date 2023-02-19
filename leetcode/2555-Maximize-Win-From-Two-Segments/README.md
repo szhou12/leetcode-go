@@ -22,3 +22,10 @@ p: ------------------------
 
 #### 物理意义
 *Note: `n=len(p)`*
+*Note: 为了容易理解，这里提及的 `[x:y]` 都是左闭右闭*
+```
+pre[r] := max # prizes that can be collected from k-len segment in p[0:r]
+    Note: k-len segment that gives max # not necessarily ending at index r, can be any k-len seg in interval [0:r]
+post[l] := max # prizes that can be collected from k-len segment in p[l:n-1]
+    Note: k-len segment that gives max # not necessarily starting at index l, can be any k-len seg in interval [l:n-1]
+```
