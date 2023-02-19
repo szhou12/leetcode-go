@@ -56,7 +56,6 @@ func minimumScore(s string, t string) int {
 t:   x x x  {y   y   y}        z z z
              i------i+score-1
 以score为长度的sliding window滑一遍t, 看对应的left[i-1], right[i+score-1]有没有在s上overlap
-找到
 */
 func isScoreOK(s string, t string, left []int, right []int, score int) bool {
 	n := len(t)

@@ -73,9 +73,9 @@ right[j] := Leftmost index l for the shortest suffix of s (ie. s[l:m-1]) contain
 
 #### 代码整体结构总结
 ```
-Step 1: 构造`left[]`: `s`一个指针, `t`一个指针, 两个指针不停往右走, 记录"沿途风景"
-Step 2: 构造`right[]`: `s`一个指针, `t`一个指针, 两个指针不停往左走, 记录"沿途风景"
-Step 3: 二分搜值搜索`t`中可裁剪的subarray的长度
+Step 1: 构造left[]: s一个指针, t一个指针, 两个指针不停往右走, 记录"沿途风景"
+Step 2: 构造right[]: s一个指针, t一个指针, 两个指针不停往左走, 记录"沿途风景"
+Step 3: 二分搜值搜索t中可裁剪的subarray的长度
 ```
 Time complexity = $O(n) + O(n) + O(n*\log D) = O(n*\log D)$ where $D = $ the length of `t` (ie. $D = |t|-0$)
 ## Resource
