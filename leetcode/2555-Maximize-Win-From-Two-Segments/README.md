@@ -29,3 +29,7 @@ pre[r] := max # prizes that can be collected from k-len segment in p[0:r]
 post[l] := max # prizes that can be collected from k-len segment in p[l:n-1]
     Note: k-len segment that gives max # not necessarily starting at index l, can be any k-len seg in interval [l:n-1]
 ```
+
+## Resource
+
+[【每日一题】LeetCode 2555. Maximize Win From Two Segments](https://www.youtube.com/watch?v=0Tjuy464sP8&ab_channel=HuifengGuan)
