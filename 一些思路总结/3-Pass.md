@@ -9,3 +9,6 @@
 * 找最小可裁定/删除的subarray长度: [2565. Subsequence With the Minimum Score](https://leetcode.com/problems/subsequence-with-the-minimum-score/)
     * 结合 **Binary Search 猜答案** 思想
     * 重点在于要清楚明白各物理量的物理意义
+
+* 最大化array上任意两个segments: [2555. Maximize Win From Two Segments](https://leetcode.com/problems/maximize-win-from-two-segments/description/)
+    * two intervals --> 找分界点

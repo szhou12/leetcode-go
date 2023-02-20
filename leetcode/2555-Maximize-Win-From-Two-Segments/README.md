@@ -30,6 +30,19 @@ post[l] := max # prizes that can be collected from k-len segment in p[l:n-1]
     Note: k-len segment that gives max # not necessarily starting at index l, can be any k-len seg in interval [l:n-1]
 ```
 
+* 构建`pre[]`, `post[]`
+    * sliding window flex 版本: 以 `pre[]` 为例, 右端点`r`不停往前走, 当`p[r]-p[l] > k`时, 前进左端点
+    * 注意: sliding window在刚开始滑的时候, 会存入 < k-len segment的信息, 但是这不要紧, 因为此题的input array is non-decreasing order, 所以在之后iterate 分界点并取最大值的时候, 一定会被淘汰掉 (i.e. < k=len segment 给的结果一定比 k-len segment给的结果小).
+
+#### 代码整体结构总结
+```
+Step 1: 构造pre[]: 右端点不停往右走, length of segment > k 时, 左端点前进
+Step 2: 构造post[]: 左端点不停往左走, length of segment > k 时, 右端点前进
+Step 3: iterate 分界点, 取 max(pre[mid]+post[mid+1])
+```
+
+Time complexity = $O(n)+O(n)+O(n) = O(n)$
+
 ## Resource
 
 [【每日一题】LeetCode 2555. Maximize Win From Two Segments](https://www.youtube.com/watch?v=0Tjuy464sP8&ab_channel=HuifengGuan)
