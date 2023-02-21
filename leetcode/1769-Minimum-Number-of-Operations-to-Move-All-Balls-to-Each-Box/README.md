@@ -16,6 +16,7 @@ Time complexity = $O(n^2)$
 
 #### 物理意义
 *Note: `n=len(boxes)`*
+
 *Note: 为了容易理解，这里提及的 `[x:y]` 都是左闭右闭*
 
 ```
