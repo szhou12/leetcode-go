@@ -12,3 +12,5 @@
 
 * 最大化array上任意两个segments: [2555. Maximize Win From Two Segments](https://leetcode.com/problems/maximize-win-from-two-segments/description/)
     * two intervals --> 找分界点
+
+* 移动盒子里的球分几步: [1769. Minimum Number of Operations to Move All Balls to Each Box](https://leetcode.com/problems/minimum-number-of-operations-to-move-all-balls-to-each-box/)

@@ -55,6 +55,13 @@ Recurrence:
 // 显然, right[]是可以用一个标量right简化, 实现时不需要array right[]
 ```
 
+#### 代码整体结构总结
+```
+Step 1: 构造 leftMoves[]
+Step 2: 构造 rightMoves[]
+Step 3: iterate 分界点, 每个点计算`leftMoves[i]+rightMoves[i]`
+```
+
 Time complexity = $O(n)$
 
 
