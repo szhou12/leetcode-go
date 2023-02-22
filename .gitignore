@@ -31,4 +31,4 @@ go.work
 .history/
 
 # Built Visual Studio Code Extensions
-*.vsix
+*.vsixcollide-boxes.go
