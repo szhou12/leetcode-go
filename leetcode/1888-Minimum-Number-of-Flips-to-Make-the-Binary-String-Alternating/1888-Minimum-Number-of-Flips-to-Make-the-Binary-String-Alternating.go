@@ -27,7 +27,7 @@ func minFlips(s string) int {
 	countFlips01 = 0
 	countFlips10 = 0
 	for i := n - 1; i >= 0; i-- {
-		j := n - 1 - i // j = i从右往左数是第几个index, 用来判断奇偶性
+		j := n - 1 - i // j := i从右往左数是第几个index (用来判断奇偶性)
 		if (j%2 == 0 && s[i] == '1') || (j%2 == 1 && s[i] == '0') {
 			countFlips01 += 1
 		}
@@ -38,7 +38,7 @@ func minFlips(s string) int {
 		rightFlips10[i] = countFlips10
 	}
 
-	res := min(leftFlips01[n-1], leftFlips10[n-1])
+	res := min(leftFlips01[n-1], leftFlips10[n-1]) // 没有rotate, 只flip得到 01序列 or 10序列
 	for i := 0; i+1 < n; i++ {
 		res = min(res, leftFlips01[i]+rightFlips10[i+1])
 		res = min(res, leftFlips10[i]+rightFlips01[i+1])
