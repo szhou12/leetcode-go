@@ -57,7 +57,8 @@ rightFlips10[i] := # of flips to make s[i:n-1] alternate with 10 pattern (rightm
 Step 1: 构造 leftFlips01[] 和 leftFlips10[]: index i 从左往右, 依次计算需要flip的次数 (用i的奇偶性判断当前位子i应该是0还是1)
 Step 2: 构造 rightFlips01[] 和 rightFlips10[]: index i 从右往左, 依次计算需要flip的次数 (用i的奇偶性判断当前位子i应该是0还是1)
      Note: i从右往左走时, 数值是从大到小, 为了方便, 转换i, 以i从右起是第几个index来判断奇偶性 (i.e. 用n-1-i的奇偶性判断当前位子i应该是0还是1)
-Step 3: 初始值=min(leftFlips01[n-1], leftFlips10[n-1]); iterate 分界点, 取 min(leftFlips01[i] + rightFlips10[i+1], leftFlips10[i] + rightFlips01[i+1])
+Step 3: 初始值=min(leftFlips01[n-1], leftFlips10[n-1]); 
+     iterate 分界点, 取 min(leftFlips01[i] + rightFlips10[i+1], leftFlips10[i] + rightFlips01[i+1])
 ```
 
 Time complexity = $O(n)$

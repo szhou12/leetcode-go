@@ -57,7 +57,7 @@ func getPivotIndex(left int, right int) int {
 	return left + rand.Intn(right-left+1)
 }
 
-// Solution: Binary Searcy by Value
+// Solution: Binary Search by Value
 func findKthLargest_BS(nums []int, k int) int {
 	left := math.MinInt / 2
 	right := math.MaxInt / 2
