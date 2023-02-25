@@ -5,8 +5,8 @@ import (
 	"math"
 )
 
-// leftMin[i] := min sum of n-len subseq in nums[0:i] := pick n smallest elements in nums[0:i] by using max heap
-// rightMax[i] := max sum of n-len subseq in nums[i:n-1] = pick n largest elements in nums[i:n-1] by using min heap
+// leftMin[i] := min sum of n-len subseq in nums[0:i] = pick n smallest elements in nums[0:i] by using max heap
+// rightMax[i] := max sum of n-len subseq in nums[i:3n-1] = pick n largest elements in nums[i:3n-1] by using min heap
 func minimumDifference(nums []int) int64 {
 	n := len(nums) / 3
 
