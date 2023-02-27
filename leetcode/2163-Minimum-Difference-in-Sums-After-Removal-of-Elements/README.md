@@ -21,6 +21,11 @@ rightMax[i] := max sum of n-len subseq in nums[i:3n-1] = pick n largest elements
 
 
 #### 代码整体结构总结
+```
+Step 1: 构造 leftMin[]: index i 从左往右, 用**MaxHeap**保留n个最小元素
+Step 2: 构造 rightMax[]: index i 从右往左, 用**MinHeap**保留n个最大元素
+Step 3: iterate 分界点, 取 min(leftMin[i] - rightMax[i+1])
+```
 
 ## Resource
 
