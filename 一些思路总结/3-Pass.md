@@ -22,3 +22,5 @@
 * 移除指定元素的最少时间: [2167. Minimum Time to Remove All Cars Containing Illegal Goods](https://leetcode.com/problems/minimum-time-to-remove-all-cars-containing-illegal-goods/description/)
 
 * L段Sum - R段Sum 最小值: [2163. Minimum Difference in Sums After Removal of Elements](https://leetcode.com/problems/minimum-difference-in-sums-after-removal-of-elements/description/)
+
+* 移除一个元素使偶数位的和与奇数位的和相等: [1664. Ways to Make a Fair Array](https://leetcode.com/problems/ways-to-make-a-fair-array/description/)
