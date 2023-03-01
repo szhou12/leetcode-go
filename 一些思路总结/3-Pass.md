@@ -2,7 +2,13 @@
 
 * *此种解法有点像 Dynamic Programming, 又有点像 Greedy Algorithm, 实现又常涉及 Sliding Window*
 
+## 求总数/Count类型题
+
 * 接雨水: [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
+
+* 移除一个元素使偶数位的和与奇数位的和相等: [1664. Ways to Make a Fair Array](https://leetcode.com/problems/ways-to-make-a-fair-array/description/)
+
+## 求Max or Min/优化类型题
 
 * 找三个不重叠k-长subarray的最大和的index: [689. Maximum Sum of 3 Non-Overlapping Subarrays](https://leetcode.com/problems/maximum-sum-of-3-non-overlapping-subarrays/description/)
 
@@ -23,6 +29,6 @@
 
 * L段Sum - R段Sum 最小值: [2163. Minimum Difference in Sums After Removal of Elements](https://leetcode.com/problems/minimum-difference-in-sums-after-removal-of-elements/description/)
 
-* 移除一个元素使偶数位的和与奇数位的和相等: [1664. Ways to Make a Fair Array](https://leetcode.com/problems/ways-to-make-a-fair-array/description/)
+
 
 * 构造ab形式字符串的最少操作数: [1653. Minimum Deletions to Make String Balanced](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/description/)
