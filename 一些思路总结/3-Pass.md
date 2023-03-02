@@ -4,7 +4,7 @@
 
 * **重点1**: 要清楚明白 从左往右扫和从右往左扫 时候, 分别构造的array的物理意义
 
-* **重点2**: 分界点怎么定义(它可以是一个元素, 也可以是一段subarray)? 分界点左手边有什么？分界点右手边有什么?
+* **重点2**: 分界点怎么定义(它可以是一个元素, 也可以是一段subarray)? 分界点左手边需要什么？分界点右手边需要什么? 左右两边怎么 concatenate?
 
 ## 求总数/Count类型题
 
@@ -14,6 +14,7 @@
 
 * 求两个字符串只差一个字符的匹配substring个数: [1638. Count Substrings That Differ by One Character](https://leetcode.com/problems/count-substrings-that-differ-by-one-character/description/)
     * * **3-Pass + 2D DP(双序列型的DP)**
+    * *思路很巧妙*
 
 ## 求Max or Min/优化类型题
 
@@ -21,6 +22,7 @@
 
 * 找最小可裁定/删除的subarray长度: [2565. Subsequence With the Minimum Score](https://leetcode.com/problems/subsequence-with-the-minimum-score/)
     * **3-Pass + Binary Search 猜答案**
+    * *思路很巧妙*
 
 * 最大化array上任意两个segments: [2555. Maximize Win From Two Segments](https://leetcode.com/problems/maximize-win-from-two-segments/description/)
     * two intervals --> 找分界点
@@ -31,10 +33,12 @@
 
 * 转变成mountain array的最小操作: [1671. Minimum Number of Removals to Make Mountain Array](https://leetcode.com/problems/minimum-number-of-removals-to-make-mountain-array/description/)
     * **3-Pass + 1D DP(LIS)**
+    * *思路很巧妙*
 
 * 移除指定元素的最少时间: [2167. Minimum Time to Remove All Cars Containing Illegal Goods](https://leetcode.com/problems/minimum-time-to-remove-all-cars-containing-illegal-goods/description/)
 
 * L段Sum - R段Sum 最小值: [2163. Minimum Difference in Sums After Removal of Elements](https://leetcode.com/problems/minimum-difference-in-sums-after-removal-of-elements/description/)
     * **3-Pass + Priority Queue**
+    * *思路很巧妙*
 
 * 构造ab形式字符串的最少操作数: [1653. Minimum Deletions to Make String Balanced](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/description/)
