@@ -4,18 +4,26 @@
 
 * **重点1**: 要清楚明白 从左往右扫和从右往左扫 时候, 分别构造的array的物理意义
 
-* **重点2**: 分界点怎么定义(它可以是一个元素, 也可以是一段subarray)? 分界点左手边需要什么？分界点右手边需要什么? 左右两边怎么 concatenate?
+* **重点2**: 分界点怎么定义(它可以是一个元素, 也可以是一段subarray)? 分界点左手边需要什么？分界点右手边需要什么? 左右两边怎么 concatenate?\
+
+* **破题着眼点** - 如何下手这类题有两个着眼点 (如果第1个分析起来没有头绪就换第2个):
+    1. 直接定义 **从左往右扫构造的array 和 从右往左扫构造的array** 的物理意义
+    2. 定义 **分界点** 的物理意义开始. 一般把分界点定义为题目所求, 然后中心开花向两边拓展
 
 ## 求总数/Count类型题
 
 * 接雨水: [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
+    * 入手着眼点: **分界点** 的物理意义
 
 * 移除一个元素使偶数位的和与奇数位的和相等: [1664. Ways to Make a Fair Array](https://leetcode.com/problems/ways-to-make-a-fair-array/description/)
 
 * 求两个字符串只差一个字符的substring匹配个数: [1638. Count Substrings That Differ by One Character](https://leetcode.com/problems/count-substrings-that-differ-by-one-character/description/)
     * **3-Pass + 2D DP(双序列型的DP)**
+    * 入手着眼点: **分界点** 的物理意义 
+        * 分界点定义为substring中differ的那个char, 看两边保持元素对应相同的条件下最远可以走多远
 
 * L段和R段不同字符数相等的分界点个数: [1525. Number of Good Ways to Split a String](https://leetcode.com/problems/number-of-good-ways-to-split-a-string/description/)
+    * **3-Pass + HashMap**
 
 ## 求Max or Min/优化类型题
 
