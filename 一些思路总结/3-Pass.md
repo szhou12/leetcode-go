@@ -29,6 +29,8 @@
     * **3-Pass + Stack (find next greater element)**
     * 入手着眼点: **分界点** 的物理意义 
 
+* 是否存在递增的triplet: [334. Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/description/)
+
 
 ## 求Max or Min/优化类型题
 
