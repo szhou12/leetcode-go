@@ -26,8 +26,8 @@
         * 分界点定义为substring中differ的那个char, 看两边保持元素对应相同的条件下最远可以走多远
 
 * 所有subarray的最小值的和: [907. Sum of Subarray Minimums](https://leetcode.com/problems/sum-of-subarray-minimums/)
-    * **3-Pass + Stack (find next greater element)**
-    * 入手着眼点: **分界点** 的物理意义 
+    * **3-Pass + Stack (find next smaller element)**
+    * 入手着眼点: 从 **分界点** 的物理意义 出发
 
 * 是否存在递增的triplet: [334. Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/description/)
 

@@ -36,3 +36,7 @@
 * [739. Daily Temperatures](https://leetcode.com/problems/daily-temperatures/)
     * 思路: 从后往前看，挤掉栈顶矮个子
     * 本题要算距离, 所以, **Stack 内存入元素的index, 而不是元素本身!!!**
+
+* 所有subarray的最小值的和: [907. Sum of Subarray Minimums](https://leetcode.com/problems/sum-of-subarray-minimums/)
+    * **3-Pass + Stack (find next smaller element)**
+    * 入手着眼点: 从 **分界点** 的物理意义 出发
