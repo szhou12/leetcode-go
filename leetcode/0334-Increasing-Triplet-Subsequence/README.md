@@ -30,7 +30,13 @@ rightMax[i] = max(nums[i], rightMax[i+1])
 ```
 
 #### 代码整体结构总结
+```
+Step 1: 构造 leftMin[]: DP方法 从左至右 总是保留最小值
+Step 2: 构造 rightMax[]: DP方法 从右至左 总是保留最大值
+Step 3: iterate 分界点, 判断 是否存在 leftMin[i-1] < nums[i] < rightMax[i+1]
+```
 
+Time complexity = $O(n)$
 
 ## Resource
 [【每日一题】334. Increasing Triplet Subsequence, 12/18/2020](https://www.youtube.com/watch?v=-wtypYo-K-o&ab_channel=HuifengGuan)
