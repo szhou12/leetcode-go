@@ -9,6 +9,26 @@
 
 #### 物理意义
 
+*Note: `n=len(nums)`*
+
+*Note: 为了容易理解，这里提及的 `[x:y]` 都是左闭右闭*
+
+```go
+// Definition
+leftMin[i] := min element in nums[0:i]
+// Base Case
+leftMin[0] = nums[0]
+// Recurrence
+leftMin[i] = min(nums[i], leftMin[i-1])
+
+// Definition
+rightMax[i] := max element in nums[i:n-1]
+// Base Case
+rightMax[n-1] = nums[n-1]
+// Recurrence
+rightMax[i] = max(nums[i], rightMax[i+1])
+```
+
 #### 代码整体结构总结
 
 
