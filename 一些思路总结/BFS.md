@@ -23,3 +23,5 @@
 
 * [1020. Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/)
 
+### Dijkstra
+* 从Grid左上角走到右下角所花最短时间: [2577. Minimum Time to Visit a Cell In a Grid](https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/description/)

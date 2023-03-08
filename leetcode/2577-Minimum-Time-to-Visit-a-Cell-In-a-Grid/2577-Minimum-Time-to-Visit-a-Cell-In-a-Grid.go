@@ -10,13 +10,14 @@ var dir = [][]int{
 }
 
 func minimumTime(grid [][]int) int {
+	// Check if able to make first move
 	if grid[0][1] > 1 && grid[1][0] > 1 {
 		return -1
 	}
 
 	m, n := len(grid), len(grid[0])
 
-	// record min time to arrive at each cell
+	// record Min Arrival Time at each cell
 	arrival := make([][]int, m)
 	for i := 0; i < m; i++ {
 		arrival[i] = make([]int, n)
@@ -39,6 +40,8 @@ func minimumTime(grid [][]int) int {
 		heap.Push(minHeap, []int{1, 1, 0})
 	}
 	for (*minHeap).Len() > 0 {
+
+		// Step 1: address current step
 		cur := heap.Pop(minHeap).([]int)
 		t, x, y := cur[0], cur[1], cur[2]
 		if arrival[x][y] != -1 { // already visited
@@ -49,6 +52,7 @@ func minimumTime(grid [][]int) int {
 			break
 		}
 
+		// Step 2: address next step
 		// (x, y) -> (dx, dy)
 		for k := 0; k < 4; k++ {
 			dx := x + dir[k][0]
