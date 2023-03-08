@@ -23,5 +23,12 @@
 
 * [1020. Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/)
 
-### Dijkstra
+### Dijkstra - find shortest path
+
+* 适用题目的特征:
+    1. single-source: 只给一个起点
+    2. non-negative weight: edge的权重非负
+    * 这样, 就可以求图上任意一点到起点single-source的最短距离
+    * Time complexity = $O(E\log E)$
+
 * 从Grid左上角走到右下角所花最短时间: [2577. Minimum Time to Visit a Cell In a Grid](https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/description/)
