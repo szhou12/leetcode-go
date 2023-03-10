@@ -6,7 +6,7 @@ import (
 )
 
 func minimumWeight(n int, edges [][]int, src1 int, src2 int, dest int) int64 {
-	// Step 1: reconstruct graph - linked-list representation graph[fromNode] = [[toNode, weight]]
+	// Step 1: reconstruct graph - adjacency-list representation graph[fromNode] = [[toNode, weight]]
 	next := make([][]Pair, n)
 	for i := 0; i < n; i++ {
 		next[i] = make([]Pair, 0)
@@ -21,7 +21,7 @@ func minimumWeight(n int, edges [][]int, src1 int, src2 int, dest int) int64 {
 		prev[to] = append(prev[to], Pair{node: from, weight: weight})
 	}
 
-	// Step 2: find shortest path from source node to any node i
+	// Step 2: Dijkstra - find shortest path from source node to any node i
 	dist2Src1 := Dijkstra(n, next, src1)
 	dist2Src2 := Dijkstra(n, next, src2)
 	dist2Dest := Dijkstra(n, prev, dest)
