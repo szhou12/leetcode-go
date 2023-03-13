@@ -39,9 +39,11 @@
     * **Dijkstra + DFS + Deduplication**
     * 1976 与 1786 两题逻辑完全相同
     * 题目求方法总数, 最自然的是使用DFS
+    * 使用Memo避免DFS重复走走过的路径
 
 * 从起点走到终点的特殊路径总数: [1786. Number of Restricted Paths From First to Last Node](https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/description/)
     * **Dijkstra + DFS + Deduplication**
     * 1976 与 1786 两题逻辑完全相同
     * 题目求方法总数, 最自然的是使用DFS
+    * 使用Memo避免DFS重复走走过的路径
 
