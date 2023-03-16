@@ -1,5 +1,7 @@
 package leetcode
 
+import "container/heap"
+
 func maxProbability(n int, edges [][]int, succProb []float64, start int, end int) float64 {
 	// Step 1: reconstruct adj-list representation
 	adj := make([][]Pair, n)
@@ -17,6 +19,40 @@ func maxProbability(n int, edges [][]int, succProb []float64, start int, end int
 	dist := Dijkstra(n, adj, start)
 
 	return dist[end]
+}
+
+func Dijkstra(n int, adj [][]Pair, start int) []float64 {
+	dist := make([]float64, n)
+	for i := 0; i < n; i++ {
+		dist[i] = 0
+	}
+
+	minHeap := &PQ{}
+	heap.Init(minHeap)
+	// start node
+	heap.Push(minHeap, []float64{1, float64(start)})
+	// loop
+	for (*minHeap).Len() > 0 {
+		// current
+		temp := heap.Pop(minHeap).([]float64)
+		d, cur := temp[0], int(temp[1])
+		// check if already visited
+		if dist[cur] != 0 {
+			continue
+		}
+		dist[cur] = d
+
+		// make next move
+		for _, nei := range adj[cur] {
+			next, weight := nei.node, nei.weight
+			// check if already visited
+			if dist[next] != 0 {
+				continue
+			}
+			heap.Push(minHeap, []float64{d * weight, float64(next)})
+		}
+	}
+	return dist
 }
 
 type Pair struct {

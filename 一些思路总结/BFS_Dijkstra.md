@@ -47,3 +47,5 @@
     * 题目求方法总数, 最自然的是使用DFS
     * 使用Memo避免DFS重复走走过的路径
 
+* 最高概率的路径: [1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)
+
