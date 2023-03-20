@@ -25,7 +25,7 @@
 
 ### Dijkstra - find shortest path
 
-* 适用题目的特征:
+* **适用题目的特征:**
     1. **single-source**: 只给一个起点, 求从起点(single source)到图上任意一个node的最短路径
     2. **non-negative weight**: edge的权重非负
     * 这样, 就可以求图上任意一点到起点single-source的最短距离
