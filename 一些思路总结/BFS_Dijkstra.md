@@ -51,3 +51,4 @@
 
 * 最高概率的路径: [1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)
 
+* 从起点可到达的nodes总数: [882. Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/)
