@@ -21,7 +21,7 @@
 
 * [1020. Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/)
 
-## Dijkstra - find shortest path
+## Dijkstra - Find Shortest Path
 
 * **适用题目的特征:**
     1. **single-source**: 只给一个起点, 求从起点(single source)到图上任意一个node的最短路径
