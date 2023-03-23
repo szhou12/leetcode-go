@@ -34,7 +34,7 @@ func minimumCost(n int, highways [][]int, discounts int) int {
 	for (*minHeap).Len() > 0 {
 		// Current
 		temp := heap.Pop(minHeap).([]int)
-		d, cur, discnts := temp[0], temp[1], temp[2]
+		d, cur, discountsUsed := temp[0], temp[1], temp[2]
 
 		// if cur == dst, return
 		if cur == n-1 {
@@ -42,23 +42,23 @@ func minimumCost(n int, highways [][]int, discounts int) int {
 		}
 
 		// check if already visited
-		if cost[cur][discnts] != -1 {
+		if cost[cur][discountsUsed] != -1 {
 			continue
 		}
-		cost[cur][discnts] = d
+		cost[cur][discountsUsed] = d
 
 		// Make the next move
 		for _, nei := range adj[cur] {
 			next, weight := nei.node, nei.weight
 
 			// Don't use discount + Not already visited
-			if cost[next][discnts] == -1 {
-				heap.Push(minHeap, []int{d + weight, next, discnts})
+			if cost[next][discountsUsed] == -1 {
+				heap.Push(minHeap, []int{d + weight, next, discountsUsed})
 			}
 
 			// Use 1 discount + Not already visited
-			if discnts+1 <= discounts && cost[next][discnts+1] == -1 {
-				heap.Push(minHeap, []int{d + weight/2, next, discnts + 1})
+			if discountsUsed+1 <= discounts && cost[next][discountsUsed+1] == -1 {
+				heap.Push(minHeap, []int{d + weight/2, next, discountsUsed + 1})
 			}
 		}
 	}
