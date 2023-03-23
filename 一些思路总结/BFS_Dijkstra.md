@@ -49,6 +49,10 @@
     * 题目求方法总数, 最自然的是使用DFS
     * 使用Memo避免DFS重复走走过的路径
 
-* 最高概率的路径: [1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)
-
 * 从起点可到达的nodes总数: [882. Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/)
+
+* K 站中转内最便宜的航班路径: [787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/)
+    * **node储存双状态**: node 储存 位置信息+已中转次数信息
+    * Early Return: Dijkstra loop内return
+
+* 最高概率的路径(Easy): [1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)
