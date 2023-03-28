@@ -14,6 +14,7 @@
 3. 那么怎么实现？怎么让一个queue维护元素的顺序?
     * 显然, 用到 Priority Queue
 
+Time complexity = $O(mn\log mn)$
 
 ## Resource
 [【每日一题】LeetCode 2503. Maximum Number of Points From Grid Queries](https://www.youtube.com/watch?v=G7Gg9w5_KWk&t=5s&ab_channel=HuifengGuan)

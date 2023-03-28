@@ -39,7 +39,6 @@ func maxPoints(grid [][]int, queries []int) []int {
 
 	// Start node = upper-left cell
 	heap.Push(minHeap, []int{grid[0][0], 0, 0})
-	visited[0][0] = 1 // only mark visited when pushing an element
 
 	// Loop
 	for _, q := range qs {
@@ -49,6 +48,13 @@ func maxPoints(grid [][]int, queries []int) []int {
 			// Current legal candidate
 			temp := heap.Pop(minHeap).([]int)
 			x, y := temp[1], temp[2]
+
+			// check if already visited
+			if visited[x][y] == 1 {
+				continue
+			}
+
+			visited[x][y] = 1
 			count++
 
 			// Make the next move
@@ -64,7 +70,6 @@ func maxPoints(grid [][]int, queries []int) []int {
 					continue
 				}
 				heap.Push(minHeap, []int{grid[dx][dy], dx, dy})
-				visited[dx][dy] = 1 // only mark visited when pushing an element
 			}
 
 		}
