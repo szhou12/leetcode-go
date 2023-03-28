@@ -56,3 +56,6 @@
     * Early Return: Dijkstra loop内return
 
 * 最高概率的路径(Easy): [1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)
+
+## 思路想BFS, 代码结构像Dijkstra
+* 一个query可以淹没多少格子, 求淹没总数: [2503. Maximum Number of Points From Grid Queries](https://leetcode.com/problems/maximum-number-of-points-from-grid-queries/)
