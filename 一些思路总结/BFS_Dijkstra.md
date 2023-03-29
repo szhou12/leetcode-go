@@ -57,6 +57,10 @@
 
 * 最高概率的路径(Easy): [1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)
 
+* 从source node到所有node所需最短时间(**Easy**): [743. Network Delay Time](https://leetcode.com/problems/network-delay-time/description/)
+    * Dijkstra求最短路径的基础题: 求从source node到任意node i的最短路径
+    * 可用来作为以上题目的练手题
+
 ## BFS + PQ: 思路想BFS, 代码结构像Dijkstra
 * 一个query可以淹没多少格子, 求淹没总数: [2503. Maximum Number of Points From Grid Queries](https://leetcode.com/problems/maximum-number-of-points-from-grid-queries/)
 
