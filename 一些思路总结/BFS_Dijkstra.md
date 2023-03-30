@@ -67,4 +67,4 @@
 * 升高海平面中的最短路线: [778. Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/description/)
 
 * 接雨水II (海水倒灌II): [407. Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/description/)
-    * 题目思路很像 [417. Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
+    * 题目设置很像 [417. Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
