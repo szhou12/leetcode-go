@@ -23,13 +23,13 @@
 
 ## Dijkstra - Find Shortest Path
 
-* **适用题目的特征:**
+* :star: **适用题目的特征:**
     1. **single-source**: 只给一个起点, 求从起点(single source)到图上任意一个node的最短路径
     2. **non-negative weight**: edge的权重非负
     * 这样, 就可以求图上任意一点到起点single-source的最短距离
     * Time complexity = $O(E\log E)$
 
-* :red_circle:从Grid左上角走到右下角所花最短时间: [2577. Minimum Time to Visit a Cell In a Grid](https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/description/)
+* :red_circle: 从Grid左上角走到右下角所花最短时间: [2577. Minimum Time to Visit a Cell In a Grid](https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/description/)
     * **矩阵走格子类型题**
 
 * :red_circle: 从Grid左上角走到右下角所花最少cost: [1368. Minimum Cost to Make at Least One Valid Path in a Grid](https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/description/)
