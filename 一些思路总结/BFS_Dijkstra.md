@@ -61,6 +61,9 @@
     * Dijkstra求最短路径的基础题: 求从source node到任意node i的最短路径
     * 可用来作为以上题目的练手题
 
+* 走迷宫II / 走冰系道馆 (*Locked*): [505. The Maze II](https://leetcode.ca/all/505.html)
+    * 难点: 地面是冰面, 只能维持一个方向前进直到撞墙
+
 ## BFS + PQ: 思路想BFS, 代码结构像Dijkstra
 * 一个query可以淹没多少格子, 求淹没总数: [2503. Maximum Number of Points From Grid Queries](https://leetcode.com/problems/maximum-number-of-points-from-grid-queries/)
 
