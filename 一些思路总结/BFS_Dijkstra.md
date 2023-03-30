@@ -55,13 +55,13 @@
     * **node储存双状态**: node 储存 位置信息+已中转次数信息
     * Early Return: Dijkstra loop内return
 
-* 最高概率的路径(Easy): [1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)
+* :green_square: 最高概率的路径: [1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)
 
-* 从source node到所有node所需最短时间(**Easy**): [743. Network Delay Time](https://leetcode.com/problems/network-delay-time/description/)
+* :green_circle: 从source node到所有node所需最短时间: [743. Network Delay Time](https://leetcode.com/problems/network-delay-time/description/)
     * Dijkstra求最短路径的基础题: 求从source node到任意node i的最短路径
     * 可用来作为以上题目的练手题
 
-* 走迷宫II / 走冰系道馆 (:lock:): [505. The Maze II](https://leetcode.ca/all/505.html)
+* :lock: 走迷宫II / 走冰系道馆: [505. The Maze II](https://leetcode.ca/all/505.html)
     * 难点: 地面是冰面, 只能维持一个方向前进直到撞墙
 
 ## BFS + PQ: 思路想BFS, 代码结构像Dijkstra
