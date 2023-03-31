@@ -64,7 +64,7 @@
     * Dijkstra求最短路径的基础题: 求从source node到任意node i的最短路径
     * 可用来作为以上题目的练手题
 
-* :lock: :red_circle: :secret: 走迷宫II / 走冰系道馆: [505. The Maze II](https://leetcode.ca/all/505.html)
+* :lock: :yellow_circle: :secret: 走迷宫II / 走冰系道馆: [505. The Maze II](https://leetcode.ca/all/505.html)
     * 难点: 地面是冰面, 只能维持一个方向前进直到撞墙
 
 ## BFS + PQ: 思路想BFS, 代码结构像Dijkstra
