@@ -1,4 +1,4 @@
-# [505. The Maze II](https://leetcode.ca/all/505.html)
+# [505. The Maze II](https://leetcode.ca/2017-04-18-505-The-Maze-II/)
 
 ## Solution idea
 

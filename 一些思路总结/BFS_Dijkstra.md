@@ -76,8 +76,16 @@
     * Dijkstra求最短路径的基础题: 求从source node到任意node i的最短路径
     * 可用来作为以上题目的练手题
 
-* :lock: :yellow_circle: :secret: 走迷宫II / 走冰系道馆: [505. The Maze II](https://leetcode.ca/all/505.html)
+* :lock: :yellow_circle: :secret: 走迷宫II / 走冰系道馆: [505. The Maze II](https://leetcode.ca/2017-04-18-505-The-Maze-II/)
     * 难点: 地面是冰面, 只能维持一个方向前进直到撞墙
+    * Early Return: Dijkstra loop内到达终点即return
+
+* :lock: :red_circle: :secret: 走迷宫III / 走冰系道馆+掉洞: [499. The Maze III](https://leetcode.ca/2017-04-12-499-The-Maze-III/)
+    * **node储存双状态**: node 储存 位置信息+到达node的方向指令信息
+    * Priority Queue 再定义:
+        1. 用一个结构体容纳不同variable type (int, string)
+        2. `Less(i, j int)`: 双排序 - 先按照 path cost 排序, 再按照 指令的lexicographical order排序
+    * 维持一个方向滑冰时, 如果掉洞，直接break，不再往前滑
     * Early Return: Dijkstra loop内到达终点即return
 
 ## BFS + PQ: 思路想BFS, 代码结构像Dijkstra
