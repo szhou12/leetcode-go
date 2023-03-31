@@ -9,7 +9,7 @@
 | :yellow_circle: | 中等, 有思路但是实现上有问题, 最终实现版本参考了答案 |
 | :green_circle: | 简单, 可直接出bug-free code |
 | :lock: | 加锁题, 尚未提交过leetcode |
-| :secret: | 解题使用了值得记住的技巧 |
+| :secret: | 题解使用了值得记住的技巧 |
 
 ## Readme content structure
 

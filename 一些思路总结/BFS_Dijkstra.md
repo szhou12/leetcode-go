@@ -28,6 +28,9 @@
     2. **non-negative weight**: edge的权重非负
     * 这样, 就可以求图上任意一点到起点single-source的最短距离
     * Time complexity = $O(E\log E)$
+    * 两种Return方式:
+        1. Early Return: Dijkstra loop内到达终点即return; loop结束还没return说明无法到达终点
+        2. 填表 Return: Dijkstra把所有结果填入一个表 (array, matrix) 中, loop结束后把所求node的结果按要求从表中取出return
 
 * :red_circle: 从Grid左上角走到右下角所花最短时间: [2577. Minimum Time to Visit a Cell In a Grid](https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/description/)
     * **矩阵走格子类型题**
@@ -40,15 +43,15 @@
 
 * :red_circle: :secret: 到达终点的路径总数: [1976. Number of Ways to Arrive at Destination](https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/description/)
     * **Dijkstra + DFS + Deduplication**
-    * 1976 与 1786 两题逻辑完全相同
     * 题目求方法总数, 最自然的是使用DFS
     * 使用Memo避免DFS重复走走过的路径
+    * *1976 与 1786 两题逻辑完全相同*
 
 * :red_circle: :secret: 从起点走到终点的特殊路径总数: [1786. Number of Restricted Paths From First to Last Node](https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/description/)
     * **Dijkstra + DFS + Deduplication**
-    * 1976 与 1786 两题逻辑完全相同
     * 题目求方法总数, 最自然的是使用DFS
     * 使用Memo避免DFS重复走走过的路径
+    * *1976 与 1786 两题逻辑完全相同*
 
 * :red_circle: 从起点可到达的nodes总数: [882. Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/)
     * 难点1: 如何把解题思路与Dijkstra做关联 --> 把 小node 看做 edge weight
@@ -56,7 +59,16 @@
 
 * :red_circle: :secret: K 站中转内最便宜的航班路径: [787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/)
     * **node储存双状态**: node 储存 位置信息+已中转次数信息
-    * Early Return: Dijkstra loop内return
+    * Dijkstra结果储存进 二维矩阵 = (# of nodes, # of stops used so far)
+    * Early Return: Dijkstra loop内到达终点即return
+    * *0787 与 2093 两题逻辑相似*
+
+* :lock: :yellow_circle: :secret: [2093. Minimum Cost to Reach City With Discounts](https://leetcode.ca/2021-12-16-2093-Minimum-Cost-to-Reach-City-With-Discounts/#2093-minimum-cost-to-reach-city-with-discounts)
+    * 每次Expand一个邻居node, push "两条边": toll edge; toll/2 edge
+    * **node储存双状态**: node 储存 位置信息+已使用discounts次数信息
+    * Dijkstra结果储存进 二维矩阵 = (# of nodes, # of discounts used so far)
+    * Early Return: Dijkstra loop内到达终点即return
+    * *0787 与 2093 两题逻辑相似*
 
 * :green_circle: 最高概率的路径: [1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)
 
@@ -66,6 +78,7 @@
 
 * :lock: :yellow_circle: :secret: 走迷宫II / 走冰系道馆: [505. The Maze II](https://leetcode.ca/all/505.html)
     * 难点: 地面是冰面, 只能维持一个方向前进直到撞墙
+    * Early Return: Dijkstra loop内到达终点即return
 
 ## BFS + PQ: 思路想BFS, 代码结构像Dijkstra
 * 一个query可以淹没多少格子, 求淹没总数: [2503. Maximum Number of Points From Grid Queries](https://leetcode.com/problems/maximum-number-of-points-from-grid-queries/)
