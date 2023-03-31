@@ -35,7 +35,8 @@
 * :red_circle: 从Grid左上角走到右下角所花最少cost: [1368. Minimum Cost to Make at Least One Valid Path in a Grid](https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/description/)
     * **矩阵走格子类型题**
 
-* 从两个起点到达同一个终点所需最短路径: [2203. Minimum Weighted Subgraph With the Required Paths](https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths/description/)
+* :red_circle: 从两个起点到达同一个终点所需最短路径: [2203. Minimum Weighted Subgraph With the Required Paths](https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths/description/)
+    * 难点: "拉链" - 如何找到"拉链"node i
 
 * :red_circle: :secret: 到达终点的路径总数: [1976. Number of Ways to Arrive at Destination](https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/description/)
     * **Dijkstra + DFS + Deduplication**
@@ -49,7 +50,9 @@
     * 题目求方法总数, 最自然的是使用DFS
     * 使用Memo避免DFS重复走走过的路径
 
-* 从起点可到达的nodes总数: [882. Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/)
+* :red_circle: 从起点可到达的nodes总数: [882. Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/)
+    * 难点1: 如何把解题思路与Dijkstra做关联 --> 把 小node 看做 edge weight
+    * 难点2: Dijkstra expand时添加限制条件
 
 * :red_circle: :secret: K 站中转内最便宜的航班路径: [787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/)
     * **node储存双状态**: node 储存 位置信息+已中转次数信息
@@ -61,7 +64,7 @@
     * Dijkstra求最短路径的基础题: 求从source node到任意node i的最短路径
     * 可用来作为以上题目的练手题
 
-* :lock: :secret: 走迷宫II / 走冰系道馆: [505. The Maze II](https://leetcode.ca/all/505.html)
+* :lock: :red_circle: :secret: 走迷宫II / 走冰系道馆: [505. The Maze II](https://leetcode.ca/all/505.html)
     * 难点: 地面是冰面, 只能维持一个方向前进直到撞墙
 
 ## BFS + PQ: 思路想BFS, 代码结构像Dijkstra
