@@ -179,7 +179,7 @@ func upperBound(nums []int, target int) int {
 * 非递减数组中找第k小的乘积: [2040. Kth Smallest Product of Two Sorted Arrays](https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/description/)
     * 找前k小的个数的思路与前面题型不同. main idea: 分类讨论
 
-* 从矩阵中找第k小 array sum: [1439. Find the Kth Smallest Sum of a Matrix With Sorted Rows](https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/description/)
+* :red_circle: :secret: 从矩阵中找第k小 array sum: [1439. Find the Kth Smallest Sum of a Matrix With Sorted Rows](https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/description/)
     * 找前k小的个数的思路与前面题型不同. main idea: 结合**DFS**
     * 用 **DFS - All Combo Sum** 来找满足当前猜的数 (`mid`) 的array 的个数是否 >= k 个
 
