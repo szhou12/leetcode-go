@@ -167,7 +167,9 @@
 * 只允许Delete转换两个string: [583. Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/)
 * 不同的子序列数量: [115. Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)
 
+### 类型四: 子序列个数
 
+* :red_circle: 不同非空子序列个数II: [940. Distinct Subsequences II](https://leetcode.com/problems/distinct-subsequences-ii/description/)
 
 
 
