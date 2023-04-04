@@ -170,8 +170,10 @@
 ### 类型四: 子序列个数
 
 * :red_circle: 不同非空子序列个数II: [940. Distinct Subsequences II](https://leetcode.com/problems/distinct-subsequences-ii/description/)
+    * *940 与 1987 思路非常相近*
 
-
+* :red_circle: 二进制字符串中的"好的"子序列个数: [1987. Number of Unique Good Subsequences](https://leetcode.com/problems/number-of-unique-good-subsequences/description/)
+    * *940 与 1987 思路非常相近*
 
 ## 区间型 DP (interval DP)
 * 猜测数高了还是低了II: [375. Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/)
