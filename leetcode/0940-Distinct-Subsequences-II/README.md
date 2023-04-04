@@ -11,6 +11,16 @@
     * `DP[c]`的定义还有效地避免了 同一个subsequence的重复计算: 因为`DP[c]`的定义就是唯一以`c`为结尾的subsequennces的个数，`c`不同，自然也就不会有重复计算 (i.e. 在计算状态转移方程 (Recurrence) 时, 同时达到了去重的目的)
 2. 在计算状态转移方程 (Recurrence) 时, `DP[]`的定义/物理意义 实际上发生了变化, 但是由于两种定义/物理意义 在数学上可证明为等价的 (证明在下面给出), 状态转移方程的计算仍可保证正确性.
 
+#### DP整体结构
+
+
+#### 数学证明
+
+**Proof:** `DP[s[i]]` = `DP[c]` (# of distinct subseqs ending with `s[i]` = # of distinct subseqs ending with `c`)
+
+($\Rightarrow $) **WTS** `DP[s[i]]` $\subseteq $ `DP[c]`
+
+($\Leftarrow $) **WTS** `DP[s[i]]` $\supseteq $ `DP[c]`
 
 Time complexity = $O(n)$
 
