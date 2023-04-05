@@ -12,15 +12,34 @@
 2. 在计算状态转移方程 (Recurrence) 时, `DP[]`的定义/物理意义 实际上发生了变化, 但是由于两种定义/物理意义 在数学上可证明为等价的 (证明在下面给出), 状态转移方程的计算仍可保证正确性.
 
 #### DP整体结构
+1. Definition
+* `DP[c]` = at i-th iteration (i.e. `s[0:i]`), the number of distinct subsequences ending with character `c`
+* `DP[s[i]]` = at i-th iteration (i.e. `s[0:i]`), the number of distinct subsequences ending with `s[i]`
 
+2. Base Case
+* Init `DP[c]`= 0
+
+3. Reccurrence
+* For n times, `DP[s[i]]` = $\sum_{c=0}^25 $ `DP[c]` + 1
+    * +1: `s[i]`单独作为一个subsequence，不加在任何其他character后面
+
+4. 为什么可以避免重复? 即, $abc^1d$和$abc^2d$如何做区别？
+* 注意到, Recurrence中每次迭代, `s[i]`对应的character结尾的subseq都被重新计算赋值; 又有, `DP[s[i]]` = `DP[c]`
+```
+[X  X  X  X  X]  Y
+ 0    ...   i-1  i
+```
+* 如果前i-1次迭代把d加到$c^1$, 再往后的迭代中d不会加到相同subseq的$c^2$后面, 因为已经不是$c^2$不是前i-1次迭代出现的
 
 #### 数学证明
 
 **Proof:** `DP[s[i]]` = `DP[c]` (# of distinct subseqs ending with `s[i]` = # of distinct subseqs ending with `c`)
 
 ($\Rightarrow $) **WTS** `DP[s[i]]` $\subseteq $ `DP[c]`
+* 因为`s[i]`一定是26个字母中某一个`c`，所以`DP[s[i]]`一定属于`DP[c]`
 
 ($\Leftarrow $) **WTS** `DP[s[i]]` $\supseteq $ `DP[c]`
+* 因为根据定义, `DP[c]`描述的是以`c`为结尾的subseq，我们并不关心`c`到底是在`s[0:i]`中具体哪个位置，那么，我们就可以认为`c`就是`s[i]`，所以，每个符合条件的`DP[c]`都可以对应到`DP[s[i]]`
 
 Time complexity = $O(n)$
 
