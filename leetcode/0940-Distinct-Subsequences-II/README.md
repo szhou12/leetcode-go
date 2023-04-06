@@ -20,16 +20,17 @@
 * Init `DP[c]`= 0
 
 3. Reccurrence
-* For n times, `DP[s[i]]` = $\sum_{c=0}^25 $ `DP[c]` + 1
+* For n times, `DP[s[i]]` = $\sum_{c=0}^{25} $ `DP[c]` + 1
     * +1: `s[i]`单独作为一个subsequence，不加在任何其他character后面
 
 4. 为什么可以避免重复? 即, $abc^1d$和$abc^2d$如何做区别？
 * 注意到, Recurrence中每次迭代, `s[i]`对应的character结尾的subseq都被重新计算赋值; 又有, `DP[s[i]]` = `DP[c]`
+* 可以理解为，每次迭代代表一个时刻t, 如果两个时刻t1和t2都有相同字母d结尾, 后一时刻t2的d的值会覆盖前一时刻t1的d的值
 ```
-[X  X  X  X  X]  Y
- 0    ...   i-1  i
+[a  b  c1  X X X c2] d
+ 0      ...      i-1 i
 ```
-* 如果前i-1次迭代把d加到$c^1$, 再往后的迭代中d不会加到相同subseq的$c^2$后面, 因为已经不是$c^2$不是前i-1次迭代出现的
+* $abc^1d$和$abc^2d$产生的情况如上图, 根据`DP[c]`的定义，以c为结尾的subseq个数在i-1轮迭代时只会被唯一计算，所以在第i轮迭代把d加在c屁股后面不会有$abc^1d$和$abc^2d$两种情况, 只会有 abcd
 
 #### 数学证明
 

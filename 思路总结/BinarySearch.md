@@ -187,7 +187,12 @@ func upperBound(nums []int, target int) int {
     * 找前k小的个数的思路与前面题型不同. main idea: 转化 subarray sum 为 prefixSum diff, 再结合**Two Pointers**
     * 因为 prefixSum array 是单增的, 所以可以通过 **Two Pointers** 来找满足当前猜的数 (`mid`) 的 subarray 个数是否 >= k 个
 
+* 寻找丑数III: [1201. Ugly Number III](https://leetcode.com/problems/ugly-number-iii/description/)
+    * *1201 与 1539 思路相近*
+    * 需要用到一些数学定理: 容斥原理, LCM, GCD
+
 * 找第k个缺失的自然数: [1539. Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/description/)
+    * * *1201 与 1539 思路相近*
 
 ### Guess Min/Max
 
