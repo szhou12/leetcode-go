@@ -26,6 +26,9 @@ for left < right {...}
 
 * 什么时候需要 Post-Processing ?
     * 使用 Binary Search 时, 只有当题目的**input不一定包含答案target的时候**需要 post-processing, 否则 Binary Search 一定可以找到答案, 也就是不用post-processing
+    * `lowerBound(target)` 和 `upperBound(target)` 都需要 post-processing. 因为搜索区间内不一定存在满足target的左侧边界 和 满足target的右侧边界. 
+        * 搜索区间内的值都 `> target`，那就找不到 满足target的左侧边界 (ie. 第一个 `== target` 的元素)
+        * 搜索区间内的值都 `<= target`, 那就找不到 满足target的右侧边界 (ie. 第一个 `> target` 的元素)
 
 ## 经典题
 * Classic Binary Search: [704. Binary Search](https://leetcode.com/problems/binary-search/)
@@ -186,6 +189,8 @@ func upperBound(nums []int, target int) int {
 * 找第k小 subarray sum: [1918. Kth Smallest Subarray Sum](https://leetcode.ca/2021-08-01-1918-Kth-Smallest-Subarray-Sum/)
     * 找前k小的个数的思路与前面题型不同. main idea: 转化 subarray sum 为 prefixSum diff, 再结合**Two Pointers**
     * 因为 prefixSum array 是单增的, 所以可以通过 **Two Pointers** 来找满足当前猜的数 (`mid`) 的 subarray 个数是否 >= k 个
+
+### Binary Search + Math
 
 * 寻找丑数III: [1201. Ugly Number III](https://leetcode.com/problems/ugly-number-iii/description/)
     * *1201 与 1539 思路相近*
