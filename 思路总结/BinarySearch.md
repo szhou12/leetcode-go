@@ -30,34 +30,7 @@ for left < right {...}
         * e.g. 搜索区间内的值都 `> target`，那就找不到 满足target的左侧边界 (ie. 第一个 `== target` 的元素)
         * e.g. 搜索区间内的值都 `<= target`, 那就找不到 满足target的右侧边界 (ie. 第一个 `> target` 的元素)
 
-## 经典题
-* Classic Binary Search: [704. Binary Search](https://leetcode.com/problems/binary-search/)
-
-
-
-
-## Find First Occurrence / Last Occurrence
-
-[34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
-
-**一定！一定！一定要明确**target可能在数组中**没有出现**的三种情况，才能正确地写出post-processing中边界的查看条件!!!
-
-* 情况一: target 不在数组范围中，target 过于小，在**左边界**以外. e.g. 数组{3, 4, 5}，target为2
-* 情况二: target 不在数组范围中，target 过于大，在**右边界**以外，e.g. 数组{3, 4, 5}，target为6
-* 情况三: target 在数组范围中，只是数组中不存在. e.g. 数组{3, 6, 7}, target为5
-* 情况四: target 在数组范围中，并且数组中存在. Binary Search 一定能找到.
-
-
-
-
-## Find Closest Element Greater/Smaller Than Target
-
-* 此类题都要在最后注意 Post-process 找不到的情况:
-    1. target > 数组中所有值
-    2. target < 数组中所有值
-    3. target 在数组范围中，只是数组中不存在该值
-
-* **模版**
+* **模版 - find lower bound & right bound**
 
 **Assume input array non-decreasing order:**
 
@@ -100,7 +73,7 @@ func lowerBound(nums []int, target int) int {
  }
 ```
 
-1. `upperBound()`: Find the **first index** whose element in the array has the value > target (It follows the same concept as `upper_bound()` method in C++)
+2. `upperBound()`: Find the **first index** whose element in the array has the value > target (It follows the same concept as `upper_bound()` method in C++)
     1. 情况一: target 不在数组范围中，target 小于数组中所有元素，在**左边界**以外 $\Rightarrow $ 返回数组的第一个元素的index
     2. 情况二: target 不在数组范围中，target 大于数组中所有元素，在**右边界**以外 $\Rightarrow $ 返回数组的最后一个元素的index+1
     3. 情况三: target 在数组范围中，只是数组中不存在 $\Rightarrow $ 返回数组中第一个 > target的元素的index
@@ -138,6 +111,36 @@ func upperBound(nums []int, target int) int {
     }
 }
 ```
+
+* **备注**: `lowerBound()`, `upperBound()` 的物理意义也可以根据具体题目进行更改, 并根据具体的物理意义微调代码. 
+    * e.g. `lowerBound()`表示搜索区间内最大的小于target的元素
+    * e.g. `upperBound()`表示搜索区间内最大的等于target的元素
+
+## 经典题
+* Classic Binary Search: [704. Binary Search](https://leetcode.com/problems/binary-search/)
+
+
+## Find First Occurrence / Last Occurrence
+
+[34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+
+**一定！一定！一定要明确**target可能在数组中**没有出现**的三种情况，才能正确地写出post-processing中边界的查看条件!!!
+
+* 情况一: target 不在数组范围中，target 过于小，在**左边界**以外. e.g. 数组{3, 4, 5}，target为2
+* 情况二: target 不在数组范围中，target 过于大，在**右边界**以外，e.g. 数组{3, 4, 5}，target为6
+* 情况三: target 在数组范围中，只是数组中不存在. e.g. 数组{3, 6, 7}, target为5
+* 情况四: target 在数组范围中，并且数组中存在. Binary Search 一定能找到.
+
+
+
+## Find Closest Element Greater/Smaller Than Target
+
+* 此类题都要在最后注意 Post-process 找不到的情况:
+    1. target > 数组中所有值
+    2. target < 数组中所有值
+    3. target 在数组范围中，只是数组中不存在该值
+
+
 
 * 找最小的大于Target的元素: [744. Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
 
