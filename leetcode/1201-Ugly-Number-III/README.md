@@ -10,18 +10,18 @@
     * else   : right = mid
 
 2. 怎么实现`fcn(mid, a, b, c)`? 利用容斥原理 (inclusion–exclusion principle)
-    * [1, ..., mid]中能被a整除的个数 A = mid/a
-    * [1, ..., mid]中能被b整除的个数 B = mid/b
-    * [1, ..., mid]中能被c整除的个数 C = mid/c
-    * [1, ..., mid]中能被a和b整除的个数 A ∩ B = mid/lcm(a,b)
-    * [1, ..., mid]中能被a和c整除的个数 A ∩ C = mid/lcm(a,c)
-    * [1, ..., mid]中能被b和c整除的个数 B ∩ C = mid/lcm(b,c)
-    * [1, ..., mid]中能被a和b和c整除的个数 A ∩ B ∩ C = mid/lcm(a, lcm(b,c))
+    * [1, ..., mid]中能被a整除的个数 A = mid / a
+    * [1, ..., mid]中能被b整除的个数 B = mid / b
+    * [1, ..., mid]中能被c整除的个数 C = mid / c
+    * [1, ..., mid]中能被a和b整除的个数 A ∩ B = mid / lcm(a, b)
+    * [1, ..., mid]中能被a和c整除的个数 A ∩ C = mid / lcm(a, c)
+    * [1, ..., mid]中能被b和c整除的个数 B ∩ C = mid / lcm(b, c)
+    * [1, ..., mid]中能被a和b和c整除的个数 A ∩ B ∩ C = mid / lcm(a, lcm(b, c))
     * [1, ..., mid]中能被a, b, c 任意一个整除的个数 = A + B + C - A ∩ B - A ∩ C - B ∩ C + A ∩ B ∩ C
 
 3. 需要直接记住的数学定理:
-    * [1, ..., n]自然数区间内能被 a 整除的个数 = n/a
-    * [1, ..., n]自然数区间内能被 a和b 同时整除的个数 = n/lcm(a, b)
+    * [1, ..., n]自然数区间内能被 a 整除的个数 = n / a
+    * [1, ..., n]自然数区间内能被 a和b 同时整除的个数 = n / lcm(a, b)
     * lcm 可由 gcd 计算得到: lcm(a, b) = a * b / gcd(a, b)
     * gcd 可由 Euclidean algorithm (辗转相除法) 计算得到
 
