@@ -27,8 +27,8 @@ for left < right {...}
 * 什么时候需要 Post-Processing ?
     * 使用 Binary Search 时, 只有当题目的**input不一定包含答案target的时候**需要 post-processing, 否则 Binary Search 一定可以找到答案, 也就是不用post-processing
     * `lowerBound(target)` 和 `upperBound(target)` 都需要 post-processing. 因为搜索区间内不一定存在满足target的左侧边界 和 满足target的右侧边界. 
-        * 搜索区间内的值都 `> target`，那就找不到 满足target的左侧边界 (ie. 第一个 `== target` 的元素)
-        * 搜索区间内的值都 `<= target`, 那就找不到 满足target的右侧边界 (ie. 第一个 `> target` 的元素)
+        * e.g. 搜索区间内的值都 `> target`，那就找不到 满足target的左侧边界 (ie. 第一个 `== target` 的元素)
+        * e.g. 搜索区间内的值都 `<= target`, 那就找不到 满足target的右侧边界 (ie. 第一个 `> target` 的元素)
 
 ## 经典题
 * Classic Binary Search: [704. Binary Search](https://leetcode.com/problems/binary-search/)
