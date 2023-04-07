@@ -195,6 +195,8 @@ func upperBound(nums []int, target int) int {
 
 ### Binary Search + Math
 
+* :star: 搜索区间为自然数，由于自然数递增排序，所以可以天然地使用二分搜索
+
 * 寻找丑数III: [1201. Ugly Number III](https://leetcode.com/problems/ugly-number-iii/description/)
     * *1201 与 1539 思路相近*
     * 需要用到一些数学定理: 容斥原理, LCM, GCD
