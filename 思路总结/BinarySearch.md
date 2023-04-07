@@ -113,8 +113,8 @@ func upperBound(nums []int, target int) int {
 ```
 
 * **备注**: `lowerBound()`, `upperBound()` 的物理意义也可以根据具体题目进行更改, 并根据具体的物理意义微调代码. 
-    * e.g. `lowerBound()`表示搜索区间内最大的小于target的元素
-    * e.g. `upperBound()`表示搜索区间内最大的等于target的元素
+    * e.g. `lowerBound()`表示搜索区间内 最大的/最后一个 小于target的元素
+    * e.g. `upperBound()`表示搜索区间内 最大的/最后一个 等于target的元素
 
 ## 经典题
 * Classic Binary Search: [704. Binary Search](https://leetcode.com/problems/binary-search/)
@@ -201,6 +201,8 @@ func upperBound(nums []int, target int) int {
 
 * 找第k个缺失的自然数: [1539. Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/description/)
     * * *1201 与 1539 思路相近*
+
+* 阶乘函数后 K 个零: [793. Preimage Size of Factorial Zeroes Function](https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/description/)
 
 ### Guess Min/Max
 
