@@ -18,6 +18,9 @@
         * e.g. `125!` 最多可以分解出 25 + 5 + 1 = 31 个因子 5，也就是说阶乘结果的末尾有 31 个 0。
 
 2. 如何搜索末尾k个0的 `x!` ?
+    1. 利用Binary Search搜索边界:
+        * lower bound: 找最小的`x`使得`x!`有k个0
+        * upper bound: 找最大的`x`使得`x!`有k个0
 
 ## Resource
 [讲两道常考的阶乘算法题](https://labuladong.github.io/algo/di-san-zha-24031/shu-xue-yu-659f1/jiang-lian-ae367/)
