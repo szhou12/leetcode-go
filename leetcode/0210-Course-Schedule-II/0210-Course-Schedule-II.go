@@ -17,9 +17,34 @@ func findOrder(numCourses int, prerequisites [][]int) []int {
 	// Step 2: Topological Sort
 	courseOrder := make([]int, 0)
 	queue := make([]int, 0)
-	for len(queue) > 0 {
-
+	// Start nodes: degree == 0
+	for i := 0; i < n; i++ {
+		if degree[i] == 0 {
+			queue = append(queue, i)
+		}
 	}
+	// Loop
+	for len(queue) > 0 {
+		// Cur
+		cur := queue[0]
+		queue = queue[1:]
+		// update
+		courseOrder = append(courseOrder, cur)
+
+		// Make the next move
+		for nei, _ := range next[cur] {
+			degree[nei]--
+			if degree[nei] == 0 {
+				queue = append(queue, nei)
+			}
+		}
+	}
+
+	// Step 3: calculate results
+	if len(courseOrder) != n {
+		return []int{}
+	}
+	return courseOrder
 
 }
 
