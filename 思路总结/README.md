@@ -11,6 +11,8 @@
 | :lock: | 加锁题, 尚未提交过leetcode |
 | :secret: | 题解使用了值得记住的技巧 |
 
+[emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#table-of-contents)
+
 ## Readme content structure
 
 每道题的Readme结构统一如下:

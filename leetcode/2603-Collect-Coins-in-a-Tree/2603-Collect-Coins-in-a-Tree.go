@@ -52,20 +52,17 @@ func mark(degree *[]int, next *[]map[int]bool, deleted *[]int, n int) []int {
 
 	// Loop
 	for len(queue) > 0 {
-		size := len(queue)
-		for k := 0; k < size; k++ {
-			// Cur
-			cur := queue[0]
-			queue = queue[1:]
+		// Cur
+		cur := queue[0]
+		queue = queue[1:]
 
-			// Push neighbors
-			for nei, _ := range (*next)[cur] {
-				(*degree)[nei]--
-				delete((*next)[nei], cur)
-				depth[nei] = max(depth[nei], depth[cur]+1)
-				if (*degree)[nei] == 1 && (*deleted)[nei] != 1 {
-					queue = append(queue, nei)
-				}
+		// Make the next move
+		for nei, _ := range (*next)[cur] {
+			(*degree)[nei]--
+			delete((*next)[nei], cur)
+			depth[nei] = max(depth[nei], depth[cur]+1)
+			if (*degree)[nei] == 1 && (*deleted)[nei] != 1 {
+				queue = append(queue, nei)
 			}
 		}
 	}
@@ -86,22 +83,21 @@ func prune(degree *[]int, next *[]map[int]bool, coins *[]int, n int) []int {
 
 	// Loop
 	for len(queue) > 0 {
-		size := len(queue)
-		for k := 0; k < size; k++ {
-			// Cur
-			cur := queue[0]
-			queue = queue[1:]
-			deleted[cur] = 1
+		// Cur
+		cur := queue[0]
+		queue = queue[1:]
+		// update
+		deleted[cur] = 1
 
-			// Push neighbors
-			for nei, _ := range (*next)[cur] {
-				(*degree)[nei]--
-				delete((*next)[nei], cur)
-				if (*degree)[nei] == 1 && (*coins)[nei] == 0 {
-					queue = append(queue, nei)
-				}
+		// Make the next move
+		for nei, _ := range (*next)[cur] {
+			(*degree)[nei]--
+			delete((*next)[nei], cur)
+			if (*degree)[nei] == 1 && (*coins)[nei] == 0 {
+				queue = append(queue, nei)
 			}
 		}
+
 	}
 
 	return deleted

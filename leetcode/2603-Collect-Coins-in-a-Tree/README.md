@@ -16,7 +16,7 @@
         * 实现：“剥洋葱 (BFS)” 从外到里，一层一层地计算深度
     * :arrow_right: 要访问的节点 = node 深度 $\geq 3$
     * :arrow_right: 起点node定在哪里？其实无所谓，因为反正题目要求需要最终原路返回起点
-    * :arrow_right: 总步数 = `(m - 1) x 2` where `m = ` number of nodes whose depth $\geq 3$
+    * :arrow_right: 总步数 = `(m - 1) x 2` where `m` is number of nodes whose depth $\geq 3$
 
 
 
