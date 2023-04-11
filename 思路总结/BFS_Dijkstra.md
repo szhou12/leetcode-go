@@ -100,5 +100,18 @@
 
 ## Topological Sort
 
+* :star: **解题思路:**
+    * **农村包围城市**: 优先访问那些入度最低的节点。删去第一批最外围的节点后，再继续访问此时入度更新为最低的节点。依次类推。
+    * 使用的数据结构: BFS
+        * 注: 拓扑排序也可以用DFS实现，但个人感觉BFS的思路更直观更易模版化且算法在空间上也更高效，遂练习时着重使用BFS解题
+    * 应用条件: 图中无环
+    * 入度/degree 的定义: 一般的, **degree = the number of incoming edges**.
+        * 注: degree 的定义也可能根据具体题目的要求进行调整，不一定死板地遵守一般定义
+    * 外围 vs 内围: 一般的，最外围的节点 = 入度的值最低的节点
+        * 注: 最外围节点的定义也可能根据具体题目的要求增添额外的判定条件，但入度的值一般是其中一条必要的判定条件
+
+
 * :yellow_circle: 课程表II: [210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)
     * 拓扑排序的基础题，一定要熟练掌握
+
+* :red_circle: tree上捡硬币: [2603. Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/description/)
