@@ -41,10 +41,7 @@ func canFinish(numCourses int, prerequisites [][]int) bool {
 	}
 
 	// Step 3: calculate result
-	if count == n {
-		return true
-	}
-	return false
+	return count == n
 
 }
 

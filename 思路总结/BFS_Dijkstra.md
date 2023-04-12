@@ -110,8 +110,9 @@
     * 外围 vs 内围: 一般的，最外围的节点 = 入度的值最低的节点
         * 注: 最外围节点的定义也可能根据具体题目的要求增添额外的判定条件，但入度的值一般是其中一条必要的判定条件
 
-
+### 有向图
 * :yellow_circle: 课程表II: [210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)
     * 拓扑排序的基础题，一定要熟练掌握
 
+### 无向图
 * :red_circle: tree上捡硬币: [2603. Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/description/)
