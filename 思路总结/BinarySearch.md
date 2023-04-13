@@ -1,5 +1,16 @@
 # Binary Search
 
+## Contents
+* [方法论](#方法论)
+* [经典题](#经典题)
+* [First/Last Occurrence](#find-first-occurrence--last-occurrence)
+* [Closet element greater/less](#find-closest-element-greatersmaller-than-target)
+* [BS猜答案](#binary-search-猜答案)
+    * [Guess K-th Element](#guess-k-th-element)
+    * [Guess + Math](#guess--math)
+    * [Guess Min/Max](#guess-minmax)
+
+## 方法论
 * 统一循环条件:
 ```
 for left < right {...}
@@ -116,6 +127,7 @@ func upperBound(nums []int, target int) int {
     * e.g. `lowerBound()`表示搜索区间内 最大的/最后一个 小于target的元素
     * e.g. `upperBound()`表示搜索区间内 最大的/最后一个 等于target的元素
 
+
 ## 经典题
 * Classic Binary Search: [704. Binary Search](https://leetcode.com/problems/binary-search/)
 
@@ -193,7 +205,7 @@ func upperBound(nums []int, target int) int {
     * 找前k小的个数的思路与前面题型不同. main idea: 转化 subarray sum 为 prefixSum diff, 再结合**Two Pointers**
     * 因为 prefixSum array 是单增的, 所以可以通过 **Two Pointers** 来找满足当前猜的数 (`mid`) 的 subarray 个数是否 >= k 个
 
-### Binary Search + Math
+### Guess + Math
 
 * :star: 搜索区间为自然数，由于自然数递增排序，所以可以天然地使用二分搜索
 
