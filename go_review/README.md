@@ -1,5 +1,5 @@
 # Golang Review
-本文主要进行针对在LeetCode刷题过程中所遇到的有关Go语言知识点的学习，总结和补充
+本文主要进行针对在LeetCode刷题过程中所遇到的有关Go语言知识点的总结和补充
 
 ## Contents
 * [Slice](#slice)
@@ -31,8 +31,8 @@ nums := []int{1, 2, 3} // slice
     * 把一个slice传入function的确是pass by value, 也就是进行了一次copy。
     * slice每个元素不是存的值本身，而是一个pointer。底层有一个开辟的连续物理空间存放slice的所有元素的值 (backing array)。每一个pointer指向物理空间的一个值。
     * 所以，虽然slice传入function是pass by value，但是copy的实际上是每一个pointer，对应的pointer指向底层物理空间中同一个值。所以，function内对slice的CRUD操作也会反映在原来的slice上。
-    * 相反的，array每个元素是存的值本身，所以，array传入function后，function内对array的CRUD操作也会反映在原来的array上。
-* Slice图示：
+    * 相反的，array每个元素是存的值本身，所以，array传入function后，就生成了另一个array，function内对array的CRUD操作不会反映在原来的array上。
+
 ![slice_into_fcn](https://user-images.githubusercontent.com/35708194/231896890-7f5ba00d-6b58-4d9f-993d-aadc601082e4.png)
 ```go
 // slice 传入 function后所作修改会反映在原来的slice上
