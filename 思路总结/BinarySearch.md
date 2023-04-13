@@ -134,7 +134,7 @@ func upperBound(nums []int, target int) int {
 
 ## Find First Occurrence / Last Occurrence
 
-[34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+* 在排序数组中查找元素的第一个和最后一个位置: [34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
 
 **一定！一定！一定要明确**target可能在数组中**没有出现**的三种情况，才能正确地写出post-processing中边界的查看条件!!!
 
@@ -167,7 +167,7 @@ func upperBound(nums []int, target int) int {
     * 此法适用于 题目要求 return single value (scalar) 并且 涉及 max/min value
 
 **要点**: 什么时候可以用？
-    * 当我们从题目中找到一种 **单调性** 的规律时，一般可以尝试用二分猜答案
+* 当我们从题目中找到一种 **单调性** 的规律时，一般可以尝试用二分猜答案
 
 **猜答案的具体步骤**
 1. 确定搜索空间：也就是确定Binary Search的下界/左边界 和 上界/右边界
