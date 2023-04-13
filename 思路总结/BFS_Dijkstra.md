@@ -101,14 +101,21 @@
 ## Topological Sort
 
 * :star: **解题思路:**
-    * **农村包围城市**: 优先访问那些入度最低的节点。删去第一批最外围的节点后，再继续访问此时入度更新为最低的节点。依次类推。
+    * **农村包围城市/剥洋葱**: 优先访问那些入度最低的节点。删去第一批最外围的节点后，再继续访问此时入度更新为最低的节点。依次类推。
     * 使用的数据结构: BFS
         * 注: 拓扑排序也可以用DFS实现，但个人感觉BFS的思路更直观更易模版化且算法在空间上也更高效，遂练习时着重使用BFS解题
-    * 应用条件: 图中无环
+    * 使用条件: **Acyclic** (在无向图中就意味着必须是一个Tree)
     * 入度/degree 的定义: 一般的, **degree = the number of incoming edges**.
         * 注: degree 的定义也可能根据具体题目的要求进行调整，不一定死板地遵守一般定义
-    * 外围 vs 内围: 一般的，最外围的节点 = 入度的值最低的节点
+    * 外围 (低阶级) vs 内层 (高阶级): 一般的，最外围的节点 = 入度的值最低的节点
         * 注: 最外围节点的定义也可能根据具体题目的要求增添额外的判定条件，但入度的值一般是其中一条必要的判定条件
+    * 有向图 vs 无向图:
+        * 最低入度值 (**最低入度值是非常重要的判定外围node的条件！**):
+            * **有向图**中node入度最低 = 0
+            * **无向图**中node入度最低 = 1
+        * Check for visited (防止从内层重新走回外围的机会):
+            * **有向图**无需检查visited, 因为有向就意味着从内层走回外围的机会根本不可能发生
+            * **无向图**需要检查visited, 除非next move时直接过河拆桥, 把从内层走回外围的edge删除了 (e.g. [2603. Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/description/))
 
 ### 有向图
 * :yellow_circle: 课程表II: [210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)

@@ -1,7 +1,7 @@
 package leetcode
 
 func collectTheCoins(coins []int, edges [][]int) int {
-	// Step 1: pre-processing
+	// Step 1: Reconstruct adj-list repr + Calculate degree
 	n := len(coins)
 	degree := make([]int, n)
 	next := make([]map[int]bool, n) // find all its neighbors for each node
@@ -59,7 +59,7 @@ func mark(degree *[]int, next *[]map[int]bool, deleted *[]int, n int) []int {
 		// Make the next move
 		for nei, _ := range (*next)[cur] {
 			(*degree)[nei]--
-			delete((*next)[nei], cur)
+			delete((*next)[nei], cur) // 这里代替了 check visited, 因为过河拆桥, 把从内层走回外围的edge给删了
 			depth[nei] = max(depth[nei], depth[cur]+1)
 			if (*degree)[nei] == 1 && (*deleted)[nei] != 1 {
 				queue = append(queue, nei)

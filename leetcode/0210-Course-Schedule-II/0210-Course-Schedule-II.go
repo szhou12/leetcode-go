@@ -1,7 +1,7 @@
 package leetcode
 
 func findOrder(numCourses int, prerequisites [][]int) []int {
-	// Step 1: pre-processing
+	// Step 1: Reconstruct adj-list representation + Calculate degree
 	n := numCourses
 	degree := make([]int, n) // # of incoming edges
 	next := make([]map[int]bool, n)

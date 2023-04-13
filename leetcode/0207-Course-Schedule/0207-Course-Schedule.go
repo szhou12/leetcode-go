@@ -1,7 +1,7 @@
 package leetcode
 
 func canFinish(numCourses int, prerequisites [][]int) bool {
-	// Step 1: pre-processing
+	// Step 1: Reconstruct adj-list representation + Calculate degree
 	n := numCourses
 	degree := make([]int, n)
 	next := make([]map[int]bool, n)
