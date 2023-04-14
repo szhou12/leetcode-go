@@ -35,7 +35,7 @@ func componentValue(nums []int, edges [][]int) int {
 			sums = append(sums, total/s)
 		}
 	}
-	sort.Ints(sums)
+	sort.Ints(sums) // smaller the component sum, more edge-cuts needed
 
 	// Step 2: Topological Sort for each possible component sum
 	for _, sum := range sums {

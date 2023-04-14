@@ -5,6 +5,14 @@
 * [Slice](#slice)
     * [Slice vs. Array](#slice-vs-array)
     * [Pass into a function](#pass-into-a-function)
+    * [How to index a slice pointer](#how-to-index-a-slice-pointer)
+    * [Create slice of slices](#create-slice-of-slices)
+    * [Sort slice of objects](#sort-slice-of-objects)
+    * [Sort slice of slice](#sort-slice-of-slice)
+    * [Slice of Map](#slice-of-map)
+    * [Slice as a key in map](#slice-as-a-key-in-map)
+    * [Prepend elements](#prepend-elements)
+
 
 ## Slice
 ### Slice vs. Array
@@ -60,4 +68,57 @@ func change(nums [4]int) [4]int {
 	nums[0] = 10
 	return nums
 }
+```
+
+### How to index a slice pointer
+[why is indexing on the slice pointer not allowed in golang - Stack Overflow](https://stackoverflow.com/questions/38468258/why-is-indexing-on-the-slice-pointer-not-allowed-in-golang)
+* TLDR:
+    * To give some practical reason, this is likely due to the fact that the pointer doesn't point to the beginning of an array (like the block of memory.)
+```go
+(*nums)[i]
+```
+
+### Create slice of slices
+[Go slice - working with slices in Golang](https://zetcode.com/golang/slice/)
+```go
+inputSlice := [][]int{{1, 3}, {2, 6}, {8, 10}, {15, 18}} //都要用花括号！
+```
+
+### Sort slice of objects
+[sort package](https://pkg.go.dev/sort#Slice)
+
+[The 3 ways to sort in Go](https://yourbasic.org/golang/how-to-sort-in-go/)
+* 个人总结：
+    * `[]int`, `[]string`, `[]float64` 分别有专属的sort API: `sort.Ints()`, `sort.Strings()`, `sort.Float64s()`. 都是增序排列。
+    * 常用的可自定义sort function: `sort.Slice()`
+```go
+sort.Slice(people, func(i, j int) bool { 
+    return people[i].Name < people[j].Name
+})
+```
+
+### Sort slice of slice
+[golang sort slices of slice by first element - Stack Overflow](https://stackoverflow.com/questions/55360091/golang-sort-slices-of-slice-by-first-element)
+
+[Checking the equality of two slices - Stack Overflow](https://stackoverflow.com/questions/15311969/checking-the-equality-of-two-slices)
+
+
+### Slice of Map
+[Slice of Map in Go (Golang)](https://golangbyexample.com/slice-map-golang/)
+```go
+next := make([]map[int]bool, n)
+```
+
+### Slice as a key in map
+[Slice as a key in map - Stack Overflow](https://stackoverflow.com/questions/20297503/slice-as-a-key-in-map)
+* 个人总结：
+    * 只能用定长的 array 作为 key (e.g. `[2]int{1,2}`), 不能用 slice 作为 key `[]int{1,2}`
+```go
+m := make(map[[2]int]bool)
+```
+
+### Prepend elements
+[How to prepend int to slice - Stack Overflow](https://stackoverflow.com/questions/53737435/how-to-prepend-int-to-slice)
+```go
+nums = append([]int{1}, nums...)
 ```
