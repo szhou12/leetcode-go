@@ -17,10 +17,10 @@ func collectTheCoins(coins []int, edges [][]int) int {
 	}
 
 	// Step 2: Prune redundant leaf nodes that have no coins
-	deleted := prune(&degree, &next, &coins, n)
+	deleted := prune(degree, next, coins, n)
 
 	// Step 3: Mark depth
-	depth := mark(&degree, &next, &deleted, n)
+	depth := mark(degree, next, deleted, n)
 
 	// Step 4: Calculate result
 	m := 0
@@ -35,7 +35,7 @@ func collectTheCoins(coins []int, edges [][]int) int {
 	return 0
 }
 
-func mark(degree *[]int, next *[]map[int]bool, deleted *[]int, n int) []int {
+func mark(degree []int, next []map[int]bool, deleted []int, n int) []int {
 	depth := make([]int, n)
 	for i := 0; i < n; i++ {
 		depth[i] = -1
@@ -44,7 +44,7 @@ func mark(degree *[]int, next *[]map[int]bool, deleted *[]int, n int) []int {
 
 	// Start nodes
 	for i := 0; i < n; i++ {
-		if (*degree)[i] == 1 && (*deleted)[i] != 1 {
+		if degree[i] == 1 && deleted[i] != 1 {
 			depth[i] = 1
 			queue = append(queue, i)
 		}
@@ -57,11 +57,11 @@ func mark(degree *[]int, next *[]map[int]bool, deleted *[]int, n int) []int {
 		queue = queue[1:]
 
 		// Make the next move
-		for nei, _ := range (*next)[cur] {
-			(*degree)[nei]--
-			delete((*next)[nei], cur) // 这里代替了 check visited, 因为过河拆桥, 把从内层走回外围的edge给删了
+		for nei, _ := range (next)[cur] {
+			degree[nei]--
+			delete((next)[nei], cur) // 这里代替了 check visited, 因为过河拆桥, 把从内层走回外围的edge给删了
 			depth[nei] = max(depth[nei], depth[cur]+1)
-			if (*degree)[nei] == 1 && (*deleted)[nei] != 1 {
+			if degree[nei] == 1 && deleted[nei] != 1 {
 				queue = append(queue, nei)
 			}
 		}
@@ -70,13 +70,13 @@ func mark(degree *[]int, next *[]map[int]bool, deleted *[]int, n int) []int {
 	return depth
 }
 
-func prune(degree *[]int, next *[]map[int]bool, coins *[]int, n int) []int {
+func prune(degree []int, next []map[int]bool, coins []int, n int) []int {
 	deleted := make([]int, n)
 	queue := make([]int, 0)
 
 	// Start nodes
 	for i := 0; i < n; i++ {
-		if (*degree)[i] == 1 && (*coins)[i] == 0 {
+		if degree[i] == 1 && coins[i] == 0 {
 			queue = append(queue, i)
 		}
 	}
@@ -90,10 +90,10 @@ func prune(degree *[]int, next *[]map[int]bool, coins *[]int, n int) []int {
 		deleted[cur] = 1
 
 		// Make the next move
-		for nei, _ := range (*next)[cur] {
-			(*degree)[nei]--
-			delete((*next)[nei], cur)
-			if (*degree)[nei] == 1 && (*coins)[nei] == 0 {
+		for nei, _ := range next[cur] {
+			degree[nei]--
+			delete((next)[nei], cur)
+			if degree[nei] == 1 && coins[nei] == 0 {
 				queue = append(queue, nei)
 			}
 		}

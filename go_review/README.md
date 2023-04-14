@@ -112,7 +112,7 @@ next := make([]map[int]bool, n)
 ### Slice as a key in map
 [Slice as a key in map - Stack Overflow](https://stackoverflow.com/questions/20297503/slice-as-a-key-in-map)
 * 个人总结：
-    * 只能用定长的 array 作为 key (e.g. `[2]int{1,2}`), 不能用 slice 作为 key `[]int{1,2}`
+    * 只能用定长的 array 作为 key (e.g. `[2]int{1,2}`), 不能用 slice 作为 key (e.g. `[]int{1,2}`)
 ```go
 m := make(map[[2]int]bool)
 ```
