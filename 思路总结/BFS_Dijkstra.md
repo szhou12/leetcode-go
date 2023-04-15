@@ -118,6 +118,12 @@
             * **无向图**需要检查visited, 除非next move时直接过河拆桥, 把从内层走回外围的edge删除了 (e.g. [2603. Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/description/))
 
 ### 有向图
+* :red_circle: 按照约束条件填表: [2392. Build a Matrix With Conditions](https://leetcode.com/problems/build-a-matrix-with-conditions/description/)
+
+
+* :yellow_circle: 课程表: [207. Course Schedule](https://leetcode.com/problems/course-schedule/)
+    * 拓扑排序的基础题，一定要熟练掌握
+
 * :yellow_circle: 课程表II: [210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)
     * 拓扑排序的基础题，一定要熟练掌握
 
