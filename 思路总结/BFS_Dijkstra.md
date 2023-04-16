@@ -117,7 +117,7 @@
             * **有向图**无需检查visited, 因为有向就意味着从内层走回外围的机会根本不可能发生
             * **无向图**需要检查visited, 除非next move时直接过河拆桥, 把从内层走回外围的edge删除了 (e.g. [2603. Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/description/))
 
-### 有向图
+### 有向图类型
 * :red_circle: 按照约束条件填表: [2392. Build a Matrix With Conditions](https://leetcode.com/problems/build-a-matrix-with-conditions/description/)
 
 
@@ -127,7 +127,7 @@
 * :yellow_circle: 课程表II: [210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)
     * 拓扑排序的基础题，一定要熟练掌握
 
-### 无向图
+### 无向图类型
 * :red_circle: tree上捡硬币: [2603. Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/description/)
 
 * :red_circle: 分树-每个子树值相同: [2440. Create Components With Same Value](https://leetcode.com/problems/create-components-with-same-value/description/)
