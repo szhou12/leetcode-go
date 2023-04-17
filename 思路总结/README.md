@@ -21,6 +21,6 @@
     * [solution type]
         * 要点总结
         * 物理意义
-        * 代码整体结构总结
+        * 代码结构
         * Time complexity & Space complexity
 * Resource

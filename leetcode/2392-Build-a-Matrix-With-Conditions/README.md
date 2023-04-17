@@ -19,7 +19,7 @@
     * 实现时，adjacency list representation `next` 使用 `[][]int` 代替 `[]map[int]bool` 防止 degree多算了而next没有对应添加
 
 
-#### 代码整体结构总结
+#### 代码结构
 ```
 Per rowConditions:
 Step 1: Reconstruct adj-list representation + Calculate degree

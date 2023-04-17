@@ -120,6 +120,8 @@
 ### 有向图类型
 * :red_circle: 按照约束条件填表: [2392. Build a Matrix With Conditions](https://leetcode.com/problems/build-a-matrix-with-conditions/description/)
 
+* :red_circle: DAG图中每个node的祖先: [2192. All Ancestors of a Node in a Directed Acyclic Graph](https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/description/)
+
 
 * :yellow_circle: 课程表: [207. Course Schedule](https://leetcode.com/problems/course-schedule/)
     * 拓扑排序的基础题，一定要熟练掌握
