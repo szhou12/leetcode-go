@@ -121,14 +121,13 @@
             * **有向图**中node入度最低 = 0
             * **无向图**中node入度最低 = 1
         * Check for visited (防止从内层重新走回外围的机会):
-            * **有向图**无需检查visited, 因为有向就意味着从内层走回外围的机会根本不可能发生
-            * **无向图**需要检查visited, 除非next move时直接过河拆桥, 把从内层走回外围的edge删除了 (e.g. [2603. Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/description/))
+            * **有向图**无需 check for visited, 因为有向就意味着从内层走回外围的机会根本不可能发生。
+            * **无向图**需要 check for visited, 除非next move时直接过河拆桥, 把从内层走回外围的edge删除了 (e.g. [2603. Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/description/))
+        * visited 另一作用 - 给非环节点染色:
+            * **有向图**中visited一般用于检测环, visited起到"染色"的作用 - 即，visited==1说明节点不属于环的一部分，visited==0说明节点属于一个环。因为，能被访问说明节点入度可变为0，不能访问说明节点入度不可变为0，也就是，它在一个环中。
+            * 注：染色作用的 visited 实际上只是命名为 visited，其他名字也可以，visited只是比较方便理解
 
 ### 有向图类型
-* :red_circle: 按照约束条件填表: [2392. Build a Matrix With Conditions](https://leetcode.com/problems/build-a-matrix-with-conditions/description/)
-
-* :red_circle: DAG图中每个node的祖先: [2192. All Ancestors of a Node in a Directed Acyclic Graph](https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/description/)
-
 
 * :yellow_circle: 课程表: [207. Course Schedule](https://leetcode.com/problems/course-schedule/)
     * 拓扑排序的基础题，一定要熟练掌握
@@ -136,7 +135,15 @@
 * :yellow_circle: 课程表II: [210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)
     * 拓扑排序的基础题，一定要熟练掌握
 
+* :red_circle: 按照约束条件填表: [2392. Build a Matrix With Conditions](https://leetcode.com/problems/build-a-matrix-with-conditions/description/)
+
+* :red_circle: DAG图中每个node的祖先: [2192. All Ancestors of a Node in a Directed Acyclic Graph](https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/description/)
+
+* :red_circle: :secret: 舔狗链-圆桌会议可以邀请最多的互相喜欢的人数: [2127. Maximum Employees to Be Invited to a Meeting](https://leetcode.com/problems/maximum-employees-to-be-invited-to-a-meeting/description/)
+    * 需要计算`depth`
+
 ### 无向图类型
-* :red_circle: tree上捡硬币: [2603. Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/description/)
+* :red_circle: :secret: tree上捡硬币: [2603. Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/description/)
+    * 需要计算`depth`
 
 * :red_circle: 分树-每个子树值相同: [2440. Create Components With Same Value](https://leetcode.com/problems/create-components-with-same-value/description/)
