@@ -126,6 +126,11 @@
         * visited 另一作用 - 给非环节点染色:
             * **有向图**中visited一般用于检测环, visited起到"染色"的作用 - 即，visited==1说明节点不属于环的一部分，visited==0说明节点属于一个环。因为，能被访问说明节点入度可变为0，不能访问说明节点入度不可变为0，也就是，它在一个环中。
             * 注：染色作用的 visited 实际上只是命名为 visited，其他名字也可以，visited只是比较方便理解
+    * Adjacency List `next` 的 data structure 选择:
+        1. `[][]int`: slice of slices
+        2. `[]map[int]bool`: slice of maps
+        3. `map[string]map[string]bool`: map of maps (json)
+        * 总结: 怎么方便怎么来。但是，要注意！选择 map 相关的结构时 (第2, 3种)，要额外考虑 duplicated edges 的情况，重复的edge要跳过，因为，`next`不会重复添加，但是`degree`会不小心多+1。选择 slice 时 (第1种)，就允许添加重复的edge，因为，`next`和`degree`都会对应增加。
 
 ### 有向图类型
 
@@ -141,6 +146,8 @@
 
 * :red_circle: :secret: 舔狗链-圆桌会议可以邀请最多的互相喜欢的人数: [2127. Maximum Employees to Be Invited to a Meeting](https://leetcode.com/problems/maximum-employees-to-be-invited-to-a-meeting/description/)
     * 需要计算`depth`
+
+* :yellow_circle: 找出所有可以用给出的材料组成的食谱: [2115. Find All Possible Recipes from Given Supplies](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/description/)
 
 ### 无向图类型
 * :red_circle: :secret: tree上捡硬币: [2603. Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/description/)
