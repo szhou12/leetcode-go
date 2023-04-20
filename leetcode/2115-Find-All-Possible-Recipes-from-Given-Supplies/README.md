@@ -4,7 +4,7 @@
 
 ### Topological Sort
 #### 要点总结
-1. 本题思路不算难。`supplies -> ingredients -> recipes` 有一个明显的有方向的逻辑链条，很自然能想到 Topological Sort
+1. 本题思路不算难。`supplies -> ingredients -> recipes` 是一个明显的有方向的逻辑链条，并且逻辑链条有很明显的“剥洋葱”-先做什么后做什么的顺序，即，要先看supply级别的ingredients (入度=0), 再到中间级别的ingredients, 最后到recipe。很自然能想到 Topological Sort
 2. 本题难点在于：构造 Adj-list representation - 只有`ingredients`和`recipes`中的元素需要参与构建 Adj-list；选用那种data structure合适？
     * 本人解题的时候使用的是map of maps `map[string]map[string]bool`。 也可以用map of slices `map[string][]string`。区别只在于，前者需要避免重复edge来防止degree多+1，后者不需要考虑、可直接append
 
