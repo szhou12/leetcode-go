@@ -2,6 +2,9 @@
 本文主要进行针对在LeetCode刷题过程中所遇到的有关Go语言知识点的总结和补充
 
 ## Contents
+* [Print](#print)
+    * [Print byte as character](#print-byte-as-character-not-value)
+    * [Print variable type](#print-variable-type)
 * [Pass by Value (值传递)](#pass-by-value-值传递)
 * [Slice](#slice)
     * [Slice vs. Array](#slice-vs-array)
@@ -13,6 +16,18 @@
     * [Slice of Map](#slice-of-map)
     * [Slice as a key in map](#slice-as-a-key-in-map)
     * [Prepend elements](#prepend-elements)
+
+## Print
+### Print byte as character, not value
+```go
+fmt.Printf("char: %c ", char)
+```
+
+### Print variable type
+[Print type of variable in Go (Golang)](https://gosamples.dev/print-type/)
+```go
+fmt.Printf("type: %T ", var)
+```
 
 ## Pass by Value (值传递)
 [go语言参数传递到底是传值还是传引用？](https://segmentfault.com/a/1190000037763005)
