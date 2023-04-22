@@ -153,6 +153,9 @@
     * 转化思想：每门课的完成时间 等价于 计算节点`depth`
     * trick: 计算节点`depth`
 
+* red_circle: :secret: 有向图中最多的颜色: [1857. Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/description/)
+    * trick: 计算节点`depth`
+
 ### 无向图类型
 * :red_circle: :secret: tree上捡硬币: [2603. Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/description/)
     * trick: 计算节点`depth`
