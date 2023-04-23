@@ -3,6 +3,7 @@
 ## Solution idea
 ### Topological Sort
 #### 要点总结
+1. bottleneck: 继承时无法照顾全局
 
 ## Resource
 [【每日一题】1857. Largest Color Value in a Directed Graph, 5/13/2021](https://www.youtube.com/watch?v=VH1UevGQ4KQ&ab_channel=HuifengGuan)
