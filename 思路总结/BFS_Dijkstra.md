@@ -156,6 +156,8 @@
 * red_circle: :secret: 有向图中最多的颜色: [1857. Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/description/)
     * trick: 计算节点`depth`
 
+* red_circle: :secret: 奇怪打印机II: [1591. Strange Printer II](https://leetcode.com/problems/strange-printer-ii/description/)
+
 ### 无向图类型
 * :red_circle: :secret: tree上捡硬币: [2603. Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/description/)
     * trick: 计算节点`depth`
