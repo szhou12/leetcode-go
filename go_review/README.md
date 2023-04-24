@@ -16,6 +16,9 @@
     * [Slice of Map](#slice-of-map)
     * [Slice as a key in map](#slice-as-a-key-in-map)
     * [Prepend elements](#prepend-elements)
+* [Map](#map)
+    * [Contains a Key](#contains-a-key)
+    * [Delete a Key](#delete-a-key-from-map)
 
 ## Print
 ### Print byte as character, not value
@@ -190,4 +193,20 @@ func (pq *PQ) Pop() interface{} {
 
 // Top()
 (*minHeap)[0]
+```
+
+## Map
+
+### Contains a Key
+[How to check if a map contains a key in Go?](https://stackoverflow.com/questions/2050391/how-to-check-if-a-map-contains-a-key-in-go)
+```go
+if val, ok := myMap["foo"]; ok {
+    //If the key exists, do something here
+}
+```
+
+### Delete a Key From Map
+[How to delete a key from a map in Golang?](https://www.tutorialspoint.com/how-to-delete-a-key-from-a-map-in-golang)
+```go
+delete(map, key)
 ```

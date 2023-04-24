@@ -131,6 +131,8 @@
         2. `[]map[int]bool`: slice of maps
         3. `map[string]map[string]bool`: map of maps (json)
         * 总结: 怎么方便怎么来。但是，要注意！选择 map 相关的结构时 (第2, 3种)，要额外考虑 duplicated edges 的情况，重复的edge要跳过，因为，`next`不会重复添加，但是`degree`会不小心多+1。选择 slice 时 (第1种)，就允许添加重复的edge，因为，`next`和`degree`都会对应增加。
+    * 常涉及的trick: 一层一层剥洋葱的时候会需要一个 "继承"变量。"继承"变量可以是节点的深度、祖辈/父辈的某个信息。
+        * 怎么设计这个"继承"变量的通常思路是 `DP`
 
 ### 有向图类型
 
@@ -145,21 +147,24 @@
 * :red_circle: DAG图中每个node的祖先: [2192. All Ancestors of a Node in a Directed Acyclic Graph](https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/description/)
 
 * :red_circle: :secret: 舔狗链-圆桌会议可以邀请最多的互相喜欢的人数: [2127. Maximum Employees to Be Invited to a Meeting](https://leetcode.com/problems/maximum-employees-to-be-invited-to-a-meeting/description/)
-    * trick: 计算节点`depth`
+    * "继承"变量 trick: 计算节点`depth`
 
 * :yellow_circle: 找出所有可以用给出的材料组成的食谱: [2115. Find All Possible Recipes from Given Supplies](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/description/)
 
 * red_circle: :secret: 平行课程III: [2050. Parallel Courses III](https://leetcode.com/problems/parallel-courses-iii/description/)
     * 转化思想：每门课的完成时间 等价于 计算节点`depth`
-    * trick: 计算节点`depth`
+    * "继承"变量 trick: 计算节点`depth`
 
 * red_circle: :secret: 有向图中最多的颜色: [1857. Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/description/)
-    * trick: 计算节点`depth`
+    * "继承"变量 trick: 计算节点`depth`
 
 * red_circle: :secret: 奇怪打印机II: [1591. Strange Printer II](https://leetcode.com/problems/strange-printer-ii/description/)
 
+* red_circle: :secret: 课程表IV: [1462. Course Schedule IV](https://leetcode.com/problems/course-schedule-iv/description/)
+    * "继承"变量 trick: 下一步节点要继承`cur`以及`cur`的所有prerequisites
+
 ### 无向图类型
 * :red_circle: :secret: tree上捡硬币: [2603. Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/description/)
-    * trick: 计算节点`depth`
+    * "继承"变量 trick: 计算节点`depth`
 
 * :red_circle: 分树-每个子树值相同: [2440. Create Components With Same Value](https://leetcode.com/problems/create-components-with-same-value/description/)
