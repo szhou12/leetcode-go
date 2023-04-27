@@ -142,6 +142,9 @@
 * :yellow_circle: 课程表II: [210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)
     * 拓扑排序的基础题，一定要熟练掌握
 
+* :red_circle: :secret: 课程表IV: [1462. Course Schedule IV](https://leetcode.com/problems/course-schedule-iv/description/)
+    * "继承"变量 trick: 下一步节点要继承`cur`以及`cur`的所有prerequisites
+
 * :red_circle: 按照约束条件填表: [2392. Build a Matrix With Conditions](https://leetcode.com/problems/build-a-matrix-with-conditions/description/)
 
 * :red_circle: DAG图中每个node的祖先: [2192. All Ancestors of a Node in a Directed Acyclic Graph](https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/description/)
@@ -152,14 +155,11 @@
 * :yellow_circle: 找出所有可以用给出的材料组成的食谱: [2115. Find All Possible Recipes from Given Supplies](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/description/)
 
 
-
 * :red_circle: :secret: 有向图中最多的颜色: [1857. Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/description/)
     * "继承"变量 trick: 计算节点`depth`
 
 * :red_circle: :secret: 奇怪打印机II: [1591. Strange Printer II](https://leetcode.com/problems/strange-printer-ii/description/)
 
-* :red_circle: :secret: 课程表IV: [1462. Course Schedule IV](https://leetcode.com/problems/course-schedule-iv/description/)
-    * "继承"变量 trick: 下一步节点要继承`cur`以及`cur`的所有prerequisites
 
 * :red_circle: :secret: 平行课程III: [2050. Parallel Courses III](https://leetcode.com/problems/parallel-courses-iii/description/)
     * 转化思想：每门课的完成时间 等价于 计算节点`depth`
@@ -171,6 +171,8 @@
 * :red_circle: 排序有组别的元素: [1203. Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/description/)
     * 难点不在于解法思路，而在于实现
 
+* :red_circle: :secret: 寻找可以走到终点的起点: [802. Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/description/)
+    * 突破点: 在于关注节点的"出度"。也就是要把graph整个逆向，计算每个节点的出度，"洋葱"的最外层是 出度=0 的节点。
 
 
 ### 无向图类型
