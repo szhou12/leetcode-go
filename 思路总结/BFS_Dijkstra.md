@@ -151,9 +151,7 @@
 
 * :yellow_circle: 找出所有可以用给出的材料组成的食谱: [2115. Find All Possible Recipes from Given Supplies](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/description/)
 
-* :red_circle: :secret: 平行课程III: [2050. Parallel Courses III](https://leetcode.com/problems/parallel-courses-iii/description/)
-    * 转化思想：每门课的完成时间 等价于 计算节点`depth`
-    * "继承"变量 trick: 计算节点`depth`
+
 
 * :red_circle: :secret: 有向图中最多的颜色: [1857. Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/description/)
     * "继承"变量 trick: 计算节点`depth`
@@ -163,8 +161,17 @@
 * :red_circle: :secret: 课程表IV: [1462. Course Schedule IV](https://leetcode.com/problems/course-schedule-iv/description/)
     * "继承"变量 trick: 下一步节点要继承`cur`以及`cur`的所有prerequisites
 
-* :red_circle: 排序有组别的元素：[1203. Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/description/)
+* :red_circle: :secret: 平行课程III: [2050. Parallel Courses III](https://leetcode.com/problems/parallel-courses-iii/description/)
+    * 转化思想：每门课的完成时间 等价于 计算节点`depth`
+    * "继承"变量 trick: 计算节点`depth`
+
+* :yellow_circle: :lock: 平行课程: [1136. Parallel Courses](https://leetcode.ca/2019-01-09-1136-Parallel-Courses/)
+    * "继承"变量 trick: 计算节点`depth`
+
+* :red_circle: 排序有组别的元素: [1203. Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/description/)
     * 难点不在于解法思路，而在于实现
+
+
 
 ### 无向图类型
 * :red_circle: :secret: tree上捡硬币: [2603. Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/description/)
