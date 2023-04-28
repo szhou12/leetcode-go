@@ -133,6 +133,9 @@
         * 总结: 怎么方便怎么来。但是，要注意！选择 map 相关的结构时 (第2, 3种)，要额外考虑 duplicated edges 的情况，重复的edge要跳过，因为，`next`不会重复添加，但是`degree`会不小心多+1。选择 slice 时 (第1种)，就允许添加重复的edge，因为，`next`和`degree`都会对应增加。
     * 常涉及的trick: 一层一层剥洋葱的时候会需要一个 "继承"变量。"继承"变量可以是节点的深度、祖辈/父辈的某个信息。
         * 怎么设计这个"继承"变量的通常思路是 `DP`
+    * Topological Sort 的排序数列 什么情况下是唯一确定的？
+        * 每一层入度=0的节点只有一个
+        * i.e., `queue` contains ONLY one element at any time (size == 1 at all times)
 
 ### 有向图类型
 
@@ -173,6 +176,9 @@
 
 * :red_circle: :secret: 寻找可以走到终点的起点: [802. Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/description/)
     * 突破点: 在于关注节点的"出度"。也就是要把graph整个逆向，计算每个节点的出度，"洋葱"的最外层是 出度=0 的节点。
+
+* :red_circle: :secret: 拓扑排序唯一解: [444. Sequence Reconstruction](https://leetcode.ca/2017-02-16-444-Sequence-Reconstruction/)
+    * 知识点: 拓扑排序有唯一解 = 每一时刻入度=0的节点只有一个 = `queue`每一时刻都只会有一个元素
 
 
 ### 无向图类型
