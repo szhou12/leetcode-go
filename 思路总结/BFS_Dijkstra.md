@@ -177,8 +177,10 @@
 * :red_circle: :secret: 寻找可以走到终点的起点: [802. Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/description/)
     * 突破点: 在于关注节点的"出度"。也就是要把graph整个逆向，计算每个节点的出度，"洋葱"的最外层是 出度=0 的节点。
 
-* :red_circle: :secret: 拓扑排序唯一解: [444. Sequence Reconstruction](https://leetcode.ca/2017-02-16-444-Sequence-Reconstruction/)
+* :red_circle: :secret: :lock: 拓扑排序唯一解: [444. Sequence Reconstruction](https://leetcode.ca/2017-02-16-444-Sequence-Reconstruction/)
     * 知识点: 拓扑排序有唯一解 = 每一时刻入度=0的节点只有一个 = `queue`每一时刻都只会有一个元素
+
+* :red_circle: :secret: 找到所有最矮树的根节点: [310. Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/description/)
 
 
 ### 无向图类型
