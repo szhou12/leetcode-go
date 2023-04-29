@@ -182,6 +182,9 @@
 
 * :red_circle: :secret: 找到所有最矮树的根节点: [310. Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/description/)
 
+* :red_circle: :secret: :lock: 推断字典序: [269. Alien Dictionary](https://leetcode.ca/all/269.html)
+    * trick: 利用 lexicographical order 来构建 adjacency-list representation
+
 
 ### 无向图类型
 * :red_circle: :secret: tree上捡硬币: [2603. Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/description/)
