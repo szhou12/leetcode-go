@@ -180,8 +180,6 @@
 * :red_circle: :secret: :lock: 拓扑排序唯一解: [444. Sequence Reconstruction](https://leetcode.ca/2017-02-16-444-Sequence-Reconstruction/)
     * 知识点: 拓扑排序有唯一解 = 每一时刻入度=0的节点只有一个 = `queue`每一时刻都只会有一个元素
 
-* :red_circle: :secret: 找到所有最矮树的根节点: [310. Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/description/)
-
 * :red_circle: :secret: :lock: 推断字典序: [269. Alien Dictionary](https://leetcode.ca/all/269.html)
     * trick: 利用 lexicographical order 来构建 adjacency-list representation
 
@@ -191,3 +189,5 @@
     * "继承"变量 trick: 计算节点`depth`
 
 * :red_circle: 分树-每个子树值相同: [2440. Create Components With Same Value](https://leetcode.com/problems/create-components-with-same-value/description/)
+
+* :red_circle: :secret: 找到所有最矮树的根节点: [310. Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/description/)
