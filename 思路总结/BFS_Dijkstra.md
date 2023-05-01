@@ -1,11 +1,11 @@
 # Breadth First Search & Dijkstra
 
 ## 目录
- * [最经典最基础的BFS应用: Tree - Level Order Traversal](#最经典最基础的-bfs-应用-tree---level-order-traversal)
- * [岛屿沉没类](#岛屿沉没类---找neighbor)
- * [Dijkstra](#dijkstra---find-shortest-path)
- * [BFS + PQ](#bfs--pq-思路想bfs-代码结构像dijkstra)
- * [Topological Sort](#topological-sort)
+* [最经典最基础的BFS应用: Tree - Level Order Traversal](#最经典最基础的-bfs-应用-tree---level-order-traversal)
+* [岛屿沉没类](#岛屿沉没类---找neighbor)
+* [Dijkstra](#dijkstra---find-shortest-path)
+* [BFS + PQ](#bfs--pq-思路想bfs-代码结构像dijkstra)
+* [Topological Sort](#topological-sort)
 
 ## 最经典最基础的 BFS 应用: Tree - Level Order Traversal
 

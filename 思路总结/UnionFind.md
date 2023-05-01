@@ -1,7 +1,7 @@
 # Union Find
 
 ## 目录
-* [知识点Quick Walkthrough](#知识点-quick-walkthrough)
+* [知识点 Quick Walkthrough](#知识点-quick-walkthrough)
 * [基础题](#基础题)
 
 ## 知识点 Quick Walkthrough
