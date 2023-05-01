@@ -16,12 +16,12 @@ func (uf *UnionFind) Find(x int) int {
 }
 
 func (uf *UnionFind) Union(x int, y int) {
-	x = uf.father[x]
-	y = uf.father[y]
-	if x < y { // 谁小谁成为祖宗
-		uf.father[y] = x
+	fx := uf.father[x]
+	fy := uf.father[y]
+	if fx < fy { // 谁小谁成为祖宗
+		uf.father[fy] = fx
 	} else {
-		uf.father[x] = y
+		uf.father[fx] = fy
 	}
 }
 

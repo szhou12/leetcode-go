@@ -6,7 +6,7 @@ type UnionFind struct {
 }
 
 func (uf *UnionFind) Init() {
-	uf.father = make(map[int]int)
+	uf.father = make(map[int]int) // 当前节点的父节点 {key: 当前节点, value: 父节点}
 }
 
 // 经过路径压缩的优化
@@ -19,12 +19,12 @@ func (uf *UnionFind) Find(x int) int {
 }
 
 func (uf *UnionFind) Union(x int, y int) {
-	x = uf.father[x]
-	y = uf.father[y]
-	if x < y {
-		uf.father[y] = x
+	fx := uf.father[x]
+	fy := uf.father[y]
+	if fx < fy { // 谁小谁成为祖宗
+		uf.father[fy] = fx
 	} else {
-		uf.father[x] = y
+		uf.father[fx] = fy
 	}
 }
 
