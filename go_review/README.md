@@ -22,6 +22,8 @@
 * [Operators](#operators)
     * [Bitwise Operators](#bitwise-operators)
     * [% Operator](#mod-operator)
+* [二进制表示](#binary-form)
+    * [Binary Representation of Integer](#binary-representation-of-integer)
 
 ## Print
 ### Print byte as character, not value
@@ -248,4 +250,20 @@ Python:
 func mod(a, b int) int {
     return (a % b + b) % b
 }
+```
+
+## Binary Form
+### Binary Representation of Integer
+[Converting from an integer to its binary representation](https://stackoverflow.com/questions/13870845/converting-from-an-integer-to-its-binary-representation)
+
+[strconv - Go Packages](https://pkg.go.dev/strconv#FormatInt)
+
+```go
+func FormatInt(i int64, base int) string
+```
+e.g.
+```go
+n := 123
+
+fmt.Println(strconv.FormatInt(int64(n), 2)) // 1111011
 ```
