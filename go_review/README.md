@@ -219,8 +219,9 @@ delete(map, key)
 [Go - Bitwise Operators](https://www.tutorialspoint.com/go/go_bitwise_operators.htm)
 
 | Operator | Description | 个人理解 |
+| :-: | - | - |
 | `&` | Binary AND Operator | 对应bit位上"与"操作，任一有0即为0，两者都是1才是1 |
-| `|` | Binary OR Operator | 对应bit位上"或"操作，任一有1即为1 |
+| `\|` | Binary OR Operator | 对应bit位上"或"操作，任一有1即为1 |
 | `^` | Binary XOR Operator | 对应bit位上"异或"操作，两者相同即为0，必须一个0一个1才是1 |
 | `<<` | Binary Left Shift Operator | 从右侧补n个0。`a = 0011 1100` :arrow_right: `a<<2 = 1111 0000` |
 | `>>` | Binary Right Shift Operator | 从左侧补n个0。`a = 0011 1100` :arrow_right: `a>>2 = 0000 1111` |
