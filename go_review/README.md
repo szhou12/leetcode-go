@@ -264,6 +264,5 @@ func FormatInt(i int64, base int) string
 e.g.
 ```go
 n := 123
-
-fmt.Println(strconv.FormatInt(int64(n), 2)) // 1111011
+fmt.Println(strconv.FormatInt(int64(n), 2)) // "1111011"
 ```
