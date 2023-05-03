@@ -22,5 +22,10 @@
 
 ## 基础题
 * [684. Redundant Connection](https://leetcode.com/problems/redundant-connection/)
+
 * [1971. Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/)
+
 * :red_circle: 从起点到终点的所有路径中最短的一条边: [2492. Minimum Score of a Path Between Two Cities](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/description/)
+
+* :red_circle: :secret: 字符串家族: [2157. Groups of Strings](https://leetcode.com/problems/groups-of-strings/description/)
+    * Union Find + Bit Mask (encode string to 26-len bit representation)
