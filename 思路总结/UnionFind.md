@@ -28,4 +28,7 @@
 * :red_circle: 从起点到终点的所有路径中最短的一条边: [2492. Minimum Score of a Path Between Two Cities](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/description/)
 
 * :red_circle: :secret: 字符串家族: [2157. Groups of Strings](https://leetcode.com/problems/groups-of-strings/description/)
-    * Union Find + Bit Mask (encode string to 26-len bit representation)
+        * Union Find + Bit Mask (encode string to 26-len bit representation)
+
+* :red_circle: :secret: 寻找所有知晓秘密之人: [2092. Find All People With Secret](https://leetcode.com/problems/find-all-people-with-secret/description/)
+        * Union Find + Two Pointers (相向而行)
