@@ -17,7 +17,7 @@
 ### 并查集主要有三个功能:
 1. 找祖宗: 寻找当前节点的根节点，函数：`Find(x int)`，也就是找到当前节点的祖先节点
 2. 两家联姻: 将两个节点接入到同一个集合，函数：`Union(u int, v int)`，将两个节点连在同一个根节点上
-        * 谁小谁成为祖宗 (目的: 维护一个顺序)
+    * 谁小谁成为祖宗 (目的: 维护一个顺序)
 3. 同宗同祖: 判断两个节点是否在同一个集合，函数：`Same(u int, v int)`，就是判断两个节点是不是同一个根节点
 
 ## 基础题
@@ -28,7 +28,9 @@
 * :red_circle: 从起点到终点的所有路径中最短的一条边: [2492. Minimum Score of a Path Between Two Cities](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/description/)
 
 * :red_circle: :secret: 字符串家族: [2157. Groups of Strings](https://leetcode.com/problems/groups-of-strings/description/)
-        * Union Find + Bit Mask (encode string to 26-len bit representation)
+	* Union Find + Bit Mask (encode string to 26-len bit representation)
 
 * :red_circle: :secret: 寻找所有知晓秘密之人: [2092. Find All People With Secret](https://leetcode.com/problems/find-all-people-with-secret/description/)
-        * Union Find + Two Pointers (相向而行)
+    * Union Find + Two Pointers (相向而行)
+
+* :red_circle: 谁和谁能成为朋友: [2076. Process Restricted Friend Requests](https://leetcode.com/problems/process-restricted-friend-requests/description/)
