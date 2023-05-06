@@ -34,3 +34,5 @@
     * Union Find + Two Pointers (相向而行)
 
 * :red_circle: 谁和谁能成为朋友: [2076. Process Restricted Friend Requests](https://leetcode.com/problems/process-restricted-friend-requests/description/)
+
+* :red_circle: 最小化Hamming Distance: [1722. Minimize Hamming Distance After Swap Operations](https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/description/)
