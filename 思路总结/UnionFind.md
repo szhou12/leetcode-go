@@ -36,3 +36,5 @@
 * :red_circle: 谁和谁能成为朋友: [2076. Process Restricted Friend Requests](https://leetcode.com/problems/process-restricted-friend-requests/description/)
 
 * :red_circle: 最小化Hamming Distance: [1722. Minimize Hamming Distance After Swap Operations](https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/description/)
+
+* :yellow_circle: 通过交换可以把字符串按照最小字典序排序: [1202. Smallest String With Swaps](https://leetcode.com/problems/smallest-string-with-swaps/description/)
