@@ -38,3 +38,5 @@
 * :red_circle: 最小化Hamming Distance: [1722. Minimize Hamming Distance After Swap Operations](https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/description/)
 
 * :yellow_circle: 通过交换可以把字符串按照最小字典序排序: [1202. Smallest String With Swaps](https://leetcode.com/problems/smallest-string-with-swaps/description/)
+
+* :yellow_circle: 字典序最小的等价字符串: [1061. Lexicographically Smallest Equivalent String](https://leetcode.com/problems/lexicographically-smallest-equivalent-string/description/)
