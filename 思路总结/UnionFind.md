@@ -39,4 +39,6 @@
 
 * :yellow_circle: 通过交换可以把字符串按照最小字典序排序: [1202. Smallest String With Swaps](https://leetcode.com/problems/smallest-string-with-swaps/description/)
 
-* :yellow_circle: 字典序最小的等价字符串: [1061. Lexicographically Smallest Equivalent String](https://leetcode.com/problems/lexicographically-smallest-equivalent-string/description/)
+* :green_circle: 字典序最小的等价字符串: [1061. Lexicographically Smallest Equivalent String](https://leetcode.com/problems/lexicographically-smallest-equivalent-string/description/)
+
+* :green_circle: 等式的可满足性: [990. Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/description/)
