@@ -161,6 +161,9 @@
 * :red_circle: :secret: 有向图中最多的颜色: [1857. Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/description/)
     * "继承"变量 trick: 计算节点`depth`
 
+* :red_circle: :secret: 矩阵以rank表示: [1632. Rank Transform of a Matrix](https://leetcode.com/problems/rank-transform-of-a-matrix/description/)
+    * Topological Sort + Union Find
+
 * :red_circle: :secret: 奇怪打印机II: [1591. Strange Printer II](https://leetcode.com/problems/strange-printer-ii/description/)
 
 
