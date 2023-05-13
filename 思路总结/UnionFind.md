@@ -45,3 +45,5 @@
 * :green_circle: 字典序最小的等价字符串: [1061. Lexicographically Smallest Equivalent String](https://leetcode.com/problems/lexicographically-smallest-equivalent-string/description/)
 
 * :green_circle: 等式的可满足性: [990. Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/description/)
+
+* :red_circle: 分割矩阵能分几份: [959. Regions Cut By Slashes](https://leetcode.com/problems/regions-cut-by-slashes/)
