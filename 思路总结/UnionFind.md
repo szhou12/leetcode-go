@@ -47,3 +47,5 @@
 * :green_circle: 等式的可满足性: [990. Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/description/)
 
 * :red_circle: 分割矩阵能分几份: [959. Regions Cut By Slashes](https://leetcode.com/problems/regions-cut-by-slashes/)
+
+* :yellow_circle: 二维平面上相消元素个数: [947. Most Stones Removed with Same Row or Column](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/description/)
