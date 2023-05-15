@@ -4,3 +4,5 @@
 
 ### BFS
 Time complexity = $O(V+E)$
+
+### Union Find

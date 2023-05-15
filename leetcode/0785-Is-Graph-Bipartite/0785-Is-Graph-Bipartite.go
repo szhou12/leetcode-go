@@ -48,3 +48,57 @@ func bfs(node int, visited map[int]int, graph [][]int) bool {
 	}
 	return true
 }
+
+// Solution 2: Union Find - 相邻的节点不能被Union在同一个群组里
+func isBipartite_UnionFind(graph [][]int) bool {
+	n := len(graph)
+	uf := UnionFind{}
+	uf.Init()
+	for i := 0; i < n; i++ {
+		uf.father[i] = i
+	}
+
+	for i, neis := range graph {
+		// Note: neis may have length = 0
+		var first int
+		if len(neis) > 0 {
+			first = neis[0] // prepare for union neis
+		}
+
+		for _, nei := range neis {
+			// if i-th node and any of its neighbor are in the same group, it means NO bipartite
+			if uf.Find(i) == uf.Find(nei) {
+				return false
+			}
+			uf.Union(first, nei)
+		}
+
+	}
+	return true
+
+}
+
+type UnionFind struct {
+	father map[int]int
+}
+
+func (uf *UnionFind) Init() {
+	uf.father = make(map[int]int)
+}
+
+func (uf *UnionFind) Union(x int, y int) {
+	fx := uf.father[x]
+	fy := uf.father[y]
+	if fx < fy {
+		uf.father[fy] = fx
+	} else {
+		uf.father[fx] = fy
+	}
+}
+
+func (uf *UnionFind) Find(x int) int {
+	if x != uf.father[x] {
+		uf.father[x] = uf.Find(uf.father[x])
+	}
+	return uf.father[x]
+}
