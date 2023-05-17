@@ -53,3 +53,6 @@
 * :red_circle: 判别二分图: [785. Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/)
 
 * :red_circle: 情侣手牵手: [765. Couples Holding Hands](https://leetcode.com/problems/couples-holding-hands/description/)
+
+* :yellow_circle: 寻找并合并相同的账户: [721. Accounts Merge](https://leetcode.com/problems/accounts-merge/description/)
+    * 修改 UnionFind 模版: `int` -> `string`

@@ -2,11 +2,53 @@ package leetcode
 
 import "sort"
 
+// Optimal Solution: Union groups for each account
 func accountsMerge(accounts [][]string) [][]string {
-	n := len(accounts)
+	owner := make(map[string]string) // { email : name }
 	uf := UnionFindStr{}
 	uf.Init()
+	for i := 0; i < len(accounts); i++ {
+		for j := 1; j < len(accounts[i]); j++ {
+			uf.father[accounts[i][j]] = accounts[i][j]
+			owner[accounts[i][j]] = accounts[i][0]
+		}
+	}
 
+	// Union components for each account
+	for i := 0; i < len(accounts); i++ {
+		for j := 2; j < len(accounts[i]); j++ {
+			if uf.Find(accounts[i][j-1]) != uf.Find(accounts[i][j]) {
+				uf.Union(accounts[i][j-1], accounts[i][j])
+			}
+		}
+	}
+
+	// get all family members of each component
+	family := make(map[string]map[string]bool) // {root email : {email : true}}
+	for i := 0; i < len(accounts); i++ {
+		for j := 1; j < len(accounts[i]); j++ {
+			root := uf.Find(accounts[i][j])
+			if _, ok := family[root]; !ok {
+				family[root] = make(map[string]bool)
+			}
+			family[root][accounts[i][j]] = true
+		}
+	}
+
+	// map root email to name & sort family members
+	res := make([][]string, 0)
+	for root, members := range family {
+		name := owner[root]
+		temp := make([]string, 0)
+		for email, _ := range members {
+			temp = append(temp, email)
+		}
+		sort.Strings(temp)
+		temp = append([]string{name}, temp...)
+		res = append(res, temp)
+	}
+
+	return res
 }
 
 type UnionFindStr struct {
