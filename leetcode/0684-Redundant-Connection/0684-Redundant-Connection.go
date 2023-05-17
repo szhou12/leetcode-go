@@ -37,20 +37,18 @@ func (uf *UnionFind) Union(x int, y int) {
 // }
 
 func findRedundantConnection(edges [][]int) []int {
+	n := len(edges)
 	uf := UnionFind{}
 	uf.Init()
+
+	// 一开始, 每个node没有认过祖宗(root), 自己先成为自己的祖宗(root)
+	for i := 1; i <= n; i++ {
+		uf.father[i] = i
+	}
 
 	for _, edge := range edges {
 		a := edge[0]
 		b := edge[1]
-
-		// 如果当前node没有认过祖宗(root), 自己先成为自己的祖宗(root)
-		if _, ok := uf.father[a]; !ok {
-			uf.father[a] = a
-		}
-		if _, ok := uf.father[b]; !ok {
-			uf.father[b] = b
-		}
 
 		// 如果a, b 已经有同一个祖宗, 目前这个edge就是导致环的additional edge
 		if uf.Find(a) == uf.Find(b) {
