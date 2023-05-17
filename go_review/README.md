@@ -16,6 +16,7 @@
     * [Slice of Map](#slice-of-map)
     * [Slice as a key in map](#slice-as-a-key-in-map)
     * [Prepend elements](#prepend-elements)
+    * [Compare Two Slices Equality](#compare-two-slices-equality)
 * [Map](#map)
     * [Contains a Key](#contains-a-key)
     * [Delete a Key](#delete-a-key-from-map)
@@ -173,6 +174,29 @@ m := make(map[[2]int]bool)
 [How to prepend int to slice - Stack Overflow](https://stackoverflow.com/questions/53737435/how-to-prepend-int-to-slice)
 ```go
 nums = append([]int{1}, nums...)
+```
+
+### Compare Two Slices Equality
+[Checking the equality of two slices](https://stackoverflow.com/questions/15311969/checking-the-equality-of-two-slices)
+1. 调用 `reflect.DeepEqual()`
+```go
+a := []int{4,5,6}
+b := []int {4,5,6}
+reflect.DeepEqual(a, b)
+```
+2. 自己写一个helper function
+```go
+func testEq(a, b []int) bool {
+    if len(a) != len(b) {
+        return false
+    }
+    for i := range a {
+        if a[i] != b[i] {
+            return false
+        }
+    }
+    return true
+}
 ```
 
 ## Priority Queue
