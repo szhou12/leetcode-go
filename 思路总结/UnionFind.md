@@ -21,8 +21,6 @@
 3. 同宗同祖: 判断两个节点是否在同一个集合，函数：`Same(u int, v int)`，就是判断两个节点是不是同一个根节点
 
 ## 基础题
-* [684. Redundant Connection](https://leetcode.com/problems/redundant-connection/)
-
 * [1971. Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/)
 
 * :red_circle: 从起点到终点的所有路径中最短的一条边: [2492. Minimum Score of a Path Between Two Cities](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/description/)
@@ -56,3 +54,9 @@
 
 * :yellow_circle: 寻找并合并相同的账户: [721. Accounts Merge](https://leetcode.com/problems/accounts-merge/description/)
     * 修改 UnionFind 模版: `int` -> `string`
+
+* :red_circle: 找出连通图中多余的边II: [685. Redundant Connection II](https://leetcode.com/problems/redundant-connection-ii/)
+    * 有向图
+
+* :yellow_circle: 找出连通图中多余的边: [684. Redundant Connection](https://leetcode.com/problems/redundant-connection/)
+    * 无向图: 多余的边 就是 判断有没有构成环
