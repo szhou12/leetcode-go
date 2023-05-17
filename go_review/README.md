@@ -187,9 +187,11 @@ reflect.DeepEqual(a, b)
 2. 自己写一个helper function
 ```go
 func testEq(a, b []int) bool {
+    // Check 长度
     if len(a) != len(b) {
         return false
     }
+    // Check 元素
     for i := range a {
         if a[i] != b[i] {
             return false
