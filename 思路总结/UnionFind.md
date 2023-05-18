@@ -60,3 +60,5 @@
 
 * :yellow_circle: 找出连通图中多余的边: [684. Redundant Connection](https://leetcode.com/problems/redundant-connection/)
     * 无向图: 多余的边 就是 判断有没有构成环
+
+* :green_circle: 连通图个数: [547. Number of Provinces](https://leetcode.com/problems/number-of-provinces/description/)
