@@ -120,3 +120,84 @@ func bfs(grid [][]byte, visited *[][]bool, x int, y int) {
 		}
 	}
 }
+
+/************* Union Find ****************/
+func numIslandsUF(grid [][]byte) int {
+	uf := UnionFind{}
+	uf.Init()
+	m, n := len(grid), len(grid[0])
+	for i := 0; i < m; i++ {
+		for j := 0; j < n; j++ {
+			if grid[i][j] == '0' {
+				continue
+			}
+			idx := i*m + j
+			uf.father[idx] = idx
+		}
+	}
+
+	// Union
+	for i := 0; i < m; i++ {
+		for j := 0; j < n; j++ {
+			if grid[i][j] == '0' {
+				continue
+			}
+
+			cur := i*m + j
+			for _, d := range dir {
+				dx := i + d[0]
+				dy := j + d[1]
+				if !(0 <= dx && dx < m && 0 <= dy && dy < n) {
+					continue
+				}
+				if grid[dx][dy] == '0' {
+					continue
+				}
+				nei := dx*m + dy
+				if uf.Find(cur) != uf.Find(nei) {
+					uf.Union(cur, nei)
+				}
+
+			}
+		}
+	}
+
+	// Count all connected components
+	family := make(map[int]bool)
+	for i := 0; i < m; i++ {
+		for j := 0; j < n; j++ {
+			if grid[i][j] == '0' {
+				continue
+			}
+			root := uf.Find(i*m + j)
+			family[root] = true
+		}
+	}
+
+	return len(family)
+}
+
+type UnionFind struct {
+	father map[int]int
+}
+
+func (uf *UnionFind) Init() {
+	uf.father = make(map[int]int)
+}
+
+func (uf *UnionFind) Union(x int, y int) {
+	fx := uf.father[x]
+	fy := uf.father[y]
+	if fx < fy {
+		uf.father[fy] = fx
+	} else {
+		uf.father[fx] = fy
+	}
+}
+
+func (uf *UnionFind) Find(x int) int {
+	if x != uf.father[x] {
+		uf.father[x] = uf.Find(uf.father[x])
+	}
+	return uf.father[x]
+}
