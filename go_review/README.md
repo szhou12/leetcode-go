@@ -181,7 +181,7 @@ nums = append([]int{1}, nums...)
 1. 调用 `reflect.DeepEqual()`
 ```go
 a := []int{4,5,6}
-b := []int {4,5,6}
+b := []int{4,5,6}
 reflect.DeepEqual(a, b)
 ```
 2. 自己写一个helper function
