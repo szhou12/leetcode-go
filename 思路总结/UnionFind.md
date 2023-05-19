@@ -67,3 +67,5 @@
     * 1-D Index Compression
 
 * :red_circle: 最长连续序列: [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/)
+
+* :yellow_circle: 找出不包含边界元素的连通图: [130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)

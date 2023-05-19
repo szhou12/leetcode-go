@@ -7,6 +7,11 @@
 ### DFS / BFS
 用DFS或者BFS找贴着边界的 O区域
 
+### Union Find
+1. 用 Union Find 先联合所有的连通图。
+2. 然后找出包含边界元素的连通图。
+3. 最后把不包含边界元素的连通图的元素转换成 X。
+
 
 Time complexity = O(row * col)
 

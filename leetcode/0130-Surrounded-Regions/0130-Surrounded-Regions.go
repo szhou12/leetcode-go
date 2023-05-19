@@ -131,3 +131,101 @@ func bfs(board *[][]byte, x int, y int) {
 		}
 	}
 }
+
+/************* Union Find ****************/
+func solveUF(board [][]byte) {
+	uf := UnionFind{}
+	uf.Init()
+
+	m, n := len(board), len(board[0])
+	for i := 0; i < m; i++ {
+		for j := 0; j < n; j++ {
+			if board[i][j] == 'X' {
+				continue
+			}
+			idx := i*n + j
+			uf.father[idx] = idx
+		}
+	}
+
+	// Union
+	for i := 0; i < m; i++ {
+		for j := 0; j < n; j++ {
+			if board[i][j] == 'X' {
+				continue
+			}
+			cur := i*n + j
+			for _, d := range dir {
+				dx, dy := i+d[0], j+d[1]
+				if !(0 <= dx && dx < m && 0 <= dy && dy < n) {
+					continue
+				}
+				if board[dx][dy] == 'X' {
+					continue
+				}
+				nei := dx*n + dy
+				if uf.Find(cur) != uf.Find(nei) {
+					uf.Union(cur, nei)
+				}
+			}
+		}
+	}
+
+	// Record each family and mark families on borders
+	family := make(map[int][]int)
+	border := make(map[int]bool) // record family root who has border members
+	for i := 0; i < m; i++ {
+		for j := 0; j < n; j++ {
+			if board[i][j] == 'X' {
+				continue
+			}
+			root := uf.Find(i*n + j)
+			if _, ok := family[root]; !ok {
+				family[root] = make([]int, 0)
+			}
+			family[root] = append(family[root], i*n+j)
+
+			// check if (i, j) on border
+			if i == 0 || i == m-1 || j == 0 || j == n-1 {
+				border[root] = true
+			}
+
+		}
+	}
+
+	// Flip families that have no border members
+	for root, members := range family {
+		if border[root] {
+			continue
+		}
+		for _, member := range members {
+			i, j := member/n, member%n
+			board[i][j] = 'X'
+		}
+	}
+}
+
+type UnionFind struct {
+	father map[int]int
+}
+
+func (uf *UnionFind) Init() {
+	uf.father = make(map[int]int)
+}
+
+func (uf *UnionFind) Union(x int, y int) {
+	fx := uf.father[x]
+	fy := uf.father[y]
+	if fx < fy {
+		uf.father[fy] = fx
+	} else {
+		uf.father[fx] = fy
+	}
+}
+
+func (uf *UnionFind) Find(x int) int {
+	if x != uf.father[x] {
+		uf.father[x] = uf.Find(uf.father[x])
+	}
+	return uf.father[x]
+}

@@ -131,7 +131,7 @@ func numIslandsUF(grid [][]byte) int {
 			if grid[i][j] == '0' {
 				continue
 			}
-			idx := i*m + j
+			idx := i*n + j
 			uf.father[idx] = idx
 		}
 	}
@@ -143,7 +143,7 @@ func numIslandsUF(grid [][]byte) int {
 				continue
 			}
 
-			cur := i*m + j
+			cur := i*n + j
 			for _, d := range dir {
 				dx := i + d[0]
 				dy := j + d[1]
@@ -153,7 +153,7 @@ func numIslandsUF(grid [][]byte) int {
 				if grid[dx][dy] == '0' {
 					continue
 				}
-				nei := dx*m + dy
+				nei := dx*n + dy
 				if uf.Find(cur) != uf.Find(nei) {
 					uf.Union(cur, nei)
 				}
@@ -169,7 +169,7 @@ func numIslandsUF(grid [][]byte) int {
 			if grid[i][j] == '0' {
 				continue
 			}
-			root := uf.Find(i*m + j)
+			root := uf.Find(i*n + j)
 			family[root] = true
 		}
 	}
