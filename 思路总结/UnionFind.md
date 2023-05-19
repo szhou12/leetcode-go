@@ -62,3 +62,8 @@
     * 无向图: 多余的边 就是 判断有没有构成环
 
 * :green_circle: 连通图个数: [547. Number of Provinces](https://leetcode.com/problems/number-of-provinces/description/)
+
+* :yellow_circle: 连通岛屿的个数: [200. Number of Islands](https://leetcode.com/problems/number-of-islands/submissions/)
+    * 1-D Index Compression
+
+* :red_circle: 最长连续序列: [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/)
