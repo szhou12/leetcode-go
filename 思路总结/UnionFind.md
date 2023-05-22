@@ -69,3 +69,7 @@
 * :red_circle: 最长连续序列: [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/)
 
 * :yellow_circle: 找出不包含边界元素的连通图: [130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)
+
+## Minimum Spanning Tree (MST)
+* :red_circle: :secret: 寻找MST中的关键边和伪关键边: [1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/description/)
+    * Kruskal + Union Find
