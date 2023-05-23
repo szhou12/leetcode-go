@@ -6,7 +6,7 @@
 1. 这道题要求找MST中两种有特殊性质的边，容易想到类似的题目 - 找redundant edge。怎么做？
     * 大致想法是：先用 Kruskal 算法出全局最小的MST，然后逐条边检验，与全局最小的 MST做比较，找出符合要求的边。
 2. 大致的框架有了，下一步是怎么找出符合要求的边？
-    * 重中之重是分析并明确 关键边 (critical edge) 和 伪关键边 (pseudo-critical edge) 的定义。
+    * 重中之重是明确 关键边 (critical edge) 和 伪关键边 (pseudo-critical edge) 的定义，并分析出两者之间的关系。
     * 关键边 (critical edge):
         * 题目中给的定义是: An MST edge whose deletion from the graph would cause the MST weight to increase.
         * 怎么**结合全局最小MST**进行理解？
