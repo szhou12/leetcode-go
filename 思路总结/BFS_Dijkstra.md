@@ -2,7 +2,7 @@
 
 ## 目录
 * [最经典最基础的BFS应用: Tree - Level Order Traversal](#最经典最基础的-bfs-应用-tree---level-order-traversal)
-* [岛屿沉没类](#岛屿沉没类---找neighbor)
+* [岛屿沉没类/连通图个数](#岛屿沉没类---找neighbor)
 * [Dijkstra](#dijkstra---find-shortest-path)
 * [BFS + PQ](#bfs--pq-思路想bfs-代码结构像dijkstra)
 * [Topological Sort](#topological-sort)
@@ -18,8 +18,6 @@
 * 基础: [513. Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value/)
 
 ## 岛屿沉没类/连通图个数 - 找neighbor
-* Roblox - Candy Crush
-
 * :red_circle: **连通岛屿的个数:** [200. Number of Islands](https://leetcode.com/problems/number-of-islands/submissions/)
 
 * :red_circle: **四面八方, 潮水涌来:** [417. Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
@@ -27,6 +25,8 @@
 * :red_circle: **找出不包含边界元素的连通图:** [130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)
 
 * :red_circle: **飞地的个数:** [1020. Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/)
+
+* Roblox - Candy Crush
 
 ## Dijkstra - Find Shortest Path
 
@@ -107,35 +107,35 @@
 
 ## Topological Sort
 
-* :star: **解题思路:**
-    * **农村包围城市/剥洋葱**: 优先访问那些入度最低的节点。删去第一批最外围的节点后，再继续访问此时入度更新为最低的节点。依次类推。
-    * 使用的数据结构: BFS
-        * 注: 拓扑排序也可以用DFS实现，但个人感觉BFS的思路更直观更易模版化且算法在空间上也更高效，遂练习时着重使用BFS解题
-    * 使用条件: **Acyclic** (在无向图中就意味着必须是一个Tree)
-    * 入度/degree 的定义: 一般的, **degree = the number of incoming edges**.
-        * 注: degree 的定义也可能根据具体题目的要求进行调整，不一定死板地遵守一般定义
-    * 外围 (低阶级) vs 内层 (高阶级): 一般的，最外围的节点 = 入度的值最低的节点
-        * 注: 最外围节点的定义也可能根据具体题目的要求增添额外的判定条件，但入度的值一般是其中一条必要的判定条件
-    * 有向图 vs 无向图:
-        * 最低入度值 (**最低入度值是非常重要的判定外围node的条件！**):
-            * **有向图**中node入度最低 = 0
-            * **无向图**中node入度最低 = 1
-        * Check for visited (防止从内层重新走回外围的机会):
-            * **有向图**无需 check for visited, 因为有向就意味着从内层走回外围的机会根本不可能发生。
-            * **无向图**需要 check for visited, 除非next move时直接过河拆桥, 把从内层走回外围的edge删除了 (e.g. [2603. Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/description/))
-        * visited 另一作用 - 给非环节点染色:
-            * **有向图**中visited一般用于检测环, visited起到"染色"的作用 - 即，visited==1说明节点不属于环的一部分，visited==0说明节点属于一个环。因为，能被访问说明节点入度可变为0，不能访问说明节点入度不可变为0，也就是，它在一个环中。
-            * 注：染色作用的 visited 实际上只是命名为 visited，其他名字也可以，visited只是比较方便理解
-    * Adjacency List `next` 的 data structure 选择:
-        1. `[][]int`: slice of slices
-        2. `[]map[int]bool`: slice of maps
-        3. `map[string]map[string]bool`: map of maps (json)
-        * 总结: 怎么方便怎么来。但是，要注意！选择 map 相关的结构时 (第2, 3种)，要额外考虑 duplicated edges 的情况，重复的edge要跳过，因为，`next`不会重复添加，但是`degree`会不小心多+1。选择 slice 时 (第1种)，就允许添加重复的edge，因为，`next`和`degree`都会对应增加。
-    * 常涉及的trick: 一层一层剥洋葱的时候会需要一个 "继承"变量。"继承"变量可以是节点的深度、祖辈/父辈的某个信息。
-        * 怎么设计这个"继承"变量的通常思路是 `DP`
-    * Topological Sort 的排序数列 什么情况下是唯一确定的？
-        * 每一层入度=0的节点只有一个
-        * i.e., `queue` contains ONLY one element at any time (size == 1 at all times)
+### :star: **解题思路:**
+* **农村包围城市/剥洋葱**: 优先访问那些入度最低的节点。删去第一批最外围的节点后，再继续访问此时入度更新为最低的节点。依次类推。
+* 使用的数据结构: BFS
+    * 注: 拓扑排序也可以用DFS实现，但个人感觉BFS的思路更直观更易模版化且算法在空间上也更高效，遂练习时着重使用BFS解题
+* 使用条件: **Acyclic** (在无向图中就意味着必须是一个Tree)
+* 入度/degree 的定义: 一般的, **degree = the number of incoming edges**.
+    * 注: degree 的定义也可能根据具体题目的要求进行调整，不一定死板地遵守一般定义
+* 外围 (低阶级) vs 内层 (高阶级): 一般的，最外围的节点 = 入度的值最低的节点
+    * 注: 最外围节点的定义也可能根据具体题目的要求增添额外的判定条件，但入度的值一般是其中一条必要的判定条件
+* 有向图 vs 无向图:
+    * 最低入度值 (**最低入度值是非常重要的判定外围node的条件！**):
+        * **有向图**中node入度最低 = 0
+        * **无向图**中node入度最低 = 1
+    * Check for visited (防止从内层重新走回外围的机会):
+        * **有向图**无需 check for visited, 因为有向就意味着从内层走回外围的机会根本不可能发生。
+        * **无向图**需要 check for visited, 除非next move时直接过河拆桥, 把从内层走回外围的edge删除了 (e.g. [2603. Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/description/))
+    * visited 另一作用 - 给非环节点染色:
+        * **有向图**中visited一般用于检测环, visited起到"染色"的作用 - 即，visited==1说明节点不属于环的一部分，visited==0说明节点属于一个环。因为，能被访问说明节点入度可变为0，不能访问说明节点入度不可变为0，也就是，它在一个环中。
+        * 注：染色作用的 visited 实际上只是命名为 visited，其他名字也可以，visited只是比较方便理解
+* Adjacency List `next` 的 data structure 选择:
+    1. `[][]int`: slice of slices
+    2. `[]map[int]bool`: slice of maps
+    3. `map[string]map[string]bool`: map of maps (json)
+    * 总结: 怎么方便怎么来。但是，要注意！选择 map 相关的结构时 (第2, 3种)，要额外考虑 duplicated edges 的情况，重复的edge要跳过，因为，`next`不会重复添加，但是`degree`会不小心多+1。选择 slice 时 (第1种)，就允许添加重复的edge，因为，`next`和`degree`都会对应增加。
+* 常涉及的trick: 一层一层剥洋葱的时候会需要一个 "继承"变量。"继承"变量可以是节点的深度、祖辈/父辈的某个信息。
+    * 怎么设计这个"继承"变量的通常思路是 `DP`
+* Topological Sort 的排序数列 什么情况下是唯一确定的？
+    * 每一层入度=0的节点只有一个
+    * i.e., `queue` contains ONLY one element at any time (size == 1 at all times)
 
 ### 有向图类型
 
