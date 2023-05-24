@@ -1,7 +1,7 @@
 # Union Find
 
 ## 目录
-* [知识点 Quick Walkthrough](#知识点-quick-walkthrough)
+* [知识点 Quick Walkthrough](#star-知识点-quick-walkthrough)
 * [基础题](#基础题)
 * [MST](#minimum-spanning-tree-mst)
 
@@ -10,19 +10,19 @@
 * [Union-Find 算法详解](https://github.com/labuladong/fucking-algorithm/blob/master/%E7%AE%97%E6%B3%95%E6%80%9D%E7%BB%B4%E7%B3%BB%E5%88%97/UnionFind%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3.md)
 * [通俗易懂地讲解《并查集》](https://zhuanlan.zhihu.com/p/125604577)
 
-### 并查集可以解决什么问题?
+### :bulb: 并查集可以解决什么问题?
 1. 主要就是集合问题，判断两个节点在不在一个集合
 2. 也可以将两个节点添加到一个集合中
 3. 找连通: 相互连通的节点属于同一个集合, 相互连通的节点添加到同一个集合
 
-### 并查集主要有三个功能:
+### :bulb: 并查集主要有三个功能:
 1. 找祖宗: 寻找当前节点的根节点，函数：`Find(x int)`，也就是找到当前节点的祖先节点
 2. 两家联姻: 将两个节点接入到同一个集合，函数：`Union(u int, v int)`，将两个节点连在同一个根节点上
     * 谁小谁成为祖宗 (目的: 维护一个顺序)
 3. 同宗同祖: 判断两个节点是否在同一个集合，函数：`Same(u int, v int)`，就是判断两个节点是不是同一个根节点
     * 可以用 `uf.Find(u) == uf.Find(v)` 代替
 
-### 小技巧
+### :mag: 小技巧
 #### 二维坐标节点的处理
 * UnionFind 模版储存 `int`，那么如果题目中节点是二维的，怎么处理?
     1. 压缩为 1-D: 如果是在**矩阵**中，例如，一个节点表示为 `node=(i, j)`，则可以压缩为1-D储存在UnionFind中: `node = i*n + j`，其中`n = len(matrix[0])`是列的个数。
