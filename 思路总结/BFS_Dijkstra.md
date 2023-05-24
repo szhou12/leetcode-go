@@ -17,16 +17,16 @@
 
 * 基础: [513. Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value/)
 
-## 岛屿沉没类 - 找neighbor
+## 岛屿沉没类/连通图个数 - 找neighbor
 * Roblox - Candy Crush
 
-* [200. Number of Islands](https://leetcode.com/problems/number-of-islands/submissions/)
+* :red_circle: **连通岛屿的个数:** [200. Number of Islands](https://leetcode.com/problems/number-of-islands/submissions/)
 
-* 四面八方, 潮水涌来 [417. Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
+* :red_circle: **四面八方, 潮水涌来:** [417. Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
 
-* [130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)
+* :red_circle: **找出不包含边界元素的连通图:** [130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)
 
-* [1020. Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/)
+* :red_circle: **飞地的个数:** [1020. Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/)
 
 ## Dijkstra - Find Shortest Path
 
@@ -39,55 +39,55 @@
         1. Early Return: Dijkstra loop内到达终点即return; loop结束还没return说明无法到达终点
         2. 填表 Return: Dijkstra把所有结果填入一个表 (array, matrix) 中, loop结束后把所求node的结果按要求从表中取出return
 
-* :red_circle: 从Grid左上角走到右下角所花最短时间: [2577. Minimum Time to Visit a Cell In a Grid](https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/description/)
+* :red_circle: **从Grid左上角走到右下角所花最短时间:** [2577. Minimum Time to Visit a Cell In a Grid](https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/description/)
     * **矩阵走格子类型题**
 
-* :red_circle: 从Grid左上角走到右下角所花最少cost: [1368. Minimum Cost to Make at Least One Valid Path in a Grid](https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/description/)
+* :red_circle: **从Grid左上角走到右下角所花最少cost:** [1368. Minimum Cost to Make at Least One Valid Path in a Grid](https://leetcode.com/problems/minimum-cost-to-make-at-least-one-valid-path-in-a-grid/description/)
     * **矩阵走格子类型题**
 
-* :red_circle: 从两个起点到达同一个终点所需最短路径: [2203. Minimum Weighted Subgraph With the Required Paths](https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths/description/)
+* :red_circle: **从两个起点到达同一个终点所需最短路径:** [2203. Minimum Weighted Subgraph With the Required Paths](https://leetcode.com/problems/minimum-weighted-subgraph-with-the-required-paths/description/)
     * 难点: "拉链" - 如何找到"拉链"node i
 
-* :red_circle: :secret: 到达终点的路径总数: [1976. Number of Ways to Arrive at Destination](https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/description/)
+* :red_circle: :secret: **到达终点的路径总数:** [1976. Number of Ways to Arrive at Destination](https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/description/)
     * **Dijkstra + DFS + Deduplication**
     * 题目求方法总数, 最自然的是使用DFS
     * 使用Memo避免DFS重复走走过的路径
     * *1976 与 1786 两题逻辑完全相同*
 
-* :red_circle: :secret: 从起点走到终点的特殊路径总数: [1786. Number of Restricted Paths From First to Last Node](https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/description/)
+* :red_circle: :secret: **从起点走到终点的特殊路径总数:** [1786. Number of Restricted Paths From First to Last Node](https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/description/)
     * **Dijkstra + DFS + Deduplication**
     * 题目求方法总数, 最自然的是使用DFS
     * 使用Memo避免DFS重复走走过的路径
     * *1976 与 1786 两题逻辑完全相同*
 
-* :red_circle: 从起点可到达的nodes总数: [882. Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/)
+* :red_circle: **从起点可到达的nodes总数:** [882. Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/)
     * 难点1: 如何把解题思路与Dijkstra做关联 --> 把 小node 看做 edge weight
     * 难点2: Dijkstra expand时添加限制条件
 
-* :red_circle: :secret: K 站中转内最便宜的航班路径: [787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/)
+* :red_circle: :secret: **K站中转内最便宜的航班路径:** [787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/)
     * **node储存双状态**: node 储存 位置信息+已中转次数信息
     * Dijkstra结果储存进 二维矩阵 = (# of nodes, # of stops used so far)
     * Early Return: Dijkstra loop内到达终点即return
     * *0787 与 2093 两题逻辑相似*
 
-* :lock: :yellow_circle: :secret: [2093. Minimum Cost to Reach City With Discounts](https://leetcode.ca/2021-12-16-2093-Minimum-Cost-to-Reach-City-With-Discounts/#2093-minimum-cost-to-reach-city-with-discounts)
+* :yellow_circle: :secret: :lock: **最小花费到达目的地:** [2093. Minimum Cost to Reach City With Discounts](https://leetcode.ca/2021-12-16-2093-Minimum-Cost-to-Reach-City-With-Discounts/#2093-minimum-cost-to-reach-city-with-discounts)
     * 每次Expand一个邻居node, push "两条边": toll edge; toll/2 edge
     * **node储存双状态**: node 储存 位置信息+已使用discounts次数信息
     * Dijkstra结果储存进 二维矩阵 = (# of nodes, # of discounts used so far)
     * Early Return: Dijkstra loop内到达终点即return
     * *0787 与 2093 两题逻辑相似*
 
-* :green_circle: 最高概率的路径: [1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)
+* :green_circle: **最高概率的路径:** [1514. Path with Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability/)
 
-* :green_circle: 从source node到所有node所需最短时间: [743. Network Delay Time](https://leetcode.com/problems/network-delay-time/description/)
+* :green_circle: **从source node到所有node所需最短时间:** [743. Network Delay Time](https://leetcode.com/problems/network-delay-time/description/)
     * Dijkstra求最短路径的基础题: 求从source node到任意node i的最短路径
     * 可用来作为以上题目的练手题
 
-* :lock: :yellow_circle: :secret: 走迷宫II / 走冰系道馆: [505. The Maze II](https://leetcode.ca/2017-04-18-505-The-Maze-II/)
+* :yellow_circle: :secret: :lock: **走迷宫II / 走冰系道馆:** [505. The Maze II](https://leetcode.ca/2017-04-18-505-The-Maze-II/)
     * 难点: 地面是冰面, 只能维持一个方向前进直到撞墙
     * Early Return: Dijkstra loop内到达终点即return
 
-* :lock: :red_circle: :secret: 走迷宫III / 走冰系道馆+掉洞: [499. The Maze III](https://leetcode.ca/2017-04-12-499-The-Maze-III/)
+* :red_circle: :secret: :lock: **走迷宫III / 走冰系道馆+掉洞:** [499. The Maze III](https://leetcode.ca/2017-04-12-499-The-Maze-III/)
     * **node储存双状态**: node 储存 位置信息+到达node的方向指令信息
     * Priority Queue 再定义:
         1. 用一个结构体容纳不同variable type (int, string)
@@ -96,11 +96,11 @@
     * Early Return: Dijkstra loop内到达终点即return
 
 ## BFS + PQ: 思路想BFS, 代码结构像Dijkstra
-* 一个query可以淹没多少格子, 求淹没总数: [2503. Maximum Number of Points From Grid Queries](https://leetcode.com/problems/maximum-number-of-points-from-grid-queries/)
+* :red_circle: **一个query可以淹没多少格子, 求淹没总数:** [2503. Maximum Number of Points From Grid Queries](https://leetcode.com/problems/maximum-number-of-points-from-grid-queries/)
 
-* 升高海平面中的最短路线: [778. Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/description/)
+* :red_circle: **升高海平面中的最短路线:** [778. Swim in Rising Water](https://leetcode.com/problems/swim-in-rising-water/description/)
 
-* 接雨水II (海水倒灌II): [407. Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/description/)
+* :red_circle: **接雨水II (海水倒灌II):** [407. Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/description/)
     * 题目设置很像 [417. Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
 
 
@@ -139,60 +139,60 @@
 
 ### 有向图类型
 
-* :yellow_circle: 课程表: [207. Course Schedule](https://leetcode.com/problems/course-schedule/)
+* :yellow_circle: **课程表:** [207. Course Schedule](https://leetcode.com/problems/course-schedule/)
     * 拓扑排序的基础题，一定要熟练掌握
 
-* :yellow_circle: 课程表II: [210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)
+* :yellow_circle: **课程表II:** [210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)
     * 拓扑排序的基础题，一定要熟练掌握
 
-* :red_circle: :secret: 课程表IV: [1462. Course Schedule IV](https://leetcode.com/problems/course-schedule-iv/description/)
+* :red_circle: :secret: **课程表IV:** [1462. Course Schedule IV](https://leetcode.com/problems/course-schedule-iv/description/)
     * "继承"变量 trick: 下一步节点要继承`cur`以及`cur`的所有prerequisites
 
-* :red_circle: 按照约束条件填表: [2392. Build a Matrix With Conditions](https://leetcode.com/problems/build-a-matrix-with-conditions/description/)
+* :red_circle: **按照约束条件填表:** [2392. Build a Matrix With Conditions](https://leetcode.com/problems/build-a-matrix-with-conditions/description/)
 
-* :red_circle: DAG图中每个node的祖先: [2192. All Ancestors of a Node in a Directed Acyclic Graph](https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/description/)
+* :red_circle: **DAG图中每个node的祖先:** [2192. All Ancestors of a Node in a Directed Acyclic Graph](https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/description/)
 
-* :red_circle: :secret: 舔狗链-圆桌会议可以邀请最多的互相喜欢的人数: [2127. Maximum Employees to Be Invited to a Meeting](https://leetcode.com/problems/maximum-employees-to-be-invited-to-a-meeting/description/)
+* :red_circle: :secret: **舔狗链-圆桌会议可以邀请最多的互相喜欢的人数:** [2127. Maximum Employees to Be Invited to a Meeting](https://leetcode.com/problems/maximum-employees-to-be-invited-to-a-meeting/description/)
     * "继承"变量 trick: 计算节点`depth`
 
-* :yellow_circle: 找出所有可以用给出的材料组成的食谱: [2115. Find All Possible Recipes from Given Supplies](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/description/)
+* :yellow_circle: **找出所有可以用给出的材料组成的食谱:** [2115. Find All Possible Recipes from Given Supplies](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/description/)
 
 
-* :red_circle: :secret: 有向图中最多的颜色: [1857. Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/description/)
+* :red_circle: :secret: **有向图中最多的颜色:** [1857. Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/description/)
     * "继承"变量 trick: 计算节点`depth`
 
-* :red_circle: :secret: 矩阵以rank表示: [1632. Rank Transform of a Matrix](https://leetcode.com/problems/rank-transform-of-a-matrix/description/)
+* :red_circle: :secret: **矩阵以rank表示:** [1632. Rank Transform of a Matrix](https://leetcode.com/problems/rank-transform-of-a-matrix/description/)
     * Topological Sort + Union Find
 
-* :red_circle: :secret: 奇怪打印机II: [1591. Strange Printer II](https://leetcode.com/problems/strange-printer-ii/description/)
+* :red_circle: :secret: **奇怪打印机II:** [1591. Strange Printer II](https://leetcode.com/problems/strange-printer-ii/description/)
 
 
-* :red_circle: :secret: 平行课程III: [2050. Parallel Courses III](https://leetcode.com/problems/parallel-courses-iii/description/)
+* :red_circle: :secret: **平行课程III:** [2050. Parallel Courses III](https://leetcode.com/problems/parallel-courses-iii/description/)
     * 转化思想：每门课的完成时间 等价于 计算节点`depth`
     * "继承"变量 trick: 计算节点`depth`
 
-* :yellow_circle: :lock: 平行课程: [1136. Parallel Courses](https://leetcode.ca/2019-01-09-1136-Parallel-Courses/)
+* :yellow_circle: :lock: **平行课程:** [1136. Parallel Courses](https://leetcode.ca/2019-01-09-1136-Parallel-Courses/)
     * "继承"变量 trick: 计算节点`depth`
 
-* :red_circle: 排序有组别的元素: [1203. Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/description/)
+* :red_circle: **排序有组别的元素:** [1203. Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/description/)
     * 难点不在于解法思路，而在于实现
 
-* :red_circle: :secret: 寻找可以走到终点的起点: [802. Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/description/)
+* :red_circle: :secret: **寻找可以走到终点的起点:** [802. Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/description/)
     * 突破点: 在于关注节点的"出度"。也就是要把graph整个逆向，计算每个节点的出度，"洋葱"的最外层是 出度=0 的节点。
 
-* :red_circle: :secret: :lock: 拓扑排序唯一解: [444. Sequence Reconstruction](https://leetcode.ca/2017-02-16-444-Sequence-Reconstruction/)
+* :red_circle: :secret: :lock: **拓扑排序唯一解:** [444. Sequence Reconstruction](https://leetcode.ca/2017-02-16-444-Sequence-Reconstruction/)
     * 知识点: 拓扑排序有唯一解 = 每一时刻入度=0的节点只有一个 = `queue`每一时刻都只会有一个元素
 
-* :red_circle: :secret: :lock: 推断字典序: [269. Alien Dictionary](https://leetcode.ca/all/269.html)
+* :red_circle: :secret: :lock: **推断字典序:** [269. Alien Dictionary](https://leetcode.ca/all/269.html)
     * trick: 利用 lexicographical order 来构建 adjacency-list representation
 
 
 ### 无向图类型
-* :red_circle: :secret: tree上捡硬币: [2603. Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/description/)
+* :red_circle: :secret: **tree上捡硬币:** [2603. Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/description/)
     * "继承"变量 trick: 计算节点`depth`
 
-* :red_circle: 分树-每个子树值相同: [2440. Create Components With Same Value](https://leetcode.com/problems/create-components-with-same-value/description/)
+* :red_circle: **分树-每个子树值相同:** [2440. Create Components With Same Value](https://leetcode.com/problems/create-components-with-same-value/description/)
 
-* :red_circle: :secret: 找到所有最矮树的根节点: [310. Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/description/)
+* :red_circle: :secret: **找到所有最矮树的根节点:** [310. Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/description/)
 
-* :red_circle: :secret: :lock: 所有节点到到环的最短距离: [2204. Distance to a Cycle in Undirected Graph](https://leetcode.ca/2022-04-06-2204-Distance-to-a-Cycle-in-Undirected-Graph/)
+* :red_circle: :secret: :lock: **所有节点到到环的最短距离:** [2204. Distance to a Cycle in Undirected Graph](https://leetcode.ca/2022-04-06-2204-Distance-to-a-Cycle-in-Undirected-Graph/)
