@@ -72,4 +72,8 @@
 
 ## Minimum Spanning Tree (MST)
 * :red_circle: :secret: 寻找MST中的关键边和伪关键边: [1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/description/)
-    * Kruskal + Union Find
+    * Union Find + Kruskal
+
+* :red_circle: :secret: 生成连通图所需最少的边/可以删除最多多少边: [1579. Remove Max Number of Edges to Keep Graph Fully Traversable](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/description/)
+    * Union Find + Spanning Tree
+    * 边没有权重，所以这道题只求 spanning tree 而不用 MST
