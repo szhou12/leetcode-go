@@ -87,7 +87,7 @@
 [2302. Count Subarrays With Score Less Than K](https://leetcode.com/problems/count-subarrays-with-score-less-than-k/submissions/)
 
 ## Union Find
-0128, 0130, 0547, 0684, 0685, 0721, 0765, 0785, 0947, 0959, 0990, 1061, 1135, 1202, 1489, 1579, 1584, 1632, 1722, 2076, 2092, 2157, 2492
+0128, 0130, 0547, 0684, 0685, 0721, 0765, 0785, 0947, 0959, 0990, 1061, 1135, 1168, 1202, 1489, 1579, 1584, 1632, 1722, 2076, 2092, 2157, 2492
 
 ## Prefix Sum & Diff Array
 1094, 1109, 2536

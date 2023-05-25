@@ -91,5 +91,8 @@
 * :yellow_circle: **连通所有二维节点的最小花费:** [1584. Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/description/)
     * Union Find + Kruskal
 
-* :green_circle: 最小花费连接所有城市: [1135. Connecting Cities With Minimum Cost](https://leetcode.ca/all/1135.html)
+* :green_circle: :lock: 最小花费连接所有城市: [1135. Connecting Cities With Minimum Cost](https://leetcode.ca/all/1135.html)
+    * Union Find + Kruskal
+
+* :red_circle: :lock: 最小花费给村庄供给水源: [1168. Optimize Water Distribution in a Village](https://leetcode.ca/2019-02-10-1168-Optimize-Water-Distribution-in-a-Village/)
     * Union Find + Kruskal
