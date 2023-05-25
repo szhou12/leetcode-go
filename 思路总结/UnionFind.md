@@ -90,3 +90,6 @@
 
 * :yellow_circle: **连通所有二维节点的最小花费:** [1584. Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/description/)
     * Union Find + Kruskal
+
+* :green_circle: 最小花费连接所有城市: [1135. Connecting Cities With Minimum Cost](https://leetcode.ca/all/1135.html)
+    * Union Find + Kruskal
