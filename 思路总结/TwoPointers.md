@@ -94,15 +94,20 @@ func slidingWindow(s string) int {
         // 至极限条件:  (right未出界) && (right依然可延伸的条件)
         for right < len(s) && [right依然可延伸的条件] {
             rightElement := s[right]
-            [...] // A: 吃进新元素后, 进行窗口内数据的一系列更新
+            window[rightElement] do something // A: 吃进新元素后, 进行窗口内数据的一系列更新
             right++
         }
 
-        [update result] // left收缩前 update result
+        // NOTE: 这里通常需要check哪种情况下才update result
+        // 一般的, right停下来不能继续延伸时, 才能update result
+        // 有的题目, right出界时right可能依然可延伸(不满足停下来的条件), 此时不能update result
+        if [right停下来不能继续延伸时] {
+            res = [update result]
+        }
 
         // 吐
         leftElement := s[left]
-        [...] // B: 吐出旧元素后, 进行窗口内数据的一系列清理和更新
+        window[leftElement] do something // B: 吐出旧元素后, 进行窗口内数据的一系列清理和更新
     }
 
     return res
@@ -177,4 +182,9 @@ func slidingWindow(s string) int {
 
 * 每个字母至少k个的最长子串: [395. Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/)
     * 为防止右边界无限延伸，需要额外增加一个条件: sliding window 内 固定只框住 `m` 个不同的字母 ($m = 1 \cdots 26$)
+
+* :red_circle: 包含所有类型元素的字串个数: [1358. Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/description/)
+    * 两个易错点：
+        1. 每次update result是数多少个子串? 
+        2. 无条件update result吗？
 
