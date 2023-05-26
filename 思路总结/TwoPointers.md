@@ -1,10 +1,16 @@
 # Two Pointers
+## 目录
 
 ## 题目归类
 
 ### 一个数组 + 双指针同向而行
 
 * 移动所有0并且保序: [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/)
+    * 物理意义:
+        * `[0, left)`: 只接纳扔过来的非0元素
+        * `left`: 当前为0, 下一个非0元素要放的位置
+        * `[left, right)`: 0元素
+        * `[right, n)`: 未知元素
     * 在需要**下落物体类**游戏中是非常有用的helper function
 
 * 求满足条件的Subarray个数: [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/)
@@ -183,7 +189,8 @@ func slidingWindow(s string) int {
 * 每个字母至少k个的最长子串: [395. Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/)
     * 为防止右边界无限延伸，需要额外增加一个条件: sliding window 内 固定只框住 `m` 个不同的字母 ($m = 1 \cdots 26$)
 
-* :red_circle: 包含所有类型元素的字串个数: [1358. Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/description/)
+* :yellow_circle: 包含所有类型元素的字串个数: [1358. Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/description/)
+    * 典型题
     * 两个易错点：
         1. 每次update result是数多少个子串? 
         2. 无条件update result吗？

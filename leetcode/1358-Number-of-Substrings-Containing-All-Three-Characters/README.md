@@ -10,7 +10,7 @@
         ```
         [X   X   X   X]   X   X   X   X   X   X
                      --------------------------
-        left           right                 n-1
+        left            right                 n-1
         ```
         * 我一开始写的是 `个数+=1`，相当于只算了滑窗圈起来的这一个substring，肯定少算了
     2. 每次right停下来，需要有条件地 update result
