@@ -1,9 +1,9 @@
 # [1358. Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/description/)
 
 ## Solution idea
-### Two Pointers
+### Two Pointers - Sliding Window
 #### 思路总结
-1. 本题求满足条件的 substring 个数，很明显属于 Two Pointers 中的 *Sliding Window 长度可变 == Subarray 类型* :arrow_right: 使用 模版Flex
+1. 本题求满足条件的 substring 个数，很明显属于 Two Pointers 中的 *"Sliding Window 长度可变 == Subarray 类型"* :arrow_right: 使用 **模版Flex**
 2. 两个难点 (我在解题时, 导致bug的两个点):
     1. 每次right停下来时, substring 个数怎么数？
         * 需要明确 right 停下来时，滑窗的物理意义是什么：此时，滑窗内表示a, b, c每个字母至少包含一个，换句话说，这表示锚定当前left，right直至末尾的所有substring都满足条件。所以，substring 个数 = (n-1) - (right-1) + 1

@@ -195,3 +195,6 @@ func slidingWindow(s string) int {
         1. 每次update result是数多少个子串? 
         2. 无条件update result吗？
 
+* :red_circle: 左右两头包含每个元素至少k个: [2516. Take K of Each Character From Left and Right](https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/description/)
+    * 转化思想: 左右两头 取反 :arrow_right: 中间滑窗
+
