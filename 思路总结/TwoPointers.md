@@ -199,3 +199,4 @@ func slidingWindow(s string) int {
 * :red_circle: 左右两头包含每个元素至少k个: [2516. Take K of Each Character From Left and Right](https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/description/)
     * 转化思想: 左右两头 取反 :arrow_right: 中间滑窗
 
+* :red_circle: 最长"好"子数组: [2401. Longest Nice Subarray](https://leetcode.com/problems/longest-nice-subarray/description/)
