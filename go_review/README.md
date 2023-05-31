@@ -4,6 +4,7 @@
 ## Contents
 * [System](#system)
     * [Configure VS Code for Go](#configure-vs-code-for-go)
+    * [Update Go](#how-to-update-go-version)
 * [Print](#print)
     * [Print byte as character](#print-byte-as-character-not-value)
     * [Print variable type](#print-variable-type)
@@ -35,6 +36,20 @@
 ## System
 ### Configure VS Code for Go
 [Configure Visual Studio Code for Go development](https://learn.microsoft.com/en-us/azure/developer/go/configure-visual-studio-code)
+* 连接文章包括如下几个部分:
+    1. Install Go
+    2. Install Visual Studio Code
+    3. Install the Go extension
+    4. Update the Go tools
+    5. Write a sample Go program
+    6. Run the debugger
+
+
+### How to Update Go Version
+[How to update the Go version](https://gist.github.com/nikhita/432436d570b89cab172dcf2894465753)
+* 个人总结:
+    * 最简单的方法是直接去官网 ([Link](https://go.dev/doc/install)) 下载最新的安装包。打开安装包后，driver会自动检测已安装版本并询问是否替换，选择替换即可。
+
 
 ## Print
 ### Print byte as character, not value
