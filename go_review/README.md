@@ -1,5 +1,7 @@
 # Golang Review
-本文主要进行针对在LeetCode刷题过程中所遇到的有关Go语言知识点的总结和补充
+:bulb: 本文主要进行针对在LeetCode刷题过程中所遇到的有关Go语言知识点的总结和补充。
+
+:bulb: 系统学习Go语言参考: [李文周的博客-Go语言学习之路/Go语言教程](https://www.liwenzhou.com/posts/Go/golang-menu/)
 
 ## Contents
 * [System](#system)
@@ -44,6 +46,7 @@
     5. [Write a sample Go program](https://learn.microsoft.com/en-us/azure/developer/go/configure-visual-studio-code#5-write-a-sample-go-program)
     6. [Run the debugger](https://learn.microsoft.com/en-us/azure/developer/go/configure-visual-studio-code#6-run-the-debugger)
 
+[VS Code配置Go语言开发环境-李文周](https://www.liwenzhou.com/posts/Go/vscode/)
 
 ### How to Update Go Version
 [How to update the Go version](https://gist.github.com/nikhita/432436d570b89cab172dcf2894465753)
