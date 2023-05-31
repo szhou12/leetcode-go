@@ -5,3 +5,4 @@
 #### 思路总结
 
 ## Resource
+[【每日一题】LeetCode 2401. Longest Nice Subarray](https://www.youtube.com/watch?v=stXRx71prEE&ab_channel=HuifengGuan)

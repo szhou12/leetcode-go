@@ -2,6 +2,8 @@
 本文主要进行针对在LeetCode刷题过程中所遇到的有关Go语言知识点的总结和补充
 
 ## Contents
+* [System](#system)
+    * [Configure VS Code for Go](#configure-vs-code-for-go)
 * [Print](#print)
     * [Print byte as character](#print-byte-as-character-not-value)
     * [Print variable type](#print-variable-type)
@@ -29,6 +31,10 @@
 * [String](#string)
     * [Strings are Immutable](#strings-are-immutable)
     * [Sort a String](#sort-a-string)
+
+## System
+### Configure VS Code for Go
+[Configure Visual Studio Code for Go development](https://learn.microsoft.com/en-us/azure/developer/go/configure-visual-studio-code)
 
 ## Print
 ### Print byte as character, not value

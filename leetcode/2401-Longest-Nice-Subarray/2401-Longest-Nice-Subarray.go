@@ -3,7 +3,7 @@ package leetcode
 func longestNiceSubarray(nums []int) int {
 	count := 0
 	right := 0
-	res := 0
+	res := 1
 	for left := 0; left < len(nums); left++ {
 		// 吃
 		for right < len(nums) && (count&nums[right] == 0) {
