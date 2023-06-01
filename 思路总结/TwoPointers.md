@@ -200,3 +200,6 @@ func slidingWindow(s string) int {
     * 转化思想: 左右两头 取反 :arrow_right: 中间滑窗
 
 * :red_circle: 最长"好"子数组: [2401. Longest Nice Subarray](https://leetcode.com/problems/longest-nice-subarray/description/)
+
+* :red_circle: :secret: 可以得到bitwise OR最大值的最短子数组长度: [2411. Smallest Subarrays With Maximum Bitwise OR](https://leetcode.com/problems/smallest-subarrays-with-maximum-bitwise-or/description/)
+    *  左边界从左往右移动。固定左边界，右边界尽量缩短。

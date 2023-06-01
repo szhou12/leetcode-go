@@ -1,7 +1,7 @@
 # Golang Review
 :bulb: 本文主要进行针对在LeetCode刷题过程中所遇到的有关Go语言知识点的总结和补充。
 
-:bulb: 系统学习Go语言参考: [李文周的博客-Go语言学习之路/Go语言教程](https://www.liwenzhou.com/posts/Go/golang-menu/)
+:bulb: 系统学习Go语言请参考: [李文周的博客 - Go语言学习之路/Go语言教程](https://www.liwenzhou.com/posts/Go/golang-menu/)
 
 ## Contents
 * [System](#system)
