@@ -105,10 +105,11 @@ func slidingWindow(s string) int {
             right++
         }
 
-        // NOTE: 这里通常需要check哪种情况下才update result
-        // 一般的, right停下来不能继续延伸时, 才能update result
-        // 有的题目, right出界时right可能依然可延伸(不满足停下来的条件), 此时不能update result
-        if [right停下来不能继续延伸时] {
+        // 这里通常需要check不同情况下对应的update result
+        //  情况1: right出界 但 right依然可延伸，如何update result
+        //  情况2: right没出界 但 right不可延伸，如何update result
+        //  情况3: right出界 且 right不可延伸，如何update result
+        if [哪种情况] {
             res = [update result]
         }
 
@@ -197,12 +198,15 @@ func slidingWindow(s string) int {
         2. 无条件update result吗？
 
 * :red_circle: 左右两头包含每个元素至少k个: [2516. Take K of Each Character From Left and Right](https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/description/)
-    * Bitwise AND
     * 转化思想: 左右两头 取反 :arrow_right: 中间滑窗
 
-* :red_circle: 最长"好"子数组: [2401. Longest Nice Subarray](https://leetcode.com/problems/longest-nice-subarray/description/)
+* :red_circle: :secret: 最长"好"子数组: [2401. Longest Nice Subarray](https://leetcode.com/problems/longest-nice-subarray/description/)
+    * Sliding Window (Flex) + Bitwise AND
 
 * :red_circle: :secret: 可以得到bitwise OR最大值的最短子数组长度: [2411. Smallest Subarrays With Maximum Bitwise OR](https://leetcode.com/problems/smallest-subarrays-with-maximum-bitwise-or/description/)
-    * Bitwise OR
+    * Sliding Window (Flex) + Bitwise OR
     * Trick 1: 左边界从右往左移动。固定左边界，右边界尽量缩短。
     * Trick 2: 判断一个整数 第k bit位 是否有1: `num>>k & 1 == 1`
+
+* :red_circle: :secret: 满足XOR值的最短子串: [2564. Substring XOR Queries](https://leetcode.com/problems/substring-xor-queries/description/)
+    * Sliding Window (Fix) + Bitwise XOR

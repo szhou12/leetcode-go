@@ -330,7 +330,7 @@ func mod(a, b int) int {
 ## Binary Form
 ### Binary Representation of Integer
 
-#### Integer to Binary String
+#### Integer :arrow_right: Binary String
 [Converting from an integer to its binary representation](https://stackoverflow.com/questions/13870845/converting-from-an-integer-to-its-binary-representation)
 
 [Int -> Binary: func FormatInt](https://pkg.go.dev/strconv#FormatInt)
@@ -343,7 +343,7 @@ n := 123
 fmt.Println(strconv.FormatInt(int64(n), 2)) // "1111011"
 ```
 
-#### Binary String to Integer
+#### Binary String :arrow_right: Integer
 [Go - convert string which represent binary number into int](https://stackoverflow.com/questions/9271469/go-convert-string-which-represent-binary-number-into-int)
 
 [Binary -> Int: func ParseInt](https://pkg.go.dev/strconv#ParseInt)

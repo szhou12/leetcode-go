@@ -1,7 +1,7 @@
 # [2411. Smallest Subarrays With Maximum Bitwise OR](https://leetcode.com/problems/smallest-subarrays-with-maximum-bitwise-or/description/)
 
 ## Solution idea
-### Sliding Window
+### Sliding Window (Flex)
 #### 思路总结
 
 ## Resource
