@@ -2,7 +2,7 @@
 ## 目录
 * [X-Sum](#x-sum)
 * [Sliding Window](#sliding-window)
-    * [套路](#套路)
+    * [套路总结](#Methodology)
     * [Fix 模版题](#fix-模版题)
     * [Flex 模版题](#flex-模版题)
     * [非 模版题](#非-模版题)
@@ -38,19 +38,19 @@
 * 跳过重复元素，匹配subsequence: [925. Long Pressed Name](https://leetcode.com/problems/long-pressed-name/description/)
 
 ## X-Sum
-* [1. Two Sum](https://leetcode.com/problems/two-sum/)
-* [15. 3Sum](https://leetcode.com/problems/3sum/)
-    * 第一步: 排序
-    * 第二步: 对每个元素，找符合的two-sum
-* [16. 3Sum Closest](https://leetcode.com/problems/3sum-closest/)
-* [18. 4Sum](https://leetcode.com/problems/4sum/)
-* [454. 4Sum II](https://leetcode.com/problems/4sum-ii/)
+* 两数之和: [1. Two Sum](https://leetcode.com/problems/two-sum/)
+* 三数之和: [15. 3Sum](https://leetcode.com/problems/3sum/)
+    * Step 1: 排序
+    * Step 2: 对每个元素，找符合的 Two-Sum
+* 最接近的三数之和: [16. 3Sum Closest](https://leetcode.com/problems/3sum-closest/)
+* 四数之和: [18. 4Sum](https://leetcode.com/problems/4sum/)
+* 四数之和II: [454. 4Sum II](https://leetcode.com/problems/4sum-ii/)
 
 
 
 ## Sliding Window
 
-### 套路
+### Methodology
 * **解题思路: "吃了吐"**
 * i.e. 分别分析清楚: **吃进去**的各种情况，**吐出来**的各种情况
 * **Sliding Window 题型**可分为两大类:
