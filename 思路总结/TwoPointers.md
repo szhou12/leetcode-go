@@ -1,10 +1,13 @@
 # Two Pointers
 ## 目录
-
-## 题目归类
+* [X-Sum](#x-sum)
 * [Sliding Window](#sliding-window)
+    * [套路](#套路)
+    * [Fix 模版题](#fix-模版题)
+    * [Flex 模版题](#flex-模版题)
+    * [非 模版题](#非-模版题)
 
-### 一个数组 + 双指针同向而行
+## 一个数组 + 双指针同向而行
 
 * 移动所有0并且保序: [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/)
     * 物理意义:
@@ -24,7 +27,7 @@
     * 结合了 **sort**
     * 再进行两个指针同向而行
 
-### 一个数组 + 双指针相向而行
+## 一个数组 + 双指针相向而行
 
 * 判断唯一山峰，左右两边单调递增: [941. Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/description/)
 
@@ -34,7 +37,7 @@
 
 * 跳过重复元素，匹配subsequence: [925. Long Pressed Name](https://leetcode.com/problems/long-pressed-name/description/)
 
-### X-Sum
+## X-Sum
 * [1. Two Sum](https://leetcode.com/problems/two-sum/)
 * [15. 3Sum](https://leetcode.com/problems/3sum/)
     * 第一步: 排序
@@ -44,10 +47,11 @@
 * [454. 4Sum II](https://leetcode.com/problems/4sum-ii/)
 
 
-## 解法归类
 
-### Sliding Window
-* **解题思路**: **吃了吐**
+## Sliding Window
+
+### 套路
+* **解题思路: "吃了吐"**
 * i.e. 分别分析清楚: **吃进去**的各种情况，**吐出来**的各种情况
 * **Sliding Window 题型**可分为两大类:
     1. **固定的窗口**长度
@@ -55,7 +59,7 @@
 
 #### 两套模版
 
-* **模版Fix**
+* **模版Fix**: 定长窗口滑窗
     * 难点主要是以下几点:
         1. 吃进新元素/吐出旧元素 时，如何更新窗口内数据？一旦确定，吃和吐是镜面对称的，实现起来就很容易
         2. 更新result的条件是什么？在哪里更新result？
@@ -88,7 +92,7 @@ func slidingWindow(s string) {
 }
 ```
 
-* **模版Flex**
+* **模版Flex**: 伸缩窗口滑窗
     * 核心思路: 固定左边界，右边界不停探索至极限
 ```go
 func slidingWindow(s string) int {
@@ -123,7 +127,7 @@ func slidingWindow(s string) int {
 }
 ```
 
-#### Sliding Window 长度固定
+### Fix 模版题
 
 * **模版Fix** 比较适合解决 Sliding Window 为定长的题目 (容易写出正确的code), 所以 定长的题目 优先考虑 **模版Fix**.
     * **模版Fix** 也可以解决 长度可变 的题目，但是实际操作中实现上不容易保证正确
@@ -139,9 +143,10 @@ func slidingWindow(s string) int {
 * 定长为k的subarray最大和: [2461. Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/description/)
 
 
+* :red_circle: :secret: 满足XOR值的最短子串: [2564. Substring XOR Queries](https://leetcode.com/problems/substring-xor-queries/description/)
+    * Sliding Window (Fix) + **Bitwise XOR**
 
-
-#### Sliding Window 长度可变 == Subarray 类型
+### Flex 模版题
 
 * **模版Flex** 比较适合解决 Sliding Window 为长度可变的题目 (容易写出正确的code), 所以 长度可变的题目 优先考虑 **模版Flex**.
 
@@ -201,12 +206,12 @@ func slidingWindow(s string) int {
     * 转化思想: 左右两头 取反 :arrow_right: 中间滑窗
 
 * :red_circle: :secret: 最长"好"子数组: [2401. Longest Nice Subarray](https://leetcode.com/problems/longest-nice-subarray/description/)
-    * Sliding Window (Flex) + Bitwise AND
+    * Sliding Window (Flex) + **Bitwise AND**
 
 * :red_circle: :secret: 可以得到bitwise OR最大值的最短子数组长度: [2411. Smallest Subarrays With Maximum Bitwise OR](https://leetcode.com/problems/smallest-subarrays-with-maximum-bitwise-or/description/)
-    * Sliding Window (Flex) + Bitwise OR
+    * Sliding Window (Flex) + **Bitwise OR**
     * Trick 1: 左边界从右往左移动。固定左边界，右边界尽量缩短。
     * Trick 2: 判断一个整数 第k bit位 是否有1: `num>>k & 1 == 1`
 
-* :red_circle: :secret: 满足XOR值的最短子串: [2564. Substring XOR Queries](https://leetcode.com/problems/substring-xor-queries/description/)
-    * Sliding Window (Fix) + Bitwise XOR
+
+### 非 模版题

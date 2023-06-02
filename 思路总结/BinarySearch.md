@@ -45,7 +45,7 @@ for left < right {...}
 
 **Assume input array non-decreasing order:**
 
-1. `lowerBound()`: Find the **first index** whose element in the array has the value >= target (It follows the same concept as `lower_bound()` method in C++)
+1. `lowerBound()`: Find the **first index** whose element in the array has the **value >= target** (It follows the same concept as `lower_bound()` method in C++)
     1. 情况一: target 不在数组范围中，target 小于数组中所有元素，在**左边界**以外 :arrow_right: 返回数组的第一个元素的index
     2. 情况二: target 不在数组范围中，target 大于数组中所有元素，在**右边界**以外 :arrow_right: 返回数组的最后一个元素的index+1
     3. 情况三: target 在数组范围中，只是数组中不存在 :arrow_right: 返回数组中第一个 > target的元素的index
@@ -84,7 +84,7 @@ func lowerBound(nums []int, target int) int {
  }
 ```
 
-2. `upperBound()`: Find the **first index** whose element in the array has the value > target (It follows the same concept as `upper_bound()` method in C++)
+2. `upperBound()`: Find the **first index** whose element in the array has the **value > target** (It follows the same concept as `upper_bound()` method in C++)
     1. 情况一: target 不在数组范围中，target 小于数组中所有元素，在**左边界**以外 :arrow_right: 返回数组的第一个元素的index
     2. 情况二: target 不在数组范围中，target 大于数组中所有元素，在**右边界**以外 :arrow_right: 返回数组的最后一个元素的index+1
     3. 情况三: target 在数组范围中，只是数组中不存在 :arrow_right: 返回数组中第一个 > target的元素的index
