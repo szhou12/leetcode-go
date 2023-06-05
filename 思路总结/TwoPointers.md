@@ -214,5 +214,10 @@ func slidingWindow(s string) int {
     * Trick 2: 判断一个整数 第k bit位 是否有1: `num>>k & 1 == 1`
 
 
+* :red_circle: 窗口内统一字母的最长子串: [424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/description/)
+    * 解法一: 26个字母挨个锁定为目标
+        * 相同思路的题目: [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/description/), [2024. Maximize the Confusion of an Exam](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/description/)
+    * 解法二: 窗口总长度 - 窗口占多数的字母次数 <= k
+
 ### 非 模版题
 * :red_circle: :secret: k步内收集最多果子: [2106. Maximum Fruits Harvested After at Most K Steps](https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/description/)
