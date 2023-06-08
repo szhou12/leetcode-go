@@ -219,6 +219,10 @@ func slidingWindow(s string) int {
         * 相同思路的题目: [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/description/), [2024. Maximize the Confusion of an Exam](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/description/)
     * 解法二: 窗口总长度 - 窗口占多数的字母次数 <= k
 
+* :yellow_circle: [2537. Count the Number of Good Subarrays](https://leetcode.com/problems/count-the-number-of-good-subarrays/description/)
+    * 逆向思维：滑窗物理意义 = 题目要求取反
+    * 分类讨论：更新结果前需要分类讨论
+
 ### 非 模版题
 * :red_circle: :secret: k步内收集最多果子: [2106. Maximum Fruits Harvested After at Most K Steps](https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/description/)
 
