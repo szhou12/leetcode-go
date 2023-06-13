@@ -223,6 +223,10 @@ func slidingWindow(s string) int {
     * 逆向思维：滑窗物理意义 = 题目要求取反
     * 分类讨论：更新结果前需要分类讨论
 
+* :yellow_circle: [992. Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers/description/)
+    * 2537 的进阶版
+
+
 ### 非 模版题
 * :red_circle: :secret: k步内收集最多果子: [2106. Maximum Fruits Harvested After at Most K Steps](https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/description/)
     * Sliding Window (非) + Prefix Sum
