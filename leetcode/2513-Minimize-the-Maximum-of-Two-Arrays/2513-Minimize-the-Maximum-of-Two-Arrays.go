@@ -3,7 +3,7 @@ package leetcode
 import (
 	"math"
 
-	helper "github.com/szhou12/leetcode-go/tricks"
+	helper "github.com/szhou12/leetcode-go/mathematics"
 )
 
 // binary search

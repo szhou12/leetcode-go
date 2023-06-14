@@ -31,6 +31,11 @@
         * 例题: 1584
 
 ## 基础题
+
+* :red_circle: :secret: 连通共享公约数的数字: [2709. Greatest Common Divisor Traversal](https://leetcode.com/problems/greatest-common-divisor-traversal/description/)
+    * Union Find + Prime Factorization
+    * 时间优化: 用 共享的 prime factor(质因数) 作为 Union 的媒介/桥梁
+
 * :green_circle: **起点到终点是否有通路:** [1971. Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/)
 
 * :red_circle: **从起点到终点的所有路径中最短的一条边:** [2492. Minimum Score of a Path Between Two Cities](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/description/)
