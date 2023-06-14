@@ -1,4 +1,4 @@
-package tricks
+package mathematics
 
 // Sieve of Eratosthenes 埃氏筛
 // Return a list of prime numbers <= n
@@ -15,6 +15,8 @@ func eratosthenes(n int) []int {
 			j += i
 		}
 	}
+	// sieve[i] == 0: prime number
+	// sieve[i] == 1: not prime number
 
 	for i := 2; i <= n; i++ {
 		if sieve[i] == 0 {

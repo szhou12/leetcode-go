@@ -1,4 +1,4 @@
-package tricks
+package mathematics
 
 // Split integer into slice of single digits
 // 注意：这个方法是从末位往前得到digit

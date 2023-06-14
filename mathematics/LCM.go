@@ -1,4 +1,4 @@
-package tricks
+package mathematics
 
 // 最小公倍数
 

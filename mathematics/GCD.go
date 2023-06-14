@@ -1,4 +1,4 @@
-package tricks
+package mathematics
 
 // 求 最大公约数
 // greatest common divisor (GCD) via Euclidean algorithm (辗转相除法)

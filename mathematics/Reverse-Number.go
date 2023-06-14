@@ -1,4 +1,4 @@
-package tricks
+package mathematics
 
 // Reverse a number
 // 1357 -> 7531
