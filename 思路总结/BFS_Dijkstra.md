@@ -41,6 +41,8 @@
         1. Early Return: Dijkstra loop内到达终点即return; loop结束还没return说明无法到达终点
         2. 填表 Return: Dijkstra把所有结果填入一个表 (array, matrix) 中, loop结束后把所求node的结果按要求从表中取出return
 
+* :red_circle: 调整边的权重得到最短路径: [2699. Modify Graph Edge Weights](https://leetcode.com/problems/modify-graph-edge-weights/description/)
+
 * :red_circle: **从Grid左上角走到右下角所花最短时间:** [2577. Minimum Time to Visit a Cell In a Grid](https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/description/)
     * **矩阵走格子类型题**
 
