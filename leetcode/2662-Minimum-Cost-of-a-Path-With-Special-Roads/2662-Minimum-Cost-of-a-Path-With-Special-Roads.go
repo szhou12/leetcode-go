@@ -1,7 +1,12 @@
 package leetcode
 
-func minimumCost(start []int, target []int, specialRoads [][]int) int {
+import "container/heap"
 
+func minimumCost(start []int, target []int, specialRoads [][]int) int {
+	minHeap := &PQ{}
+	heap.Init(minHeap)
+
+	return 0
 }
 
 func encode(x, y int) int {
