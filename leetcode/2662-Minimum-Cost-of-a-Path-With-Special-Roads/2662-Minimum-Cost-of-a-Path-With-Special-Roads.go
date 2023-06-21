@@ -6,6 +6,9 @@ func minimumCost(start []int, target []int, specialRoads [][]int) int {
 	minHeap := &PQ{}
 	heap.Init(minHeap)
 
+	// Start nodes
+	heap.Push(minHeap, []int{0, encode(start[0], start[1])})
+
 	return 0
 }
 
