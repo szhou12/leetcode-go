@@ -2,6 +2,7 @@
 
 ## Contents
 * [方法论](#方法论)
+* [模版 - upperBound, lowerBound](#模版-find-lower-bound--find-upper-bound)
 * [经典题](#经典题)
 * [First/Last Occurrence](#find-first-occurrence--last-occurrence)
 * [Closet Element Greater/Less](#find-closest-element-greatersmaller-than-target)
@@ -9,6 +10,7 @@
     * [Guess K-th Element](#guess-k-th-element)
     * [Guess + Math](#guess--math)
     * [Guess Min/Max](#guess-minmax)
+* [非常规](#非常规)
 
 ## 方法论
 * 统一循环条件:
@@ -41,7 +43,8 @@ for left < right {...}
         * e.g. 搜索区间内的值都 `> target`，那就找不到 满足target的左侧边界 (ie. 第一个 `== target` 的元素)
         * e.g. 搜索区间内的值都 `<= target`, 那就找不到 满足target的右侧边界 (ie. 第一个 `> target` 的元素)
 
-* **模版 - find lower bound & right bound**
+
+## 模版: find lower bound & find upper bound
 
 **Assume input array non-decreasing order:**
 
@@ -152,8 +155,6 @@ func upperBound(nums []int, target int) int {
     2. target < 数组中所有值
     3. target 在数组范围中，只是数组中不存在该值
 
-
-
 * 找最小的大于Target的元素: [744. Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
 
 
@@ -228,3 +229,8 @@ func upperBound(nums []int, target int) int {
 * 找最小可裁定/删除的subarray长度: [2565. Subsequence With the Minimum Score](https://leetcode.com/problems/subsequence-with-the-minimum-score/)
     * 结合 **3-Pass** 思想
     * 重点在于要清楚明白各物理量的物理意义
+
+## 非常规
+
+* :red_circle: 求符合题意的配对数量: [2563. Count the Number of Fair Pairs](https://leetcode.com/problems/count-the-number-of-fair-pairs/description/)
+    * 求区间范围: 用到 `upperBound()` 和 `lowerBound()`
