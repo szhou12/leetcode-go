@@ -4,7 +4,7 @@
 * [方法论](#方法论)
 * [经典题](#经典题)
 * [First/Last Occurrence](#find-first-occurrence--last-occurrence)
-* [Closet element greater/less](#find-closest-element-greatersmaller-than-target)
+* [Closet Element Greater/Less](#find-closest-element-greatersmaller-than-target)
 * [BS猜答案](#binary-search-猜答案)
     * [Guess K-th Element](#guess-k-th-element)
     * [Guess + Math](#guess--math)

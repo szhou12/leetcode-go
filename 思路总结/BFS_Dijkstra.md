@@ -43,6 +43,8 @@
 
 * :red_circle: 调整边的权重得到最短路径: [2699. Modify Graph Edge Weights](https://leetcode.com/problems/modify-graph-edge-weights/description/)
 
+* :red_circle: 有特殊路径选择权的最短路径: [2662. Minimum Cost of a Path With Special Roads](https://leetcode.com/problems/minimum-cost-of-a-path-with-special-roads/)
+
 * :red_circle: **从Grid左上角走到右下角所花最短时间:** [2577. Minimum Time to Visit a Cell In a Grid](https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/description/)
     * **矩阵走格子类型题**
 
