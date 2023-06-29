@@ -1,6 +1,6 @@
 # Binary Search
 
-## Contents
+## 目录
 * [方法论](#方法论)
 * [模版 - upperBound, lowerBound](#模版-find-lower-bound--find-upper-bound)
 * [经典题](#经典题)

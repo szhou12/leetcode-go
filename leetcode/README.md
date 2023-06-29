@@ -91,3 +91,6 @@
 
 ## Prefix Sum & Diff Array
 1094, 1109, 2536
+
+## Trie
+2416
