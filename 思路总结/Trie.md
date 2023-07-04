@@ -7,16 +7,38 @@
 ## 模版
 ```go
 type TrieNode struct {
-    char byte
+    char byte // Optional: letter stored in the current TrieNode
+    isEnd bool // Optional: whether the current TrieNode denotes the end of a word
     children [26]*TrieNode
 }
 
 func newTrieNode(char byte) *TrieNode {
-    node := TrieNode(char: char)
+    node := TrieNode(
+        char: char,
+        isEnd: false,
+    )
+
     for i := 0; i < 26; i++ {
         node.children[i] = nil
     }
     return &node
+}
+
+func buildTrie(words []string) *TrieNode {
+    root := newTrieNode(' ')
+    for _, word := range words {
+        node := root
+
+        for _, char := range word {
+            index := int(char - 'a')
+            if node.children[index] == nil {
+                node.children[index] = newTrieNode(byte(char))
+            }
+            node = node.children[index]
+        }
+        node.isEnd = true
+    }
+    return root
 }
 ```
 
