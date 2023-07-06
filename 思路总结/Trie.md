@@ -50,3 +50,7 @@ func buildTrie(words []string) *TrieNode {
 
 * :red_circle: input中可以由其他单词做前缀组成的最长单词: [720. Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary/description/)
     * Trie + DFS
+
+* :red_circle: 自动补充的提示词: [1268. Search Suggestions System](https://leetcode.com/problems/search-suggestions-system/)
+    * Trie + DFS
+    * 思路类似 **720**
