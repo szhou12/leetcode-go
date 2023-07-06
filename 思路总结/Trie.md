@@ -5,6 +5,7 @@
 * [经典题](#经典题)
 
 ## 模版
+* 可参考 [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/)
 ```go
 type TrieNode struct {
     char byte // Optional: letter stored in the current TrieNode
