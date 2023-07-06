@@ -54,3 +54,6 @@ func buildTrie(words []string) *TrieNode {
 * :red_circle: 自动补充的提示词: [1268. Search Suggestions System](https://leetcode.com/problems/search-suggestions-system/)
     * Trie + DFS
     * 思路类似 **720**
+
+* :red_circle: 矩阵中搜词II: [212. Word Search II](https://leetcode.com/problems/word-search-ii/description/)
+    * Trie + DFS in matrix
