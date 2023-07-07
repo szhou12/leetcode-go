@@ -5,7 +5,7 @@
 * [经典题](#经典题)
 
 ## 模版
-* 可参考 [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/)
+* 可参考 [208. Implement Trie (Prefix Tree)](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0208-Implement-Trie-(Prefix-Tree))
 ```go
 type TrieNode struct {
     char byte // Optional: letter stored in the current TrieNode
@@ -14,10 +14,10 @@ type TrieNode struct {
 }
 
 func newTrieNode(char byte) *TrieNode {
-    node := TrieNode(
+    node := TrieNode{
         char: char,
         isEnd: false,
-    )
+    }
 
     for i := 0; i < 26; i++ {
         node.children[i] = nil
@@ -43,7 +43,7 @@ func buildTrie(words []string) *TrieNode {
 }
 ```
 
-* [Implementing A Trie Data structure In Golang(Search engine)](https://medium.com/@itachisasuke/implementing-a-search-engine-in-golang-trie-data-structure-c45152ddda24)
+* Resource: [Implementing A Trie Data structure In Golang(Search engine)](https://medium.com/@itachisasuke/implementing-a-search-engine-in-golang-trie-data-structure-c45152ddda24)
 
 ## 经典题
 * :red_circle: 共享前缀的总数量: [2416. Sum of Prefix Scores of Strings](https://leetcode.com/problems/sum-of-prefix-scores-of-strings/description/)
