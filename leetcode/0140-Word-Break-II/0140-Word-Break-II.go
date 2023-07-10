@@ -22,7 +22,28 @@ func wordBreak(s string, wordDict []string) []string {
 }
 
 func dfs(s string, root *TrieNode, startIndex int, sentence string, res *[]string) {
-	
+	// base case
+	if startIndex == len(s) {
+		sentence = sentence[:len(sentence) - 1]
+		*res = append(*res, sentence)
+		return
+	}
+
+	node := root
+	for end := startIndex; end < len(s); end++ {
+		letter := int(s[end] - 'a')
+		if node.children[letter] != nil {
+			node = node.children[letter]
+			if node.isEnd {
+				prevLen := len(sentence)
+				sentence += s[startIndex:end+1] + " "
+				dfs(s, root, end+1, sentence, res)
+				sentence = sentence[:prevLen]
+			}
+		} else {
+			break
+		}
+	}
 }
 
 type TrieNode struct {

@@ -58,3 +58,6 @@ func buildTrie(words []string) *TrieNode {
 
 * :red_circle: 矩阵中搜词II: [212. Word Search II](https://leetcode.com/problems/word-search-ii/description/)
     * Trie + DFS in matrix
+
+* :red_circle: 分词II: [140. Word Break II](https://leetcode.com/problems/word-break-ii/description/)
+    * Trie + 区间型 DFS
