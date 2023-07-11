@@ -61,3 +61,6 @@ func buildTrie(words []string) *TrieNode {
 
 * :red_circle: 分词II: [140. Word Break II](https://leetcode.com/problems/word-break-ii/description/)
     * Trie + 区间型 DFS
+
+* :yellow_circle: 用词根替换: [648. Replace Words](https://leetcode.com/problems/replace-words/description/)
+    * Trie
