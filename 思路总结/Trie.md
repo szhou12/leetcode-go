@@ -3,13 +3,14 @@
 ## 目录
 * [Trie模版](#模版)
 * [经典题](#经典题)
+* [Design题](#design题)
 
 ## 模版
 * 可参考 [208. Implement Trie (Prefix Tree)](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0208-Implement-Trie-(Prefix-Tree))
 ```go
 type TrieNode struct {
-    char byte // Optional: letter stored in the current TrieNode
-    isEnd bool // Optional: whether the current TrieNode denotes the end of a word
+    char byte // [Optional] letter stored in the current TrieNode
+    isEnd bool // Whether the current TrieNode denotes the end of a word
     children [26]*TrieNode
 }
 
@@ -45,6 +46,8 @@ func buildTrie(words []string) *TrieNode {
 
 * Resource: [Implementing A Trie Data structure In Golang(Search engine)](https://medium.com/@itachisasuke/implementing-a-search-engine-in-golang-trie-data-structure-c45152ddda24)
 
+
+
 ## 经典题
 * :red_circle: 共享前缀的总数量: [2416. Sum of Prefix Scores of Strings](https://leetcode.com/problems/sum-of-prefix-scores-of-strings/description/)
     * 比较直接的运用**Trie**的题目
@@ -57,10 +60,14 @@ func buildTrie(words []string) *TrieNode {
     * 思路类似 **720**
 
 * :red_circle: 矩阵中搜词II: [212. Word Search II](https://leetcode.com/problems/word-search-ii/description/)
-    * Trie + DFS in matrix
+    * Trie + 矩阵 DFS
 
 * :red_circle: 分词II: [140. Word Break II](https://leetcode.com/problems/word-break-ii/description/)
     * Trie + 区间型 DFS
 
 * :yellow_circle: 用词根替换: [648. Replace Words](https://leetcode.com/problems/replace-words/description/)
     * Trie
+
+
+## Design题
+* :red_circle: 实现Trie: [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/)
