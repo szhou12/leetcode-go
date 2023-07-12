@@ -6,7 +6,8 @@
 * [Design题](#design题)
 
 ## 模版
-* 可参考 [208. Implement Trie (Prefix Tree)](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0208-Implement-Trie-(Prefix-Tree))
+* 字典树介绍: [数据结构与算法： 字典树（Trie）](https://aimuke.github.io/algorithm/2019/07/01/algorithm-trie/)
+* 可参考: [208. Implement Trie (Prefix Tree)](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0208-Implement-Trie-(Prefix-Tree))
 ```go
 type TrieNode struct {
     char byte // [Optional] letter stored in the current TrieNode
@@ -71,3 +72,6 @@ func buildTrie(words []string) *TrieNode {
 
 ## Design题
 * :red_circle: 实现Trie: [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/)
+
+* :yellow_circle: 实现Trie, 实现添加和查询功能: [211. Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/description/)
+    * Search feature: Recursion
