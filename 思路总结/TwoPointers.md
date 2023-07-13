@@ -231,6 +231,7 @@ func slidingWindow(s string) int {
 * :yellow_circle: [992. Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers/description/)
     * 2537 的进阶版
 
+* :yellow_circle: 最长的"半重复"子串 [2730. Find the Longest Semi-Repetitive Substring](https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/description/)
 
 ### 非 模版题
 * :red_circle: :secret: k步内收集最多果子: [2106. Maximum Fruits Harvested After at Most K Steps](https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/description/)
