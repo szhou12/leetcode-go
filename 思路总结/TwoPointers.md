@@ -147,6 +147,10 @@ func slidingWindow(s string) int {
 * :red_circle: :secret: 满足XOR值的最短子串: [2564. Substring XOR Queries](https://leetcode.com/problems/substring-xor-queries/description/)
     * Sliding Window (Fix) + **Bitwise XOR**
 
+* :red_circle: :secret: [2747. Count Zero Request Servers](https://leetcode.com/problems/count-zero-request-servers/description/)
+    * 类 Sliding Window (Fix)
+
+
 ### Flex 模版题
 
 * **模版Flex** 比较适合解决 Sliding Window 为长度可变的题目 (容易写出正确的code), 所以 长度可变的题目 优先考虑 **模版Flex**.

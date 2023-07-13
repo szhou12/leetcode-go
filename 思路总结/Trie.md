@@ -10,15 +10,17 @@
 * 可参考: [208. Implement Trie (Prefix Tree)](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0208-Implement-Trie-(Prefix-Tree))
 ```go
 type TrieNode struct {
-    char byte // [Optional] letter stored in the current TrieNode
     isEnd bool // Whether the current TrieNode denotes the end of a word
+    char byte // [Optional] letter stored in the current TrieNode
+    count int // [Optional] Count # of words in the text that ends with the current TrieNode
     children [26]*TrieNode
 }
 
 func newTrieNode(char byte) *TrieNode {
     node := TrieNode{
-        char: char,
         isEnd: false,
+        char: char,
+        count: 0
     }
 
     for i := 0; i < 26; i++ {
@@ -38,6 +40,7 @@ func buildTrie(words []string) *TrieNode {
                 node.children[index] = newTrieNode(byte(char))
             }
             node = node.children[index]
+            node.count++
         }
         node.isEnd = true
     }
@@ -52,6 +55,7 @@ func buildTrie(words []string) *TrieNode {
 ## 经典题
 * :red_circle: 共享前缀的总数量: [2416. Sum of Prefix Scores of Strings](https://leetcode.com/problems/sum-of-prefix-scores-of-strings/description/)
     * 比较直接的运用**Trie**的题目
+    * `count`: 文本词频统计
 
 * :red_circle: input中可以由其他单词做前缀组成的最长单词: [720. Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary/description/)
     * Trie + DFS
@@ -73,5 +77,5 @@ func buildTrie(words []string) *TrieNode {
 ## Design题
 * :red_circle: 实现Trie: [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/)
 
-* :yellow_circle: 实现Trie, 实现添加和查询功能: [211. Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/description/)
+* :yellow_circle: 实现Trie, 实现添加和查询功能(包含通用符): [211. Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/description/)
     * Search feature: Recursion
