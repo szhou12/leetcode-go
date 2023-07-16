@@ -13,8 +13,20 @@ func newTrieNode() *TrieNode {
 	return &node
 }
 
-type WordFilter struct {
+func buildTrie(root *TrieNode, word string) {
+	node := root
+	for _, char := range word {
+		letter := int(char - 'a')
+		if node.children[letter] == nil {
+			node.children[letter] = newTrieNode()
+		}
+		node = node.children[letter]
+	}
+	node.isEnd = true
+}
 
+type WordFilter struct {
+	root *TrieNode
 }
 
 func Constructor(words []string) WordFilter {
