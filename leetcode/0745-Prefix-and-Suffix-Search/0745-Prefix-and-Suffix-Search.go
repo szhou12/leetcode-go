@@ -1,5 +1,18 @@
 package leetcode
 
+type TrieNode struct {
+	isEnd bool
+	children [27]*TrieNode // 26 letters + '{'
+}
+
+func newTrieNode() *TrieNode {
+	node := TrieNode{isEnd: false}
+	for i := 0; i < 27; i++ {
+		node.children[i] = nil
+	}
+	return &node
+}
+
 type WordFilter struct {
 
 }
