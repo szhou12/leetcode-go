@@ -30,7 +30,8 @@ type WordFilter struct {
 }
 
 func Constructor(words []string) WordFilter {
-    
+    trie := WordFilter{root: newTrieNode()}
+	return trie
 }
 
 
