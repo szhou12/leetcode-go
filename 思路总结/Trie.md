@@ -79,3 +79,5 @@ func buildTrie(words []string) *TrieNode {
 
 * :yellow_circle: 实现Trie, 实现添加和查询功能(包含通用符): [211. Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/description/)
     * Search feature: Recursion
+
+* :red_circle: 前后缀搜索: [745. Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search/)
