@@ -32,7 +32,7 @@ func newTrieNode(char byte) *TrieNode {
 func buildTrie(words []string) *TrieNode {
     root := newTrieNode(' ')
     for _, word := range words {
-        node := root
+        node := root // Start over from root for each word
 
         for _, char := range word {
             index := int(char - 'a')
@@ -77,7 +77,9 @@ func buildTrie(words []string) *TrieNode {
 ## Design题
 * :red_circle: 实现Trie: [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/)
 
+* :red_circle: 前后缀搜索: [745. Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search/)
+
 * :yellow_circle: 实现Trie, 实现添加和查询功能(包含通用符): [211. Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/description/)
     * Search feature: Recursion
 
-* :red_circle: 前后缀搜索: [745. Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search/)
+* :yellow_circle: 搜索一字母之差的字典: [676. Implement Magic Dictionary](https://leetcode.com/problems/implement-magic-dictionary/description/)

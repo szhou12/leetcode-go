@@ -2,7 +2,8 @@
 
 ## Solution idea
 ### Trie
-#### 思路总结 
+#### 思路总结
+
 
 
 ## Resource
