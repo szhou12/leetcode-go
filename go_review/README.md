@@ -34,6 +34,7 @@
 * [String](#string)
     * [Strings are Immutable](#strings-are-immutable)
     * [Sort a String](#sort-a-string)
+    * [Reverse a String](#reverse-a-string)
 
 ## System
 ### Configure VS Code for Go
@@ -382,4 +383,17 @@ sort.Slice(s, func(i int, j int) bool {
 })
 // Step 3: convert []rune back to string
 word = string(s)
+```
+
+### Reverse a String
+[How to reverse a string in Golang](https://www.educative.io/answers/how-to-reverse-a-string-in-golang)
+```go
+func reverse(word string) string {
+    // Prepend each character to the front of return value
+    reversedWord := ""
+    for _, char := range word {
+        reversedWord = string(char) + reversedWord
+    }
+    return reversedWord
+}
 ```
