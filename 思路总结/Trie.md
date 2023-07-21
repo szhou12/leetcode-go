@@ -78,6 +78,10 @@ func buildTrie(root *TrieNode, words []string) {
 
 * :red_circle: 前后缀搜索: [745. Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search/)
 
+* :red_circle: :secret: 查询字符流后缀: [1032. Stream of Characters](https://leetcode.com/problems/stream-of-characters/description/)
+    * 看到是 查询suffix: 想到 逆序建Trie
+
+
 * :yellow_circle: 实现Trie, 实现添加和查询功能(包含通用符): [211. Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/description/)
     * Search feature: Recursion
 
