@@ -1,6 +1,19 @@
 # Depth First Search
 
-## N-皇后
+## 目录
+* [N-Queens](#n-Queens)
+* [岛屿沉没 - 找neighbor](#岛屿沉没---找neighbor)
+* [Permutation](#permutation)
+* [All Subsets](#all-subsets)
+    * [Subsets](#subsets)
+    * [Combination Sum](#combination-sum)
+* [图的遍历](#图的遍历)
+    * [树的深搜遍历](#树的深搜遍历)
+* [行程规划](#行程规划)
+
+
+
+## N-Queens
 
 * 求所有解法 [51. N-Queens](https://leetcode.com/problems/n-queens/)
 
@@ -25,7 +38,9 @@
 
 3. slope = -1
 
-## 岛屿沉没类 - 找neighbor
+
+
+## 岛屿沉没 - 找neighbor
 
 * 岛屿数量: [200. Number of Islands](https://leetcode.com/problems/number-of-islands/submissions/)
 
@@ -51,7 +66,15 @@
 
 * Roblox - Candy Crush
 
-## All Subsets类
+
+## Permutation
+
+* :red_circle: 全排列: [46. Permutations](https://leetcode.com/problems/permutations/)
+    * Permutation 类型题 **母题**
+
+
+
+## All Subsets
 
 ### Subsets
 
@@ -85,15 +108,18 @@
 
 * [216. Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)
 
-## 树的深搜遍历
 
-* 所有路径和: [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
 
 ## 图的遍历
 * DAG图中找从`node 0`到`node n-1`的所有合法路径: [797. All Paths From Source to Target](https://leetcode.com/problems/all-paths-from-source-to-target/description/)
 
 * 判断在有向有环图中能否从`node 0`到达所有其他 nodes: [841. Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/description/)
     * 用 hashmap `visited`记录遍历过的节点
+
+### 树的深搜遍历
+
+* 所有路径和: [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
+
 
 ## 行程规划
 
