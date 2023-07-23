@@ -72,7 +72,7 @@
 * :red_circle: 全排列: [46. Permutations](https://leetcode.com/problems/permutations/)
     * Permutation 类型题 **母题**
 
-
+* :red_circle: 有重复元素的全排列: [47. Permutations II](https://leetcode.com/problems/permutations-ii/)
 
 ## All Subsets
 
