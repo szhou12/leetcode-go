@@ -74,6 +74,9 @@
 
 * :red_circle: 有重复元素的全排列: [47. Permutations II](https://leetcode.com/problems/permutations-ii/)
 
+* :red_circle: 特殊全排列: [2741. Special Permutations](https://leetcode.com/problems/special-permutations/)
+
+
 ## All Subsets
 
 ### Subsets
