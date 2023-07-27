@@ -3,6 +3,7 @@
 ## 目录
 * [N-Queens](#n-Queens)
 * [岛屿沉没 - 找neighbor](#岛屿沉没---找neighbor)
+* [类DP](#类dp)
 * [Permutation](#permutation)
 * [All Subsets](#all-subsets)
     * [Subsets](#subsets)
@@ -66,6 +67,12 @@
 
 * Roblox - Candy Crush
 
+## 类DP
+
+* :red_circle: 特殊全排列: [2741. Special Permutations](https://leetcode.com/problems/special-permutations/)
+
+* :red_circle: 结合字符串: [2746. Decremental String Concatenation](https://leetcode.com/problems/decremental-string-concatenation/description/)
+
 
 ## Permutation
 
@@ -74,7 +81,7 @@
 
 * :red_circle: 有重复元素的全排列: [47. Permutations II](https://leetcode.com/problems/permutations-ii/)
 
-* :red_circle: 特殊全排列: [2741. Special Permutations](https://leetcode.com/problems/special-permutations/)
+
 
 
 ## All Subsets
