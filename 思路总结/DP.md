@@ -18,7 +18,8 @@
     * 需要通过总结 `DP[i]` 的规律性质来优化算法的 time complexity
 
 
-
+## 二维 DP
+* :red_circle: 奇偶变换数组中挑选总和最大化: [2786. Visit Array Positions to Maximize Score](https://leetcode.com/problems/visit-array-positions-to-maximize-score/description/)
 
 
 
@@ -174,6 +175,8 @@
 
 * :red_circle: :secret: 二进制字符串中的"好"子序列个数: [1987. Number of Unique Good Subsequences](https://leetcode.com/problems/number-of-unique-good-subsequences/description/)
     * *940 与 1987 思路非常相近*
+
+
 
 ## 区间型 DP (interval DP)
 * 猜测数高了还是低了II: [375. Guess Number Higher or Lower II](https://leetcode.com/problems/guess-number-higher-or-lower-ii/description/)
