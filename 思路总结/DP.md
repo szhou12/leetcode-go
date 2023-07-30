@@ -1,5 +1,11 @@
 # Dynamic Programming
 
+## 目录
+* [买卖股票](#买卖股票)
+* [抢劫房子](#抢劫房子)
+* [Subarray 子数组类型题](#subarray-子数组类型题)
+* [Subsequnce 子序列类型题](#subsequnce-子序列类型题)
+
 ## 基础题
 
 * Fibonacci Number: [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/)
@@ -119,6 +125,8 @@
 
 ### 类型三: 最大子数组
 * 最大子数组: [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
+
+
 
 ## Subsequnce 子序列类型题
 
