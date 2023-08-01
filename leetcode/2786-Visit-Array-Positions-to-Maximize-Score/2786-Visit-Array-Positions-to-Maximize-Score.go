@@ -2,8 +2,18 @@ package leetcode
 
 import "math"
 
+// NOTE: you have to start at index=0, you can't start over at any other index
 // dp[i][0] := max score in nums[0:i] when the last selected number is even
 // dp[i][1] := max score in nums[0:i] when the last selected number is odd
+// Base case: 
+// DP[0][0] = nums[0] or -inf, DP[0][1] = nums[0] 
+// Recurrence:
+// if nums[i] == even:
+//  DP[i][0] = max(DP[i-1][0], DP[i-1][0]+nums[i], DP[i-1][1]+nums[i]-x)
+//  DP[i][1] = DP[i-1][1]
+// if nums[i] == odd:
+//  DP[i][0] = DP[i-1][0]
+//  DP[i][1] = max(DP[i-1][1], DP[i-1][1]+nums[i], DP[i-1][0]+nums[i]-x)
 func maxScore(nums []int, x int) int64 {
 	n := len(nums)
 
