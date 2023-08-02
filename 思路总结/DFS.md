@@ -11,6 +11,7 @@
 * [图的遍历](#图的遍历)
     * [树的深搜遍历](#树的深搜遍历)
 * [行程规划](#行程规划)
+* [Min-Max Strategy](#min-max-strategy)
 
 
 
@@ -139,3 +140,7 @@
     * 难点二：如何记录映射关系 - 一个机场映射多个机场，机场之间要靠字母序排列
     * 难点三：Base Case 终止条件
     * 难点四：DFS function 返回值 bool 的意义
+
+
+## Min-Max Strategy
+* :red_circle: 先手能否赢: [464. Can I Win](https://leetcode.com/problems/can-i-win/description/)
