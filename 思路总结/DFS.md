@@ -144,3 +144,5 @@
 
 ## Min-Max Strategy
 * :red_circle: 先手能否赢: [464. Can I Win](https://leetcode.com/problems/can-i-win/description/)
+
+* :red_circle: 石头游戏I: [877. Stone Game](https://leetcode.com/problems/stone-game/description/)
