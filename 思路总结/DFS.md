@@ -146,3 +146,6 @@
 * :red_circle: 先手能否赢: [464. Can I Win](https://leetcode.com/problems/can-i-win/description/)
 
 * :red_circle: 石头游戏I: [877. Stone Game](https://leetcode.com/problems/stone-game/description/)
+
+* :yellow_circle: 判断赢家: [486. Predict the Winner](https://leetcode.com/problems/predict-the-winner/description/)
+    * 与 0877 完全一样的解法
