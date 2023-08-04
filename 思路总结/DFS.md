@@ -149,3 +149,5 @@
 
 * :yellow_circle: 判断赢家: [486. Predict the Winner](https://leetcode.com/problems/predict-the-winner/description/)
     * 与 0877 完全一样的解法
+
+* :yellow_circle: 石头游戏II: [1140. Stone Game II](https://leetcode.com/problems/stone-game-ii/description/)
