@@ -151,3 +151,6 @@
     * 与 0877 完全一样的解法
 
 * :yellow_circle: 石头游戏II: [1140. Stone Game II](https://leetcode.com/problems/stone-game-ii/description/)
+
+* :green_circle: 石头游戏III: [1406. Stone Game III](https://leetcode.com/problems/stone-game-iii/description/)
+    * 与 Stone Game II 基本完全一样的解法
