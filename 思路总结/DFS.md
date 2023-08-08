@@ -145,12 +145,14 @@
 ## Min-Max Strategy
 * :red_circle: 先手能否赢: [464. Can I Win](https://leetcode.com/problems/can-i-win/description/)
 
-* :red_circle: 石头游戏I: [877. Stone Game](https://leetcode.com/problems/stone-game/description/)
+* :red_circle: 石头游戏1: [877. Stone Game](https://leetcode.com/problems/stone-game/description/)
 
 * :yellow_circle: 判断赢家: [486. Predict the Winner](https://leetcode.com/problems/predict-the-winner/description/)
     * 与 0877 完全一样的解法
 
-* :yellow_circle: 石头游戏II: [1140. Stone Game II](https://leetcode.com/problems/stone-game-ii/description/)
+* :yellow_circle: 石头游戏2: [1140. Stone Game II](https://leetcode.com/problems/stone-game-ii/description/)
 
-* :green_circle: 石头游戏III: [1406. Stone Game III](https://leetcode.com/problems/stone-game-iii/description/)
+* :green_circle: 石头游戏3: [1406. Stone Game III](https://leetcode.com/problems/stone-game-iii/description/)
     * 与 Stone Game II 基本完全一样的解法
+
+* :green_circle: 石头游戏4: [1510. Stone Game IV](https://leetcode.com/problems/stone-game-iv/description/)
