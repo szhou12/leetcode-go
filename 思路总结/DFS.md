@@ -156,3 +156,5 @@
     * 与 Stone Game II 基本完全一样的解法
 
 * :green_circle: 石头游戏4: [1510. Stone Game IV](https://leetcode.com/problems/stone-game-iv/description/)
+
+* :red_circle: 石头游戏5: [1563. Stone Game V](https://leetcode.com/problems/stone-game-v/description/)
