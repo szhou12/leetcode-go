@@ -158,3 +158,5 @@
 * :green_circle: 石头游戏4: [1510. Stone Game IV](https://leetcode.com/problems/stone-game-iv/description/)
 
 * :red_circle: 石头游戏5: [1563. Stone Game V](https://leetcode.com/problems/stone-game-v/description/)
+
+* :red_circle: 石头游戏9: [2029. Stone Game IX](https://leetcode.com/problems/stone-game-ix/)
