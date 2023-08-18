@@ -7,6 +7,7 @@
 * [Dijkstra](#dijkstra---find-shortest-path)
 * [BFS + PQ](#bfs--pq-思路想bfs-代码结构像dijkstra)
 * [Topological Sort](#topological-sort)
+    * [解题思路](#解题思路)
     * [有向图类型](#有向图类型)
     * [无向图类型](#无向图类型)
 
@@ -46,9 +47,9 @@
         1. Early Return: Dijkstra loop内到达终点即return; loop结束还没return说明无法到达终点
         2. 填表 Return: Dijkstra把所有结果填入一个表 (array, matrix) 中, loop结束后把所求node的结果按要求从表中取出return
 
-* :red_circle: 调整边的权重得到最短路径: [2699. Modify Graph Edge Weights](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2699-Modify-Graph-Edge-Weights)
+* :red_circle: **调整边的权重得到最短路径:** [2699. Modify Graph Edge Weights](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2699-Modify-Graph-Edge-Weights)
 
-* :red_circle: 有特殊路径选择权的最短路径: [2662. Minimum Cost of a Path With Special Roads](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2662-Minimum-Cost-of-a-Path-With-Special-Roads)
+* :red_circle: **有特殊路径选择权的最短路径:** [2662. Minimum Cost of a Path With Special Roads](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2662-Minimum-Cost-of-a-Path-With-Special-Roads)
 
 * :red_circle: **从Grid左上角走到右下角所花最短时间:** [2577. Minimum Time to Visit a Cell In a Grid](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2577-Minimum-Time-to-Visit-a-Cell-In-a-Grid)
     * **矩阵走格子类型题**
@@ -120,7 +121,7 @@
 
 ## Topological Sort
 
-### :star: **解题思路:**
+### 解题思路
 * :bulb: **农村包围城市/剥洋葱**: 优先访问那些入度最低的节点。删去第一批最外围的节点后，再继续访问此时入度更新为最低的节点。依次类推。
     * 编者注：想像成“蜘蛛网”，我们从边缘(入度最低)出发，逐步向中心(入度最高)侵略
 * :bulb: 使用的算法/数据结构: BFS
