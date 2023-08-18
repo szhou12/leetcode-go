@@ -19,6 +19,10 @@
 
 * 基础: [513. Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value/)
 
+## 综合题
+* :red_circle: :secret: [2812. Find the Safest Path in a Grid](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2812-Find-the-Safest-Path-in-a-Grid)
+   * BFS (类Topological Sort式剥洋葱) + Binary Search 猜答案 + 嵌套BFS找路径
+
 ## 岛屿沉没类/连通图个数 - 找neighbor
 * :red_circle: **连通岛屿的个数:** [200. Number of Islands](https://leetcode.com/problems/number-of-islands/submissions/)
 
