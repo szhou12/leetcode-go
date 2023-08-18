@@ -4,7 +4,7 @@
 ### BFS + Binary Search 猜答案
 #### 思路总结
 #### 物理意义
-`grid[i][j] =` the distance from cell (i, j) to nearest thief + 1
+重新定义: `grid[i][j] =` the distance from cell (i, j) to nearest thief + 1
 #### 代码结构
 ```
 Step 1:
