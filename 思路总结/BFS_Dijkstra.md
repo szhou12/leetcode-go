@@ -2,6 +2,7 @@
 
 ## 目录
 * [最经典最基础的BFS应用: Tree - Level Order Traversal](#最经典最基础的-bfs-应用-tree---level-order-traversal)
+* [综合题](#综合题)
 * [岛屿沉没类/连通图个数](#岛屿沉没类---找neighbor)
 * [Dijkstra](#dijkstra---find-shortest-path)
 * [BFS + PQ](#bfs--pq-思路想bfs-代码结构像dijkstra)
