@@ -13,26 +13,26 @@
 
 ## 最经典最基础的 BFS 应用: Tree - Level Order Traversal
 
-* 基础: [102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/)
+* 基础: [102. Binary Tree Level Order Traversal]()
 
-* 进阶: [103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/)
+* 进阶: [103. Binary Tree Zigzag Level Order Traversal]()
 
-* 基础: [116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/)
+* 基础: [116. Populating Next Right Pointers in Each Node]()
 
-* 基础: [513. Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value/)
+* 基础: [513. Find Bottom Left Tree Value]()
 
 ## 综合题
 * :red_circle: :secret: **nXn矩阵中寻找安全路径:** [2812. Find the Safest Path in a Grid](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2812-Find-the-Safest-Path-in-a-Grid)
    * BFS (类Topological Sort式剥洋葱) + Binary Search 猜答案 + 嵌套BFS找路径
 
 ## 岛屿沉没类/连通图个数 - 找neighbor
-* :red_circle: **连通岛屿的个数:** [200. Number of Islands](https://leetcode.com/problems/number-of-islands/submissions/)
+* :red_circle: **连通岛屿的个数:** [200. Number of Islands](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0200-Number-of-Islands)
 
-* :red_circle: **四面八方, 潮水涌来:** [417. Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
+* :red_circle: **四面八方, 潮水涌来:** [417. Pacific Atlantic Water Flow](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0417-Pacific-Atlantic-Water-Flow)
 
-* :red_circle: **找出不包含边界元素的连通图:** [130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)
+* :red_circle: **找出不包含边界元素的连通图:** [130. Surrounded Regions](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0130-Surrounded-Regions)
 
-* :red_circle: **飞地的个数:** [1020. Number of Enclaves](https://leetcode.com/problems/number-of-enclaves/)
+* :red_circle: **飞地的个数:** [1020. Number of Enclaves](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1020-Number-of-Enclaves)
 
 * Roblox - Candy Crush
 
