@@ -23,7 +23,7 @@
 * 基础: [513. Find Bottom Left Tree Value](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0513-Find-Bottom-Left-Tree-Value)
 
 ## 常规题
-* :red_circle: :secret: 在一个图中按要求给节点分组，求最大分组数: [2493. Divide Nodes Into the Maximum Number of Groups]()
+* :red_circle: :secret: 在一个图中按要求给节点分组，求最大分组数: [2493. Divide Nodes Into the Maximum Number of Groups](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2493-Divide-Nodes-Into-the-Maximum-Number-of-Groups)
 
 ## 综合题
 * :red_circle: :secret: **nXn矩阵中寻找安全路径:** [2812. Find the Safest Path in a Grid](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2812-Find-the-Safest-Path-in-a-Grid)
