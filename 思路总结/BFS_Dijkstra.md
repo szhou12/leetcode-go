@@ -1,7 +1,8 @@
 # Breadth First Search & Dijkstra
 
 ## 目录
-* [最经典最基础的BFS应用: Tree - Level Order Traversal](#最经典最基础的-bfs-应用-tree---level-order-traversal)
+* [基础题: 层级遍历](#基础题-层级遍历)
+* [常规题](#常规题)
 * [综合题](#综合题)
 * [岛屿沉没类/连通图个数](#岛屿沉没类---找neighbor)
 * [Dijkstra](#dijkstra---find-shortest-path)
@@ -11,7 +12,7 @@
     * [有向图类型](#有向图类型)
     * [无向图类型](#无向图类型)
 
-## 最经典最基础的 BFS 应用: Tree - Level Order Traversal
+## 基础题: 层级遍历
 
 * 基础: [102. Binary Tree Level Order Traversal](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0102-Binary-Tree-Level-Order-Traversal)
 
@@ -20,6 +21,9 @@
 * 基础: [116. Populating Next Right Pointers in Each Node](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0116-Populating-Next-Right-Pointers-in-Each-Node)
 
 * 基础: [513. Find Bottom Left Tree Value](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0513-Find-Bottom-Left-Tree-Value)
+
+## 常规题
+* :red_circle: :secret: 在一个图中按要求给节点分组，求最大分组数: [2493. Divide Nodes Into the Maximum Number of Groups]()
 
 ## 综合题
 * :red_circle: :secret: **nXn矩阵中寻找安全路径:** [2812. Find the Safest Path in a Grid](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2812-Find-the-Safest-Path-in-a-Grid)
@@ -109,7 +113,7 @@
 
 
 
-## BFS + PQ: 思路想BFS, 代码结构像Dijkstra
+## BFS + PQ: 思路像BFS, 代码结构像Dijkstra
 * :red_circle: **一个query可以淹没多少格子, 求淹没总数:** [2503. Maximum Number of Points From Grid Queries](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2503-Maximum-Number-of-Points-From-Grid-Queries)
 
 * :red_circle: **升高海平面中的最短路线:** [778. Swim in Rising Water](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0778-Swim-in-Rising-Water)
