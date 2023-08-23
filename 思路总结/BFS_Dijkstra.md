@@ -141,7 +141,7 @@
         * **无向图**中node入度最低 = 1
     * Check for visited (防止从内层重新走回外围的机会):
         * **有向图**无需 check for visited, 因为有向就意味着从内层走回外围的机会根本不可能发生。
-        * **无向图**需要 check for visited, 除非next move时直接过河拆桥, 把从内层走回外围的edge删除了 (e.g. [2603. Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/description/))
+        * **无向图**需要 check for visited, 除非next move时直接过河拆桥, 把从内层走回外围的edge删除了 (e.g. [2603. Collect Coins in a Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2603-Collect-Coins-in-a-Tree))
     * visited 另一作用 - 给非环节点染色:
         * **有向图**中visited一般用于检测环, visited起到"染色"的作用 - 即，visited==1说明节点不属于环的一部分，visited==0说明节点属于一个环。因为，能被访问说明节点入度可变为0，不能访问说明节点入度不可变为0，也就是，它在一个环中。
         * 注：染色作用的 visited 实际上只是命名为 visited，其他名字也可以，visited只是比较方便理解
