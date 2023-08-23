@@ -61,7 +61,7 @@
 * :red_circle: **从Grid左上角走到右下角所花最少cost:** [1368. Minimum Cost to Make at Least One Valid Path in a Grid](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1368-Minimum-Cost-to-Make-at-Least-One-Valid-Path-in-a-Grid)
     * **矩阵走格子类型题**
 
-* :red_circle: **求必经最少障碍物的路径:** [2290. Minimum Obstacle Removal to Reach Corner]()
+* :red_circle: **求必经最少障碍物的路径:** [2290. Minimum Obstacle Removal to Reach Corner](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2290-Minimum-Obstacle-Removal-to-Reach-Corner)
     * **矩阵走格子类型题**
 
 * :red_circle: **从两个起点到达同一个终点所需最短路径:** [2203. Minimum Weighted Subgraph With the Required Paths](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2203-Minimum-Weighted-Subgraph-With-the-Required-Paths)
