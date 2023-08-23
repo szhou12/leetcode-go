@@ -3,6 +3,9 @@
 ## Solution idea
 ### BFS + Binary Search 猜答案
 #### 思路总结
+1. 关键词: BFS剥洋葱，Binary Search猜答案，嵌套BFS，矩阵
+
+
 #### 物理意义
 重新定义: `grid[i][j] =` the distance from cell (i, j) to nearest thief + 1
 #### 代码结构
