@@ -22,12 +22,19 @@
 
 * 基础: [513. Find Bottom Left Tree Value](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0513-Find-Bottom-Left-Tree-Value)
 
+
+
 ## 常规题
 * :red_circle: :secret: 在一个图中按要求给节点分组，求最大分组数: [2493. Divide Nodes Into the Maximum Number of Groups](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2493-Divide-Nodes-Into-the-Maximum-Number-of-Groups)
 
+
+
 ## 综合题
-* :red_circle: :secret: **nXn矩阵中寻找安全路径:** [2812. Find the Safest Path in a Grid](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2812-Find-the-Safest-Path-in-a-Grid)
+* :red_circle: :secret: **Grid中寻找安全路径:** [2812. Find the Safest Path in a Grid](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2812-Find-the-Safest-Path-in-a-Grid)
    * BFS (类Topological Sort式剥洋葱) + Binary Search 猜答案 + 嵌套BFS找路径
+
+* :red_circle: **从Grid左上角走到右下角所花最少cost:** [1368. Minimum Cost to Make at Least One Valid Path in a Grid](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1368-Minimum-Cost-to-Make-at-Least-One-Valid-Path-in-a-Grid)
+    * BFS 嵌套 BFS
 
 ## 岛屿沉没类/连通图个数 - 找neighbor
 * :red_circle: **连通岛屿的个数:** [200. Number of Islands](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0200-Number-of-Islands)
