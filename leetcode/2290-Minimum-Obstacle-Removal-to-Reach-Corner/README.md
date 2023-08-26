@@ -4,6 +4,7 @@
 ### Dijkstra
 #### 思路总结
 1. Key idea: "记住来时的路"
+    * 用**时间戳**来达到类似BFS层级遍历的效果: 
 
 ## Solution idea - Reference
 ### BFS
