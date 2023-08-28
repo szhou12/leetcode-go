@@ -27,7 +27,7 @@
 ## 常规题
 * :red_circle: :secret: 在一个图中按要求给节点分组，求最大分组数: [2493. Divide Nodes Into the Maximum Number of Groups](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2493-Divide-Nodes-Into-the-Maximum-Number-of-Groups)
 
-* :green_circle: 引爆最多炸弹数: [2101. Detonate the Maximum Bombs]()
+* :green_circle: 引爆最多炸弹数: [2101. Detonate the Maximum Bombs](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2101-Detonate-the-Maximum-Bombs)
 
 
 
