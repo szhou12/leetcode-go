@@ -170,13 +170,13 @@
 
 ### 有向图类型
 
-* :yellow_circle: **课程表:** [207. Course Schedule](https://leetcode.com/problems/course-schedule/)
+* :yellow_circle: **课程表:** [207. Course Schedule](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0207-Course-Schedule)
     * 拓扑排序的基础题，一定要熟练掌握
 
-* :yellow_circle: **课程表II:** [210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/)
+* :yellow_circle: **课程表II:** [210. Course Schedule II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0210-Course-Schedule-II)
     * 拓扑排序的基础题，一定要熟练掌握
 
-* :red_circle: :secret: **课程表IV:** [1462. Course Schedule IV](https://leetcode.com/problems/course-schedule-iv/description/)
+* :red_circle: :secret: **课程表IV:** [1462. Course Schedule IV](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1462-Course-Schedule-IV)
     * "继承"变量 trick: 下一步节点要继承`cur`以及`cur`的所有prerequisites
 
 * :red_circle: **按照约束条件填表:** [2392. Build a Matrix With Conditions](https://leetcode.com/problems/build-a-matrix-with-conditions/description/)
