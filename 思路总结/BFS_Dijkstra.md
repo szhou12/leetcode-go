@@ -179,7 +179,7 @@
 * :red_circle: :secret: **课程表IV:** [1462. Course Schedule IV](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1462-Course-Schedule-IV)
     * "继承"变量 trick: 下一步节点要继承`cur`以及`cur`的所有prerequisites
 
-* :red_circle: **按照约束条件填表:** [2392. Build a Matrix With Conditions](https://leetcode.com/problems/build-a-matrix-with-conditions/description/)
+* :red_circle: **按照约束条件填表:** [2392. Build a Matrix With Conditions](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2392-Build-a-Matrix-With-Conditions)
 
 * :red_circle: **DAG图中每个node的祖先:** [2192. All Ancestors of a Node in a Directed Acyclic Graph](https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/description/)
 
