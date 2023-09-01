@@ -181,7 +181,7 @@
 
 * :red_circle: **按照约束条件填表:** [2392. Build a Matrix With Conditions](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2392-Build-a-Matrix-With-Conditions)
 
-* :red_circle: **DAG图中每个node的祖先:** [2192. All Ancestors of a Node in a Directed Acyclic Graph](https://leetcode.com/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/description/)
+* :red_circle: **DAG图中每个node的祖先:** [2192. All Ancestors of a Node in a Directed Acyclic Graph](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2192-All-Ancestors-of-a-Node-in-a-Directed-Acyclic-Graph)
 
 * :red_circle: :secret: **舔狗链-圆桌会议可以邀请最多的互相喜欢的人数:** [2127. Maximum Employees to Be Invited to a Meeting](https://leetcode.com/problems/maximum-employees-to-be-invited-to-a-meeting/description/)
     * "继承"变量 trick: 计算节点`depth`
