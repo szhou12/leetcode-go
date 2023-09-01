@@ -183,7 +183,7 @@
 
 * :red_circle: **DAG图中每个node的祖先:** [2192. All Ancestors of a Node in a Directed Acyclic Graph](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2192-All-Ancestors-of-a-Node-in-a-Directed-Acyclic-Graph)
 
-* :red_circle: :secret: **舔狗链-圆桌会议可以邀请最多的互相喜欢的人数:** [2127. Maximum Employees to Be Invited to a Meeting](https://leetcode.com/problems/maximum-employees-to-be-invited-to-a-meeting/description/)
+* :red_circle: :secret: **舔狗链-圆桌会议可以邀请最多的互相喜欢的人数:** [2127. Maximum Employees to Be Invited to a Meeting](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2127-Maximum-Employees-to-Be-Invited-to-a-Meeting)
     * "继承"变量 trick: 计算节点`depth`
 
 * :yellow_circle: **找出所有可以用给出的材料组成的食谱:** [2115. Find All Possible Recipes from Given Supplies](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/description/)
