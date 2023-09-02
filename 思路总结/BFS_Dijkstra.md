@@ -186,44 +186,44 @@
 * :red_circle: :secret: **舔狗链-圆桌会议可以邀请最多的互相喜欢的人数:** [2127. Maximum Employees to Be Invited to a Meeting](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2127-Maximum-Employees-to-Be-Invited-to-a-Meeting)
     * "继承"变量 trick: 计算节点`depth`
 
-* :yellow_circle: **找出所有可以用给出的材料组成的食谱:** [2115. Find All Possible Recipes from Given Supplies](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/description/)
+* :yellow_circle: **找出所有可以用给出的材料组成的食谱:** [2115. Find All Possible Recipes from Given Supplies](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2115-Find-All-Possible-Recipes-from-Given-Supplies)
 
 
-* :red_circle: :secret: **有向图中最多的颜色:** [1857. Largest Color Value in a Directed Graph](https://leetcode.com/problems/largest-color-value-in-a-directed-graph/description/)
+* :red_circle: :secret: **有向图中最多的颜色:** [1857. Largest Color Value in a Directed Graph](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1857-Largest-Color-Value-in-a-Directed-Graph)
     * "继承"变量 trick: 计算节点`depth`
 
-* :red_circle: :secret: **矩阵以rank表示:** [1632. Rank Transform of a Matrix](https://leetcode.com/problems/rank-transform-of-a-matrix/description/)
+* :red_circle: :secret: **矩阵以rank表示:** [1632. Rank Transform of a Matrix](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1632-Rank-Transform-of-a-Matrix)
     * Topological Sort + Union Find
 
-* :red_circle: :secret: **奇怪打印机II:** [1591. Strange Printer II](https://leetcode.com/problems/strange-printer-ii/description/)
+* :red_circle: :secret: **奇怪打印机II:** [1591. Strange Printer II]()
 
 
-* :red_circle: :secret: **平行课程III:** [2050. Parallel Courses III](https://leetcode.com/problems/parallel-courses-iii/description/)
+* :red_circle: :secret: **平行课程III:** [2050. Parallel Courses III]()
     * 转化思想：每门课的完成时间 等价于 计算节点`depth`
     * "继承"变量 trick: 计算节点`depth`
 
-* :yellow_circle: :lock: **平行课程:** [1136. Parallel Courses](https://leetcode.ca/2019-01-09-1136-Parallel-Courses/)
+* :yellow_circle: :lock: **平行课程:** [1136. Parallel Courses]()
     * "继承"变量 trick: 计算节点`depth`
 
-* :red_circle: **排序有组别的元素:** [1203. Sort Items by Groups Respecting Dependencies](https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/description/)
+* :red_circle: **排序有组别的元素:** [1203. Sort Items by Groups Respecting Dependencies]()
     * 难点不在于解法思路，而在于实现
 
-* :red_circle: :secret: **寻找可以走到终点的起点:** [802. Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/description/)
+* :red_circle: :secret: **寻找可以走到终点的起点:** [802. Find Eventual Safe States]()
     * 突破点: 在于关注节点的"出度"。也就是要把graph整个逆向，计算每个节点的出度，"洋葱"的最外层是 出度=0 的节点。
 
-* :red_circle: :secret: :lock: **拓扑排序唯一解:** [444. Sequence Reconstruction](https://leetcode.ca/2017-02-16-444-Sequence-Reconstruction/)
+* :red_circle: :secret: :lock: **拓扑排序唯一解:** [444. Sequence Reconstruction]()
     * 知识点: 拓扑排序有唯一解 = 每一时刻入度=0的节点只有一个 = `queue`每一时刻都只会有一个元素
 
-* :red_circle: :secret: :lock: **推断字典序:** [269. Alien Dictionary](https://leetcode.ca/all/269.html)
+* :red_circle: :secret: :lock: **推断字典序:** [269. Alien Dictionary]()
     * trick: 利用 lexicographical order 来构建 adjacency-list representation
 
 
 ### 无向图类型
-* :red_circle: :secret: **tree上捡硬币:** [2603. Collect Coins in a Tree](https://leetcode.com/problems/collect-coins-in-a-tree/description/)
+* :red_circle: :secret: **tree上捡硬币:** [2603. Collect Coins in a Tree]()
     * "继承"变量 trick: 计算节点`depth`
 
-* :red_circle: **分树-每个子树值相同:** [2440. Create Components With Same Value](https://leetcode.com/problems/create-components-with-same-value/description/)
+* :red_circle: **分树-每个子树值相同:** [2440. Create Components With Same Value]()
 
-* :red_circle: :secret: **找到所有最矮树的根节点:** [310. Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees/description/)
+* :red_circle: :secret: **找到所有最矮树的根节点:** [310. Minimum Height Trees]()
 
-* :red_circle: :secret: :lock: **所有节点到到环的最短距离:** [2204. Distance to a Cycle in Undirected Graph](https://leetcode.ca/2022-04-06-2204-Distance-to-a-Cycle-in-Undirected-Graph/)
+* :red_circle: :secret: :lock: **所有节点到到环的最短距离:** [2204. Distance to a Cycle in Undirected Graph]()
