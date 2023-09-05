@@ -195,26 +195,26 @@
 * :red_circle: :secret: **矩阵以rank表示:** [1632. Rank Transform of a Matrix](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1632-Rank-Transform-of-a-Matrix)
     * Topological Sort + Union Find
 
-* :red_circle: :secret: **奇怪打印机II:** [1591. Strange Printer II]()
+* :red_circle: :secret: **奇怪打印机II:** [1591. Strange Printer II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1591-Strange-Printer-II)
 
 
-* :red_circle: :secret: **平行课程III:** [2050. Parallel Courses III]()
+* :red_circle: :secret: **平行课程III:** [2050. Parallel Courses III](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2050-Parallel-Courses-III)
     * 转化思想：每门课的完成时间 等价于 计算节点`depth`
     * "继承"变量 trick: 计算节点`depth`
 
-* :yellow_circle: :lock: **平行课程:** [1136. Parallel Courses]()
+* :yellow_circle: :lock: **平行课程:** [1136. Parallel Courses](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1136-Parallel-Courses)
     * "继承"变量 trick: 计算节点`depth`
 
-* :red_circle: **排序有组别的元素:** [1203. Sort Items by Groups Respecting Dependencies]()
+* :red_circle: **排序有组别的元素:** [1203. Sort Items by Groups Respecting Dependencies](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1203-Sort-Items-by-Groups-Respecting-Dependencies)
     * 难点不在于解法思路，而在于实现
 
-* :red_circle: :secret: **寻找可以走到终点的起点:** [802. Find Eventual Safe States]()
+* :red_circle: :secret: **寻找可以走到终点的起点:** [802. Find Eventual Safe States](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0802-Find-Eventual-Safe-States)
     * 突破点: 在于关注节点的"出度"。也就是要把graph整个逆向，计算每个节点的出度，"洋葱"的最外层是 出度=0 的节点。
 
-* :red_circle: :secret: :lock: **拓扑排序唯一解:** [444. Sequence Reconstruction]()
+* :red_circle: :secret: :lock: **拓扑排序唯一解:** [444. Sequence Reconstruction](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0444-Sequence-Reconstruction)
     * 知识点: 拓扑排序有唯一解 = 每一时刻入度=0的节点只有一个 = `queue`每一时刻都只会有一个元素
 
-* :red_circle: :secret: :lock: **推断字典序:** [269. Alien Dictionary]()
+* :red_circle: :secret: :lock: **推断字典序:** [269. Alien Dictionary](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0269-Alien-Dictionary)
     * trick: 利用 lexicographical order 来构建 adjacency-list representation
 
 
