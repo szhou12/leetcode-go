@@ -33,7 +33,7 @@
 
 ## 综合题
 
-* :red_circle: :red_circle: :secret: 逃离野火: [2258. Escape the Spreading Fire]()
+* :red_circle: :red_circle: :secret: 逃离野火: [2258. Escape the Spreading Fire](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2258-Escape-the-Spreading-Fire)
     * Solution 1: BFS + BFS + Reasoning
 
 * :red_circle: :secret: **Grid中寻找安全路径:** [2812. Find the Safest Path in a Grid](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2812-Find-the-Safest-Path-in-a-Grid)
