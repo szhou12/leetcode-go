@@ -8,7 +8,7 @@
     * Configure VS Code for Go
     * Update Go
 * [Structure](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_Structure.md)
-    * Files Under Same Package (Redeclare error)
+    * Files under same package (Redeclare error)
 * [Pass by Value (值传递)](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_Pass.md)
 * [Print](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_Print.md)
     * Print byte as character
