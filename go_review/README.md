@@ -4,9 +4,7 @@
 :bulb: 系统学习Go语言请参考: [李文周的博客 - Go语言学习之路/Go语言教程](https://www.liwenzhou.com/posts/Go/golang-menu/)
 
 ## Contents
-* [System](#system)
-    * [Configure VS Code for Go](#configure-vs-code-for-go)
-    * [Update Go](#how-to-update-go-version)
+* [System]()
 * [Print](#print)
     * [Print byte as character](#print-byte-as-character-not-value)
     * [Print variable type](#print-variable-type)
