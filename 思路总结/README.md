@@ -4,8 +4,8 @@
 
 | ico | meaning |
 | :-: | - |
+| :purple_circle:| 极难, 完全没有思路, 即使参考了答案, 之后再做也很可能做不出来 |
 | :red_circle: | 困难, 完全没有思路, 参考了答案 |
-| :red_circle: x N | 极难, 完全没有思路, 即使参考了答案，之后再做也很可能做不出来 |
 | :yellow_circle: | 中等, 有思路但是实现上有问题, 最终实现版本参考了答案 |
 | :green_circle: | 简单, 可直接出bug-free code |
 | :lock: | 加锁题, 尚未提交过leetcode |
