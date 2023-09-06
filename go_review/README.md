@@ -4,7 +4,7 @@
 :bulb: 系统学习Go语言请参考: [李文周的博客 - Go语言学习之路/Go语言教程](https://www.liwenzhou.com/posts/Go/golang-menu/)
 
 ## Contents
-* [System]()
+* [System](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_System.md)
 * [Print](#print)
     * [Print byte as character](#print-byte-as-character-not-value)
     * [Print variable type](#print-variable-type)
