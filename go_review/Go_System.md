@@ -1,4 +1,4 @@
-# [System]()
+# [System](https://github.com/szhou12/leetcode-go/blob/main/go_review/README.md)
 
 ## Contents
 * [Configure VS Code for Go](#configure-vs-code-for-go)
