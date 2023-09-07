@@ -2,7 +2,7 @@
 
 ## Contents
 * [Package Managment](#package-management)
-* [Files under same package (Redeclare error)](#files-under-same-package)
+* [Code Scope (Redeclare error)](#code-scope)
 
 ## Package Management
 
@@ -49,7 +49,7 @@
 * [【golang学习笔记】包（package）的使用](https://juejin.cn/post/7122730352023437343)
 
 
-## Files Under Same Package
+## Code Scope
 [Go: "instance" redeclared in this block](https://stackoverflow.com/questions/34344172/go-instance-redeclared-in-this-block)
 * TLDR: 
     * 同一个 directory 下的所有文件内容都想象成同在一整张白纸上 (i.e. 同一个scope下)，也就是说所有的function/variable declaration都是在这个 directory 下共享的，分隔的files只是为了developer方便管理。在compiler看来都是在同一张白纸上，所以 naming 不能重复。

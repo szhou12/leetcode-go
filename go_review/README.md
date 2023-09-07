@@ -9,7 +9,7 @@
     * Update Go
 * [Package](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_Package.md)
     * Package Management
-    * Files under same package (Redeclare error)
+    * Code Scope (Redeclare error)
 * [Pass by Value (值传递)](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_Pass.md)
 * [Print](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_Print.md)
     * Print byte as character
