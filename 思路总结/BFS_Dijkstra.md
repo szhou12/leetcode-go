@@ -223,11 +223,11 @@
 
 
 ### 无向图类型
-* :red_circle: :secret: **tree上捡硬币:** [2603. Collect Coins in a Tree]()
+* :red_circle: :secret: **tree上捡硬币:** [2603. Collect Coins in a Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2603-Collect-Coins-in-a-Tree)
     * "继承"变量 trick: 计算节点`depth`
 
-* :red_circle: **分树-每个子树值相同:** [2440. Create Components With Same Value]()
+* :red_circle: **分树-每个子树值相同:** [2440. Create Components With Same Value](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2440-Create-Components-With-Same-Value)
 
-* :red_circle: :secret: **找到所有最矮树的根节点:** [310. Minimum Height Trees]()
+* :red_circle: :secret: **找到所有最矮树的根节点:** [310. Minimum Height Trees](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0310-Minimum-Height-Trees)
 
-* :red_circle: :secret: :lock: **所有节点到到环的最短距离:** [2204. Distance to a Cycle in Undirected Graph]()
+* :red_circle: :secret: :lock: **所有节点到到环的最短距离:** [2204. Distance to a Cycle in Undirected Graph](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2204-Distance-to-a-Cycle-in-Undirected-Graph)
