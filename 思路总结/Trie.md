@@ -52,37 +52,37 @@ func buildTrie(root *TrieNode, words []string) {
 
 
 ## 经典题
-* :red_circle: 共享前缀的总数量: [2416. Sum of Prefix Scores of Strings](https://leetcode.com/problems/sum-of-prefix-scores-of-strings/description/)
+* :red_circle: 共享前缀的总数量: [2416. Sum of Prefix Scores of Strings](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2416-Sum-of-Prefix-Scores-of-Strings)
     * 比较直接的运用**Trie**的题目
     * `count`: 文本词频统计
 
-* :red_circle: input中可以由其他单词做前缀组成的最长单词: [720. Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary/description/)
+* :red_circle: input中可以由其他单词做前缀组成的最长单词: [720. Longest Word in Dictionary](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0720-Longest-Word-in-Dictionary)
     * Trie + DFS
 
-* :red_circle: 自动补充的提示词: [1268. Search Suggestions System](https://leetcode.com/problems/search-suggestions-system/)
+* :red_circle: 自动补充的提示词: [1268. Search Suggestions System](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1268-Search-Suggestions-System)
     * Trie + DFS
     * 思路类似 **720**
 
-* :red_circle: 矩阵中搜词II: [212. Word Search II](https://leetcode.com/problems/word-search-ii/description/)
+* :red_circle: 矩阵中搜词II: [212. Word Search II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0212-Word-Search-II)
     * Trie + 矩阵 DFS
 
-* :red_circle: 分词II: [140. Word Break II](https://leetcode.com/problems/word-break-ii/description/)
+* :red_circle: 分词II: [140. Word Break II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0140-Word-Break-II)
     * Trie + 区间型 DFS
 
-* :yellow_circle: 用词根替换: [648. Replace Words](https://leetcode.com/problems/replace-words/description/)
+* :yellow_circle: 用词根替换: [648. Replace Words](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0648-Replace-Words)
     * Trie
 
 
 ## Design题
-* :red_circle: 实现Trie: [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/)
+* :red_circle: 实现Trie: [208. Implement Trie (Prefix Tree)]()
 
-* :red_circle: 前后缀搜索: [745. Prefix and Suffix Search](https://leetcode.com/problems/prefix-and-suffix-search/)
+* :red_circle: 前后缀搜索: [745. Prefix and Suffix Search]()
 
-* :red_circle: :secret: 查询字符流后缀: [1032. Stream of Characters](https://leetcode.com/problems/stream-of-characters/description/)
+* :red_circle: :secret: 查询字符流后缀: [1032. Stream of Characters]()
     * 看到是 查询suffix: 想到 逆序建Trie
 
 
-* :yellow_circle: 实现Trie, 实现添加和查询功能(包含通用符): [211. Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure/description/)
+* :yellow_circle: 实现Trie, 实现添加和查询功能(包含通用符): [211. Design Add and Search Words Data Structure]()
     * Search feature: Recursion
 
-* :yellow_circle: 搜索一字母之差的字典: [676. Implement Magic Dictionary](https://leetcode.com/problems/implement-magic-dictionary/description/)
+* :yellow_circle: 搜索一字母之差的字典: [676. Implement Magic Dictionary]()
