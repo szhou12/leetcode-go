@@ -74,15 +74,15 @@ func buildTrie(root *TrieNode, words []string) {
 
 
 ## Design题
-* :red_circle: 实现Trie: [208. Implement Trie (Prefix Tree)]()
+* :red_circle: 实现Trie: [208. Implement Trie (Prefix Tree)](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0208-Implement-Trie-(Prefix-Tree))
 
-* :red_circle: 前后缀搜索: [745. Prefix and Suffix Search]()
+* :red_circle: 前后缀搜索: [745. Prefix and Suffix Search](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0745-Prefix-and-Suffix-Search)
 
-* :red_circle: :secret: 查询字符流后缀: [1032. Stream of Characters]()
+* :red_circle: :secret: 查询字符流后缀: [1032. Stream of Characters](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1032-Stream-of-Characters)
     * 看到是 查询suffix: 想到 逆序建Trie
 
 
-* :yellow_circle: 实现Trie, 实现添加和查询功能(包含通用符): [211. Design Add and Search Words Data Structure]()
+* :yellow_circle: 实现Trie, 实现添加和查询功能(包含通用符): [211. Design Add and Search Words Data Structure](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0211-Design-Add-and-Search-Words-Data-Structure)
     * Search feature: Recursion
 
-* :yellow_circle: 搜索一字母之差的字典: [676. Implement Magic Dictionary]()
+* :yellow_circle: 搜索一字母之差的字典: [676. Implement Magic Dictionary](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0676-Implement-Magic-Dictionary)
