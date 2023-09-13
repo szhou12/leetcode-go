@@ -132,12 +132,12 @@ func upperBound(nums []int, target int) int {
 
 
 ## 经典题
-* Classic Binary Search: [704. Binary Search](https://leetcode.com/problems/binary-search/)
+* Classic Binary Search: [704. Binary Search](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0704-Binary-Search)
 
 
 ## Find First Occurrence / Last Occurrence
 
-* 在排序数组中查找元素的第一个和最后一个位置: [34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+* 在排序数组中查找元素的第一个和最后一个位置: [34. Find First and Last Position of Element in Sorted Array](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0034-Find-First-and-Last-Position-of-Element-in-Sorted-Array)
 
 **一定！一定！一定要明确**target可能在数组中**没有出现**的三种情况，才能正确地写出post-processing中边界的查看条件!!!
 
@@ -155,7 +155,7 @@ func upperBound(nums []int, target int) int {
     2. target < 数组中所有值
     3. target 在数组范围中，只是数组中不存在该值
 
-* 找最小的大于Target的元素: [744. Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
+* 找最小的大于Target的元素: [744. Find Smallest Letter Greater Than Target](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0744-Find-Smallest-Letter-Greater-Than-Target)
 
 
 
@@ -181,28 +181,28 @@ func upperBound(nums []int, target int) int {
 
 ### Guess K-th Element
 
-* :red_circle: Search in Sorted Matrix: [240. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/)
+* :red_circle: Search in Sorted Matrix: [240. Search a 2D Matrix II]()
     * 解法本身不是Binary Search, 但是**解法思路可以应用于所有 sorted matrix**, 并且和 Binary Search 结合组成更高效的算法
     * 从 bottom-left / top-right 出发做 matrix traversal
 
-* :red_circle: 无序数组中第k大的元素: [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/)
+* :red_circle: 无序数组中第k大的元素: [215. Kth Largest Element in an Array]()
 
-* 非递减矩阵中找第k小的元素: [378. Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/)
+* 非递减矩阵中找第k小的元素: [378. Kth Smallest Element in a Sorted Matrix]()
     * 用 max heap 也可以解，但是 Binary Search 更效率
 
-* 乘法表中找第k小的元素: [668. Kth Smallest Number in Multiplication Table](https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/description/)
+* 乘法表中找第k小的元素: [668. Kth Smallest Number in Multiplication Table]()
 
-* 找k个最小和: [373. Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/description/)
+* 找k个最小和: [373. Find K Pairs with Smallest Sums]()
     * 用 max heap 会超时！！！只能 Binary Search 提高效率
 
-* 非递减数组中找第k小的乘积: [2040. Kth Smallest Product of Two Sorted Arrays](https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays/description/)
+* 非递减数组中找第k小的乘积: [2040. Kth Smallest Product of Two Sorted Arrays]()
     * 找前k小的个数的思路与前面题型不同. main idea: 分类讨论
 
-* :red_circle: :secret: 从矩阵中找第k小 array sum: [1439. Find the Kth Smallest Sum of a Matrix With Sorted Rows](https://leetcode.com/problems/find-the-kth-smallest-sum-of-a-matrix-with-sorted-rows/description/)
+* :red_circle: :secret: 从矩阵中找第k小 array sum: [1439. Find the Kth Smallest Sum of a Matrix With Sorted Rows]()
     * 找前k小的个数的思路与前面题型不同. main idea: 结合**DFS**
     * 用 **DFS - All Combo Sum** 来找满足当前猜的数 (`mid`) 的array 的个数是否 >= k 个
 
-* :red_circle: :secret: 找第k小 subarray sum: [1918. Kth Smallest Subarray Sum](https://leetcode.ca/2021-08-01-1918-Kth-Smallest-Subarray-Sum/)
+* :red_circle: :secret: 找第k小 subarray sum: [1918. Kth Smallest Subarray Sum]()
     * 找前k小的个数的思路与前面题型不同. main idea: 转化 subarray sum 为 prefixSum diff, 再结合**Two Pointers**
     * 因为 prefixSum array 是单增的, 所以可以通过 **Two Pointers** 来找满足当前猜的数 (`mid`) 的 subarray 个数是否 >= k 个
 
@@ -210,23 +210,23 @@ func upperBound(nums []int, target int) int {
 
 * :star: 搜索区间为自然数，由于自然数递增排序，所以可以天然地使用二分搜索
 
-* 寻找丑数III: [1201. Ugly Number III](https://leetcode.com/problems/ugly-number-iii/description/)
+* 寻找丑数III: [1201. Ugly Number III]()
     * *1201 与 1539 思路相近*
     * 需要用到一些数学定理: 容斥原理, LCM, GCD
 
-* 找第k个缺失的自然数: [1539. Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number/description/)
+* 找第k个缺失的自然数: [1539. Kth Missing Positive Number]()
     * * *1201 与 1539 思路相近*
 
-* 阶乘函数后 K 个零: [793. Preimage Size of Factorial Zeroes Function](https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/description/)
+* 阶乘函数后 K 个零: [793. Preimage Size of Factorial Zeroes Function]()
 
 ### Guess Min/Max
 
-* 抢房子4: [2560. House Robber IV](https://leetcode.com/problems/house-robber-iv/description/)
+* 抢房子4: [2560. House Robber IV]()
     * Binary Search 猜答案 + DP
 
-* 从不能整除的元素中找最小可能的最大值: [2513. Minimize the Maximum of Two Arrays](https://leetcode.com/problems/minimize-the-maximum-of-two-arrays/description/)
+* 从不能整除的元素中找最小可能的最大值: [2513. Minimize the Maximum of Two Arrays]()
 
-* 找最小可裁定/删除的subarray长度: [2565. Subsequence With the Minimum Score](https://leetcode.com/problems/subsequence-with-the-minimum-score/)
+* 找最小可裁定/删除的subarray长度: [2565. Subsequence With the Minimum Score]()
     * 结合 **3-Pass** 思想
     * 重点在于要清楚明白各物理量的物理意义
 
