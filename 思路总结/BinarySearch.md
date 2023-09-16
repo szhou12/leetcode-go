@@ -181,28 +181,28 @@ func upperBound(nums []int, target int) int {
 
 ### Guess K-th Element
 
-* :red_circle: Search in Sorted Matrix: [240. Search a 2D Matrix II]()
+* :red_circle: Search in Sorted Matrix: [240. Search a 2D Matrix II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0240-Search-a-2D-Matrix-II)
     * 解法本身不是Binary Search, 但是**解法思路可以应用于所有 sorted matrix**, 并且和 Binary Search 结合组成更高效的算法
     * 从 bottom-left / top-right 出发做 matrix traversal
 
-* :red_circle: 无序数组中第k大的元素: [215. Kth Largest Element in an Array]()
+* :red_circle: 无序数组中第k大的元素: [215. Kth Largest Element in an Array](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0215-Kth-Largest-Element-in-an-Array)
 
-* 非递减矩阵中找第k小的元素: [378. Kth Smallest Element in a Sorted Matrix]()
+* 非递减矩阵中找第k小的元素: [378. Kth Smallest Element in a Sorted Matrix](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0378-Kth-Smallest-Element-in-a-Sorted-Matrix)
     * 用 max heap 也可以解，但是 Binary Search 更效率
 
-* 乘法表中找第k小的元素: [668. Kth Smallest Number in Multiplication Table]()
+* 乘法表中找第k小的元素: [668. Kth Smallest Number in Multiplication Table](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0668-Kth-Smallest-Number-in-Multiplication-Table)
 
-* 找k个最小和: [373. Find K Pairs with Smallest Sums]()
+* 找k个最小和: [373. Find K Pairs with Smallest Sums](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0373-Find-K-Pairs-with-Smallest-Sums)
     * 用 max heap 会超时！！！只能 Binary Search 提高效率
 
 * 非递减数组中找第k小的乘积: [2040. Kth Smallest Product of Two Sorted Arrays]()
     * 找前k小的个数的思路与前面题型不同. main idea: 分类讨论
 
-* :red_circle: :secret: 从矩阵中找第k小 array sum: [1439. Find the Kth Smallest Sum of a Matrix With Sorted Rows]()
+* :red_circle: :secret: 从矩阵中找第k小 array sum: [1439. Find the Kth Smallest Sum of a Matrix With Sorted Rows](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2040-Kth-Smallest-Product-of-Two-Sorted-Arrays)
     * 找前k小的个数的思路与前面题型不同. main idea: 结合**DFS**
     * 用 **DFS - All Combo Sum** 来找满足当前猜的数 (`mid`) 的array 的个数是否 >= k 个
 
-* :red_circle: :secret: 找第k小 subarray sum: [1918. Kth Smallest Subarray Sum]()
+* :red_circle: :secret: 找第k小 subarray sum: [1918. Kth Smallest Subarray Sum](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1918-Kth-Smallest-Subarray-Sum)
     * 找前k小的个数的思路与前面题型不同. main idea: 转化 subarray sum 为 prefixSum diff, 再结合**Two Pointers**
     * 因为 prefixSum array 是单增的, 所以可以通过 **Two Pointers** 来找满足当前猜的数 (`mid`) 的 subarray 个数是否 >= k 个
 
