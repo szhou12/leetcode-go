@@ -15,9 +15,9 @@
 * 接雨水: [42. Trapping Rain Water](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0042-Trapping-Rain-Water)
     * 入手着眼点: **分界点** 的物理意义
 
-* 移除一个元素使偶数位的和与奇数位的和相等: [1664. Ways to Make a Fair Array](https://leetcode.com/problems/ways-to-make-a-fair-array/description/)
+* 移除一个元素使偶数位的和与奇数位的和相等: [1664. Ways to Make a Fair Array](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1664-Ways-to-Make-a-Fair-Array)
 
-* L段和R段不同字符数相等的分界点个数: [1525. Number of Good Ways to Split a String](https://leetcode.com/problems/number-of-good-ways-to-split-a-string/description/)
+* L段和R段不同字符数相等的分界点个数: [1525. Number of Good Ways to Split a String](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1525-Number-of-Good-Ways-to-Split-a-String)
     * **3-Pass + HashMap**
 
 * 求两个字符串只差一个字符的substring匹配个数: [1638. Count Substrings That Differ by One Character](https://leetcode.com/problems/count-substrings-that-differ-by-one-character/description/)
