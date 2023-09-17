@@ -12,7 +12,7 @@
 
 ## 求总数/Count类型题
 
-* 接雨水: [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
+* 接雨水: [42. Trapping Rain Water](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0042-Trapping-Rain-Water)
     * 入手着眼点: **分界点** 的物理意义
 
 * 移除一个元素使偶数位的和与奇数位的和相等: [1664. Ways to Make a Fair Array](https://leetcode.com/problems/ways-to-make-a-fair-array/description/)
