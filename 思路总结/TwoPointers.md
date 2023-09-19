@@ -219,22 +219,25 @@ func slidingWindow(s string) int {
     * Trick 2: 判断一个整数 第k bit位 是否有1: `num>>k & 1 == 1`
 
 
-* :red_circle: 窗口内统一字母的最长子串: [424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/description/)
+* :red_circle: 窗口内统一字母的最长子串: [424. Longest Repeating Character Replacement]()
     * 解法一: 26个字母挨个锁定为目标
-        * 相同思路的题目: [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/description/), [2024. Maximize the Confusion of an Exam](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/description/)
+        * 相同思路的题目: [1004. Max Consecutive Ones III](), [2024. Maximize the Confusion of an Exam]()
     * 解法二: 窗口总长度 - 窗口占多数的字母次数 <= k
 
-* :yellow_circle: [2537. Count the Number of Good Subarrays](https://leetcode.com/problems/count-the-number-of-good-subarrays/description/)
+* :yellow_circle: "好"子串的个数: [2537. Count the Number of Good Subarrays]()
     * 逆向思维：滑窗物理意义 = 题目要求取反
     * 分类讨论：更新结果前需要分类讨论
 
-* :yellow_circle: [992. Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers/description/)
+* :yellow_circle: [992. Subarrays with K Different Integers]()
     * 2537 的进阶版
 
-* :yellow_circle: 最长的"半重复"子串 [2730. Find the Longest Semi-Repetitive Substring](https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/description/)
+* :yellow_circle: 最长的"半重复"子串: [2730. Find the Longest Semi-Repetitive Substring]()
+
+
+* :red_circle: 最长的元素相同的子串: [2831. Find the Longest Equal Subarray]()
 
 ### 非 模版题
-* :red_circle: :secret: k步内收集最多果子: [2106. Maximum Fruits Harvested After at Most K Steps](https://leetcode.com/problems/maximum-fruits-harvested-after-at-most-k-steps/description/)
+* :red_circle: :secret: k步内收集最多果子: [2106. Maximum Fruits Harvested After at Most K Steps]()
     * Sliding Window (非) + Prefix Sum
 
-* :red_circle: :secret: 有限次增量下使相同元素最多: [1838. Frequency of the Most Frequent Element](https://leetcode.com/problems/frequency-of-the-most-frequent-element/description/)
+* :red_circle: :secret: 有限次增量下使相同元素最多: [1838. Frequency of the Most Frequent Element]()
