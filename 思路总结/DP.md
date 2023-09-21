@@ -25,9 +25,11 @@
 
 
 ## 二维 DP
-* :red_circle: 奇偶变换数组中挑选总和最大化: [2786. Visit Array Positions to Maximize Score](https://leetcode.com/problems/visit-array-positions-to-maximize-score/description/)
+* :red_circle: 奇偶变换数组中挑选总和最大化: [2786. Visit Array Positions to Maximize Score](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2786-Visit-Array-Positions-to-Maximize-Score)
+    * `DP[index][value]`
 
-
+* :red_circle: :secret: 有限次变换元素以分组: [2826. Sorting Three Groups]()
+    * `DP[index][value]`
 
 ## 买卖股票
 
