@@ -15,8 +15,6 @@
 | :bulb: | 解题思路总结中，idea层面的总结 |
 | :mag: | 解题思路总结中，tricks/小技巧/应用层面的总结 |
 
-[emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#table-of-contents)
-
 ## Readme content structure
 
 每道题的Readme结构统一如下:
@@ -28,3 +26,7 @@
         * 代码结构
         * Time complexity & Space complexity
 * Resource
+
+## Resource
+* [emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#table-of-contents)
+* [How to Write a Good README File for Your GitHub Project](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)

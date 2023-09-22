@@ -198,7 +198,7 @@
 * :red_circle: 奇偶变换数组中挑选总和最大化: [2786. Visit Array Positions to Maximize Score](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2786-Visit-Array-Positions-to-Maximize-Score)
     * `DP[index][value]`
 
-* :red_circle: 有限次变换元素以分组: [2826. Sorting Three Groups](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2826-Sorting-Three-Groups)
+* :red_circle: 最少次变换元素分三组: [2826. Sorting Three Groups](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2826-Sorting-Three-Groups)
     * `DP[index][value]`
 
 ### 区间型 (interval)
