@@ -193,7 +193,7 @@
 ## 二维/高维 DP
 
 ### 一维种类型
-* 第一维 = 位置 (index); 第二维 = 值的种类 (value)
+#### 第一维 = 位置 (index); 第二维 = 值的种类 (value)
 
 * :red_circle: 奇偶变换数组中挑选总和最大化: [2786. Visit Array Positions to Maximize Score](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2786-Visit-Array-Positions-to-Maximize-Score)
     * `DP[index][value]`
@@ -202,7 +202,7 @@
     * `DP[index][value]`
 
 ### 区间型 (interval)
-* 第一维 = 区间起始点 (start); 第二维 = 区间终止点 (end) or offset
+#### 第一维 = 区间起始点 (start); 第二维 = 区间终止点 (end) or offset
 
 * 猜测数高了还是低了II: [375. Guess Number Higher or Lower II]()
     * **二维DP**: 外层循环length, 内层循环starting position
