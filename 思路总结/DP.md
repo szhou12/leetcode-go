@@ -1,10 +1,24 @@
 # Dynamic Programming
 
 ## 目录
+* [基础题](#基础题)
 * [买卖股票](#买卖股票)
 * [抢劫房子](#抢劫房子)
+* [背包问题](#背包问题)
+* [回文串](#回文串)
 * [Subarray 子数组类型题](#subarray-子数组类型题)
+    * [类型一: Longest Ascending Subarray - 最长递增子数组](#类型一-longest-ascending-subarray---最长递增子数组)
+    * [类型二: Longest Common Subarray - 最长公共子数组](#类型二-longest-common-subarray---最长公共子数组)
+    * [类型三: 最大子数组](#类型三-最大子数组)
 * [Subsequnce 子序列类型题](#subsequnce-子序列类型题)
+    * [类型一: Longest Increasing Subsequence - 最长递增子序列](#类型一-longest-increasing-subsequence---最长递增子序列)
+    * [类型二: Longest Common Subsequence - 最长公共子序列](#类型二-longest-common-subsequence---最长公共子序列)
+    * [类型三: String Matching + 编辑距离](#类型三-string-matching--编辑距离)
+    * [类型四: 子序列个数](#类型四-子序列个数)
+* [二维/高维 DP](#二维高维-dp)
+    * [一维种类型](#一维种类型)
+    * [区间型 (interval)](#区间型-interval)
+
 
 ## 基础题
 
@@ -14,22 +28,10 @@
 
 * 最小花费爬楼梯: [746. Min Cost Climbing Stairs]()
 
-
-
-
-## 基础题 II
-
 * 有限制条件的切字符串: [2522. Partition String Into Substrings With Values at Most K]()
     * 切东西类型的DP题
     * 需要通过总结 `DP[i]` 的规律性质来优化算法的 time complexity
 
-
-## 二维 DP
-* :red_circle: 奇偶变换数组中挑选总和最大化: [2786. Visit Array Positions to Maximize Score](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2786-Visit-Array-Positions-to-Maximize-Score)
-    * `DP[index][value]`
-
-* :red_circle: 有限次变换元素以分组: [2826. Sorting Three Groups](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2826-Sorting-Three-Groups)
-    * `DP[index][value]`
 
 ## 买卖股票
 
@@ -72,7 +74,7 @@
 
 
 
-## 背包类型题
+## 背包问题
 * [279. Perfect Squares]()
 
 * [322. Coin Change]()
@@ -188,14 +190,23 @@
 
 
 
-## 区间型 DP (interval DP)
+## 二维/高维 DP
+
+### 一维种类型
+* 第一维 = 位置 (index); 第二维 = 值的种类 (value)
+
+* :red_circle: 奇偶变换数组中挑选总和最大化: [2786. Visit Array Positions to Maximize Score](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2786-Visit-Array-Positions-to-Maximize-Score)
+    * `DP[index][value]`
+
+* :red_circle: 有限次变换元素以分组: [2826. Sorting Three Groups](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2826-Sorting-Three-Groups)
+    * `DP[index][value]`
+
+### 区间型 (interval)
+* 第一维 = 区间起始点 (start); 第二维 = 区间终止点 (end) or offset
+
 * 猜测数高了还是低了II: [375. Guess Number Higher or Lower II]()
     * **二维DP**: 外层循环length, 内层循环starting position
-
-
-
-
-
-## DP Memoization (Recursion + DP)
+ 
 * 猜测数高了还是低了II: [375. Guess Number Higher or Lower II]()
+    * DP Memoization (Recursion + DP)
     * 用 DP memo 来剪枝
