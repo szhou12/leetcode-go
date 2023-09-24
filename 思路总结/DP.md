@@ -22,39 +22,39 @@
 
 ## 基础题
 
-* Fibonacci Number: [509. Fibonacci Number]()
+* Fibonacci Number: [509. Fibonacci Number](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0509-Fibonacci-Number)
 
-* 爬楼梯: [70. Climbing Stairs]()
+* 爬楼梯: [70. Climbing Stairs](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0070-Climbing-Stairs)
 
-* 最小花费爬楼梯: [746. Min Cost Climbing Stairs]()
+* 最小花费爬楼梯: [746. Min Cost Climbing Stairs](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0746-Min-Cost-Climbing-Stairs)
 
-* 有限制条件的切字符串: [2522. Partition String Into Substrings With Values at Most K]()
+* 有限制条件的切字符串: [2522. Partition String Into Substrings With Values at Most K](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2522-Partition-String-Into-Substrings-With-Values-at-Most-K)
     * 切东西类型的DP题
     * 需要通过总结 `DP[i]` 的规律性质来优化算法的 time complexity
 
 
 ## 买卖股票
 
-* [188. Best Time to Buy and Sell Stock IV]()
+* 买卖股票4: [188. Best Time to Buy and Sell Stock IV](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0188-Best-Time-to-Buy-and-Sell-Stock-IV)
     * 这种类型的通法
 
-* [121. Best Time to Buy and Sell Stock]()
+* 买卖股票1: [121. Best Time to Buy and Sell Stock](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0121-Best-Time-to-Buy-and-Sell-Stock)
     * DP: `k=1`; 因为`k=0`已经在 base cases里，`k=1` 就这一种情况， 对状态转移已经没有影响了，不再需要描述状态 `k`了
     * 倒着看，每次用看到的最大值 - 当前值
 
-* [123. Best Time to Buy and Sell Stock III]()
+* 买卖股票3: [123. Best Time to Buy and Sell Stock III](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0123-Best-Time-to-Buy-and-Sell-Stock-III)
     * DP: `k= 2`
     
-* [122. Best Time to Buy and Sell Stock II]()
+* 买卖股票2: [122. Best Time to Buy and Sell Stock II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0122-Best-Time-to-Buy-and-Sell-Stock-II)
     * DP: `k= +infinity`; 因为 `k` 无限大，所以, `k`和`k-1`等同的，就不再需要描述状态 `k`了
     * Greedy Algorithm: 累加相邻两天的差为正数的case
 
-* [309. Best Time to Buy and Sell Stock with Cooldown]()
+* 买卖股票+冷静期: [309. Best Time to Buy and Sell Stock with Cooldown](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0309-Best-Time-to-Buy-and-Sell-Stock-with-Cooldown)
     * DP: `k= +infinity`
     * 将`cooldown`融入状态转移方程。即，当天如果要买入，则需要往前看两天卖出的情况 (而不是前一天卖出的情况)
     * 同时，增加 `i==1`的 base cases
 
-* [714. Best Time to Buy and Sell Stock with Transaction Fee]()
+* 买卖股票+交易费: [714. Best Time to Buy and Sell Stock with Transaction Fee](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0714-Best-Time-to-Buy-and-Sell-Stock-with-Transaction-Fee)
     * DP: `k= +infinity`
     * 将`fee`融入状态转移方程。即，当天如果要买入，则需要额外减掉`fee`
 
