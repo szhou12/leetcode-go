@@ -75,23 +75,23 @@
 
 
 ## 背包问题
-* [279. Perfect Squares]()
+* [279. Perfect Squares](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0279-Perfect-Squares)
 
-* [322. Coin Change]()
+* [322. Coin Change](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0322-Coin-Change)
 
-* [518. Coin Change II]()
+* [518. Coin Change II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0518-Coin-Change-II)
     * 题目要求 **组合数**
     * 只能外层遍历物品 (coins种类), 内层遍历背包容量 (目标金额)
     * 以防止 `{1, 5}`, `{5, 1}` 的情况, 他们是等价的combination
 
-* [416. Partition Equal Subset Sum]()
+* [416. Partition Equal Subset Sum](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0416-Partition-Equal-Subset-Sum)
     * 0/1背包问题 (一个元素只能放入一次)
 
-* [494. Target Sum]()
+* [494. Target Sum](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0494-Target-Sum)
     * 0/1背包问题
     * 需要数学推导，不好想
 
-* [474. Ones and Zeroes]()
+* [474. Ones and Zeroes](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0474-Ones-and-Zeroes)
     * 0/1背包问题
     * 二维DP
     * 倒序遍历背包容量!!!
