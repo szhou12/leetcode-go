@@ -1,6 +1,7 @@
 # Depth First Search
 
 ## 目录
+* [DFS暴力穷举](#dfs暴力穷举)
 * [N-Queens](#n-Queens)
 * [岛屿沉没 - 找neighbor](#岛屿沉没---找neighbor)
 * [类DP](#类dp)
@@ -10,18 +11,29 @@
     * [Combination Sum](#combination-sum)
 * [图的遍历](#图的遍历)
     * [树的深搜遍历](#树的深搜遍历)
-* [行程规划](#行程规划)
 * [Min-Max Strategy](#min-max-strategy)
 
 
+## DFS暴力穷举
+
+* :red_circle: 行程规划: [332. Reconstruct Itinerary]()
+    * 较难的DFS变体
+    * 难点一：首先要想到可以用DFS暴力解
+    * 难点二：如何记录映射关系 - 一个机场映射多个机场，机场之间要靠字母序排列
+    * 难点三：Base Case 终止条件
+    * 难点四：DFS function 返回值 bool 的意义
+
+* :red_circle: [2850. Minimum Moves to Spread Stones Over Grid]()
 
 ## N-Queens
 
-* 求所有解法 [51. N-Queens](https://leetcode.com/problems/n-queens/)
+*  N皇后: [51. N-Queens]()
+    * 求所有解法
 
-* 求解法数量 [52. N-Queens II](https://leetcode.com/problems/n-queens-ii/)
+* N皇后2: [52. N-Queens II]()
+    * 求解法数量
 
-* 究极进化 - 解数独 [37. Sudoku Solver](https://leetcode.com/problems/sudoku-solver/)
+* 解数独: [37. Sudoku Solver]()
 
 **思路**
 
@@ -132,31 +144,23 @@
 * 所有路径和: [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
 
 
-## 行程规划
-
-* [332. Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary/)
-    * 较难的DFS变体, 
-    * 难点一：首先要想到可以用DFS暴力解
-    * 难点二：如何记录映射关系 - 一个机场映射多个机场，机场之间要靠字母序排列
-    * 难点三：Base Case 终止条件
-    * 难点四：DFS function 返回值 bool 的意义
 
 
 ## Min-Max Strategy
-* :red_circle: 先手能否赢: [464. Can I Win](https://leetcode.com/problems/can-i-win/description/)
+* :red_circle: 先手能否赢: [464. Can I Win]()
 
-* :red_circle: 石头游戏1: [877. Stone Game](https://leetcode.com/problems/stone-game/description/)
+* :red_circle: 石头游戏1: [877. Stone Game]()
 
-* :yellow_circle: 判断赢家: [486. Predict the Winner](https://leetcode.com/problems/predict-the-winner/description/)
+* :yellow_circle: 判断赢家: [486. Predict the Winner]()
     * 与 0877 完全一样的解法
 
-* :yellow_circle: 石头游戏2: [1140. Stone Game II](https://leetcode.com/problems/stone-game-ii/description/)
+* :yellow_circle: 石头游戏2: [1140. Stone Game II]()
 
-* :green_circle: 石头游戏3: [1406. Stone Game III](https://leetcode.com/problems/stone-game-iii/description/)
+* :green_circle: 石头游戏3: [1406. Stone Game III]()
     * 与 Stone Game II 基本完全一样的解法
 
-* :green_circle: 石头游戏4: [1510. Stone Game IV](https://leetcode.com/problems/stone-game-iv/description/)
+* :green_circle: 石头游戏4: [1510. Stone Game IV]()
 
-* :red_circle: 石头游戏5: [1563. Stone Game V](https://leetcode.com/problems/stone-game-v/description/)
+* :red_circle: 石头游戏5: [1563. Stone Game V]()
 
-* :red_circle: 石头游戏9: [2029. Stone Game IX](https://leetcode.com/problems/stone-game-ix/)
+* :red_circle: 石头游戏9: [2029. Stone Game IX]()
