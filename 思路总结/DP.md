@@ -101,14 +101,14 @@
 
 ## 回文串
 
-* [5. Longest Palindromic Substring]()
+* [5. Longest Palindromic Substring](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0005-Longest-Palindromic-Substring)
 
-* [647. Palindromic Substrings]()
+* [647. Palindromic Substrings](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0647-Palindromic-Substrings)
 
-* [131. Palindrome Partitioning]()
+* [131. Palindrome Partitioning](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0131-Palindrome-Partitioning)
     * DFS 解法容易想到
 
-* [132. Palindrome Partitioning II]()
+* [132. Palindrome Partitioning II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0132-Palindrome-Partitioning-II)
     * 两步 DP
 
 
