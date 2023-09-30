@@ -135,26 +135,26 @@
 ## Subsequnce 子序列类型题
 
 ### 类型一: Longest Increasing Subsequence - 最长递增子序列
-* LIS: [300. Longest Increasing Subsequence]()
+* LIS: [300. Longest Increasing Subsequence](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0300-Longest-Increasing-Subsequence)
     * 1维 LIS
     * 注意：求的是全局最长，不一定发生在最后
 
-* 俄罗斯套娃信封: [354. Russian Doll Envelopes]()
+* 俄罗斯套娃信封: [354. Russian Doll Envelopes](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0354-Russian-Doll-Envelopes)
     * 2维 LIS
     * Sort rule: 因为题目只允许 每个维度 `<` (严格递增), Sort by `w` in increasing order; then if `w` identical, sort by `h` by **decreasing order**
     * 最优解：Greedy + Binary Search
 
-* 堆积如山: [1691. Maximum Height by Stacking Cuboids]()
+* 堆积如山: [1691. Maximum Height by Stacking Cuboids](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1691-Maximum-Height-by-Stacking-Cuboids)
     * 3维 LIS
     * 题目允许rotate: 每个cuboid就会有最多6种变体需要考虑
     * Sort rule: 因为题目允许 每个维度 `<=`, sort by `width` in increasing order; then if `width` identical, sort by `length` by increasing order; ...
     * 加入index 信息，防止同一个cuboid因为idential变体被放入LIS超过1次
     * 最优解: 每个cuboid只能需要考虑1种变体 `(min(l, w, h), mid(l, w, h), max(l, w, h))`
 
-* Longest Wiggle Subsequence: [376. Wiggle Subsequence]()
+* Longest Wiggle Subsequence: [376. Wiggle Subsequence](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0376-Wiggle-Subsequence)
     * 类二维DP: `DP[i][0, 1]`
 
-* LIS个数: [673. Number of Longest Increasing Subsequence]()
+* LIS个数: [673. Number of Longest Increasing Subsequence](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0673-Number-of-Longest-Increasing-Subsequence)
     * 1维 LIS
     * 维护两个记事本:
         * `dp[i]`: length of LIS ending at `i`
