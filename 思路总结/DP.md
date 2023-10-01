@@ -204,9 +204,7 @@
 ### 区间型 (interval)
 #### 第一维 = 区间起始点 (start); 第二维 = 区间终止点 (end) or offset
 
-* 猜测数高了还是低了II: [375. Guess Number Higher or Lower II]()
-    * **二维DP**: 外层循环length, 内层循环starting position
+* 猜测数高了还是低了II: [375. Guess Number Higher or Lower II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0375-Guess-Number-Higher-or-Lower-II)
+    * 方法1: **二维DP**. 外层循环length, 内层循环starting position
+    * 方法2: DP Memoization (Recursion + DP), 用 DP memo 来剪枝
  
-* 猜测数高了还是低了II: [375. Guess Number Higher or Lower II]()
-    * DP Memoization (Recursion + DP)
-    * 用 DP memo 来剪枝
