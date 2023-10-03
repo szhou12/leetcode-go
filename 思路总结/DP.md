@@ -176,16 +176,16 @@
 
 一般是**二维DP**
 
-* Edit Distance: [72. Edit Distance]()
-* 只允许Delete转换两个string: [583. Delete Operation for Two Strings]()
-* 不同的子序列数量: [115. Distinct Subsequences]()
+* Edit Distance: [72. Edit Distance](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0072-Edit-Distance)
+* 只允许Delete转换两个string: [583. Delete Operation for Two Strings](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0583-Delete-Operation-for-Two-Strings)
+* 不同的子序列数量: [115. Distinct Subsequences](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0115-Distinct-Subsequences)
 
 ### 类型四: 子序列个数
 
-* :red_circle: :secret: 不同非空子序列个数II: [940. Distinct Subsequences II]()
+* :red_circle: :secret: 不同非空子序列个数II: [940. Distinct Subsequences II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0940-Distinct-Subsequences-II)
     * *940 与 1987 思路非常相近*
 
-* :red_circle: :secret: 二进制字符串中的"好"子序列个数: [1987. Number of Unique Good Subsequences]()
+* :red_circle: :secret: 二进制字符串中的"好"子序列个数: [1987. Number of Unique Good Subsequences](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1987-Number-of-Unique-Good-Subsequences)
     * *940 与 1987 思路非常相近*
 
 
