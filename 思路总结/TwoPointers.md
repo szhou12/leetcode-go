@@ -10,7 +10,7 @@
 
 ## 一个数组 + 双指针同向而行
 
-* 移动所有0并且保序: [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/)
+* 移动所有0并且保序: [283. Move Zeroes]()
     * 物理意义:
         * `[0, left)`: 只接纳扔过来的非0元素
         * `left`: 当前为0, 下一个非0元素要放的位置
@@ -18,34 +18,34 @@
         * `[right, n)`: 未知元素
     * 在需要**下落物体类**游戏中是非常有用的helper function
 
-* 求满足条件的Subarray个数: [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/)
+* 求满足条件的Subarray个数: [713. Subarray Product Less Than K]()
 
-* 有翻转次数找最长连续1: [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/description/)
+* 有翻转次数找最长连续1: [1004. Max Consecutive Ones III]()
     * 总体思路: 固定一个边界，不停延伸另一个边界至最长
     * i.e. 固定左边界，不停延伸右边界至最长
 
-* 找差值为K的所有不同pair: [532. K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array/description/)
+* 找差值为K的所有不同pair: [532. K-diff Pairs in an Array]()
     * 结合了 **sort**
     * 再进行两个指针同向而行
 
 ## 一个数组 + 双指针相向而行
 
-* 判断唯一山峰，左右两边单调递增: [941. Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/description/)
+* 判断唯一山峰，左右两边单调递增: [941. Valid Mountain Array]()
 
-* 平方一个有序数组: [977. Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/description/)
+* 平方一个有序数组: [977. Squares of a Sorted Array]()
 
 ### 两个数组 + 双指针同向而行
 
-* 跳过重复元素，匹配subsequence: [925. Long Pressed Name](https://leetcode.com/problems/long-pressed-name/description/)
+* 跳过重复元素，匹配subsequence: [925. Long Pressed Name]()
 
 ## X-Sum
-* 两数之和: [1. Two Sum](https://leetcode.com/problems/two-sum/)
-* 三数之和: [15. 3Sum](https://leetcode.com/problems/3sum/)
+* 两数之和: [1. Two Sum]()
+* 三数之和: [15. 3Sum]()
     * Step 1: 排序
     * Step 2: 对每个元素，找符合的 Two-Sum
-* 最接近的三数之和: [16. 3Sum Closest](https://leetcode.com/problems/3sum-closest/)
-* 四数之和: [18. 4Sum](https://leetcode.com/problems/4sum/)
-* 四数之和II: [454. 4Sum II](https://leetcode.com/problems/4sum-ii/)
+* 最接近的三数之和: [16. 3Sum Closest]()
+* 四数之和: [18. 4Sum]()
+* 四数之和II: [454. 4Sum II]()
 
 
 
@@ -133,21 +133,21 @@ func slidingWindow(s string) int {
 * **模版Fix** 比较适合解决 Sliding Window 为定长的题目 (容易写出正确的code), 所以 定长的题目 优先考虑 **模版Fix**.
     * **模版Fix** 也可以解决 长度可变 的题目，但是实际操作中实现上不容易保证正确
 
-* 最多满意客户: [1052. Grumpy Bookstore Owner](https://leetcode.com/problems/grumpy-bookstore-owner/description/)
+* 最多满意客户: [1052. Grumpy Bookstore Owner]()
 
-* 找子串位置: [28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/)
+* 找子串位置: [28. Find the Index of the First Occurrence in a String]()
 
-* 找到字符串中所有字母异位词: [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/description/)
+* 找到字符串中所有字母异位词: [438. Find All Anagrams in a String]()
 
-* 字符串的排列子串: [567. Permutation in String](https://leetcode.com/problems/permutation-in-string/description/)
+* 字符串的排列子串: [567. Permutation in String]()
 
-* 定长为k的subarray最大和: [2461. Maximum Sum of Distinct Subarrays With Length K](https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/description/)
+* 定长为k的subarray最大和: [2461. Maximum Sum of Distinct Subarrays With Length K]()
 
 
-* :red_circle: :secret: 满足XOR值的最短子串: [2564. Substring XOR Queries](https://leetcode.com/problems/substring-xor-queries/description/)
+* :red_circle: :secret: 满足XOR值的最短子串: [2564. Substring XOR Queries]()
     * Sliding Window (Fix) + **Bitwise XOR**
 
-* :red_circle: :secret: [2747. Count Zero Request Servers](https://leetcode.com/problems/count-zero-request-servers/description/)
+* :red_circle: :secret: [2747. Count Zero Request Servers]()
     * 类 Sliding Window (Fix)
 
 
@@ -174,46 +174,46 @@ func slidingWindow(s string) int {
             2. 检查左边界**超过**右边界的情况
 
 
-* 求满足条件的Subarray个数: [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k/)
+* 求满足条件的Subarray个数: [713. Subarray Product Less Than K]()
     * 不是很常规的题, 因为右边界延伸过程中的都是所求, 要注意处理右边界延伸的初始状态下就不满足要求的情况 (会导致左边界**超过**右边界)
     * 固定左边界，右边界不停探索至极限
     * 到达极限后，收缩左边界(右移一位)，右边界再探索至极限
     * **注意！！！** 探索前先检查 slow超过fast的情况
 
-* 求满足条件的二进制Subarray个数： [930. Binary Subarrays With Sum](https://leetcode.com/problems/binary-subarrays-with-sum/description/)
+* 求满足条件的二进制Subarray个数： [930. Binary Subarrays With Sum]()
     * 需要检查右边界**出界**的情况
     * 固定左边界，右边界不停探索至极限
     * 预处理: 每个元素后面跟多少个0
 
-* 有翻转次数找最长连续1: [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/description/)
+* 有翻转次数找最长连续1: [1004. Max Consecutive Ones III]()
     * 固定左边界，不停延伸右边界至最长
 
-* 有翻转次数找最长连续T/F: [2024. Maximize the Confusion of an Exam](https://leetcode.com/problems/maximize-the-confusion-of-an-exam/description/)
+* 有翻转次数找最长连续T/F: [2024. Maximize the Confusion of an Exam]()
     * 做两遍 *LC 1004*
 
-* 无重复字符的最长子串: [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)
+* 无重复字符的最长子串: [3. Longest Substring Without Repeating Characters]()
 
-* 最小覆盖子串: [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/)
+* 最小覆盖子串: [76. Minimum Window Substring]()
 
-* 最小变换使数组变连续: [2009. Minimum Number of Operations to Make Array Continuous](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous/description/)
+* 最小变换使数组变连续: [2009. Minimum Number of Operations to Make Array Continuous]()
     * 预处理: 先去重，再增序排列
 
-* 每个字母至少k个的最长子串: [395. Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/)
+* 每个字母至少k个的最长子串: [395. Longest Substring with At Least K Repeating Characters]()
     * 为防止右边界无限延伸，需要额外增加一个条件: sliding window 内 固定只框住 `m` 个不同的字母 ($m = 1 \cdots 26$)
 
-* :yellow_circle: 包含所有类型元素的字串个数: [1358. Number of Substrings Containing All Three Characters](https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/description/)
+* :yellow_circle: 包含所有类型元素的字串个数: [1358. Number of Substrings Containing All Three Characters]()
     * 典型题
     * 两个易错点：
         1. 每次update result是数多少个子串? 
         2. 无条件update result吗？
 
-* :red_circle: 左右两头包含每个元素至少k个: [2516. Take K of Each Character From Left and Right](https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/description/)
+* :red_circle: 左右两头包含每个元素至少k个: [2516. Take K of Each Character From Left and Right]()
     * 转化思想: 左右两头 取反 :arrow_right: 中间滑窗
 
-* :red_circle: :secret: 最长"好"子数组: [2401. Longest Nice Subarray](https://leetcode.com/problems/longest-nice-subarray/description/)
+* :red_circle: :secret: 最长"好"子数组: [2401. Longest Nice Subarray]()
     * Sliding Window (Flex) + **Bitwise AND**
 
-* :red_circle: :secret: 可以得到bitwise OR最大值的最短子数组长度: [2411. Smallest Subarrays With Maximum Bitwise OR](https://leetcode.com/problems/smallest-subarrays-with-maximum-bitwise-or/description/)
+* :red_circle: :secret: 可以得到bitwise OR最大值的最短子数组长度: [2411. Smallest Subarrays With Maximum Bitwise OR]()
     * Sliding Window (Flex) + **Bitwise OR**
     * Trick 1: 左边界从右往左移动。固定左边界，右边界尽量缩短。
     * Trick 2: 判断一个整数 第k bit位 是否有1: `num>>k & 1 == 1`
