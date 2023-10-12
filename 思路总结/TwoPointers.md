@@ -10,7 +10,7 @@
 
 ## 一个数组 + 双指针同向而行
 
-* 移动所有0并且保序: [283. Move Zeroes]()
+* 移动所有0并且保序: [283. Move Zeroes](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0283-Move-Zeroes)
     * 物理意义:
         * `[0, left)`: 只接纳扔过来的非0元素
         * `left`: 当前为0, 下一个非0元素要放的位置
@@ -18,34 +18,34 @@
         * `[right, n)`: 未知元素
     * 在需要**下落物体类**游戏中是非常有用的helper function
 
-* 求满足条件的Subarray个数: [713. Subarray Product Less Than K]()
+* 求满足条件的Subarray个数: [713. Subarray Product Less Than K](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0713-Subarray-Product-Less-Than-K)
 
-* 有翻转次数找最长连续1: [1004. Max Consecutive Ones III]()
+* 有翻转次数找最长连续1: [1004. Max Consecutive Ones III](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1004-Max-Consecutive-Ones-III)
     * 总体思路: 固定一个边界，不停延伸另一个边界至最长
     * i.e. 固定左边界，不停延伸右边界至最长
 
-* 找差值为K的所有不同pair: [532. K-diff Pairs in an Array]()
+* 找差值为K的所有不同pair: [532. K-diff Pairs in an Array](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0532-K-diff-Pairs-in-an-Array)
     * 结合了 **sort**
     * 再进行两个指针同向而行
 
 ## 一个数组 + 双指针相向而行
 
-* 判断唯一山峰，左右两边单调递增: [941. Valid Mountain Array]()
+* 判断唯一山峰，左右两边单调递增: [941. Valid Mountain Array](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0941-Valid-Mountain-Array)
 
-* 平方一个有序数组: [977. Squares of a Sorted Array]()
+* 平方一个有序数组: [977. Squares of a Sorted Array](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0977-Squares-of-a-Sorted-Array)
 
 ### 两个数组 + 双指针同向而行
 
-* 跳过重复元素，匹配subsequence: [925. Long Pressed Name]()
+* 跳过重复元素，匹配subsequence: [925. Long Pressed Name](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0925-Long-Pressed-Name)
 
 ## X-Sum
-* 两数之和: [1. Two Sum]()
-* 三数之和: [15. 3Sum]()
+* 两数之和: [1. Two Sum](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0001-Two-Sum)
+* 三数之和: [15. 3Sum](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0015-3Sum)
     * Step 1: 排序
     * Step 2: 对每个元素，找符合的 Two-Sum
-* 最接近的三数之和: [16. 3Sum Closest]()
-* 四数之和: [18. 4Sum]()
-* 四数之和II: [454. 4Sum II]()
+* 最接近的三数之和: [16. 3Sum Closest](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0016-3Sum-Closest)
+* 四数之和: [18. 4Sum](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0018-4Sum)
+* 四数之和II: [454. 4Sum II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0454-4Sum-II)
 
 
 
