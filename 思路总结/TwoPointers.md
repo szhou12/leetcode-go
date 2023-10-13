@@ -133,21 +133,21 @@ func slidingWindow(s string) int {
 * **模版Fix** 比较适合解决 Sliding Window 为定长的题目 (容易写出正确的code), 所以 定长的题目 优先考虑 **模版Fix**.
     * **模版Fix** 也可以解决 长度可变 的题目，但是实际操作中实现上不容易保证正确
 
-* 最多满意客户: [1052. Grumpy Bookstore Owner]()
+* 最多满意客户: [1052. Grumpy Bookstore Owner](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1052-Grumpy-Bookstore-Owner)
 
-* 找子串位置: [28. Find the Index of the First Occurrence in a String]()
+* 找子串位置: [28. Find the Index of the First Occurrence in a String](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0028-Implement-strStr)
 
-* 找到字符串中所有字母异位词: [438. Find All Anagrams in a String]()
+* 找到字符串中所有字母异位词: [438. Find All Anagrams in a String](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0438-Find-All-Anagrams-in-a-String)
 
-* 字符串的排列子串: [567. Permutation in String]()
+* 字符串的排列子串: [567. Permutation in String](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0567-Permutation-in-String)
 
-* 定长为k的subarray最大和: [2461. Maximum Sum of Distinct Subarrays With Length K]()
+* 定长为k的subarray最大和: [2461. Maximum Sum of Distinct Subarrays With Length K](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2461-Maximum-Sum-of-Distinct-Subarrays-With-Length-K)
 
 
-* :red_circle: :secret: 满足XOR值的最短子串: [2564. Substring XOR Queries]()
+* :red_circle: :secret: 满足XOR值的最短子串: [2564. Substring XOR Queries](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2564-Substring-XOR-Queries)
     * Sliding Window (Fix) + **Bitwise XOR**
 
-* :red_circle: :secret: [2747. Count Zero Request Servers]()
+* :red_circle: :secret: [2747. Count Zero Request Servers](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2747-Count-Zero-Request-Servers)
     * 类 Sliding Window (Fix)
 
 
