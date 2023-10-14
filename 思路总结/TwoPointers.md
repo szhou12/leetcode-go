@@ -174,67 +174,67 @@ func slidingWindow(s string) int {
             2. 检查左边界**超过**右边界的情况
 
 
-* 求满足条件的Subarray个数: [713. Subarray Product Less Than K]()
+* 求满足条件的Subarray个数: [713. Subarray Product Less Than K](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0713-Subarray-Product-Less-Than-K)
     * 不是很常规的题, 因为右边界延伸过程中的都是所求, 要注意处理右边界延伸的初始状态下就不满足要求的情况 (会导致左边界**超过**右边界)
     * 固定左边界，右边界不停探索至极限
     * 到达极限后，收缩左边界(右移一位)，右边界再探索至极限
     * **注意！！！** 探索前先检查 slow超过fast的情况
 
-* 求满足条件的二进制Subarray个数： [930. Binary Subarrays With Sum]()
+* 求满足条件的二进制Subarray个数： [930. Binary Subarrays With Sum](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0930-Binary-Subarrays-With-Sum)
     * 需要检查右边界**出界**的情况
     * 固定左边界，右边界不停探索至极限
     * 预处理: 每个元素后面跟多少个0
 
-* 有翻转次数找最长连续1: [1004. Max Consecutive Ones III]()
+* 有翻转次数找最长连续1: [1004. Max Consecutive Ones III](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1004-Max-Consecutive-Ones-III)
     * 固定左边界，不停延伸右边界至最长
 
-* 有翻转次数找最长连续T/F: [2024. Maximize the Confusion of an Exam]()
+* 有翻转次数找最长连续T/F: [2024. Maximize the Confusion of an Exam](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2024-Maximize-the-Confusion-of-an-Exam)
     * 做两遍 *LC 1004*
 
-* 无重复字符的最长子串: [3. Longest Substring Without Repeating Characters]()
+* 无重复字符的最长子串: [3. Longest Substring Without Repeating Characters](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0003-Longest-Substring-Without-Repeating-Characters)
 
-* 最小覆盖子串: [76. Minimum Window Substring]()
+* 最小覆盖子串: [76. Minimum Window Substring](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0076-Minimum-Window-Substring)
 
-* 最小变换使数组变连续: [2009. Minimum Number of Operations to Make Array Continuous]()
+* 最小变换使数组变连续: [2009. Minimum Number of Operations to Make Array Continuous](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2009-Minimum-Number-of-Operations-to-Make-Array-Continuous)
     * 预处理: 先去重，再增序排列
 
-* 每个字母至少k个的最长子串: [395. Longest Substring with At Least K Repeating Characters]()
+* 每个字母至少k个的最长子串: [395. Longest Substring with At Least K Repeating Characters](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0395-Longest-Substring-with-At-Least-K-Repeating-Characters)
     * 为防止右边界无限延伸，需要额外增加一个条件: sliding window 内 固定只框住 `m` 个不同的字母 ($m = 1 \cdots 26$)
 
-* :yellow_circle: 包含所有类型元素的字串个数: [1358. Number of Substrings Containing All Three Characters]()
+* :yellow_circle: 包含所有类型元素的字串个数: [1358. Number of Substrings Containing All Three Characters](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1358-Number-of-Substrings-Containing-All-Three-Characters)
     * 典型题
     * 两个易错点：
         1. 每次update result是数多少个子串? 
         2. 无条件update result吗？
 
-* :red_circle: 左右两头包含每个元素至少k个: [2516. Take K of Each Character From Left and Right]()
+* :red_circle: 左右两头包含每个元素至少k个: [2516. Take K of Each Character From Left and Right](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2516-Take-K-of-Each-Character-From-Left-and-Right)
     * 转化思想: 左右两头 取反 :arrow_right: 中间滑窗
 
-* :red_circle: :secret: 最长"好"子数组: [2401. Longest Nice Subarray]()
+* :red_circle: :secret: 最长"好"子数组: [2401. Longest Nice Subarray](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2401-Longest-Nice-Subarray)
     * Sliding Window (Flex) + **Bitwise AND**
 
-* :red_circle: :secret: 可以得到bitwise OR最大值的最短子数组长度: [2411. Smallest Subarrays With Maximum Bitwise OR]()
+* :red_circle: :secret: 可以得到bitwise OR最大值的最短子数组长度: [2411. Smallest Subarrays With Maximum Bitwise OR](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2411-Smallest-Subarrays-With-Maximum-Bitwise-OR)
     * Sliding Window (Flex) + **Bitwise OR**
     * Trick 1: 左边界从右往左移动。固定左边界，右边界尽量缩短。
     * Trick 2: 判断一个整数 第k bit位 是否有1: `num>>k & 1 == 1`
 
 
-* :red_circle: 窗口内统一字母的最长子串: [424. Longest Repeating Character Replacement]()
+* :red_circle: 窗口内统一字母的最长子串: [424. Longest Repeating Character Replacement](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0424-Longest-Repeating-Character-Replacement)
     * 解法一: 26个字母挨个锁定为目标
-        * 相同思路的题目: [1004. Max Consecutive Ones III](), [2024. Maximize the Confusion of an Exam]()
+        * 相同思路的题目: [1004. Max Consecutive Ones III](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1004-Max-Consecutive-Ones-III), [2024. Maximize the Confusion of an Exam](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2024-Maximize-the-Confusion-of-an-Exam)
     * 解法二: 窗口总长度 - 窗口占多数的字母次数 <= k
 
-* :yellow_circle: "好"子串的个数: [2537. Count the Number of Good Subarrays]()
+* :yellow_circle: "好"子串的个数: [2537. Count the Number of Good Subarrays](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2537-Count-the-Number-of-Good-Subarrays)
     * 逆向思维：滑窗物理意义 = 题目要求取反
     * 分类讨论：更新结果前需要分类讨论
 
-* :yellow_circle: [992. Subarrays with K Different Integers]()
+* :yellow_circle: [992. Subarrays with K Different Integers](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0992-Subarrays-with-K-Different-Integers)
     * 2537 的进阶版
 
-* :yellow_circle: 最长的"半重复"子串: [2730. Find the Longest Semi-Repetitive Substring]()
+* :yellow_circle: 最长的"半重复"子串: [2730. Find the Longest Semi-Repetitive Substring](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2730-Find-the-Longest-Semi-Repetitive-Substring)
 
 
-* :red_circle: 最长的元素相同的子串: [2831. Find the Longest Equal Subarray]()
+* :red_circle: 最长的元素相同的子串: [2831. Find the Longest Equal Subarray](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2831-Find-the-Longest-Equal-Subarray)
 
 ### 非 模版题
 * :red_circle: :secret: k步内收集最多果子: [2106. Maximum Fruits Harvested After at Most K Steps]()
