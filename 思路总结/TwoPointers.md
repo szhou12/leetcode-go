@@ -237,7 +237,7 @@ func slidingWindow(s string) int {
 * :red_circle: 最长的元素相同的子串: [2831. Find the Longest Equal Subarray](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2831-Find-the-Longest-Equal-Subarray)
 
 ### 非 模版题
-* :red_circle: :secret: k步内收集最多果子: [2106. Maximum Fruits Harvested After at Most K Steps]()
+* :red_circle: :secret: k步内收集最多果子: [2106. Maximum Fruits Harvested After at Most K Steps](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2106-Maximum-Fruits-Harvested-After-at-Most-K-Steps)
     * Sliding Window (非) + Prefix Sum
 
-* :red_circle: :secret: 有限次增量下使相同元素最多: [1838. Frequency of the Most Frequent Element]()
+* :red_circle: :secret: 有限次增量下使相同元素最多: [1838. Frequency of the Most Frequent Element](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1838-Frequency-of-the-Most-Frequent-Element)
