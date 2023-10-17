@@ -1,10 +1,13 @@
 package leetcode
 
 // Step 1: the longest prefix suffix (lps) array of p
-// 	lsp[i] = the max length k s.t. p[0:k-1] = p[i-k+1:i]
+//
+//	lsp[i] = the max length k s.t. p[0:k-1] = p[i-k+1:i]
+//
 // Step 2: pattern matching
-//  dp[i] = the max length x s.t. s[i-x+1:i] = p[0:x-1]
-//  when dp[i] = length(p) => match!
+//
+//	dp[i] = the max length x s.t. s[i-x+1:i] = p[0:x-1]
+//	when dp[i] = length(p) => match!
 func strStr_KMP(haystack string, needle string) int {
 	n := len(haystack)
 	m := len(needle)
@@ -20,7 +23,6 @@ func strStr_KMP(haystack string, needle string) int {
 
 	// build lsp for pattern string = needle
 	lsp := preprocess(needle)
-
 
 	// dp[i] = max length x of suffix in haystack[:i] s.t. prefix needle[0:x-1] == suffix haystack[i-x+1:i] (双闭区间)
 	dp := make([]int, n)
@@ -41,9 +43,18 @@ func strStr_KMP(haystack string, needle string) int {
 		for x > 0 && needle[x] != haystack[i] {
 			x = lsp[x-1]
 		}
-		
+		if needle[x] == haystack[i] {
+			dp[i] = x + 1
+		} else {
+			dp[i] = x
+		}
 
+		if dp[i] == m {
+			return i - m + 1
+		}
 	}
+
+	return -1
 
 }
 
@@ -59,7 +70,7 @@ func preprocess(needle string) []int {
 	// recurrence
 	for i := 1; i < n; i++ {
 		j := dp[i-1]
-		for j>=1 && needle[i] != needle[j] {
+		for j >= 1 && needle[i] != needle[j] {
 			j = dp[j-1]
 		}
 		if needle[i] == needle[j] {
