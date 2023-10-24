@@ -32,72 +32,72 @@
 
 ## 基础题
 
-* :red_circle: :secret: 连通共享公约数的数字: [2709. Greatest Common Divisor Traversal](https://leetcode.com/problems/greatest-common-divisor-traversal/description/)
+* :red_circle: :secret: 连通共享公约数的数字: [2709. Greatest Common Divisor Traversal]()
     * Union Find + Prime Factorization
     * 时间优化: 用 共享的 prime factor(质因数) 作为 Union 的媒介/桥梁
 
-* :green_circle: **起点到终点是否有通路:** [1971. Find if Path Exists in Graph](https://leetcode.com/problems/find-if-path-exists-in-graph/)
+* :green_circle: **起点到终点是否有通路:** [1971. Find if Path Exists in Graph]()
 
-* :red_circle: **从起点到终点的所有路径中最短的一条边:** [2492. Minimum Score of a Path Between Two Cities](https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/description/)
+* :red_circle: **从起点到终点的所有路径中最短的一条边:** [2492. Minimum Score of a Path Between Two Cities]()
 
-* :red_circle: :secret: **字符串家族:** [2157. Groups of Strings](https://leetcode.com/problems/groups-of-strings/description/)
+* :red_circle: :secret: **字符串家族:** [2157. Groups of Strings]()
 	* Union Find + Bit Mask (encode string to 26-len bit representation)
 
-* :red_circle: :secret: **寻找所有知晓秘密之人:** [2092. Find All People With Secret](https://leetcode.com/problems/find-all-people-with-secret/description/)
+* :red_circle: :secret: **寻找所有知晓秘密之人:** [2092. Find All People With Secret]()
     * Union Find + Two Pointers (相向而行)
 
-* :red_circle: **谁和谁能成为朋友:** [2076. Process Restricted Friend Requests](https://leetcode.com/problems/process-restricted-friend-requests/description/)
+* :red_circle: **谁和谁能成为朋友:** [2076. Process Restricted Friend Requests]()
 
-* :red_circle: **最小化Hamming Distance:** [1722. Minimize Hamming Distance After Swap Operations](https://leetcode.com/problems/minimize-hamming-distance-after-swap-operations/description/)
+* :red_circle: **最小化Hamming Distance:** [1722. Minimize Hamming Distance After Swap Operations]()
 
-* :red_circle: :secret: **矩阵以rank表示:** [1632. Rank Transform of a Matrix](https://leetcode.com/problems/rank-transform-of-a-matrix/description/)
+* :red_circle: :secret: **矩阵以rank表示:** [1632. Rank Transform of a Matrix]()
     * Topological Sort + Union Find
 
-* :yellow_circle: **通过交换可以把字符串按照最小字典序排序:** [1202. Smallest String With Swaps](https://leetcode.com/problems/smallest-string-with-swaps/description/)
+* :yellow_circle: **通过交换可以把字符串按照最小字典序排序:** [1202. Smallest String With Swaps]()
 
-* :green_circle: **字典序最小的等价字符串:** [1061. Lexicographically Smallest Equivalent String](https://leetcode.com/problems/lexicographically-smallest-equivalent-string/description/)
+* :green_circle: **字典序最小的等价字符串:** [1061. Lexicographically Smallest Equivalent String]()
 
-* :green_circle: **等式的可满足性:** [990. Satisfiability of Equality Equations](https://leetcode.com/problems/satisfiability-of-equality-equations/description/)
+* :green_circle: **等式的可满足性:** [990. Satisfiability of Equality Equations]()
 
-* :red_circle: **分割矩阵能分几份:** [959. Regions Cut By Slashes](https://leetcode.com/problems/regions-cut-by-slashes/)
+* :red_circle: **分割矩阵能分几份:** [959. Regions Cut By Slashes]()
 
-* :yellow_circle: **二维平面上相消元素个数:** [947. Most Stones Removed with Same Row or Column](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/description/)
+* :yellow_circle: **二维平面上相消元素个数:** [947. Most Stones Removed with Same Row or Column]()
 
-* :red_circle: **判别二分图:** [785. Is Graph Bipartite?](https://leetcode.com/problems/is-graph-bipartite/)
+* :red_circle: **判别二分图:** [785. Is Graph Bipartite?]()
 
-* :red_circle: **情侣手牵手:** [765. Couples Holding Hands](https://leetcode.com/problems/couples-holding-hands/description/)
+* :red_circle: **情侣手牵手:** [765. Couples Holding Hands]()
 
-* :yellow_circle: **寻找并合并相同的账户:** [721. Accounts Merge](https://leetcode.com/problems/accounts-merge/description/)
+* :yellow_circle: **寻找并合并相同的账户:** [721. Accounts Merge]()
     * 修改 UnionFind 模版: `int` -> `string`
 
-* :red_circle: **找出连通图中多余的边II:** [685. Redundant Connection II](https://leetcode.com/problems/redundant-connection-ii/)
+* :red_circle: **找出连通图中多余的边II:** [685. Redundant Connection II]()
     * 有向图
 
-* :yellow_circle: **找出连通图中多余的边:** [684. Redundant Connection](https://leetcode.com/problems/redundant-connection/)
+* :yellow_circle: **找出连通图中多余的边:** [684. Redundant Connection]()
     * 无向图: 多余的边 就是 判断有没有构成环
 
-* :green_circle: **连通图个数:** [547. Number of Provinces](https://leetcode.com/problems/number-of-provinces/description/)
+* :green_circle: **连通图个数:** [547. Number of Provinces]()
 
-* :yellow_circle: **连通岛屿的个数:** [200. Number of Islands](https://leetcode.com/problems/number-of-islands/submissions/)
+* :yellow_circle: **连通岛屿的个数:** [200. Number of Islands]()
     * 1-D Index Compression
 
-* :red_circle: **最长连续序列:** [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/)
+* :red_circle: **最长连续序列:** [128. Longest Consecutive Sequence]()
 
-* :yellow_circle: **找出不包含边界元素的连通图:** [130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)
+* :yellow_circle: **找出不包含边界元素的连通图:** [130. Surrounded Regions]()
 
 ## Minimum Spanning Tree (MST)
-* :red_circle: :secret: **寻找MST中的关键边和伪关键边:** [1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/description/)
+* :red_circle: :secret: **寻找MST中的关键边和伪关键边:** [1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree]()
     * Union Find + Kruskal
 
-* :red_circle: :secret: **生成连通图所需最少的边/可以删除最多多少边:** [1579. Remove Max Number of Edges to Keep Graph Fully Traversable](https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/description/)
+* :red_circle: :secret: **生成连通图所需最少的边/可以删除最多多少边:** [1579. Remove Max Number of Edges to Keep Graph Fully Traversable]()
     * Union Find + Spanning Tree
     * 边没有权重，所以这道题只求 spanning tree 而不用 MST
 
-* :yellow_circle: **连通所有二维节点的最小花费:** [1584. Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/description/)
+* :yellow_circle: **连通所有二维节点的最小花费:** [1584. Min Cost to Connect All Points]()
     * Union Find + Kruskal
 
-* :green_circle: :lock: 最小花费连接所有城市: [1135. Connecting Cities With Minimum Cost](https://leetcode.ca/all/1135.html)
+* :green_circle: :lock: 最小花费连接所有城市: [1135. Connecting Cities With Minimum Cost]()
     * Union Find + Kruskal
 
-* :red_circle: :lock: 最小花费给村庄供给水源: [1168. Optimize Water Distribution in a Village](https://leetcode.ca/2019-02-10-1168-Optimize-Water-Distribution-in-a-Village/)
+* :red_circle: :lock: 最小花费给村庄供给水源: [1168. Optimize Water Distribution in a Village]()
     * Union Find + Kruskal
