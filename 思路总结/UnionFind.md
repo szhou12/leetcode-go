@@ -32,13 +32,13 @@
 
 ## 基础题
 
-* :red_circle: :secret: 连通共享公约数的数字: [2709. Greatest Common Divisor Traversal]()
+* :red_circle: :secret: 连通共享公约数的数字: [2709. Greatest Common Divisor Traversal](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2709-Greatest-Common-Divisor-Traversal)
     * Union Find + Prime Factorization
     * 时间优化: 用 共享的 prime factor(质因数) 作为 Union 的媒介/桥梁
 
-* :green_circle: **起点到终点是否有通路:** [1971. Find if Path Exists in Graph]()
+* :green_circle: **起点到终点是否有通路:** [1971. Find if Path Exists in Graph](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1971-Find-if-Path-Exists-in-Graph)
 
-* :red_circle: **从起点到终点的所有路径中最短的一条边:** [2492. Minimum Score of a Path Between Two Cities]()
+* :red_circle: **从起点到终点的所有路径中最短的一条边:** [2492. Minimum Score of a Path Between Two Cities](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2492-Minimum-Score-of-a-Path-Between-Two-Cities)
 
 * :red_circle: :secret: **字符串家族:** [2157. Groups of Strings]()
 	* Union Find + Bit Mask (encode string to 26-len bit representation)
