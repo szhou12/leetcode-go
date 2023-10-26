@@ -70,7 +70,7 @@ func preprocess(needle string) []int {
 	// recurrence
 	for i := 1; i < n; i++ {
 		j := dp[i-1]
-		for j >= 1 && needle[i] != needle[j] {
+		for j > 0 && needle[i] != needle[j] {
 			j = dp[j-1]
 		}
 		if needle[i] == needle[j] {
