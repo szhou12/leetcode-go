@@ -14,3 +14,5 @@
 
 * :red_circle: 找第一次出现的匹配: [28. Find the Index of the First Occurrence in a String](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0028-Implement-strStr)
     * **优先练习** 考察KMP算法 Step 1 + 2 的实现
+
+* :purple_circle: 有限次切字符串找匹配: [2851. String Transformation]()
