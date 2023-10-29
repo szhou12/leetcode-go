@@ -40,17 +40,17 @@
 
 * :red_circle: **从起点到终点的所有路径中最短的一条边:** [2492. Minimum Score of a Path Between Two Cities](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2492-Minimum-Score-of-a-Path-Between-Two-Cities)
 
-* :red_circle: :secret: **字符串家族:** [2157. Groups of Strings]()
+* :red_circle: :secret: **字符串家族:** [2157. Groups of Strings](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2157-Groups-of-Strings)
 	* Union Find + Bit Mask (encode string to 26-len bit representation)
 
-* :red_circle: :secret: **寻找所有知晓秘密之人:** [2092. Find All People With Secret]()
+* :red_circle: :secret: **寻找所有知晓秘密之人:** [2092. Find All People With Secret](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2092-Find-All-People-With-Secret)
     * Union Find + Two Pointers (相向而行)
 
-* :red_circle: **谁和谁能成为朋友:** [2076. Process Restricted Friend Requests]()
+* :red_circle: **谁和谁能成为朋友:** [2076. Process Restricted Friend Requests](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2076-Process-Restricted-Friend-Requests)
 
-* :red_circle: **最小化Hamming Distance:** [1722. Minimize Hamming Distance After Swap Operations]()
+* :red_circle: **最小化Hamming Distance:** [1722. Minimize Hamming Distance After Swap Operations](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1722-Minimize-Hamming-Distance-After-Swap-Operations)
 
-* :red_circle: :secret: **矩阵以rank表示:** [1632. Rank Transform of a Matrix]()
+* :red_circle: :secret: **矩阵以rank表示:** [1632. Rank Transform of a Matrix](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1632-Rank-Transform-of-a-Matrix)
     * Topological Sort + Union Find
 
 * :yellow_circle: **通过交换可以把字符串按照最小字典序排序:** [1202. Smallest String With Swaps]()
