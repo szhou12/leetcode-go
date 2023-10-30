@@ -53,30 +53,30 @@
 * :red_circle: :secret: **矩阵以rank表示:** [1632. Rank Transform of a Matrix](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1632-Rank-Transform-of-a-Matrix)
     * Topological Sort + Union Find
 
-* :yellow_circle: **通过交换可以把字符串按照最小字典序排序:** [1202. Smallest String With Swaps]()
+* :yellow_circle: **通过交换可以把字符串按照最小字典序排序:** [1202. Smallest String With Swaps](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1202-Smallest-String-With-Swaps)
 
-* :green_circle: **字典序最小的等价字符串:** [1061. Lexicographically Smallest Equivalent String]()
+* :green_circle: **字典序最小的等价字符串:** [1061. Lexicographically Smallest Equivalent String](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1061-Lexicographically-Smallest-Equivalent-String)
 
-* :green_circle: **等式的可满足性:** [990. Satisfiability of Equality Equations]()
+* :green_circle: **等式的可满足性:** [990. Satisfiability of Equality Equations](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0990-Satisfiability-of-Equality-Equations)
 
-* :red_circle: **分割矩阵能分几份:** [959. Regions Cut By Slashes]()
+* :red_circle: **分割矩阵能分几份:** [959. Regions Cut By Slashes](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0959-Regions-Cut-By-Slashes)
 
-* :yellow_circle: **二维平面上相消元素个数:** [947. Most Stones Removed with Same Row or Column]()
+* :yellow_circle: **二维平面上相消元素个数:** [947. Most Stones Removed with Same Row or Column](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0947-Most-Stones-Removed-with-Same-Row-or-Column)
 
-* :red_circle: **判别二分图:** [785. Is Graph Bipartite?]()
+* :red_circle: **判别二分图:** [785. Is Graph Bipartite?](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0785-Is-Graph-Bipartite)
 
-* :red_circle: **情侣手牵手:** [765. Couples Holding Hands]()
+* :red_circle: **情侣手牵手:** [765. Couples Holding Hands](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0765-Couples-Holding-Hands)
 
-* :yellow_circle: **寻找并合并相同的账户:** [721. Accounts Merge]()
+* :yellow_circle: **寻找并合并相同的账户:** [721. Accounts Merge](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0721-Accounts-Merge)
     * 修改 UnionFind 模版: `int` -> `string`
 
-* :red_circle: **找出连通图中多余的边II:** [685. Redundant Connection II]()
+* :red_circle: **找出连通图中多余的边II:** [685. Redundant Connection II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0685-Redundant-Connection-II)
     * 有向图
 
-* :yellow_circle: **找出连通图中多余的边:** [684. Redundant Connection]()
+* :yellow_circle: **找出连通图中多余的边:** [684. Redundant Connection](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0684-Redundant-Connection)
     * 无向图: 多余的边 就是 判断有没有构成环
 
-* :green_circle: **连通图个数:** [547. Number of Provinces]()
+* :green_circle: **连通图个数:** [547. Number of Provinces](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0547-Number-of-Provinces)
 
 * :yellow_circle: **连通岛屿的个数:** [200. Number of Islands]()
     * 1-D Index Compression
