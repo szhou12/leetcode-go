@@ -78,26 +78,26 @@
 
 * :green_circle: **连通图个数:** [547. Number of Provinces](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0547-Number-of-Provinces)
 
-* :yellow_circle: **连通岛屿的个数:** [200. Number of Islands]()
+* :yellow_circle: **连通岛屿的个数:** [200. Number of Islands](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0200-Number-of-Islands)
     * 1-D Index Compression
 
-* :red_circle: **最长连续序列:** [128. Longest Consecutive Sequence]()
+* :red_circle: **最长连续序列:** [128. Longest Consecutive Sequence](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0128-Longest-Consecutive-Sequence)
 
-* :yellow_circle: **找出不包含边界元素的连通图:** [130. Surrounded Regions]()
+* :yellow_circle: **找出不包含边界元素的连通图:** [130. Surrounded Regions](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0130-Surrounded-Regions)
 
 ## Minimum Spanning Tree (MST)
-* :red_circle: :secret: **寻找MST中的关键边和伪关键边:** [1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree]()
+* :red_circle: :secret: **寻找MST中的关键边和伪关键边:** [1489. Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1489-Find-Critical-and-Pseudo-Critical-Edges-in-Minimum-Spanning-Tree)
     * Union Find + Kruskal
 
-* :red_circle: :secret: **生成连通图所需最少的边/可以删除最多多少边:** [1579. Remove Max Number of Edges to Keep Graph Fully Traversable]()
+* :red_circle: :secret: **生成连通图所需最少的边/可以删除最多多少边:** [1579. Remove Max Number of Edges to Keep Graph Fully Traversable](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1579-Remove-Max-Number-of-Edges-to-Keep-Graph-Fully-Traversable)
     * Union Find + Spanning Tree
     * 边没有权重，所以这道题只求 spanning tree 而不用 MST
 
-* :yellow_circle: **连通所有二维节点的最小花费:** [1584. Min Cost to Connect All Points]()
+* :yellow_circle: **连通所有二维节点的最小花费:** [1584. Min Cost to Connect All Points](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1584-Min-Cost-to-Connect-All-Points)
     * Union Find + Kruskal
 
-* :green_circle: :lock: 最小花费连接所有城市: [1135. Connecting Cities With Minimum Cost]()
+* :green_circle: :lock: 最小花费连接所有城市: [1135. Connecting Cities With Minimum Cost](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1135-Connecting-Cities-With-Minimum-Cost)
     * Union Find + Kruskal
 
-* :red_circle: :lock: 最小花费给村庄供给水源: [1168. Optimize Water Distribution in a Village]()
+* :red_circle: :lock: 最小花费给村庄供给水源: [1168. Optimize Water Distribution in a Village](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1168-Optimize-Water-Distribution-in-a-Village)
     * Union Find + Kruskal
