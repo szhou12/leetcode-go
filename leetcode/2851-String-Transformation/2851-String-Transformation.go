@@ -115,7 +115,7 @@ func preprocess(pattern string) []int {
 
 
 // 1. shift s is like 扑克切牌 => rotate string.
-// round 1: +1, +2, +3, ..., +(n-1) // +x = move suffix of x to the front
+// round 1: +1, +2, +3, ..., +(n-1) // +x = move suffix [x:] to the front
 // round 2: +1, +2, +3, ..., +(n-1)
 // round 3: +1, +2, +3, ..., +(n-1)
 // ...
