@@ -26,11 +26,13 @@ Assume `s'` is `s` after k shifts, `s'` can only be one of the following forms:
 
 `s' = s(0), s(1), s(2), ..., s(n-1)` where `s(x)` means shifting the suffix of `s` starting at index x
 
-then how do we know if t is among them? => **double the string s to find cyclic shift**
+then how do we know if `t` is among them? => **double the string s to find cyclic shift**
 
-Trick: Since `s(0)` == `s(n)` == no shift at all (will cause double counting), cutoff the last char when double the string `s`. e.g. `s = abababa` => `2s-1 = ababab|ababa`
+Trick: Since `s(0)` == `s(n)` == no shift at all (will cause double counting), cutoff the last char when double the string `s`. 
 
-Find the number of appearances of t (pattern string) in 2s-1 (target string) => **KMP**
+e.g. `s = abababa` => `2s-1 = ababab|ababa`
+
+Find the number of appearances of `t` (pattern string) in `2s-1` (target string) => **KMP**
 
 3. 
 

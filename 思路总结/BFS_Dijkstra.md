@@ -42,6 +42,10 @@
 * :red_circle: **从Grid左上角走到右下角所花最少cost:** [1368. Minimum Cost to Make at Least One Valid Path in a Grid](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1368-Minimum-Cost-to-Make-at-Least-One-Valid-Path-in-a-Grid)
     * BFS 嵌套 BFS
 
+* :red_circle: **每个节点走多少步陷入循环** [2876. Count Visited Nodes in a Directed Graph]()
+    * Topological Sort + cycle length + DFS
+
+
 ## 岛屿沉没类/连通图个数 - 找neighbor
 * :red_circle: **连通岛屿的个数:** [200. Number of Islands](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0200-Number-of-Islands)
 
