@@ -28,27 +28,27 @@ func treeRecursion(TreeNode x, ...) ... {
 
 2. 在inorder中定位root的index, 并进行左右分割
 
-* [106. Construct Binary Tree from Inorder and Postorder Traversal]()
+* 用中序遍历+后序遍历建二叉树：[106. Construct Binary Tree from Inorder and Postorder Traversal](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0106-Construct-Binary-Tree-from-Inorder-and-Postorder-Traversal)
 
-* [105. Construct Binary Tree from Preorder and Inorder Traversal]()
+* 用中序遍历+前序遍历建二叉树：[105. Construct Binary Tree from Preorder and Inorder Traversal](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0105-Construct-Binary-Tree-from-Preorder-and-Inorder-Traversal)
 
 
 
 
 ### **构造 Binary Search Tree**
 
-* Convert ascending array to BST: [108. Convert Sorted Array to Binary Search Tree]()
+* Convert ascending array to BST: [108. Convert Sorted Array to Binary Search Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0108-Convert-Sorted-Array-to-Binary-Search-Tree)
 
-* 平衡 BST: [1382. Balance a Binary Search Tree]()
+* 平衡 BST: [1382. Balance a Binary Search Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1382-Balance-a-Binary-Search-Tree)
 
 
 
 
 ## 找到所有 Unique Binary Search Tree
 
-* Recursion to print all BST: [95. Unique Binary Search Trees II]()
+* Recursion to print all BST: [95. Unique Binary Search Trees II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0095-Unique-Binary-Search-Trees-II)
 
-* DP to find #: [96. Unique Binary Search Trees]()
+* DP to find #: [96. Unique Binary Search Trees](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0096-Unique-Binary-Search-Trees)
 
 
 
@@ -57,14 +57,14 @@ func treeRecursion(TreeNode x, ...) ... {
 
 * Complete Binary Tree一定会有一个 full binary subtree (满二叉树)
 
-* [222. Count Complete Tree Nodes]()
+* [222. Count Complete Tree Nodes](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0222-Count-Complete-Tree-Nodes)
 
 
 
 
 ## 找Tree的所有路径
 
-* [257. Binary Tree Paths]()
+* [257. Binary Tree Paths](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0257-Binary-Tree-Paths)
     * 前序遍历: 因为这样才方便让父节点指向孩子节点，找到对应的路径。
     * 在这道题目中将第一次涉及到回溯，因为我们要把路径记录下来，需要回溯来回退 以便于 从一个路径在进入另一个路径。
         * **注意！！！**在Go语言的实现中，回溯反而不能写出来，否则会出错。
