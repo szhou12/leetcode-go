@@ -76,25 +76,25 @@ func treeRecursion(TreeNode x, ...) ... {
 
 ## Post-Order Traversal 需要脑筋拐个弯的题
 
-* Left Leaf: [404. Sum of Left Leaves]()
+* Left Leaf: [404. Sum of Left Leaves](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0404-Sum-of-Left-Leaves)
     * 突破点：明确Left Leaf的定义, 根据定义来写当前层的逻辑
     * 判断当前节点是不是左叶子是无法判断的，必须要通过节点的父节点来判断其左孩子是不是左叶子
 
-* Delete Node in BST: [450. Delete Node in a BST]()
+* Delete Node in BST: [450. Delete Node in a BST](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0450-Delete-Node-in-a-BST)
     * 突破点 & 难点：分类讨论，明确各种情况，对症下药
     * 情况一: 当前节点的**左孩子**为空, 直接返回右孩子
     * 情况二: 当前节点的**右孩子**为空, 直接返回左孩子
     * 情况三: 当前节点的**左、右孩子**都非空, 把左子树挂到右子树最左边的叶子节点下面
 
-* Merge & Overlap two trees: [617. Merge Two Binary Trees]()
+* Merge & Overlap two trees: [617. Merge Two Binary Trees](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0617-Merge-Two-Binary-Trees)
 
-* Maximum Binary Tree: [654. Maximum Binary Tree]()
+* Maximum Binary Tree: [654. Maximum Binary Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0654-Maximum-Binary-Tree)
 
-* 修剪 BST: [669. Trim a Binary Search Tree]()
+* 修剪 BST: [669. Trim a Binary Search Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0669-Trim-a-Binary-Search-Tree)
     * 看到BST本能地想用In-order
     * 但本题BST性质的运用是在于如何砍掉合适的node, recursion用Post-order就可以解
 
-* Set Camera: [968. Binary Tree Cameras]()
+* Set Camera: [968. Binary Tree Cameras](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0968-Binary-Tree-Cameras)
     * 明确划分四大状态，以及伴生的16 cases
     * 用四个优先级把16 cases分门别类
 
