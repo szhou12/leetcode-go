@@ -104,9 +104,9 @@ func treeRecursion(TreeNode x, ...) ... {
 
 ## In-Order Traversal
 
-* BST上In-Order Traversal模拟一维递增数组: [501. Find Mode in Binary Search Tree]()
+* BST上In-Order Traversal模拟一维递增数组: [501. Find Mode in Binary Search Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0501-Find-Mode-in-Binary-Search-Tree)
 
-* BST上In-Order Traversal 先走右子树，再走左子树 得到降序排列: [538. Convert BST to Greater Tree]()
+* BST上In-Order Traversal 先走右子树，再走左子树 得到降序排列: [538. Convert BST to Greater Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0538-Convert-BST-to-Greater-Tree)
 
 ## Binary Search Tree (BST) 题
 * 都是明示要利用BST性质的题
