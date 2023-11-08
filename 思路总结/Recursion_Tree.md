@@ -111,17 +111,17 @@ func treeRecursion(TreeNode x, ...) ... {
 ## Binary Search Tree (BST) 题
 * 都是明示要利用BST性质的题
 * 构造 BST:
-    * Convert ascending array to BST: [108. Convert Sorted Array to Binary Search Tree]()
-    * 平衡 BST: [1382. Balance a Binary Search Tree]()
-* Validate BST: [98. Validate Binary Search Tree]()
-* Search Node in BST: [700. Search in a Binary Search Tree]()
-* Delete Node in BST: [450. Delete Node in a BST]()
-* Insert Node in BST: [701. Insert into a Binary Search Tree]()
-* Trim BST: [669. Trim a Binary Search Tree]()
-* BST上In-Order Traversal模拟一维递增数组: [501. Find Mode in Binary Search Tree]()
-* BST上In-Order Traversal 先走右子树，再走左子树 得到降序排列: [538. Convert BST to Greater Tree]()
-* Recursion to print all BST: [95. Unique Binary Search Trees II]()
-* DP to find #: [96. Unique Binary Search Trees]()
+    * Convert ascending array to BST: [108. Convert Sorted Array to Binary Search Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0108-Convert-Sorted-Array-to-Binary-Search-Tree)
+    * 平衡 BST: [1382. Balance a Binary Search Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1382-Balance-a-Binary-Search-Tree)
+* Validate BST: [98. Validate Binary Search Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0098-Validate-Binary-Search-Tree)
+* Search Node in BST: [700. Search in a Binary Search Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0700-Search-in-a-Binary-Search-Tree)
+* Delete Node in BST: [450. Delete Node in a BST](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0450-Delete-Node-in-a-BST)
+* Insert Node in BST: [701. Insert into a Binary Search Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0701-Insert-into-a-Binary-Search-Tree)
+* Trim BST: [669. Trim a Binary Search Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0669-Trim-a-Binary-Search-Tree)
+* BST上In-Order Traversal模拟一维递增数组: [501. Find Mode in Binary Search Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0501-Find-Mode-in-Binary-Search-Tree)
+* BST上In-Order Traversal 先走右子树，再走左子树 得到降序排列: [538. Convert BST to Greater Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0538-Convert-BST-to-Greater-Tree)
+* Recursion to print all BST: [95. Unique Binary Search Trees II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0095-Unique-Binary-Search-Trees-II)
+* DP to find #: [96. Unique Binary Search Trees](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0096-Unique-Binary-Search-Trees)
 
 
 ## LCA
