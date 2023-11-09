@@ -125,22 +125,22 @@ func treeRecursion(TreeNode x, ...) ... {
 
 
 ## LCA
-* LCA in BST: [235. Lowest Common Ancestor of a Binary Search Tree]()
+* LCA in BST: [235. Lowest Common Ancestor of a Binary Search Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0235-Lowest-Common-Ancestor-of-a-Binary-Search-Tree)
 
-* LCA I: [236. Lowest Common Ancestor of a Binary Tree]()
+* LCA I: [236. Lowest Common Ancestor of a Binary Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0236-Lowest-Common-Ancestor-of-a-Binary-Tree)
     * input nodes `p`, `q` **一定**存在于tree中
 
-* LCA II: [1644. Lowest Common Ancestor of a Binary Tree II]()
+* LCA II: [1644. Lowest Common Ancestor of a Binary Tree II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1644-Lowest-Common-Ancestor-of-a-Binary%20Tree-II)
     * input nodes `p`, `q` **不一定**存在于tree中
 
-* LCA III: [1650. Lowest Common Ancestor of a Binary Tree III]()
+* LCA III: [1650. Lowest Common Ancestor of a Binary Tree III](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1650-Lowest-Common-Ancestor-of-a-Binary-Tree-III)
     * Tree node 有 parent指针，直接逆流而上，记录"沿途风景"
 
-* LCA IV: [1676. Lowest Common Ancestor of a Binary Tree IV]()
+* LCA IV: [1676. Lowest Common Ancestor of a Binary Tree IV](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1676-Lowest-Common-Ancestor-of-a-Binary-Tree-IV)
     * input nodes array **一定**存在于tree中
     * 额外使用一个 **HashMap** 充当 input nodes的set
 
-* 最深叶子节点的LCA: [1123. Lowest Common Ancestor of Deepest Leaves]()
+* 最深叶子节点的LCA: [1123. Lowest Common Ancestor of Deepest Leaves](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1123-Lowest-Common-Ancestor-of-Deepest-Leaves)
 
-* 二叉树中连环，计算环的长度: [2509. Cycle Length Queries in a Tree]()
+* 二叉树中连环，计算环的长度: [2509. Cycle Length Queries in a Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2509-Cycle-Length-Queries-in-a-Tree)
     * 与一般的 LCA 的题型要简单，不一定非要用recursion，因为任意node的parent可以计算得到 `parent(X) = X/2`
