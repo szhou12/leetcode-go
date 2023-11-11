@@ -8,18 +8,18 @@
 
 ## 经典题
 
-* [20. Valid Parentheses]()
+* [20. Valid Parentheses](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0020-Valid-Parentheses)
     * idea: 遇到左括号则入栈；遇到右括号，若栈顶是匹配的左括号则弹栈，否则，invalid. 若所有括号都check过，且此时栈内已空，则valid
 
-* [150. Evaluate Reverse Polish Notation]()
+* [150. Evaluate Reverse Polish Notation](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0150-Evaluate-Reverse-Polish-Notation)
     * idea：遇到数字则入栈；遇到算符则取出栈顶两个数字进行计算，并将结果压入栈中
 
-* 删除字符再比较: [844. Backspace String Compare]()
+* 删除字符再比较: [844. Backspace String Compare](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0844-Backspace-String-Compare)
     * idea: 遇到字母则入栈；遇到#则取出栈顶元素
 
-* 消消乐-简单版: [1047. Remove All Adjacent Duplicates In String]()
+* 消消乐-简单版: [1047. Remove All Adjacent Duplicates In String](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1047-Remove-All-Adjacent-Duplicates-In-String)
 
-* 字符串解压缩: [394. Decode String]()
+* 字符串解压缩: [394. Decode String](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0394-Decode-String)
 
 ## 单调栈模板
 
