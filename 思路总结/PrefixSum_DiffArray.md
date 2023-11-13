@@ -54,10 +54,10 @@ diff:  1,   2,  2, -1,  4
 
 #### 一维差分 (1-D Difference Array)
 
-* 航班预订统计: [1109. Corporate Flight Bookings](https://leetcode.com/problems/corporate-flight-bookings/description/)
+* 航班预订统计: [1109. Corporate Flight Bookings](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1109-Corporate-Flight-Bookings)
 
-* 拼车: [1094. Car Pooling](https://leetcode.com/problems/car-pooling/description/)
+* 拼车: [1094. Car Pooling](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1094-Car-Pooling)
 
 #### 二维差分 (2-D Difference Array)
 
-* 子矩阵加1: [2536. Increment Submatrices by One](https://leetcode.com/problems/increment-submatrices-by-one/)
+* 子矩阵加1: [2536. Increment Submatrices by One](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2536-Increment-Submatrices-by-One)
