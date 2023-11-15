@@ -143,6 +143,9 @@
 
 * 所有路径和: [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/)
 
+* :red_circle: 最大化树上可以取走的金币数额: [2925. Maximum Score After Applying Operations on a Tree]()
+    * 把Graph里DFS的代码思路 应用到 Tree里DFS
+
 
 
 
