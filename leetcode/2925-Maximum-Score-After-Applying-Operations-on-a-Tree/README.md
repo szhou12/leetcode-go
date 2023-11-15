@@ -6,7 +6,7 @@
     a. operation: 相当于每个node有一个不同数额的金币，一次取走了就没了。
     b. healthy: 每一条path至少要有一个node是不能取走金币的。
     c. 目的: 最大化取走的金币总数额。
-2. Tree $\Rightarrow$ 天然的Recursive结构 $\Rightarrow$ 95% Tree类结构考虑使用Recursion解题 $\Rightarrow$ DFS $\Rightarrow$ 把Graph里DFS的代码思路 应用到 Tree里DFS
+2. Tree :arrow_right: 天然的Recursive结构 :arrow_right: 95% Tree类结构考虑使用Recursion解题 :arrow_right: DFS :arrow_right: 把Graph里DFS的代码思路 应用到 Tree里DFS
 3. Generalization: 如何把 root的所求 泛化到 树上任何node为root的subtree的所求？
     * 考虑 树上任何node为root的subtree
     * 如果要保证这棵subtree每一条到leaf的path都"healthy"，那么可以归结为两种情况：
