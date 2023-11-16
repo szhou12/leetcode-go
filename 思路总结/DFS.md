@@ -146,6 +146,8 @@
 * :red_circle: 最大化树上可以取走的金币数额: [2925. Maximum Score After Applying Operations on a Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2925-Maximum-Score-After-Applying-Operations-on-a-Tree)
     * 把Graph里DFS的代码思路 应用到 Tree里DFS
 
+* :red_circle: 找到所有可以形成回文串的路径: [2791. Count Paths That Can Form a Palindrome in a Tree]()
+
 
 
 

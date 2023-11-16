@@ -144,3 +144,7 @@ func treeRecursion(TreeNode x, ...) ... {
 
 * 二叉树中连环，计算环的长度: [2509. Cycle Length Queries in a Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2509-Cycle-Length-Queries-in-a-Tree)
     * 与一般的 LCA 的题型要简单，不一定非要用recursion，因为任意node的parent可以计算得到 `parent(X) = X/2`
+
+
+## Find Paths in Tree
+* :red_circle: 找到所有可以形成回文串的路径: [2791. Count Paths That Can Form a Palindrome in a Tree]()
