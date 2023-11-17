@@ -25,7 +25,7 @@ func dfs(cur int, parent int, state int, next [][]Pair, count map[int]int64, res
 	if cnts, ok := count[state]; ok {
 		*res += cnts
 	}
-	// (u, root) differs from (v, root) by ONLY 1 char
+	// (u, root) != (v, root) by ONLY 1 char
 	for i := 0; i < 26; i++ {
 		s := state ^ (1 << i)
 		if cnts, ok := count[s]; ok {
