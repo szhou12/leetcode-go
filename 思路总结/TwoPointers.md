@@ -236,6 +236,10 @@ func slidingWindow(s string) int {
 
 * :red_circle: 最长的元素相同的子串: [2831. Find the Longest Equal Subarray](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2831-Find-the-Longest-Equal-Subarray)
 
+* :orange_circle: 在无限增殖的数组中找sum为target的最短子数组: [2875. Minimum Size Subarray in Infinite Array]()
+    * Sliding Window: 需要modify. Sliding Window 是找subarray sum的总个数，这里是找其中最短的那一个subarray
+    * 无限增殖 = 所有元素按顺序倍数增加 = cyclic = modulo 来简化
+
 ### 非 模版题
 * :red_circle: :secret: k步内收集最多果子: [2106. Maximum Fruits Harvested After at Most K Steps](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2106-Maximum-Fruits-Harvested-After-at-Most-K-Steps)
     * Sliding Window (非) + Prefix Sum
