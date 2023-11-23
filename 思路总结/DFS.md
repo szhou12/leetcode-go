@@ -56,35 +56,35 @@
 
 ## 岛屿沉没 - 找neighbor
 
-* 岛屿数量: [200. Number of Islands]()
+* 岛屿数量: [200. Number of Islands](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0200-Number-of-Islands)
 
-* 飞地的数量: [1020. Number of Enclaves]()
+* 飞地的数量: [1020. Number of Enclaves](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1020-Number-of-Enclaves)
 
-* 封闭岛屿数量: [1254. Number of Closed Islands]()
+* 封闭岛屿数量: [1254. Number of Closed Islands](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1254-Number-of-Closed-Islands)
     * **突破点**: 提前沉没掉**贴着上、下、左、右边界**的岛屿, 剩下的就是符合题意的岛屿
-    * 提前沉没岛屿的姐妹题: [1905. Count Sub Islands]()
+    * 提前沉没岛屿的姐妹题: [1905. Count Sub Islands](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1905-Count-Sub-Islands)
 
-* 子岛屿数量: [1905. Count Sub Islands]()
+* 子岛屿数量: [1905. Count Sub Islands](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1905-Count-Sub-Islands)
     * **突破点**: 提前沉没掉**grid2中还是陆地但 grid1中已经是海水**的岛屿, 剩下的就是符合题意的岛屿
     * 提前沉没岛屿的姐妹题: [1254. Number of Closed Islands]()
 
-* 最大岛屿面积: [695. Max Area of Island]()
+* 最大岛屿面积: [695. Max Area of Island](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1254-Number-of-Closed-Islands)
 
-* 最大人工岛屿面积: [827. Making A Large Island]()
+* 最大人工岛屿面积: [827. Making A Large Island](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0827-Making-A-Large-Island)
     * 分两步: 1. DFS记录每个岛屿的面积; 2. 遍历所有为0的cell，尝试连接邻居岛屿，并统计连接所得最大面积
 
-* 四面八方, 潮水涌来 [417. Pacific Atlantic Water Flow]()
+* 四面八方, 潮水涌来 [417. Pacific Atlantic Water Flow](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0417-Pacific-Atlantic-Water-Flow)
     * 上、下、左、右边界出发，分别向内做DFS
 
-* [130. Surrounded Regions]()
+* 包围区域: [130. Surrounded Regions](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0130-Surrounded-Regions)
 
 * Roblox - Candy Crush
 
 ## 类DP
 
-* :red_circle: 特殊全排列: [2741. Special Permutations]()
+* :red_circle: 特殊全排列: [2741. Special Permutations](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2741-Special-Permutations)
 
-* :red_circle: 结合字符串: [2746. Decremental String Concatenation]()
+* :red_circle: 结合字符串: [2746. Decremental String Concatenation](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2746-Decremental-String-Concatenation)
 
 
 ## Permutation
