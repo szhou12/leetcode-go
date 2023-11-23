@@ -66,7 +66,7 @@
 
 * 子岛屿数量: [1905. Count Sub Islands](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1905-Count-Sub-Islands)
     * **突破点**: 提前沉没掉**grid2中还是陆地但 grid1中已经是海水**的岛屿, 剩下的就是符合题意的岛屿
-    * 提前沉没岛屿的姐妹题: [1254. Number of Closed Islands]()
+    * 提前沉没岛屿的姐妹题: [1254. Number of Closed Islands](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1254-Number-of-Closed-Islands)
 
 * 最大岛屿面积: [695. Max Area of Island](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1254-Number-of-Closed-Islands)
 
@@ -89,10 +89,10 @@
 
 ## Permutation
 
-* :red_circle: 全排列: [46. Permutations]()
+* :red_circle: 全排列: [46. Permutations](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0046-Permutations)
     * Permutation 类型题 **母题**
 
-* :red_circle: 有重复元素的全排列: [47. Permutations II]()
+* :red_circle: 有重复元素的全排列: [47. Permutations II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0047-Permutations-II)
 
 
 
