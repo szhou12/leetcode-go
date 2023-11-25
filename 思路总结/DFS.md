@@ -101,24 +101,24 @@
 
 ### Subsets
 
-* 基础题 [78. Subsets]()
+* 基础题 [78. Subsets](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0078-Subsets)
     * 有两种写法, **都要掌握！！！**
-    * 写法一 适合[90. Subsets II]()
-    * 写法二 适合[491. Increasing Subsequences]()
+    * 写法一 适合[90. Subsets II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0090-Subsets-II)
+    * 写法二 适合[491. Increasing Subsequences](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0491-Increasing-Subsequences)
 
-* 长度为k [77. Combinations]()
+* 长度为k [77. Combinations](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0077-Combinations)
 
-* 有重复元素 - Type I [90. Subsets II]()
+* 有重复元素 - Type I [90. Subsets II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0090-Subsets-II)
     * **Sort** 去重
     * All Subsets 第一种写法
 
-* 有重复元素 - Type II [491. Increasing Subsequences]()
+* 有重复元素 - Type II [491. Increasing Subsequences](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0491-Increasing-Subsequences)
     * 当前层 **Map** 去重. 注意：是每一层一个新 Map, 而不是一个 全局Map 因为层与层之间的相同元素**不能**去重
     * All Subsets 第二种写法
 
-* 找IP地址 [93. Restore IP Addresses]()
+* 找IP地址 [93. Restore IP Addresses](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0093-Restore-IP-Addresses)
 
-* 当前元素正负值 [494. Target Sum]()
+* 当前元素正负值 [494. Target Sum](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0494-Target-Sum)
 
 ### Combination Sum
 * 0039, 0040解法属于一类；0077, 0216解法属于一类
