@@ -123,13 +123,13 @@
 ### Combination Sum
 * 0039, 0040解法属于一类；0077, 0216解法属于一类
 
-* [39. Combination Sum]()
+* [39. Combination Sum](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0039-Combination-Sum)
 
-* [40. Combination Sum II]()
+* [40. Combination Sum II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0040-Combination-Sum-II)
 
-* [77. Combinations]()
+* [77. Combinations](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0077-Combinations)
 
-* [216. Combination Sum III]()
+* [216. Combination Sum III](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0216-Combination-Sum-III)
 
 
 
