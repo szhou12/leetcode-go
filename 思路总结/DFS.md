@@ -134,14 +134,14 @@
 
 
 ## 图的遍历
-* DAG图中找从`node 0`到`node n-1`的所有合法路径: [797. All Paths From Source to Target]()
+* DAG图中找从`node 0`到`node n-1`的所有合法路径: [797. All Paths From Source to Target](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0797-All-Paths-From-Source-to-Target)
 
-* 判断在有向有环图中能否从`node 0`到达所有其他 nodes: [841. Keys and Rooms]()
+* 判断在有向有环图中能否从`node 0`到达所有其他 nodes: [841. Keys and Rooms](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0841-Keys-and-Rooms)
     * 用 hashmap `visited`记录遍历过的节点
 
 ### 树的深搜遍历
 
-* 所有路径和: [129. Sum Root to Leaf Numbers]()
+* 所有路径和: [129. Sum Root to Leaf Numbers](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0129-Sum-Root-to-Leaf-Numbers)
 
 * :red_circle: 最大化树上可以取走的金币数额: [2925. Maximum Score After Applying Operations on a Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2925-Maximum-Score-After-Applying-Operations-on-a-Tree)
     * 把Graph里DFS的代码思路 应用到 Tree里DFS
