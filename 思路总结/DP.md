@@ -18,6 +18,7 @@
 * [二维/高维 DP](#二维高维-dp)
     * [一维种类型](#一维种类型)
     * [区间型 (interval)](#区间型-interval)
+    * [组合问题 (Combinatorics)](#组合问题-combinatorics)
 
 
 ## 基础题
@@ -208,3 +209,6 @@
     * 方法1: **二维DP**. 外层循环length, 内层循环starting position
     * 方法2: DP Memoization (Recursion + DP), 用 DP memo 来剪枝
  
+### 组合问题 (Combinatorics)
+* :red_circle: 包含'leet'四个字母的字符串个数: [2930. Number of Strings Which Can Be Rearranged to Contain Substring]()
+    * 用 DP 思想翻译 数学中的组合问题
