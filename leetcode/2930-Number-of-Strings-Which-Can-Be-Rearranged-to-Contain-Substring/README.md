@@ -18,13 +18,19 @@
     * `DP[i][a][b][c] += DP[i-1][a][b][c]` 所有其他的情况, 不取第i个 == `C(n-1, m)`
 ### Math: PIE (inclusion-exclusion)
 #### Intuition
-$A =$ the string has <= 1 'e'
+$A =$ the string has $\leq 1$ 'e'
 
-$B =$ the string has 0 'l'
+$B =$ the string has no 'l'
 
-$C =$ the string has 0 't'
+$C =$ the string has no 't'
 
-$|A\cup B\cup C| = $ the number of strings that have <= 1 'e' or no 'l' or no 't' = the total number of BAD strings
+$|A\cup B\cup C| =$ the number of strings that have <= 1 'e' or no 'l' or no 't' = the total number of BAD strings
+
+By PIE (inclusion-exclusion), $|A\cup B\cup C| = |A| + |B| + |C| - (|A\cap B|+|A\cap C|+|B\cap C|) + |A\cap B \cap C|$
+
+$|A| = n\cdot 25^{n-1} + 25^n$
+1. no 'e': $25^n$
+2. exactly 1 'e': $n\cdot 25^{n-1}$ 
 
 * :exclamation: 编者注:
     * DP 的code确实能通过测试
