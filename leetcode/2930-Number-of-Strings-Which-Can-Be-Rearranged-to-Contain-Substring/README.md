@@ -30,15 +30,36 @@ By PIE (inclusion-exclusion), $|A\cup B\cup C| = |A| + |B| + |C| - (|A\cap B|+|A
 
 $|A| = n\cdot 25^{n-1} + 25^n$
 1. no 'e': $25^n$
-2. exactly 1 'e': $n\cdot 25^{n-1}$ 
+2. exactly one 'e': ${n \choose 1} \cdot 25^{n-1}$ (选一个位子放'e'，其余位子放除了'e'任意字母)
+
+$|B| = 25^n$
+
+$|C| = 25^n$
+
+$|B\cap C| = 24^n$
+
+$|A\cap B| = n\cdot 24^{n-1} + 24^n$
+1. no 'e' + no 'l': $24^n$
+2. exactly one 'e' + no 'l': ${n \choose 1} \cdot 24^{n-1}$ (选一个位子放'e'，其余位子放除了'e'和'l'任意字母)
+
+$|A\cap C| = n\cdot 24^{n-1} + 24^n$
+1. no 'e' + no 't': $24^n$
+2. exactly one 'e' + no 't': ${n \choose 1} \cdot 24^{n-1}$ (选一个位子放'e'，其余位子放除了'e'和't'任意字母)
+
+$|A\cap B\cap C| = n\cdot 23^{n-1} + 23^n$
+1. no 'e' + no 'l' + no 't': $23^n$
+2. exactly one 'e' + no 'l' + no 't': ${n \choose 1} \cdot 23^{n-1}$ (选一个位子放'e'，其余位子放除了'e'、'l'、't'任意字母)
+
+Good strings = Total strings - Bad strings
+
+i.e., $26^n - [|A\cup B\cup C| = |A| + |B| + |C| - (|A\cap B|+|A\cap C|+|B\cap C|) + |A\cap B \cap C|]$
 
 * :exclamation: 编者注:
     * DP 的code确实能通过测试
     * 我也有尝试推导本题的数学表达式，得出的是: $C(n, 4) \times \frac{P(4,4)}{P(2,2)} \times 26^{n-4} = C(n, 4) \times 12 \times 26^{n-4}$
     * 即, 从n个中挑出4个位子放入 'l', 'e', 'e', 't'进行排列，其余位子可以放入任意26个字母中的一个
-    * 但是！这个表达式的计算结果与 DP 的结果不一致。例如: n=5时, 表达式得到 1560，而 DP 得到 1460。当 n > 4时，表达式的结果总会大于 DP 的结果
-    * 目前并没有明白为什么会算的不同。如果对 1460 进行分解质因数得: $1460 = 2^2 \times 5 \times 73$，并不是 12 (leet的所有排列数) 的倍数
-    * 网上的参考答案有从逆向角度来解题，使用 PIE (inclusion-exclusion)，目前并没有完全理解
+    * 但是！这个表达式的计算结果对导致重复计算。例如: n=5时, 表达式得到 1560，而 DP 得到 1460。当 n > 4时，表达式的结果总会大于 DP 的结果
+    * 网上的参考答案有从逆向角度来解题，使用 PIE (inclusion-exclusion)，虽然繁琐，但可以避免重复计算
 
 Time Complexity = $O(2\times 3\times 2\times 26\times n) = O(n)$
 
