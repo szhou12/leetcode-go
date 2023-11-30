@@ -1,6 +1,7 @@
 package leetcode
 
-var M = int(1e9+7)
+var M = int(1e9 + 7)
+
 func stringCount(n int) int {
 	dp := make([][][][]int, n+1)
 	for i := 0; i <= n; i++ {
@@ -13,7 +14,7 @@ func stringCount(n int) int {
 		}
 	}
 
-	// base case 
+	// base case
 	dp[0][0][0][0] = 1
 
 	// recurrence
@@ -23,15 +24,15 @@ func stringCount(n int) int {
 				for c := 0; c <= 1; c++ {
 					// compute dp[i][a][b][c]
 					for ch := 'a'; ch <= 'z'; ch++ {
-						if ch == 'l' && a == 1 {
+						if ch == 'l' && a == 1 { // 第i个是l, 且取第i个使dp[i]包含至少1个l (a==1)
 							dp[i][1][b][c] += dp[i-1][0][b][c]
-						} else if ch == 'e' && b == 1 {
+						} else if ch == 'e' && b == 1 { // 第i个是e, 且取第i个使dp[i]包含至少1个e (b==1)
 							dp[i][a][1][c] += dp[i-1][a][0][c]
-						} else if ch == 'e' && b == 2 {
+						} else if ch == 'e' && b == 2 { // 第i个是e, 且取第i个使dp[i]包含至少2个e (b==2)
 							dp[i][a][2][c] += dp[i-1][a][1][c]
-						} else if ch == 't' && c == 1 {
+						} else if ch == 't' && c == 1 { // 第i个是t, 且取第i个使dp[i]包含至少1个t (c==1)
 							dp[i][a][b][1] += dp[i-1][a][b][0]
-						} else {
+						} else { // 不取第i个 == C(n-1, m)
 							dp[i][a][b][c] += dp[i-1][a][b][c]
 						}
 						dp[i][a][b][c] %= M
