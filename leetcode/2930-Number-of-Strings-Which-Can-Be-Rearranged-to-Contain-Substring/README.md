@@ -1,7 +1,7 @@
 # [2930. Number of Strings Which Can Be Rearranged to Contain Substring](https://leetcode.com/problems/number-of-strings-which-can-be-rearranged-to-contain-substring/description/)
 
 ## Solution idea
-### DP
+### 1. DP
 #### Key Idea: 大多数数学中的组合问题都是通过 DP 来推导得到的
 * 组合公式: `C(n, m) = C(n-1, m) + C(n-1, m-1)`
 * 转换成 DP 等价于: `dp[n][m] = dp[n-1][m] + dp[n-1][m-1]`
@@ -16,8 +16,10 @@
     * `DP[i][a][2][c] += DP[i-1][a][1][c]` 如果第i个字母是 'e'，且取第i个使 `DP[i]` 包含至少2个'e' (`b==2`)
     * `DP[i][a][b][1] += DP[i-1][a][b][0]` 如果第i个字母是 't'，且取第i个使 `DP[i]` 包含至少1个't' (`c==1`)
     * `DP[i][a][b][c] += DP[i-1][a][b][c]` 所有其他的情况, 不取第i个 == `C(n-1, m)`
-### Math: PIE (inclusion-exclusion)
-#### Intuition
+
+Time Complexity = $O(2\times 3\times 2\times 26\times n) = O(n)$
+
+### 2. Math: PIE (inclusion-exclusion)
 $A =$ the string has $\leq 1$ 'e'
 
 $B =$ the string has no 'l'
@@ -50,19 +52,16 @@ $|A\cap B\cap C| = n\cdot 23^{n-1} + 23^n$
 1. no 'e' + no 'l' + no 't': $23^n$
 2. exactly one 'e' + no 'l' + no 't': ${n \choose 1} \cdot 23^{n-1}$ (选一个位子放'e'，其余位子放除了'e'、'l'、't'任意字母)
 
-Good strings = Total strings - Bad strings
-
-i.e., $26^n - [|A\cup B\cup C| = |A| + |B| + |C| - (|A\cap B|+|A\cap C|+|B\cap C|) + |A\cap B \cap C|]$
+Good strings = Total strings - Bad strings = $26^n - |A\cup B\cup C|$
 
 * :exclamation: 编者注:
-    * DP 的code确实能通过测试
     * 我也有尝试推导本题的数学表达式，得出的是: $C(n, 4) \times \frac{P(4,4)}{P(2,2)} \times 26^{n-4} = C(n, 4) \times 12 \times 26^{n-4}$
     * 即, 从n个中挑出4个位子放入 'l', 'e', 'e', 't'进行排列，其余位子可以放入任意26个字母中的一个
-    * 但是！这个表达式的计算结果对导致重复计算。例如: n=5时, 表达式得到 1560，而 DP 得到 1460。当 n > 4时，表达式的结果总会大于 DP 的结果
-    * 网上的参考答案有从逆向角度来解题，使用 PIE (inclusion-exclusion)，虽然繁琐，但可以避免重复计算
+    * 但是！这个表达式会导致重复计算。例如: n=5时, 表达式得到 1560，而 DP 得到 1460。当 n > 4时，表达式的结果总会大于 DP 的结果
+    * 网上的参考答案从逆向角度来解题，使用 PIE (inclusion-exclusion)，虽然繁琐，但可以避免重复计算
 
-Time Complexity = $O(2\times 3\times 2\times 26\times n) = O(n)$
+
 
 ## Resource
-- DP: [每日一题】LeetCode 2930. Number of Strings Which Can Be Rearranged to Contain Substring](https://www.youtube.com/watch?v=0V95_GZH6DM&ab_channel=HuifengGuan)
+- DP: [【每日一题】LeetCode 2930. Number of Strings Which Can Be Rearranged to Contain Substring](https://www.youtube.com/watch?v=0V95_GZH6DM&ab_channel=HuifengGuan)
 - PIE (inclusion-exclusion): [Inclusion and exclusion principle, detailed explanation, faster than 100%](https://leetcode.com/problems/number-of-strings-which-can-be-rearranged-to-contain-substring/solutions/4277290/inclusion-and-exclusion-principle-detailed-explanation-faster-than-100/)
