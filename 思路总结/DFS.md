@@ -152,20 +152,20 @@
 
 
 ## Min-Max Strategy
-* :red_circle: 先手能否赢: [464. Can I Win]()
+* :red_circle: 先手能否赢: [464. Can I Win](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0464-Can-I-Win)
 
-* :red_circle: 石头游戏1: [877. Stone Game]()
+* :red_circle: 石头游戏1: [877. Stone Game](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0877-Stone-Game)
 
-* :yellow_circle: 判断赢家: [486. Predict the Winner]()
+* :yellow_circle: 判断赢家: [486. Predict the Winner](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0486-Predict-the-Winner)
     * 与 0877 完全一样的解法
 
-* :yellow_circle: 石头游戏2: [1140. Stone Game II]()
+* :yellow_circle: 石头游戏2: [1140. Stone Game II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1140-Stone-Game-II)
 
-* :green_circle: 石头游戏3: [1406. Stone Game III]()
+* :green_circle: 石头游戏3: [1406. Stone Game III](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1406-Stone-Game-III)
     * 与 Stone Game II 基本完全一样的解法
 
-* :green_circle: 石头游戏4: [1510. Stone Game IV]()
+* :green_circle: 石头游戏4: [1510. Stone Game IV](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1510-Stone-Game-IV)
 
-* :red_circle: 石头游戏5: [1563. Stone Game V]()
+* :red_circle: 石头游戏5: [1563. Stone Game V](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1563-Stone-Game-V)
 
-* :red_circle: 石头游戏9: [2029. Stone Game IX]()
+* :red_circle: 石头游戏9: [2029. Stone Game IX](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2029-Stone-Game-IX)
