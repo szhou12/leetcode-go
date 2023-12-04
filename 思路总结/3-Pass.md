@@ -25,11 +25,11 @@
     * 入手着眼点: **分界点** 的物理意义 
         * 分界点定义为substring中differ的那个char, 看两边保持元素对应相同的条件下最远可以走多远
 
-* 所有subarray的最小值的和: [907. Sum of Subarray Minimums]()
+* 所有subarray的最小值的和: [907. Sum of Subarray Minimums](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0907-Sum-of-Subarray-Minimums)
     * **3-Pass + Stack (find next smaller element)**
     * 入手着眼点: 从 **分界点** 的物理意义 出发
 
-* 是否存在递增的triplet: [334. Increasing Triplet Subsequence]()
+* 是否存在递增的triplet: [334. Increasing Triplet Subsequence](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0334-Increasing-Triplet-Subsequence)
 
 
 ## 求Max or Min/优化类型题
