@@ -120,6 +120,9 @@
 
 * 当前元素正负值 [494. Target Sum](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0494-Target-Sum)
 
+* :yellow_bulb: 长度为k，组成字母无重复的最大值子序列的个数: [2842. Count K-Subsequences of a String With Maximum Beauty](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2842-Count-K-Subsequences-of-a-String-With-Maximum-Beauty)
+    * 将输入字符串转化：使用 `counter[]` 记录每个字母出现的次数，再进行 DFS 可以优化时间复杂度
+
 ### Combination Sum
 * 0039, 0040解法属于一类；0077, 0216解法属于一类
 

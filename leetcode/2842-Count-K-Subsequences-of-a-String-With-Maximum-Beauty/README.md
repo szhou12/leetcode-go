@@ -9,7 +9,7 @@
 * 再在排好序的 `counter[]` 上进行 DFS。每一次选择加入当前字母时，当前subsequence组合数就乘上加入字母对应的次数 (因为是从有次数个相同字母中选择一个)
 * Time complexity = $O(n) + O(26) + O(26\log 26) + O(k) + O(26^k)$
 
-#### 我的解法 (会超时:exclamation:)
+#### 我的解法 (会超时 :exclamation:)
 * 不做任何变换，直接在输入字符串 `s` 上进行 DFS 穷举出所有符合要求的子序列
 * Time complexity = $O(n^k)$
 ```go
