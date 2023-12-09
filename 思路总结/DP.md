@@ -16,8 +16,9 @@
     * [类型三: String Matching + 编辑距离](#类型三-string-matching--编辑距离)
     * [类型四: 子序列个数](#类型四-子序列个数)
 * [二维/高维 DP](#二维高维-dp)
-    * [一维种类型](#一维种类型)
+    * [位置X种类](#位置x种类)
     * [区间型 (interval)](#区间型-interval)
+    * [切绳子](#切绳子)
     * [组合问题 (Combinatorics)](#组合问题-combinatorics)
 
 
@@ -193,7 +194,7 @@
 
 ## 二维/高维 DP
 
-### 一维种类型
+### 位置X种类
 #### 第一维 = 位置 (index); 第二维 = 值的种类 (value)
 
 * :red_circle: 奇偶变换数组中挑选总和最大化: [2786. Visit Array Positions to Maximize Score](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2786-Visit-Array-Positions-to-Maximize-Score)
@@ -208,7 +209,12 @@
 * 猜测数高了还是低了II: [375. Guess Number Higher or Lower II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0375-Guess-Number-Higher-or-Lower-II)
     * 方法1: **二维DP**. 外层循环length, 内层循环starting position
     * 方法2: DP Memoization (Recursion + DP), 用 DP memo 来剪枝
- 
+
+### 切绳子
+* **题目问法: 一个大字符串/数组，分成 k 个区间，要求每个区间满足一些条件，求整体的一个最优规划。**
+
+* :red_circle: 最小变换得到k个semi-palindromes: [2911. Minimum Changes to Make K Semi-palindromes](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2911-Minimum-Changes-to-Make-K-Semi-palindromes)
+
 ### 组合问题 (Combinatorics)
 * :red_circle: 包含'leet'四个字母的字符串个数: [2930. Number of Strings Which Can Be Rearranged to Contain Substring](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2930-Number-of-Strings-Which-Can-Be-Rearranged-to-Contain-Substring)
     * 用 DP 思想 翻译 数学中的组合问题

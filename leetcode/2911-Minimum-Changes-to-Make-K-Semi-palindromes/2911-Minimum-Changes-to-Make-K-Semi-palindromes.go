@@ -16,7 +16,7 @@ func minimumChanges(s string, k int) int {
 			length := j-i+1
 			substr[i][j] = math.MaxInt / 2 // initial state: maybe there is no way to make substring a semi-palindrome
 			// find a proper divisor d
-			for d := 1; d < length; d++ {
+			for d := 1; d < length; d++ { // 这里可以优化，但不易想出写对: for d := 1; d <= length/2; d++
 				if length % d != 0 {
 					continue
 				}
