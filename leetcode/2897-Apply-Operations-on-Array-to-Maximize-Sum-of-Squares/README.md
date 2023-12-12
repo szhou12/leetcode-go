@@ -19,7 +19,10 @@
     2. Step 2: 选 k 个元素 相当于 loop k 遍 从大到小选元素。如何从大到小选？通过 OR 操作把每一个 bit位的 1 尽可能往“上”吸。每个数的大小想象water level，我们想把 1 尽可能地“浮”在水面上。因为这样越靠近“水面”的数每个bit位的1越多，它的值就越大。
 
 Time complexity = $O(32n) + O(32k) = O(n)$
-    
+
+$$
+x^2 + y^2 < (x-d)^2 + (y+d)^2 = x^2 + y^2 + 2d(y-x) + 2d^2
+$$
 
 ## Resource
 [【每日一题】LeetCode 2897. Apply Operations on Array to Maximize Sum of Squares](https://www.youtube.com/watch?v=96xk1INe134&t=637s&ab_channel=HuifengGuan)
