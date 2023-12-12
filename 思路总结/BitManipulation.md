@@ -13,5 +13,5 @@
     * Trick 2: 判断一个整数 第k bit位 是否有1: `num>>k & 1 == 1`
 
 ## Logic Operation: AND, OR, XOR
-* :red_circle: [2897. Apply Operations on Array to Maximize Sum of Squares]()
+* :red_circle: [2897. Apply Operations on Array to Maximize Sum of Squares](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares)
     * AND, OR对数值大小的影响
