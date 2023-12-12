@@ -12,3 +12,6 @@
     * Trick 1: 左边界从右往左移动。固定左边界，右边界尽量缩短。
     * Trick 2: 判断一个整数 第k bit位 是否有1: `num>>k & 1 == 1`
 
+## Logic Operation: AND, OR, XOR
+* :red_circle: [2897. Apply Operations on Array to Maximize Sum of Squares]()
+    * AND, OR对数值大小的影响
