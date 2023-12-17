@@ -11,6 +11,7 @@
     * [解题思路](#解题思路)
     * [有向图类型](#有向图类型)
     * [无向图类型](#无向图类型)
+* [Floyd-Warshall Algorithm](#floyd-warshall-algorithm)
 
 ## 基础题: 层级遍历
 
@@ -235,3 +236,32 @@
 * :red_circle: :secret: **找到所有最矮树的根节点:** [310. Minimum Height Trees](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0310-Minimum-Height-Trees)
 
 * :red_circle: :secret: :lock: **所有节点到到环的最短距离:** [2204. Distance to a Cycle in Undirected Graph](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2204-Distance-to-a-Cycle-in-Undirected-Graph)
+
+
+## Floyd-Warshall Algorithm
+* **Use Case**: 求任意两个节点之间的最短距离
+* Template
+```go
+for k := 0; k < n; k++ { // k = 中间节点
+    for i := 0; i < n; i++ {
+        for j := 0; j < n; j++ {
+            dp[i][j] = min(dp[i][j], dp[i][k] + dp[k][j])
+        }
+    }
+}
+```
+* Template Variant
+```go
+for _, road := range roads {
+    a, b, weight := road[0], road[1], road[2]
+    for i := 0; i < n; i++ {
+        for j := 0; j < n; j++ {
+            dp[i][j] = min(dp[i][j], dp[i][a] + weight + dp[b][j])
+            dp[i][j] = min(dp[i][j], dp[i][b] + weight + dp[a][j])
+        
+        }
+    }
+}
+```
+
+* :red_circle: 关闭节点的所有集合: [2959. Number of Possible Sets of Closing Branches](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2959-Number-of-Possible-Sets-of-Closing-Branches)
