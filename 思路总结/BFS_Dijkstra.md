@@ -239,7 +239,8 @@
 
 
 ## Floyd-Warshall Algorithm
-* **Use Case**: 求任意两个节点之间的最短距离
+* :star: **适用题目的特征:**
+    * 求图中**任意两个节点**之间的最短距离
 * Template
 ```go
 for k := 0; k < n; k++ { // k = 中间节点
@@ -258,7 +259,6 @@ for _, road := range roads {
         for j := 0; j < n; j++ {
             dp[i][j] = min(dp[i][j], dp[i][a] + weight + dp[b][j])
             dp[i][j] = min(dp[i][j], dp[i][b] + weight + dp[a][j])
-        
         }
     }
 }
