@@ -241,6 +241,7 @@
 ## Floyd-Warshall Algorithm
 * :star: **适用题目的特征:**
     * 求图中**任意两个节点**之间的最短距离
+    * Constraint 比较宽松: $n \leq 100$
 * Template
 ```go
 for k := 0; k < n; k++ { // k = 中间节点
