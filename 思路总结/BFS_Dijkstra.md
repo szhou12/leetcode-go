@@ -266,3 +266,5 @@ for _, road := range roads {
 ```
 
 * :red_circle: 关闭节点的所有集合: [2959. Number of Possible Sets of Closing Branches](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2959-Number-of-Possible-Sets-of-Closing-Branches)
+
+* :green_circle: 寻找最少邻居的城市: [1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance]()
