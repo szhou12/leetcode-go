@@ -11,7 +11,7 @@
     * [解题思路](#解题思路)
     * [有向图类型](#有向图类型)
     * [无向图类型](#无向图类型)
-* [Floyd-Warshall Algorithm](#floyd-warshall-algorithm)
+* [Floyd-Warshall 算法](#floyd-warshall-algorithm)
 
 ## 基础题: 层级遍历
 
@@ -267,4 +267,4 @@ for _, road := range roads {
 
 * :red_circle: 关闭节点的所有集合: [2959. Number of Possible Sets of Closing Branches](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2959-Number-of-Possible-Sets-of-Closing-Branches)
 
-* :green_circle: 寻找最少邻居的城市: [1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance]()
+* :green_circle: 寻找最少邻居的城市: [1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1334-Find-the-City-With-the-Smallest-Number-of-Neighbors-at-a-Threshold-Distance)
