@@ -269,5 +269,5 @@ for _, road := range roads {
 
 * :green_circle: 寻找最少邻居的城市: [1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1334-Find-the-City-With-the-Smallest-Number-of-Neighbors-at-a-Threshold-Distance)
 
-* :green_circle: 设计题-图上任意两点最短路径计算器: [2642. Design Graph With Shortest Path Calculator]()
+* :green_circle: 设计题-图上任意两点最短路径计算器: [2642. Design Graph With Shortest Path Calculator](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2642-Design-Graph-With-Shortest-Path-Calculator)
     * Floyd算法在**有向图**上的应用
