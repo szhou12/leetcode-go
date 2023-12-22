@@ -1,5 +1,10 @@
 # Prefix Sum & Difference Array
 
+## 目录
+* [一维差分](#一维差分-1-d-difference-array)
+* [二维差分](#二维差分-2-d-difference-array)
+* [Sweep Line + Diff Array](#sweep-line--diff-array)
+
 ## Definition of Prefix Sum
 
 ```
@@ -50,14 +55,17 @@ diff:  1,   2,  2, -1,  4
     2. 在计算差分数组时，要时刻注意越界的情况。e.g. `diff[r+1]-val`中的 `r+1`当 `r`指向原数组最后一个元素时就会发生越界。
     3. 一般长度为 `n` 的原数组，生成长度为`n+1`的`diff[]`和`sum[]`。这样，1. 方便规避index越界的情况；2. 方便计算`diff[0]`
 
-### 例题
 
-#### 一维差分 (1-D Difference Array)
+## 一维差分 (1-D Difference Array)
 
 * 航班预订统计: [1109. Corporate Flight Bookings](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1109-Corporate-Flight-Bookings)
 
 * 拼车: [1094. Car Pooling](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1094-Car-Pooling)
 
-#### 二维差分 (2-D Difference Array)
+## 二维差分 (2-D Difference Array)
 
 * 子矩阵加1: [2536. Increment Submatrices by One](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2536-Increment-Submatrices-by-One)
+
+## Sweep Line + Diff Array
+
+* :red_circle: "好"分隔的总数: [2963. Count the Number of Good Partitions]()
