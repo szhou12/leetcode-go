@@ -25,8 +25,8 @@ diff[0] = nums[0] - 0,
 diff[i] = nums[i] - nums[i-1]
 ```
 
-* **规律1**: 差分数组中求第i个元素的前缀和:
-    * **规律1总结**: 差分数组第i个元素的前缀和 = 原数组第i个元素的值
+* **性质 1**: 差分数组中求第i个元素的前缀和:
+    * **性质 1 总结**: 差分数组第i个元素的前缀和 = 原数组第i个元素的值
 ```
 presum[i] = presum[i-1] + diff[i]
           = diff[0]   + diff[1]             + ... + diff[i]
@@ -36,8 +36,8 @@ presum[i] = presum[i-1] + diff[i]
 presum[0] = diff[0]
 ```
 
-* **规律2**: 对原数组`nums[l...r]` (双闭区间) 每个元素都加上 `val` 时，映射到差分数组上就是: `diff[l]+val` 和 `diff[r+1]-val`
-    * **规律2总结**:
+* **性质 2**: 对原数组`nums[l...r]` (双闭区间) 每个元素都加上 `val` 时，映射到差分数组上就是: `diff[l]+val` 和 `diff[r+1]-val`
+    * **性质 2 总结**:
         * 思路: 对原数组`nums`的某个区间/subarray`nums[l...r]`的每个元素都加上一个值 `val`, 实际上是对差分数组的 `diff[l]+val` 和 `diff[r+1]-val`
         * 结果: 对变化后的差分数组`diff`求每个元素的前缀和 $\Rightarrow $ 变化后的原数组
     * 举个例子:
@@ -50,9 +50,11 @@ diff:  1,   2,  2, -1,  4
 ```
 
 * **实现细节**
-    1. 由**规律1**可知，实现代码中需要开辟两个数组`diff[]`和`presum[]`，`diff[]`是差分数组，`presum[]`用来计算**差分数组的前缀和**。
+    1. 由**性质 1**可知，实现代码中需要开辟两个数组`diff[]`和`presum[]`，`diff[]`是差分数组，`presum[]`用来计算**差分数组的前缀和**。
     2. 在计算差分数组时，要时刻注意越界的情况。e.g. `diff[r+1]-val`中的 `r+1`当 `r`指向原数组最后一个元素时就会发生越界。
-    3. 一般长度为 `n` 的原数组，生成长度为`n+1`的`diff[]`和`presum[]`。这样，1. 方便规避index越界的情况；2. 方便计算`diff[0]`
+    3. 一般长度为`n`的原数组`nums[]`，生成长度为`n+1`的`diff[]`和`presum[]`。
+        1. 方便规避index越界的情况
+        2. 方便计算`diff[0]`
 
 
 ## 一维差分 (1-D Difference Array)
@@ -70,3 +72,5 @@ diff:  1,   2,  2, -1,  4
 * :red_circle: "好"分隔的总数: [2963. Count the Number of Good Partitions](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2963-Count-the-Number-of-Good-Partitions)
 
 ## 整体区间的增减
+
+* :red_circle: 是否可以消掉所有元素为0: [2772. Apply Operations to Make All Array Elements Equal to Zero]()
