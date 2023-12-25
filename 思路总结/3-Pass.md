@@ -34,24 +34,24 @@
 
 ## 求Max or Min/优化类型题
 
-* 找三个不重叠k-长subarray的最大和的index: [689. Maximum Sum of 3 Non-Overlapping Subarrays]()
+* 找三个不重叠k-长subarray的最大和的index: [689. Maximum Sum of 3 Non-Overlapping Subarrays](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0689-Maximum-Sum-of-3-Non-Overlapping-Subarrays)
 
-* 找最小可裁定/删除的subarray长度: [2565. Subsequence With the Minimum Score]()
+* 找最小可裁定/删除的subarray长度: [2565. Subsequence With the Minimum Score](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2565-Subsequence-With-the-Minimum-Score)
     * **3-Pass + Binary Search 猜答案**
 
-* 最大化array上任意两个segments: [2555. Maximize Win From Two Segments]()
+* 最大化array上任意两个segments: [2555. Maximize Win From Two Segments](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2555-Maximize-Win-From-Two-Segments)
     * two intervals --> 找分界点
 
-* 移动盒子里的球分几步-求最小步数: [1769. Minimum Number of Operations to Move All Balls to Each Box]()
+* 移动盒子里的球分几步-求最小步数: [1769. Minimum Number of Operations to Move All Balls to Each Box](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1769-Minimum-Number-of-Operations-to-Move-All-Balls-to-Each-Box)
 
-* 0/1交替出现所需最小翻转次数: [1888. Minimum Number of Flips to Make the Binary String Alternating]()
+* 0/1交替出现所需最小翻转次数: [1888. Minimum Number of Flips to Make the Binary String Alternating](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1888-Minimum-Number-of-Flips-to-Make-the-Binary-String-Alternating)
 
-* 转变成mountain array的最小操作: [1671. Minimum Number of Removals to Make Mountain Array]()
+* 转变成mountain array的最小操作: [1671. Minimum Number of Removals to Make Mountain Array](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1671-Minimum-Number-of-Removals-to-Make-Mountain-Array)
     * **3-Pass + 1D DP(LIS)**
 
-* 移除指定元素的最少时间: [2167. Minimum Time to Remove All Cars Containing Illegal Goods]()
+* 移除指定元素的最少时间: [2167. Minimum Time to Remove All Cars Containing Illegal Goods](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2167-Minimum-Time-to-Remove-All-Cars-Containing-Illegal-Goods)
 
-* L段Sum - R段Sum 最小值: [2163. Minimum Difference in Sums After Removal of Elements]()
+* L段Sum - R段Sum 最小值: [2163. Minimum Difference in Sums After Removal of Elements](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2163-Minimum-Difference-in-Sums-After-Removal-of-Elements)
     * **3-Pass + Priority Queue**
 
-* 构造ab形式字符串的最少操作数: [1653. Minimum Deletions to Make String Balanced]()
+* 构造ab形式字符串的最少操作数: [1653. Minimum Deletions to Make String Balanced](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1653-Minimum-Deletions-to-Make-String-Balanced)
