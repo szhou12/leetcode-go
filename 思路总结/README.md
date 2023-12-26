@@ -7,7 +7,7 @@
 |[BFS & Dijkstra](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/BFS_Dijkstra.md)|基础题: 层级遍历<br>常规题<br>综合题<br>岛屿沉没类/连通图个数<br>Dijkstra<br>BFS + PQ<br>Topological Sort<br>Floyd-Warshall<br>|
 |[Binary Search](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/BinarySearch.md)|经典题<br>First/Last Occurrence<br>Closet Element Greater/Less<br>BS猜答案<br>非常规<br>|
 |[Bit Manipulation](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/BitManipulation.md)|n 的二进制表示中1的个数<br>Logic Operation: AND, OR, XOR<br>|
-|[DFS](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/DFS.md)||
+|[DFS](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/DFS.md)|DFS暴力穷举<br>N-Queens<br>岛屿沉没<br>类DP<br>Permutation<br>All Subsets<br>图的遍历<br>Min-Max Strategy<br>|
 |[Dynamic Programming](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/DP.md)||
 |[Greedy](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/Greedy.md)||
 |[KMP](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/KMP.md)||
@@ -29,7 +29,7 @@
 | :-: | - |
 | :purple_circle:| 极难, 完全没有思路, 即使参考了答案, 之后再做也很可能做不出来 |
 | :red_circle: | 困难, 完全没有思路, 参考了答案 |
-| :orange_circle: | 中等偏难, 有正确的思路但是不完整, 缺少解题的关键, 无法直接出答案, 需要版本答案点拨 |
+| :orange_circle: | 中等偏难, 有正确的思路但是不完整, 缺少解题的关键, 无法直接出答案, 需要参考版本答案 |
 | :yellow_circle: | 中等, 有思路但是实现上有问题, 最终实现版本参考了答案 |
 | :green_circle: | 简单, 可直接出bug-free code |
 | :lock: | 加锁题, 尚未提交过leetcode |
