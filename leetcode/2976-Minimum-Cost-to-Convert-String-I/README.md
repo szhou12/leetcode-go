@@ -3,7 +3,7 @@
 ## Solution idea
 ### Floyd-Warshall Algorithm
 1. 破题：`original[]`, `changed[]`, `cost[]` 三者想象成有向图。通过 Floyd-Warshall 算法，求出任意两点之间的最短路径，即可得到答案。
-2. 注：我的解法使用 Floyd 算法模版的Variation。与标准答案 (标准模版) 稍微不同。
+2. 注：我的解法使用 Floyd 算法模版的Variation。与参考答案 (标准模版) 稍微不同。
 
 Time complexity = $O(n^3)$
 

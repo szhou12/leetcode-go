@@ -266,7 +266,10 @@ for _, road := range roads {
 ```
 * :red_circle: 关闭节点的所有集合: [2959. Number of Possible Sets of Closing Branches](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2959-Number-of-Possible-Sets-of-Closing-Branches)
 
-* :yellow_circle: 最小代价变换字符串1: [2976. Minimum Cost to Convert String I]()
+* :red_circle: 最小代价变换字符串2: [2977. Minimum Cost to Convert String II]()
+    * Floyd + DP + Trie
+
+* :yellow_circle: 最小代价变换字符串1: [2976. Minimum Cost to Convert String I](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2976-Minimum-Cost-to-Convert-String-I)
 
 * :green_circle: 寻找最少邻居的城市: [1334. Find the City With the Smallest Number of Neighbors at a Threshold Distance](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1334-Find-the-City-With-the-Smallest-Number-of-Neighbors-at-a-Threshold-Distance)
 
