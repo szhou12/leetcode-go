@@ -4,6 +4,20 @@
 :bulb: 系统学习Go语言请参考: [李文周的博客 - Go语言学习之路/Go语言教程](https://www.liwenzhou.com/posts/Go/golang-menu/)
 
 ## Contents
+| 算法 | 类型题 |
+| :-: | - |
+|[System](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_System.md)|- Configure VS Code for Go<br>- Update Go<br>|
+|[Package](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_Package.md)|- Package Management <br>- Code Scope (Redeclare Error)<br>|
+|[Pass by Value (值传递)](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_Pass.md)| |
+|[Print](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_Print.md)|- Print byte as character<br>- Print variable type<br>|
+|[Slice](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_Slice.md)|- Slice vs. Array<br> - Pass into a function<br> - How to index a slice pointer<br>- Create slice of slices<br> - Sort slice of objects<br> - Sort slice of slice<br> - Slice of Map<br> - Slice as a key in map<br> - Prepend elements<br> - Compare Two Slices Equality<br>|
+|[Priority Queue](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_PriorityQueue.md)| |
+|[Map](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_Map.md)| |
+|[Operators](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_Operators.md)| |
+|[Binary](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_Binary.md)| |
+|[String](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_String.md)| |
+
+
 * [System](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_System.md)
     * Configure VS Code for Go
     * Update Go
