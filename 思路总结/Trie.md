@@ -52,6 +52,9 @@ func buildTrie(root *TrieNode, words []string) {
 
 
 ## 经典题
+* :red_circle: 最小代价变换字符串2: [2977. Minimum Cost to Convert String II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2977-Minimum-Cost-to-Convert-String-II)
+    * Floyd + DP + Trie
+
 * :red_circle: 共享前缀的总数量: [2416. Sum of Prefix Scores of Strings](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2416-Sum-of-Prefix-Scores-of-Strings)
     * 比较直接的运用**Trie**的题目
     * `count`: 文本词频统计

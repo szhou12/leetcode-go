@@ -210,6 +210,14 @@
     * 方法1: **二维DP**. 外层循环length, 内层循环starting position
     * 方法2: DP Memoization (Recursion + DP), 用 DP memo 来剪枝
 
+#### 一维区间型
+```
+dp[i] = min(dp[j-1] + cost[j:i]) for 0 <= j <= i
+```
+
+* :red_circle: 最小代价变换字符串2: [2977. Minimum Cost to Convert String II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2977-Minimum-Cost-to-Convert-String-II)
+    * Floyd + DP + Trie
+
 ### 切绳子
 * **题目问法: 一个大字符串/数组，分成 k 个区间，要求每个区间满足一些条件，求整体的一个最优规划。**
 

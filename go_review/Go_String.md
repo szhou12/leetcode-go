@@ -27,6 +27,24 @@ word = string(s)
 
 ## Reverse a String
 [How to reverse a string in Golang](https://www.educative.io/answers/how-to-reverse-a-string-in-golang)
+
+[How to reverse a string in Go?](https://stackoverflow.com/questions/1752414/how-to-reverse-a-string-in-go)
+
+* Formal Template:
+```go
+func reverse(s string) string {
+    // Step 1: Convert string to []rune
+    ruens := []rune(s)
+    // Step 2: Swap the runes
+    for i, j := 0, len(s)-1; i < j; i, j = i+1, j-1{
+        runes[i], runes[j] = runes[j], runes[i]
+    }
+    // Step 3: Convert back to string
+    return string(ruens)
+}
+```
+
+* Variation (Not Recommended):
 ```go
 func reverse(word string) string {
     // Prepend each character to the front of return value
