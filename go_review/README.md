@@ -3,7 +3,7 @@
 
 :bulb: 系统学习Go语言请参考: [李文周的博客 - Go语言学习之路/Go语言教程](https://www.liwenzhou.com/posts/Go/golang-menu/)
 
-## Contents
+## Table of Contents
 | Subject | Topics |
 | :-: | - |
 |[System](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_System.md)|- Configure VS Code for Go<br>- Update Go<br>|
@@ -15,4 +15,4 @@
 |[Map](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_Map.md)|- Contains a Key<br> - Delete a Key<br> - Return Value From Non-Existent Key <br>|
 |[Operators](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_Operators.md)|- Bitwise Operators<br> - % Operator<br>|
 |[Binary](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_Binary.md)|- Binary Representation of Integer<br>|
-|[String](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_String.md)|- Strings are Immutable<br> - Sort a String<br> -Reverse a String<br> - rune vs. byte<br>|
+|[String](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_String.md)|- Strings are Immutable<br> - Sort a String<br> - Reverse a String<br> - rune vs. byte<br>|
