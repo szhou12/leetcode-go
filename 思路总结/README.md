@@ -16,7 +16,7 @@
 |[Recursion & Tree](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/Recursion_Tree.md)||
 |[Trie](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/Trie.md)||
 |[Stack](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/Stack.md)||
-|[Two Pointers](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/TwoPointers.md)||
+|[Two Pointers](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/TwoPointers.md)|X-Sum<br>Sliding Window<br>|
 |[Union Find](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/UnionFind.md)||
 |[找规律](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/%E6%89%BE%E8%A7%84%E5%BE%8B%E9%A2%98.md)||
 |[常用技巧](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7.md)|Graph: 2D坐标转换为1D节点<br>Bit: 用位操作遍历所有子集<br>|
