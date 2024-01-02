@@ -26,6 +26,6 @@
 * [234. Palindrome Linked List](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0234-Palindrome-Linked-List)
     * 双指针倍速走找中点，断开, 迭代法翻转链表
 
-## 不等长两条LL
+## 不等长两条链
 * [160. Intersection of Two Linked Lists](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0160-Intersection-of-Two-Linked-Lists)
     * 同一起跑线法：长的LL先走，走的步数为长度的差值；再同时走
