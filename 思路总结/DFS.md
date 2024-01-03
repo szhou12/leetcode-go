@@ -12,6 +12,7 @@
 * [图的遍历](#图的遍历)
     * [树的深搜遍历](#树的深搜遍历)
 * [Min-Max Strategy](#min-max-strategy)
+* [DFS + Memoization](#dfs--memoization)
 
 
 ## DFS暴力穷举
@@ -172,3 +173,6 @@
 * :red_circle: 石头游戏5: [1563. Stone Game V](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1563-Stone-Game-V)
 
 * :red_circle: 石头游戏9: [2029. Stone Game IX](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2029-Stone-Game-IX)
+
+## DFS + Memoization
+* :red_circle: 沿树的路径收集最多硬币: [2920. Maximum Points After Collecting Coins From All Nodes]()
