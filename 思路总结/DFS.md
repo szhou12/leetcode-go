@@ -175,4 +175,4 @@
 * :red_circle: 石头游戏9: [2029. Stone Game IX](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2029-Stone-Game-IX)
 
 ## DFS + Memoization
-* :red_circle: 沿树的路径收集最多硬币: [2920. Maximum Points After Collecting Coins From All Nodes]()
+* :red_circle: 沿树的路径收集最多硬币: [2920. Maximum Points After Collecting Coins From All Nodes](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2920-Maximum-Points-After-Collecting-Coins-From-All-Nodes)
