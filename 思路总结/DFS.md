@@ -176,3 +176,5 @@
 
 ## DFS + Memoization
 * :red_circle: 沿树的路径收集最多硬币: [2920. Maximum Points After Collecting Coins From All Nodes](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2920-Maximum-Points-After-Collecting-Coins-From-All-Nodes)
+
+* :red_circle: 沿树的路径放置适当硬币: [2973. Find Number of Coins to Place in Tree Nodes](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2973-Find-Number-of-Coins-to-Place-in-Tree-Nodes)
