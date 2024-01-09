@@ -77,7 +77,7 @@ func buildTrie(root *TrieNode, words []string) {
 
 
 ## Design题
-* :red_circle: 实现Trie: [208. Implement Trie (Prefix Tree)](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0208-Implement-Trie-(Prefix-Tree))
+* :red_circle: 实现Trie: [208. Implement Trie (Prefix Tree)](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0208-Implement-Trie-Prefix-Tree)
 
 * :red_circle: 前后缀搜索: [745. Prefix and Suffix Search](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0745-Prefix-and-Suffix-Search)
 
