@@ -44,8 +44,13 @@ func dfs(cur int, parent int, next [][]int, cost []int, subtree [][]int, res []i
 		}
 	}
 
+	arr = append(arr, cost[cur])
 	// slices.Sort() is the new feature in go 1.21. Faster then sort.Ints()
 	slices.Sort(arr)
+	n := len(arr)
+
 	
+
 	
+
 }

@@ -87,6 +87,7 @@ inputSlice := [][]int{{1, 3}, {2, 6}, {8, 10}, {15, 18}} //都要用花括号！
 [The 3 ways to sort in Go](https://yourbasic.org/golang/how-to-sort-in-go/)
 * 个人总结：
     * `[]int`, `[]string`, `[]float64` 分别有专属的sort API: `sort.Ints()`, `sort.Strings()`, `sort.Float64s()`. 都是增序排列。
+    * 自 go 1.21 起, 新增 API `slices.Sort()` [Go Slices Sort](https://pkg.go.dev/slices#Sort)。更快！
     * 常用的可自定义sort function: `sort.Slice()`
 ```go
 sort.Slice(people, func(i, j int) bool { 
