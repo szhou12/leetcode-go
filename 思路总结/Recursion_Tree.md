@@ -130,7 +130,7 @@ func treeRecursion(TreeNode x, ...) ... {
 * LCA I: [236. Lowest Common Ancestor of a Binary Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0236-Lowest-Common-Ancestor-of-a-Binary-Tree)
     * input nodes `p`, `q` **一定**存在于tree中
 
-* LCA II: [1644. Lowest Common Ancestor of a Binary Tree II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1644-Lowest-Common-Ancestor-of-a-Binary%20Tree-II)
+* LCA II: [1644. Lowest Common Ancestor of a Binary Tree II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1644-Lowest-Common-Ancestor-of-a-Binary-Tree-II)
     * input nodes `p`, `q` **不一定**存在于tree中
 
 * LCA III: [1650. Lowest Common Ancestor of a Binary Tree III](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1650-Lowest-Common-Ancestor-of-a-Binary-Tree-III)
