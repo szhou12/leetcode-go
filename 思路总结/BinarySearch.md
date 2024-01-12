@@ -155,7 +155,7 @@ func upperBound(nums []int, target int) int {
     2. target < 数组中所有值
     3. target 在数组范围中，只是数组中不存在该值
 
-* :red_circle: 多少种subarray的删法使得剩余元素严格递增: [2972. Count the Number of Incremovable Subarrays II]()
+* :red_circle: 多少种subarray的删法使得剩余元素严格递增: [2972. Count the Number of Incremovable Subarrays II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2972-Count-the-Number-of-Incremovable-Subarrays-II)
 
 * 找最小的大于Target的元素: [744. Find Smallest Letter Greater Than Target](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0744-Find-Smallest-Letter-Greater-Than-Target)
 

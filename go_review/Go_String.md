@@ -5,6 +5,7 @@
 * [Sort a String](#sort-a-string)
 * [Reverse a String](#reverse-a-string)
 * [rune vs. byte](#rune-vs-byte)
+* [Substract Two Bytes](#substract-two-bytes)
 
 ## Strings are Immutable
 [Swap Characters of a string in Go (Golang)](https://golangbyexample.com/swap-characters-string-golang/)
@@ -61,6 +62,18 @@ func reverse(word string) string {
 
 * In Go, Characters are expressed by enclosing them in single quotes like this: **'a'**
 * A character is either type `byte` or type `rune`.
+* `byte` is an alias for `uint8`, an unsigned 8-bit integer. Governed by the rules of unsigned arithmetic, meaning (smaller byte - larger byte) wraps aournd, never giving negative value. 
+```go
+// Indexing a string always gives a byte
+// Even if it's a Unicode character, it's still a byte. MAY only be accessing just a part of it, not the whole character.
+word := "ig"
+x := word[1] // x is byte
+```
+* `rune` is an alias for `int32`, a 32-bit integer. NOT governed by the rules of unsigned arithmetic, meaning (smaller rune - larger rune) gives negative value.
+```go
+// Go handles character literal as rune
+x = 'i' // x is rune
+```
 * `byte` type represents **ASCII** characters; `rune` type represents a more broader set of **Unicode** characters.
 * Extract characters from a string:
     1. if we `range` a string, the characters we get are `rune` type
@@ -78,3 +91,19 @@ func reverse(word string) string {
     }
     s[2] // byte type
     ```
+
+## Substract Two Bytes
+* In Go, `byte` is an alias for `uint8`, which is an **unsigned** 8-bit integer.
+* This means: When you subtract one byte from another, if the result is **negative**, it wraps around under the rules of unsigned arithmetic, producing a large positive number instead of a negative one.
+```go
+// e.g.
+word := "ig"
+fmt.Println(word[1] - word[0]) // answer = 254
+// Explanation: 'g' (103) - 'i' (105) in unsigned arithmetic wraps around, giving 256 - 2 = 254.
+
+// Solution: to properly get negative value, convert each byte to int before subtraction
+fmt.Println(int(word[1]) - int(word[0])) // answer = -2
+
+// Note: Go handles character literal (i.e. not indexing into string) as rune
+fmt.Println('g' - 'i') // answer = -2
+```
