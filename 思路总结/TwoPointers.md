@@ -245,3 +245,9 @@ func slidingWindow(s string) int {
     * Sliding Window (非) + Prefix Sum
 
 * :red_circle: :secret: 有限次增量下使相同元素最多: [1838. Frequency of the Most Frequent Element](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1838-Frequency-of-the-Most-Frequent-Element)
+
+### 同时满足两个及以上条件
+* 思考方法：要求同时满足两个/多个条件的滑窗 -> "挑软柿子捏"：挑一个容易的条件分割出若干区间，每个区间内都符合该条件，再看每个区间内有多少符合另一条件的子区间
+
+* :red_circle: “完备”子串的个数: [2953. Count Complete Substrings]()
+    * Flex 模版 + Fix 模版
