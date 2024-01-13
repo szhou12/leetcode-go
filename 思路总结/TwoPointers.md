@@ -7,6 +7,7 @@
     * [Fix 模版题](#fix-模版题)
     * [Flex 模版题](#flex-模版题)
     * [非 模版题](#非-模版题)
+    * [需要同时满足两个及以上条件](#同时满足两个及以上条件)
 
 ## 一个数组 + 双指针同向而行
 
@@ -247,7 +248,7 @@ func slidingWindow(s string) int {
 * :red_circle: :secret: 有限次增量下使相同元素最多: [1838. Frequency of the Most Frequent Element](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1838-Frequency-of-the-Most-Frequent-Element)
 
 ### 同时满足两个及以上条件
-* 思考方法：要求同时满足两个/多个条件的滑窗 -> "挑软柿子捏"：挑一个容易的条件分割出若干区间，每个区间内都符合该条件，再看每个区间内有多少符合另一条件的子区间
+* 思考方法：要求同时满足两个/多个条件的滑窗 -> "挑软柿子捏"：挑一个容易的条件分割出若干区间，则每个区间内都符合该条件，再看每个区间内有多少子区间符合另一条件
 
-* :red_circle: “完备”子串的个数: [2953. Count Complete Substrings]()
+* :red_circle: “完备”子串的个数: [2953. Count Complete Substrings](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2953-Count-Complete-Substrings)
     * Flex 模版 + Fix 模版

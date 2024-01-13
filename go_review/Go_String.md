@@ -35,13 +35,13 @@ word = string(s)
 ```go
 func reverse(s string) string {
     // Step 1: Convert string to []rune
-    ruens := []rune(s)
+    runes := []rune(s)
     // Step 2: Swap the runes
     for i, j := 0, len(s)-1; i < j; i, j = i+1, j-1 {
         runes[i], runes[j] = runes[j], runes[i]
     }
     // Step 3: Convert back to string
-    return string(ruens)
+    return string(runes)
 }
 ```
 
