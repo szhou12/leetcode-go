@@ -30,12 +30,12 @@ func nextSmaller(s string) string {
 	for i, j := 0, n-1; i < j; i, j = i+1, j-1 {
 		arr[j] = arr[i]
 	}
-
+	// NOT allow equal bc excluding itself
 	if string(arr) < s {
 		return string(arr)
 	}
 
-	// mirror (first-half - 1) to second half + handle 退位
+	// mirror (first-half - 1) to second half + handle 借位
 	// e.g. [10]00 -> [09]99 -> 999
 	carry := 1
 	for i := (n - 1) / 2; i >= 0; i-- {
@@ -66,7 +66,7 @@ func nextGreater(s string) string {
 	for i, j := 0, n-1; i < j; i, j = i+1, j-1 {
 		arr[j] = arr[i]
 	}
-
+	// NOT allow equal bc excluding itself
 	if string(arr) > s {
 		return string(arr)
 	}

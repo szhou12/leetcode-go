@@ -9,3 +9,11 @@
     * String上进行十进制的加减操作
     * Go中，`string`, `[]rune`, `rune`, `int`之间的转换
     * 可以作为很多涉及string的加减运算，回文串等题目的母题
+
+* :red_circle: 最小代价将数组化为Equalindromic: [2967. Minimum Cost to Make Array Equalindromic]()
+    
+
+## 中位数定理
+* :red_circle: 最小代价将数组化为Equalindromic: [2967. Minimum Cost to Make Array Equalindromic]()
+    * 中位数定理：确定最小代价的目标点
+    * Closest Palindrome: 找到与string表示的目标点的最接近的回文串
