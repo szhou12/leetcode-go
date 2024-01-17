@@ -5,7 +5,7 @@
 | :-: | - |
 |[3-Pass](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/3-Pass.md)|求总数/Count类型题 <br>求Max or Min/优化类型题<br>|
 |[BFS & Dijkstra](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/BFS_Dijkstra.md)|基础题: 层级遍历<br>常规题<br>综合题<br>岛屿沉没类/连通图个数<br>Dijkstra<br>BFS + PQ<br>Topological Sort<br>Floyd-Warshall<br>|
-|[Binary Search](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/BinarySearch.md)|经典题<br>First/Last Occurrence<br>Closet Element Greater/Less<br>BS猜答案<br>非常规<br>|
+|[Binary Search](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/BinarySearch.md)|经典题<br>Lower Bound & Upper Bound<br>First/Last Occurrence<br>Closet Element Greater/Less<br>BS猜答案<br>非常规<br>|
 |[Bit Manipulation](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/BitManipulation.md)|n 的二进制表示中1的个数<br>Logic Operation: AND, OR, XOR<br>|
 |[DFS](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/DFS.md)|DFS暴力穷举<br>N-Queens<br>岛屿沉没<br>类DP<br>Permutation<br>All Subsets<br>图的遍历<br>Min-Max Strategy<br>DFS + Memoization<br>|
 |[Dynamic Programming](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/DP.md)|基础题<br>买卖股票<br>抢劫房子<br>背包问题<br>回文串<br>Subarray<br>Subsequnce<br>二维/高维DP<br>|

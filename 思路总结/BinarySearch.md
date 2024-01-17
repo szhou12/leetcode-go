@@ -4,6 +4,7 @@
 * [方法论](#方法论)
 * [模版 - upperBound, lowerBound](#模版-find-lower-bound--find-upper-bound)
 * [经典题](#经典题)
+* [Lower Bound & Upper Bound](#lower-bound--upper-bound)
 * [First/Last Occurrence](#find-first-occurrence--last-occurrence)
 * [Closet Element Greater/Less](#find-closest-element-greatersmaller-than-target)
 * [BS猜答案](#binary-search-猜答案)
@@ -135,6 +136,12 @@ func upperBound(nums []int, target int) int {
 * Classic Binary Search: [704. Binary Search](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0704-Binary-Search)
 
 
+## Lower Bound & Upper Bound
+* :red_circle: 求符合题意的配对数量: [2563. Count the Number of Fair Pairs](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2563-Count-the-Number-of-Fair-Pairs)
+    * 求区间范围: 用到 `upperBound()` 和 `lowerBound()`
+
+
+
 ## Find First Occurrence / Last Occurrence
 
 * 在排序数组中查找元素的第一个和最后一个位置: [34. Find First and Last Position of Element in Sorted Array](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0034-Find-First-and-Last-Position-of-Element-in-Sorted-Array)
@@ -233,8 +240,5 @@ func upperBound(nums []int, target int) int {
     * 重点在于要清楚明白各物理量的物理意义
 
 ## 非常规
-
-* :red_circle: 求符合题意的配对数量: [2563. Count the Number of Fair Pairs](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2563-Count-the-Number-of-Fair-Pairs)
-    * 求区间范围: 用到 `upperBound()` 和 `lowerBound()`
 
 * :red_circle: 二维矩阵中寻找峰值II: [1901. Find a Peak Element II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1901-Find-a-Peak-Element-II)

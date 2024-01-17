@@ -7,7 +7,7 @@ Check each `haystack[l:r]` where `[l:r]` is defined by the length of `needle`
 Time complexity = $O(n)$ where $n$ is the length of haystack
 
 ### KMP
-* Step 1: 对 模式串 (pattern string) 使用 KMP 算法，构造 `lps` 数组
+* Step 1: 对 模式串 (pattern string) 使用 KMP 算法，构造 `lsp` 数组
 * Step 2: 配合 `lsp`，对 目标串 (target string) 使用 KMP 算法
 
 ## Resource
