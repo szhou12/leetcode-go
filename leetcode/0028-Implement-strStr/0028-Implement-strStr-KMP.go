@@ -32,7 +32,9 @@ func strStr_KMP(haystack string, needle string) int {
 		dp[0] = 1
 	}
 
-	// early return: if length(pattern) == 1 & dp[0] == 1
+	// Early return
+	// Check first char: if length(pattern) == 1 & dp[0] == 1
+	// MUST have this bc the rest of code is for i > 0
 	if m == 1 && dp[0] == 1 {
 		return 0
 	}
@@ -49,6 +51,7 @@ func strStr_KMP(haystack string, needle string) int {
 			dp[i] = x
 		}
 
+		// check if haystack[i-j+1:i] (i.e. dp[i]) is a needle
 		if dp[i] == m {
 			return i - m + 1
 		}
@@ -64,18 +67,22 @@ func preprocess(needle string) []int {
 	// dp[i] = max length j s.t. prefix needle[0:j-1] == suffix needle[i-j+1:i] (双闭区间)
 	dp := make([]int, n)
 
-	// base case
+	// base case: 因为我们要求真前缀和真后缀，只有一个字符的时候不存在真前缀和真后缀，所以dp[0] = 0
 	dp[0] = 0
 
 	// recurrence
 	for i := 1; i < n; i++ {
 		j := dp[i-1]
+		// j 是上一轮匹配的长度, 恰恰好的是, neddle[j]也表示needle的前缀中这一轮即将要匹配的字符 i.e. needle[0:j-1]的下一个字符
 		for j > 0 && needle[i] != needle[j] {
+			// j-1 这里表示index
+			// j 这里表示新长度j'
 			j = dp[j-1]
 		}
 		if needle[i] == needle[j] {
 			dp[i] = j + 1
 		} else {
+			// 表示没有匹配到任何前缀，此时前面会跳出只能因为 j==0, 也就是匹配长度=0
 			dp[i] = j
 		}
 	}

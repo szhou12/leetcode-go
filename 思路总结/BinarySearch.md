@@ -70,7 +70,14 @@ func lowerBound(nums []int, target int) int {
 
     // 返回left: 因为left一定不会出界 (一定指向array中的某一个元素)
 
-    // post-processing
+    // post-processing 简化版
+    if nums[left] >= target { // left符合题意, 直接返回left
+        return left
+    } else { // nums[left] < target, 返回left+1 (情况二)
+        return left + 1
+    }
+
+    // post-processing 完整版
     // if nums[left] == target { // 情况四
     //     return left
     // } else if nums[left] > target { // 情况一 + 情况三
@@ -78,13 +85,6 @@ func lowerBound(nums []int, target int) int {
     // } else { // 情况二
     //     return left + 1
     // }
-
-    // post-processing 简化版
-    if nums[left] >= target { // left符合题意, 直接返回left
-        return left
-    } else { // nums[left] < target, 返回left+1 (情况二)
-        return left + 1
-    }
  }
 ```
 
@@ -109,7 +109,14 @@ func upperBound(nums []int, target int) int {
 
     // 返回left: 因为left一定不会出界 (一定指向array中的某一个元素)
 
-    // post-processing
+    // post-processing 简化版
+    if nums[left] > target { // left符合题意, 直接返回left
+        return left
+    } else { // nums[left] <= target, 返回left+1 (情况二+情况四)
+        return left + 1
+    }
+
+    // post-processing 完整版
     // if nums[left] == target { // 情况四
     //     return left + 1
     // } else if nums[left] < target { // 情况二
@@ -117,13 +124,6 @@ func upperBound(nums []int, target int) int {
     // } else { // 情况三 + 情况一
     //     return left
     // }
-
-    // post-processing 简化版
-    if nums[left] > target { // left符合题意, 直接返回left
-        return left
-    } else { // nums[left] <= target, 返回left+1 (情况二+情况四)
-        return left + 1
-    }
 }
 ```
 
@@ -137,6 +137,8 @@ func upperBound(nums []int, target int) int {
 
 
 ## Lower Bound & Upper Bound
+* :red_circle: 找所有的“美丽”index: [3008. Find Beautiful Indices in the Given Array II]()
+    * 与 KMP算法的结合题
 * :red_circle: 求符合题意的配对数量: [2563. Count the Number of Fair Pairs](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2563-Count-the-Number-of-Fair-Pairs)
     * 求区间范围: 用到 `upperBound()` 和 `lowerBound()`
 
