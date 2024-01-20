@@ -11,6 +11,9 @@
 * 模版：
     1. Find first appearance (index) of a substring in a string: [28. Find the Index of the First Occurrence in a String](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0028-Implement-strStr)
     2. Find all appearances (indices) of a substring in a string: [3008. Find Beautiful Indices in the Given Array II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3008-Find-Beautiful-Indices-in-the-Given-Array-II)
+ 
+## 一图胜千言
+![kmp](https://github.com/szhou12/leetcode-go/assets/35708194/2f038b22-54c2-4ecc-bade-19769da60cec)
 
 ## 题目
 * :red_circle: 找所有的“美丽”index: [3008. Find Beautiful Indices in the Given Array II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3008-Find-Beautiful-Indices-in-the-Given-Array-II)
