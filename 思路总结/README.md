@@ -10,7 +10,7 @@
 |[DFS](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/DFS.md)|DFS暴力穷举<br>N-Queens<br>岛屿沉没<br>类DP<br>Permutation<br>All Subsets<br>图的遍历<br>Min-Max Strategy<br>DFS + Memoization<br>|
 |[Dynamic Programming](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/DP.md)|基础题<br>买卖股票<br>抢劫房子<br>背包问题<br>回文串<br>Subarray<br>Subsequnce<br>二维/高维DP<br>|
 |[Greedy](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/Greedy.md)|Scheduling<br>找规律<br>分情况讨论<br>|
-|[KMP](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/KMP.md)||
+|[KMP](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/KMP.md)|字符串中寻找子串<br>|
 |[Linked List](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/LinkedList.md)|Dummy Head<br>递归<br>双指针同向而行，相隔k步，pace一样<br>双指针同向而行, 快慢指针<br>综合题<br>不等长两条链<br>|
 |[Prefix Sum & Diff Array](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/PrefixSum_DiffArray.md)|一维差分<br>二维差分<br>扫描线<br>整体区间的增减<br>|
 |[Recursion & Tree](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/Recursion_Tree.md)|Traversal Order 构造 Binary Tree<br> 构造 BST<br> 找到所有 Unique BST <br>Complete Binary Tree<br> 找Tree的所有路径<br>Post-Order Traversal<br>In-Order Traversal<br>BST<br>LCA<br>Find Paths in Tree<br>|

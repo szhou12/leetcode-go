@@ -17,15 +17,18 @@
 ![kmp](https://github.com/szhou12/leetcode-go/assets/35708194/2f038b22-54c2-4ecc-bade-19769da60cec)
 
 ## 题目
-* :red_circle: 找所有的“美丽”index: [3008. Find Beautiful Indices in the Given Array II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3008-Find-Beautiful-Indices-in-the-Given-Array-II)
-    * KMP: 字符串中找子串**所有出现**的位置
-    * Binary Search: `upperBound()` 和 `lowerBound()`    
-
 * :red_circle: 找最长自相关最长前缀后缀数组: [1392. Longest Happy Prefix](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1392-Longest-Happy-Prefix)
     * **优先练习** 考察KMP算法 Step 1 的实现
 
 * :red_circle: 找第一次出现的匹配: [28. Find the Index of the First Occurrence in a String](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0028-Implement-strStr)
     * **优先练习** 考察KMP算法 Step 1 + 2 的实现
     * 字符串中找子串**第一次出现**的位置
+
+* :red_circle: 找所有的“美丽”index II: [3008. Find Beautiful Indices in the Given Array II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3008-Find-Beautiful-Indices-in-the-Given-Array-II)
+    * KMP: 字符串中找子串**所有出现**的位置
+    * Binary Search: `upperBound()` 和 `lowerBound()`
+
+* :yellow_circle: 找所有的“美丽”index I: [3006. Find Beautiful Indices in the Given Array I](https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-i/description/)
+    * 与 3008 完全一样
 
 * :purple_circle: 有限次切字符串找匹配: [2851. String Transformation](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2851-String-Transformation)
