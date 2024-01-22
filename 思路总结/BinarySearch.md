@@ -137,7 +137,8 @@ func upperBound(nums []int, target int) int {
 
 
 ## Lower Bound & Upper Bound
-* :red_circle: 找所有的“美丽”index: [3008. Find Beautiful Indices in the Given Array II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3008-Find-Beautiful-Indices-in-the-Given-Array-II)
+* :red_circle: 找所有的“美丽”index II: [3008. Find Beautiful Indices in the Given Array II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3008-Find-Beautiful-Indices-in-the-Given-Array-II)
+    * 同样的题还有: [3006. Find Beautiful Indices in the Given Array I](https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-i/description/)
     * 与 KMP算法的结合题
 * :red_circle: 求符合题意的配对数量: [2563. Count the Number of Fair Pairs](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2563-Count-the-Number-of-Fair-Pairs)
     * 求区间范围: 用到 `upperBound()` 和 `lowerBound()`
