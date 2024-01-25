@@ -222,6 +222,9 @@ func upperBound(nums []int, target int) int {
 
 * :star: 搜索区间为自然数，由于自然数递增排序，所以可以天然地使用二分搜索
 
+* :red_circle: 最大满足特定条件的自然数: [3007. Maximum Number That Sum of the Prices Is Less Than or Equal to K](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3007-Maximum-Number-That-Sum-of-the-Prices-Is-Less-Than-or-Equal-to-K)
+    * Binary Search 猜答案 + Digital Counting
+
 * 寻找丑数III: [1201. Ugly Number III](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1201-Ugly-Number-III)
     * *1201 与 1539 思路相近*
     * 需要用到一些数学定理: 容斥原理, LCM, GCD

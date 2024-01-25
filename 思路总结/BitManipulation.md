@@ -1,5 +1,10 @@
 # Bit Manipulation
 
+## 目录
+* [n 的二进制表示中1的个数](#n-的二进制表示中1的个数)
+* [Logic Operation: AND, OR, XOR](#logic-operation-and-or-xor)
+* [Digital Counting](#digital-counting)
+
 ## n 的二进制表示中1的个数
 * `n &= (n-1)`
 * [1356. Sort Integers by The Number of 1 Bits](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1356-Sort-Integers-by-The-Number-of-1-Bits)
@@ -19,3 +24,7 @@
 * :red_circle: 在AND结果为最小的情况下尽可能切多个subarrays: [2871. Split Array Into Maximum Number of Subarrays](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2871-Split-Array-Into-Maximum-Number-of-Subarrays)
     * AND的性质: AND越多元素，结果的值越小
 
+## Digital Counting
+
+* :red_circle: 最大满足特定条件的自然数: [3007. Maximum Number That Sum of the Prices Is Less Than or Equal to K](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3007-Maximum-Number-That-Sum-of-the-Prices-Is-Less-Than-or-Equal-to-K)
+    * Binary Search 猜答案 + Digital Counting
