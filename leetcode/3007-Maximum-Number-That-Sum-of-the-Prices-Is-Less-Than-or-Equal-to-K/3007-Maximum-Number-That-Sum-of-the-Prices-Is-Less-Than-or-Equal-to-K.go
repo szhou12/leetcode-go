@@ -15,6 +15,7 @@ func findMaximumNumber(k int64, x int) int64 {
 	return int64(left)
 }
 
+// Digital Counting Method 1: 计算组合数
 func validPrice(num int, k int64, x int) bool {
 	// convert num to binary representation
 	arr := make([]int, 0)
