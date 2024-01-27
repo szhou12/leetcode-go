@@ -1,6 +1,8 @@
 # [3007. Maximum Number That Sum of the Prices Is Less Than or Equal to K](https://leetcode.com/problems/maximum-number-that-sum-of-the-prices-is-less-than-or-equal-to-k/description/)
 
 ## Solution idea
+1. 理解题意：注意一个点，对一个自然数 `x <= num`，它每一个满足要求`i%x == 0` 的bit位，如果是1 (set bit)，那么就要计算一次。也就是说，是需要有double counting的。
+
 ### Binary Search + Digital Counting
 1. Binary Search: 首先要有直觉，题目具有单调性：num越大，price越高。所以可以使用 Binary Search 来猜答案。
 2. Digital Counting: 本题难点在于对于任意一个猜的`mid`，折半的条件是什么？或者说，对应的`price`怎么计算？这里使用 Digital Counting。有两种方法，下面会分别讨论。
