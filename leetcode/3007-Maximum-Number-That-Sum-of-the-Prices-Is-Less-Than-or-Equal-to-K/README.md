@@ -31,7 +31,7 @@ L   L   L   i   H    H    H
   * 低位 (相对于`i`) 允许的组合数范围：可以任意组合。组合数总共有 `2^m` 个。
 ```
 L   L   L   i   H    H    H
-000:LLL     1      HHH (fixed)
+  000:LLL     1     HHH (fixed)
 ```
 * Case 2b:
   * 高位 (相对于`i`) 允许的组合数范围：固定为`HHH`。组合数总共有1个。
@@ -40,7 +40,7 @@ L   L   L   i   H    H    H
 
 3. 实现细节
   1. 二进制表示默认的位数读取(从低位到高位)是从右到左。实现上，从左到右表示低位到高位。用一个array来存每一位的bit。
-  2. 题目中二进制表示的位数是1-indexed。但是上述的实现的array是0-indexed。`i`位每`x`步一跳，如果是1-indexed，`x=2`，则`i=2, 4, 6, ...`。在0-indexed的array中对应的位置则是`i=1, 3, 5, ...`。所以，`i`的loop可以写成：`for i := x-1; (1<<i) <= num; i += x { ... }`。`i=x-1`左移调整到0-indexed。`(1<<i) <= num`最高位`i`不超过`num`。`i += x`每`x`步一跳。
+  2. 题目中二进制表示的位数是1-indexed。但是上述的实现的array是0-indexed。`i`位每`x`步一跳，如果是1-indexed，`x=2`，则`i=2, 4, 6, ...`。在0-indexed的array中对应的位置则是`i=1, 3, 5, ...`。所以，`i`的loop可以写成：```for i := x-1; (1<<i) <= num; i += x { ... }``` `i=x-1`左移调整到0-indexed。`(1<<i) <= num`最高位`i`不超过`num`。`i += x`每`x`步一跳。
 
 #### Digital Counting - Method 2
 1. Method 2是通过观察bit位重复的规律进行总结归纳。
