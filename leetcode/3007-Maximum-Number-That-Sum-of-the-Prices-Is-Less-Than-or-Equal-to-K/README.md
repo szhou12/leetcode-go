@@ -95,8 +95,8 @@ L   L   L   i   H    H    H
   * `3rd column`: group size `8 = 2^3`. `00001111 00001111 00001111 00001111 ...`
   * `4th column`: group size `16 = 2^4`. `0000000011111111 0000000011111111 ...`
 5. 根据上述规律，我们发现：
-  1. 每一个group一半是0，一半是1。bit 1数量表示为：$\frac{2^i}{2} = 2^{i-1}$
-  2. bit 0总是先于bit 1出现。
+    1. 每一个group一半是0，一半是1。bit 1数量表示为：$\frac{2^i}{2} = 2^{i-1}$
+    2. bit 0总是先于bit 1出现。
 6. 根据总结的规律，归纳统计`ith column`的bit 1总数的计算公式：
   * current column = `i`, group size = `2^i`, number of bit 1 per group = `2^(i-1)`, 用`rows = num+1`表示从`0`到`num`依次列出的总行数
   * 计算公式 Part 1: `(rows / 2^i) * 2^(i-1)` 
