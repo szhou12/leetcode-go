@@ -21,4 +21,4 @@
     * Closest Palindrome: 找到与string表示的目标点的最接近的回文串
 
 ## Constructive Algorithm
-* :red_circle: 模运算缩短array长度: [3012. Minimize Length of Array Using Operations]()
+* :red_circle: 模运算缩短array长度: [3012. Minimize Length of Array Using Operations](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3012-Minimize-Length-of-Array-Using-Operations)
