@@ -32,7 +32,7 @@
     * KMP: 字符串中找子串**所有出现**的位置
     * Binary Search: `upperBound()` 和 `lowerBound()`
 
-* :yellow_circle: 找所有的“美丽”index I: [3006. Find Beautiful Indices in the Given Array I](https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-i/description/)
+* :yellow_circle: 找所有的“美丽”index I: [3006. Find Beautiful Indices in the Given Array I](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3006-Find-Beautiful-Indices-in-the-Given-Array-I)
     * 与 3008 完全一样
 
 * :purple_circle: 有限次切字符串找匹配: [2851. String Transformation](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2851-String-Transformation)
