@@ -9,6 +9,7 @@
     * 用index表示：切掉的长度 = `word[0 : tk-1]`，保留的尾巴长度 = `word[tk : n-1]`，需要相等的前缀 = `word[0 : n-tk-1]` (inclusive)
     * 所以判断条件：`word[0 : n-tk-1] == word[tk : n-1]`
 4. 一图胜千言：
+![autodraw 2_7_2024](https://github.com/szhou12/leetcode-go/assets/35708194/d2ec6b8c-273f-4c68-b0ce-9cd81dc2a15f)
 
 Time complexity = $O(n)$
 
