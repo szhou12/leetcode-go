@@ -13,7 +13,7 @@ func minimumTimeToInitialState(word string, k int) int {
 	if keptLen == 0 { // all been cut off
 		if n%k == 0 {
 			return n / k
-		} else {
+		} else { // 切不完整, 多切一刀, 切掉剩余
 			return n/k + 1
 		}
 	} else {

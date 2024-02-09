@@ -21,6 +21,9 @@
 ![kmp](https://github.com/szhou12/leetcode-go/assets/35708194/2f038b22-54c2-4ecc-bade-19769da60cec)
 
 ## 题目
+* :red_circle: 最少时间恢复字符串原样：[3031. Minimum Time to Revert Word to Initial State II](https://leetcode.com/problems/minimum-time-to-revert-word-to-initial-state-ii/description/)
+    * 考察KMP算法中重要的传递性(transitive)思想
+
 * :red_circle: 找最长自相关最长前缀后缀数组: [1392. Longest Happy Prefix](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1392-Longest-Happy-Prefix)
     * **优先练习** 考察KMP算法 Step 1 的实现
 
