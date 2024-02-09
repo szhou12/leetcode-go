@@ -13,6 +13,7 @@
     * 不停缩短，直到长度为0，说明我们找不到后缀=前缀，整个字符串都会被切掉。
 
 ### 一图胜千言
+![autodraw 2_8_2024](https://github.com/szhou12/leetcode-go/assets/35708194/a49ea242-b034-4d64-a6a3-5639cc7218a4)
 
 Time complexity = $O(n)$
 
