@@ -95,5 +95,9 @@
 ## Trie
 0140, 0208, 0211, 0212, 0648, 0720, 1032, 1268, 2416
 
-## Any Number of Times
-3012, 
+# 特征题收集
+## 收集一些在做题时常常遇到的具有某一个特征的题目归类
+| 算法 | 题号 |
+| - | - |
+|关键词: `run any number of times`|[3012](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3012-Minimize-Length-of-Array-Using-Operations)<br>|
+|2-D 坐标||
