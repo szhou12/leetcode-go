@@ -19,7 +19,7 @@
 
 ## 找规律
 
-* :red_circle: 给Alice和Bob寻找合适位置II: [3027. Find the Number of Ways to Place People II]()
+* :red_circle: 给Alice和Bob寻找合适位置II: [3027. Find the Number of Ways to Place People II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3027-Find-the-Number-of-Ways-to-Place-People-II)
     * 2-D坐标排序
 
 * 单调递增位数: [738. Monotone Increasing Digits](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0738-Monotone-Increasing-Digits)
