@@ -12,6 +12,9 @@
     * Why? 因为这样就总是先看最高的那个Bob。如果先看的是最低的Bob，那么比它高的Bob们就会被圈进去，不符合要求。(如图2)
 
 ### 一图胜千言
+![autodraw 2_12_2024](https://github.com/szhou12/leetcode-go/assets/35708194/4afb36f6-6e9d-4091-9be3-1b810061baac)
+
+![autodraw 2_12_2024 (1)](https://github.com/szhou12/leetcode-go/assets/35708194/3f91b57a-74aa-4cfc-a0a4-739fe7444422)
 
 
 Time complexity = $O(n^2)$
