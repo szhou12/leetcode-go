@@ -24,6 +24,34 @@
 |[Segment Tree](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/SegmentTree.md)||
 |[String](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/String.md)||
 
+## Practice First
+### :red_circle: Hard
+* [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/)
+* [297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/)
+* [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/)
+* [295. Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/description/)
+* [127. Word Ladder](https://leetcode.com/problems/word-ladder/description/)
+* [224. Basic Calculator](https://leetcode.com/problems/basic-calculator/description/)
+* [1235. Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/description/)
+* [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/)
+* [84. Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/)
+* [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/)
+* [895. Maximum Frequency Stack](https://leetcode.com/problems/maximum-frequency-stack/description/)
+* [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/)
+* [329. Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description/)
+* [32. Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/description/)
+* :lock: [588. Design In-Memory File System](https://leetcode.ca/all/588.html)
+* :lock: [759. Employee Free Time](https://leetcode.ca/all/759.html)
+* [212. Word Search II](https://leetcode.com/problems/word-search-ii/description/)
+* :lock: [269. Alien Dictionary](https://leetcode.ca/all/269.html)
+* [815. Bus Routes](https://leetcode.com/problems/bus-routes/description/)
+* [239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/description/)
+* [336. Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/description/)
+* [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/description/)
+* [37. Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/)
+* [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/description/)
+* [51. N-Queens](https://leetcode.com/problems/n-queens/description/)
+* [632. Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/description/)
 
 
 ## Emojis

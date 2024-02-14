@@ -1,6 +1,7 @@
-# [51. N-Queens](https://leetcode.com/problems/n-queens/)
+# [51. N-Queens](https://leetcode.com/problems/n-queens/description/)
 
 ## Solution idea
+### DFS
 Pruning: check if the column to place a new Queen is:
 
 1. vertical to any previous Queens' column; 
