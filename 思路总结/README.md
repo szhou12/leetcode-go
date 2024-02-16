@@ -52,6 +52,7 @@
 * [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/description/)
 * [51. N-Queens](https://leetcode.com/problems/n-queens/description/)
 * [632. Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/description/)
+    *  K sorted lists + Greedy + minHeap
 
 
 ## Emojis

@@ -99,5 +99,6 @@
 ## 收集一些在做题时常常遇到的具有某一个特征的题目归类
 | 算法 | 题号 |
 | - | - |
-|关键词: `run any number of times`|[3012](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3012-Minimize-Length-of-Array-Using-Operations)<br>|
+|关键词: `run any number of times`|3012, |
 |2-D 坐标||
+|K sorted lists|632, |
