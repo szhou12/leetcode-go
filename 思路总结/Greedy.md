@@ -37,4 +37,4 @@
 * 找零的情况: [860. Lemonade Change](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0860-Lemonade-Change)
 
 ##  K sorted lists
-* :red_circle: 最小范围包含所有list中至少一个元素: [632. Smallest Range Covering Elements from K Lists]()
+* :red_circle: 最小范围包含所有list中至少一个元素: [632. Smallest Range Covering Elements from K Lists](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0632-Smallest-Range-Covering-Elements-from-K-Lists)
