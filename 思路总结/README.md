@@ -49,8 +49,11 @@
 * [336. Palindrome Pairs](https://leetcode.com/problems/palindrome-pairs/description/)
 * [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/description/)
 * [37. Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/)
+    * DFS
 * [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/description/)
+    * 找规律
 * [51. N-Queens](https://leetcode.com/problems/n-queens/description/)
+    * DFS
 * [632. Smallest Range Covering Elements from K Lists](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/description/)
     *  K sorted lists + Greedy + minHeap
 
