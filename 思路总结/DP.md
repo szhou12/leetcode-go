@@ -199,13 +199,17 @@
 ## 二维/高维 DP
 
 ### 位置X种类
-#### 第一维 = 位置 (index); 第二维 = 值的种类 (value)
+#### 第一维 = 位置 (index); 第二维 = 值的种类 (value) / 状态 (state)
+
+* :red_circle: 最大化数组中连续元素的总和: [3041. Maximize Consecutive Elements in an Array After Modification]()
+    * Sort first!
+    * `DP[i][state]`
 
 * :red_circle: 奇偶变换数组中挑选总和最大化: [2786. Visit Array Positions to Maximize Score](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2786-Visit-Array-Positions-to-Maximize-Score)
-    * `DP[index][value]`
+    * `DP[i][value]`
 
 * :red_circle: 最少次变换元素分三组: [2826. Sorting Three Groups](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2826-Sorting-Three-Groups)
-    * `DP[index][value]`
+    * `DP[i][value]`
 
 ### 区间型 (interval)
 #### 第一维 = 区间起始点 (start); 第二维 = 区间终止点 (end) or offset
