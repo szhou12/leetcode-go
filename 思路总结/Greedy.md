@@ -6,6 +6,12 @@
     1. 从区间集合 `intervals` 中选择一个区间 `x`，这个 `x` 是在当前所有区间中**结束最早的**（end 最小）
     2. 把所有与 `x` 区间相交的区间从区间集合 `intervals` 中删除。
     3. 重复 Step 1 和 Step 2，直到 `intervals` 为空为止。之前选出的那些 `x` 就是最大不相交子集。
+* 注意事项:
+    1. Scheduling问题不能死板地记：sort by start/end date.
+    2. sort谁由下一步的`finding compatible jobs function`的定义决定。即，组成 compatible set的元素是按什么条件筛选的。e.g. 1353中，筛选规则就是挑start date不晚于loop的当前天的。所以, sort by start date方便进行贪心(每一步不回头看)。
+
+* :red_circle: deadline前可以完成最多任务: [1353. Maximum Number of Events That Can Be Attended](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1353-Maximum-Number-of-Events-That-Can-Be-Attended)
+    * Sort + Priority Queue: Sort by start date; minHeap by end date
 
 * 排除 Overlapping Invertals: [435. Non-overlapping Intervals](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0435-Non-overlapping-Intervals)
     * **重点**: 如果要loop from left to right, 则需要sort by **right end** in increasing order
