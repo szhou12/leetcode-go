@@ -33,6 +33,8 @@
 * [127. Word Ladder](https://leetcode.com/problems/word-ladder/description/)
 * [224. Basic Calculator](https://leetcode.com/problems/basic-calculator/description/)
 * [1235. Maximum Profit in Job Scheduling](https://leetcode.com/problems/maximum-profit-in-job-scheduling/description/)
+    * Greedy (Sort by end date) + DP + Binary Search (UpperBound)
+    * 不使用Greedy解，但是沿用sort的思路
 * [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/)
 * [84. Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/)
 * [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/)

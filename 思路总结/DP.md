@@ -213,8 +213,8 @@
 
 ### 区间型 (interval)
 
-* :secret: :red_circle: schedule jobs同时最大化利益：[1235. Maximum Profit in Job Scheduling]()
-    * 非常好非常综合的题目！！！
+* :secret: :red_circle: schedule jobs同时最大化利益：[1235. Maximum Profit in Job Scheduling](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1235-Maximum-Profit-in-Job-Scheduling)
+    * 非常好非常综合的题目！！！值得多刷！！
     * Greedy (Sort by end date) + DP + Binary Search (UpperBound)
 
 #### 第一维 = 区间起始点 (start); 第二维 = 区间终止点 (end) or offset
