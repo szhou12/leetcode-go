@@ -10,6 +10,11 @@
     1. Scheduling问题不能死板地记：sort by start/end date.
     2. sort谁由下一步的`finding compatible jobs function`的定义决定。即，组成 compatible set的元素是按什么条件筛选的。e.g. 1353中，筛选规则就是挑start date不晚于loop的当前天的。所以, sort by start date方便进行贪心(每一步不回头看)。
 
+* :secret: :red_circle: schedule jobs同时最大化利益：[1235. Maximum Profit in Job Scheduling]()
+    * 非常好非常综合的题目！！！
+    * Greedy (Sort by end date) + DP + Binary Search (UpperBound)
+    * 不使用Greedy解，但是沿用sort的思路
+
 * :red_circle: deadline前可以完成最多任务: [1353. Maximum Number of Events That Can Be Attended](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1353-Maximum-Number-of-Events-That-Can-Be-Attended)
     * Sort + Priority Queue: Sort by start date; minHeap by end date
 
