@@ -4,6 +4,7 @@
 * [Contains a Key](#contains-a-key)
 * [Delete a Key](#delete-a-key-from-map)
 * [Return Value From Non-Existent Key](#return-value-from-non-existent-key)
+* [Slice vs Array. Which Can Be Used as Key?](#slice-vs-array-which-can-be-used-as-key)
 
 
 ## Contains a Key
@@ -39,4 +40,14 @@ fmt.Println(father[12]) // false
 father := make(map[int][]int)
 fmt.Println(father) // map[]
 fmt.Println(father[12]) // []
+```
+
+## Slice vs Array. Which Can Be Used as Key?
+[Slice as a key in map](https://stackoverflow.com/questions/20297503/slice-as-a-key-in-map)
+* Slice CANNOT be map key!
+* Array CAN be map key!
+```go
+s := make(map[[2]int]bool) // [2]int is array. Can be map key.
+
+t := make(map[[]int]bool) // []int is slice. CANNOT be map key.
 ```
