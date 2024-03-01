@@ -8,7 +8,9 @@
 ## 模版
 * 字典树介绍: [数据结构与算法： 字典树（Trie）](https://aimuke.github.io/algorithm/2019/07/01/algorithm-trie/)
 * 可参考: [208. Implement Trie (Prefix Tree)](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0208-Implement-Trie-(Prefix-Tree))
-* Time complexity of building Trie = $O(N\cdot \bar L)$ where $N=$ number of words inserted into the Trie, and $\bar L=$ average length of the words.
+* Time complexity of building Trie = $O(N\cdot \bar L)$ 
+    * $N=$ number of words inserted into the Trie.
+    * $\bar L=$ average length of the words.
 ```go
 type TrieNode struct {
     isEnd bool // Whether the current TrieNode denotes the end of a word
