@@ -39,6 +39,7 @@ for left < right {...}
             * 然而，`right` 一般是 `=mid`/`=mid-1`, 故不会出现出界的情况。所以，返回 `right` 保险
 
 * 什么时候需要 Post-Processing ?
+    * TLDR: 搜索范围内不一定有解。Post-Processing额外检查loop跳出后给的答案是否符合题意。
     * 使用 Binary Search 时, 只有当题目的**input不一定包含答案target的时候**需要 post-processing, 否则 Binary Search 一定可以找到答案, 也就是不用post-processing
     * `lowerBound(target)` 和 `upperBound(target)` 都需要 post-processing. 因为搜索区间内不一定存在满足target的左侧边界 和 满足target的右侧边界. 
         * e.g. 搜索区间内的值都 `> target`，那就找不到 满足target的左侧边界 (ie. 第一个 `== target` 的元素)
