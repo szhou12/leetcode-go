@@ -141,6 +141,7 @@ func upperBound(nums []int, target int) int {
 * :red_circle: 找所有的“美丽”index II: [3008. Find Beautiful Indices in the Given Array II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3008-Find-Beautiful-Indices-in-the-Given-Array-II)
     * 同样的题还有: [3006. Find Beautiful Indices in the Given Array I](https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-i/description/)
     * 与 KMP算法的结合题
+
 * :red_circle: 求符合题意的配对数量: [2563. Count the Number of Fair Pairs](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2563-Count-the-Number-of-Fair-Pairs)
     * 求区间范围: 用到 `upperBound()` 和 `lowerBound()`
 
@@ -178,7 +179,7 @@ func upperBound(nums []int, target int) int {
 **算法题的解题思路可以概括为两大类：**
 1. 正面硬刚：用合适的算法 (DP, DFS, BFS, etc.) 直接解决
 2. 二分搜值：猜出答案, 每一轮看看是猜大了还是猜小了？以达到逼近最终答案的目的
-    * 此法适用于 题目要求 return single value (scalar) 并且 涉及 max/min value
+    * 此法适用于 题目要求 return single value (scalar) 并且 题目有单调性 + 涉及 max/min value
 
 **要点**: 什么时候可以用？
 * 当我们从题目中找到一种 **单调性** 的规律时，一般可以尝试用二分猜答案
@@ -236,6 +237,9 @@ func upperBound(nums []int, target int) int {
 * 阶乘函数后 K 个零: [793. Preimage Size of Factorial Zeroes Function](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0793-Preimage-Size-of-Factorial-Zeroes-Function)
 
 ### Guess Min/Max
+
+* :red_circle: 最短时间马克所有位置I: [3048. Earliest Second to Mark Indices I](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3048-Earliest-Second-to-Mark-Indices-I)
+    * Binary Search 猜答案 + Greedy
 
 * 抢房子4: [2560. House Robber IV](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2560-House-Robber-IV)
     * Binary Search 猜答案 + DP

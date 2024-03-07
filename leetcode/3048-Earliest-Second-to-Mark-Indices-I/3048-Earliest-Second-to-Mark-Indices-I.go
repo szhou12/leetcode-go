@@ -1,9 +1,10 @@
 package leetcode
 
 // 						idx 		val
+// 					-----------     -------------
 // nums 			     n          decrement cnts
 // changeIndices         m          nums idx
-// lastOccur          nums idx     changeIndices idx
+// lastOccur          nums idx      changeIndices idx
 func earliestSecondToMarkIndices(nums []int, changeIndices []int) int {
 	m := len(changeIndices)
 
