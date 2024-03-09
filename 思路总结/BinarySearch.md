@@ -238,6 +238,8 @@ func upperBound(nums []int, target int) int {
 
 ### Guess Min/Max
 
+* :red_circle: 最短时间马克所有位置II: [3049. Earliest Second to Mark Indices II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3049-Earliest-Second-to-Mark-Indices-II)
+
 * :red_circle: 最短时间马克所有位置I: [3048. Earliest Second to Mark Indices I](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3048-Earliest-Second-to-Mark-Indices-I)
     * Binary Search 猜答案 + Greedy
 
