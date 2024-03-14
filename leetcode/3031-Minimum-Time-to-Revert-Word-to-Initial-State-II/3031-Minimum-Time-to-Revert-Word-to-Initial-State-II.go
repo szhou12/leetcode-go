@@ -28,7 +28,7 @@ func preprocess(needle string) []int {
 	// dp[i] := max length j s.t. needle[0:j-1] == needle[i-j+1:i] (inclusive)
 	dp := make([]int, n)
 
-	// base case: require true prefix and suffix
+	// base case: require true prefix and suffix (i.e. needle itself as a whole can't be a prefix/suffix)
 	dp[0] = 0
 
 	for i := 1; i < n; i++ {
