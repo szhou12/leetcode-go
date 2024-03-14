@@ -32,6 +32,7 @@ X X X [O O X O X] // 最后五个位置三个清0，两个mark，这样不okay�
     * mark操作数量 = `nums[]`的长度
     * -1操作数量 = t - 清0操作数量 - mark操作数量
 6. 最后判断能否完成题目要求: 清0操作清掉的val总和 + -1操作数量 $\geq$ `nums[]`所有元素的val总和
+7. 注意！每次检查一个时刻t, 要保证 t >= `nums[]`的长度，因为要至少保证有足够的时间来mark。
 
 Time complexity = $O(\log n \cdot n\log n)$
 
