@@ -55,6 +55,9 @@ func buildTrie(root *TrieNode, words []string) {
 
 
 ## 经典题
+* :red_circle: 前后缀同时匹配的配对数: [3045. Count Prefix and Suffix Pairs II]()
+    * KMP STEP 1 + Trie
+
 * :red_circle: 最小代价变换字符串2: [2977. Minimum Cost to Convert String II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2977-Minimum-Cost-to-Convert-String-II)
     * Floyd + DP + Trie
 

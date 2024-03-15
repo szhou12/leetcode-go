@@ -1,6 +1,6 @@
 package leetcode
 
-// Step 1: the longest prefix suffix (lps) array of p
+// Step 1: the longest prefix suffix (lsp) array of p
 //
 //	lsp[i] = the max length k s.t. p[0:k-1] = p[i-k+1:i]
 //
