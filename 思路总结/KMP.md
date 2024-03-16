@@ -22,7 +22,7 @@
 
 ## 题目
 
-* :red_circle: 前后缀同时匹配的配对数: [3045. Count Prefix and Suffix Pairs II]()
+* :red_circle: 前后缀同时匹配的配对数: [3045. Count Prefix and Suffix Pairs II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3045-Count-Prefix-and-Suffix-Pairs-II)
     * KMP STEP 1 + Trie
 
 * :red_circle: 最少时间恢复字符串原样2：[3031. Minimum Time to Revert Word to Initial State II](https://leetcode.com/problems/minimum-time-to-revert-word-to-initial-state-ii/description/)
