@@ -49,7 +49,7 @@
 * 找第k小array sum: [1439. Find the Kth Smallest Sum of a Matrix With Sorted Rows](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1439-Find-the-Kth-Smallest-Sum-of-a-Matrix-With-Sorted-Rows)
     * 逐行merge, 每merge完一行取前k小的array sum
 
-* :yellow_circle: 聚类黑白球-只允许相邻位置的交换: [2938. Separate Black and White Balls]()
+* :yellow_circle: 聚类黑白球-只允许相邻位置的交换: [2938. Separate Black and White Balls](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2938-Separate-Black-and-White-Balls)
 
 ## 分清楚情况讨论
 

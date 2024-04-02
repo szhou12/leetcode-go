@@ -238,6 +238,8 @@ func upperBound(nums []int, target int) int {
 
 ### Guess Min/Max
 
+* :yellow_circle: 最短可能的子串的bit OR总和>=k: [3097. Shortest Subarray With OR at Least K II]()
+
 * :red_circle: 最短时间Mark所有位置II: [3049. Earliest Second to Mark Indices II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3049-Earliest-Second-to-Mark-Indices-II)
     * Binary Search 猜答案 + Regret Greedy (MinHeap)
 
