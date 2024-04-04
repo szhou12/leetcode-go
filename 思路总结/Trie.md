@@ -55,6 +55,8 @@ func buildTrie(root *TrieNode, words []string) {
 
 
 ## 经典题
+* :yellow_circle: 最长共享后缀: [3093. Longest Common Suffix Queries]()
+
 * :red_circle: 前后缀同时匹配的配对数: [3045. Count Prefix and Suffix Pairs II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3045-Count-Prefix-and-Suffix-Pairs-II)
     * KMP STEP 1 + Trie
 

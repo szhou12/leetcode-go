@@ -134,6 +134,10 @@ func slidingWindow(s string) int {
 * **模版Fix** 比较适合解决 Sliding Window 为定长的题目 (容易写出正确的code), 所以 定长的题目 优先考虑 **模版Fix**.
     * **模版Fix** 也可以解决 长度可变 的题目，但是实际操作中实现上不容易保证正确
 
+* :yellow_circle: 最短可能的子串的bit OR总和>=k: [3097. Shortest Subarray With OR at Least K II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3097-Shortest-Subarray-With-OR-at-Least-K-II)
+    * Binary Search 猜答案 + Sliding Window + Bitwise OR Sum
+    * 定长SLiding Window没有按照模版实现
+
 * 最多满意客户: [1052. Grumpy Bookstore Owner](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1052-Grumpy-Bookstore-Owner)
 
 * 找子串位置: [28. Find the Index of the First Occurrence in a String](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0028-Implement-strStr)
