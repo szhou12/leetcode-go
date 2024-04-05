@@ -187,6 +187,9 @@
 * 不同的子序列数量: [115. Distinct Subsequences](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0115-Distinct-Subsequences)
 
 ### 类型四: 子序列个数
+* :red_circle: 所有满足和为k的所有子序列的子序列个数: [3082. Find the Sum of the Power of All Subsequences](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3082-Find-the-Sum-of-the-Power-of-All-Subsequences)
+    * 3-D DP
+    * `DP[i][sum][length]`
 
 * :red_circle: :secret: 不同非空子序列个数II: [940. Distinct Subsequences II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0940-Distinct-Subsequences-II)
     * *940 与 1987 思路非常相近*
