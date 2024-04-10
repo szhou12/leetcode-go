@@ -1,0 +1,1 @@
+# [2992. Number of Self-Divisible Permutations](https://leetcode.ca/2024-01-04-2992-Number-of-Self-Divisible-Permutations/)
