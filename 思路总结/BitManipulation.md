@@ -4,6 +4,7 @@
 * [n 的二进制表示中1的个数](#n-的二进制表示中1的个数)
 * [Logic Operation: AND, OR, XOR](#logic-operation-and-or-xor)
 * [Digital Counting](#digital-counting)
+* [Bit Array As State](#bit-array-as-state)
 
 ## n 的二进制表示中1的个数
 * `n &= (n-1)`
@@ -28,3 +29,10 @@
 
 * :red_circle: 最大满足特定条件的自然数: [3007. Maximum Number That Sum of the Prices Is Less Than or Equal to K](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3007-Maximum-Number-That-Sum-of-the-Prices-Is-Less-Than-or-Equal-to-K)
     * Binary Search 猜答案 + Digital Counting
+
+## Bit Array As State
+- 用bit array表示n个元素使用与不使用的状态。
+
+* :lock: :red_circle: 最大化数组中连续元素的总和: [2992. Number of Self-Divisible Permutations]()
+    * DP + Bit Manipulation
+    * `DP[i][state]`

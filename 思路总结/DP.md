@@ -204,6 +204,10 @@
 ### 位置X种类
 #### 第一维 = 位置 (index); 第二维 = 值的种类 (value) / 状态 (state)
 
+* :lock: :red_circle: 最大化数组中连续元素的总和: [2992. Number of Self-Divisible Permutations]()
+    * DP + Bit Manipulation
+    * `DP[i][state]`
+
 * :red_circle: 最大化数组中连续元素的总和: [3041. Maximize Consecutive Elements in an Array After Modification](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification)
     * Sort first!
     * `DP[i][state]`
