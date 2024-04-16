@@ -33,6 +33,6 @@
 ## Bit Array As State
 - 用bit array表示n个元素使用与不使用的状态。
 
-* :lock: :red_circle: 最大化数组中连续元素的总和: [2992. Number of Self-Divisible Permutations]()
+* :lock: :red_circle: 最大化数组中连续元素的总和: [2992. Number of Self-Divisible Permutations](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2992-Number-of-Self-Divisible-Permutations)
     * DP + Bit Manipulation
     * `DP[i][state]`

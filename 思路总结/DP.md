@@ -17,6 +17,7 @@
     * [类型四: 子序列个数](#类型四-子序列个数)
 * [二维/高维 DP](#二维高维-dp)
     * [位置X种类](#位置x种类)
+    * [位置X状态](#位置x状态)
     * [区间型 (interval)](#区间型-interval)
     * [切绳子](#切绳子)
     * [组合问题 (Combinatorics)](#组合问题-combinatorics)
@@ -202,21 +203,24 @@
 ## 二维/高维 DP
 
 ### 位置X种类
-#### 第一维 = 位置 (index); 第二维 = 值的种类 (value) / 状态 (state)
-
-* :lock: :red_circle: 最大化数组中连续元素的总和: [2992. Number of Self-Divisible Permutations]()
-    * DP + Bit Manipulation
-    * `DP[i][state]`
-
-* :red_circle: 最大化数组中连续元素的总和: [3041. Maximize Consecutive Elements in an Array After Modification](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification)
-    * Sort first!
-    * `DP[i][state]`
+#### 第一维 = 位置 (index); 第二维 = 值的种类 (value)
 
 * :red_circle: 奇偶变换数组中挑选总和最大化: [2786. Visit Array Positions to Maximize Score](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2786-Visit-Array-Positions-to-Maximize-Score)
     * `DP[i][value]`
 
 * :red_circle: 最少次变换元素分三组: [2826. Sorting Three Groups](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2826-Sorting-Three-Groups)
     * `DP[i][value]`
+
+### 位置X状态
+#### 第一维 = 位置 (index); 第二维 = 选与不远的状态 (state)
+
+* :lock: :red_circle: 最大化数组中连续元素的总和: [2992. Number of Self-Divisible Permutations](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2992-Number-of-Self-Divisible-Permutations)
+    * DP + Bit Manipulation
+    * `DP[i][state]`
+
+* :red_circle: 最大化数组中连续元素的总和: [3041. Maximize Consecutive Elements in an Array After Modification](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification)
+    * Sort first!
+    * `DP[i][state]`
 
 ### 区间型 (interval)
 

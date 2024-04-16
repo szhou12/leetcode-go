@@ -238,6 +238,10 @@ func upperBound(nums []int, target int) int {
 
 ### Guess Min/Max
 
+* :yellow_circle: 可制造最多的合金数: [2861. Maximum Number of Alloys]()
+    * Binary Search 猜答案
+    * 注意Binary Search上界定得太高会造成溢出
+
 * :yellow_circle: 最短可能的子串的bit OR总和>=k: [3097. Shortest Subarray With OR at Least K II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3097-Shortest-Subarray-With-OR-at-Least-K-II)
     * Binary Search 猜答案 + Sliding Window + Bitwise OR Sum
 
