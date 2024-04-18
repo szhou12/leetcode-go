@@ -19,6 +19,9 @@
     * Trick 2: 判断一个整数 第k bit位 是否有1: `num>>k & 1 == 1`
 
 ## Logic Operation: AND, OR, XOR
+* :red_circle: 树上节点的最大XOR和: [3068. Find the Maximum Sum of Node Values]()
+    * XOR性质: 对一个数, (XOR k)偶数次，值保持不变；(XOR k)奇数次，值发生变化
+
 * :red_circle: 用AND和OR求最大平方和: [2897. Apply Operations on Array to Maximize Sum of Squares](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2897-Apply-Operations-on-Array-to-Maximize-Sum-of-Squares)
     * AND, OR对数值大小的影响
 
