@@ -238,6 +238,9 @@ func upperBound(nums []int, target int) int {
 
 ### Guess Min/Max
 
+* :yellow_circle: 最少时间修完所有车辆: [2594. Minimum Time to Repair Cars]()
+    * 不需要考虑具体每个车床分配多少辆车，计算一个上限足以作为判定条件
+
 * :yellow_circle: 可制造最多的合金数: [2861. Maximum Number of Alloys](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2861-Maximum-Number-of-Alloys)
     * Binary Search 猜答案
     * 注意Binary Search上界定得太高会造成溢出

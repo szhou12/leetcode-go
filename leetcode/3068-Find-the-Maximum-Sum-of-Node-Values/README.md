@@ -37,7 +37,7 @@
         ```
         - 遍历`diff`：每次选一对儿，累计增量和。记录遍历途中得到的最大增量和。
 
-Time complexity = $O(n\log n)$
+Time complexity = $O(n \log n)$
 
 ## Resource
 [【每日一题】LeetCode 3068. Find the Maximum Sum of Node Values](https://www.youtube.com/watch?v=CF7rTxasbow&t=613s&ab_channel=HuifengGuan)
