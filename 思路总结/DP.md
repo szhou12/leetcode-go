@@ -205,6 +205,9 @@
 ### 位置X种类
 #### 第一维 = 位置 (index); 第二维 = 值的种类 (value)
 
+* :red_circle: 最少操作数使grid达到理想状态: [3122. Minimum Number of Operations to Satisfy Conditions]()
+    * `DP[i][p]` where `p=0...9`
+
 * :red_circle: 奇偶变换数组中挑选总和最大化: [2786. Visit Array Positions to Maximize Score](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2786-Visit-Array-Positions-to-Maximize-Score)
     * `DP[i][value]`
 
