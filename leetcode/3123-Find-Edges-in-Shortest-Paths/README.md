@@ -10,7 +10,7 @@
     - Claim: if $d(0, i) + d(i, n-1) = d(0, n-1)$, then node $i$ is on the shortest path from node 0 to node n-1.
     - Prove:
         - Suppose $i$ is not on the shortest path from node 0 to node n-1.
-        - Then $d(0, i) + d(i, n-1) \> d(0, n-1)$, contradicting the assumption that $d(0, i) + d(i, n-1) = d(0, n-1)$.
+        - Then $$d(0, i) + d(i, n-1) > d(0, n-1)$$, contradicting the assumption that $d(0, i) + d(i, n-1) = d(0, n-1)$.
 4. 判断一条边`edge (a, b)`在最短路径上的充要条件: $d(0, a) + w(a, b) + d(b, n-1) = d(0, n-1)$
     - Claim: if $d(0, a) + w(a, b) + d(b, n-1) = d(0, n-1)$, then edge $(a, b)$ is on the shortest path from node 0 to node n-1.
     - Prove: *我的证明，正确性有待考证*
