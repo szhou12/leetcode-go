@@ -60,71 +60,78 @@
 
 ## Dijkstra - Find Shortest Path
 
-* :star: **适用题目的特征:**
-    1. **single-source**: 只给一个起点, 求从起点(single source)到图上任意一个node的最短路径
+* :star: **使用算法的两大条件:**
+    1. **single-source**: 只给一个起点/起点确定, 求从起点(single source)到图上任意一个node的最短路径
     2. **non-negative weight**: edge的权重非负
-    * 这样, 就可以求图上任意一点到起点single-source的最短距离
+
+* :star: **算法的特征:**
+    * 给定一个起点single-source, 可以求起点到图上任意一点的最短距离
     * Time complexity = $O(E\log E)$
     * 两种Return方式:
         1. Early Return: Dijkstra loop内到达终点即return; loop结束还没return说明无法到达终点
         2. 填表 Return: Dijkstra把所有结果填入一个表 (array, matrix) 中, loop结束后把所求node的结果按要求从表中取出return
 
-* :red_circle: **调整边的权重得到最短路径:** [2699. Modify Graph Edge Weights](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2699-Modify-Graph-Edge-Weights)
+* :red_circle: 判定一条边是否在最短路径上: [3123. Find Edges in Shortest Paths]()
+    * 一条边是否在最短路径上的判定条件: `d(0, a) + w(a, b) + d(b, n-1) == d(0, n-1)`
+    * **Dijkstra跑两遍**: 正向`node 0`为起点跑一遍，逆向`node n-1`为起点跑一遍
 
-* :red_circle: **有特殊路径选择权的最短路径:** [2662. Minimum Cost of a Path With Special Roads](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2662-Minimum-Cost-of-a-Path-With-Special-Roads)
+* :red_circle: 调整边的权重得到最短路径: [2699. Modify Graph Edge Weights](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2699-Modify-Graph-Edge-Weights)
 
-* :red_circle: **从Grid左上角走到右下角所花最短时间:** [2577. Minimum Time to Visit a Cell In a Grid](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2577-Minimum-Time-to-Visit-a-Cell-In-a-Grid)
+* :red_circle: 有特殊路径选择权的最短路径: [2662. Minimum Cost of a Path With Special Roads](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2662-Minimum-Cost-of-a-Path-With-Special-Roads)
+
+* :red_circle: 从Grid左上角走到右下角所花最短时间: [2577. Minimum Time to Visit a Cell In a Grid](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2577-Minimum-Time-to-Visit-a-Cell-In-a-Grid)
     * **矩阵走格子类型题**
 
-* :red_circle: **从Grid左上角走到右下角所花最少cost:** [1368. Minimum Cost to Make at Least One Valid Path in a Grid](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1368-Minimum-Cost-to-Make-at-Least-One-Valid-Path-in-a-Grid)
+* :red_circle: 从Grid左上角走到右下角所花最少cost: [1368. Minimum Cost to Make at Least One Valid Path in a Grid](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1368-Minimum-Cost-to-Make-at-Least-One-Valid-Path-in-a-Grid)
     * **矩阵走格子类型题**
 
-* :red_circle: **求必经最少障碍物的路径:** [2290. Minimum Obstacle Removal to Reach Corner](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2290-Minimum-Obstacle-Removal-to-Reach-Corner)
+* :red_circle: 求必经最少障碍物的路径: [2290. Minimum Obstacle Removal to Reach Corner](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2290-Minimum-Obstacle-Removal-to-Reach-Corner)
     * **矩阵走格子类型题**
 
-* :red_circle: **从两个起点到达同一个终点所需最短路径:** [2203. Minimum Weighted Subgraph With the Required Paths](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2203-Minimum-Weighted-Subgraph-With-the-Required-Paths)
+* :red_circle: 从两个起点到达同一个终点所需最短路径: [2203. Minimum Weighted Subgraph With the Required Paths](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2203-Minimum-Weighted-Subgraph-With-the-Required-Paths)
     * 难点: "拉链" - 如何找到"拉链"node i
+    * **Dijkstra跑两遍**: 正向`node src`为起点跑一遍，逆向`node dst`为起点跑一遍
 
-* :red_circle: :secret: **到达终点的路径总数:** [1976. Number of Ways to Arrive at Destination](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1976-Number-of-Ways-to-Arrive-at-Destination)
+* :red_circle: :secret: 到达终点的路径总数: [1976. Number of Ways to Arrive at Destination](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1976-Number-of-Ways-to-Arrive-at-Destination)
     * **Dijkstra + DFS + Deduplication**
     * 题目求方法总数, 最自然的是使用DFS
     * 使用Memo避免DFS重复走走过的路径
     * *1976 与 1786 两题逻辑完全相同*
 
-* :red_circle: :secret: **从起点走到终点的特殊路径总数:** [1786. Number of Restricted Paths From First to Last Node](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1786-Number-of-Restricted-Paths-From-First-to-Last-Node)
+* :red_circle: :secret: 从起点走到终点的特殊路径总数: [1786. Number of Restricted Paths From First to Last Node](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1786-Number-of-Restricted-Paths-From-First-to-Last-Node)
     * **Dijkstra + DFS + Deduplication**
     * 题目求方法总数, 最自然的是使用DFS
     * 使用Memo避免DFS重复走走过的路径
     * *1976 与 1786 两题逻辑完全相同*
 
-* :red_circle: **从起点可到达的nodes总数:** [882. Reachable Nodes In Subdivided Graph](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0882-Reachable-Nodes-In-Subdivided-Graph)
+* :red_circle: 从起点可到达的nodes总数: [882. Reachable Nodes In Subdivided Graph](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0882-Reachable-Nodes-In-Subdivided-Graph)
     * 难点1: 如何把解题思路与Dijkstra做关联 --> 把 小node 看做 edge weight
     * 难点2: Dijkstra expand时添加限制条件
 
-* :red_circle: :secret: **K站中转内最便宜的航班路径:** [787. Cheapest Flights Within K Stops](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0787-Cheapest-Flights-Within-K-Stops)
+* :red_circle: :secret: K站中转内最便宜的航班路径: [787. Cheapest Flights Within K Stops](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0787-Cheapest-Flights-Within-K-Stops)
     * **node储存双状态**: node 储存 位置信息+已中转次数信息
     * Dijkstra结果储存进 二维矩阵 = (# of nodes, # of stops used so far)
     * Early Return: Dijkstra loop内到达终点即return
     * *0787 与 2093 两题逻辑相似*
 
-* :yellow_circle: :secret: :lock: **最小花费到达目的地:** [2093. Minimum Cost to Reach City With Discounts](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2093-Minimum-Cost-to-Reach-City-With-Discounts)
+* :yellow_circle: :secret: :lock: 最小花费到达目的地: [2093. Minimum Cost to Reach City With Discounts](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2093-Minimum-Cost-to-Reach-City-With-Discounts)
     * 每次Expand一个邻居node, push "两条边": toll edge; toll/2 edge
     * **node储存双状态**: node 储存 位置信息+已使用discounts次数信息
     * Dijkstra结果储存进 二维矩阵 = (# of nodes, # of discounts used so far)
     * Early Return: Dijkstra loop内到达终点即return
     * *0787 与 2093 两题逻辑相似*
 
-* :green_circle: **最高概率的路径:** [1514. Path with Maximum Probability](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1514-Path-with-Maximum-Probability)
+* :green_circle: 最高概率的路径: [1514. Path with Maximum Probability](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1514-Path-with-Maximum-Probability)
 
-* :green_circle: **从source node到所有node所需最短时间:** [743. Network Delay Time](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0743-Network-Delay-Time)
+* :green_circle: 从source node到所有node所需最短时间: [743. Network Delay Time](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0743-Network-Delay-Time)
     * Dijkstra求最短路径的基础题: 求从source node到任意node i的最短路径
     * 可用来作为以上题目的练手题
 
-* :yellow_circle: :secret: :lock: **走迷宫II / 走冰系道馆:** [505. The Maze II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0505-The-Maze-II)
+* :yellow_circle: :secret: :lock: 走迷宫II / 走冰系道馆: [505. The Maze II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0505-The-Maze-II)
     * 难点: 地面是冰面, 只能维持一个方向前进直到撞墙
     * Early Return: Dijkstra loop内到达终点即return
 
-* :red_circle: :secret: :lock: **走迷宫III / 走冰系道馆+掉洞:** [499. The Maze III](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0499-The-Maze-III)
+* :red_circle: :secret: :lock: 走迷宫III / 走冰系道馆+掉洞: [499. The Maze III](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0499-The-Maze-III)
     * **node储存双状态**: node 储存 位置信息+到达node的方向指令信息
     * Priority Queue 再定义:
         1. 用一个结构体容纳不同variable type (int, string)
@@ -135,11 +142,11 @@
 
 
 ## BFS + PQ: 思路像BFS, 代码结构像Dijkstra
-* :red_circle: **一个query可以淹没多少格子, 求淹没总数:** [2503. Maximum Number of Points From Grid Queries](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2503-Maximum-Number-of-Points-From-Grid-Queries)
+* :red_circle: 一个query可以淹没多少格子, 求淹没总数: [2503. Maximum Number of Points From Grid Queries](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2503-Maximum-Number-of-Points-From-Grid-Queries)
 
-* :red_circle: **升高海平面中的最短路线:** [778. Swim in Rising Water](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0778-Swim-in-Rising-Water)
+* :red_circle: 升高海平面中的最短路线: [778. Swim in Rising Water](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0778-Swim-in-Rising-Water)
 
-* :red_circle: **接雨水II (海水倒灌II):** [407. Trapping Rain Water II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0407-Trapping-Rain-Water-II)
+* :red_circle: 接雨水II (海水倒灌II): [407. Trapping Rain Water II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0407-Trapping-Rain-Water-II)
     * 题目设置很像 [417. Pacific Atlantic Water Flow](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0417-Pacific-Atlantic-Water-Flow)
 
 
@@ -179,63 +186,63 @@
 
 ### 有向图类型
 
-* :yellow_circle: **课程表:** [207. Course Schedule](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0207-Course-Schedule)
+* :yellow_circle: 课程表: [207. Course Schedule](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0207-Course-Schedule)
     * 拓扑排序的基础题，一定要熟练掌握
 
-* :yellow_circle: **课程表II:** [210. Course Schedule II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0210-Course-Schedule-II)
+* :yellow_circle: 课程表II: [210. Course Schedule II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0210-Course-Schedule-II)
     * 拓扑排序的基础题，一定要熟练掌握
 
-* :red_circle: :secret: **课程表IV:** [1462. Course Schedule IV](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1462-Course-Schedule-IV)
+* :red_circle: :secret: 课程表IV: [1462. Course Schedule IV](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1462-Course-Schedule-IV)
     * "继承"变量 trick: 下一步节点要继承`cur`以及`cur`的所有prerequisites
 
-* :red_circle: **按照约束条件填表:** [2392. Build a Matrix With Conditions](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2392-Build-a-Matrix-With-Conditions)
+* :red_circle: 按照约束条件填表: [2392. Build a Matrix With Conditions](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2392-Build-a-Matrix-With-Conditions)
 
-* :red_circle: **DAG图中每个node的祖先:** [2192. All Ancestors of a Node in a Directed Acyclic Graph](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2192-All-Ancestors-of-a-Node-in-a-Directed-Acyclic-Graph)
+* :red_circle: DAG图中每个node的祖先: [2192. All Ancestors of a Node in a Directed Acyclic Graph](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2192-All-Ancestors-of-a-Node-in-a-Directed-Acyclic-Graph)
 
-* :red_circle: :secret: **舔狗链-圆桌会议可以邀请最多的互相喜欢的人数:** [2127. Maximum Employees to Be Invited to a Meeting](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2127-Maximum-Employees-to-Be-Invited-to-a-Meeting)
+* :red_circle: :secret: 舔狗链-圆桌会议可以邀请最多的互相喜欢的人数: [2127. Maximum Employees to Be Invited to a Meeting](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2127-Maximum-Employees-to-Be-Invited-to-a-Meeting)
     * "继承"变量 trick: 计算节点`depth`
 
-* :yellow_circle: **找出所有可以用给出的材料组成的食谱:** [2115. Find All Possible Recipes from Given Supplies](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2115-Find-All-Possible-Recipes-from-Given-Supplies)
+* :yellow_circle: 找出所有可以用给出的材料组成的食谱: [2115. Find All Possible Recipes from Given Supplies](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2115-Find-All-Possible-Recipes-from-Given-Supplies)
 
 
-* :red_circle: :secret: **有向图中最多的颜色:** [1857. Largest Color Value in a Directed Graph](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1857-Largest-Color-Value-in-a-Directed-Graph)
+* :red_circle: :secret: 有向图中最多的颜色: [1857. Largest Color Value in a Directed Graph](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1857-Largest-Color-Value-in-a-Directed-Graph)
     * "继承"变量 trick: 计算节点`depth`
 
-* :red_circle: :secret: **矩阵以rank表示:** [1632. Rank Transform of a Matrix](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1632-Rank-Transform-of-a-Matrix)
+* :red_circle: :secret: 矩阵以rank表示: [1632. Rank Transform of a Matrix](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1632-Rank-Transform-of-a-Matrix)
     * Topological Sort + Union Find
 
-* :red_circle: :secret: **奇怪打印机II:** [1591. Strange Printer II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1591-Strange-Printer-II)
+* :red_circle: :secret: 奇怪打印机II: [1591. Strange Printer II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1591-Strange-Printer-II)
 
 
-* :red_circle: :secret: **平行课程III:** [2050. Parallel Courses III](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2050-Parallel-Courses-III)
+* :red_circle: :secret: 平行课程III: [2050. Parallel Courses III](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2050-Parallel-Courses-III)
     * 转化思想：每门课的完成时间 等价于 计算节点`depth`
     * "继承"变量 trick: 计算节点`depth`
 
-* :yellow_circle: :lock: **平行课程:** [1136. Parallel Courses](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1136-Parallel-Courses)
+* :yellow_circle: :lock: 平行课程: [1136. Parallel Courses](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1136-Parallel-Courses)
     * "继承"变量 trick: 计算节点`depth`
 
-* :red_circle: **排序有组别的元素:** [1203. Sort Items by Groups Respecting Dependencies](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1203-Sort-Items-by-Groups-Respecting-Dependencies)
+* :red_circle: 排序有组别的元素: [1203. Sort Items by Groups Respecting Dependencies](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1203-Sort-Items-by-Groups-Respecting-Dependencies)
     * 难点不在于解法思路，而在于实现
 
-* :red_circle: :secret: **寻找可以走到终点的起点:** [802. Find Eventual Safe States](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0802-Find-Eventual-Safe-States)
+* :red_circle: :secret: 寻找可以走到终点的起点: [802. Find Eventual Safe States](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0802-Find-Eventual-Safe-States)
     * 突破点: 在于关注节点的"出度"。也就是要把graph整个逆向，计算每个节点的出度，"洋葱"的最外层是 出度=0 的节点。
 
-* :red_circle: :secret: :lock: **拓扑排序唯一解:** [444. Sequence Reconstruction](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0444-Sequence-Reconstruction)
+* :red_circle: :secret: :lock: 拓扑排序唯一解: [444. Sequence Reconstruction](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0444-Sequence-Reconstruction)
     * 知识点: 拓扑排序有唯一解 = 每一时刻入度=0的节点只有一个 = `queue`每一时刻都只会有一个元素
 
-* :red_circle: :secret: :lock: **推断字典序:** [269. Alien Dictionary](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0269-Alien-Dictionary)
+* :red_circle: :secret: :lock: 推断字典序: [269. Alien Dictionary](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0269-Alien-Dictionary)
     * trick: 利用 lexicographical order 来构建 adjacency-list representation
 
 
 ### 无向图类型
-* :red_circle: :secret: **tree上捡硬币:** [2603. Collect Coins in a Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2603-Collect-Coins-in-a-Tree)
+* :red_circle: :secret: tree上捡硬币: [2603. Collect Coins in a Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2603-Collect-Coins-in-a-Tree)
     * "继承"变量 trick: 计算节点`depth`
 
-* :red_circle: **分树-每个子树值相同:** [2440. Create Components With Same Value](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2440-Create-Components-With-Same-Value)
+* :red_circle: 分树-每个子树值相同: [2440. Create Components With Same Value](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2440-Create-Components-With-Same-Value)
 
-* :red_circle: :secret: **找到所有最矮树的根节点:** [310. Minimum Height Trees](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0310-Minimum-Height-Trees)
+* :red_circle: :secret: 找到所有最矮树的根节点: [310. Minimum Height Trees](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0310-Minimum-Height-Trees)
 
-* :red_circle: :secret: :lock: **所有节点到到环的最短距离:** [2204. Distance to a Cycle in Undirected Graph](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2204-Distance-to-a-Cycle-in-Undirected-Graph)
+* :red_circle: :secret: :lock: 所有节点到到环的最短距离: [2204. Distance to a Cycle in Undirected Graph](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2204-Distance-to-a-Cycle-in-Undirected-Graph)
 
 
 ## Floyd-Warshall Algorithm
