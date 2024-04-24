@@ -71,6 +71,9 @@
         1. Early Return: Dijkstra loop内到达终点即return; loop结束还没return说明无法到达终点
         2. 填表 Return: Dijkstra把所有结果填入一个表 (array, matrix) 中, loop结束后把所求node的结果按要求从表中取出return
 
+* :yellow_circle: 最短路径到达有时限的所有节点: [3112. Minimum Time to Visit Disappearing Nodes]()
+    * 典型题
+
 * :red_circle: 判定一条边是否在最短路径上: [3123. Find Edges in Shortest Paths](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3123-Find-Edges-in-Shortest-Paths)
     * 一条边是否在最短路径上的判定条件: `d(0, a) + w(a, b) + d(b, n-1) == d(0, n-1)`
     * **Dijkstra跑两遍**: 正向`node 0`为起点跑一遍，逆向`node n-1`为起点跑一遍
