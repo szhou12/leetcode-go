@@ -5,6 +5,7 @@
 * [找规律](#找规律)
 * [分清楚情况讨论](#分清楚情况讨论)
 * [K sorted lists](#k-sorted-lists)
+* [Arrangement With Stride](#arrangement-with-stride)
 
 ## Scheduling 类型题
 
@@ -57,3 +58,7 @@
 
 ## K sorted lists
 * :red_circle: 最小范围包含所有list中至少一个元素: [632. Smallest Range Covering Elements from K Lists](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0632-Smallest-Range-Covering-Elements-from-K-Lists)
+
+## Arrangement With Stride
+* :red_circle: 给定时间窗内安排不同任务: [621. Task Scheduler]()
+    * Solution 1: `maxHeap{(freq, task), ...}`
