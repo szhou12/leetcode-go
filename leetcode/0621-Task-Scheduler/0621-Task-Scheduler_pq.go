@@ -2,8 +2,8 @@ package leetcode
 
 import "container/heap"
 
-// Solution: MaxHeap{freq, task}
-func leastInterval_maxheap(tasks []byte, n int) int {
+// Solution 1: MaxHeap{freq, task}
+func leastInterval(tasks []byte, n int) int {
 	n++ // n+1 means no repeated tasks in consecutive n+1 slots
 
 	// Use map to count freq of each task
