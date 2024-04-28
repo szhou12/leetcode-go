@@ -4,6 +4,7 @@
 * [String上模拟加减运算](#string上模拟加减运算)
 * [中位数定理](#中位数定理)
 * [Constructive Algorithm (构造题)](#constructive-algorithm)
+* [Degree of Freedom (自由度)](#degree-of-freedom)
 
 ## String上模拟加减运算
 * :red_circle: 寻找最接近的回文串: [564. Find the Closest Palindrome](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0564-Find-the-Closest-Palindrome)
@@ -22,3 +23,6 @@
 
 ## Constructive Algorithm
 * :red_circle: 模运算缩短array长度: [3012. Minimize Length of Array Using Operations](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3012-Minimize-Length-of-Array-Using-Operations)
+
+## Degree of Freedom (自由度)
+* :red_circle: [3132. Find the Integer Added to Array II]()
