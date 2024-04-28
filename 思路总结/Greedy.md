@@ -54,7 +54,7 @@
 
 ## 分清楚情况讨论
 
-* :red_circle: 最小相等的array sum: [2918. Minimum Equal Sum of Two Arrays After Replacing Zeros]()
+* :red_circle: 最小相等的array sum: [2918. Minimum Equal Sum of Two Arrays After Replacing Zeros](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2918-Minimum-Equal-Sum-of-Two-Arrays-After-Replacing-Zeros)
 
 * 找零的情况: [860. Lemonade Change](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0860-Lemonade-Change)
 

@@ -121,6 +121,9 @@
 
 ### 类型一: Longest Ascending Subarray - 最长递增子数组
 
+* :green_circle: 从两个数组中构建最长递增子数组: [2771. Longest Non-decreasing Subarray From Two Arrays]()
+    * `DP[i][min/max]`
+
 * 最长递增子数组/最长连续递增子序列: [674. Longest Continuous Increasing Subsequence](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0674-Longest-Continuous-Increasing-Subsequence)
     * 经典题，需要明确区分与**最长递增子序列**在解法上的的异同
 
