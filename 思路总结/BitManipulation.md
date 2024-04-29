@@ -19,6 +19,12 @@
     * Trick 2: 判断一个整数 第k bit位 是否有1: `num>>k & 1 == 1`
 
 ## Logic Operation: AND, OR, XOR
+1. bitwise AND 性质: 一串元素连续 bitwise AND, 所得值一定越变越小，不会大于其中的最小元素。
+2. bitwise XOR 性质: 对一个数, (XOR k)偶数次，值保持不变；(XOR k)奇数次，值发生变化。
+
+* :red_circle: 最小递增数列的最后一个元素值是多少: [3133. Minimum Array End]()
+    * AND性质: 连续 bitwise AND 所得值一定越变越小，不会大于其中的最小元素。
+
 * :red_circle: 树上节点的最大XOR和: [3068. Find the Maximum Sum of Node Values](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3068-Find-the-Maximum-Sum-of-Node-Values)
     * XOR性质: 对一个数, (XOR k)偶数次，值保持不变；(XOR k)奇数次，值发生变化
 
@@ -26,7 +32,7 @@
     * AND, OR对数值大小的影响
 
 * :red_circle: 在AND结果为最小的情况下尽可能切多个subarrays: [2871. Split Array Into Maximum Number of Subarrays](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2871-Split-Array-Into-Maximum-Number-of-Subarrays)
-    * AND的性质: AND越多元素，结果的值越小
+    * AND性质: AND越多元素，结果的值越小
 
 ## Digital Counting
 
