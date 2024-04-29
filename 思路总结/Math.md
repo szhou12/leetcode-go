@@ -25,4 +25,5 @@
 * :red_circle: 模运算缩短array长度: [3012. Minimize Length of Array Using Operations](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3012-Minimize-Length-of-Array-Using-Operations)
 
 ## Degree of Freedom (自由度)
-* :red_circle: [3132. Find the Integer Added to Array II]()
+* :red_circle: [3132. Find the Integer Added to Array II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3132-Find-the-Integer-Added-to-Array-II)
+    * Degree of Freedom + Sorting
