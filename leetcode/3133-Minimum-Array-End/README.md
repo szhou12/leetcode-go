@@ -14,6 +14,7 @@
 - 也就是说，第二个元素在有自由度的bit位组合起来得1，第三个元素组合起来得2, ..., 最后一个元素组合起来得n-1
 
 ### 一图胜千言
+![autodraw 4_29_2024](https://github.com/szhou12/leetcode-go/assets/35708194/14b02a89-d8ae-485f-9b21-14a9abfb9e55)
 
 
 Time complexity = $O(n)$
