@@ -22,7 +22,7 @@
 1. bitwise AND 性质: 一串元素连续 bitwise AND, 所得值一定越变越小，不会大于其中的最小元素。
 2. bitwise XOR 性质: 对一个数, (XOR k)偶数次，值保持不变；(XOR k)奇数次，值发生变化。
 
-* :red_circle: 最小递增数列的最后一个元素值是多少: [3133. Minimum Array End]()
+* :red_circle: 最小递增数列的最后一个元素值是多少: [3133. Minimum Array End](https://github.com/szhou12/leetcode-go/blob/main/leetcode/3133-Minimum-Array-End/README.md)
     * AND性质: 连续 bitwise AND 所得值一定越变越小，不会大于其中的最小元素。
 
 * :red_circle: 树上节点的最大XOR和: [3068. Find the Maximum Sum of Node Values](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3068-Find-the-Maximum-Sum-of-Node-Values)
