@@ -66,8 +66,8 @@ func lowerBound(nums []int, k int) []int {
 func upperBound(nums []int, k int) []int {
 	n := len(nums)
 	upper := make([]int, n)
-	window := make(map[int]int)
-	count := 0
+	window := make(map[int]int) // record appearances of each distinct number within the window
+	count := 0 // count distinct numbers within the window
 	right := 0
 
 	for left := 0; left < n; left++ {
@@ -84,14 +84,14 @@ func upperBound(nums []int, k int) []int {
 		// update upper bound
 		if !(right < n) && count <= k {
 			if count < k {
-				upper[left] = -1
-			} else {
-				upper[left] = right
+				upper[left] = -1 // right出界了都没凑齐k个distinct number
+			} else { // count == k
+				upper[left] = right // right出界 和 凑齐k个 同时发生
 			}
 		} else if (right < n) && !(count <= k) {
-			upper[left] = right - 1
-		} else {
-			upper[left] = right - 1
+			upper[left] = right - 1 // right-1是因为在超过k个之后right又多走了一步,right-1才是第一个超过k个的index
+		} else { // !(right < n) && !(count <= k)
+			upper[left] = right - 1 // right-1是因为在超过k个之后right又多走了一步
 		}
 
 		// 吐
