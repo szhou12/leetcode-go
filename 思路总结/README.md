@@ -1,12 +1,24 @@
 # Handbook
 
+## 常用性质
+### Subarray
+1. subarray总个数: 一个长度为n的array，subarray的总个数 = `n*(n-1)/2 + n` = `n*(n+1)/2` = $O(n^2)$
+    * `n*(n-1)/2`: n个位置可以选择作为subarray的起始位置，剩下n-1个位置可以选择作为subarray的终止位置。起始位置和终止位置可以互换，n*(n-1)对于同一个subarray算了两遍，故除以2。
+    * `n`: 每个元素自己单独作为subarray。
+    * 另一种计算方式: n个长度=1的subarray, n-1个长度=2的subarray, n-2个长度=3的subarray, ..., 1个长度=n的subarray。所以总和为 n + (n-1) + (n-2) + ... + 1 = n*(n+1)/2
+### Bitwise Operations
+1. bitwise AND: `X1 & X2 & X3 & ... & Xn <= min{X1, X2, X3, ..., Xn}`
+    * 一串元素连续 bitwise AND, 所得值一定越变越小，不会大于其中的最小元素。
+2. bitwise XOR: `X (^k) (^k) ... (^k) = X` if `(^k)` even number of times; `X (^k) (^k) ... (^k) != X ^ k` if `(^k)` odd number of times
+    * 对一个数, (XOR k)偶数次，值保持不变；(XOR k)奇数次，值发生变化。
+
 ## Algorithms
 | 算法 | 类型题 |
 | :-: | - |
 |[3-Pass](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/3-Pass.md)|求总数/Count类型题 <br>求Max or Min/优化类型题<br>|
 |[BFS & Dijkstra](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/BFS_Dijkstra.md)|基础题: 层级遍历<br>常规题<br>综合题<br>岛屿沉没类/连通图个数<br>Dijkstra<br>BFS + PQ<br>Topological Sort<br>Floyd-Warshall<br>|
 |[Binary Search](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/BinarySearch.md)|经典题<br>Lower Bound & Upper Bound<br>First/Last Occurrence<br>Closet Element Greater/Less<br>BS猜答案<br>非常规<br>|
-|[Bit Manipulation](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/BitManipulation.md)|n 的二进制表示中1的个数<br>Logic Operation: AND, OR, XOR<br>|
+|[Bit Manipulation](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/BitManipulation.md)|n 的二进制表示中1的个数<br>Logic Operation: AND, OR, XOR<br>Digital Counting<br>Bit Array As State<br>|
 |[DFS](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/DFS.md)|DFS暴力穷举<br>N-Queens<br>岛屿沉没<br>类DP<br>Permutation<br>All Subsets<br>图的遍历<br>Min-Max Strategy<br>DFS + Memoization<br>|
 |[Dynamic Programming](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/DP.md)|基础题<br>买卖股票<br>抢劫房子<br>背包问题<br>回文串<br>Subarray<br>Subsequnce<br>二维/高维DP<br>|
 |[Greedy](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/Greedy.md)|Scheduling<br>找规律<br>分情况讨论<br>|
@@ -18,11 +30,12 @@
 |[Stack](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/Stack.md)|经典题<br>单调栈模板<br>|
 |[Two Pointers](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/TwoPointers.md)|X-Sum<br>Sliding Window<br>|
 |[Union Find](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/UnionFind.md)|基础题<br>MST<br>|
-|[Math](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/Math.md)|String上模拟加减运算<br>中位数定理<br>|
+|[Math](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/Math.md)|String上模拟加减运算<br>中位数定理<br>Constructive<br>Degree of Freedom<br>|
 |[找规律](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/%E6%89%BE%E8%A7%84%E5%BE%8B%E9%A2%98.md)|螺旋格子<br>DP/单调栈 + 中心开花<br>翻转String<br>Rotate/Circular Array/String<br>Compress String<br>打擂台<br>Overlapped Intervals 的充分必要条件<br>|
 |[常用技巧](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7.md)|Graph: 2D坐标转换为1D节点<br>Bit: 用位操作遍历所有子集<br>|
 |[Segment Tree](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/SegmentTree.md)||
 |[String](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/String.md)||
+|[Sorting](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/Sorting.md)||
 
 ## Practice First
 ### :red_circle: Hard
@@ -64,7 +77,8 @@
 
 | ico | meaning |
 | :-: | - |
-| :purple_circle:| 极难, 完全没有思路, 即使参考了答案, 之后再做也很可能做不出来 |
+| :bell: | 优先反复练习, 解题思路代表一类思想! |
+| :purple_circle: | 极难, 完全没有思路, 即使参考了答案, 之后再做也很可能做不出来 |
 | :red_circle: | 困难, 完全没有思路, 参考了答案 |
 | :orange_circle: | 中等偏难, 有正确的思路但是不完整, 缺少解题的关键, 无法直接出答案, 需要参考版本答案 |
 | :yellow_circle: | 中等, 有思路但是实现上有问题, 最终实现版本参考了答案 |
