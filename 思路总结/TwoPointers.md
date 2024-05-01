@@ -178,6 +178,9 @@ func slidingWindow(s string) int {
             1. 检查右边界**出界**的情况
             2. 检查左边界**超过**右边界的情况
 
+* :red_circle: 有k个不同元素的subarrays的个数的中位数: [3134. Find the Median of the Uniqueness Array]()
+    * Binary Search + Sliding Window
+    * 联动 992, 340
 
 * 求满足条件的Subarray个数: [713. Subarray Product Less Than K](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0713-Subarray-Product-Less-Than-K)
     * 不是很常规的题, 因为右边界延伸过程中的都是所求, 要注意处理右边界延伸的初始状态下就不满足要求的情况 (会导致左边界**超过**右边界)
@@ -235,6 +238,7 @@ func slidingWindow(s string) int {
 
 * :bell: :yellow_circle: [992. Subarrays with K Different Integers](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0992-Subarrays-with-K-Different-Integers)
     * 2537 的进阶版
+    * 记住，优先练习optimal solution的思想和代码！
 
 * :yellow_circle: 最长的"半重复"子串: [2730. Find the Longest Semi-Repetitive Substring](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2730-Find-the-Longest-Semi-Repetitive-Substring)
 
