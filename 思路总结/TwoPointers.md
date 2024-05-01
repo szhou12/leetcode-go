@@ -178,7 +178,8 @@ func slidingWindow(s string) int {
             1. 检查右边界**出界**的情况
             2. 检查左边界**超过**右边界的情况
 
-* :red_circle: 有k个不同元素的subarrays的个数的中位数: [3134. Find the Median of the Uniqueness Array]()
+
+* :red_circle: 有不同元素的subarrays的个数的中位数: [3134. Find the Median of the Uniqueness Array](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3134-Find-the-Median-of-the-Uniqueness-Array)
     * Binary Search + Sliding Window
     * 联动 992, 340
 

@@ -24,7 +24,7 @@ func medianOfUniquenessArray(nums []int) int {
 func subarraysMostKDistinct(nums []int, k int) int {
 	n := len(nums)
 	res := 0
-	
+
 	upperRight := atMost(nums, k)
 	for i := 0; i < n; i++ {
 		res += upperRight[i] - i
@@ -38,7 +38,7 @@ func atMost(nums []int, k int) []int {
 	n := len(nums)
 	upper := make([]int, n)
 	window := make(map[int]int) // record appearances of each distinct number within the window
-	count := 0 // count distinct numbers within the window
+	count := 0                  // count distinct numbers within the window
 	right := 0
 
 	for left := 0; left < n; left++ {
