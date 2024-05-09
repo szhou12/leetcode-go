@@ -18,7 +18,28 @@ for each digit {
 }
 ```
 
+## Gosper's Hack
+* 通过位运算，用二进制数模拟生成所有组合数 ${n \choose k}$.
+```go
+func GospersHack(n int, k int) {
 
+	state := (1 << k) - 1
+
+	for state < (1 << n) {
+
+		// do something with current state
+		doSomething(state)
+
+		c := state & -state
+		r := state + c
+		state = (((r ^ state) >> 2) / c) | r
+	}
+}
+```
+* Resources:
+    1. [Gosper's Hack Explained](https://programmingforinsomniacs.blogspot.com/2018/03/gospers-hack-explained.html)
+        - Explain the mechanism of Gosper's Hack pretty well!!!
+    2. [算法学习笔记(75): Gosper's Hack](https://zhuanlan.zhihu.com/p/360512296)
 
 ## 因子/Divisor
 ### GCD (Greatest Common Divisor)

@@ -16,8 +16,8 @@
 | `>> n` | Binary Right Shift Operator | 从左侧补n个0。`a = 0011 1100` :arrow_right: `a>>2 = 0000 1111` |
 
 [Go << and >> operators - Stack Overflow](https://stackoverflow.com/questions/5801008/go-and-operators)
-* `n << t`: 另一层意思 - "n times 2, t times". i.e. $n \times 2^t$
-* `n >> t`: 另一层意思 - "n divided by 2, y times". i.e. $n \times 2^{-t}$
+* `n << t`: 另一层意思 - "n times 2, t times". i.e. `n << t = n * (1<<t) = ` $n \times 2^t$
+* `n >> t`: 另一层意思 - "n divided by 2, y times". i.e. `n >> t = n * (1>>t) = ` $n \times 2^{-t}$
 
 ## Mod Operator
 Go 中的 % 与 Python 中的 %, 在对负数取mod时结果会不同
