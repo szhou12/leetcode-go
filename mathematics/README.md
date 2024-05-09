@@ -3,6 +3,7 @@
 
 ## 目录
 * [十进制](#十进制)
+* [Gosper's Hack](#gospers-hack)
 * [因子](#因子divisor)
 
 ## 十进制
@@ -27,7 +28,7 @@ func GospersHack(n int, k int) {
 
 	for state < (1 << n) {
 
-		// do something with current state
+		// do something with current combination
 		doSomething(state)
 
 		c := state & -state
@@ -36,6 +37,7 @@ func GospersHack(n int, k int) {
 	}
 }
 ```
+* Time complexity = $O({n \choose k})$
 * Resources:
     1. [Gosper's Hack Explained](https://programmingforinsomniacs.blogspot.com/2018/03/gospers-hack-explained.html)
         - Explain the mechanism of Gosper's Hack pretty well!!!

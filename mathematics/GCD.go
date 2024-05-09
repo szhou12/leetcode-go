@@ -3,7 +3,7 @@ package mathematics
 // 求 最大公约数
 // greatest common divisor (GCD) via Euclidean algorithm (辗转相除法)
 
-// recursive way 记住这个写法
+// recursive way
 func gcd(a, b int) int {
 	if b == 0 {
 		return a
@@ -14,9 +14,7 @@ func gcd(a, b int) int {
 // iterative way
 func GCD(a, b int) int {
 	for b != 0 {
-		t := b
-		b = a % b
-		a = t
+		a, b = b, a%b
 	}
 	return a
 }
