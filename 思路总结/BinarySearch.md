@@ -195,6 +195,8 @@ func upperBound(nums []int, target int) int {
 
 ### Guess K-th Element
 
+* :red_circle: 第k小的组合数: [3116. Kth Smallest Amount With Single Denomination Combination]()
+
 * :red_circle: 有不同元素的subarrays的个数的中位数: [3134. Find the Median of the Uniqueness Array](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3134-Find-the-Median-of-the-Uniqueness-Array)
     * Binary Search + Sliding Window
     * 联动 [992. Subarrays with K Different Integers](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0992-Subarrays-with-K-Different-Integers)
