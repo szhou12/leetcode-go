@@ -36,7 +36,8 @@
 
 ## Digital Counting
 
-* :red_circle: 第k小的组合数: [3116. Kth Smallest Amount With Single Denomination Combination]()
+* :red_circle: 第k小的组合数: [3116. Kth Smallest Amount With Single Denomination Combination](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination)
+    * Binary Search + Grosper's Hack + Exclusion-Inclusion Principle + Divisors
 
 * :red_circle: 最大满足特定条件的自然数: [3007. Maximum Number That Sum of the Prices Is Less Than or Equal to K](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3007-Maximum-Number-That-Sum-of-the-Prices-Is-Less-Than-or-Equal-to-K)
     * Binary Search 猜答案 + Digital Counting
