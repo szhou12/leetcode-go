@@ -7,6 +7,8 @@
     * Define `dp[i][j] = ` minimum value in the top-left area of $(i, j)$.
     * Recurrence: `dp[i][j] = min(dp[i-1][j], dp[i][j-1], grid[i][j])`
     * NOTE: CANNOT set base case as `dp[0][0] = grid[0][0]` before update the result because we must make one move.
+![leetcode3148](https://github.com/szhou12/leetcode-go/assets/35708194/751a4952-5a7e-4061-81e5-7699f98f946c)
+
 
 Time complexity = $O(m*n)$
 
