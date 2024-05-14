@@ -259,4 +259,4 @@ dp[i] = min(dp[j-1] + cost[j:i]) for 0 <= j <= i
     * 用 DP 思想 翻译 数学中的组合问题
 
 ### Min-Max
-* :red_circle: 矩阵中差值总分最大的路径: [3148. Maximum Difference Score in a Grid]()
+* :red_circle: 矩阵中差值总分最大的路径: [3148. Maximum Difference Score in a Grid](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3148-Maximum-Difference-Score-in-a-Grid)
