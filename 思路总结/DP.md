@@ -142,6 +142,7 @@
     * DP + Segment Tree
     + 要求数学推导
 
+* :yellow_circle: 特殊数组II: [3152. Special Array II]()
 
 ## Subsequnce 子序列类型题
 
