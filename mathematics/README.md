@@ -28,6 +28,7 @@ for each digit {
 
 ## Gosper's Hack
 * 通过位运算，用二进制数模拟生成所有组合数 ${n \choose k}$.
+* 注意！只适合 $n$ 比较小的情况。$n \leq 32$.
 ```go
 func GospersHack(n int, k int) {
 
