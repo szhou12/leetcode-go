@@ -142,7 +142,8 @@
     * DP + Segment Tree
     + 要求数学推导
 
-* :yellow_circle: 特殊数组II: [3152. Special Array II]()
+* :yellow_circle: 特殊数组II: [3152. Special Array II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3152-Special-Array-II)
+    * 用DP来累计个数
 
 ## Subsequnce 子序列类型题
 
