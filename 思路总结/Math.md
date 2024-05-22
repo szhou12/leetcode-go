@@ -29,7 +29,7 @@
     * Degree of Freedom + Sorting
 
 ## Frequency
-* :yellow_circle: digit不同的pair总数: [3153. Sum of Digit Differences of All Pairs]()
+* :yellow_circle: digit不同的pair总数: [3153. Sum of Digit Differences of All Pairs](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3153-Sum-of-Digit-Differences-of-All-Pairs)
     * digit counting
 
 * :yellow_circle: 最少更改数使字符串以k长重复: [3137. Minimum Number of Operations to Make Word K-Periodic](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3137-Minimum-Number-of-Operations-to-Make-Word-K-Periodic)
