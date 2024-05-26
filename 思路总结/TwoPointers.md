@@ -178,6 +178,9 @@ func slidingWindow(s string) int {
             1. 检查右边界**出界**的情况
             2. 检查左边界**超过**右边界的情况
 
+* :yellow_circle: 压缩字符串III: [3163. String Compression III]()
+    * 标准的Sliding Window (Flex) 题目
+    * use `strings.Builder` to concatenate strings
 
 * :red_circle: 有不同元素的subarrays的个数的中位数: [3134. Find the Median of the Uniqueness Array](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3134-Find-the-Median-of-the-Uniqueness-Array)
     * Binary Search + Sliding Window
