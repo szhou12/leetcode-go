@@ -10,6 +10,7 @@
 | :-: | - |
 |[System](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_System.md)|- Configure VS Code for Go<br>- Update Go<br>|
 |[Package](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_Package.md)|- Package Management <br>- Code Scope (Redeclare Error)<br>|
+|[Goroutine](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_Goroutine.md)|- Concurrency vs Parallelism<br>|
 |[Pass by Value (值传递)](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_Pass.md)| |
 |[Print](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_Print.md)|- Print byte as character<br>- Print variable type<br>|
 |[Slice](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_Slice.md)|- Slice vs. Array<br> - Pass into a function<br> - How to index a slice pointer<br>- Create slice of slices<br> - Sort slice of objects<br> - Sort slice of slice<br> - Slice of Map<br> - Slice as a key in map<br> - Prepend elements<br> - Compare Two Slices Equality<br>|
