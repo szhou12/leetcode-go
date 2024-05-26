@@ -3,6 +3,8 @@
 
 :bulb: 系统学习Go语言请参考: [李文周的博客 - Go语言学习之路/Go语言教程](https://www.liwenzhou.com/posts/Go/golang-menu/)
 
+:bulb: Go的parallel programming部分请参考: [Lecture 5: Go, Threads, and Raft](https://www.youtube.com/watch?v=UzzcUS2OHqo&ab_channel=MIT6.824%3ADistributedSystems) [00:00 ~ 46:00]
+
 ## Table of Contents
 | Subject | Topics |
 | :-: | - |
