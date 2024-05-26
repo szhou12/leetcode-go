@@ -6,6 +6,7 @@
 * [Reverse a String](#reverse-a-string)
 * [rune vs. byte](#rune-vs-byte)
 * [Substract Two Bytes](#substract-two-bytes)
+* [String Concatenation](#string-concatenation)
 
 ## Strings are Immutable
 [Swap Characters of a string in Go (Golang)](https://golangbyexample.com/swap-characters-string-golang/)
@@ -106,4 +107,24 @@ fmt.Println(int(word[1]) - int(word[0])) // answer = -2
 
 // Note: Go handles character literal (i.e. not indexing into string) as rune
 fmt.Println('g' - 'i') // answer = -2
+```
+
+## String Concatenation
+### `+` Operator For Small Concatenations
+- For a small number of strings, use `+` to concatenate strings.
+    - Pros: Simple and convenient
+    - Cons: Inefficient. Avoid using `+` in a loop because it can lead to excessive memory allocation and copying. Each concatenation with `+` creates a new string because strings in Go are immutable.
+```go
+concat := "a" + "b" + "c"
+```
+### `strings.Builder` for Efficient Large Concatenations
+- For a **large** number of strings, use `strings.Builder` to efficiently concatenate strings.
+    - Pros: Efficient. Using `strings.Builder` in a loop. It avoids the immutability overhead by working with a mutable buffer underneath. It minimizes memory copying and allocations, which makes it more efficient.
+    - Cons: More complex than using `+`.
+```go
+var builder strings.Builder
+for _, str := range []string{"a", "b", "c", "d"} {
+    builder.WriteString(str)
+}
+concat := builder.String()
 ```
