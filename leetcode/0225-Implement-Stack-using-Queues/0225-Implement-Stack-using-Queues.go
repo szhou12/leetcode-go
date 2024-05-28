@@ -9,7 +9,7 @@ type MyStack struct {
 }
 
 func Constructor() MyStack {
-
+	
 }
 
 func (this *MyStack) Push(x int) {

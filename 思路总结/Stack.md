@@ -8,6 +8,10 @@
 
 ## 经典题
 
+* :yellow_circle: 双stack实现queue: [232. Implement Queue using Stacks](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0232-Implement-Queue-using-Stacks)
+
+* :yellow_circle: 双queue实现stack: [225. Implement Stack using Queues](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0225-Implement-Stack-using-Queues)
+
 * [20. Valid Parentheses](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0020-Valid-Parentheses)
     * idea: 遇到左括号则入栈；遇到右括号，若栈顶是匹配的左括号则弹栈，否则，invalid. 若所有括号都check过，且此时栈内已空，则valid
 

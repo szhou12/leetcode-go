@@ -24,7 +24,7 @@
 3. Rule 3: Each goroutine is actively seeking to acquire the lock.
     - Actively Seeking: 任一个goroutine如果有`mu.Lock()`，可以视作它时时刻刻等着锁available，一旦锁available，它就会立刻主动积极地争抢锁的持有权，谁"手速"快就归谁。这个性质造成一定的无序性，在没有准确定义invariant的情况下，会导致shared data更新结果与预期不一致。
 
-:x: Wrong Invariant Example:
+:x: Wrong Example:
 ```go
 func main() {
     alice := 10000
@@ -68,7 +68,7 @@ func main() {
     }
 }
 ```
-:white_check_mark: Correct Invariant Example:
+:white_check_mark: Correct Example:
 ```go
 func main() {
     alice := 10000
@@ -110,3 +110,25 @@ func main() {
 ```
 
 ### Condition Variable
+:x: Wrong Example:
+```go
+func main() {
+    rand.Seed(time.Now().UnixNano())
+
+    count := 0
+    finished := 0
+    var mu sync.Mutex
+    cond := sync.NewCond(&mu)
+
+    for i := 0; i < 10; i++ {
+        go func() {
+            vote := requestVote()
+            mu.Lock()
+            defer mu.Unlock()
+            if vote {
+                
+            }
+        }
+    }
+}
+```
