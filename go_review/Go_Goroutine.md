@@ -2,6 +2,8 @@
 
 ## Contents
 * [Concurrency vs Parallelism](#concurrency-vs-parallelism)
+* [Synchronization Primitives](#synchronization-primitives)
+    * [Mutex](#mutex-read-write-mutex-读写锁)
 
 ## Concurrency vs Parallelism
 || Concurrency <br>并发 | Parallelism <br>并行 |
@@ -11,3 +13,87 @@
 |Analogy|一个咖啡店员同时做三件事：下单，做咖啡，擦桌子。他在三个事之间来回切换 (context switching)。|三个咖啡店员同时各自负责其中一件事：A下单，B做咖啡，C擦桌子。|
 |Python|Threading (多线程) in Python is often used to achieve concurrency.<br>Use Threading for I/O-bound tasks.|Multiprocessing (多进程) in Python is often used to achieve true parallelism.<br>Use Multiprocessing for CPU-bound tasks.|
 * Note: Go typically doesn't use terms "threading" and "multiprocessing" like Python does. This is because goroutines handle both concurrency and parallelism. In other words, Go abstracts these complexities (**"concurrency" vs. "parallellism"** OR **"threading" vs. "multiprocessing"**) away through goroutines and its powerful runtime scheduler. 
+
+## Synchronization Primitives
+### Mutex (Read-Write Mutex, 读写锁)
+```go
+func main() {
+    alice := 10000
+    bob := 10000
+    var mu sync.Mutex
+
+    total := alice + bob
+
+    go func() {
+        for i := 0; i < 1000; i++ {
+            mu.Lock()
+            alice -= 1
+            mu.Unlock()
+            mu.Lock()
+            bob += 1
+            mu.Unlock()
+        }
+    }()
+
+    go func() {
+        for i := 0; i < 1000; i++ {
+            mu.Lock()
+            bob -= 1
+            mu.Unlock()
+            mu.Lock()
+            alice += 1
+            mu.Unlock()
+        }
+    }
+
+    // Audit: check if sum of alice+bob remains invariant = total
+    start := time.Now()
+    for time.Since(start) < 1*time.Second {
+        mu.Lock()
+        if alice+bob != total {
+            fmt.Printf("Observed violation, alice =%v, bob =%v, sum = %v\n", alice, bob, alice+bob)
+        }
+        mu.Unlock()
+    }
+}
+```
+
+```go
+func main() {
+    alice := 10000
+    bob := 10000
+    var mu sync.Mutex
+
+    total := alice + bob
+
+    go func() {
+        for i := 0; i < 1000; i++ {
+            mu.Lock()
+            alice -= 1
+            bob += 1
+            mu.Unlock()
+        }
+    }()
+
+    go func() {
+        for i := 0; i < 1000; i++ {
+            mu.Lock()
+            bob -= 1
+            mu.Unlock()
+            mu.Lock()
+            alice += 1
+            mu.Unlock()
+        }
+    }
+
+    // Audit: check if sum of alice+bob remains invariant = total
+    start := time.Now()
+    for time.Since(start) < 1*time.Second {
+        mu.Lock()
+        if alice+bob != total {
+            fmt.Printf("Observed violation, alice =%v, bob =%v, sum = %v\n", alice, bob, alice+bob)
+        }
+        mu.Unlock()
+    }
+}
+```
