@@ -4,6 +4,7 @@ type MyQueue struct {
 	// imports elements from outside world
 	// exports elements ONLY to master
 	buffer []int
+	
 	// imports elements ONLY from buffer
 	// exports elemnts to outside world
 	master []int
