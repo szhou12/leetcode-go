@@ -16,16 +16,26 @@
 
 ## Synchronization Primitives
 ### Mutex (Read-Write Mutex, 读写锁)
+1. Rule 1: Grab a lock every time when a goroutine is accessing shared data.
+2. Rule 2: Locks protect invariants. 
+    - Invariants should be deemed as atomic operations.
+    - Invariants may NOT be a single statement or single update to shared data. Invariants can be a combo of multiple variables (region of code).
+        - 在下面的例子中，(alice + bob) 的总和是一个invariant (值应该时时刻刻保持一致)，应该视作atomic。而alice和bob各自的值不需要时时刻刻保持一致，不应该视作atomic。
+3. Rule 3: Each goroutine is actively seeking to acquire the lock.
+    - Actively Seeking: 任一个goroutine如果有`mu.Lock()`，可以视作它时时刻刻等着锁available，一旦锁available，它就会立刻主动积极地争抢锁的持有权，谁"手速"快就归谁。这个性质造成一定的无序性，在没有准确定义invariant的情况下，会导致shared data更新结果与预期不一致。
+
+:x: Wrong Invariant Example:
 ```go
 func main() {
     alice := 10000
     bob := 10000
     var mu sync.Mutex
 
-    total := alice + bob
+    total := alice + bob // (alice + bob) is the invariant in this example
 
     go func() {
         for i := 0; i < 1000; i++ {
+            /* Wrong version */
             mu.Lock()
             alice -= 1
             mu.Unlock()
@@ -37,6 +47,7 @@ func main() {
 
     go func() {
         for i := 0; i < 1000; i++ {
+            /* Wrong version */
             mu.Lock()
             bob -= 1
             mu.Unlock()
@@ -57,7 +68,7 @@ func main() {
     }
 }
 ```
-
+:white_check_mark: Correct Invariant Example:
 ```go
 func main() {
     alice := 10000
@@ -68,6 +79,7 @@ func main() {
 
     go func() {
         for i := 0; i < 1000; i++ {
+            /* Correct version */
             mu.Lock()
             alice -= 1
             bob += 1
@@ -77,10 +89,9 @@ func main() {
 
     go func() {
         for i := 0; i < 1000; i++ {
+            /* Correct version */
             mu.Lock()
             bob -= 1
-            mu.Unlock()
-            mu.Lock()
             alice += 1
             mu.Unlock()
         }
@@ -97,3 +108,5 @@ func main() {
     }
 }
 ```
+
+### Condition Variable
