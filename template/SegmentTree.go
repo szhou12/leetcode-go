@@ -30,6 +30,28 @@ func NewSegTreeNode(start, end int, val int) *SegTreeNode {
 }
 
 /*
+Constructor: i-th叶子节点的info初始化为vals[i]
+*/
+func NewSegTreeNodeFromSlice(start, end int, vals []int) *SegTreeNode {
+	node := &SegTreeNode {
+		start: start,
+		end: end,
+	}
+	if start == end {
+		node.info = vals[start]
+		return node
+	}
+	mid := (start + end) / 2
+	node.left = NewSegTreeNodeFromSlice(start, mid, vals)
+	node.right = NewSegTreeNodeFromSlice(mid+1, end, vals)
+
+	// Update cur node's info: combine left and right child's info
+	node.info = node.left.info + node.right.info
+	return node
+
+}
+
+/*
 更新<lazy标记>
 This method is used for lazy propagation. When a node has an unpropagated update (tag==true), this method applies the update to its children.
 1. The info of each child is increased by delta times the size of the range it covers.
@@ -53,6 +75,25 @@ func (node *SegTreeNode) pushDown() {
 }
 
 /*
+单点修改
+This method updates i-th leaf node by replacing with the val.
+*/
+func  (node *SegTreeNode) updateSingle(index int, val int) {
+	if index < node.start || node.end < index {
+		return
+	}
+	if index <= node.start && node.end <= index { // at leaf node
+		node.info = val
+		return
+	}
+	node.left.updateSingle(index, val)
+	node.right.updateSingle(index, val)
+
+	// Update cur node's info: merge left and right child's info
+	node.info = node.left.info + node.right.info
+}
+
+/*
 区间修改
 This method updates a range [a, b] in the segment tree by adding val to each element in the range.
  1. If the current node's range is completely outside [a, b], it does nothing.
@@ -73,6 +114,8 @@ func (node *SegTreeNode) updateRange(start int, end int, val int) {
 	node.pushDown()
 	node.left.updateRange(start, end, val)
 	node.right.updateRange(start, end, val)
+
+	// Update cur node's info: merge left and right child's info
 	node.info = node.left.info + node.right.info
 }
 
@@ -94,3 +137,9 @@ func (node *SegTreeNode) queryRange(start, end int) int {
 	node.pushDown()
 	return node.left.queryRange(start, end) + node.right.queryRange(start, end)
 }
+
+/*
+func main() {
+	root := NewSegTreeNodeFromSlice(0, len(nums)-1, nums)
+}
+*/
