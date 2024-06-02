@@ -43,5 +43,8 @@
 ## 题目
 :purple_circle: 求所有子数组中每个子数组不同元素数量的平方和: [2916. Subarrays Distinct Element Sum of Squares II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2916-Subarrays-Distinct-Element-Sum-of-Squares-II)
 
+:red_circle: 分治法解House Robber: [3165. Maximum Sum of Subsequence With Non-adjacent Elements](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3165-Maximum-Sum-of-Subsequence-With-Non-adjacent-Elements)
+    - House Robber题型的第二种解法: Divide and Conquer (实现上使用 Segment Tree)
+
 ## Resources
 - [【neko算法课】线段树 数据结构【6期】](https://www.bilibili.com/video/BV1yF411p7Bt/?spm_id_from=333.337.search-card.all.click&vd_source=0c02ef6f6e7a2b0959d7dd28e9e49da4)
