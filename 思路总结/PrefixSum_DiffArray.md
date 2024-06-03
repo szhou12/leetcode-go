@@ -69,6 +69,8 @@ diff:  1,   2,  2, -1,  4
 
 ## 扫描线 (Sweep Line)
 
+* :red_circle: 统计不开会的“好日子”: [3169. Count Days Without Meetings]()
+
 * :red_circle: "好"分隔的总数: [2963. Count the Number of Good Partitions](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2963-Count-the-Number-of-Good-Partitions)
 
 ## 整体区间的增减
