@@ -17,7 +17,7 @@
     1. Scheduling问题不能死板地记：sort by start/end date.
     2. sort谁由下一步的`finding compatible jobs function`的定义决定。即，组成 compatible set的元素是按什么条件筛选的。e.g. 1353中，筛选规则就是挑start date不晚于loop的当前天的。所以, sort by start date方便进行贪心(每一步不回头看)。
 
-* :yellow_circle: 统计不开会的“好日子”: [3169. Count Days Without Meetings]()
+* :yellow_circle: 统计不开会的“好日子”: [3169. Count Days Without Meetings](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3169-Count-Days-Without-Meetings)
 
 * :secret: :red_circle: schedule jobs同时最大化利益：[1235. Maximum Profit in Job Scheduling](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1235-Maximum-Profit-in-Job-Scheduling)
     * 非常好非常综合的题目！！！

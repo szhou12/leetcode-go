@@ -6,7 +6,7 @@ func countDays_scheduling(days int, meetings [][]int) int {
 	// sort by start date, prioritize larger end date (其实不需要考虑end date顺序，这个算法也正确)
 	sort.Slice(meetings, func(i, j int) bool {
 		if meetings[i][0] == meetings[j][0] {
-			return meetings[i][1] > meetings[j][1]
+			return meetings[i][1] > meetings[j][1] // 没有这步也正确
 		}
 		return meetings[i][0] < meetings[j][0]
 	})

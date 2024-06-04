@@ -10,7 +10,8 @@ func countDays_sweepline(days int, meetings [][]int) int {
 		netMeetings[start]++
 		netMeetings[end+1]-- // end is the last day of the meeting => end+1 is the first day without this meeting
 	}
-	// dummy date: because last meeting is likely not to end at the last day, we set a positive delta at the days+1 so that we can include "no-meeting" duration between the last meeting and the end of the days
+	// dummy date: because last meeting is likely not to end at the last day, 
+	// we set a positive delta at the days+1 so that we can include "no-meeting" duration between the last meeting and the end of the days
 	netMeetings[days+1]++
 
 	for date, _ := range netMeetings {

@@ -111,6 +111,7 @@ func main() {
 
 ### Condition Variable
 :x: Wrong Example:
+- This is an implementation that outpus correct result. However, the issue here is that it's super inefficient! Recall Rule 3 - A thread (goroutine) that declares `mu.Lock()` is actively seeking to acquire the lock. In this example, the main thread is busy waiting for the lock. This behavior will burn up CPU! One simple solution is to add sleep in the infinite loop so that the main thread only checks the condition once a while. But this solution is not ideal. You should always be aware of the use of magic constants in your code!!! Why use 50ms rather than other numbers?
 ```go
 func main() {
     rand.Seed(time.Now().UnixNano())
@@ -118,17 +119,71 @@ func main() {
     count := 0
     finished := 0
     var mu sync.Mutex
-    cond := sync.NewCond(&mu)
 
-    for i := 0; i < 10; i++ {
+    for i := 0; i < 10; i++ { // in parallel spqwn 10 goroutines
         go func() {
             vote := requestVote()
             mu.Lock()
             defer mu.Unlock()
             if vote {
-                
+                count++
             }
-        }
+            finished++
+        }()
     }
+
+    // main thread is busy waiting
+    for {
+        mu.Lock()
+        if count >= 5 || finished == 10 {
+            break
+        }
+        mu.Unlock()
+        // time.Sleep(50* time.Millisecond)
+    }
+
+    if count >= 5 {
+        fmt.Println("Received 5+ votes!")
+    } else {
+        fmt.Println("Lost")
+    }
+    mu.Unlock()
+}
+```
+:white_check_mark: Correct Example:
+```go
+func main() {
+    rand.Seed(time.Now().UnixNano())
+
+    count := 0
+    finished := 0
+    var mu sync.Mutex
+    cond := sync.NewCond(&mu) // Decorate mutex lock with condition variable
+
+    for i := 0; i < 10; i++ { // in parallel spqwn 10 goroutines
+        go func() {
+            vote := requestVote()
+            mu.Lock()
+            defer mu.Unlock()
+            if vote {
+                count++
+            }
+            finished++
+            cond.Broadcast() // notify main thread that a goroutine has finished
+        }()
+    }
+
+    // main thread is now lazy waiting: only wakes up when other threads notify
+    mu.Lock()
+    for !(count >= 5 || finished == 10) { // change "if" to "for"
+        cond.Wait() // sleep until notified. When notified, re-acquire the lock
+    }
+    
+    if count >= 5 {
+        fmt.Println("Received 5+ votes!")
+    } else {
+        fmt.Println("Lost")
+    }
+    mu.Unlock()
 }
 ```
