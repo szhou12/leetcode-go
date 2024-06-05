@@ -110,6 +110,23 @@ func main() {
 ```
 
 ### Condition Variable
+High-Level pattern to avoid race condition between wait and broadcast (lost woken-up problem):
+```
+mu.Lock()
+// do something that might affect the condition
+cond.Broadcast()
+mu.Unlock()
+
+-------------------
+
+mu.Lock()
+while condition == false {
+    cond.Wait()
+}
+// now the condition is true, and we have the lock. We can do anything we want to do here.
+mu.Unlock()
+```
+
 :x: Wrong Example:
 - This is an implementation that outpus correct result. However, the issue here is that it's super inefficient! Recall Rule 3 - A thread (goroutine) that declares `mu.Lock()` is actively seeking to acquire the lock. In this example, the main thread is busy waiting for the lock. This behavior will burn up CPU! One simple solution is to add sleep in the infinite loop so that the main thread only checks the condition once a while. But this solution is not ideal. You should always be aware of the use of magic constants in your code!!! Why use 50ms rather than other numbers?
 ```go
@@ -169,7 +186,7 @@ func main() {
                 count++
             }
             finished++
-            cond.Broadcast() // notify main thread that a goroutine has finished
+            cond.Broadcast() // notify thread(s) marked with cond.Wait() that this goroutine has finished
         }()
     }
 
@@ -186,4 +203,115 @@ func main() {
     }
     mu.Unlock()
 }
+```
+`Broadcast()` vs `Signal()`: `Broadcast()` wakes up every waiter with `cond.Wait()` while `Sigal()` wakes up only one waiter. For the high-level pattern above, always use `Broadcast()`.
+
+### Channels
+- Channels can be thought as queue-like synchronization primitive but they don't have queueing capacity (no internal storage).
+- Channels are synchronous. If you have 2 goroutines that are going to send and receive on a channel, if someone tries to send on the channel while nobody's receiving, then that thread will block until someone is ready to receive. At that point synchronously, it will exchange that data over to the receiver. Same is true for the other direction: if someone tries to receive from the channel while nobody's sending, then the receiver will block until someone is ready to send.
+- Rule: One channel MUST have two different threads do the sending and receiving. One single thread cannot do both sending and receiving on the same channel.
+```go
+func main() {
+    c := make(chan bool)
+    go func() {
+        time.Sleep(1 * time.Second)
+        <- c // receive from channel c
+    }
+    start := time.Now()
+    c <- true // block until the other goroutine receives
+    fmt.Printf("Send took %v\n", time.Since(start))
+}
+```
+
+:x: Wrong Example: deadlock because the main goroutine blocks until somebody's ready to receive. But there's no receiver.
+```go
+func main() {
+    c := make(chan bool)
+    c <- true // blocks thus it never detects receiver, which is the next line.
+    <- c
+}
+```
+:x: Wrong Example: deadlock because the main goroutine blocks until somebody's ready to send. But there's no sender.
+```go
+func main() {
+    c := make(chan bool)
+    <- c // blocks thus it never detects sender, which is the next line.
+    c <- true
+}
+```
+:x: Wrong Example: hang (悬停)。其中一个goroutine一直在运行，而main thread又block了，导致整个program 悬停。
+```go
+func main() {
+    go func() { // this thread is forever running
+        for {}
+    } ()
+    c := make(chan bool)
+    c <- true // main thread blocks here
+    <- c
+}
+```
+:white_check_mark: Correct Example:
+- Channels are useful for producer-consumer queue situation.
+```go
+func main() {
+    c := make(chan int)
+
+    for i := 0; i < 4; i++ {
+        go doWork(c)
+    }
+
+    for {
+        v := <-c
+        fmt.Println(v)
+    }
+}
+
+func doWork(c chan int) {
+    for {
+        time.Sleep(time.Duration(rand.Intn(1000)) * time.Millisecond)
+        c <- rand.Int()
+    }
+}
+```
+:white_check_mark: Correct Example:
+- Channels are useful for achieving the same functionality as WaitGroup - Wait until all thread are done doing their work.
+```go
+func main() {
+    done := make(chan bool)
+    for i := 0; i < 5; i++ {
+        go func(x int) {
+            sendRPC(x)
+            done <- true // send on this channel when this thread finishes its work
+        }
+    } (i)
+
+    for i := 0; i < 5; i++ {
+        <- done // main thread receives 5 times to have the same effect as WaitGroup
+    }
+}
+
+func sendRPC(i int) {
+    fmt.Println(i)
+}
+```
+WaitGroup
+```go
+func main() {
+    var wg sync.WaitGroup
+    for i := 0; i < 5; i++ {
+        // NOTE! wg.Add() must be called outside and before spawning a groroutine.
+        wg.Add(1) // +1 waiter
+        go func(x int) {
+            sendRPC(x)
+            wg.Done() // -1 waiter
+        }
+    } (i)
+
+    wg.Wait() // block/wait until wg = 0 waiter
+}
+
+func sendRPC(i int) {
+    fmt.Println(i)
+}
+
 ```
