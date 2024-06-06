@@ -4,6 +4,8 @@
 * [Concurrency vs Parallelism](#concurrency-vs-parallelism)
 * [Synchronization Primitives](#synchronization-primitives)
     * [Mutex](#mutex-read-write-mutex-读写锁)
+    * [Condition Variable](#condition-variable)
+    * [Channels](#channels)
 
 ## Concurrency vs Parallelism
 || Concurrency <br>并发 | Parallelism <br>并行 |
@@ -15,6 +17,7 @@
 * Note: Go typically doesn't use terms "threading" and "multiprocessing" like Python does. This is because goroutines handle both concurrency and parallelism. In other words, Go abstracts these complexities (**"concurrency" vs. "parallellism"** OR **"threading" vs. "multiprocessing"**) away through goroutines and its powerful runtime scheduler. 
 
 ## Synchronization Primitives
+Resource: [Lecture 5: Go, Threads, and Raft](https://www.youtube.com/watch?v=UzzcUS2OHqo&ab_channel=MIT6.824%3ADistributedSystems)
 ### Mutex (Read-Write Mutex, 读写锁)
 1. Rule 1: Grab a lock every time when a goroutine is accessing shared data.
 2. Rule 2: Locks protect invariants. 
