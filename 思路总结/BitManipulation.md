@@ -19,8 +19,11 @@
     * Trick 2: 判断一个整数 第k bit位 是否有1: `num>>k & 1 == 1`
 
 ## Logic Operation: AND, OR, XOR
-1. bitwise AND 性质: 一串元素连续 bitwise AND, 所得值一定越变越小，不会大于其中的最小元素。
-2. bitwise XOR 性质: 对一个数, (XOR k)偶数次，值保持不变；(XOR k)奇数次，值发生变化。
+| | AND | XOR | OR |
+|-| - | - | - |
+|性质1|一串元素(非负数)连续 bitwise AND，所得值一定越变越小，不会大于其中的最小元素。|一串元素(非负数)连续 bitwise OR，所得值一定越变越大，不会小于其中的最大元素。| 对一个数, (XOR k)偶数次，值保持不变；(XOR k)奇数次，值发生变化。 |
+|性质1拓展|bitwise AND 元素(非负数)越多，结果只会减小不会增加。因为越多bit位的1被0抹消。(单调性)|bitwise OR 元素(非负数)越多，结果只会增大不会减小。因为越多bit位的1被保留。(单调性)||
+|性质2|`a AND math.MaxInt = a` where `a` non-negative number and `math.MaxInt = 01111...1111`|`a OR 0 = a` where `a` can be any number||
 
 * :red_circle: 最小递增数列的最后一个元素值是多少: [3133. Minimum Array End](https://github.com/szhou12/leetcode-go/blob/main/leetcode/3133-Minimum-Array-End/README.md)
     * AND性质: 连续 bitwise AND 所得值一定越变越小，不会大于其中的最小元素。
