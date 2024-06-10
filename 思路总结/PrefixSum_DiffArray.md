@@ -1,6 +1,7 @@
 # Prefix Sum & Difference Array
 
 ## 目录
+* [Prefix Sum (前缀和)](#prefix-sum-前缀和)
 * [一维差分](#一维差分-1-d-difference-array)
 * [二维差分](#二维差分-2-d-difference-array)
 * [扫描线](#扫描线-sweep-line)
@@ -56,6 +57,9 @@ diff:  1,   2,  2, -1,  4
         1. 方便规避index越界的情况
         2. 方便计算`diff[0]`
 
+## 前缀和 (Prefix Sum)
+* :yellow_circle: k秒后n号位的值: [3179. Find the N-th Value After K Seconds](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3179-Find-the-N-th-Value-After-K-Seconds)
+    * Method 1: Prefix sum on the array `[1, 1, ..., 1]` for `k` times
 
 ## 一维差分 (1-D Difference Array)
 

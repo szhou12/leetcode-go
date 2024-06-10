@@ -41,5 +41,5 @@
 * Grosper's Hack: Use bit operation to generate all combinations (states) of $\binom{n}{k}$
 * Pascal's Triangle = Binomial Coefficients: In Pascal's Triangle, the value of the element at row $n$ and position $k$ (starting from 0) = $\binom{n}{k}$
 
-* :red_circle: [3179. Find the N-th Value After K Seconds]()
+* :red_circle: k秒后n号位的值: [3179. Find the N-th Value After K Seconds](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3179-Find-the-N-th-Value-After-K-Seconds)
     * Method 2: resembles Pascal's Triangle to calculate $\binom{n+k-1}{k}$
