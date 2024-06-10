@@ -2,7 +2,8 @@
 
 ## Solution idea
 ### Prefix Sum
-1. 以`[1, 1, ..., 1]`作为种子，算prefixSum算k次
+1. 以`[1, 1, ..., 1]`作为种子，算prefixSum算k次。
+
 Time complexity = $O(k\cdot n)$
 
 ### Pascal's Triangle

@@ -89,6 +89,7 @@
 | :arrow_right: | 一般用于总结思路时候逻辑的递进 |
 | :bulb: | 解题思路总结中，idea层面的总结 |
 | :mag: | 解题思路总结中，tricks/小技巧/应用层面的总结 |
+| :rotating_light: | 注意！注意！注意！重要的事情说三遍！！！ |
 
 ## Readme content structure
 

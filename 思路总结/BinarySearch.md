@@ -38,6 +38,12 @@ for left < right {...}
             * `[0, 1]` 中, `left`会变成`mid+1=2` 而出界 (因为此时 `mid` 指向`1`位置)
             * 然而，`right` 一般是 `=mid`/`=mid-1`, 故不会出现出界的情况。所以，返回 `right` 保险
 
+* CAUTION! :rotating_light: CAUTION! :rotating_light: CAUTION! :rotating_light:
+    * 如果题目涉及左右边界的初始值为`MinInt`和`MaxInt`时，在Go中直接初始为`left, right = math.MinInt, math.MaxInt`会导致溢出。
+    * 原因：Go中的`math.MinInt`和`math.MaxInt`会按照操作系统允许的最多位数来表示。e.g. 32位系统中，`math.MinInt`为$-2^{31}$，`math.MaxInt`为$2^{31}-1$。64位系统中，`math.MinInt`为$-2^{63}$，`math.MaxInt`为$2^{63}-1$。
+    * 不良结果：因为这个实现，会在计算`mid`的`(right-left)`这一步造成overflow。
+    * 解决方法：`left, right := math.MinInt32, math.MaxInt32` (64位系统中) 或者 `left, right := math.MinInt / 2, math.MaxInt / 2`。
+
 * 什么时候需要 Post-Processing ?
     * TLDR: 搜索范围内不一定有解。Post-Processing额外检查loop跳出后给的答案是否符合题意。
     * 使用 Binary Search 时, 只有当题目的**input不一定包含答案target的时候**需要 post-processing, 否则 Binary Search 一定可以找到答案, 也就是不用post-processing
