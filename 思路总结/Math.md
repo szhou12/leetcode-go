@@ -5,6 +5,8 @@
 * [中位数定理](#中位数定理)
 * [Constructive Algorithm (构造题)](#constructive-algorithm)
 * [Degree of Freedom (自由度)](#degree-of-freedom)
+* [Frequency](#frequency)
+* [Combinatorics](#combinatorics)
 
 ## String上模拟加减运算
 * :red_circle: 寻找最接近的回文串: [564. Find the Closest Palindrome](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0564-Find-the-Closest-Palindrome)
@@ -34,3 +36,10 @@
 
 * :yellow_circle: 最少更改数使字符串以k长重复: [3137. Minimum Number of Operations to Make Word K-Periodic](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3137-Minimum-Number-of-Operations-to-Make-Word-K-Periodic)
     * map to record frequency
+
+## Combinatorics
+* Grosper's Hack: Use bit operation to generate all combinations (states) of $\binom{n}{k}$
+* Pascal's Triangle = Binomial Coefficients: In Pascal's Triangle, the value of the element at row $n$ and position $k$ (starting from 0) = $\binom{n}{k}$
+
+* :red_circle: [3179. Find the N-th Value After K Seconds]()
+    * Method 2: resembles Pascal's Triangle to calculate $\binom{n+k-1}{k}$
