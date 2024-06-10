@@ -38,7 +38,7 @@ for left < right {...}
             * `[0, 1]` 中, `left`会变成`mid+1=2` 而出界 (因为此时 `mid` 指向`1`位置)
             * 然而，`right` 一般是 `=mid`/`=mid-1`, 故不会出现出界的情况。所以，返回 `right` 保险
 
-* CAUTION! :rotating_light: CAUTION! :rotating_light: CAUTION! :rotating_light:
+* :rotating_light: CAUTION!!! :rotating_light: CAUTION!!! :rotating_light: CAUTION!!! :rotating_light:
     * 如果题目涉及左右边界的初始值为`MinInt`和`MaxInt`时，在Go中直接初始为`left, right = math.MinInt, math.MaxInt`会导致溢出。
     * 原因：Go中的`math.MinInt`和`math.MaxInt`会按照操作系统允许的最多位数来表示。e.g. 32位系统中，`math.MinInt`为$-2^{31}$，`math.MaxInt`为$2^{31}-1$。64位系统中，`math.MinInt`为$-2^{63}$，`math.MaxInt`为$2^{63}-1$。
     * 不良结果：因为这个实现，会在计算`mid`的`(right-left)`这一步造成overflow。
@@ -213,6 +213,7 @@ func upperBound(nums []int, target int) int {
     * 从 bottom-left / top-right 出发做 matrix traversal
 
 * :red_circle: 无序数组中第k大的元素: [215. Kth Largest Element in an Array](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0215-Kth-Largest-Element-in-an-Array)
+    * 每猜一个数`mid`，统计`nums[]`中大于等于`mid`的元素个数，然后根据个数与`k`的关系，调整搜索区间。
 
 * 非递减矩阵中找第k小的元素: [378. Kth Smallest Element in a Sorted Matrix](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0378-Kth-Smallest-Element-in-a-Sorted-Matrix)
     * 用 max heap 也可以解，但是 Binary Search 更效率

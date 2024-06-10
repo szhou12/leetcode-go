@@ -177,10 +177,11 @@
         * **有向图**中visited一般用于检测环, visited起到"染色"的作用 - 即，visited==1说明节点不属于环的一部分，visited==0说明节点属于一个环。因为，能被访问说明节点入度可变为0，不能访问说明节点入度不可变为0，也就是，它在一个环中。
         * 注：染色作用的 visited 实际上只是命名为 visited，其他名字也可以，visited只是比较方便理解
 * :mag: Adjacency List `next` 的 data structure 选择:
-    1. `[][]int`: slice of slices
-    2. `[]map[int]bool`: slice of maps
+    1. `[][]int`: slice of slices. The neighbors of node i are in `next[i] = [nei_a, nei_b]`
+    2. `[]map[int]bool`: slice of maps. The neighbors of node i are in `next[i] = {nei_a: true, nei_b: true}`
     3. `map[string]map[string]bool`: map of maps (json)
     * 总结: 怎么方便怎么来。但是，要注意！选择 map 相关的结构时 (第2, 3种)，要额外考虑 duplicated edges 的情况，重复的edge要跳过，因为，`next`不会重复添加，但是`degree`会不小心多+1。选择 slice 时 (第1种)，就允许添加重复的edge，因为，`next`和`degree`都会对应增加。
+    * 使用 map，当算法中会有“砍掉”(prune)节点操作的时候。(e.g. 2603)
 * :mag: **常涉及的小技巧:** 一层一层剥洋葱的时候会需要一个 "继承"变量。"继承"变量可以是节点的深度、祖辈/父辈的某个信息。
     * 怎么设计这个"继承"变量的通常思路是 `DP`
 * :bulb: Topological Sort 的排序数列 什么情况下是唯一确定的？
