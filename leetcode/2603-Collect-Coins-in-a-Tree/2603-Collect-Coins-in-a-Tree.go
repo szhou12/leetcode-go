@@ -1,8 +1,9 @@
 package leetcode
 
 func collectTheCoins(coins []int, edges [][]int) int {
-	// Step 1: Reconstruct adj-list repr + Calculate degree
 	n := len(coins)
+
+	// Step 1: Reconstruct adj-list repr + Calculate degree
 	degree := make([]int, n)
 	next := make([]map[int]bool, n) // find all its neighbors for each node
 	for i := 0; i < n; i++ {
@@ -40,10 +41,7 @@ func collectTheCoins(coins []int, edges [][]int) int {
 Topological Sort to "mark" the depth of each surviving node as its distance to the farthest leaf node
 */
 func mark(degree []int, next []map[int]bool, deleted []int, n int) []int {
-	depth := make([]int, n)
-	for i := 0; i < n; i++ {
-		depth[i] = -1
-	}
+	depth := make([]int, n) // leaf node <=> depth = 1
 	queue := make([]int, 0)
 
 	// Start nodes
@@ -61,9 +59,9 @@ func mark(degree []int, next []map[int]bool, deleted []int, n int) []int {
 		queue = queue[1:]
 
 		// Make the next move
-		for nei, _ := range (next)[cur] {
+		for nei, _ := range next[cur] {
 			degree[nei]--
-			delete((next)[nei], cur) // 这里代替了 check visited, 因为过河拆桥, 把从内层走回外围的edge给删了
+			delete(next[nei], cur) // 这里代替了 check visited, 因为过河拆桥, 把从内层走回外围的edge给删了
 			depth[nei] = max(depth[nei], depth[cur]+1) // depth要在“剥洋葱”方法下取最深的值
 			if degree[nei] == 1 && deleted[nei] != 1 {
 				queue = append(queue, nei)
@@ -99,7 +97,7 @@ func prune(degree []int, next []map[int]bool, coins []int, n int) []int {
 		// Make the next move
 		for nei, _ := range next[cur] {
 			degree[nei]--
-			delete((next)[nei], cur)
+			delete(next[nei], cur)
 			if degree[nei] == 1 && coins[nei] == 0 {
 				queue = append(queue, nei)
 			}
