@@ -11,7 +11,7 @@ type TreeNode struct {
 func closestKValues(root *TreeNode, target float64, k int) []int {
 	queue := make([]int, 0)
 
-	dfs(root, target, k, queue)
+	dfs(root, target, k, &queue)
 
 	res := make([]int, 0)
 	for len(queue) > 0 {
@@ -22,7 +22,11 @@ func closestKValues(root *TreeNode, target float64, k int) []int {
 	return res
 }
 
-func dfs(root *TreeNode, target float64, k int, queue []int) {
+/* 
+In-Order Traversal
+  Note: queue needs to pass in as a pointer because there is append() operation in recursion
+*/
+func dfs(root *TreeNode, target float64, k int, queue *[]int) {
 	// base case
 	if root == nil {
 		return
@@ -32,12 +36,12 @@ func dfs(root *TreeNode, target float64, k int, queue []int) {
 	// left-subtree
 	dfs(root.Left, target, k, queue)
 	// current node
-	if len(queue) < k {
-		queue = append(queue, root.Val)
+	if len(*queue) < k {
+		*queue = append(*queue, root.Val)
 	} else {
-		if math.Abs(target-float64(queue[0])) > math.Abs(target-float64(root.Val)) {
-			queue = queue[1:]
-			queue = append(queue, root.Val)
+		if math.Abs(target-float64((*queue)[0])) > math.Abs(target-float64(root.Val)) {
+			*queue = (*queue)[1:]
+			*queue = append(*queue, root.Val)
 		} else {
 			return
 		}
@@ -46,3 +50,8 @@ func dfs(root *TreeNode, target float64, k int, queue []int) {
 	dfs(root.Right, target, k, queue)
 
 }
+
+/*
+* Input: root = [4,2,5,1,3], target = 3.714286, k = 2
+* Output: [3,4]
+*/

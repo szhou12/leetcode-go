@@ -100,6 +100,18 @@ Args:
 Call this function:
 
 	visualizeTree(root, "", false)
+
+Example: BST = [4, 2, 5, 5, 1, 3, 2, 4, 67]
+            ┌── 67
+        ┌── 5
+    ┌── 5
+    │   └── 4
+┌── 4
+│   │   ┌── 3
+│   │   │   └── 2
+│   └── 2
+│       └── 1
+
 */
 func visualizeTree(node *TreeNode, prefix string, fromLeft bool) {
 	if node == nil {
@@ -110,7 +122,7 @@ func visualizeTree(node *TreeNode, prefix string, fromLeft bool) {
 	// Right branch
 	if node.Right != nil {
 		newPrefix := prefix
-		newPrefix += map[bool]string{true: "│   ", false: "    "}[fromLeft]
+		newPrefix += map[bool]string{true: "│   ", false: "    "}[fromLeft] // 现在要走右孩子。但是如果“我”是从左分支走来的，那么右孩子会比"我"更早打印，所以得把右孩子“支棱”起来，留下"|"。但是如果“我”是从右分支走来的，那么右孩子只会比“我”更早打印，所以直接空白
 		visualizeTree(node.Right, newPrefix, false)
 	}
 
@@ -123,7 +135,7 @@ func visualizeTree(node *TreeNode, prefix string, fromLeft bool) {
 	// Left branch
 	if node.Left != nil {
 		newPrefix := prefix
-		newPrefix += map[bool]string{true: "    ", false: "│   "}[fromLeft]
+		newPrefix += map[bool]string{true: "    ", false: "│   "}[fromLeft] // 现在要走左孩子。但是如果“我”是从左分支走来的，那么左孩子只会比“我”更低/晚打印，“我”给左孩子的遗产直接空白。但是如果“我”是从右分支走来的，那么“我”会比左孩子更早打印，“我”要给左孩子留下一个“我”把自己支棱起来的动作，所以留下"|"
 		visualizeTree(node.Left, newPrefix, true)
 	}
 }
