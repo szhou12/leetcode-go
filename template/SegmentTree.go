@@ -11,6 +11,7 @@ type SegTreeNode struct {
 /*
 Constructor: 所有叶子节点的info初始化为单一值val
 Create a new segment tree node and recursively build the entire segment tree
+O(logn)
 */
 func NewSegTreeNode(start, end int, val int) *SegTreeNode {
 	node := &SegTreeNode{
@@ -25,12 +26,13 @@ func NewSegTreeNode(start, end int, val int) *SegTreeNode {
 	mid := (start + end) / 2
 	node.left = NewSegTreeNode(start, mid, val)
 	node.right = NewSegTreeNode(mid+1, end, val)
-	node.info = node.left.info + node.right.info // range sum in [start : end]
+	node.info = node.left.info + node.right.info // range sum in [a : b]
 	return node
 }
 
 /*
 Constructor: i-th叶子节点的info初始化为vals[i]
+O(logn)
 */
 func NewSegTreeNodeFromSlice(start, end int, vals []int) *SegTreeNode {
 	node := &SegTreeNode {
@@ -52,30 +54,7 @@ func NewSegTreeNodeFromSlice(start, end int, vals []int) *SegTreeNode {
 }
 
 /*
-更新<lazy标记>
-This method is used for lazy propagation. When a node has an unpropagated update (tag==true), this method applies the update to its children.
-1. The info of each child is increased by delta times the size of the range it covers.
-2. The delta is added to each child's delta.
-3. The tag of each child is set to true, indicating they now have an unpropagated update.
-4. The current node's delta is reset to 0, and its tag is set to false, indicating the update has been propagated.
-*/
-func (node *SegTreeNode) pushDown() {
-	if node.tag && node.left != nil {
-		node.left.info += node.delta * (node.left.end - node.left.start + 1)
-		node.left.delta += node.delta
-		node.left.tag = true
-
-		node.right.info += node.delta * (node.right.end - node.right.start + 1)
-		node.right.delta += node.delta
-		node.right.tag = true
-
-		node.tag = false
-		node.delta = 0
-	}
-}
-
-/*
-单点修改
+单点修改 O(logn)
 This method updates i-th leaf node by replacing with the val.
 */
 func  (node *SegTreeNode) updateSingle(index int, val int) {
@@ -94,7 +73,7 @@ func  (node *SegTreeNode) updateSingle(index int, val int) {
 }
 
 /*
-区间修改
+区间修改 O(logn)
 This method updates a range [a, b] in the segment tree by adding val to each element in the range.
  1. If the current node's range is completely outside [a, b], it does nothing.
  2. If the current node's range is completely inside [a, b], it updates info and sets delta and tag for lazy propagation.
@@ -134,8 +113,33 @@ func (node *SegTreeNode) queryRange(start, end int) int {
 	if start <= node.start && node.end <= end {
 		return node.info
 	}
-	node.pushDown()
+	node.pushDown() // Needed only when we have updateRange()
 	return node.left.queryRange(start, end) + node.right.queryRange(start, end)
+}
+
+/*
+更新 <lazy标记>
+This method is used for lazy propagation. When a node has an unpropagated update (tag==true), this method applies the update to its children.
+1. The info of each child is increased by delta times the size of the range it covers.
+2. The delta is added to each child's delta.
+3. The tag of each child is set to true, indicating they now have an unpropagated update.
+4. The current node's delta is reset to 0, and its tag is set to false, indicating the update has been propagated.
+
+NOTE: pushDown() is ONLY needed when updateRange() needs implementation. In other words, if only updateSingle() and queryRange() need implementation, pushDown() is not necessary.
+*/
+func (node *SegTreeNode) pushDown() {
+	if node.tag && node.left != nil {
+		node.left.info += node.delta * (node.left.end - node.left.start + 1)
+		node.left.delta += node.delta
+		node.left.tag = true
+
+		node.right.info += node.delta * (node.right.end - node.right.start + 1)
+		node.right.delta += node.delta
+		node.right.tag = true
+
+		node.tag = false
+		node.delta = 0
+	}
 }
 
 /*
