@@ -3,7 +3,7 @@ package template
 type SegTreeNode struct {
 	left, right *SegTreeNode
 	start, end  int
-	info        int  // stored value over the range [start, end]. e.g. stored value can be sum([a:b]), max([a:b]), min([a:b]), etc.
+	info        int  // stored value over the range [start, end]. e.g. stored value can be sum([a:b]), max([a:b]), min([a:b]), etc. The template given here is to sum over the range.
 	delta       int  // Used for lazy propagation, it stores the value that needs to be added to all elements in this node's range
 	tag         bool // A flag to indicate whether this node has a pending update (delta) that needs to be propagated to its children
 }
@@ -25,7 +25,7 @@ func NewSegTreeNode(start, end int, val int) *SegTreeNode {
 	mid := (start + end) / 2
 	node.left = NewSegTreeNode(start, mid, val)
 	node.right = NewSegTreeNode(mid+1, end, val)
-	node.info = node.left.info + node.right.info // node's info stores the sum of the range [a,b]
+	node.info = node.left.info + node.right.info // range sum in [start : end]
 	return node
 }
 
@@ -46,7 +46,7 @@ func NewSegTreeNodeFromSlice(start, end int, vals []int) *SegTreeNode {
 	node.right = NewSegTreeNodeFromSlice(mid+1, end, vals)
 
 	// Update cur node's info: combine left and right child's info
-	node.info = node.left.info + node.right.info
+	node.info = node.left.info + node.right.info // range sum in [start : end]
 	return node
 
 }
