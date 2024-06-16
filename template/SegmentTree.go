@@ -3,7 +3,7 @@ package template
 type SegTreeNode struct {
 	left, right *SegTreeNode
 	start, end  int
-	info        int  // stored value over the range [start, end]. e.g. stored value can be sum([a:b]), max([a:b]), min([a:b]), etc. The template given here is to sum over the range.
+	info        int  // stored value over the range [start, end]. e.g. stored value can be sum([a:b]), max([a:b]), min([a:b]), etc. The template given here is sum over the range.
 	delta       int  // Used for lazy propagation, it stores the value that needs to be added to all elements in this node's range
 	tag         bool // A flag to indicate whether this node has a pending update (delta) that needs to be propagated to its children
 }
@@ -23,7 +23,7 @@ func NewSegTreeNode(start, end int, val int) *SegTreeNode {
 		return node
 	}
 
-	mid := (start + end) / 2
+	mid := start + (end-start)/2
 	node.left = NewSegTreeNode(start, mid, val)
 	node.right = NewSegTreeNode(mid+1, end, val)
 	node.info = node.left.info + node.right.info // range sum in [a : b]
@@ -35,15 +35,18 @@ Constructor: i-th叶子节点的info初始化为vals[i]
 O(logn)
 */
 func NewSegTreeNodeFromSlice(start, end int, vals []int) *SegTreeNode {
-	node := &SegTreeNode {
+	node := &SegTreeNode{
 		start: start,
-		end: end,
+		end:   end,
 	}
+
+	// leaf node
 	if start == end {
 		node.info = vals[start]
 		return node
 	}
-	mid := (start + end) / 2
+
+	mid := start + (end-start)/2
 	node.left = NewSegTreeNodeFromSlice(start, mid, vals)
 	node.right = NewSegTreeNodeFromSlice(mid+1, end, vals)
 
@@ -57,11 +60,13 @@ func NewSegTreeNodeFromSlice(start, end int, vals []int) *SegTreeNode {
 单点修改 O(logn)
 This method updates i-th leaf node by replacing with the val.
 */
-func  (node *SegTreeNode) updateSingle(index int, val int) {
+func (node *SegTreeNode) updateSingle(index int, val int) {
+	// out of node's range
 	if index < node.start || node.end < index {
 		return
 	}
-	if index <= node.start && node.end <= index { // at leaf node
+	// completely covers node's range == arrive at leaf node
+	if index <= node.start && node.end <= index {
 		node.info = val
 		return
 	}
@@ -81,9 +86,11 @@ This method updates a range [a, b] in the segment tree by adding val to each ele
     then recursively updates its children, and finally updates its info based on its children's info.
 */
 func (node *SegTreeNode) updateRange(start int, end int, val int) {
+	// out of node's range
 	if end < node.start || node.end < start {
 		return
 	}
+	// completely covers node's range
 	if start <= node.start && node.end <= end {
 		node.info += val * (node.end - node.start + 1)
 		node.delta += val
@@ -101,15 +108,17 @@ func (node *SegTreeNode) updateRange(start int, end int, val int) {
 /*
 区间查询
 This method queries the sum of elements in the range [a, b].
-1. If the current node's range is completely outside [a, b], it returns 0
-2. If the current node's range is completely inside [a, b], it returns the node's info.
-3. If the current node's range partially overlaps with [a, b], it first propagates any pending updates to its children (using pushDown), 
-	then recursively queries its children and sums the results.
+ 1. If the current node's range is completely outside [a, b], it returns 0
+ 2. If the current node's range is completely inside [a, b], it returns the node's info.
+ 3. If the current node's range partially overlaps with [a, b], it first propagates any pending updates to its children (using pushDown),
+    then recursively queries its children and sums the results.
 */
 func (node *SegTreeNode) queryRange(start, end int) int {
+	// out of node's range
 	if end < node.start || node.end < start {
 		return 0
 	}
+	// completely covers node's range
 	if start <= node.start && node.end <= end {
 		return node.info
 	}
