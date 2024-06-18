@@ -5,7 +5,7 @@
 
 ## Overview
 线段树的维护仅需要使用小区间的值更新大区间。
-线段树是平衡二叉树，时间复杂度总是在$O(\log n)$。
+线段树是平衡二叉树 (bc always split in half)，时间复杂度总是在$O(\log n)$。
 线段树的局限性：解决的问题必须要满足“区间加法”才能将大问题划分为子问题来解决。
 区间加法：对于[L, R]区间，它的答案可以由[L, M]和[M+1, R]的答案合并求出。
 满足的问题：区间求和，区间最大值/最小值 etc.
@@ -43,7 +43,7 @@
 ## 题目
 * :purple_circle: 求所有子数组中每个子数组不同元素数量的平方和: [2916. Subarrays Distinct Element Sum of Squares II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2916-Subarrays-Distinct-Element-Sum-of-Squares-II)
 
-* :red_circle: 子数组的peak数量: [3187. Peaks in Array]()
+* :red_circle: 子数组的peak数量: [3187. Peaks in Array](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3187-Peaks-in-Array)
     - Segment Tree (sum)
     - Segment Tree: `updateSingle()`, `queryRange()` (no need `pushDown()`)
 
