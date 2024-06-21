@@ -21,7 +21,7 @@ func maximumLength(nums []int, k int) int {
 			for j := 0; j < i; j++ {
 				if nums[j] == nums[i] {
 					cur = max(cur, dp[j][t]+1)
-				} else if t >= 1 {
+				} else if t-1 >= 0 {
 					cur = max(cur, dp[j][t-1]+1)
 				}
 			}

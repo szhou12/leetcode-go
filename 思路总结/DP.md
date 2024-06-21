@@ -18,6 +18,7 @@
 * [二维/高维 DP](#二维高维-dp)
     * [位置X种类](#位置x种类)
     * [位置X状态](#位置x状态)
+    * [位置X花费](#位置x花费)
     * [区间型 (interval)](#区间型-interval)
     * [切绳子](#切绳子)
     * [组合问题 (Combinatorics)](#组合问题-combinatorics)
@@ -230,6 +231,13 @@
 * :red_circle: 最大化数组中连续元素的总和: [3041. Maximize Consecutive Elements in an Array After Modification](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification)
     * Sort first!
     * `DP[i][state]`
+
+### 位置X花费
+#### 第一维 = 位置 (index); 第二维 = 花费 (cost)
+* "花费": 题干中定义的某种操作的次数限制。
+
+* :red_circle: [3176. Find the Maximum Length of a Good Subsequence I](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3176-Find-the-Maximum-Length-of-a-Good-Subsequence-I)
+    * 花费: 接当前元素时，“花费”一次费用允许当前元素与前一个元素不相等
 
 ### 区间型 (interval)
 
