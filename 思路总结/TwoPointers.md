@@ -1,7 +1,10 @@
 # Two Pointers
 
 ## 目录
-* [X-Sum](#x-sum)
+* [一个数组 + 双指针同向而行](#一个数组--双指针同向而行)
+* [一个数组 + 双指针相向而行](#一个数组--双指针相向而行)
+    * [两个数组 + 双指针同向而行](#两个数组--双指针同向而行)
+* [Two Sum](#Two-Sum)
 * [Sliding Window](#sliding-window)
     * [套路总结](#Methodology)
     * [Fix 模版题](#fix-模版题)
@@ -39,7 +42,8 @@
 
 * 跳过重复元素，匹配subsequence: [925. Long Pressed Name](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0925-Long-Pressed-Name)
 
-## X-Sum
+
+## Two Sum
 * 两数之和: [1. Two Sum](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0001-Two-Sum)
 * 三数之和: [15. 3Sum](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0015-3Sum)
     * Step 1: 排序
