@@ -236,8 +236,10 @@
 #### 第一维 = 位置 (index); 第二维 = 花费 (cost)
 * "花费": 题干中定义的某种操作的次数限制。
 
-* :red_circle: [3176. Find the Maximum Length of a Good Subsequence I](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3176-Find-the-Maximum-Length-of-a-Good-Subsequence-I)
+* :red_circle: 满足条件的最长子序列I: [3176. Find the Maximum Length of a Good Subsequence I](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3176-Find-the-Maximum-Length-of-a-Good-Subsequence-I)
     * 花费: 接当前元素时，“花费”一次费用允许当前元素与前一个元素不相等
+
+* :red_circle: 满足条件的最长子序列II: [3177. Find the Maximum Length of a Good Subsequence II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3177-Find-the-Maximum-Length-of-a-Good-Subsequence-II)
 
 ### 区间型 (interval)
 
