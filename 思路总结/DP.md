@@ -67,6 +67,13 @@
 
 
 ## 抢劫房子
+* :light_bulb: House Robber的本质: 给一个数组，**不能连续取两个相邻元素**，求最大化的数组元素的和。
+    * 字面意思: 两个相邻元素不能同时都取
+    * 隐藏含义: 两个相邻元素不能**在同性质下**同时都取
+
+* :red_circle: 在可以变换正负符号操作下，最大化子数组的和: [3196. Maximize Total Cost of Alternating Subarrays]()
+    * 两个相邻元素的“同性质”: 正负符号保持不变
+
 * 抢房子1: [198. House Robber](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0198-House-Robber)
 
 * 抢房子2: [213. House Robber II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0213-House-Robber-II)
