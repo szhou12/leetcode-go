@@ -60,16 +60,31 @@
 
 ## Dijkstra - Find Shortest Path
 
-* :star: **使用算法的两大条件:**
-    1. **single-source**: 只给一个起点/起点确定, 求从起点(single source)到图上任意一个node的最短路径
-    2. **non-negative weight**: edge的权重非负
+### Heap Review
+1. Key Properties:
+    1. Recursion: MaxHeap = Parent node $\geq$ its children. MinHeap = Parent node $\leq $ its children.
+    2. Complete Binary Tree: All levels are completely filled except possibly for the last level, which is filled from left to right.
+        * A complete tree is a balanced tree. (反之，不亦然)
+        * height = $\log n$
+    3. If use a heap to represent an array, the parent-child relationships are derived from the indices:
+        * Parent index = (i-1)/2
+        * Left child index = 2i + 1
+        * Right child index = 2i + 2
+    4. Last Non-Leaf Node (最后一个非叶子节点的定位): The last non-leaf node in a heap of size $n$ array is at array index $\lfloor \frac{n}{2} \rfloor - 1$.
+        * In other words, i = 0, 1, ..., (n/2-1) are non-leaf nodes; i = n/2, ..., n-1 are leaf nodes.
 
-* :star: **算法的特征:**
-    * 给定一个起点single-source, 可以求起点到图上任意一点的最短距离
-    * Time complexity = $O(E\log E)$
-    * 两种Return方式:
-        1. Early Return: Dijkstra loop内到达终点即return; loop结束还没return说明无法到达终点
-        2. 填表 Return: Dijkstra把所有结果填入一个表 (array, matrix) 中, loop结束后把所求node的结果按要求从表中取出return
+
+
+### :star: **使用算法的两大条件:**
+1. **single-source**: 只给一个起点/起点确定, 求从起点(single source)到图上任意一个node的最短路径
+2. **non-negative weight**: edge的权重非负
+
+### :star: **算法的特征:**
+* 给定一个起点single-source, 可以求起点到图上任意一点的最短距离
+* Time complexity = $O(E\log E)$
+* 两种Return方式:
+    1. Early Return: Dijkstra loop内到达终点即return; loop结束还没return说明无法到达终点
+    2. 填表 Return: Dijkstra把所有结果填入一个表 (array, matrix) 中, loop结束后把所求node的结果按要求从表中取出return
 
 * :yellow_circle: 最短路径到达有时限的所有节点: [3112. Minimum Time to Visit Disappearing Nodes](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3112-Minimum-Time-to-Visit-Disappearing-Nodes)
     * 典型题

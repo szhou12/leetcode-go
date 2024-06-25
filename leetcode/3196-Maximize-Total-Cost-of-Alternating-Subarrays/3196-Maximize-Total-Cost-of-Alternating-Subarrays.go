@@ -5,8 +5,8 @@ import "math"
 func maximumTotalCost(nums []int) int64 {
 	n := len(nums)
 
-	// dp[i][0] := the maximum total cost of subarrays in nums[0:i] (inclusive) without sign change at i-th element
-	// dp[i][1] := the maximum total cost of subarrays in nums[0:i] (inclusive) with sign change at i-th element
+	// dp[i][0] := the maximum sum of subarrays in nums[0:i] (inclusive) without sign change at i-th element
+	// dp[i][1] := the maximum sum of subarrays in nums[0:i] (inclusive) with sign change at i-th element
 	dp := make([][]int, n)
 	for i := 0; i < n; i++ {
 		dp[i] = make([]int, 2)
