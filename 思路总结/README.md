@@ -37,6 +37,16 @@
 |[String](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/String.md)||
 |[Sorting](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/Sorting.md)||
 
+## 按题目特征分类
+| 特征 | 题号 |
+| :-: | - |
+|Run any number of times |3012|
+|Grid / Matrix |130, 200, 407, 417, 499, 505, 778, 1020, 1368, 1632, 2258, 2290, 2392, 2503, 2577, 2812, 3148, 3195, 3197|
+|2-D坐标 |2101|
+|K Sorted Lists |632|
+
+* K Sorted Lists 切入点: 每个list**最小的元素**先放一块排个序看看有没有什么规律？跟其他元素的关系是什么？以它们为subgroup中如何找到符合题意的答案？可否往更大的元素推演转换？
+
 ## Practice First
 ### :red_circle: Hard
 * [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/)
