@@ -7,6 +7,7 @@
 * [Degree of Freedom (自由度)](#degree-of-freedom)
 * [Frequency](#frequency)
 * [Combinatorics](#combinatorics)
+* [Geometry](#geometry)
 
 ## String上模拟加减运算
 * :red_circle: 寻找最接近的回文串: [564. Find the Closest Palindrome](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0564-Find-the-Closest-Palindrome)
@@ -43,3 +44,9 @@
 
 * :red_circle: k秒后n号位的值: [3179. Find the N-th Value After K Seconds](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3179-Find-the-N-th-Value-After-K-Seconds)
     * Method 2: resembles Pascal's Triangle to calculate $\binom{n+k-1}{k}$
+
+
+## Geometry
+* :red_circle: 覆盖所有1的最小矩形II: [3197. Find the Minimum Area to Cover All Ones II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3197-Find-the-Minimum-Area-to-Cover-All-Ones-II)
+
+* :yellow_circle: 覆盖所有1的最小矩形I: [3195. Find the Minimum Area to Cover All Ones I](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3195-Find-the-Minimum-Area-to-Cover-All-Ones-I)
