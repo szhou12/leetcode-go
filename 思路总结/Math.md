@@ -50,3 +50,14 @@
 * :red_circle: 覆盖所有1的最小矩形II: [3197. Find the Minimum Area to Cover All Ones II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3197-Find-the-Minimum-Area-to-Cover-All-Ones-II)
 
 * :yellow_circle: 覆盖所有1的最小矩形I: [3195. Find the Minimum Area to Cover All Ones I](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3195-Find-the-Minimum-Area-to-Cover-All-Ones-I)
+
+## Modulo
+## Definition
+- if `a = k * n + r`, then `a % n = r`.
+### Key Properties
+- Symmetry: if `a % n = r`, then `(a+n) % n = r`.
+- Transitivity: if `a % n = b % n` and `b % n = c % n`, then `a % n = c % n`.
+- Distributivity: (e.g., a = 13, b = 11, n = 2)
+    - `(a + b) % n = (a % n + b % n) % n` 
+    - `(a * b) % n = ((a % n) * (b % n)) % n`
+- Congruences: `a % n = b % n` $\Longleftrightarrow $ $a \equiv b(\mod n)$ $\Longleftrightarrow $ a和b在取模n时"相等" (aka.同余)
