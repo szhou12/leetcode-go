@@ -61,3 +61,6 @@
     - `(a + b) % n = (a % n + b % n) % n` 
     - `(a * b) % n = ((a % n) * (b % n)) % n`
 - Congruences: `a % n = b % n` $\Longleftrightarrow $ $a \equiv b(\mod n)$ $\Longleftrightarrow $ a和b在取模n时"相等" (aka.同余)
+### Resources
+- [BASIC PROPERTIES OF CONGRUENCES](https://sites.math.washington.edu/~greenber/Congruences.pdf)
+- [3.1: Modulo Operation](https://math.libretexts.org/Courses/Mount_Royal_University/MATH_2150%3A_Higher_Arithmetic/3%3A_Modular_Arithmetic/3.1%3A_Modulo_Operation)

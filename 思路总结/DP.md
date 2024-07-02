@@ -15,6 +15,7 @@
     * [类型二: Longest Common Subsequence - 最长公共子序列](#类型二-longest-common-subsequence---最长公共子序列)
     * [类型三: String Matching + 编辑距离](#类型三-string-matching--编辑距离)
     * [类型四: 子序列个数](#类型四-子序列个数)
+    * [类型五: 未分类](#类型五-未分类)
 * [二维/高维 DP](#二维高维-dp)
     * [位置X种类](#位置x种类)
     * [位置X状态](#位置x状态)
@@ -212,6 +213,10 @@
 * :red_circle: :secret: 二进制字符串中的"好"子序列个数: [1987. Number of Unique Good Subsequences](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1987-Number-of-Unique-Good-Subsequences)
     * *940 与 1987 思路非常相近*
 
+### 类型五: 未分类
+* :red_circle: 符合相邻两元素的和取模相等的最长子序列II: [3202. Find the Maximum Length of Valid Subsequence II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3202-Find-the-Maximum-Length-of-Valid-Subsequence-II)
+    * `DP[cur][r]` 第一维不再是index `i`, 而是元素的值 `nums[i] % k`。第二维表示所有模k的值的种类
+    * 利用Modulo分配律的性质: `(prev + cur) % k` 推导 `prev`与`cur`的关系
 
 
 ## 二维/高维 DP
