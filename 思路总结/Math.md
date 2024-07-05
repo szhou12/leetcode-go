@@ -51,6 +51,8 @@
 
 * :yellow_circle: 覆盖所有1的最小矩形I: [3195. Find the Minimum Area to Cover All Ones I](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3195-Find-the-Minimum-Area-to-Cover-All-Ones-I)
 
+
+
 ## Modulo
 ## Definition
 - if `a = k * n + r`, then `a % n = r`.
@@ -64,3 +66,7 @@
 ### Resources
 - [BASIC PROPERTIES OF CONGRUENCES](https://sites.math.washington.edu/~greenber/Congruences.pdf)
 - [3.1: Modulo Operation](https://math.libretexts.org/Courses/Mount_Royal_University/MATH_2150%3A_Higher_Arithmetic/3%3A_Modular_Arithmetic/3.1%3A_Modulo_Operation)
+
+* :red_circle: 符合相邻两元素的和取模相等的最长子序列II: [3202. Find the Maximum Length of Valid Subsequence II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3202-Find-the-Maximum-Length-of-Valid-Subsequence-II)
+    * `DP[cur][r]` 第一维不再是index `i`, 而是元素的值 `nums[i] % k`。第二维表示所有模k的值的种类
+    * 利用Modulo分配律的性质: `(prev + cur) % k` 推导 `prev`与`cur`的关系
