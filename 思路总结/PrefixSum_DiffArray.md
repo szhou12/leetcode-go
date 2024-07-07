@@ -1,19 +1,36 @@
 # Prefix Sum & Difference Array
 
 ## 目录
-* [Prefix Sum (前缀和)](#prefix-sum-前缀和)
+* [一维前缀和](#一维前缀和-1-d-prefix-sum)
+* [二维前缀和](#二维前缀和-2-d-prefix-sum)
 * [一维差分](#一维差分-1-d-difference-array)
 * [二维差分](#二维差分-2-d-difference-array)
 * [扫描线](#扫描线-sweep-line)
 * [整体区间的增减](#整体区间的增减)
 
 ## Prefix Sum (前缀和)
-* 前缀和的定义:
 
+### 1-D Prefix Sum
+* 前缀和的定义:
 ```
-prefixSum[0] = nums[0],
+prefixSum[0] = nums[0]
 prefixSum[i] = nums[0] + nums[1] + ... + nums[i]
 ```
+
+### 2-D Prefix Sum
+* 前缀和的定义:
+```
+m,   n   := len(grid),      len(grid[0])
+m+1, n+1 := len(prefixSum), len(prefixSum[0])
+
+prefixSum[0][:] = 0
+prefixSum[:][0] = 0
+
+// prefixSum (i+1, j+1) 对应 grid (i, j)
+prefixSum[i+1][j+1] = (prefixSum[i][j+1] + prefixSum[i+1][j] - prefixSum[i][j]) + grid[i][j]
+```
+
+
 
 ## Difference Array (差分数组)
 
@@ -57,15 +74,23 @@ diff:  1,   2,  2, -1,  4
         1. 方便规避index越界的情况
         2. 方便计算`diff[0]`
 
-## 前缀和 (Prefix Sum)
+## 一维前缀和 (1-D Prefix Sum)
 * :yellow_circle: k秒后n号位的值: [3179. Find the N-th Value After K Seconds](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3179-Find-the-N-th-Value-After-K-Seconds)
     * Method 1: Prefix sum on the array `[1, 1, ..., 1]` for `k` times
+
+## 二维前缀和 (2-D Prefix Sum)
+* :red_circle: 有等量X和Y的子矩阵个数: [3212. Count Submatrices With Equal Frequency of X and Y]()
+
+
+
 
 ## 一维差分 (1-D Difference Array)
 
 * 航班预订统计: [1109. Corporate Flight Bookings](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1109-Corporate-Flight-Bookings)
 
 * 拼车: [1094. Car Pooling](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1094-Car-Pooling)
+
+
 
 ## 二维差分 (2-D Difference Array)
 

@@ -17,7 +17,7 @@
 ## Rotate/Circular String
 ### 技巧: 复制一倍. 同一个String/Array拼接在一起 `s+s`
 
-* :green_circle: 构建加密字符串: [3210. Find the Encrypted String]()
+* :green_circle: 构建加密字符串: [3210. Find the Encrypted String](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3210-Find-the-Encrypted-String)
     * Modulo + string复制一倍
 
 * Rotate题: [796. Rotate String](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0796-Rotate-String)
