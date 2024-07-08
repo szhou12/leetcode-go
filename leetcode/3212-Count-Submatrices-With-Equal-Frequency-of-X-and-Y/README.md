@@ -18,6 +18,7 @@
 Time complexity = $O(m*n)$
 
 ### 一图胜千言
+![AutoDraw Aug 7 2024](https://github.com/szhou12/leetcode-go/assets/35708194/5aea912c-1229-4805-b518-de03626afc1f)
 
 
 ## Resource
