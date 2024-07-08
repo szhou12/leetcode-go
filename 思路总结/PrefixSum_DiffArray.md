@@ -79,7 +79,7 @@ diff:  1,   2,  2, -1,  4
     * Method 1: Prefix sum on the array `[1, 1, ..., 1]` for `k` times
 
 ## 二维前缀和 (2-D Prefix Sum)
-* :red_circle: 有等量X和Y的子矩阵个数: [3212. Count Submatrices With Equal Frequency of X and Y]()
+* :red_circle: 有等量X和Y的子矩阵个数: [3212. Count Submatrices With Equal Frequency of X and Y](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3212-Count-Submatrices-With-Equal-Frequency-of-X-and-Y)
 
 
 
