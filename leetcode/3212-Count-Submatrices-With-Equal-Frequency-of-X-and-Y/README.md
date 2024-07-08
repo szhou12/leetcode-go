@@ -15,8 +15,9 @@
     1. `PrefixSumX[i+1][j+1] > 0`: has at least one X
     2. `PrefixSumX[i+1][j+1] == PrefixSumY[i+1][j+1] > 0`
 
-### 一图胜千言
+Time complexity = $O(m*n)$
 
+### 一图胜千言
 
 
 ## Resource
