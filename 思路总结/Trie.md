@@ -13,10 +13,10 @@
     * $\bar L=$ average length of the words.
 ```go
 type TrieNode struct {
+    children [26]*TrieNode
     isEnd bool // Whether the current TrieNode denotes the end of a word
     char byte // [Optional] letter stored in the current TrieNode
     count int // [Optional] Count # of words in the text that ends with the current TrieNode's letter
-    children [26]*TrieNode
 }
 
 func newTrieNode(char byte) *TrieNode {
