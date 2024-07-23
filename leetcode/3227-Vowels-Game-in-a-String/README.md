@@ -1,7 +1,7 @@
 # [3227. Vowels Game in a String](https://leetcode.com/problems/vowels-game-in-a-string/description/)
 
 ## Solution idea
-### Induction
+### 找规律 - 打擂台
 1. 如果 vowels = 0, 那么Bob铁赢。因为Alice先进行行动，首轮她就无法挑出含奇数个元音字母的substring，无法行动。注意，这里Bob赢是因为Alice无法行动赢的。
 2. 如果 vowels = n:
     1. 如果 n 是偶数，那么Alice能赢。因为Alice先行动，她可以挑出含 n-1 个元音字母的substring，使Bob无法挑出偶数个元音字母。
