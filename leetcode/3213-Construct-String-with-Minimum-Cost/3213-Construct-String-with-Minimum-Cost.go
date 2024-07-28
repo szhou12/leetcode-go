@@ -27,7 +27,7 @@ func minimumCost(target string, words []string, costs []int) int {
 
 	// Step 2: DFS + Memo
 
-	// memo[i] := already seen min cost to chop target[i:]
+	// memo[i] := already seen min cost to chop target[i:n-1]
 	memo := make([]int, n)
 	for i := 0; i < n; i++ {
 		memo[i] = -1
