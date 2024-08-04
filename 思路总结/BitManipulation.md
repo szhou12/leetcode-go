@@ -25,6 +25,10 @@
 |性质1拓展|bitwise AND 元素(非负数)越多，结果只会减小不会增加。因为越多bit位的1被0抹消。(单调性)|bitwise OR 元素(非负数)越多，结果只会增大不会减小。因为越多bit位的1被保留。(单调性)||
 |性质2|`a AND math.MaxInt = a` where `a` non-negative number and `math.MaxInt = 01111...1111`|`a OR 0 = a` where `a` can be any number||
 
+* :red_circle: 多少子数组的bitwise AND结果是k: [3209. Number of Subarrays With AND Value of K](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3209-Number-of-Subarrays-With-AND-Value-of-K)
+    * AND性质: 连续 bitwise AND 所得值一定越变越小。
+    * 常数个key (31种)
+
 * :red_circle: 最小递增数列的最后一个元素值是多少: [3133. Minimum Array End](https://github.com/szhou12/leetcode-go/blob/main/leetcode/3133-Minimum-Array-End/README.md)
     * AND性质: 连续 bitwise AND 所得值一定越变越小，不会大于其中的最小元素。
 
