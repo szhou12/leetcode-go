@@ -1,17 +1,69 @@
 # Breadth First Search & Dijkstra
 
 ## 目录
+* [模版](#模版)
+    * [BFS Template](#bfs-template)
 * [基础题: 层级遍历](#基础题-层级遍历)
 * [常规题](#常规题)
 * [综合题](#综合题)
 * [岛屿沉没类/连通图个数](#岛屿沉没类---找neighbor)
 * [Dijkstra](#dijkstra---find-shortest-path)
-* [BFS + PQ](#bfs--pq-思路想bfs-代码结构像dijkstra)
+* [BFS + PQ](#bfs--pq-思路像bfs-代码结构像dijkstra)
 * [Topological Sort](#topological-sort)
     * [解题思路](#解题思路)
     * [有向图类型](#有向图类型)
     * [无向图类型](#无向图类型)
 * [Floyd-Warshall 算法](#floyd-warshall-algorithm)
+
+
+## 模版
+### BFS Template
+**Graph Setup**: `n` nodes, `edges[i] = [ui, vi]` represents a directed edge `ui -> vi`. Find the shortest paths from node 0 to all other nodes.
+```go
+func bfs(n int, edges [][]int) []int {
+    // Step 1: Reconstruct adj-list representation
+    next := make([][]int, n)
+    for i := 0; i < n; i++ {
+        next[i] = make([]int, 0)
+    }
+    for _, edge := range edges {
+        a, b := edge[0], edge[1]
+        next[a] = append(next[a], b)
+    }
+
+    queue := make([]int, 0)
+    // dist[i] = shortest path from node 0 to node i
+    // dist[] also works as 'visited' set
+    dist := make([]int, n)
+    for i := 0; i < n; i++ {
+        dist[i] = -1
+    }
+
+    // Step 2: start node
+    queue = append(queue, 0)
+    dist[0] = 0
+
+    // Step 3: loop
+    for len(queue) > 0 {
+        // current
+        cur := queue[0]
+        queue = queue[1:]
+        
+        // make the next move
+        for _, nei := range next[cur] {
+            // check if visited
+            if dist[nei] != -1 {
+                continue
+            }
+            queue = append(queue, nei)
+            dist[nei] = dist[cur] + 1
+        }
+
+    }
+    return dist
+}
+```
+
 
 ## 基础题: 层级遍历
 
