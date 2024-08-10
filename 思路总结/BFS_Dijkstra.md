@@ -3,6 +3,7 @@
 ## 目录
 * [模版](#模版)
     * [BFS Template](#bfs-template)
+    * [Dijkstra Template](#dijkstra-template)
 * [基础题: 层级遍历](#基础题-层级遍历)
 * [常规题](#常规题)
 * [综合题](#综合题)
@@ -18,7 +19,7 @@
 
 ## 模版
 ### BFS Template
-**Graph Setup**: `n` nodes, `edges[i] = [ui, vi]` represents a directed edge `ui -> vi`. Find the shortest paths from node 0 to all other nodes.
+**Graph Setup**: `n` nodes, `edges[i] = [ui, vi]` represents a directed edge `ui -> vi`. Find the shortest paths from node 0 (source node) to all other nodes.
 ```go
 func bfs(n int, edges [][]int) []int {
     // Step 1: Reconstruct adj-list representation
@@ -32,7 +33,7 @@ func bfs(n int, edges [][]int) []int {
     }
 
     queue := make([]int, 0)
-    // dist[i] = shortest path from node 0 to node i
+    // dist[i] = shortest path from node 0 (source node) to node i
     // dist[] also works as 'visited' set
     dist := make([]int, n)
     for i := 0; i < n; i++ {
@@ -51,7 +52,7 @@ func bfs(n int, edges [][]int) []int {
         
         // make the next move
         for _, nei := range next[cur] {
-            // check if visited
+            // check if already visited
             if dist[nei] != -1 {
                 continue
             }
@@ -61,6 +62,86 @@ func bfs(n int, edges [][]int) []int {
 
     }
     return dist
+}
+```
+
+### Dijkstra Template
+**Graph Setup**: `n` nodes, `edges[i] = [ui, vi, wei]` represents a undirected edge `ui - vi` with weight `wei`. Find the shortest paths from node 0 (source node) to all other nodes.
+```go
+func dijkstra(n int, edges [][]int) []int {
+    // Step 1: Reconstruct adj-list representation
+    next := make([][]Pair, n)
+    for i := 0; i < n; i++ {
+        next[i] = make([]Pair, 0)
+    }
+    for _, edge := range edges {
+        a, b, wei := edge[0], edge[1], edge[2]
+        next[a] = append(next[a], Pair{node: b, weight: wei})
+        next[b] = append(next[b], Pair{node: a, weight: wei})
+    }
+
+    minHeap := &PQ{}
+    heap.Init(minHeap)
+    // dist[i] = shortest path from node 0 (source node) to node i
+    // dist[] also works as 'visited' set
+    dist := make([]int, n)
+    for i := 0; i < n; i++ {
+        dist[i] = -1
+    }
+
+    // Step 2: start node
+    heap.Push(minHeap, []int{0, 0})
+
+    // Step 3: loop
+    for minHeap.Len() > 0 {
+        // current
+        temp := heap.Pop(minHeap).([]int)
+        d, cur := temp[0], temp[1]
+        // check if already visited
+        if dist[cur] != -1 {
+            continue
+        }
+        // update
+        dist[cur] = d
+
+        // make the next move
+        for _, nei := range next[cur] {
+            node, weight := nei.node, nei.weight
+            // check if already visited
+            if dist[node] != -1 {
+                continue
+            }
+            heap.Push(minHeap, []int{d + weight, node})
+        }
+    }
+
+    return dist
+}
+
+type Pair struct {
+    node int
+    weight int
+}
+
+type PQ [][]int // [[shortest path, node i], [shortest path, node j], ...] := shortest path from source node to node i
+
+func (pq PQ) Len() int {
+    return len(pq)
+}
+func (pq PQ) Swap(i, j int) {
+    pq[i], pq[j] = pq[j], pq[i]
+}
+func (pq PQ) Less(i, j int) bool {
+    return pq[i][0] < pq[j][0]
+}
+func (pq *PQ) Push(x interface{}) {
+    *pq = append(*pq, x.([]int))
+}
+func (pq *PQ) Pop() interface{} {
+    n := len(*pq)
+    temp := (*pq)[n-1]
+    *pq = (*pq)[:n-1]
+    return temp
 }
 ```
 
