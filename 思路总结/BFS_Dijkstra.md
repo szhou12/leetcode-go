@@ -166,6 +166,9 @@ func (pq *PQ) Pop() interface{} {
 
 
 ## 综合题
+* :yellow_circle: 统计每个分支节点数相同的节点数量: [3249. Count the Number of Good Nodes](https://leetcode.com/problems/count-the-number-of-good-nodes/description/)
+    * BFS建树 (因为只给了`edges [][]int`, 并且无法判断`[a, b]`谁是父节点谁是子节点)
+    * DFS统计每个分支的节点数
 
 * :purple_circle: :secret: 逃离野火: [2258. Escape the Spreading Fire](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2258-Escape-the-Spreading-Fire)
     * Solution 1: BFS + BFS + Reasoning
