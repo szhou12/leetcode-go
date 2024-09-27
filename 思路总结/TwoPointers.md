@@ -113,12 +113,12 @@ func slidingWindow(s string) int {
             rightElement := s[right]
             window[rightElement] do something // A: 吃进新元素后, 进行窗口内数据的一系列更新
             right++
-        }
+        } // 注意：跳出for loop时，right刚好在“合法”滑窗的下一位. i.e. window[left, right-1]
 
         // 这里通常需要check不同情况下对应的update result
         //  情况1: right出界 但 right依然可延伸，如何update result
-        //  情况2: right没出界 但 right不可延伸，如何update result
-        //  情况3: right出界 且 right不可延伸，如何update result
+        //  情况2: right出界 且 right不可延伸，如何update result
+        //  情况3: right没出界 但 right不可延伸，如何update result
         if [哪种情况] {
             res = [update result]
         }
@@ -181,6 +181,16 @@ func slidingWindow(s string) int {
         * 如果选择的实现是：固定左边界，右边界不停探索
             1. 检查右边界**出界**的情况
             2. 检查左边界**超过**右边界的情况
+
+
+* :red_circle: [3298. Count Substrings That Can Be Rearranged to Contain a String II]()
+    * Sliding Window (Flex): 滑窗记录字符种类 (3297的优化)
+    * $O(n)$
+
+* :red_circle: [3297. Count Substrings That Can Be Rearranged to Contain a String I](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3297-Count-Substrings-That-Can-Be-Rearranged-to-Contain-a-String-I)
+    * Sliding Window (Flex): 滑窗记录字符频次
+    * $O(26n)$
+
 
 * :yellow_circle: 压缩字符串III: [3163. String Compression III](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3163-String-Compression-III)
     * 标准的Sliding Window (Flex) 题目
