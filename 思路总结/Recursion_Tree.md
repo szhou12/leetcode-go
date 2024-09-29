@@ -151,3 +151,6 @@ func treeRecursion(TreeNode x, ...) ... {
 
 ## Find Paths in Tree
 * :red_circle: 找到所有可以形成回文串的路径: [2791. Count Paths That Can Form a Palindrome in a Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2791-Count-Paths-That-Can-Form-a-Palindrome-in-a-Tree)
+
+## Digit Counting & Finding
+* :red_circle: 找到字符串倍增游戏中的第k个字符: [3307. Find the K-th Character in String Game II]()

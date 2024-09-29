@@ -183,7 +183,7 @@ func slidingWindow(s string) int {
             2. 检查左边界**超过**右边界的情况
 
 
-* :red_circle: [3298. Count Substrings That Can Be Rearranged to Contain a String II]()
+* :red_circle: [3298. Count Substrings That Can Be Rearranged to Contain a String II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3298-Count-Substrings-That-Can-Be-Rearranged-to-Contain-a-String-II)
     * Sliding Window (Flex): 滑窗记录字符种类 (3297的优化)
     * $O(n)$
 
