@@ -98,29 +98,35 @@ func slidingWindow(s string) {
 }
 ```
 
-* **模版Flex**: 伸缩窗口滑窗
+* **模版Flex**: 伸缩窗口滑窗/快慢指针
     * 核心思路: 固定左边界，右边界不停探索至极限
 ```go
 func slidingWindow(s string) int {
+    n := len(s)
     window := make(map[byte]int)
     right := 0
     res := 0
 
-    for left := 0; left < len(s); left++ {
+    for left := 0; left < s; left++ {
+        // 吃
         // 固定左边界，延伸右边界至极限
         // 至极限条件:  (right未出界) && (right依然可延伸的条件)
-        for right < len(s) && [right依然可延伸的条件] {
+        for right < n && (right尚未达到满足条件的最小滑窗) {
             rightElement := s[right]
             window[rightElement] do something // A: 吃进新元素后, 进行窗口内数据的一系列更新
             right++
-        } // 注意：跳出for loop时，right刚好在“合法”滑窗的下一位. i.e. window[left, right-1]
+        } // 注意：跳出for loop时，right刚好在"最小合法"滑窗的下一位. i.e. window[left, right-1]
 
-        // 这里通常需要check不同情况下对应的update result
-        //  情况1: right出界 但 right依然可延伸，如何update result
-        //  情况2: right出界 且 right不可延伸，如何update result
-        //  情况3: right没出界 但 right不可延伸，如何update result
-        if [哪种情况] {
-            res = [update result]
+        // Update Result: 这里通常需要check不同情况下对应的update
+        //  主Check: window[left, right-1] 是满足条件的最小滑窗
+        //      副Check 1: right == n, 如何update result
+        //      副Check 2: right < n, 如何update result
+        if (window[left, right-1] is minimally satisfied) {
+            if (right == n) {
+                res = [update result]
+            } else if (right < n) {
+                res = [update result]
+            }
         }
 
         // 吐
@@ -129,7 +135,6 @@ func slidingWindow(s string) int {
     }
 
     return res
-
 }
 ```
 
@@ -183,11 +188,15 @@ func slidingWindow(s string) int {
             2. 检查左边界**超过**右边界的情况
 
 
-* :red_circle: [3298. Count Substrings That Can Be Rearranged to Contain a String II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3298-Count-Substrings-That-Can-Be-Rearranged-to-Contain-a-String-II)
+* :red_circle: 找所有包含5种元音+k个辅音的子字符串II: [3306. Count of Substrings Containing Every Vowel and K Consonants II]()
+    * Sliding Window (Flex): 滑窗记录 元音种类 + 辅音个数
+    * $O(n)$
+
+* :red_circle: 找所有包含要求前缀的子字符串II: [3298. Count Substrings That Can Be Rearranged to Contain a String II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3298-Count-Substrings-That-Can-Be-Rearranged-to-Contain-a-String-II)
     * Sliding Window (Flex): 滑窗记录字符种类 (3297的优化)
     * $O(n)$
 
-* :red_circle: [3297. Count Substrings That Can Be Rearranged to Contain a String I](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3297-Count-Substrings-That-Can-Be-Rearranged-to-Contain-a-String-I)
+* :red_circle: 找所有包含要求前缀的子字符串I: [3297. Count Substrings That Can Be Rearranged to Contain a String I](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3297-Count-Substrings-That-Can-Be-Rearranged-to-Contain-a-String-I)
     * Sliding Window (Flex): 滑窗记录字符频次
     * $O(26n)$
 
