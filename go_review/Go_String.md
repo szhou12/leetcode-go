@@ -128,3 +128,17 @@ for _, str := range []string{"a", "b", "c", "d"} {
 }
 concat := builder.String()
 ```
+
+## Convert Single Byte to String
+- Directly call `string()`
+```go
+x := 'a'
+str_x := string(x)
+```
+
+## Conver Multiple Bytes to String
+- Put all bytes into a `[]byte` and call `string()`
+```go
+x := []byte{'a', 'b', 'c'}
+str_x := string(x)
+```
