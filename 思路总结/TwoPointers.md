@@ -188,7 +188,7 @@ func slidingWindow(s string) int {
             2. 检查左边界**超过**右边界的情况
 
 
-* :red_circle: 找所有包含5种元音+k个辅音的子字符串II: [3306. Count of Substrings Containing Every Vowel and K Consonants II]()
+* :red_circle: 找所有包含5种元音+k个辅音的子字符串II: [3306. Count of Substrings Containing Every Vowel and K Consonants II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3306-Count-of-Substrings-Containing-Every-Vowel-and-K-Consonants-II)
     * Sliding Window (Flex): 滑窗记录 元音种类 + 辅音个数
     * $O(n)$
 
