@@ -1,4 +1,4 @@
-package otheralgorithms
+package amz
 
 import (
 	"math"

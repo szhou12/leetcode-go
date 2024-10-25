@@ -1,4 +1,4 @@
-package otheralgorithms
+package amz
 
 /*
 Given a string, we can select a substring so that when we reverse the substring, we can form a new string.

@@ -1,4 +1,4 @@
-package otheralgorithms
+package amz
 
 /*
 Given two arrays of length n: text and pattern
