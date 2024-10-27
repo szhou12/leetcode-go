@@ -1,7 +1,7 @@
 # [Go Sort Package](https://github.com/szhou12/leetcode-go/blob/main/go_review/README.md)
 
 ## Contents
-* [SearchInts] (#searchints)
+* [SearchInts](#searchints)
 
 ## SearchInts 
 ```go
