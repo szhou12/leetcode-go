@@ -3,6 +3,9 @@
 ## 目录
 * [方法论](#方法论)
 * [模版 - upperBound, lowerBound](#模版-find-lower-bound--find-upper-bound)
+    * [写法一: sort.Search()](#写法一-sortsearch)
+    * [写法二: sort.SearchInts()](#写法二-sortsearchints)
+    * [写法三: 自己实现](#写法三-自己实现)
 * [经典题](#经典题)
 * [Lower Bound & Upper Bound](#lower-bound--upper-bound)
 * [First/Last Occurrence](#find-first-occurrence--last-occurrence)
@@ -54,8 +57,39 @@ for left < right {...}
 
 ## 模版: find lower bound & find upper bound
 
-**Assume input array non-decreasing order:**
+**Assume input array in ASCENDING order !!!**
 
+### 写法一: sort.Search()
+- [func Search | Offical Document](https://pkg.go.dev/sort#Search)
+    - TL;DR: `sort.Search(n, f)` returns the first (smallest) index that makes condition function `f()` true
+```go
+func lowerBound(nums []int, target int) int {
+    res := sort.Search(len(nums), func(i int) bool { return nums[i] >= target })
+    return res
+}
+
+
+func upperBound(nums []int, target int) int {
+    res := sort.Search(len(nums), func(i int) bool { return nums[i] > target })
+    return res
+}
+```
+
+### 写法二: sort.SearchInts()
+- [func SearchInts | Offical Document](https://pkg.go.dev/sort#SearchInts)
+```go
+func lowerBound(nums []int, target int) int {
+    res := sort.SearchInts(nums, target)
+    return res
+}
+
+func upperBound(nums []int, target int) int {
+    res := sort.SearchInts(nums, target+1)
+    return res
+}
+```
+
+### 写法三: 自己实现 
 1. `lowerBound()`: Find the **first index** whose element in the array has the **value >= target** (It follows the same concept as `lower_bound()` method in C++)
     1. 情况一: target 不在数组范围中，target 小于数组中所有元素，在**左边界**以外 :arrow_right: 返回数组的第一个元素的index
     2. 情况二: target 不在数组范围中，target 大于数组中所有元素，在**右边界**以外 :arrow_right: 返回数组的最后一个元素的index+1
@@ -94,7 +128,6 @@ func lowerBound(nums []int, target int) int {
     // }
  }
 ```
-
 2. `upperBound()`: Find the **first index** whose element in the array has the **value > target** (It follows the same concept as `upper_bound()` method in C++)
     1. 情况一: target 不在数组范围中，target 小于数组中所有元素，在**左边界**以外 :arrow_right: 返回数组的第一个元素的index
     2. 情况二: target 不在数组范围中，target 大于数组中所有元素，在**右边界**以外 :arrow_right: 返回数组的最后一个元素的index+1
