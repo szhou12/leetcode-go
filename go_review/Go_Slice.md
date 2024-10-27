@@ -11,6 +11,7 @@
 * [Slice as a key in map](#slice-as-a-key-in-map)
 * [Prepend elements](#prepend-elements)
 * [Compare Two Slices Equality](#compare-two-slices-equality)
+* [Search in a Sorted Slice](#search-in-a-sorted-slice)
 
 ## Slice vs. Array
 [Revisiting Arrays and Slices in Go](https://www.developer.com/languages/arrays-slices-golang/)
@@ -145,3 +146,6 @@ func testEq(a, b []int) bool {
     return true
 }
 ```
+
+## Search in a Sorted Slice
+[Link to Go_Sort.md](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_Sort.md)

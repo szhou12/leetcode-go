@@ -19,3 +19,4 @@
 |[Operators](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_Operators.md)|- Bitwise Operators<br> - % Operator<br>|
 |[Binary](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_Binary.md)|- Binary Representation of Integer<br>|
 |[String](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_String.md)|- Strings are Immutable<br> - Sort a String<br> - Reverse a String<br> - rune vs. byte<br>|
+|[Sort](https://github.com/szhou12/leetcode-go/blob/main/go_review/Go_Sort.md)|How to Use Golang's Sort Package|
