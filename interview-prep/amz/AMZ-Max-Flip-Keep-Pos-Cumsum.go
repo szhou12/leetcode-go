@@ -20,7 +20,7 @@ Output: 3
 */
 
 /*
-Idea: Greedy + Min Heap
+Idea: Greedy + Min Heap (Dynamically stores flipped numbers)
 1. Greedily flip the current number to negative and keep track of cumsum.
 2. If cumsum <= 0, pop the smallest negative number from min heap and recover it back to positive.
 3. We keep track of # of flips along the way.

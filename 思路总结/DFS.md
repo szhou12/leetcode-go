@@ -1,6 +1,8 @@
 # Depth First Search
 
 ## 目录
+* [Basics](#basics)
+    * [All Permutations With Duplicates](#all-permutations-with-duplicates)
 * [DFS暴力穷举](#dfs暴力穷举)
 * [N-Queens](#n-Queens)
 * [岛屿沉没 - 找neighbor](#岛屿沉没---找neighbor)
@@ -14,6 +16,13 @@
 * [Min-Max Strategy](#min-max-strategy)
 * [DFS + Memoization](#dfs--memoization)
 
+
+## Basics
+
+### All Permutations With Duplicates
+
+
+[All Permutations With Duplicates]
 
 ## DFS暴力穷举
 
@@ -145,15 +154,15 @@
 
 ### 树的深搜遍历
 
-* 所有路径和: [129. Sum Root to Leaf Numbers](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0129-Sum-Root-to-Leaf-Numbers)
+* :yellow_circle: 摘取树上所有苹果所花最少时间: [1443. Minimum Time to Collect All Apples in a Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1443-Minimum-Time-to-Collect-All-Apples-in-a-Tree)
+
 
 * :red_circle: 最大化树上可以取走的金币数额: [2925. Maximum Score After Applying Operations on a Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2925-Maximum-Score-After-Applying-Operations-on-a-Tree)
     * 把Graph里DFS的代码思路 应用到 Tree里DFS
 
 * :red_circle: 找到所有可以形成回文串的路径: [2791. Count Paths That Can Form a Palindrome in a Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2791-Count-Paths-That-Can-Form-a-Palindrome-in-a-Tree)
 
-
-
+* 所有路径和: [129. Sum Root to Leaf Numbers](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0129-Sum-Root-to-Leaf-Numbers)
 
 ## Min-Max Strategy
 * :red_circle: 先手能否赢: [464. Can I Win](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0464-Can-I-Win)

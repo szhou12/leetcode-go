@@ -1,5 +1,6 @@
 package otheralgorithms
 
+// NOTE: only works when all elements are distinct!
 func allPermutationsOfSubsets(nums []int) [][]int {
 	var result [][]int
 	findAllPermutations(nums, 0, &result)

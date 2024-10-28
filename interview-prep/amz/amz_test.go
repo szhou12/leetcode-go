@@ -79,3 +79,15 @@ func TestEqualizeElements(t *testing.T) {
 		t.Errorf("equalizeElements(%v, %v) = %v; want %v", nums1, nums2, result, expected)
 	}
 }
+
+func TestMaxFlipKeepPosCumsum(t *testing.T) {
+	nums := []int{5, 2, 3, 5, 2, 3}
+	expected := 3
+
+	result := maxFlipKeepPosCumsum(nums)
+	t.Logf("result: %v", result)
+
+	if result != expected {
+		t.Errorf("maxFlipKeepPosCumsum(%v) = %v; want %v", nums, result, expected)
+	}
+}

@@ -39,7 +39,7 @@
 
 ## 找规律
 
-* :yellow_circle: 有限预算下买最多冰淇淋: [1833. Maximum Ice Cream Bars]()
+* :yellow_circle: 有限预算下买最多冰淇淋: [1833. Maximum Ice Cream Bars](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1833-Maximum-Ice-Cream-Bars)
 
 * :red_circle: [3228. Maximum Number of Operations to Move Ones to the End](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3228-Maximum-Number-of-Operations-to-Move-Ones-to-the-End)
     * 求“最大”操作数
