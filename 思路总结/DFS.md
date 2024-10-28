@@ -20,9 +20,9 @@
 ## Basics
 
 ### All Permutations With Duplicates
+![snippet1-660x377](https://github.com/user-attachments/assets/6ddf47d1-4766-4f93-8245-183d50976345)
 
-
-[All Permutations With Duplicates]
+[All Permutations With Duplicates](https://github.com/szhou12/leetcode-go/blob/main/otheralgorithms/All-Permutations-With-Duplicates.go)
 
 ## DFS暴力穷举
 
