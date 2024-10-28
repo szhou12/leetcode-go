@@ -22,6 +22,7 @@ query 1: keep items from all 3 orders whose value < 4: there are two 1's and thr
 Output: [2, 5]
 */
 
+// Prefix Sum + Difference Array + Binary Search
 func catchSmallerGoods(items []int, start []int, end []int, query []int) []int {
 	n := len(items)
 	m := len(start)

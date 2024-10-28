@@ -2,6 +2,7 @@
 
 ## 目录
 * [Prefix Sum & Difference Array](#prefix-sum--difference-array)
+    * [应用场景](#use-case)
     * [Prefix Sum (前缀和)](#prefix-sum-前缀和)
         * [1-D Prefix Sum](#1-d-prefix-sum)
         * [2-D Prefix Sum](#2-d-prefix-sum)
@@ -23,7 +24,7 @@
 
 ### Use Case
 | Feature | Prefix Sum | Difference Array |
-| :-: | - | - |
+| - | - | - |
 |**Use Case**|Range sum queries| Range updates |
 |**Common Problems**|Range sum, subarray sums, frequency counts|Range additions, range updates, interval modifications|
 
@@ -64,8 +65,7 @@ diff[i] = nums[i] - nums[i-1]
 ```
 
 ##### Property 1
-* **性质 1**: 差分数组中求第i个元素的前缀和:
-    * **性质 1 总结**: 差分数组第i个元素的前缀和 = 原数组第i个元素的值
+* **性质 1**: 差分数组第i个元素的前缀和 = 原数组第i个元素的值
 ```
 presum[i] = presum[i-1] + diff[i]
           = diff[0]   + diff[1]             + ... + diff[i]

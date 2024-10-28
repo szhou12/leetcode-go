@@ -53,3 +53,29 @@ func TestCatchSmallerGoods(t *testing.T) {
 		}
 	}
 }
+
+func TestMinInputsPerWeek(t *testing.T) {
+	costs := []int{1000, 500, 2000, 8000, 1500}
+	weeks := 3
+	expected := 9500
+	result := minInputsPerWeek(costs, weeks)
+
+	t.Logf("result: %v", result)
+
+	if result != expected {
+		t.Errorf("minInputsPerWeek(%v, %v) = %v; want %v", costs, weeks, result, expected)
+	}
+}
+
+func TestEqualizeElements(t *testing.T) {
+	nums1 := []int{2, 4, 1}
+	nums2 := []int{1, 2, 3}
+	expected := 2
+	result := equalizeElements(nums1, nums2)
+
+	t.Logf("result: %v", result)
+
+	if result != expected {
+		t.Errorf("equalizeElements(%v, %v) = %v; want %v", nums1, nums2, result, expected)
+	}
+}
