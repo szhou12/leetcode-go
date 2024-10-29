@@ -17,6 +17,7 @@ func allPermutationsDups(nums []int) [][]int {
 			pathCopy := make([]int, len(path))
 			copy(pathCopy, path)
 			result = append(result, pathCopy)
+			return
 		}
 
 		// backtracking

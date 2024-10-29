@@ -91,3 +91,112 @@ func TestMaxFlipKeepPosCumsum(t *testing.T) {
 		t.Errorf("maxFlipKeepPosCumsum(%v) = %v; want %v", nums, result, expected)
 	}
 }
+
+func TestGetMaxEnergyBurned(t *testing.T) {
+	height := []int{5, 2, 5}
+	expected := 43
+
+	result := getMaxEnergyBurned(height)
+	t.Logf("result: %v", result)
+
+	if result != expected {
+		t.Errorf("getMaxEnergyBurned(%v) = %v; want %v", height, result, expected)
+	}
+}
+
+func TestGetFirstNonPosPresum(t *testing.T) {
+	nums := []int{1, 2}
+	expected := -1
+
+	result := getFirstNonPosPresum(nums)
+	t.Logf("result: %v", result)
+
+	if result != expected {
+		t.Errorf("getFirstNonPosPresum(%v) = %v; want %v", nums, result, expected)
+	}
+
+	nums = []int{2, -4, 1}
+	expected = 2
+
+	result = getFirstNonPosPresum(nums)
+	t.Logf("result: %v", result)
+
+	if result != expected {
+		t.Errorf("getFirstNonPosPresum(%v) = %v; want %v", nums, result, expected)
+	}
+
+	nums = []int{1, 2, 3, -6}
+	expected = 3
+
+	result = getFirstNonPosPresum(nums)
+	t.Logf("result: %v", result)
+
+	if result != expected {
+		t.Errorf("getFirstNonPosPresum(%v) = %v; want %v", nums, result, expected)
+	}
+}
+
+func TestMaxMinorCourses(t *testing.T) {
+	major := []int{4, 5, 2, 4}
+	minor := []int{5, 6, 3, 4}
+	limit := 7
+	expected := 2
+
+	result := maxMinorCourses(major, minor, limit)
+	t.Logf("result: %v", result)
+
+	if result != expected {
+		t.Errorf("maxMinorCourses(%v, %v, %v) = %v; want %v", major, minor, limit, result, expected)
+	}
+}
+
+func TestMaxDaysBeforeBroke(t *testing.T) {
+	lend := []int{4, 6, 1, 8}
+	debt := []int{7, 10, 3, 9}
+	expected := 3
+
+	result := maxDaysBeforeBroke(lend, debt)
+	t.Logf("result: %v", result)
+
+	if result != expected {
+		t.Errorf("maxDaysBeforeBroke(%v, %v) = %v; want %v", lend, debt, result, expected)
+	}
+
+	lend = []int{2, 1, 5}
+	debt = []int{2, 2, 5}
+	expected = 3
+
+	result = maxDaysBeforeBroke(lend, debt)
+	t.Logf("result: %v", result)
+
+	if result != expected {
+		t.Errorf("maxDaysBeforeBroke(%v, %v) = %v; want %v", lend, debt, result, expected)
+	}
+
+	lend = []int{1, 1, 1, 2}
+	debt = []int{2, 2, 2, 3}
+	expected = 2
+
+	result = maxDaysBeforeBroke(lend, debt)
+	t.Logf("result: %v", result)
+
+	if result != expected {
+		t.Errorf("maxDaysBeforeBroke(%v, %v) = %v; want %v", lend, debt, result, expected)
+	}
+
+}
+
+func TestMinCostPurchase(t *testing.T) {
+	cost := []int{1,2,3}
+	joinCost := 2
+	k := 1
+
+	expected := 3
+
+	result := minCostPurchase(cost, joinCost, k)
+	t.Logf("result: %v", result)
+
+	if result != expected {
+		t.Errorf("minCostPurchase(%v, %v, %v) = %v; want %v", cost, joinCost, k, result, expected)
+	}
+}
