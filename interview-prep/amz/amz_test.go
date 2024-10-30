@@ -200,3 +200,53 @@ func TestMinCostPurchase(t *testing.T) {
 		t.Errorf("minCostPurchase(%v, %v, %v) = %v; want %v", cost, joinCost, k, result, expected)
 	}
 }
+
+func TestGetRequestsInQueue(t *testing.T) {
+	wait := []int{2, 2, 3, 1}
+	expected := []int{4, 2, 1, 0}
+
+	result := getRequestsInQueue(wait)
+	t.Logf("result: %v", result)
+
+	for i := range result {
+		if result[i] != expected[i] {
+			t.Errorf("getRequestsInQueue(%v) = %v; want %v", wait, result, expected)
+		}
+	}
+
+	wait = []int{4, 4, 4}
+	expected = []int{3, 2, 1, 0}
+
+	result = getRequestsInQueue(wait)
+	t.Logf("result: %v", result)
+
+	for i := range result {
+		if result[i] != expected[i] {
+			t.Errorf("getRequestsInQueue(%v) = %v; want %v", wait, result, expected)
+		}
+	}
+
+	wait = []int{3, 1, 2, 1}
+	expected = []int{4, 1, 0}
+
+	result = getRequestsInQueue(wait)
+	t.Logf("result: %v", result)
+
+	for i := range result {
+		if result[i] != expected[i] {
+			t.Errorf("getRequestsInQueue(%v) = %v; want %v", wait, result, expected)
+		}
+	}
+
+	wait = []int{3, 1, 3, 1}
+	expected = []int{4, 1, 0}
+
+	result = getRequestsInQueue(wait)
+	t.Logf("result: %v", result)
+
+	for i := range result {
+		if result[i] != expected[i] {
+			t.Errorf("getRequestsInQueue(%v) = %v; want %v", wait, result, expected)
+		}
+	}
+}
