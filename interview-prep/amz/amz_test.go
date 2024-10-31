@@ -249,4 +249,16 @@ func TestGetRequestsInQueue(t *testing.T) {
 			t.Errorf("getRequestsInQueue(%v) = %v; want %v", wait, result, expected)
 		}
 	}
+
+	wait = []int{1,1,2,5,8}
+	expected = []int{5,3,2,1,0}
+
+	result = getRequestsInQueue(wait)
+	t.Logf("result: %v", result)
+
+	for i := range result {
+		if result[i] != expected[i] {
+			t.Errorf("getRequestsInQueue(%v) = %v; want %v", wait, result, expected)
+		}
+	}
 }
