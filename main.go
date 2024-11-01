@@ -11,7 +11,7 @@ import (
 // (i.e. func name MUST start with a capital letter)
 func main() {
 	s := "1001"
-	k := 0
+	k := 2
 	fmt.Println(cur.MaxSwitchingDigits(s, k))
 }
 

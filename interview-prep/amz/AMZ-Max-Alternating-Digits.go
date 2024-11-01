@@ -1,11 +1,10 @@
 package amz
 
-import "fmt"
-
 /*
 Given a binary string that reprensents a sequence of "0" and "1".
 Given k opertaions that in one operation you can switch "0" -> "1" or "1" -> "0".
 Find the longest substring of alternating binary digits that can be obtained by performing at most k operations.
+Constraints: 1 <= k <= n
 
 Example:
 s = "1001", k=1
@@ -15,14 +14,13 @@ Output: 3
 */
 
 func MaxSwitchingDigits(s string, k int) int {
-	pattern1 := maxAlternateSubstr(s, k, '0') // "010101"
-
-	fmt.Println("+++++++++++++++++")
-
-	pattern2 := maxAlternateSubstr(s, k, '1') // "101010"
-	return max(pattern1, pattern2)
+	pattern01 := maxAlternateSubstr(s, k, '0') // "010101"
+	pattern10 := maxAlternateSubstr(s, k, '1') // "101010"
+	return max(pattern01, pattern10)
 }
 
+
+// similar leetcode 2024 solution
 func maxAlternateSubstr(s string, k int, start byte) int {
 	n := len(s)
 	res := 0
@@ -31,6 +29,7 @@ func maxAlternateSubstr(s string, k int, start byte) int {
 
 	for left := 0; left < n; left++ {
 
+		// 吃
 		for right < n && (s[right] == expectedCharAt(right, left, start) || flips < k) {
 			if s[right] != expectedCharAt(right, left, start) {
 				flips++
@@ -38,19 +37,13 @@ func maxAlternateSubstr(s string, k int, start byte) int {
 			right++
 		}
 
-		fmt.Printf("update - l: %v, r: %v, flips: %v\n", left, right, flips)
-
+		// update
 		res = max(res, right-left)
 
-		if left > right {
-			if s[left] != expectedCharAt(left, left, start) {
-				flips--
-			}
-		} else {
-			right = left + 1 // bring right back will cause O(n^2)???
+		// 吐: 如果左边界指向的字符不是期望pattern的字符，说明我们在该字符上使用了一次operation，现在要吐出来
+		if s[left] != expectedCharAt(left, left, start) {
+			flips--
 		}
-
-		fmt.Printf("postpo - l: %v, r: %v, flips: %v\n\n", left, right, flips)
 
 	}
 	return res

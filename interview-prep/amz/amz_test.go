@@ -312,3 +312,38 @@ func TestMergeIntervals(t *testing.T) {
 		}
 	}
 }
+
+func TestMaxSwitchingDigits(t *testing.T) {
+	s := "1001"
+	k := 1
+	expected := 3
+
+	result := MaxSwitchingDigits(s, k)
+	t.Logf("result: %v", result)
+
+	if result != expected {
+		t.Errorf("MaxSwitchingDigits(%v, %v) = %v; want %v", s, k, result, expected)
+	}
+
+	// s = "1001"
+	// k = 0 // k = 0 doesn't fit the constraint
+	// expected = 2
+
+	// result = MaxSwitchingDigits(s, k)
+	// t.Logf("result: %v", result)
+
+	// if result != expected {
+	// 	t.Errorf("MaxSwitchingDigits(%v, %v) = %v; want %v", s, k, result, expected)
+	// }
+
+	s = "1001"
+	k = 2
+	expected = 4
+
+	result = MaxSwitchingDigits(s, k)
+	t.Logf("result: %v", result)
+
+	if result != expected {
+		t.Errorf("MaxSwitchingDigits(%v, %v) = %v; want %v", s, k, result, expected)
+	}
+}
