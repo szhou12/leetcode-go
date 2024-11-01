@@ -1,17 +1,17 @@
 package main
 
+// Terminal: > go run main.go
+
 import (
 	"fmt"
-	// cur "github.com/szhou12/leetcode-go/interview-prep/amz"
+	cur "github.com/szhou12/leetcode-go/interview-prep/amz"
 )
 
 // NOTE: in order to call any func from imported package, this func must be exported!!!
-// (i.e. func name starts with a capital letter)
+// (i.e. func name MUST start with a capital letter)
 func main() {
-	// text := []string{"code", "coder"}
-	// pattern := []string{"co*d", "co*er"}
-	// res := cur.MatchString(text, pattern)
-	fmt.Println("hello world")
+	s := "1001"
+	k := 0
+	fmt.Println(cur.MaxSwitchingDigits(s, k))
 }
 
-// Terminal: > go run main.go

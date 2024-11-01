@@ -73,7 +73,7 @@ func getRequestsInQueue(wait []int) []int {
 }
 
 func getRequestsInQueue_v2(wait []int) []int {
-	minHeap := &PQ{}
+	minHeap := &PQ_req{}
 	heap.Init(minHeap)
 
     process := make([][]int, 0)
@@ -119,28 +119,28 @@ func getRequestsInQueue_v2(wait []int) []int {
 
 }
 
-type PQ [][]int // [[wait[i], i], ...]
+type PQ_req [][]int // [[wait[i], i], ...]
 
-func (pq PQ) Len() int {
+func (pq PQ_req) Len() int {
 	return len(pq)
 }
 
-func (pq PQ) Less(i, j int) bool {
+func (pq PQ_req) Less(i, j int) bool {
 	if pq[i][0] == pq[j][0] {
 		return pq[i][1] < pq[j][1]
 	}
 	return pq[i][0] < pq[j][0]
 }
 
-func (pq PQ) Swap(i, j int) {
+func (pq PQ_req) Swap(i, j int) {
 	pq[i], pq[j] = pq[j], pq[i]
 }
 
-func (pq *PQ) Push(x interface{}) {
+func (pq *PQ_req) Push(x interface{}) {
 	*pq = append(*pq, x.([]int))
 }
 
-func (pq *PQ) Pop() interface{} {
+func (pq *PQ_req) Pop() interface{} {
 	n := len(*pq)
 	temp := (*pq)[n-1]
 	*pq = (*pq)[:n-1]

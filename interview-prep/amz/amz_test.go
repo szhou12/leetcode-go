@@ -43,7 +43,7 @@ func TestCatchSmallerGoods(t *testing.T) {
 	query := []int{2, 4}
 
 	expected := []int{2, 5}
-	result := catchSmallerGoods(items, start, end, query)
+	result := CatchSmallerGoods(items, start, end, query)
 
 	t.Logf("result: %v", result)
 
@@ -259,6 +259,56 @@ func TestGetRequestsInQueue(t *testing.T) {
 	for i := range result {
 		if result[i] != expected[i] {
 			t.Errorf("getRequestsInQueue(%v) = %v; want %v", wait, result, expected)
+		}
+	}
+}
+
+func TestLeastInterval(t *testing.T) {
+	requests := "aaabbb"
+	gap := 2
+	expected := 8
+
+	result := leastInterval(requests, gap)
+	t.Logf("result: %v", result)
+	
+	if result != expected {
+		t.Errorf("leastInterval(%v, %v) = %v; want %v", requests, gap, result, expected)
+	}
+
+	requests = "abacadaeafag"
+	gap = 2
+	expected = 16
+
+	result = leastInterval(requests, gap)
+	t.Logf("result: %v", result)
+	
+	if result != expected {
+		t.Errorf("leastInterval(%v, %v) = %v; want %v", requests, gap, result, expected)
+	}
+}
+
+func TestMergeIntervals(t *testing.T) {
+	intervals := [][]int{{1,3},{2,6},{8,10},{15,18}}
+	expected := [][]int{{1,6},{8,10},{15,18}}
+
+	result := mergeIntervals(intervals)
+	t.Logf("result: %v", result)
+
+	for i := range result {
+		if result[i][0] != expected[i][0] || result[i][1] != expected[i][1] {
+			t.Errorf("mergeIntervals(%v) = %v; want %v", intervals, result, expected)
+		}
+	}
+
+	intervals = [][]int{{1,4},{4,5}}
+	expected = [][]int{{1,5}}
+
+	result = mergeIntervals(intervals)
+	t.Logf("result: %v", result)
+
+	for i := range result {
+		if result[i][0] != expected[i][0] || result[i][1] != expected[i][1] {
+			t.Errorf("mergeIntervals(%v) = %v; want %v", intervals, result, expected)
 		}
 	}
 }

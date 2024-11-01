@@ -23,7 +23,7 @@ Output: [2, 5]
 */
 
 // Prefix Sum + Difference Array + Binary Search
-func catchSmallerGoods(items []int, start []int, end []int, query []int) []int {
+func CatchSmallerGoods(items []int, start []int, end []int, query []int) []int {
 	n := len(items)
 	m := len(start)
 
