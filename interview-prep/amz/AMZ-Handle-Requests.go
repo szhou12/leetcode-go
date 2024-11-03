@@ -9,7 +9,7 @@ At each unit of time, the first request in the queue is processed. At the next u
 Return an array of length n: res[] where res[i] = the number of requests present in the queue at each unit of time until the queue is empty.
 
 Example:
-wait = [2, 2, 3, 1]
+Input: wait = [2, 2, 3, 1]
 
 - at time=0: 1st request is being processed. The number of requests present in queue is 4 as queue = [1,2,3,4]
 - at time=1: 2nd request is being processed. 1st request has been processed and removed. Also, request 4 (wait[3]=1) has expired and been removed. The number of requests present in queue is 2 as queue = [2,3]

@@ -347,3 +347,68 @@ func TestMaxSwitchingDigits(t *testing.T) {
 		t.Errorf("MaxSwitchingDigits(%v, %v) = %v; want %v", s, k, result, expected)
 	}
 }
+
+func TestLexicoSmallestSymmetricStr(t *testing.T) {
+	s := "yxxy"
+	expected := "xyyx"
+
+	result := LexicoSmallestSymmetricStr(s)
+	t.Logf("result: %v", result)
+
+	if result != expected {
+		t.Errorf("LexicoSmallestSymmetricStr(%v) = %v; want %v", s, result, expected)
+	}
+
+	s = "ded"
+	expected = "ded"
+
+	result = LexicoSmallestSymmetricStr(s)
+	t.Logf("result: %v", result)
+
+	if result != expected {
+		t.Errorf("LexicoSmallestSymmetricStr(%v) = %v; want %v", s, result, expected)
+	}
+}
+
+func TestCheckSimilarStrTransform(t *testing.T) {
+	new := []string{"aaccbbee", "aab"}
+	old := []string{"bdbf", "aee"}
+	expected := []bool{true, false}
+
+	result := CheckSimilarStrTransform(new, old)
+	t.Logf("result: %v", result)
+
+	for i := range result {
+		if result[i] != expected[i] {
+			t.Errorf("CheckSimilarStrTransform(%v, %v) = %v; want %v", new, old, result, expected)
+		}
+	}
+
+	new = []string{"baacbab", "accdb", "baacba"}
+	old = []string{"abdbc", "ach", "abb"}
+	expected = []bool{true, false, true}
+
+	result = CheckSimilarStrTransform(new, old)
+	t.Logf("result: %v", result)
+	
+	for i := range result {
+		if result[i] != expected[i] {
+			t.Errorf("CheckSimilarStrTransform(%v, %v) = %v; want %v", new, old, result, expected)
+		}
+	}
+
+}
+
+func TestFindMinCapacity(t *testing.T) {
+	volumes := []int{9, 2, 4, 6}
+	k := 3
+	// expected := 9
+	expected := findMinCapacity_v1(k, volumes)
+
+	result := FindMinCapacity(k, volumes)
+	t.Logf("result: %v", result)
+
+	if result != expected {
+		t.Errorf("FindMinCapacity(%v, %v) = %v; want %v", k, volumes, result, expected)
+	}
+}

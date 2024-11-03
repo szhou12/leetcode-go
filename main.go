@@ -10,8 +10,9 @@ import (
 // NOTE: in order to call any func from imported package, this func must be exported!!!
 // (i.e. func name MUST start with a capital letter)
 func main() {
-	s := "1001"
-	k := 2
-	fmt.Println(cur.MaxSwitchingDigits(s, k))
+	volumes := []int{9, 2, 4, 6}
+	k := 3
+
+	fmt.Println(cur.FindMinCapacity(k, volumes))
 }
 
