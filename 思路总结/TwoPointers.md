@@ -11,6 +11,7 @@
     * [Flex 模版题](#flex-模版题)
     * [非 模版题](#非-模版题)
     * [需要同时满足两个及以上条件](#同时满足两个及以上条件)
+* [3 Pointers](#3-pointers)
 
 ## 一个数组 + 双指针同向而行
 
@@ -287,3 +288,10 @@ func slidingWindow(s string) int {
 
 * :red_circle: “完备”子串的个数: [2953. Count Complete Substrings](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2953-Count-Complete-Substrings)
     * Flex 模版 + Fix 模版
+
+
+## 3 Pointers
+* :red_circle: 数组中找第K大元素: [215. Kth Largest Element in an Array](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0215-Kth-Largest-Element-in-an-Array)
+    * Quick Select
+
+* :yellow_circle: 三元素排序: [75. Sort Colors](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0075-Sort-Colors)
