@@ -412,3 +412,28 @@ func TestFindMinCapacity(t *testing.T) {
 		t.Errorf("FindMinCapacity(%v, %v) = %v; want %v", k, volumes, result, expected)
 	}
 }
+
+func TestNumNotWorkingMachinese(t *testing.T) {
+	x := []int{0, 0, 0, 0, 0, 1, 1, 1, 2, -1, -1, -2, -1}
+	y := []int{-1, 0, 1, 2, -2, 0, 1, -1, 0, 1, -1, 0, 0}
+	expected := 5
+
+	result := NumNotWorkingMachinese(x, y)
+	t.Logf("result: %v", result)
+
+	if result != expected {
+		t.Errorf("NumNotWorkingMachinese(%v, %v) = %v; want %v", x, y, result, expected)
+	}
+
+	x = []int{1, 1, 1, 2, 2, 2, 2, 3, 3, 3}
+	y = []int{1, 2, 3, 1, 2, 3, 5, 1, 2, 3}
+	expected = 2
+
+	result = NumNotWorkingMachinese(x, y)
+	t.Logf("result: %v", result)
+
+	if result != expected {
+		t.Errorf("NumNotWorkingMachinese(%v, %v) = %v; want %v", x, y, result, expected)
+	}
+
+}
