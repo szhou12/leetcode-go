@@ -2,7 +2,7 @@ package leetcode
 
 import "math"
 
-func minTimeToReach(moveTime [][]int) int {
+func minTimeToReach_dfs(moveTime [][]int) int {
 	dirs := [][]int{
 		{0, -1},
 		{-1, 0},

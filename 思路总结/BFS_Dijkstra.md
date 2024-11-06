@@ -9,6 +9,11 @@
 * [综合题](#综合题)
 * [岛屿沉没类/连通图个数](#岛屿沉没类---找neighbor)
 * [Dijkstra](#dijkstra---find-shortest-path)
+    * [:star:Heap Review](#heap-review)
+    * [:star:使用Dijkstra的两大条件](#star-使用dijkstra的两大条件)
+    * [:star:算法的特征](#star-算法的特征)
+    * [矩阵走格子类型题](#矩阵走格子类型题)
+    * [Adjacency List (邻接表) 类型题](#adjacency-list-邻接表-类型题)
 * [BFS + PQ](#bfs--pq-思路像bfs-代码结构像dijkstra)
 * [Topological Sort](#topological-sort)
     * [解题思路](#解题思路)
@@ -211,17 +216,45 @@ func (pq *PQ) Pop() interface{} {
 
 
 
-### :star: **使用算法的两大条件:**
+### :star: **使用Dijkstra的两大条件:**
 1. **single-source**: 只给一个起点/起点确定, 求从起点(single source)到图上任意一个node的最短路径
 2. **non-negative weight**: edge的权重非负
 
 ### :star: **算法的特征:**
-* 给定一个起点single-source, 可以求起点到图上任意一点的最短距离
+* 给定一个起点 (single-source), 可以求起点到图上任意一点的最短距离
 * Time complexity = $O(E\log E)$
 * 两种Return方式:
     1. Early Return: Dijkstra loop内到达终点即return; loop结束还没return说明无法到达终点
+        - **矩阵走格子类型题**常见于这种return方式. i.e., `return if (x == n-1 && y == m-1)`
+        - `visited` 一般只作为标识一个node是否已经访问过，存 0/1 值.
     2. 填表 Return: Dijkstra把所有结果填入一个表 (array, matrix) 中, loop结束后把所求node的结果按要求从表中取出return
+        - `visited` 一般同时作为标识一个node是否已经访问过，也记录从起点到这个node的最短距离.
+* 一个node**首次**被visit时的路程一定是从起点到这个node的最短距离。i.e., 之后如果再次visit这个node, 路程一定不会更短。
+* Min Heap每次pop出来的node，只意味着从起点到这个node的最短距离。与上一轮pop出的node无直接关系 (这条最短路径上可能经过上一轮pop出来的node，也可能不经过)。
 
+### 矩阵走格子类型题
+* :red_circle: 从Grid左上角走到右下角所花最短时间: [2577. Minimum Time to Visit a Cell In a Grid](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2577-Minimum-Time-to-Visit-a-Cell-In-a-Grid)
+    * **矩阵走格子类型题**
+
+* :red_circle: 从Grid左上角走到右下角所花最少cost: [1368. Minimum Cost to Make at Least One Valid Path in a Grid](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1368-Minimum-Cost-to-Make-at-Least-One-Valid-Path-in-a-Grid)
+    * **矩阵走格子类型题**
+
+* :red_circle: 求必经最少障碍物的路径: [2290. Minimum Obstacle Removal to Reach Corner](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2290-Minimum-Obstacle-Removal-to-Reach-Corner)
+    * **矩阵走格子类型题**
+
+* :yellow_circle: :secret: :lock: 走迷宫II / 走冰系道馆: [505. The Maze II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0505-The-Maze-II)
+    * 难点: 地面是冰面, 只能维持一个方向前进直到撞墙
+    * Early Return: Dijkstra loop内到达终点即return
+
+* :red_circle: :secret: :lock: 走迷宫III / 走冰系道馆+掉洞: [499. The Maze III](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0499-The-Maze-III)
+    * **node储存双状态**: node 储存 位置信息+到达node的方向指令信息
+    * Priority Queue 再定义:
+        1. 用一个结构体容纳不同variable type (int, string)
+        2. `Less(i, j int)`: 双排序 - 先按照 path cost 排序, 再按照 指令的lexicographical order排序
+    * 维持一个方向滑冰时, 如果掉洞，直接break，不再往前滑
+    * Early Return: Dijkstra loop内到达终点即return
+
+### Adjacency List (邻接表) 类型题
 * :yellow_circle: 最短路径到达有时限的所有节点: [3112. Minimum Time to Visit Disappearing Nodes](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3112-Minimum-Time-to-Visit-Disappearing-Nodes)
     * 典型题
 
@@ -232,15 +265,6 @@ func (pq *PQ) Pop() interface{} {
 * :red_circle: 调整边的权重得到最短路径: [2699. Modify Graph Edge Weights](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2699-Modify-Graph-Edge-Weights)
 
 * :red_circle: 有特殊路径选择权的最短路径: [2662. Minimum Cost of a Path With Special Roads](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2662-Minimum-Cost-of-a-Path-With-Special-Roads)
-
-* :red_circle: 从Grid左上角走到右下角所花最短时间: [2577. Minimum Time to Visit a Cell In a Grid](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2577-Minimum-Time-to-Visit-a-Cell-In-a-Grid)
-    * **矩阵走格子类型题**
-
-* :red_circle: 从Grid左上角走到右下角所花最少cost: [1368. Minimum Cost to Make at Least One Valid Path in a Grid](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1368-Minimum-Cost-to-Make-at-Least-One-Valid-Path-in-a-Grid)
-    * **矩阵走格子类型题**
-
-* :red_circle: 求必经最少障碍物的路径: [2290. Minimum Obstacle Removal to Reach Corner](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2290-Minimum-Obstacle-Removal-to-Reach-Corner)
-    * **矩阵走格子类型题**
 
 * :red_circle: 从两个起点到达同一个终点所需最短路径: [2203. Minimum Weighted Subgraph With the Required Paths](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2203-Minimum-Weighted-Subgraph-With-the-Required-Paths)
     * 难点: "拉链" - 如何找到"拉链"node i
@@ -281,17 +305,6 @@ func (pq *PQ) Pop() interface{} {
     * Dijkstra求最短路径的基础题: 求从source node到任意node i的最短路径
     * 可用来作为以上题目的练手题
 
-* :yellow_circle: :secret: :lock: 走迷宫II / 走冰系道馆: [505. The Maze II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0505-The-Maze-II)
-    * 难点: 地面是冰面, 只能维持一个方向前进直到撞墙
-    * Early Return: Dijkstra loop内到达终点即return
-
-* :red_circle: :secret: :lock: 走迷宫III / 走冰系道馆+掉洞: [499. The Maze III](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0499-The-Maze-III)
-    * **node储存双状态**: node 储存 位置信息+到达node的方向指令信息
-    * Priority Queue 再定义:
-        1. 用一个结构体容纳不同variable type (int, string)
-        2. `Less(i, j int)`: 双排序 - 先按照 path cost 排序, 再按照 指令的lexicographical order排序
-    * 维持一个方向滑冰时, 如果掉洞，直接break，不再往前滑
-    * Early Return: Dijkstra loop内到达终点即return
 
 
 
