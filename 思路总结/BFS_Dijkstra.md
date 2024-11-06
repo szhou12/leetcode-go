@@ -233,14 +233,16 @@ func (pq *PQ) Pop() interface{} {
 * Min Heap每次pop出来的node，只意味着从起点到这个node的最短距离。与上一轮pop出的node无直接关系 (这条最短路径上可能经过上一轮pop出来的node，也可能不经过)。
 
 ### 矩阵走格子类型题
+* :red_circle: 最短时间到达终点II: [3342. Find Minimum Time to Reach Last Room II]()
+    * **node储存一个额外状态**: 走入下一个格子需要花费的时间 (1s or 2s)
+
+* :yellow_circle: 最短时间到达终点I: [3341. Find Minimum Time to Reach Last Room I](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3341-Find-Minimum-Time-to-Reach-Last-Room-I)
+
 * :red_circle: 从Grid左上角走到右下角所花最短时间: [2577. Minimum Time to Visit a Cell In a Grid](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2577-Minimum-Time-to-Visit-a-Cell-In-a-Grid)
-    * **矩阵走格子类型题**
 
 * :red_circle: 从Grid左上角走到右下角所花最少cost: [1368. Minimum Cost to Make at Least One Valid Path in a Grid](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1368-Minimum-Cost-to-Make-at-Least-One-Valid-Path-in-a-Grid)
-    * **矩阵走格子类型题**
 
 * :red_circle: 求必经最少障碍物的路径: [2290. Minimum Obstacle Removal to Reach Corner](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2290-Minimum-Obstacle-Removal-to-Reach-Corner)
-    * **矩阵走格子类型题**
 
 * :yellow_circle: :secret: :lock: 走迷宫II / 走冰系道馆: [505. The Maze II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0505-The-Maze-II)
     * 难点: 地面是冰面, 只能维持一个方向前进直到撞墙
