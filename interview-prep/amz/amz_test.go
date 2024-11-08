@@ -437,3 +437,25 @@ func TestNumNotWorkingMachinese(t *testing.T) {
 	}
 
 }
+
+func TestFindMaxValueSizeK(t *testing.T) {
+	segments := [][]int{
+		{1, 4, 2},
+		{6, 6, 5},
+		{7, 7, 7},
+		{7, 9, 1},
+		{9, 10, 1},
+	}
+	k := 5
+
+	expected := 16
+
+	result := FindMaxValueSizeK(segments, k)
+
+	t.Logf("result: %v", result)
+
+	if result != expected {
+		t.Errorf("FindMaxValueSizeK(%v, %v) = %v; want %v", segments, k, result, expected)
+	}
+
+}

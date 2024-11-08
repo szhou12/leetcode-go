@@ -67,12 +67,12 @@ diff[i] = nums[i] - nums[i-1]
 ##### Property 1
 * **性质 1**: 差分数组第i个元素的前缀和 = 原数组第i个元素的值
 ```
+presum[0] = diff[0]
+
 presum[i] = presum[i-1] + diff[i]
           = diff[0]   + diff[1]             + ... + diff[i]
           = (nums[0]) + (nums[1] - nums[0]) + ... + (nums[i] - nums[i-1])
           = nums[i]
-
-presum[0] = diff[0]
 ```
 
 ##### Property 2

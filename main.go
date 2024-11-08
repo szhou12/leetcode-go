@@ -10,9 +10,16 @@ import (
 // NOTE: in order to call any func from imported package, this func must be exported!!!
 // (i.e. func name MUST start with a capital letter)
 func main() {
-	x := []int{0, 0, 0, 0, 0, 1, 1, 1, 2, -1, -1, -2, -1}
-	y := []int{-1, 0, 1, 2, -2, 0, 1, -1, 0, 1, -1, 0, 0}
+	segment := [][]int{
+		{1, 4, 2},
+		{6, 6, 5},
+		{7, 7, 7},
+		{7, 9, 1},
+		{9, 10, 1},
+	}
 
-	fmt.Println(cur.NumNotWorkingMachinese(x, y))
+	fmt.Println(cur.FindMaxValueSizeK(segment, 5))
+
+
 }
 

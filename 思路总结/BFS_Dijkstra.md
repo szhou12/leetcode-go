@@ -233,7 +233,7 @@ func (pq *PQ) Pop() interface{} {
 * Min Heap每次pop出来的node，只意味着从起点到这个node的最短距离。与上一轮pop出的node无直接关系 (这条最短路径上可能经过上一轮pop出来的node，也可能不经过)。
 
 ### 矩阵走格子类型题
-* :red_circle: 最短时间到达终点II: [3342. Find Minimum Time to Reach Last Room II]()
+* :red_circle: 最短时间到达终点II: [3342. Find Minimum Time to Reach Last Room II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3342-Find-Minimum-Time-to-Reach-Last-Room-II)
     * **node储存一个额外状态**: 走入下一个格子需要花费的时间 (1s or 2s)
 
 * :yellow_circle: 最短时间到达终点I: [3341. Find Minimum Time to Reach Last Room I](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3341-Find-Minimum-Time-to-Reach-Last-Room-I)
