@@ -2,20 +2,25 @@
 
 ## Template
 [Segment Tree Template](https://github.com/szhou12/leetcode-go/blob/main/template/SegmentTree.go)
+### 基础版 (Basic)
+- 基础版模版只支持: **单一值初始化**, **区间查询**, **单点更新**.
+- [Range Sum]()
 
 ## Overview
-线段树的维护仅需要使用小区间的值更新大区间。
-线段树是平衡二叉树 (bc always split in half)，时间复杂度总是在$O(\log n)$。
-线段树的局限性：解决的问题必须要满足“区间加法”才能将大问题划分为子问题来解决。
-区间加法：对于[L, R]区间，它的答案可以由[L, M]和[M+1, R]的答案合并求出。
-满足的问题：区间求和，区间最大值/最小值 etc.
-不满足的问题：区间的众数，区间最长连续问题，最长不下降问题 etc.
+- 线段树的维护仅需要使用小区间的值更新大区间。
+- 线段树是平衡二叉树 (bc always split in half)，时间复杂度总是在$O(\log n)$。
+- 线段树的局限性：解决的问题必须要满足“区间加法”才能将大问题划分为子问题来解决。
+- 区间加法：对于[L, R]区间，它的答案可以由[L, M]和[M+1, R]的答案合并求出。
+- 满足的问题：区间求和，区间最大值/最小值 etc.
+- 不满足的问题：区间的众数，区间最长连续问题，最长不下降问题 etc.
 
 线段树解决问题的步骤：
 1. 建树
-2. 单点修改/区间修改
-3. 区间查询
-区间修改后的查询会用到<lazy标记>
+    1. 单一值初始化
+    2. 数组值初始化
+2. 单点修改
+3. 区间修改
+4. 区间查询 (区间修改后的查询会用到<lazy标记>)
 
 [建树]
 - 一般是开一个数组，以堆的方式存储数据。
@@ -55,3 +60,4 @@
 
 ## Resources
 - [【neko算法课】线段树 数据结构【6期】](https://www.bilibili.com/video/BV1yF411p7Bt/?spm_id_from=333.337.search-card.all.click&vd_source=0c02ef6f6e7a2b0959d7dd28e9e49da4)
+- [Segment Tree - Algorithms for Competitive Programming](https://cp-algorithms.com/data_structures/segment_tree.html)

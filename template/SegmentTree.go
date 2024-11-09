@@ -57,6 +57,27 @@ func NewSegTreeNodeFromSlice(start, end int, vals []int) *SegTreeNode {
 }
 
 /*
+区间查询
+This method queries the sum of elements in the range [a, b].
+ 1. If the current node's range is completely outside [a, b], it returns 0
+ 2. If the current node's range is completely inside [a, b], it returns the node's info.
+ 3. If the current node's range partially overlaps with [a, b], it first propagates any pending updates to its children (using pushDown),
+    then recursively queries its children and sums the results.
+*/
+func (node *SegTreeNode) queryRange(start, end int) int {
+	// out of node's range
+	if end < node.start || node.end < start {
+		return 0
+	}
+	// completely covers node's range
+	if start <= node.start && node.end <= end {
+		return node.info
+	}
+	node.pushDown() // Needed only when we have updateRange()
+	return node.left.queryRange(start, end) + node.right.queryRange(start, end)
+}
+
+/*
 单点修改 O(logn)
 This method updates i-th leaf node by replacing with the val.
 */
@@ -70,6 +91,7 @@ func (node *SegTreeNode) updateSingle(index int, val int) {
 		node.info = val
 		return
 	}
+
 	node.left.updateSingle(index, val)
 	node.right.updateSingle(index, val)
 
@@ -105,26 +127,6 @@ func (node *SegTreeNode) updateRange(start int, end int, val int) {
 	node.info = node.left.info + node.right.info
 }
 
-/*
-区间查询
-This method queries the sum of elements in the range [a, b].
- 1. If the current node's range is completely outside [a, b], it returns 0
- 2. If the current node's range is completely inside [a, b], it returns the node's info.
- 3. If the current node's range partially overlaps with [a, b], it first propagates any pending updates to its children (using pushDown),
-    then recursively queries its children and sums the results.
-*/
-func (node *SegTreeNode) queryRange(start, end int) int {
-	// out of node's range
-	if end < node.start || node.end < start {
-		return 0
-	}
-	// completely covers node's range
-	if start <= node.start && node.end <= end {
-		return node.info
-	}
-	node.pushDown() // Needed only when we have updateRange()
-	return node.left.queryRange(start, end) + node.right.queryRange(start, end)
-}
 
 /*
 更新 <lazy标记>
