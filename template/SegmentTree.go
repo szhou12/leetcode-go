@@ -17,9 +17,9 @@ func NewSegTreeNode(start, end int, val int) *SegTreeNode {
 	node := &SegTreeNode{
 		start: start,
 		end:   end,
-		info:  val,
 	}
 	if start == end {
+		node.info = val
 		return node
 	}
 

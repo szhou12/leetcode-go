@@ -3,8 +3,8 @@
 ## Template
 [Segment Tree Template](https://github.com/szhou12/leetcode-go/blob/main/template/SegmentTree.go)
 ### 基础版 (Basic)
-- 基础版模版只支持: **单一值初始化**, **区间查询**, **单点更新**.
-- [Range Sum]()
+- 基础版模版只支持: **单一值初始化**, **数组值初始化**, **区间查询**, **单点更新**。
+- [Range Sum Template](https://github.com/szhou12/leetcode-go/tree/main/template/Segment-Tree-Sum-Basic)
 
 ## Overview
 - 线段树的维护仅需要使用小区间的值更新大区间。
@@ -18,16 +18,16 @@
 1. 建树
     1. 单一值初始化
     2. 数组值初始化
-2. 单点修改
-3. 区间修改
-4. 区间查询 (区间修改后的查询会用到<lazy标记>)
+2. 区间查询 (区间修改后的查询会用到<lazy标记>)
+3. 单点修改
+4. 区间修改 
 
 [建树]
 - 一般是开一个数组，以堆的方式存储数据。
 对于node i，左孩子下标为2i，右孩子下标为2i+1，父节点下标为i/2。
 - 写代码时使用位运算效率更高。
 - 线段树的数组一般要开到 4n 才能确保不出现越界访问。
-- 具体实现时，能用Class-object就用Class-object，方便快捷。
+- 具体实现时，忽略前三条，能用Class-object就用Class-object，方便快捷。
 
 [单点修改]
 - 当修改数列中下标为i的节点数据时，从root向下DFS：如果当前节点的左孩子的区间`[L, R]`包含了i (i.e. L <= i <= R)， 就访问左孩子；否则，访问右孩子。直到`L=R`，也就是搜到了只包含这个数据的节点，此时就可以修改它。同时，不要忘了将包含此数据的大区间的节点值更新。

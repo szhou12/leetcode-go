@@ -9,7 +9,7 @@ type SegTreeNode struct {
 	right *SegTreeNode
 	start int
 	end   int
-	info  int // customize: stored value over the range [start : end].
+	info  int // TODO: stored value over the range [start : end].
 }
 
 /*
@@ -20,18 +20,38 @@ func NewSegTreeNode(start int, end int, val int) *SegTreeNode {
 	node := &SegTreeNode{
 		start: start,
 		end:   end,
-		info:  val,
 	}
 	if start == end {
+		node.info = val
 		return node
 	}
 
 	mid := start + (end-start)/2
-
 	node.left = NewSegTreeNode(start, mid, val)
 	node.right = NewSegTreeNode(mid+1, end, val)
 
-	node.info = node.left.info + node.right.info // customize: range sum in [node.start : node.end]
+	// TODO: here is range sum in [node.start : node.end]
+	node.info = node.left.info + node.right.info
+
+	return node
+}
+
+func NewSegTreeNodeFromSlice(start int, end int, vals []int) *SegTreeNode {
+	node := &SegTreeNode{
+		start: start,
+		end:   end,
+	}
+	if start == end {
+		node.info = vals[start]
+		return node
+	}
+
+	mid := start + (end-start)/2
+	node.left = NewSegTreeNodeFromSlice(start, mid, vals)
+	node.right = NewSegTreeNodeFromSlice(mid+1, end, vals)
+
+	// TODO: here is range sum in [node.start : node.end]
+	node.info = node.left.info + node.right.info
 
 	return node
 }
@@ -50,17 +70,20 @@ func (node *SegTreeNode) queryRange(start int, end int) int {
 		return node.info
 	}
 
-	return node.left.queryRange(start, end) + node.right.queryRange(start, end) // customize: range sum in [start : end]
+	// TODO: here is range sum in [start : end]
+	res := node.left.queryRange(start, end) + node.right.queryRange(start, end)
+
+	return res
 }
 
 /*
-Single Update: 单点修改 
+Single Update: 单点修改
 O(logn)
 */
 func (node *SegTreeNode) updateSingle(index int, val int) {
 	// out of node's range
 	if index < node.start || node.end < index {
-		return 
+		return
 	}
 	// arrive at leaf node
 	if node.start == node.end {
@@ -71,5 +94,6 @@ func (node *SegTreeNode) updateSingle(index int, val int) {
 	node.left.updateSingle(index, val)
 	node.right.updateSingle(index, val)
 
-	node.info = node.left.info + node.right.info // customize: range sum in [node.start : node.end]
+	// TODO: here is range sum in [node.start : node.end]
+	node.info = node.left.info + node.right.info
 }
