@@ -14,7 +14,7 @@ type SegTreeNode struct {
 
 /*
 Constructor: 所有叶子节点的info初始化为单一值val
-O(logn)
+O(n)
 */
 func NewSegTreeNode(start int, end int, val int) *SegTreeNode {
 	node := &SegTreeNode{
@@ -36,6 +36,10 @@ func NewSegTreeNode(start int, end int, val int) *SegTreeNode {
 	return node
 }
 
+/*
+Constructor: i-th叶子节点的info初始化为vals[i]
+O(n)
+*/
 func NewSegTreeNodeFromSlice(start int, end int, vals []int) *SegTreeNode {
 	node := &SegTreeNode{
 		start: start,

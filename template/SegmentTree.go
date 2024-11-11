@@ -11,7 +11,7 @@ type SegTreeNode struct {
 /*
 Constructor: 所有叶子节点的info初始化为单一值val
 Create a new segment tree node and recursively build the entire segment tree
-O(logn)
+O(n)
 */
 func NewSegTreeNode(start, end int, val int) *SegTreeNode {
 	node := &SegTreeNode{
@@ -32,7 +32,7 @@ func NewSegTreeNode(start, end int, val int) *SegTreeNode {
 
 /*
 Constructor: i-th叶子节点的info初始化为vals[i]
-O(logn)
+O(n)
 */
 func NewSegTreeNodeFromSlice(start, end int, vals []int) *SegTreeNode {
 	node := &SegTreeNode{
