@@ -459,3 +459,38 @@ func TestFindMaxValueSizeK(t *testing.T) {
 	}
 
 }
+
+func TestMaxSumKGroupsMedian(t *testing.T) {
+	nums := []int{2, 2, 1, 5, 3}
+	k := 2
+	expected := 7
+
+	result := MaxSumKGroupsMedian(nums, k)
+
+	t.Logf("result: %v", result)
+
+	if result != expected {
+		t.Errorf("MaxSumKGroupsMedian(%v, %v) = %v; want %v", nums, k, result, expected)
+	}
+
+	nums = []int{1, 2, 3, 4, 5}
+	k = 2
+	expected = 8
+
+	result = MaxSumKGroupsMedian(nums, k)
+
+	if result != expected {
+		t.Errorf("MaxSumKGroupsMedian(%v, %v) = %v; want %v", nums, k, result, expected)
+	}
+
+	nums = []int{89, 48, 10}
+	k = 3
+	expected = 147
+
+	result = MaxSumKGroupsMedian(nums, k)
+
+	if result != expected {
+		t.Errorf("MaxSumKGroupsMedian(%v, %v) = %v; want %v", nums, k, result, expected)
+	}
+
+}

@@ -10,15 +10,9 @@ import (
 // NOTE: in order to call any func from imported package, this func must be exported!!!
 // (i.e. func name MUST start with a capital letter)
 func main() {
-	segment := [][]int{
-		{1, 4, 2},
-		{6, 6, 5},
-		{7, 7, 7},
-		{7, 9, 1},
-		{9, 10, 1},
-	}
+	nums := []int{2, 2, 1, 5, 3}
 
-	fmt.Println(cur.FindMaxValueSizeK(segment, 5))
+	fmt.Println(cur.MaxSumKGroupsMedian(nums, 2))
 
 
 }
