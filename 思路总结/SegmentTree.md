@@ -48,7 +48,7 @@
 ## 题目
 * :purple_circle: 求所有子数组中每个子数组不同元素数量的平方和: [2916. Subarrays Distinct Element Sum of Squares II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2916-Subarrays-Distinct-Element-Sum-of-Squares-II)
 
-* :red_circle: 最少操作把全0数组转化为target数组: [1526. Minimum Number of Increments on Subarrays to Form a Target Array]()
+* :red_circle: 最少操作把全0数组转化为target数组: [1526. Minimum Number of Increments on Subarrays to Form a Target Array](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1526-Minimum-Number-of-Increments-on-Subarrays-to-Form-a-Target-Array)
     - 魔改 Segment Tree Basic 模版
     - Segment Tree: `NewSegTreeNodeFromSlice()`, `queryRange()`
 
