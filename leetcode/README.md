@@ -1,8 +1,14 @@
+# AMZN LIST
+## Hard
+- [2281. Sum of Total Strength of Wizards](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2281-Sum-of-Total-Strength-of-Wizards)
+- [2193. Minimum Number of Moves to Make Palindrome]()
+
+
 # Unit Tests Implemented:
 
 0039, 0047, 0097, 0139, 0322, 0516, 0912
 
-# TO BE DONE !!!!!!
+# TO BE DONE
 0398, 0384, 0381, 0380, 0379 (locked), 0385
 
 ## OOD
