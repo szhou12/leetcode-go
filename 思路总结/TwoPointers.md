@@ -11,6 +11,7 @@
     * [Flex 模版题](#flex-模版题)
     * [非 模版题](#非-模版题)
     * [需要同时满足两个及以上条件](#同时满足两个及以上条件)
+* [Sliding Window Max (Deque)](#sliding-window-max-deque)
 * [3 Pointers](#3-pointers)
 
 ## 一个数组 + 双指针同向而行
@@ -298,23 +299,32 @@ dq := make([]int, 0) // store index [i-k+1:i] (inclusive)
 
 // Step 2: 每一次一个新元素进来
 for i := 0; i < n; i++ {
+
     // I. Retire tail's drawfs
     for len(dq) > 0 && dq[len(dq)-1] < nums[i] {
         dq = dq[:len(dq)-1]
     }
-    // II. Add new element
+
+    // II. Enqueue new element
     dq = append(dq, i)
+
     // III. Retre head's oldies
     for dq[0] <= i-k {
         dq = dq[1:]
     }
-}
 
-// Step 3: 这样，dq头元素始终是 sliding window [i-k+1:i] 的最大值
-dq[0]
+    // Step 3: 这样，dq头元素始终是 sliding window [i-k+1:i] 的最大值
+    if i >= k-1 {
+        sliding-window-max = nums[dq[0]]
+    }
+}
 ```
-* :red_circle: 预算内允许的最多数量robots: [2398. Maximum Number of Robots Within Budget]()
+* :red_circle: 预算内允许的最多数量robots: [2398. Maximum Number of Robots Within Budget](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2398-Maximum-Number-of-Robots-Within-Budget)
     * Binary Search 猜答案 + Sliding Window (Subarray Sum + Max Deque)
+
+* :yellow_circle: Sliding Window Max: [239. Sliding Window Maximum]()
+    * Sliding Window Max (Deque) 万物起源
+
 
 ## 3 Pointers
 * :red_circle: 数组中找第K大元素: [215. Kth Largest Element in an Array](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0215-Kth-Largest-Element-in-an-Array)

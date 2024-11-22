@@ -2,6 +2,7 @@
 ## Hard
 - [2281. Sum of Total Strength of Wizards](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2281-Sum-of-Total-Strength-of-Wizards)
 - [2193. Minimum Number of Moves to Make Palindrome](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2193-Minimum-Number-of-Moves-to-Make-Palindrome)
+- [2398. Maximum Number of Robots Within Budget](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2398-Maximum-Number-of-Robots-Within-Budget)
 
 
 # Unit Tests Implemented:

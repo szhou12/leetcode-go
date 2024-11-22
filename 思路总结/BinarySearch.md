@@ -285,7 +285,7 @@ func upperBound(nums []int, target int) int {
 
 ### Guess Min/Max
 
-* :red_circle: 预算内允许的最多数量robots: [2398. Maximum Number of Robots Within Budget]()
+* :red_circle: 预算内允许的最多数量robots: [2398. Maximum Number of Robots Within Budget](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2398-Maximum-Number-of-Robots-Within-Budget)
     * Binary Search 猜答案 + Sliding Window (Subarray Sum + Max Deque)
 
 * :yellow_circle: 最少时间修完所有车辆: [2594. Minimum Time to Repair Cars](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2594-Minimum-Time-to-Repair-Cars)
