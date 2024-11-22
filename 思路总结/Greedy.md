@@ -61,7 +61,7 @@
 
 ## 分清楚情况讨论
 
-* :red_circle: 最小操作数构建回文串: [2193. Minimum Number of Moves to Make Palindrome]()
+* :red_circle: 最小操作数构建回文串: [2193. Minimum Number of Moves to Make Palindrome](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2193-Minimum-Number-of-Moves-to-Make-Palindrome)
     * Method 1: Greedy + Simulation
     * Method 2: Greedy + Reverse Pairs
 
