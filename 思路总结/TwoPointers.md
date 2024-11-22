@@ -290,6 +290,32 @@ func slidingWindow(s string) int {
     * Flex 模版 + Fix 模版
 
 
+## Sliding Window Max (Deque)
+### 基本思路
+```go
+// Step 1: Deque维护单调递减的序列
+dq := make([]int, 0) // store index [i-k+1:i] (inclusive)
+
+// Step 2: 每一次一个新元素进来
+for i := 0; i < n; i++ {
+    // I. Retire tail's drawfs
+    for len(dq) > 0 && dq[len(dq)-1] < nums[i] {
+        dq = dq[:len(dq)-1]
+    }
+    // II. Add new element
+    dq = append(dq, i)
+    // III. Retre head's oldies
+    for dq[0] <= i-k {
+        dq = dq[1:]
+    }
+}
+
+// Step 3: 这样，dq头元素始终是 sliding window [i-k+1:i] 的最大值
+dq[0]
+```
+* :red_circle: 预算内允许的最多数量robots: [2398. Maximum Number of Robots Within Budget]()
+    * Binary Search 猜答案 + Sliding Window (Subarray Sum + Max Deque)
+
 ## 3 Pointers
 * :red_circle: 数组中找第K大元素: [215. Kth Largest Element in an Array](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0215-Kth-Largest-Element-in-an-Array)
     * Quick Select
