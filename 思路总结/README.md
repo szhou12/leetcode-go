@@ -36,6 +36,8 @@
 |[Segment Tree](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/SegmentTree.md)||
 |[String](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/String.md)||
 |[Sorting](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/Sorting.md)||
+|[Priority Queue](https://github.com/szhou12/leetcode-go/blob/main/%E6%80%9D%E8%B7%AF%E6%80%BB%E7%BB%93/PriorityQueue.md)|K-th<br>|
+|[All Subarrays By Elment]()||
 
 ## 按题目特征分类
 | 特征 | 题号 |

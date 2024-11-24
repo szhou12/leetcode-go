@@ -4,7 +4,8 @@
 - [2193. Minimum Number of Moves to Make Palindrome](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2193-Minimum-Number-of-Moves-to-Make-Palindrome)
 - [2398. Maximum Number of Robots Within Budget](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2398-Maximum-Number-of-Robots-Within-Budget)
 - [239. Sliding Window Maximum](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0239-Sliding-Window-Maximum)
-- [2386. Find the K-Sum of an Array]()
+- [2386. Find the K-Sum of an Array](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2386-Find-the-K-Sum-of-an-Array)
+- [2262. Total Appeal of A String]()
 
 
 # Unit Tests Implemented:
