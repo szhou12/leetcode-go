@@ -322,8 +322,8 @@ for i := 0; i < n; i++ {
 * :red_circle: 预算内允许的最多数量robots: [2398. Maximum Number of Robots Within Budget](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2398-Maximum-Number-of-Robots-Within-Budget)
     * Binary Search 猜答案 + Sliding Window (Subarray Sum + Max Deque)
 
-* :yellow_circle: Sliding Window Max: [239. Sliding Window Maximum]()
-    * Sliding Window Max (Deque) 万物起源
+* :yellow_circle: Sliding Window Max: [239. Sliding Window Maximum](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0239-Sliding-Window-Maximum)
+    * Sliding Window Max (Deque) 类型题的万物起源
 
 
 ## 3 Pointers
