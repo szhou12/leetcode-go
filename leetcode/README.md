@@ -6,7 +6,8 @@
 - [239. Sliding Window Maximum](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0239-Sliding-Window-Maximum)
 - [2386. Find the K-Sum of an Array](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2386-Find-the-K-Sum-of-an-Array)
 - [2262. Total Appeal of A String](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2262-Total-Appeal-of-A-String)
-- [828. Count Unique Characters of All Substrings of a Given String]()
+- [828. Count Unique Characters of All Substrings of a Given String](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0828-Count-Unique-Characters-of-All-Substrings-of-a-Given-String)
+- [719. Find K-th Smallest Pair Distance]()
 
 
 # Unit Tests Implemented:

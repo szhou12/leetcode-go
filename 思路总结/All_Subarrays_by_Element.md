@@ -9,6 +9,6 @@
     * Keywords: All substrings
     * 以 i-th 元素为“中心”看它能给哪些字串做贡献
 
-* :red_circle: 所有子串中唯一出现字符种类的和: [828. Count Unique Characters of All Substrings of a Given String]()
+* :red_circle: 所有子串中唯一出现字符种类的和: [828. Count Unique Characters of All Substrings of a Given String](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0828-Count-Unique-Characters-of-All-Substrings-of-a-Given-String)
     * Keywords: All substrings
     * 以 i-th 元素为“中心”看它能给哪些字串做贡献
