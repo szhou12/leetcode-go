@@ -35,13 +35,22 @@ func (pq *PQ) Pop() interface{} {
     return temp
 }
 
-func (pq PQ) Peek() (int, bool) {
+/** 
+下面给出Top()的两种实现方式。
+注：写法一在使用时，需要提前Check pq是否为空
+**/
+func (pq PQ) Top() int {
+    return pq[0]
+}
+func (pq PQ) Top() (int, bool) {
     if len(pq) == 0 {
         return 0, false
     }
     return pq[0], true
 }
 
+
+// Use this in code as follows:
 minHeap := &PQ{}
 heap.Init(minHeap)
 
@@ -76,16 +85,36 @@ func (pq *PQ) Pop() interface{} {
     return temp
 }
 
-func (pq PQ) Peek() (int, bool) {
+/** 
+下面给出Top()的两种实现方式。
+注：写法一在使用时，需要提前Check pq是否为空
+**/
+func (pq PQ) Top() int {
+    return pq[0]
+}
+func (pq PQ) Top() (int, bool) {
     if len(pq) == 0 {
         return 0, false
     }
     return pq[0], true
 }
 
+
+// Use this in code as follows:
 maxHeap := &PQ{}
 heap.Init(maxHeap)
 
 heap.Push(maxHeap, x)
 x := heap.Pop(maxHeap).(int)
 ```
+
+## Key Takeaway
+In Go implementation of priority queue, the head element `pq[0]` is always the **highest-priority element**.
+
+But why in `Pop()`, we are returning the last element `pq[n-1]`?
+
+This is for the efficiency because if popping the head element, all the rest of elements will be shifted which requires $O(n)$.
+
+Thus, when you call `Pop()` using the `container/heap` package, `Pop()` internally does the following:
+1. Swap the Root `pq[0]` with the Last Element `pq[n-1]`.
+2. Reheapify the Slice `pq[:n-1]`.

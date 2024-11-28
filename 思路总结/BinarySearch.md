@@ -234,7 +234,7 @@ func upperBound(nums []int, target int) int {
 
 ### Guess K-th Element
 
-* :red_circle: 第k小配对的绝对差值: [719. Find K-th Smallest Pair Distance]()
+* :red_circle: 第k小配对的绝对差值: [719. Find K-th Smallest Pair Distance](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0719-Find-K-th-Smallest-Pair-Distance)
     * 嵌套二分法: Binary Search 猜一个值 + Upper Bound to count pairs
 
 * :red_circle: 第k小的组合数: [3116. Kth Smallest Amount With Single Denomination Combination](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3116-Kth-Smallest-Amount-With-Single-Denomination-Combination)
