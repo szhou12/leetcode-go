@@ -18,6 +18,7 @@ MaxHeap 存从第i大开始剩下的所有元素。
 Time complexity = $O(\log n)$
 
 ### 一图胜千言
+![2102-demo](https://github.com/user-attachments/assets/fd45f785-a40f-465a-a8d1-fc2410e2ac8b)
 
 
 
