@@ -10,4 +10,4 @@
 ## MinHeap Stores Largest & MaxHeap Stores Smallest
 * :red_circle: [2102. Sequentially Ordinal Rank Tracker](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2102-Sequentially-Ordinal-Rank-Tracker)
 
-* :red_circle: [295. Find Median from Data Stream]()
+* :red_circle: [295. Find Median from Data Stream](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0295-Find-Median-from-Data-Stream)
