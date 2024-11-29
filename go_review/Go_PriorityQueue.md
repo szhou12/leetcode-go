@@ -39,7 +39,7 @@ func (pq *PQ) Pop() interface{} {
 下面给出Top()的两种实现方式。
 注：写法一在使用时，需要提前Check pq是否为空
 **/
-func (pq PQ) Top() int {
+func (pq PQ) Top() interface{} {
     return pq[0]
 }
 func (pq PQ) Top() (int, bool) {
@@ -89,7 +89,7 @@ func (pq *PQ) Pop() interface{} {
 下面给出Top()的两种实现方式。
 注：写法一在使用时，需要提前Check pq是否为空
 **/
-func (pq PQ) Top() int {
+func (pq PQ) Top() interface{} {
     return pq[0]
 }
 func (pq PQ) Top() (int, bool) {
