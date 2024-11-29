@@ -2,7 +2,7 @@
 
 ## Solution idea
 
-### MinHeap and MaxHeap
+### MinHeap Stores Largest & MaxHeap Stores Smallest
 维护两个堆: MinHeap 和 MaxHeap。按照题目定义：更大的元素是首先score更大，如果score相等，name更小。
 
 MinHeap 始终保持前 i-1 个最大的元素，因为是小顶堆，所以出口是第 i-1 大的元素。

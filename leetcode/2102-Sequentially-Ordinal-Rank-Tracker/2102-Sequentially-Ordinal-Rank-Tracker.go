@@ -9,9 +9,7 @@ type SORTracker struct {
 
 func Constructor() SORTracker {
 	pq1 := &MinHeap{}
-	heap.Init(pq1)
 	pq2 := &MaxHeap{}
-	heap.Init(pq2)
 
 	return SORTracker{
 		left: pq1,
@@ -37,6 +35,14 @@ func (this *SORTracker) Get() string {
 	heap.Push(this.left, heap.Pop(this.right))
 	return this.left.Top().(*Pair).name
 }
+
+/**
+ * Your SORTracker object will be instantiated and called as such:
+ * obj := Constructor();
+ * obj.Add(name,score);
+ * param_2 := obj.Get();
+ */
+
 
 type Pair struct {
 	name  string
@@ -114,9 +120,3 @@ func (pq MaxHeap) Top() interface{} {
 	return pq[0]
 }
 
-/**
- * Your SORTracker object will be instantiated and called as such:
- * obj := Constructor();
- * obj.Add(name,score);
- * param_2 := obj.Get();
- */
