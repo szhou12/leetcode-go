@@ -5,6 +5,8 @@
 * [Prefix Hashing](#Prefix-Hashing)
 
 ## Two Sum
+* yellow_circle: 找出数组中最大的outlier: [3371. Identify the Largest Outlier in an Array]()
+
 * :red_circle: 能组成24倍数的配对数: [3185. Count Pairs That Form a Complete Day II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3185-Count-Pairs-That-Form-a-Complete-Day-II)
     - Two Sum + HashMap = {Remainder : Frequency}
 
