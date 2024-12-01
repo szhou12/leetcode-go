@@ -10,6 +10,8 @@
     * [类型一: Longest Ascending Subarray - 最长递增子数组](#类型一-longest-ascending-subarray---最长递增子数组)
     * [类型二: Longest Common Subarray - 最长公共子数组](#类型二-longest-common-subarray---最长公共子数组)
     * [类型三: 最大子数组](#类型三-最大子数组)
+    * [类型四: All Subarrays](#类型四-all-subarrays)
+    * [类型五: DP + 辅助](#类型五-dp--辅助)
 * [Subsequnce 子序列类型题](#subsequnce-子序列类型题)
     * [类型一: Longest Increasing Subsequence - 最长递增子序列](#类型一-longest-increasing-subsequence---最长递增子序列)
     * [类型二: Longest Common Subsequence - 最长公共子序列](#类型二-longest-common-subsequence---最长公共子序列)
@@ -130,7 +132,6 @@
 ## Subarray 子数组类型题
 
 ### 类型一: Longest Ascending Subarray - 最长递增子数组
-
 * :green_circle: 从两个数组中构建最长递增子数组: [2771. Longest Non-decreasing Subarray From Two Arrays](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2771-Longest-Non-decreasing-Subarray-From-Two-Arrays)
     * `DP[i][min/max]`
 
@@ -148,11 +149,18 @@
 
 ### 类型四：All Subarrays
 * :purple_circle: 求所有子数组中每个子数组不同元素数量的平方和: [2916. Subarrays Distinct Element Sum of Squares II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2916-Subarrays-Distinct-Element-Sum-of-Squares-II)
-    * DP + Segment Tree
-    + 要求数学推导
+    * DP + Segment Tree 
+    * 要求数学推导
 
 * :yellow_circle: 特殊数组II: [3152. Special Array II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3152-Special-Array-II)
     * 用DP来累计个数
+
+
+### 类型五: DP + 辅助
+* :red_circle: :lock: 可以从子数组中取得最多数量的书: [2355. Maximum Number of Books You Can Take]()
+    * DP + Stack
+    * Arithmetic sequence (等差数列)
+
 
 ## Subsequnce 子序列类型题
 

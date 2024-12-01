@@ -10,6 +10,7 @@
 - [719. Find K-th Smallest Pair Distance](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0719-Find-K-th-Smallest-Pair-Distance)
 - [2102. Sequentially Ordinal Rank Tracker](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2102-Sequentially-Ordinal-Rank-Tracker)
 - [295. Find Median from Data Stream](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0295-Find-Median-from-Data-Stream)
+- [2355. Maximum Number of Books You Can Take]()
 
 
 # Unit Tests Implemented:
