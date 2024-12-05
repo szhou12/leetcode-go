@@ -157,7 +157,7 @@
 
 
 ### 类型五: DP + 辅助
-* :red_circle: :lock: 可以从子数组中取得最多数量的书: [2355. Maximum Number of Books You Can Take]()
+* :red_circle: :lock: 可以从子数组中取得最多数量的书: [2355. Maximum Number of Books You Can Take](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2355-Maximum-Number-of-Books-You-Can-Take)
     * DP + Stack
     * Arithmetic sequence (等差数列)
 
