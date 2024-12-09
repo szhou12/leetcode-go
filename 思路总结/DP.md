@@ -9,7 +9,7 @@
 * [Subarray 子数组类型题](#subarray-子数组类型题)
     * [类型一: Longest Ascending Subarray - 最长递增子数组](#类型一-longest-ascending-subarray---最长递增子数组)
     * [类型二: Longest Common Subarray - 最长公共子数组](#类型二-longest-common-subarray---最长公共子数组)
-    * [类型三: 最大子数组](#类型三-最大子数组)
+    * [类型三: Maximum Subarray Sum](#类型三-maximum-subarray-sum--kadanes-algorithm)
     * [类型四: All Subarrays](#类型四-all-subarrays)
     * [类型五: DP + 辅助](#类型五-dp--辅助)
 * [Subsequnce 子序列类型题](#subsequnce-子序列类型题)
@@ -144,8 +144,12 @@
 * 与 **Longest Common Subsequence** 不同的处理在于: 当以`i`结尾的元素 与 以`j`结尾的元素不相同时，直接subarray长度为0, 不考虑其他.
 * 最长公共子数组: [718. Maximum Length of Repeated Subarray](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0718-Maximum-Length-of-Repeated-Subarray)
 
-### 类型三: 最大子数组
-* 最大子数组: [53. Maximum Subarray](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0053-Maximum-Subarray)
+### 类型三: Maximum Subarray Sum / Kadane's Algorithm
+* :red_circle: K-Sized Maximum Subarray Sum: [3381. Maximum Subarray Sum With Length Divisible by K]()
+
+* Maximum Subarray Sum: [53. Maximum Subarray](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0053-Maximum-Subarray)
+    * 该类型题的万物起源: Kadane's Algorithm
+
 
 ### 类型四：All Subarrays
 * :purple_circle: 求所有子数组中每个子数组不同元素数量的平方和: [2916. Subarrays Distinct Element Sum of Squares II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2916-Subarrays-Distinct-Element-Sum-of-Squares-II)
@@ -211,7 +215,10 @@
 * 不同的子序列数量: [115. Distinct Subsequences](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0115-Distinct-Subsequences)
 
 ### 类型四: 子序列个数
-* :red_circle: 所有满足和为k的所有子序列的子序列个数: [3082. Find the Sum of the Power of All Subsequences](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3082-Find-the-Sum-of-the-Power-of-All-Subsequences)
+* :red_circle: 满足要求的子序列总数: [2222. Number of Ways to Select Buildings](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2222-Number-of-Ways-to-Select-Buildings)
+    * `DP[i][j][k]`
+
+* :red_circle: 所有满足和为k的所有子序列个数: [3082. Find the Sum of the Power of All Subsequences](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3082-Find-the-Sum-of-the-Power-of-All-Subsequences)
     * 3-D DP
     * `DP[i][sum][length]`
 

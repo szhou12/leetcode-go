@@ -16,7 +16,7 @@
         1. `DP[0][1...k][0]` = 0: On first day we don't own a stock, profit we can have is 0.
         2. `DP[0][1...k][0]` = `-prices[0]`: On first day we buy a stock, profict we have is `-prices[0]`.
 
-* Recurrence: $0 < i < n$, $1 \leq k <= k_{max}$
+* Recurrence: $0 < i < n, 1 \leq k \leq k_{max}$
     * `DP[i][k][0] = max(DP[i-1][k][0], DP[i-1][k][1] + prices[i])` (either we rest or sell a stock on previous day)
     * `DP[i][k][1] = max(DP[i-1][k][1], DP[i-1][k-1][0] - prices[i])` (either we rest or buy a stock on current day)
 
