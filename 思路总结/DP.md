@@ -145,7 +145,9 @@
 * 最长公共子数组: [718. Maximum Length of Repeated Subarray](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0718-Maximum-Length-of-Repeated-Subarray)
 
 ### 类型三: Maximum Subarray Sum / Kadane's Algorithm
-* :red_circle: K-Sized Maximum Subarray Sum: [3381. Maximum Subarray Sum With Length Divisible by K]()
+* :red_circle: K-Sized Maximum Subarray Sum: [3381. Maximum Subarray Sum With Length Divisible by K](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3381-Maximum-Subarray-Sum-With-Length-Divisible-by-K)
+    * K-sized window Kadane's Algorithm
+    * prefix sum to quickly calculate subarray sum
 
 * Maximum Subarray Sum: [53. Maximum Subarray](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0053-Maximum-Subarray)
     * 该类型题的万物起源: Kadane's Algorithm
