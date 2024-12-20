@@ -6,6 +6,7 @@
 * [分清楚情况讨论](#分清楚情况讨论)
 * [K sorted lists](#k-sorted-lists)
 * [Arrangement With Stride](#arrangement-with-stride)
+* [State Machine](#state-machine)
 
 ## Scheduling 类型题
 
@@ -75,3 +76,6 @@
 ## Arrangement With Stride
 * :red_circle: 给定时间窗内安排不同任务: [621. Task Scheduler](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0621-Task-Scheduler)
     * Solution 1: `maxHeap{(freq, task), ...}`
+
+## State Machine
+* :red_circle: [2055. Plates Between Candles]()

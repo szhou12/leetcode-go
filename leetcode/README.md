@@ -12,6 +12,7 @@
 - [295. Find Median from Data Stream](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0295-Find-Median-from-Data-Stream)
 - ![2355. Maximum Number of Books You Can Take](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2355-Maximum-Number-of-Books-You-Can-Take)
 - [2222. Number of Ways to Select Buildings](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2222-Number-of-Ways-to-Select-Buildings)
+- [2055. Plates Between Candles]()
 
 
 # Unit Tests Implemented:
