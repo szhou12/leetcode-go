@@ -78,4 +78,6 @@
     * Solution 1: `maxHeap{(freq, task), ...}`
 
 ## State Machine
-* :red_circle: [2055. Plates Between Candles]()
+* :red_circle: [2055. Plates Between Candles](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2055-Plates-Between-Candles)
+    * 左扫一遍，右扫一遍
+    * range sum -> prefix sum
