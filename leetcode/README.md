@@ -1,5 +1,4 @@
 # AMZN LIST
-## Hard
 - [2281. Sum of Total Strength of Wizards](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2281-Sum-of-Total-Strength-of-Wizards)
 - ![2193. Minimum Number of Moves to Make Palindrome](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2193-Minimum-Number-of-Moves-to-Make-Palindrome)
 - [2398. Maximum Number of Robots Within Budget](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2398-Maximum-Number-of-Robots-Within-Budget)
@@ -13,7 +12,7 @@
 - ![2355. Maximum Number of Books You Can Take](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2355-Maximum-Number-of-Books-You-Can-Take)
 - [2222. Number of Ways to Select Buildings](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2222-Number-of-Ways-to-Select-Buildings)
 - [2055. Plates Between Candles](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2055-Plates-Between-Candles)
-- [2221. Find Triangular Sum of an Array]()
+- [2221. Find Triangular Sum of an Array](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2221-Find-Triangular-Sum-of-an-Array)
 
 # Unit Tests Implemented:
 
