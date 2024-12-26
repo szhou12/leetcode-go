@@ -2,8 +2,8 @@ package mathematics
 /*
 Pascal's Triangle
 [0]	1          => coeffs in (a + b)^0
-[1]	1 1		   => coeffs in (a + b)^1
-[2]	1 2 1	   => coeffs in (a + b)^2
+[1]	1 1        => coeffs in (a + b)^1
+[2]	1 2 1      => coeffs in (a + b)^2
 [3]	1 3 3 1    => coeffs in (a + b)^3
 [4]	1 4 6 4 1  => coeffs in (a + b)^4
 ...

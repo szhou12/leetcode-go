@@ -96,4 +96,4 @@ lcm(a, b) = a * b / gcd(a, b)
 ### 杨辉三角 (Pascal's Triangle)
 1. 利用杨辉三角求任意组合数 ${n \choose k}$: `C(n, k) = `杨辉三角中第n行的k-th元素。
 2. 杨辉三角第`i`行值的物理意义：二项式`(a+b)^i` (`i` = 0, 1, 2, ...) 展开后所有项的系数。
-3. [代码实现]()
+3. [代码实现](https://github.com/szhou12/leetcode-go/blob/main/mathematics/Binomial-Coeff.go)
