@@ -18,3 +18,6 @@
 * :red_circle: 多少子数组的bitwise AND结果是k: [3209. Number of Subarrays With AND Value of K](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3209-Number-of-Subarrays-With-AND-Value-of-K)
     * AND性质: 连续 bitwise AND 所得值一定越变越小。
     * 常数个key (31种)
+
+## Simulation
+* :red_circle: [3412. Find Mirror Score of a String]()
