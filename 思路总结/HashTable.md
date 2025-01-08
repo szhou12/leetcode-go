@@ -20,4 +20,4 @@
     * 常数个key (31种)
 
 ## Simulation
-* :red_circle: [3412. Find Mirror Score of a String]()
+* :red_circle: [3412. Find Mirror Score of a String](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3412-Find-Mirror-Score-of-a-String)
