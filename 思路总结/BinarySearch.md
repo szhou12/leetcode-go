@@ -288,6 +288,8 @@ func upperBound(nums []int, target int) int {
 
 ### Guess Min/Max
 
+* :red_circle: 切出最小可允许的identical substring的次数: [3399. Smallest Substring With Identical Characters II]()
+
 * :red_circle: 预算内允许的最多数量robots: [2398. Maximum Number of Robots Within Budget](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2398-Maximum-Number-of-Robots-Within-Budget)
     * Binary Search 猜答案 + Sliding Window (Subarray Sum + Max Deque)
 
