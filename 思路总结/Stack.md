@@ -34,7 +34,7 @@
 
 **Idea**: 把数组的元素想象成并列站立的人，元素大小想象成人的身高。这些人面对你站成一列，如何求元素「2」的下一个更大元素呢？很简单，如果能够看到元素「2」，那么他后面可见的第一个人就是「2」的下一个更大元素，因为比「2」小的元素身高不够，都被「2」挡住了，第一个露出来的就是答案。
 
-* :red_circle: 所有subarray的极值的和: [2104. Sum of Subarray Ranges]()
+* :red_circle: 所有subarray的极值的和: [2104. Sum of Subarray Ranges](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2104-Sum-of-Subarray-Ranges)
     * 单调栈: PrevSmaller, NextSmaller; prevGreater, nextGreater 都涉及到了
 
 * :red_circle: 所有subarray的最小值的和: [907. Sum of Subarray Minimums](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0907-Sum-of-Subarray-Minimums)
