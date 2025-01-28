@@ -13,6 +13,7 @@
 - [2222. Number of Ways to Select Buildings](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2222-Number-of-Ways-to-Select-Buildings)
 - [2055. Plates Between Candles](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2055-Plates-Between-Candles)
 - [2221. Find Triangular Sum of an Array](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2221-Find-Triangular-Sum-of-an-Array)
+- [2104. Sum of Subarray Ranges](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2104-Sum-of-Subarray-Ranges)
 
 # Unit Tests Implemented:
 
