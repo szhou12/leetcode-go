@@ -6,6 +6,10 @@
 
 * 难点：在于如何针对题目设计入栈、弹栈的规则. ie. 啥东西入栈，啥时候入栈，啥时候出栈
 
+## 目录
+* [经典题](#经典题)
+* [PrevSmaller, NextSmaller; prevGreater, nextGreater](#prevsmaller-nextsmaller-prevgreater-nextgreater)
+
 ## 经典题
 
 * :yellow_circle: 双stack实现queue: [232. Implement Queue using Stacks](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0232-Implement-Queue-using-Stacks)
@@ -25,9 +29,17 @@
 
 * 字符串解压缩: [394. Decode String](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0394-Decode-String)
 
-## 单调栈模板
+
+## PrevSmaller, NextSmaller; prevGreater, nextGreater
 
 **Idea**: 把数组的元素想象成并列站立的人，元素大小想象成人的身高。这些人面对你站成一列，如何求元素「2」的下一个更大元素呢？很简单，如果能够看到元素「2」，那么他后面可见的第一个人就是「2」的下一个更大元素，因为比「2」小的元素身高不够，都被「2」挡住了，第一个露出来的就是答案。
+
+* :red_circle: 所有subarray的极值的和: [2104. Sum of Subarray Ranges]()
+    * 单调栈: PrevSmaller, NextSmaller; prevGreater, nextGreater 都涉及到了
+
+* :red_circle: 所有subarray的最小值的和: [907. Sum of Subarray Minimums](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0907-Sum-of-Subarray-Minimums)
+    * **3-Pass + Stack (find next smaller element)**
+    * 入手着眼点: 从 **分界点** 的物理意义 出发
 
 * [496. Next Greater Element I](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0496-Next-Greater-Element-I)
     * 思路: 从后往前看，挤掉栈顶矮个子
@@ -40,7 +52,3 @@
 * [739. Daily Temperatures](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0739-Daily-Temperatures)
     * 思路: 从后往前看，挤掉栈顶矮个子
     * 本题要算距离, 所以, **Stack 内存入元素的index, 而不是元素本身!!!**
-
-* 所有subarray的最小值的和: [907. Sum of Subarray Minimums](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0907-Sum-of-Subarray-Minimums)
-    * **3-Pass + Stack (find next smaller element)**
-    * 入手着眼点: 从 **分界点** 的物理意义 出发
