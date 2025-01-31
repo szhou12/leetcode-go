@@ -12,6 +12,31 @@
     - 那么就可以用 binary search 的 upper_bound 从数组中找第一个出现的比 prevGreater所存index 严格大的index
     - 当前数组长度 - 这个index 就是可以当作头元素的个数
 
+### prevGreater 的两种写法
+#### 写法一：从右往左遍历。套用 [2104](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2104-Sum-of-Subarray-Ranges) 的模版。栈顶元素是“中心”/守门员，当前来者i是潜在prevGreater。
+```go
+for i := n - 1; i >= 0; i-- {
+		for len(stack) > 0 && nums[stack[len(stack)-1]] < nums[i] { // 注意：这里不是 <=
+			prevGreater[stack[len(stack)-1]] = i
+			stack = stack[:len(stack)-1]
+		}
+		stack = append(stack, i)
+	}
+```
+
+#### 写法二：从左往右遍历。当前来者i是“中心”/守门员，栈顶元素是潜在prevGreater。
+```go
+for i := 0; i < n; i++ {
+		for len(stack) > 0 && nums[stack[len(stack)-1]] <= nums[i] { // 注意：这里是 <=
+			stack = stack[:len(stack)-1]
+		}
+		if len(stack) > 0 {
+			prevGreater[i] = stack[len(stack)-1]
+		}
+		stack = append(stack, i)
+	}
+```
+
 Time complexity = $O(n)$
 
 ## Resource
