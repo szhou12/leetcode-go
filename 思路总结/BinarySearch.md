@@ -61,7 +61,7 @@ for left < right {...}
 
 ### 写法一: sort.Search()
 - [func Search | Offical Document](https://pkg.go.dev/sort#Search)
-    - TL;DR: `sort.Search(n, f)` returns the first (smallest) index that makes condition function `f()` true
+    - TL;DR: `sort.Search(n, f)` returns the first (smallest) **index** that makes condition function `f()` true
 ```go
 func lowerBound(nums []int, target int) int {
     res := sort.Search(len(nums), func(i int) bool { return nums[i] >= target })
