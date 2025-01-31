@@ -34,5 +34,7 @@ sum of ranges = subarray1(max - min) + subarray2(max - min) + ...
     prevSmaller 变成 nextSmallerOrEqual 
     nextSmaller 仍是 nextSmaller
 
+Time complexity = $O(n)$
+
 ## Resource
 [【每日一题】LeetCode 2104. Sum of Subarray Ranges](https://www.youtube.com/watch?v=xba0NzSbuas&t=300s&ab_channel=HuifengGuan)
