@@ -51,7 +51,7 @@
 * :red_circle: [3113. Find the Number of Subarrays Where Boundary Elements Are Maximum](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3113-Find-the-Number-of-Subarrays-Where-Boundary-Elements-Are-Maximum)
     * 横向拓展：新增花样 - 只考虑每个"中心"对象作为尾巴元素的情况，往前找值相同的头元素
 
-* :red_circle: [2454. Next Greater Element IV]()
+* :red_circle: [2454. Next Greater Element IV](https://github.com/szhou12/leetcode-go/blob/main/leetcode/2454-Next-Greater-Element-IV/2454-Next-Greater-Element-IV.go)
     * 纵向拓展：一个stack不够用，就来两个
 
 * [503. Next Greater Element II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0503-Next-Greater-Element-II)

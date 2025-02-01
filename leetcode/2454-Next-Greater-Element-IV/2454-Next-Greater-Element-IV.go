@@ -14,7 +14,7 @@ func secondGreaterElement(nums []int) []int {
 
 	for i := 0; i < n; i++ {
 		// inspect stack2: check if incoming nums[i] is greater than any stack-top elements in stack2
-		// if so, nums[i] is the second greater element for them.
+		// if so, nums[i] is the second greater element for them. This is the result.
 		for len(stack2) > 0 && nums[stack2[len(stack2)-1]] < nums[i] {
 			res[stack2[len(stack2)-1]] = nums[i]
 			stack2 = stack2[:len(stack2)-1]
@@ -34,7 +34,7 @@ func secondGreaterElement(nums []int) []int {
 			temp[i], temp[j] = temp[j], temp[i]
 		}
 		stack2 = append(stack2, temp...)
-		
+
 		stack1 = append(stack1, i)
 	}
 
