@@ -8,7 +8,7 @@
 
 ## 目录
 * [经典题](#经典题)
-* [PrevSmaller, NextSmaller; prevGreater, nextGreater](#prevsmaller-nextsmaller-prevgreater-nextgreater)
+* [PrevSmaller, NextSmaller; PrevGreater, NextGreater](#prevsmaller-nextsmaller-prevgreater-nextgreater)
 
 ## 经典题
 
@@ -30,7 +30,7 @@
 * 字符串解压缩: [394. Decode String](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0394-Decode-String)
 
 
-## PrevSmaller, NextSmaller; prevGreater, nextGreater
+## PrevSmaller, NextSmaller; PrevGreater, NextGreater
 
 **Idea**: 把数组的元素想象成并列站立的人，元素大小想象成人的身高。这些人面对你站成一列，如何求元素「2」的下一个更大元素呢？很简单，如果能够看到元素「2」，那么他后面可见的第一个人就是「2」的下一个更大元素，因为比「2」小的元素身高不够，都被「2」挡住了，第一个露出来的就是答案。
 
@@ -42,13 +42,17 @@
     * **3-Pass + Stack (find next smaller element)**
     * 入手着眼点: 从 **分界点** 的物理意义 出发
 
-### 变体
-
-* :red_circle: [3113. Find the Number of Subarrays Where Boundary Elements Are Maximum](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3113-Find-the-Number-of-Subarrays-Where-Boundary-Elements-Are-Maximum)
-
 * [496. Next Greater Element I](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0496-Next-Greater-Element-I)
     * 思路: 从后往前看，挤掉栈顶矮个子
     * 栈顶元素的物理意义: 维护栈顶元素, 使得它总是**大于**当前元素
+
+### 变体
+
+* :red_circle: [3113. Find the Number of Subarrays Where Boundary Elements Are Maximum](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3113-Find-the-Number-of-Subarrays-Where-Boundary-Elements-Are-Maximum)
+    * 横向拓展：新增花样 - 只考虑每个"中心"对象作为尾巴元素的情况，往前找值相同的头元素
+
+* :red_circle: [2454. Next Greater Element IV]()
+    * 纵向拓展：一个stack不够用，就来两个
 
 * [503. Next Greater Element II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0503-Next-Greater-Element-II)
     * 思路: 从后往前看，挤掉栈顶矮个子

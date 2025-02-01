@@ -40,4 +40,4 @@ for i := 0; i < n; i++ {
 Time complexity = $O(n)$
 
 ## Resource
-[每日一题】LeetCode 3113. Find the Number of Subarrays Where Boundary Elements Are Maximum](https://www.youtube.com/watch?v=FViZk7J_SHE&ab_channel=HuifengGuan)
+[【每日一题】LeetCode 3113. Find the Number of Subarrays Where Boundary Elements Are Maximum](https://www.youtube.com/watch?v=FViZk7J_SHE&ab_channel=HuifengGuan)
