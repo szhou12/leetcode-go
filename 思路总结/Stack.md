@@ -42,6 +42,9 @@
     * **3-Pass + Stack (find next smaller element)**
     * 入手着眼点: 从 **分界点** 的物理意义 出发
 
+* :yellow_circle: [1856. Maximum Subarray Min-Product]()
+    * prevSmaller, nextSmaller + prefix sum
+
 * [496. Next Greater Element I](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0496-Next-Greater-Element-I)
     * 思路: 从后往前看，挤掉栈顶矮个子
     * 栈顶元素的物理意义: 维护栈顶元素, 使得它总是**大于**当前元素
