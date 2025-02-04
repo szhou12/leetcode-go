@@ -45,6 +45,9 @@
 * :yellow_circle: [1856. Maximum Subarray Min-Product](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1856-Maximum-Subarray-Min-Product)
     * prevSmaller, nextSmaller + prefix sum
 
+* :yellow_circle: [1019. Next Greater Node In Linked List]()
+    * nextGreater + Linked List
+
 * [496. Next Greater Element I](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0496-Next-Greater-Element-I)
     * 思路: 从后往前看，挤掉栈顶矮个子
     * 栈顶元素的物理意义: 维护栈顶元素, 使得它总是**大于**当前元素
