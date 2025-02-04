@@ -45,7 +45,7 @@
 * :yellow_circle: [1856. Maximum Subarray Min-Product](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1856-Maximum-Subarray-Min-Product)
     * prevSmaller, nextSmaller + prefix sum
 
-* :yellow_circle: [1019. Next Greater Node In Linked List]()
+* :yellow_circle: [1019. Next Greater Node In Linked List](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1019-Next-Greater-Node-In-Linked-List)
     * nextGreater + Linked List
 
 * [496. Next Greater Element I](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0496-Next-Greater-Element-I)
