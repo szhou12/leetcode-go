@@ -42,7 +42,7 @@
     * **3-Pass + Stack (find next smaller element)**
     * 入手着眼点: 从 **分界点** 的物理意义 出发
 
-* :lock: :red_circle: Subarray Minimums中的最大值: [1950. Maximum of Minimum Values in All Subarrays]()
+* :lock: :red_circle: Subarray Minimums中的最大值: [1950. Maximum of Minimum Values in All Subarrays](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1950-Maximum-of-Minimum-Values-in-All-Subarrays)
     * prevSmaller, nextSmaller + MaxHeap
 
 * :yellow_circle: [1856. Maximum Subarray Min-Product](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1856-Maximum-Subarray-Min-Product)
