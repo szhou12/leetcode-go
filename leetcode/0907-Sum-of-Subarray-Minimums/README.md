@@ -12,7 +12,7 @@
     * **Next Smaller Stack的物理意义**: 如果 栈不空 或者 栈顶元素 > 当前candidate, 找到next smaller element, 把当前candidate的index标记为它的next smaller, 并重复这个动作直到栈顶元素不满足出栈条件; 否则, 直接进栈
     * **Previous Smaller Stack的物理意义**: 如果 栈不空 或者 栈顶元素 $\geq $ 当前candidate (这里为什么更严格, 需要小于等于?), 找到previous smaller element, 把当前candidate的index标记为它的previous smaller, 并重复这个动作直到栈顶元素不满足出栈条件; 否则, 直接进栈
 4. **难点 2** - **去重**: 为什么从右至左找previous smaller element的时候, 出栈条件是 栈顶元素 $\geq $ 当前candidate, 这个 = 的作用是什么?
-    * 这个 = 的作用是为了避免: 当array中有重复元素, 那相当于, 在轮流每个元素当min value的时候, 相同的min value会被反复取到, 从而产生重复的subarray
+    * 这个 = 的作用是为了避免重复计算同一个subarray: 当array中有重复元素, 那相当于, 在轮流每个元素当min value的时候, 相同的min value会被反复取到, 从而产生重复的subarray。e.g. 如果没有=，假设array中有两个相同的数a, b，subarray X 是 a 做最小值时找到的，那么在看b时，subarray X 又会被计算一次。
     ```
     |: previous smaller of i
     ^: given nums[i]
@@ -22,9 +22,10 @@
     |    ^
     2 [8 5 6 5 ... ] ...
     |        ^
-    // 结论: 当min value=5时, 不同位置的5会停在相同的左边界，从而拓展到相同的最长subarray (它们的右边界也会停在相同的地方), 这是因为后一个位置的5把前一个位置的5也包含进去了, 导致了重复计算
+    // 结论: 当min value=5时, 不同位置的5会停在相同的左边界，从而拓展到相同的最长subarray (它们的右边界也会停在相同的地方), 
+    // 这是因为后一个位置的5把前一个位置的5也包含进去了, 导致了重复计算
 
-    // 拓展右边界严格小时停下; 拓展左边界小于等于时就停下
+    // 拓展右边界严格小时停下; 拓展左边界小于等于时就停下 - 相当于认为左边界遇到的相同的值是“更小的”
     2 [8 5 6 5 ... ] ...
     |    ^
     2 8 5 [6 5 ... ] ...

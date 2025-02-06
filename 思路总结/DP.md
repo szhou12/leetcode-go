@@ -152,6 +152,8 @@
 * Maximum Subarray Sum: [53. Maximum Subarray](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0053-Maximum-Subarray)
     * 该类型题的万物起源: Kadane's Algorithm
 
+*  Maximum Strictly Increasing Subarray Sum: [1800. Maximum Ascending Subarray Sum]()
+
 
 ### 类型四：All Subarrays
 * :purple_circle: 求所有子数组中每个子数组不同元素数量的平方和: [2916. Subarrays Distinct Element Sum of Squares II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2916-Subarrays-Distinct-Element-Sum-of-Squares-II)

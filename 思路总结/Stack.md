@@ -42,8 +42,11 @@
     * **3-Pass + Stack (find next smaller element)**
     * 入手着眼点: 从 **分界点** 的物理意义 出发
 
+* :lock: :red_circle: Subarray Minimums中的最大值: [1950. Maximum of Minimum Values in All Subarrays]()
+    * prevSmaller, nextSmaller + MaxHeap
+
 * :yellow_circle: [1856. Maximum Subarray Min-Product](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1856-Maximum-Subarray-Min-Product)
-    * prevSmaller, nextSmaller + prefix sum
+    * prevSmaller, nextSmaller + Prefix Sum
 
 * :yellow_circle: [1019. Next Greater Node In Linked List](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1019-Next-Greater-Node-In-Linked-List)
     * nextGreater + Linked List
@@ -53,6 +56,8 @@
     * 栈顶元素的物理意义: 维护栈顶元素, 使得它总是**大于**当前元素
 
 ### 变体
+
+NOTE: 这里的变体指针对monotonic stack本身的算法进行的变化。对应的，模版题指套用monotonic stack的基础算法，它可以是与其他算法结合，但本身的思路不变。
 
 * :red_circle: [3113. Find the Number of Subarrays Where Boundary Elements Are Maximum](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3113-Find-the-Number-of-Subarrays-Where-Boundary-Elements-Are-Maximum)
     * 横向拓展：新增花样 - 只考虑每个"中心"对象作为尾巴元素的情况，往前找值相同的头元素
