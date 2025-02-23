@@ -40,7 +40,7 @@
 
 ## 找规律
 
-* :red_circle: 吃披萨: [3457. Eat Pizzas!]()
+* :red_circle: 吃披萨: [3457. Eat Pizzas!](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3457-Eat-Pizzas)
 
 * :yellow_circle: 有限预算下买最多冰淇淋: [1833. Maximum Ice Cream Bars](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1833-Maximum-Ice-Cream-Bars)
 
