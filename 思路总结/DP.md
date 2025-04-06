@@ -109,7 +109,7 @@
 * [474. Ones and Zeroes](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0474-Ones-and-Zeroes)
     * 0/1背包问题
     * 二维DP
-    * 倒序遍历背包容量!!!
+    * Trick: 倒序遍历背包容量 - 从大容量到小
 
 
 

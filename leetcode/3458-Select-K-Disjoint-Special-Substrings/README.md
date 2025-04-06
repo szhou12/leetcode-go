@@ -2,6 +2,9 @@
 
 ## Solution idea
 ### Two Pointers + Greedy (Intervals)
+1. 本题包含两个知识点:
+    1. find self-contained substrings
+    2. max number of disjoint intervals
 
 
 ## Resource
