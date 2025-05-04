@@ -1,4 +1,4 @@
-package otheralgorithms
+package dfs
 
 import "sort"
 

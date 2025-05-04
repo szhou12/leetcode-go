@@ -1,11 +1,15 @@
 # Network Flow
 
 ## 目录
+- [Terminology](#terminology)
+- [Ford Fulkerson Algorithm](#ford-fulkerson)
+- [Tricks](#tricks)
+- [Resources](#resources)
 
 ## Terminology
 1. **Augmenting Path**: A path $P$ from node `s` to node `t` where all edges (can be original or reverse edges) have remaining capacity > 0.
 2. **Residual Graph/Network**: $G' = G + \overline{G} = (V, \overrightarrow{E} \cup \overleftarrow{E})$. Augmented from original graph $G$ - for each original edge $A \rightarrow B$, add a reverse edge $A \leftarrow B$.
-3. **Residual/Remaining Capacity** of edge $e$: $e.capacity - e.flow$ 
+3. **Residual/Remaining Capacity** of edge: $e.capacity - e.flow$ 
 4. **Residual Edges**: All edges (including original and reverse edges) in the Residual Graph $G'$.
     - Definition: edge with remaining capacity > 0.
     - Reason to exist: to "undo" bad augmenting paths that do not lead to max flow.
@@ -33,3 +37,16 @@ Ford_Fulkerson(G, s, t):
 ```
 
 NOTE: "Foward" only means leading the direction from `s -> t`. Thus, a foward edge can be an original edge as well as a reverse edge. "Backward" only means leading the opposite direction of its forward edge. Thus, it can be an original edge as well as a reverse edge.
+
+## Tricks
+1. How to find Augmenting Path: Always pick the "shortest" path
+    - Edmonds-Karp: BFS. shortest = least number of edges.
+    - Min Cost Max Flow: Dijkstra's. shortest = least cost.
+2. SuperSource & SuperSink
+3. Undirected Graph
+
+## Resources
+- [Youtube | Max Flow Ford Fulkerson | Network Flow | Graph Theory](https://www.youtube.com/watch?v=LdOnanfc5TM&ab_channel=WilliamFiset)
+- [Youtube | Edmonds Karp Algorithm | Network Flow | Graph Theory](https://www.youtube.com/watch?v=RppuJYwlcI8&ab_channel=WilliamFiset)
+- [Blog | Minimum-cost flow - Successive shortest path algorithm](https://cp-algorithms.com/graph/min_cost_flow.html)
+- [Github | williamfiset/Algorithms/networkflow](https://github.com/williamfiset/Algorithms/tree/master/src/main/java/com/williamfiset/algorithms/graphtheory/networkflow)

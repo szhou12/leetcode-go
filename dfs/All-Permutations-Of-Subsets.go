@@ -1,4 +1,4 @@
-package otheralgorithms
+package dfs
 
 // NOTE: only works when all elements are distinct!
 func allPermutationsOfSubsets(nums []int) [][]int {

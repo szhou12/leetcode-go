@@ -1,4 +1,4 @@
-package otheralgorithms
+package dfs
 
 /*
  * All Subsets of Size K

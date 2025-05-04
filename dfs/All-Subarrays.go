@@ -1,4 +1,4 @@
-package otheralgorithms
+package dfs
 
 // Get all subarrays of a given array
 // Time = O(n^2)
