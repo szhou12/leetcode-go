@@ -44,7 +44,10 @@ NOTE: "Foward" only means leading the direction from `s -> t` on the path P. Thu
 1. How to find Augmenting Path: Always pick the "shortest" path
     - Edmonds-Karp: BFS. shortest = least number of edges.
     - Min Cost Max Flow: Dijkstra's. shortest = least cost.
-2. SuperSource & SuperSink
+2. SuperSource `S` & SuperSink `T`
+    - On a graph with "Supply Nodes" and "Demand Nodes", add `S` and a directed edge `S -> u` for all supply nodes `u`; add `T` and a directed edge `v -> T` for all demand nodes `v`.
+    - capacity of `S -> u` = |supply of `u`|. cost = 0.
+    - capacity of `v -> T` = |demand of `v`|. cost = 0.
 3. Undirected Graph
 4. Johnson's Reweighting / Potential
 

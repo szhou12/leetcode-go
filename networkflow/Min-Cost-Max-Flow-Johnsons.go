@@ -69,11 +69,6 @@ func MinCostMaxFlowJohnson(n int, edges [][]int, s int, t int) (int, int) {
 		graph[to] = append(graph[to], backwardEdge)
 	}
 
-	fmt.Printf("Initial graph construction complete. Number of nodes: %d\n", n)
-	for i := 0; i < n; i++ {
-		fmt.Printf("Node %d has %d edges\n", i, len(graph[i]))
-	}
-
 	// dist[i] := shortest path from source s to node i
 	dist := make([]int, n)
 	for i := 0; i < n; i++ {
@@ -95,17 +90,12 @@ func MinCostMaxFlowJohnson(n int, edges [][]int, s int, t int) (int, int) {
 		}
 	}
 
-	fmt.Printf("After Bellman-Ford, distances from source %d:\n", s)
-	for i := 0; i < n; i++ {
-		fmt.Printf("dist[%d] = %d\n", i, dist[i])
-	}
 
 	// Johnson's reweighting: adjust edge costs to be non-negative so that Dijkstra can be applied later
 	for from := 0; from < n; from++ {
 		for _, edge := range graph[from] {
 			if edge.RemainingCapacity() > 0 {
 				edge.cost += dist[from] - dist[edge.to]
-				fmt.Printf("Reweighted edge %d->%d: cost = %d\n", from, edge.to, edge.cost)
 			} else {
 				edge.cost = 0
 			}
@@ -116,7 +106,6 @@ func MinCostMaxFlowJohnson(n int, edges [][]int, s int, t int) (int, int) {
 	for {
 		path, ok := getAugmentingPath(graph, s, t)
 		if !ok {
-			fmt.Println("No more augmenting paths found")
 			break
 		}
 
@@ -126,18 +115,14 @@ func MinCostMaxFlowJohnson(n int, edges [][]int, s int, t int) (int, int) {
 			bottleneck = min(bottleneck, edge.RemainingCapacity())
 		}
 
-		fmt.Printf("Found augmenting path with bottleneck %d\n", bottleneck)
 
 		// augment the path
 		for _, edge := range path {
 			edge.Augment(bottleneck)
 			minCost += bottleneck * edge.originalCost
-			fmt.Printf("Augmented edge %d->%d: flow = %d, cost = %d\n",
-				edge.from, edge.to, edge.flow, edge.originalCost)
 		}
 
 		maxFlow += bottleneck
-		fmt.Printf("Current maxFlow = %d, minCost = %d\n", maxFlow, minCost)
 	}
 
 	return maxFlow, minCost
@@ -224,7 +209,6 @@ func getAugmentingPath(graph [][]*Edge, s int, t int) ([]*Edge, bool) {
 	for i, j := 0, len(path)-1; i < j; i, j = i+1, j-1 {
 		path[i], path[j] = path[j], path[i]
 	}
-	fmt.Println(path)
 
 	return path, true
 }
