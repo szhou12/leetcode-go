@@ -132,4 +132,6 @@ diff:  1,   2,  2, -1,  4
 
 ## 整体区间的增减
 
+* :red_circle: k值的最大频率: [3434. Maximum Frequency After Subarray Operation](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3434-Maximum-Frequency-After-Subarray-Operation)
+
 * :red_circle: 是否可以消掉所有元素为0: [2772. Apply Operations to Make All Array Elements Equal to Zero](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2772-Apply-Operations-to-Make-All-Array-Elements-Equal-to-Zero)

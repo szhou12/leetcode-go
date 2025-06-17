@@ -9,7 +9,7 @@
 * [Subarray 子数组类型题](#subarray-子数组类型题)
     * [类型一: Longest Ascending Subarray - 最长递增子数组](#类型一-longest-ascending-subarray---最长递增子数组)
     * [类型二: Longest Common Subarray - 最长公共子数组](#类型二-longest-common-subarray---最长公共子数组)
-    * [类型三: Maximum Subarray Sum](#类型三-maximum-subarray-sum--kadanes-algorithm)
+    * [类型三: Maximum Subarray Sum (Kadane's Algorithm)](#类型三-maximum-subarray-sum-kadanes-algorithm)
     * [类型四: All Subarrays](#类型四-all-subarrays)
     * [类型五: DP + 辅助](#类型五-dp--辅助)
 * [Subsequnce 子序列类型题](#subsequnce-子序列类型题)
@@ -144,7 +144,7 @@
 * 与 **Longest Common Subsequence** 不同的处理在于: 当以`i`结尾的元素 与 以`j`结尾的元素不相同时，直接subarray长度为0, 不考虑其他.
 * 最长公共子数组: [718. Maximum Length of Repeated Subarray](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0718-Maximum-Length-of-Repeated-Subarray)
 
-### 类型三: Maximum Subarray Sum / Kadane's Algorithm
+### 类型三: Maximum Subarray Sum (Kadane's Algorithm)
 * :red_circle: K-Sized Maximum Subarray Sum: [3381. Maximum Subarray Sum With Length Divisible by K](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3381-Maximum-Subarray-Sum-With-Length-Divisible-by-K)
     * K-sized window Kadane's Algorithm
     * prefix sum to quickly calculate subarray sum
