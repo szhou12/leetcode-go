@@ -26,6 +26,17 @@ But my solution should work for the situation where there are negative entries.
 ### Optimizing Solution
 Assume all entries $\geq 0$.
 
+```
+DP[i] := max amount of money we can rob in nums[0...i] (inclusive)
+
+Base cases:
+DP[0] = nums[0]
+DP[1] = max(nums[0], nums[1])
+
+Recurrence:
+DP[i] = max(DP[i-1], DP[i-2] + nums[i]) // either skip i, directly inherit DP[i-1]; or rob i and inherit DP[i-2]
+```
+
 Recurrence:
 
 $DP[i] = \max(DP[i-1], DP[i-2] + nums[i])$ since we know $DP[i]$ must be non-decreasing as i increases.

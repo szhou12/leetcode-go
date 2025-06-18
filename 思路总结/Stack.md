@@ -51,6 +51,9 @@
 * :yellow_circle: [1019. Next Greater Node In Linked List](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1019-Next-Greater-Node-In-Linked-List)
     * nextGreater + Linked List
 
+* :yellow_circle: [739. Daily Temperatures](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0739-Daily-Temperatures)
+    * Find next greater element
+
 * [496. Next Greater Element I](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0496-Next-Greater-Element-I)
     * 思路: 从后往前看，挤掉栈顶矮个子
     * 栈顶元素的物理意义: 维护栈顶元素, 使得它总是**大于**当前元素

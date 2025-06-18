@@ -13,35 +13,63 @@ import "github.com/szhou12/leetcode-go/structures"
 type TreeNode = structures.TreeNode
 
 func diameterOfBinaryTree(root *TreeNode) int {
-	if root == nil {
-		return 0
+	maxDiameter := 0 // Note: it counts number of edges, NOT nodes
+
+	// semantic: dfs returns the max height (# of edges) of input node
+	var dfs func(root *TreeNode) int
+	dfs = func(root *TreeNode) int {
+		// base case
+		if root == nil {
+			return 0
+		}
+
+		// recursion
+		left := dfs(root.Left)
+		right := dfs(root.Right)
+
+		// update maxDiameter
+		maxDiameter = max(maxDiameter, left + right) // Note: here we only have left + right because we are counting edges
+
+		return max(left, right) + 1
 	}
 
-	_, diameter := diameterHelper(root)
-	return diameter
+
+	dfs(root)
+
+	return maxDiameter
 }
 
-func diameterHelper(root *TreeNode) (int, int) {
-	// base case
-	if root == nil {
-		return 0, 0
+
+/**
+ * Extension:
+ * Given a binary tree, find the longest path that contains an even number of nodes.
+ */
+func longestPathWithEvenNodes(root *TreeNode) int {
+	maxLength := 0
+
+	// semantic: dfs returns the max height (# of nodes) of input node
+	var dfs func(root *TreeNode) int
+
+	dfs = func(root *TreeNode) int {
+		// base case
+		if root == nil {
+			return 0
+		}
+
+		// recursion
+		left := dfs(root.Left)
+		right := dfs(root.Right)
+
+		// update maxLength
+		curPath := left + right + 1 // + 1 because we are counting nodes
+		if curPath % 2 == 0 {
+			maxLength = max(maxLength, curPath)
+		}
+
+		return max(left, right) + 1
 	}
 
-	leftDepth, leftDiameter := diameterHelper(root.Left)
-	rightDepth, rightDiameter := diameterHelper(root.Right)
-	curDepth := max(leftDepth, rightDepth) + 1
-	// curDiameter := leftDepth + rightDepth
+	dfs(root)
 
-	depthSum := leftDepth + rightDepth
-	diameterMax := max(leftDiameter, rightDiameter)
-	curDiameter := max(depthSum, diameterMax)
-	return curDepth, curDiameter
-
-}
-
-func max(a int, b int) int {
-	if a > b {
-		return a
-	}
-	return b
+	return maxLength
 }
