@@ -32,6 +32,7 @@
 
 #### 1-D Prefix Sum
 * 前缀和的定义:
+    * 为了方便，长度为n的`nums[]`，生成长度为n的`prefixSum[]`。
 ```
 prefixSum[0] = nums[0]
 prefixSum[i] = nums[0] + nums[1] + ... + nums[i]
@@ -58,7 +59,8 @@ prefixSum[i+1][j+1] = (prefixSum[i][j+1] + prefixSum[i+1][j] - prefixSum[i][j]) 
 
 ##### Definition
 * 差分数组的定义:
-
+    * 为了方便，长度为n的`nums[]`，生成长度为n+1的`diff[]`和长度为n+1的`presum[]`
+    * `diff[n]`和`presum[n]`的值不使用，只是为了计算时不出界
 ```
 diff[0] = nums[0] - 0,
 diff[i] = nums[i] - nums[i-1]
@@ -78,7 +80,7 @@ presum[i] = presum[i-1] + diff[i]
 ##### Property 2
 * **性质 2**: 对原数组`nums[l...r]` (双闭区间) 每个元素都加上 `val` 时，映射到差分数组上就是: `diff[l]+val` 和 `diff[r+1]-val`
     * **性质 2 总结**:
-        * 思路: 对原数组`nums`的某个区间/subarray`nums[l...r]`的每个元素都加上一个值 `val`, 实际上是对差分数组的 `diff[l]+val` 和 `diff[r+1]-val`
+        * 思路: 对原数组`nums`的某个区间/subarray`nums[l...r]`的每个元素都加上一个值 `val`(可正可负), 实际上是对差分数组的 `diff[l]+val` 和 `diff[r+1]-val`
         * 结果: 对变化后的差分数组`diff`求每个元素的前缀和 $\Rightarrow $ 变化后的原数组
     * 举个例子:
 ```
@@ -114,6 +116,7 @@ diff:  1,   2,  2, -1,  4
 
 ## 一维差分 (1-D Difference Array)
 
+
 * 航班预订统计: [1109. Corporate Flight Bookings](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1109-Corporate-Flight-Bookings)
 
 * 拼车: [1094. Car Pooling](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1094-Car-Pooling)
@@ -130,8 +133,13 @@ diff:  1,   2,  2, -1,  4
 
 * :red_circle: "好"分隔的总数: [2963. Count the Number of Good Partitions](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2963-Count-the-Number-of-Good-Partitions)
 
+
 ## 整体区间的增减
+
+* :yellow_circle: 是否可以消掉所有元素为0: [3355. Zero Array Transformation I](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3355-Zero-Array-Transformation-I)
+    * Diff Array
 
 * :red_circle: k值的最大频率: [3434. Maximum Frequency After Subarray Operation](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3434-Maximum-Frequency-After-Subarray-Operation)
 
 * :red_circle: 是否可以消掉所有元素为0: [2772. Apply Operations to Make All Array Elements Equal to Zero](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2772-Apply-Operations-to-Make-All-Array-Elements-Equal-to-Zero)
+

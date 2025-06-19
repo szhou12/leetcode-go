@@ -100,6 +100,11 @@ sort.Slice(people, func(i, j int) bool {
 [golang sort slices of slice by first element - Stack Overflow](https://stackoverflow.com/questions/55360091/golang-sort-slices-of-slice-by-first-element)
 
 [Checking the equality of two slices - Stack Overflow](https://stackoverflow.com/questions/15311969/checking-the-equality-of-two-slices)
+```go
+sort.Slice(nums, func(i, j int) bool {
+    return nums[i][0] < nums[j][0]
+})
+```
 
 
 ## Slice of Map

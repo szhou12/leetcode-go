@@ -90,6 +90,9 @@
 
 
 ## 背包问题
+* :red_circle: 是否可以消掉所有元素为0 IV: [3489. Zero Array Transformation IV](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3489-Zero-Array-Transformation-IV)
+
+
 * [279. Perfect Squares](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0279-Perfect-Squares)
 
 * [322. Coin Change](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0322-Coin-Change)
