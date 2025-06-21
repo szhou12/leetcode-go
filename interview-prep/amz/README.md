@@ -10,6 +10,13 @@
 - [3572. Maximize Y‑Sum by Picking a Triplet of Distinct X‑Values](https://leetcode.com/problems/maximize-ysum-by-picking-a-triplet-of-distinct-xvalues/description/) Hash Map + Sort
 - [12. Integer to Roman](https://leetcode.com/problems/integer-to-roman/description/) Math - Modulo and Division
 - [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/) Hash Map
+- [273. Integer to English Words](https://leetcode.com/problems/integer-to-english-words/description/) Math - Modulo and Division
 - [3423. Maximum Difference Between Adjacent Elements in a Circular Array](https://leetcode.com/problems/maximum-difference-between-adjacent-elements-in-a-circular-array/description/) Circular array -> double the array
 - [3355. Zero Array Transformation I](https://leetcode.com/problems/zero-array-transformation-i/description/) Diff Array - Range update
 - [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/) Min Heap, Linked List
+- [637. Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/description/) BFS - level order traversal
+- [387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/description/) Hash Map
+- [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/) DFS - BST in-order traversal
+- [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/description/) Prefix Sum
+- [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) Binary Search
+- [733. Flood Fill](https://leetcode.com/problems/flood-fill/description/) DFS - 2-D Grid
