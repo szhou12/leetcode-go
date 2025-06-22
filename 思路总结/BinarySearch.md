@@ -312,6 +312,7 @@ func upperBound(nums []int, target int) int {
 * :red_circle: 最短时间Mark所有位置I: [3048. Earliest Second to Mark Indices I](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3048-Earliest-Second-to-Mark-Indices-I)
     * Binary Search 猜答案 + Greedy
 
+
 * 抢房子4: [2560. House Robber IV](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2560-House-Robber-IV)
     * Binary Search 猜答案 + DP
 
@@ -320,6 +321,11 @@ func upperBound(nums []int, target int) int {
 * 找最小可裁定/删除的subarray长度: [2565. Subsequence With the Minimum Score](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2565-Subsequence-With-the-Minimum-Score)
     * 结合 **3-Pass** 思想
     * 重点在于要清楚明白各物理量的物理意义
+
+* :green_circle: KoKo吃香蕉: [875. Koko Eating Bananas](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0875-Koko-Eating-Bananas)
+    * Binary Search guess min value
+
+
 
 ## 非常规
 
