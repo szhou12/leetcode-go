@@ -24,3 +24,4 @@
 - [3170. Lexicographically Minimum String After Removing Stars](https://leetcode.com/problems/lexicographically-minimum-string-after-removing-stars/description/) Min Heap + Hash Map + "Collision Problem"
 - [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) Hash Map + Sort
 - [875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/) Binary Seach guess min value
+- [2434. Using a Robot to Print the Lexicographically Smallest String](https://leetcode.com/problems/using-a-robot-to-print-the-lexicographically-smallest-string/description/) Stack - Next Smaller Element? Or Prefix Sum?

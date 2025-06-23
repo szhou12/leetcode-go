@@ -62,6 +62,9 @@
 
 NOTE: 这里的变体指针对monotonic stack本身的算法进行的变化。对应的，模版题指套用monotonic stack的基础算法，它可以是与其他算法结合，但本身的思路不变。
 
+* :red_circle: 机器人打印字典最小序字符串: [2434. Using a Robot to Print the Lexicographically Smallest String](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2434-Using-a-Robot-to-Print-the-Lexicographically-Smallest-String)
+
+
 * :red_circle: [3113. Find the Number of Subarrays Where Boundary Elements Are Maximum](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3113-Find-the-Number-of-Subarrays-Where-Boundary-Elements-Are-Maximum)
     * 横向拓展：新增花样 - 只考虑每个"中心"对象作为尾巴元素的情况，往前找值相同的头元素
 
