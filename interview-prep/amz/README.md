@@ -20,8 +20,11 @@
 - [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/description/) Prefix Sum
 - [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) Binary Search
 - [733. Flood Fill](https://leetcode.com/problems/flood-fill/description/) DFS - 2-D Grid
-
 - [3170. Lexicographically Minimum String After Removing Stars](https://leetcode.com/problems/lexicographically-minimum-string-after-removing-stars/description/) Min Heap + Hash Map + "Collision Problem"
 - [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) Hash Map + Sort
 - [875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/) Binary Seach guess min value
 - [2434. Using a Robot to Print the Lexicographically Smallest String](https://leetcode.com/problems/using-a-robot-to-print-the-lexicographically-smallest-string/description/) Stack - Next Smaller Element? Or Prefix Sum?
+- [79. Word Search](https://leetcode.com/problems/word-search/description/) DFS - 2-D Grid Backtracking
+- [540. Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/description/) Binary Search
+- [408. Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/description/) Two Pointers
+
