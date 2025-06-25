@@ -1,4 +1,5 @@
 # [269. Alien Dictionary](https://leetcode.ca/all/269.html)
+# [269. Alien Dictionary](https://leetcode.com/problems/alien-dictionary/description/)
 
 ## Solution idea
 ### Topological Sort
@@ -12,4 +13,5 @@
 * 简言之，每比较两两一组的单词，只考虑相同位置上首次出现不同字母的情况，之后位置有没有不同字母不再考虑，这是因为之后位置的不同字母已经不再包含先后顺序的信息了 (因为它们前面的字母就已经不同了)
 
 ## Resource
-[wisdompeak/LeetCode](https://github.com/wisdompeak/LeetCode/tree/master/BFS/269.Alien-Dictionary)
+- [【每日一题】269. Alien Dictionary, 7/21/2020](https://www.youtube.com/watch?v=yfGJFDkyEmE&ab_channel=HuifengGuan)
+- [wisdompeak/LeetCode](https://github.com/wisdompeak/LeetCode/tree/master/BFS/269.Alien-Dictionary)

@@ -25,6 +25,8 @@
 ## 模版
 ### BFS Template
 **Graph Setup**: `n` nodes, `edges[i] = [ui, vi]` represents a directed edge `ui -> vi`. Find the shortest paths from node 0 (source node) to all other nodes.
+
+**Lesson to remember**: 一个node一旦入queue，下一行代码应立马将其标记为visited，免得夜长梦多。
 ```go
 func bfs(n int, edges [][]int) []int {
     // Step 1: Reconstruct adj-list representation
@@ -168,6 +170,9 @@ func (pq *PQ) Pop() interface{} {
 
 * :green_circle: 引爆最多炸弹数: [2101. Detonate the Maximum Bombs](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2101-Detonate-the-Maximum-Bombs)
 
+* :yellow_circle: 感染整棵二叉树的时间: [2385. Amount of Time for Binary Tree to Be Infected](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2385-Amount-of-Time-for-Binary-Tree-to-Be-Infected)
+    * 难点: 树结构是undirected graph, 需要添加edge in both directions (parent -> child and child -> parent)
+
 
 
 ## 综合题
@@ -196,6 +201,8 @@ func (pq *PQ) Pop() interface{} {
 * :red_circle: **找出不包含边界元素的连通图:** [130. Surrounded Regions](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0130-Surrounded-Regions)
 
 * :red_circle: **飞地的个数:** [1020. Number of Enclaves](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1020-Number-of-Enclaves)
+
+* :yellow_circle: 橘子烂掉: [994. Rotting Oranges](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0994-Rotting-Oranges)
 
 * Roblox - Candy Crush
 

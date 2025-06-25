@@ -15,6 +15,7 @@
     * [树的深搜遍历](#树的深搜遍历)
 * [Min-Max Strategy](#min-max-strategy)
 * [DFS + Memoization](#dfs--memoization)
+* [Backtracking](#backtracking)
 
 
 ## Basics
@@ -154,6 +155,8 @@
 
 ### 树的深搜遍历
 
+* :red_circle: 最小提升次数使每条根到叶子的路径相同: [3593. Minimum Increments to Equalize Leaf Paths](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3593-Minimum-Increments-to-Equalize-Leaf-Paths)
+
 * :yellow_circle: 摘取树上所有苹果所花最少时间: [1443. Minimum Time to Collect All Apples in a Tree](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1443-Minimum-Time-to-Collect-All-Apples-in-a-Tree)
 
 
@@ -189,3 +192,7 @@
 * :red_circle: 沿树的路径收集最多硬币: [2920. Maximum Points After Collecting Coins From All Nodes](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2920-Maximum-Points-After-Collecting-Coins-From-All-Nodes)
 
 * :red_circle: 沿树的路径放置适当硬币: [2973. Find Number of Coins to Place in Tree Nodes](https://github.com/szhou12/leetcode-go/tree/main/leetcode/2973-Find-Number-of-Coins-to-Place-in-Tree-Nodes)
+
+## Backtracking
+* :yellow_circle: 2-D Grid中搜单词: [79. Word Search](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0079-Word-Search)
+    - 2-D Grid DFS - backtracking

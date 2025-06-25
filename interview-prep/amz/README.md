@@ -27,4 +27,9 @@
 - [79. Word Search](https://leetcode.com/problems/word-search/description/) DFS - 2-D Grid Backtracking
 - [540. Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array/description/) Binary Search
 - [408. Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation/description/) Two Pointers
+- [269. Alien Dictionary](https://leetcode.com/problems/alien-dictionary/description/) Topological Sort
+- [779. K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar/description/) Recursion + Parent-child TreeNode relationship
+- [1011. Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) Binary Search 猜答案
+- [994. Rotting Oranges](https://leetcode.com/problems/rotting-oranges/description/) BFS - 2-D Grid - 一个node一旦入queue，立马标记visited
+- [2385. Amount of Time for Binary Tree to Be Infected](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/description/) BFS
 

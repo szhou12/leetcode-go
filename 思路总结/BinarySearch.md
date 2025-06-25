@@ -288,7 +288,7 @@ func upperBound(nums []int, target int) int {
 
 ### Guess Min/Max
 
-* :red_circle: 最大化最小游戏得分: [3449. Maximize the Minimum Game Score]()
+* :red_circle: 最大化最小游戏得分: [3449. Maximize the Minimum Game Score](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3449-Maximize-the-Minimum-Game-Score)
     * Binary Search 猜答案 + Greedy
 
 * :red_circle: 切出最小可允许的identical substring的次数: [3399. Smallest Substring With Identical Characters II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3449-Maximize-the-Minimum-Game-Score)
@@ -325,7 +325,8 @@ func upperBound(nums []int, target int) int {
 * :green_circle: KoKo吃香蕉: [875. Koko Eating Bananas](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0875-Koko-Eating-Bananas)
     * Binary Search guess min value
 
-
+* :yellow_circle: 运送所有包裹的最小capacity: [1011. Capacity To Ship Packages Within D Days](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1011-Capacity-To-Ship-Packages-Within-D-Days)
+    * Binary Search 猜答案
 
 ## 非常规
 
