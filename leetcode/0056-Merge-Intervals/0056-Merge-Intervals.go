@@ -3,7 +3,7 @@ package leetcode
 import "sort"
 
 func merge(intervals [][]int) [][]int {
-	// MUST sort by starting time
+	// MUST sort in ascending order by starting time
 	sort.Slice(intervals, func(i, j int) bool {
 		return intervals[i][0] < intervals[j][0]
 	})

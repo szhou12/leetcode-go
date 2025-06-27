@@ -32,4 +32,11 @@
 - [1011. Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) Binary Search 猜答案
 - [994. Rotting Oranges](https://leetcode.com/problems/rotting-oranges/description/) BFS - 2-D Grid - 一个node一旦入queue，立马标记visited
 - [2385. Amount of Time for Binary Tree to Be Infected](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/description/) BFS
-
+- [348. Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/description/) OOD
+- [460. LFU Cache](https://leetcode.com/problems/lfu-cache/description/) OOD
+- [1603. Design Parking System](https://leetcode.com/problems/design-parking-system/) OOD
+- [146. LRU Cache](https://leetcode.com/problems/lru-cache/description/) OOD
+- [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/) OOD + Trie
+- [2248. Intersection of Multiple Arrays](https://leetcode.com/problems/intersection-of-multiple-arrays/description/) Hash Map + Frequency count
+- [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/description/) - Greedy + Sorting
+- 

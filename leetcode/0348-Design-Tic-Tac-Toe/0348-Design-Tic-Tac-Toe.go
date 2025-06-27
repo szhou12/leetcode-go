@@ -1,5 +1,15 @@
 package leetcode
 
+/*
+Leetcode Solution 2: Optimised Approach
+
+Intuition:
+Each player makes a move by marking a cell with a value (e.g., 1 or -1). There are always n cells on a row/col/diagonal/anti-diagonal. Thus, to win either of these, a player must have marked n times (sum = n or -n). So after a move, we check if i-th row has sum being n or -n OR if i-th col has sum being n or -n OR if the diagonal OR anti-diagonal has sum being n or -n.
+
+Time complexity = O(1) because for every move, we mark a particular row, column, diagonal, and anti-diagonal in constant time.
+
+Space complexity = O(n) because we use arrays rows and cols of size n. The variables diagonal and antiDiagonal use constant extra space.
+*/
 type TicTacToe struct {
 	rows         []int
 	cols         []int
@@ -12,11 +22,13 @@ func Constructor(n int) TicTacToe {
 	return TicTacToe{
 		rows: make([]int, n),
 		cols: make([]int, n),
+		diagonal: 0,
+		antiDiagonal: 0,
 		size: n,
 	}
 }
 
-func (this *TicTacToe) move(row int, col int, player int) int {
+func (this *TicTacToe) Move(row int, col int, player int) int {
 	var toAdd int
 	if player == 1 {
 		toAdd = 1
@@ -31,7 +43,7 @@ func (this *TicTacToe) move(row int, col int, player int) int {
 		this.diagonal += toAdd
 	}
 
-	if col+row == len(this.cols)-1 {
+	if col == len(this.cols)-row-1 {
 		this.antiDiagonal += toAdd
 	}
 
@@ -42,6 +54,7 @@ func (this *TicTacToe) move(row int, col int, player int) int {
 		return player
 	}
 
+	// no one wins
 	return 0
 }
 

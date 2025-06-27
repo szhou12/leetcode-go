@@ -1,25 +1,22 @@
 package leetcode
 
-type LRUCache struct {
+
+type LRUCache1 struct {
 	head, tail *Node
 	keys       map[int]*Node
 	cap        int
 }
 
-// Doubly Linked-List
-type Node struct {
-	key, val   int
-	prev, next *Node
-}
 
-func Constructor(capacity int) LRUCache {
-	return LRUCache{
+
+func NewLRUCache1(capacity int) LRUCache1 {
+	return LRUCache1{
 		keys: make(map[int]*Node),
 		cap:  capacity,
 	}
 }
 
-func (this *LRUCache) Get(key int) int {
+func (this *LRUCache1) Get(key int) int {
 	if node, ok := this.keys[key]; ok {
 		this.Remove(node)
 		this.Add(node)
@@ -28,7 +25,7 @@ func (this *LRUCache) Get(key int) int {
 	return -1
 }
 
-func (this *LRUCache) Put(key int, value int) {
+func (this *LRUCache1) Put(key int, value int) {
 	// case 1: key already exists: update value, move node to front
 	// case 2: key not yet exits: create the node
 	if node, ok := this.keys[key]; ok {
@@ -51,7 +48,7 @@ func (this *LRUCache) Put(key int, value int) {
 	}
 }
 
-func (this *LRUCache) Add(node *Node) {
+func (this *LRUCache1) Add(node *Node) {
 	node.prev = nil
 	node.next = this.head
 
@@ -66,7 +63,7 @@ func (this *LRUCache) Add(node *Node) {
 	}
 }
 
-func (this *LRUCache) Remove(node *Node) {
+func (this *LRUCache1) Remove(node *Node) {
 	if node == this.head {
 		this.head = node.next
 		if node.next != nil {
