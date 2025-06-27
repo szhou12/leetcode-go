@@ -39,4 +39,9 @@
 - [208. Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/) OOD + Trie
 - [2248. Intersection of Multiple Arrays](https://leetcode.com/problems/intersection-of-multiple-arrays/description/) Hash Map + Frequency count
 - [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/description/) - Greedy + Sorting
-- 
+- [528. Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight/description/) Randomization (CPD) + Binary Search (LowerBound)
+- [1186. Maximum Subarray Sum with One Deletion](https://leetcode.com/problems/maximum-subarray-sum-with-one-deletion/description/) 2D DP (位置X状态)
+- [91. Decode Ways](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0091-Decode-Ways) DP - 继承种类数, prepend #
+- [323. Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/description/) DFS - count connected components
+- [1136. Parallel Courses](https://leetcode.com/problems/parallel-courses/description/) Topological Sort + count depth
+- [210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) Topological Sort

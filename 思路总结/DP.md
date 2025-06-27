@@ -40,6 +40,8 @@
     * 切东西类型的DP题
     * 需要通过总结 `DP[i]` 的规律性质来优化算法的 time complexity
 
+* :red_circle: 解码种类: [91. Decode Ways](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0091-Decode-Ways)
+    * 字符串DP
 
 ## 买卖股票
 
@@ -267,6 +269,10 @@
 * :red_circle: 最大化数组中连续元素的总和: [3041. Maximize Consecutive Elements in an Array After Modification](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3041-Maximize-Consecutive-Elements-in-an-Array-After-Modification)
     * Sort first!
     * `DP[i][state]`
+
+* :yellow_circle: [1186. Maximum Subarray Sum with One Deletion](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1186-Maximum-Subarray-Sum-with-One-Deletion)
+    * Kadane's Algorithm 变体
+    * 删过与没删过元素两种状态
 
 ### 位置X花费
 #### 第一维 = 位置 (index); 第二维 = 花费 (cost)
