@@ -45,3 +45,10 @@
 - [323. Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/description/) DFS - count connected components
 - [1136. Parallel Courses](https://leetcode.com/problems/parallel-courses/description/) Topological Sort + count depth
 - [210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) Topological Sort
+- [560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/description/) Prefix Sum + Hash Map (frequency map)
+- [2200. Find All K-Distant Indices in an Array](https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/description/) Math
+- [1748. Sum of Unique Elements](https://leetcode.com/problems/sum-of-unique-elements/description/) Hash Map (frequency)
+- [1482. Minimum Number of Days to Make m Bouquets](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1482-Minimum-Number-of-Days-to-Make-m-Bouquets) Binary Search guess Min + not necessarily have a answer
+- [1295. Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/description/) Math
+- [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) Hash Map + Matrix Calculation
+- [1152. Analyze User Website Visit Pattern](https://leetcode.com/problems/analyze-user-website-visit-pattern/description/) Sorting + Hash Map

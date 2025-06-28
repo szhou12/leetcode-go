@@ -288,6 +288,10 @@ func upperBound(nums []int, target int) int {
 
 ### Guess Min/Max
 
+* :yellow_circle: 最小天数种出m束花: [1482. Minimum Number of Days to Make m Bouquets](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1482-Minimum-Number-of-Days-to-Make-m-Bouquets)
+    * Binary Search guess min
+    * 一束花必须由k朵连续的花组成
+
 * :red_circle: 最大化最小游戏得分: [3449. Maximize the Minimum Game Score](https://github.com/szhou12/leetcode-go/tree/main/leetcode/3449-Maximize-the-Minimum-Game-Score)
     * Binary Search 猜答案 + Greedy
 
