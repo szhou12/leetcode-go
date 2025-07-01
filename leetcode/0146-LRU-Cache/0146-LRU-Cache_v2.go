@@ -34,7 +34,7 @@ func Constructor(capacity int) LRUCache {
 }
 
 func (this *LRUCache) Get(key int) int {
-	// if key exists, change node's used status and return its value
+	// if key exists, change node to tail and return its value
 	if node, ok := this.nodes[key]; ok {
 		this.remove(node)
 		this.insert(node)
@@ -45,7 +45,7 @@ func (this *LRUCache) Get(key int) int {
 }
 
 func (this *LRUCache) Put(key int, value int)  {
-	// if key exists, update value and change node's used status
+	// if key exists, update value and change node to tail as recently used
 	if node, ok := this.nodes[key]; ok {
 		node.val = value
 		this.remove(node)
