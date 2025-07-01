@@ -45,10 +45,46 @@
 - [323. Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/description/) DFS - count connected components
 - [1136. Parallel Courses](https://leetcode.com/problems/parallel-courses/description/) Topological Sort + count depth
 - [210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) Topological Sort
-- [560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/description/) Prefix Sum + Hash Map (frequency map)
 - [2200. Find All K-Distant Indices in an Array](https://leetcode.com/problems/find-all-k-distant-indices-in-an-array/description/) Math
 - [1748. Sum of Unique Elements](https://leetcode.com/problems/sum-of-unique-elements/description/) Hash Map (frequency)
 - [1482. Minimum Number of Days to Make m Bouquets](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1482-Minimum-Number-of-Days-to-Make-m-Bouquets) Binary Search guess Min + not necessarily have a answer
 - [1295. Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/description/) Math
 - [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) Hash Map + Matrix Calculation
 - [1152. Analyze User Website Visit Pattern](https://leetcode.com/problems/analyze-user-website-visit-pattern/description/) Sorting + Hash Map
+- [1817. Finding the Users Active Minutes](https://leetcode.com/problems/finding-the-users-active-minutes/description/) Hash Map (frequency map)
+- [472. Concatenated Words](https://leetcode.com/problems/concatenated-words/description/) DP / Trie + DFS (Memo)
+- [1432. Max Difference You Can Get From Changing an Integer](https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer/description/) Brute Force - Enumeration
+- [560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/description/) Prefix Sum + Hash Map (frequency map)
+- [974. Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/description/) Math + Prefix Sum + Hash Map (frequency map)
+- [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) Binary Search 2-D Matrix
+
+## NeedCode150
+- [Two Sum](https://neetcode.io/problems/two-integer-sum?list=neetcode150) Hash Map (val -> idx), Two Pass
+- [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) Sort String, Hash Map
+- [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) Min Heap
+- [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/description/)
+- [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/description/) Prefix Sum, Suffix Sum
+- [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) Hash Map + Matrix Calculation (r/3)*3 + (c/3)
+- [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/) Hash Map
+- [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/description/) Two Pointers 相对而行
+- [Two Sum II Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) Two Pointers 相对而行
+- [3Sum](https://leetcode.com/problems/3sum/description/) Sorting + Two Pointers 相对而行
+- [Container With Most Water](https://leetcode.com/problems/container-with-most-water/description/) Two Pointers 相对而行
+- [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/description/) Two Pointers 相对而行
+- [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) Dynamic Programming | two pointers 同向追赶-长长长跳
+- [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) Sliding Window 吃了吐
+- [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/description/) Sliding Window 吃了吐
+- [Permutation In String](https://leetcode.com/problems/permutation-in-string/description/) Sliding Window + Hash Set
+- [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/) Sliding Window 吃了吐 + Hash Map (frequency map)
+- [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/description/) Sliding Window + Max Deque
+- [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/description/) Stack (collision)
+- [Min Stack](https://leetcode.com/problems/min-stack/description/) Two Stacks (normal + minVal tracker)
+- [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) Stack (take out 2 at one time for calculation and push back)
+- [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/description/) DFS (backtracking)
+- [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/description/) Stack - Next Greater Element
+- [Car Fleet](https://leetcode.com/problems/car-fleet/description/)
+- [Largest Rectangle In Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/description/) Stack - prevSmaller, nextSmaller
+- [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) Binary Search, (mid/n, mid%n)
+- [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/description/) Binary Search guess min value
+- [Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) Binary Search
+- [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) Binary Search

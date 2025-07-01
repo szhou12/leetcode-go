@@ -40,3 +40,40 @@ func threeSum(nums []int) [][]int {
 
 	return res
 }
+
+func threeSum2(nums []int) [][]int {
+    res := make([][]int, 0)
+
+    sort.Ints(nums)
+
+    for i := 0; i < len(nums); i++ {
+        cur := nums[i]
+        if cur > 0 {
+            break
+        }
+
+        // skip duplicates
+        if i > 0 && cur == nums[i-1] {
+            continue
+        }
+
+        l, r := i + 1, len(nums) - 1
+        for l < r {
+            sum := cur + nums[l] + nums[r]
+            if sum > 0 {
+                r--
+            } else if sum < 0 {
+                l++
+            } else {
+                res = append(res, []int{cur, nums[l], nums[r]})
+                l++
+                r--
+                // skip duplicates
+                for l < r &&nums[l] == nums[l-1] {
+                    l++
+                }
+            }
+        }
+    }
+    return res
+}

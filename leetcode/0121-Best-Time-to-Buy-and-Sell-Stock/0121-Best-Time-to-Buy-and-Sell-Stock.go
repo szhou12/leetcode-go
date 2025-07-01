@@ -14,13 +14,6 @@ func maxProfit_reverse(prices []int) int {
 	return profit
 }
 
-func max(a int, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
-
 // Solution 2: Loop forward 每一轮保留回头看过的最小的Price
 func maxProfit_forward(prices []int) int {
 	minPrice := prices[0]

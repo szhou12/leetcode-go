@@ -14,7 +14,7 @@
     * [Guess K-th Element](#guess-k-th-element)
     * [Guess + Math](#guess--math)
     * [Guess Min/Max](#guess-minmax)
-* [非常规](#非常规)
+* [2-D Matrix](#2-d-matrix)
 
 ## 方法论
 * 统一循环条件:
@@ -332,6 +332,12 @@ func upperBound(nums []int, target int) int {
 * :yellow_circle: 运送所有包裹的最小capacity: [1011. Capacity To Ship Packages Within D Days](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1011-Capacity-To-Ship-Packages-Within-D-Days)
     * Binary Search 猜答案
 
-## 非常规
+## 2-D Matrix
 
 * :red_circle: 二维矩阵中寻找峰值II: [1901. Find a Peak Element II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/1901-Find-a-Peak-Element-II)
+
+* :red_circle: 二分搜索二维矩阵II: [240. Search a 2D Matrix II](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0240-Search-a-2D-Matrix-II)
+    * 解法本身不是Binary Search, 但是**解法思路可以应用于所有 sorted matrix**, 并且和 Binary Search 结合组成更高效的算法
+    * 从 bottom-left / top-right 出发做 matrix traversal
+
+* :yellow_circle: 二分搜索二维矩阵: [74. Search a 2D Matrix](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0074-Search-a-2D-Matrix)

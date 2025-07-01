@@ -47,10 +47,13 @@ func checkInclusion2(s1 string, s2 string) bool {
 
 	window := make(map[byte]int)
 	for right := 0; right < len(s2); right++ {
+		// 长
 		window[s2[right]]++
+		// 过长，收缩
 		if right-len(s1) >= 0 {
 			window[s2[right-len(s1)]]--
 		}
+		// left = right - len(s1) + 1
 		if right-len(s1)+1 >= 0 && isEqual(need, window) {
 			return true
 		}

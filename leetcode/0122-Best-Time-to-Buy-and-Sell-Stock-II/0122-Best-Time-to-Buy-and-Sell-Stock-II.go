@@ -1,6 +1,8 @@
 package leetcode
 
 // DP
+// dp[i][0] := max profit in [0:i] without holding a stock
+// dp[i][1] := max profit in [0:i] holding a stock
 func maxProfit(prices []int) int {
 	n := len(prices)
 	dp := make([][2]int, n)
@@ -19,12 +21,6 @@ func maxProfit(prices []int) int {
 	return dp[n-1][0]
 }
 
-func max(a int, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
 
 // Greedy Algorithm
 func maxProfit_Greedy(prices []int) int {

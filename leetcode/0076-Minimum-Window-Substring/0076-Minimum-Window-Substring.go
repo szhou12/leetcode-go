@@ -4,12 +4,12 @@ import "math"
 
 // 写法一: 模版Fix
 func minWindow(s string, t string) string {
-	need := make(map[byte]int) // hashmap t
+	need := make(map[byte]int) // {char needed: freq needed}
 	for i := 0; i < len(t); i++ {
 		need[t[i]]++
 	}
 
-	window := make(map[byte]int)
+	window := make(map[byte]int) // {char: freq}
 	left, right := 0, 0
 	count := 0
 	start, length := 0, math.MaxInt // result
