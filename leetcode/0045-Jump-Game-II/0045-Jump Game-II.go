@@ -2,7 +2,34 @@ package leetcode
 
 import "math"
 
+
+// Greedy: 想象成BFS, 每一层=可以跳到的一段连续区间
 func jump(nums []int) int {
+    start, end := 0, 0
+
+    if len(nums) == 1 {
+        return 0
+    }
+
+    step := 0
+
+    for start <= end {
+        newEnd := end
+        for i := start; i <= end; i++ {
+            newEnd = max(newEnd, i+nums[i])
+            if newEnd >= len(nums)-1 {
+                return step + 1
+            }
+        }
+        start = end + 1
+        end = newEnd
+        step++
+    }
+
+    return -1
+}
+
+func jump_DP(nums []int) int {
 	n := len(nums)
 	dp := make([]int, n)
 	// base case: at starting position, need 0 jumps
@@ -23,12 +50,6 @@ func jump(nums []int) int {
 	return dp[n-1]
 }
 
-func min(a int, b int) int {
-	if a < b {
-		return a
-	}
-	return b
-}
 
 // testing: [2,3,1,1,4]
 // dp: [0, max, max, max, max]
