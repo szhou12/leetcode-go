@@ -63,14 +63,34 @@ for left < right {...}
 - [func Search | Offical Document](https://pkg.go.dev/sort#Search)
     - TL;DR: `sort.Search(n, f)` returns the first (smallest) **index** that makes condition function `f()` true
 ```go
+/**
+Corner Cases:
+    Condition                     Return value
+    -------------------------------------------
+    Empty array                   0
+
+    Target < all values           0
+
+    Target > all values           len(nums)
+*/
 func lowerBound(nums []int, target int) int {
-    res := sort.Search(len(nums), func(i int) bool { return nums[i] >= target })
+    res := sort.Search(
+        len(nums), 
+        func(i int) bool {
+            return nums[i] >= target 
+        },
+    )
     return res
 }
 
 
 func upperBound(nums []int, target int) int {
-    res := sort.Search(len(nums), func(i int) bool { return nums[i] > target })
+    res := sort.Search(
+        len(nums), 
+        func(i int) bool {
+            return nums[i] > target 
+        },
+    )
     return res
 }
 ```
@@ -210,6 +230,8 @@ func upperBound(nums []int, target int) int {
 
 * 找最小的大于Target的元素: [744. Find Smallest Letter Greater Than Target](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0744-Find-Smallest-Letter-Greater-Than-Target)
 
+* :red_circle: 找heater所需辐射的最短半径以覆盖所有house: [475. Heaters](https://leetcode.com/problems/heaters/)
+    * **站在每个house的角度**，看它左右两边最近的heaters的位置
 
 
 
