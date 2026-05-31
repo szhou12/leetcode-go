@@ -230,8 +230,12 @@ func upperBound(nums []int, target int) int {
 
 * 找最小的大于Target的元素: [744. Find Smallest Letter Greater Than Target](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0744-Find-Smallest-Letter-Greater-Than-Target)
 
-* :red_circle: 找heater所需辐射的最短半径以覆盖所有house: [475. Heaters](https://leetcode.com/problems/heaters/)
+* :red_circle: 找heater所需辐射的最短半径以覆盖所有house: [475. Heaters](https://github.com/szhou12/leetcode-go/tree/main/leetcode/0475-Heaters)
     * **站在每个house的角度**，看它左右两边最近的heaters的位置
+
+* :red_circle: [1889. Minimum Space Wasted From Packaging]()
+    * **站在每个供应商(`boxes[j]`)的角度**，对于每个 box size，利用binary search确定它能够覆盖的 packages 区间 (upper bound)
+    * **前缀和**快速计算区间和
 
 
 
